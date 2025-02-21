@@ -10,6 +10,7 @@ import { useLocation } from "react-router-dom";
 const Contact = ({ brochureName }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    
   }, []);
 
   const location = useLocation(); // Detect current page URL
@@ -50,9 +51,22 @@ const Contact = ({ brochureName }) => {
       "Coffee Table Book": "/assets/brochure/12-2-25-mobile.pdf",
     };
 
+    const changeFavicon = (faviconURL) => {
+      const link = document.querySelector("link[rel~='icon']");
+      if (!link) {
+        const newLink = document.createElement("link");
+        newLink.rel = "icon";
+        newLink.href = faviconURL;
+        document.head.appendChild(newLink);
+      } else {
+        link.href = faviconURL;
+      }
+    };
+
     const filePath = brochureMap[detectedBrochure];
 
     if (filePath) {
+      changeFavicon("/%PUBLIC_URL%/favicon.png"); // Change favicon
       window.open(filePath, "_blank"); // Open in a new tab
     }
   };
