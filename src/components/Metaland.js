@@ -106,7 +106,7 @@ const Metaland = () => {
        
             <iframe width="100%" height="500" src="https://www.youtube.com/embed/mwmFELxs14E?si=IAtqZx13mJ8kiMUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div className="button-container">
-              <a href="https://www.youtube.com/watch?v=mwmFELxs14E">
+              <a href="https://www.google.com/maps/place/METALAND%E2%84%A2+BY+METAGUISE%C2%AE/@28.4631664,77.0973513,17z/data=!3m1!4b1!4m6!3m5!1s0x390d19455a6f62b1:0x60bdf56eb4db946d!8m2!3d28.4631664!4d77.0973513!16s%2Fg%2F11tk30q8yv?entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">
                 <button id="project-button" className="hover-button">
                   <span>Visit Now</span>
                 </button>

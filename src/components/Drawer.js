@@ -63,7 +63,7 @@ function Drawer({ isOpen, toggleDrawer }) {
               <h5 className="nav-haeding" style={{ paddingLeft: "40px" }}>
                 Metaland by Metaguise
               </h5>
-              <p className="nav-text" style={{ paddingLeft: "40px" }}>
+              <p className="nav-text" style={{ paddingLeft: "40px",lineHeight:"30px" }}>
                 Basement Floor, K9/46, DLF PH 2, <br></br>Gurgaon, Haryana
               </p>
               {/* First Section */}

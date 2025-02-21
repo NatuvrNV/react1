@@ -87,7 +87,7 @@ function Header() {
         <div className="header-left-mob">
           <div className="social-icons">
             <a
-              href="http://novaversecollective.com/contact"
+              href="https://metaguise.com/contact"
               className="flex items-center text-white-600"
             >
               <Phone size={20} className="mr-2" />

@@ -1,61 +1,139 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
-import Footer from "../../components/Footer"; // Import Footer component
+import Footer from "../../components/Footer";
 import "./Contact.css";
 import PhoneInput from "react-phone-input-2";
 import { Helmet } from "react-helmet-async";
-import { useEffect } from "react";
+import emailjs from "@emailjs/browser";
+import { useLocation } from "react-router-dom";
 
-
- const Contact = () => {
+const Contact = ({ brochureName }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-}, []);
+  }, []);
+
+  const location = useLocation(); // Detect current page URL
+  const pageBrochureMap = {
+    "/metasurface": "MetaSurface",
+    "/metaparametric": "MetaParametric",
+    "/metaform": "MetaForm",
+    "/metafunction": "MetaFunction",
+    "/ctb": "Coffee Table Book",
+  };
+
+  const detectedBrochure = pageBrochureMap[location.pathname] || brochureName || "Unknown";
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
+
+  const [isSending, setIsSending] = useState(false);
+  const [message, setMessage] = useState(""); // State to store success/failure message
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handlePhoneChange = (value) => {
+    setFormData({ ...formData, phone: value });
+  };
+
+  // Function to open the correct PDF in a new tab
+  const openPDF = () => {
+    const brochureMap = {
+      MetaSurface: "/assets/brochure/METASURFACE.pdf",
+      MetaParametric: "/assets/brochure/METAPARAMETRIC.pdf",
+      MetaForm: "/assets/brochure/METAFORM.pdf",
+      MetaFunction: "/assets/brochure/METAFUNCTION.pdf",
+      "Coffee Table Book": "/assets/brochure/12-2-25-mobile.pdf",
+    };
+
+    const filePath = brochureMap[detectedBrochure];
+
+    if (filePath) {
+      window.open(filePath, "_blank"); // Open in a new tab
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSending(true);
+    setMessage(""); // Reset message on submit
+
+    const emailParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      user_phone: formData.phone,
+      message: `The user has requested the ${detectedBrochure} brochure.`,
+    };
+
+    try {
+      await emailjs.send(
+        "service_o43hhwe", // Replace with your actual Service ID
+        "template_aca3uxp", // Replace with your actual Template ID
+        emailParams,
+        "xnaiRgy_8MdLN2Vh5" // Replace with your actual Public Key
+      );
+
+      openPDF(); // Open the brochure in a new tab
+      setMessage("✅ Thanks for messaging! Your email was sent successfully.");
+      
+      // Reset form fields
+      setFormData({ name: "", email: "", phone: "" });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setMessage("❌ Failed to send message. Please try again.");
+    } finally {
+      setIsSending(false);
+    }
+  };
+
   return (
     <>
-               <Helmet>
-                                  <title>Download Metaform Brochure | Luxury Metal Facades & Cladding</title>
-                                  <meta name="description" content="Explore our premium metal elevations, cladding & architectural surfaces. Download the brochure for innovative designs." />
-                                  <meta name="keywords" content="home, react, SEO, web development" />
-                                  <meta name="author" content="Your Name" />
-                                  <meta property="og:title" content="Download Metaform Brochure | Luxury Metal Facades & Cladding" />
-                                  <meta property="og:description" content="Explore our premium metal elevations, cladding & architectural surfaces. Download the brochure for innovative designs." />
-                                  <meta property="og:image" content="https://yourwebsite.com/home-image.jpg" />
-                                  <meta property="og:url" content="https://yourwebsite.com/" />
-                                  <meta name="robots" content="index, follow" />
-                                </Helmet>
+      <Helmet>
+        <title>Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding</title>
+        <meta
+          name="description"
+          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+        />
+        <meta
+          property="og:title"
+          content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`}
+        />
+        <meta
+          property="og:description"
+          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+        />
+      </Helmet>
+
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">
-          {/* Left Section */}
-          <Col
-            md={6}
-            className="contact-left d-flex flex-column justify-content-center gap-4"
-          >
+          <Col md={6} className="contact-left d-flex flex-column justify-content-center gap-4">
             <div className="contactus1-text">
-            <p>Thank you for </p>
-              <p> showing interest in </p>
-              <p> MetaForm brochure! </p>
-          
+              <p>Thank you for</p>
+              <p>showing interest in</p>
+              <p>{detectedBrochure} brochure!</p>
             </div>
             <div className="lead-contact">
-              <p> Please fill the form to download it.</p>
-             
+              <p>Please fill the form to download it.</p>
             </div>
           </Col>
 
-          {/* Right Section */}
-          <Col
-            md={6}
-            className="contact-right d-flex flex-column justify-content-center"
-          >
-            <Form className="w-100">
+          <Col md={6} className="contact-right d-flex flex-column justify-content-center">
+            <Form className="w-100" onSubmit={handleSubmit}>
               <Row>
                 <Col md={6} className="mb-3 mb-md-4">
                   <Form.Group controlId="formName">
                     <Form.Control
                       type="text"
+                      name="name"
                       placeholder="Name"
                       className="bg-contact form-text border-0"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
                     />
                   </Form.Group>
                 </Col>
@@ -63,51 +141,53 @@ import { useEffect } from "react";
                   <Form.Group controlId="formEmail">
                     <Form.Control
                       type="email"
+                      name="email"
                       placeholder="Email"
                       className="bg-contact form-text border-0"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
                     />
                   </Form.Group>
                 </Col>
               </Row>
 
               <Row>
-       
-              <Col md={12} className="mb-3 mb-md-4">
-              <Form.Group controlId="formPhone">
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formPhone">
                     <PhoneInput
-                      country={'in'} // Default country code set to India (+91)
-                      enableSearch // Enable search in the dropdown
+                      country={"in"}
+                      enableSearch
                       inputClass="bg-contact form-text border-0 w-100"
                       containerClass="w-100"
                       inputStyle={{ width: "100%" }}
                       placeholder="Enter phone number with Country Code"
-                      dropdownClass="bg-dark text-white" // Customize dropdown styling
+                      dropdownClass="bg-dark text-white"
+                      value={formData.phone}
+                      onChange={handlePhoneChange}
+                      required
                     />
                   </Form.Group>
                 </Col>
-              
               </Row>
 
-              {/* <Form.Group controlId="formMessage" className="mb-4">
-                <Form.Control
-                  as="textarea"
-                  rows={4}
-                  placeholder="Message"
-                  className="bg-contact form-text border-0"
-                />
-              </Form.Group> */}
-
               <div className="button-wrapper">
-                <button type="submit" className="send-button">
-                  <span>Send</span>
+                <button type="submit" className="send-button" disabled={isSending}>
+                  <span>{isSending ? "Sending..." : `Send & View ${detectedBrochure} Brochure`}</span>
                 </button>
               </div>
+
+              {/* Message Display */}
+              {message && (
+                <p className={`mt-3 ${message.includes("✅") ? "text-success" : "text-danger"}`}>
+                  {message}
+                </p>
+              )}
             </Form>
           </Col>
         </Row>
       </Container>
 
-      {/* Add Footer */}
       <Footer />
     </>
   );
