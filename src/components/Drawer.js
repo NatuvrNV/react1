@@ -98,7 +98,7 @@ function Drawer({ isOpen, toggleDrawer }) {
                     }}
                   >
                     <a
-                      href="https://www.facebook.com"
+                      href="https://www.facebook.com/metaguise"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
@@ -110,7 +110,7 @@ function Drawer({ isOpen, toggleDrawer }) {
                       <FaFacebook />
                     </a>
                     <a
-                      href="https://www.instagram.com"
+                      href="ttps://www.instagram.com/metaguise/"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
@@ -122,7 +122,7 @@ function Drawer({ isOpen, toggleDrawer }) {
                       <FaInstagram />
                     </a>
                     <a
-                      href="https://www.youtube.com"
+                      href="https://www.youtube.com/@metaguise"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{

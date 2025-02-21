@@ -80,7 +80,7 @@ const Contact = ({ brochureName }) => {
       );
 
       openPDF(); // Open the brochure in a new tab
-      setMessage("✅ Thanks for messaging! Your email was sent successfully.");
+      setMessage("✅ Thanks for your query! Your download will begin shortly.");
       
       // Reset form fields
       setFormData({ name: "", email: "", phone: "" });
