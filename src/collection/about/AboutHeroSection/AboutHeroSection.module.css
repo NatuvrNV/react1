@@ -1,0 +1,178 @@
+.aboutHeroContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: clamp(4rem, 12vw, 12rem);
+  text-align: left;
+}
+
+.title {
+  font-family: "Degular Display", sans-serif;
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.hover-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #343434;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+  font-family: "Degular Display", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  width: auto !important;
+  /* margin-top: 20px; */
+}
+
+.aboutHeroContainer .paragraph {
+  font-family: "Degular Display", sans-serif;
+  font-size: clamp(0.875rem, 1.2vw, 0.95rem);
+  line-height: 1.4;
+  margin: 0;
+  opacity: 0.9;
+  text-align: left;
+  max-width: 650px;
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 557px;
+  height: auto;
+  object-fit: cover;
+}
+
+.aboutHeroContainer h1{
+  font-size: 4.5rem ;
+  letter-spacing: 0.03em;
+}
+
+
+
+@media (min-width: 1300px){
+  .aboutHeroContainer .paragraph {
+    font-family: "Degular Display", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+  }
+}
+/* For PC & Laptop (1920x1080 px) */
+@media (min-width: 1920px){
+  .aboutHeroContainer .paragraph {
+    font-family: "Degular Display", sans-serif;
+    font-size: clamp(0.875rem, 1.2vw, 1.3rem);
+    line-height: 1.3;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    margin: 0;
+    opacity: 0.9;
+    text-align: left;
+    max-width: 900px;
+  }
+
+
+
+  .heroImage {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .vision-mission-card .description p{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutHeroContainer {
+    padding: 4rem 0;
+  }
+
+  .contentSection {
+    padding-left: clamp(2rem, 6vw, 6rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutHeroContainer {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+  }
+
+  .contentSection {
+    order: 2;
+    padding-left: 0;
+  }
+
+  .imageSection {
+    order: 1;
+    margin-bottom: 2rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .title {
+    text-align: left;
+    font-size: 1.75rem;
+  }
+
+  .paragraph {
+    text-align: left;
+    max-width: 100%;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutHeroContainer {
+    padding: 2rem 1rem;
+    margin-top: -4rem;
+  }
+
+  .aboutHeroContainer #hero-section{
+    margin-top: 2rem !important;
+  }
+
+  .aboutHeroContainer h1{
+    font-size: 3.5rem;
+  }
+
+  .aboutHeroContainer .paragraph{
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+
+}
+
+

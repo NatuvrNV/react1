@@ -1,0 +1,407 @@
+.single-product-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.single-product-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Enable vertical scrolling */
+}
+
+
+
+#single-text{
+  
+  padding: 5px !important;
+
+}
+
+#single-text button{
+  font-size: 0.8em;
+  letter-spacing: 0.03em;
+  
+}
+
+.single-product-footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  padding: 10px 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.main-container {
+  margin-top: 100px;
+  width: 100%;
+  /* Ensure full width */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  overflow: auto;
+  /* Add some space between the grid items */
+  padding: 20px;
+  /* Add some padding around the grid */
+  /* height: 100vh; Adjust height as needed */
+  /* overflow-y: auto; Enable vertical scrolling */
+}
+
+.grid-item {
+  position: relative;
+  aspect-ratio: 1 / 0.6;
+  overflow: hidden;
+  padding: 5px;
+  max-height: 100vh;
+
+
+  /* Default z-index */
+  transition: z-index 0.3s ease-out;
+}
+
+.transition-button {
+  width: 100%;
+  min-width: 80px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  /* Ensure reset */
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.3s ease-out, filter 0.3s ease-out;
+  box-shadow: none;
+  /* Reset box-shadow */
+}
+
+/* Hover Effect */
+.grid-item:hover .grid-image:not(.active) {
+  transform: scale(1.02);
+  filter: brightness(1);
+  /* Undo dimming */
+}
+
+/* Active State */
+.grid-item.active .grid-image {
+  transform: scale(2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  /* Add shadow */
+  /* Bring to front */
+}
+
+/* Reset non-active state */
+.image-grid .grid-item:not(.hovered):not(.active) .grid-image {
+  transform: scale(1);
+  /* Reset size */
+  filter: brightness(0.7);
+  /* Dim non-active images */
+  box-shadow: none;
+  /* Remove shadow */
+}
+
+.list-group-item-action:active{
+  color: #fff !important;
+}
+
+/* When active and unhovered */
+.grid-item.active:not(:hover) .grid-image {
+  transform: scale(1);
+  /* Return to normal size */
+  box-shadow: none;
+  /* Reset shadow */
+}
+
+
+#product-grid{
+  max-height: 90vh;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .grid-item.active{
+    grid-column: span 2;
+    overflow: visible;
+  }
+
+  .grid-item:nth-child(2n).active .grid-image {
+    right: 0;
+    left: auto;
+    transform-origin: right center;
+  }
+
+  #build-button{
+    border-radius: 0px ;
+    padding: 0.5rem 3rem;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    width: auto !important;
+  }
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: auto auto; /* 2 items per row on mobile */
+   
+    gap: 12px;
+    padding-right: 10px; /* Add some spacing from the sidebar */
+  }
+
+  .col-9 {
+    width: 100%;
+    padding-right: 15px;
+  }
+
+  .col-md-3.sidebar-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+
+
+  .button-row {
+    flex-direction: column;
+    gap: 15px; /* Increased gap between buttons */
+    width: 100%;
+    padding: 15px 0; /* Increased padding top and bottom */
+  }
+
+  .button-row .col-md-4 {
+    width: 100%;
+    margin: 5px 0; /* Added margin for additional spacing */
+  }
+
+  .transition-button {
+    width: 100%;
+    margin: 0;
+    height: 55px; /* Slightly increased height */
+    border-radius: 12px; /* Slightly rounded corners */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-grid {
+
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-controls .Elements{
+    display: flex;
+    gap: 10px ;
+  }
+
+
+
+  .button-row {
+    gap: 12px; /* Slightly reduced gap for very small screens */
+    padding: 12px 0;
+  }
+
+  .button-row .col-md-4 {
+    margin: 3px 0;
+  }
+
+  .transition-button {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: auto auto; /* 2 columns on mobile */
+    
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .grid-item {
+    aspect-ratio: 16 / 9; /* Slightly taller items on mobile */
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-grid {
+    
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .back-button{
+    padding: 6px 20px;
+    margin-bottom: 0px !important;
+  }
+
+  .back-button .arrow{
+    font-size: 18px;
+  }
+}
+
+/* Back Button Styling */
+.back-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #343434;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+  font-family: "Degular Display", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.back-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: left 0.4s ease-in-out;
+  z-index: 0;
+  border: none;
+}
+
+.back-button:hover::before {
+  left: 0;
+  border: none;
+}
+
+.back-button:hover {
+  color: #0e0d0d;
+  background-color: #fff;
+  border: none;
+}
+
+.back-button span {
+  position: relative;
+  z-index: 1;
+  color: inherit;
+}
+
+.back-button .arrow {
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.mobile-controls {
+  padding: 1rem;
+  width: 100%;
+  display: none;
+}
+
+.mobile-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.description-dropdown {
+  flex: 1;
+}
+
+.description-dropdown .dropdown-toggle {
+  width: 100%;
+  background-color: #171515;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.description-dropdown .dropdown-toggle::after {
+  margin-left: auto;
+  display: none;
+}
+
+.description-dropdown .dropdown-menu {
+  width: 100%;
+  background-color: #171515;
+  border: none;
+}
+
+.description-dropdown .dropdown-item {
+  color: #fff;
+  background-color: #171515;
+  white-space: normal;
+  text-transform: capitalize;
+}
+
+.description-dropdown .dropdown-item:hover {
+  background-color: #000000;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+
+.icon-button {
+  background-color: #171515;
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.icon-button:hover {
+  background-color: #000000;
+}
+
+@media (max-width: 768px) {
+  .sidebar-section {
+    display: none;
+  }
+
+  .mobile-controls {
+    display: block;
+  }
+
+  .col-9 {
+    width: 100%;
+  }
+}

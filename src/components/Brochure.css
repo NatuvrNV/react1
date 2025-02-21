@@ -1,0 +1,134 @@
+.brochure-grid-item {
+  transition: all 0.8s ease; /* Updated to 0.3s */
+  -webkit-transition: all 0.8s ease; /* Updated to 0.3s */
+  -moz-transition: all 0.8s ease; /* Updated to 0.3s */
+  -o-transition: all 0.8s ease; /* Updated to 0.3s */
+  padding: 15px 5px;
+  display: table-cell;
+  position: relative; /* Needed for text overlay positioning */
+  
+}
+
+
+
+.image-brochure-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 380px;
+  transition: transform 0.8s ease; /* Updated to 0.3s */
+  -webkit-transition: transform 0.8s ease; /* Updated to 0.3s */
+  -moz-transition: transform 0.8s ease; /* Updated to 0.3s */
+  -o-transition: transform 0.8s ease; /* Updated to 0.3s */
+  border-radius: 20px;
+}
+
+/* Add a zoom-out and size increase effect */
+.image-brochure-container:hover {
+  transform: scale(1.1); /* Updated to 1.1 */
+}
+
+.image-brochure-container img {
+  transition: transform 0.3s ease; /* Updated to 0.3s */
+  -webkit-transition: transform 0.3s ease; /* Updated to 0.3s */
+  -moz-transition: transform 0.3s ease; /* Updated to 0.3s */
+  -o-transition: transform 0.3s ease; /* Updated to 0.3s */
+  transform-origin: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Zoom-out effect on hover (scale down the image slightly) */
+.image-brochure-container:hover img {
+  transform: scale(0.9); /* No change */
+  border-radius: 20px;
+}
+
+/* Text overlay styling */
+.brochure-overlay {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Updated to 0.3s */
+  -webkit-transition: opacity 0.3s ease; /* Updated to 0.3s */
+  -moz-transition: opacity 0.3s ease; /* Updated to 0.3s */
+  -o-transition: opacity 0.3s ease; /* Updated to 0.3s */
+  font-family: "Degular Display";
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-brochure-container:hover .brochure-overlay {
+  opacity: 1; /* Show text on hover */
+}
+
+.brochure-title {
+  font-family: Degular Display;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 100px;
+  text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .brochure-title {
+    font-size: 56px;
+    line-height: 1.2;
+    margin-top: 1.5rem;
+  }
+
+  .brochure-grid-item {
+    width: 50% !important;
+    padding: 05px;
+    display: inline-block;
+  }
+
+  .image-brochure-container {
+    height: 100px;
+    width: 100%;
+    border-radius: 10px ;
+  }
+
+  .image-brochure-container img {
+    height: 140px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px ;
+    
+  }
+
+  .brochure-overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Disable hover effects on mobile */
+  .image-brochure-container:hover {
+    transform: none;
+  }
+
+  .image-brochure-container:hover img {
+    transform: none;
+  }
+}
+
+@media (min-width: 1200px) and (max-width:1919px) {
+  .brochure-title {
+    font-size: 5em;
+  }
+  }

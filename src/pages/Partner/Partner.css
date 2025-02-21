@@ -1,0 +1,121 @@
+.bg-dark {
+  background-color: #000 !important;
+}
+
+/* Container Styles */
+.contact-container {
+  min-height: 100vh;
+  padding-top: clamp(60px, 8vh, 80px);
+}
+
+.contact-row {
+  min-height: calc(100vh - clamp(60px, 8vh, 80px));
+  padding: 0rem 9rem;
+}
+
+/* Contact Text Styles */
+.contactus-text p {
+  font-size: clamp(2.25rem, 5vw, 5.25rem); /* 36px to 84px */
+  font-family: "Degular Display";
+  font-weight: 100;
+  letter-spacing: clamp(0.5px, 0.1vw, 1px);
+  text-align: justify;
+  line-height: clamp(2rem, 4vw, 3.4375rem); /* 32px to 55px */
+  margin: 0;
+}
+
+.lead-contact p {
+  font-size: clamp(1.125rem, 2vw, 1.5rem); /* 18px to 24px */
+  font-family: "Degular Display";
+  font-weight: 400;
+  letter-spacing: clamp(0.5px, 0.1vw, 1px);
+  text-align: justify;
+  margin: 0;
+  line-height: clamp(1.25rem, 2vw, 1.5rem); /* 20px to 24px */
+}
+
+/* Form Styles */
+.form-text {
+  font-size: clamp(1rem, 1.5vw, 1.125rem); /* 16px to 18px */
+  font-family: "Degular Display";
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: clamp(0.75rem, 2vw, 1rem);
+  border-radius: 0;
+  background-color: rgb(45, 45, 45);
+  color: #fff;
+}
+
+.form-text::placeholder {
+  color: rgb(184, 179, 179);
+  opacity: 1;
+}
+
+/* Button Styles */
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+}
+
+.send-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: clamp(0.75rem, 2vw, 1rem) clamp(1.25rem, 8vw, 6.25rem); /* 12px to 16px padding-y, 20px to 100px padding-x */
+  font-family: "Degular Display";
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .flex-column {
+    padding-left: 0px;
+  }
+
+  .contact-row{
+    min-height: 69vh;
+  }
+
+  .contact-container{
+    min-height: auto;
+    padding-top: 4.5rem;
+  }
+
+  .contact-left {
+    margin-bottom: 2rem;
+  }
+
+  .contactus-text p,
+  .lead-contact p {
+    text-align: left;
+  }
+
+  .send-button {
+    width: 100%;
+  }
+
+  .button-wrapper {
+    padding: 0;
+  }
+}
+
+/* Additional responsive adjustments for very small screens */
+@media (max-width: 350px) {
+  .contactus-text p {
+    font-size: 2rem; /* 32px minimum */
+    line-height: 1.2;
+  }
+
+  .lead-contact p {
+    font-size: 1rem; /* 16px minimum */
+    line-height: 1.3;
+  }
+}

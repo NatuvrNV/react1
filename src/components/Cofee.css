@@ -1,0 +1,148 @@
+.cofee-container {
+  width: 100%;
+  background: linear-gradient(0deg, #252525 0%, #000000 100%);
+  overflow: hidden;
+}
+
+.cofee-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 2% 8%;
+  box-sizing: border-box;
+  gap: 4%;
+}
+
+.cofee-section {
+  flex: 1;
+  max-width: 45%;
+}
+
+.cofee-section h1 {
+  font-family: "Degular Display", sans-serif;
+  font-size: clamp(50px, 7vw, 100px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: #fff;
+  margin: 0 0 40px 0;
+  text-align: left;
+}
+
+.hover-button {
+  background-color: #fff;
+  border: none;
+  padding: 16px 48px;
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.hover-button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.image-section {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 1200px) and (max-width:1919px) {
+  .cofee-section h1{
+    font-size: 5em;
+  }
+  }
+
+@media screen and (max-width: 1024px) {
+  .cofee-section h1 {
+    font-size: clamp(38px, 4.5vw, 72px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cofee-content {
+    flex-direction: row;
+    height: auto;
+    padding: 5% 1%;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .image-section {
+    max-width: 100%;
+  }
+
+  .cofee-section {
+    order: 1;
+  }
+
+  .cofee-section h1 {
+    font-size: clamp(32px, 7vw, 56px);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .hover-button {
+    padding: 14px 40px;
+    font-size: 16px;
+  }
+
+  .image-section {
+    order: 2;
+    justify-content: center;
+  }
+
+  .image-section img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cofee-content {
+    padding: 10% 4%;
+    background-color: #000;
+  }
+
+  .cofee-container{
+    margin-top: 1.5rem;
+  }
+
+  .cofee-section h1 {
+    font-size: clamp(28px, 6vw, 42px);
+    margin-bottom: 0px;
+    text-align: left;
+  }
+
+  .hover-button {
+    padding: 12px 36px;
+    font-size: 15px;
+  }
+
+  #download-button{
+            border-radius: 0px;
+        padding: 0.5rem 3rem;
+        font-size: 18px;
+        color: #000;
+        font-weight: bold;
+    
+  }
+}
+
+@media screen and (min-width: 768px){
+  #download-button{
+    padding: 1rem 7rem;
+  }
+}

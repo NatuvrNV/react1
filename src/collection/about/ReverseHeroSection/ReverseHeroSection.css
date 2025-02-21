@@ -1,0 +1,86 @@
+.hover-button {
+  background: #232323;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.Design-tittle{
+  font-weight: 500 !important;
+}
+
+#About-section{
+  width: 100% !important;
+}
+
+#Design p{
+  font-size: 1.2rem;
+  letter-spacing: 0.03em !important;
+}
+
+@media (min-width: 1200px) and (max-width:1919px) {
+#see-button{
+  padding: 1rem 4rem;
+}
+#Design p{
+  font-size: 1.1rem;
+  letter-spacing: 0.03em !important;
+}
+  }
+
+.hover-button:hover {
+  background: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .hover-button {
+    width: 100%;
+    background: #fff;
+    color: #232323;
+
+  }
+
+  .hero-button{
+    justify-content: center !important;
+  }
+
+  #see-button {
+    font-size: 20px;
+    padding: 0.6rem 4rem;
+    font-weight: 900;
+    width: auto !important;
+  }
+}
+
+@media (min-width: 1920px){
+  .aboutHeroContainer .paragraph {
+    font-family: "Degular Display", sans-serif;
+    font-size: clamp(0.875rem, 1.2vw, 2rem);
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 0;
+    opacity: 0.9;
+    text-align: left;
+    max-width: 900px;
+  }
+
+
+
+
+
+  #see-button{
+    padding: 1rem 7rem !important;
+  }
+
+  .heroImage {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .vision-mission-card .description p{
+    font-size: 1.2rem;
+  }
+}

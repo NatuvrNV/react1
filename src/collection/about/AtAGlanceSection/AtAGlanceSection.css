@@ -1,0 +1,41 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.tw-hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.tw-hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#glance-title{
+  display: none;
+}
+
+/* Smooth scrolling for the slider */
+.tw-scroll-smooth {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure proper spacing in mobile view */
+@media (max-width: 1024px) {
+  .glance-box {
+    margin: 0 auto;
+    height: auto;
+    min-height: 280px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #glance-cont{
+    max-width: 100%;
+  }
+
+  #glance-title{
+    display: block;
+    font-size: 40px !important;
+    margin-bottom: 20px !important;
+  }
+}

@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  background-color: #000;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.gallery-project img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-project img:hover {
+  transform: scale(1.05);
+}
+
+.sidebar {
+  background-color: #171515; 
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.highlight {
+  background-color: #000000; /* Change to your desired highlight color */
+  color: #f8f4f4; /* Text color for highlighted item */
+}
+
+.dim {
+  opacity: 0.5; /* Dimmed effect for non-selected items */
+}
+
+
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar .project-type p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sidebar .project-type button {
+  width: 80%;
+}
+
+.sidebar .build-button button {
+  width: 100%;
+}
+.text1{
+  font-size: 18px;
+  font-family: Degular Display;
+  border: none;
+  text-transform: capitalize !important;
+}

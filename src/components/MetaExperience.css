@@ -1,0 +1,240 @@
+.metaexperience-section {
+    margin-top: 60px;
+    /* margin-bottom: 60px; */
+    background: linear-gradient(180deg, #252525 0%, #000000 100%);
+    padding: 40px 0px;
+  }
+  /* Section Title Styling */
+  .metavision-title {
+   
+    letter-spacing: 2px;
+    font-family: Degular Display;
+    font-size: 128px;
+    
+    line-height: 100px;
+    text-align: left;
+  }
+
+
+  
+  /* Metavision Text Styling */
+  .metavision-text {
+    font-family: Degular Display;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  
+  .font {
+    font-family: Degular Display;
+    font-weight: 900;
+  }
+  
+  .paragraph p {
+    margin: 0;
+    font-family: Degular Display;
+    font-size: 28px;
+    transition: color 0.3s ease;
+  }
+  
+  .content {
+    margin: 50px;
+  }
+  p {
+    font-family: Degular Display;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    transition: color 0.5s ease;
+    /* Smooth transition effect */
+  }
+  
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100vh);
+      /* Start from 100px above the element */
+      opacity: 0;
+      /* Start with 0 opacity */
+    }
+  
+    100% {
+      transform: translateY(0);
+      /* End at the original position */
+      opacity: 1;
+      /* End with full opacity */
+    }
+  }
+  
+  /* Initial state of the Coinback image */
+  .metavision-item {
+    opacity: 0;
+    /* Initially invisible */
+    /* transform: translateY(-100vh); */
+    /* Start from above the element */
+    transition: opacity 1s ease-out, transform 2s ease-out;
+    /* Smooth transition */
+  }
+  
+  /* Animation applied when the element is in view */
+  .metavision-item.animate {
+    animation: slideInFromTop 2s ease-out forwards;
+    /* `forwards` keeps the final state */
+  }
+  
+  /* Coin styling */
+  #coin {
+    width: auto;
+  }
+  
+  /* Media Queries */
+  
+  /* Mobile Devices (Below 768px) */
+  @media (max-width: 768px) {
+    #coin {
+      height: 38px;
+      transform: translate(0px, -10px) !important;
+    }
+  }
+  
+  /* For PC and Large Resolution Laptops (1320px and above) */
+  @media (min-width: 1920px) {
+    .metavision-title {
+      font-size: 7em;
+      line-height: 64px;
+      text-align: left;
+    }
+    .paragraph p {
+      font-size: 2em;
+      line-height: 55px;
+      letter-spacing: 0.03em;
+      margin-bottom: 20px;
+    }
+  }
+  /* Extra Large Devices (1200px and above) */
+  @media (min-width: 1200px) and (max-width:1919px) {
+    .metavision-title {
+      font-size: 5em;
+      line-height: 64px;
+    }
+    .paragraph p {
+      font-size: 1.5em;
+      line-height: 45px;
+      letter-spacing: 0.03em;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Large Devices (992px to 1199px) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .metavision-title {
+      font-size: 100px;
+      line-height: 110px;
+    }
+    .paragraph p {
+      font-size: 24px;
+      line-height: 50px;
+    }
+  }
+  
+  /* Medium Devices (768px to 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .metavision-title {
+      font-size: 80px;
+      line-height: 90px;
+    }
+    .paragraph p {
+      font-size: 22px;
+      line-height: 45px;
+    }
+    .hover-button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+  
+  
+    #about-button{
+      padding: 1rem 7rem !important;
+      /* margin-bottom: 2rem; */
+    }
+    
+    #about-button:hover{
+     transform: none;
+    }
+  }
+  
+  /* Small Devices (576px to 767px) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .metavision-title {
+      font-size: 64px;
+      line-height: 80px;
+    }
+    .paragraph p {
+      font-size: 20px;
+      line-height: 40px;
+    }
+  #about-button {
+      font-size: 18px;
+      width: auto !important;
+      padding: 0.6rem 3rem;
+    }
+  
+    .mobile {
+      display: none;
+    }
+  
+    .desktop {
+      display: block;
+    }
+  }
+  
+  /* Extra Small Devices (Below 576px) */
+  @media (max-width: 575px) {
+    .metavision-title {
+      font-size: 48px;
+   line-height: 40px !important;
+   text-align: center;
+    }
+
+    .metaexperience-section {
+       
+        padding: 20px 10px;
+      }
+
+    .paragraph p {
+      font-size: 18px;
+      line-height: 35px;
+    }
+    #about-button {
+      font-size: 20px;
+      width: auto !important;
+      padding: 0.6rem 5rem;
+      margin-top: 2.1rem;
+    }
+    .content {
+      margin: 20px;
+    }
+  
+    .metavision-section{
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  
+  .mobile {
+    display: block;
+  }
+  
+  .desktop {
+    display: none;
+  }
+  
+  .mob-title{
+    display: none;
+  }

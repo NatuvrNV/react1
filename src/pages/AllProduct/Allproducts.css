@@ -1,0 +1,352 @@
+/* src/components/Gallery.css */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-height: calc(100vh - 33vh);
+
+  overflow-x: hidden;
+}
+
+.mobile-title{
+  display: none;
+}
+
+
+
+#build-button{
+  width: 100% !important;
+  font-size: 1em !important;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+#build-button:hover{
+ transform: none !important;
+}
+
+
+@media (min-width: 1920px) {
+ 
+  .sidebar .list-group button{
+    font-size: 20px;
+  }
+
+  .list-group-flush{
+    letter-spacing: 0.04em !important;
+  }
+}
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+    max-height: calc(100vh - 180px);
+  }
+
+  #arrow-icon{
+    opacity: 1 !important;
+  }
+
+  .sidebar {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .mobile-title{
+    display: block;
+  }
+}
+
+.gallery::-webkit-scrollbar {
+  width: 6px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 10px;
+}
+
+.gallery::-webkit-scrollbar-track {
+  background-color: #171515;
+}
+
+.gallery-container {
+  margin-top: 15vh;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-content {
+  flex: 1;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 10px;
+}
+
+.hover-effect {
+  position: relative;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+  filter: brightness(0.5);
+  transition: 0.4s ease-in-out;
+}
+
+.hover-effect:hover  .image-text{
+  filter: brightness(1);
+  transition: 0.4s ease-in-out;
+}
+
+.sidebar {
+  background-color: #171515;
+  border-radius: 20px;
+  color: #fff;
+  padding: 15px;
+}
+
+.highlight {
+  background-color: #000000;
+  color: #f8f4f4 !important;
+}
+
+.dim {
+  opacity: 1;
+}
+
+.list-group-item {
+  background-color: #161616 !important;
+  color: #fff;
+  border: none;
+  text-transform: capitalize !important;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+  padding: 6px 15px !important;
+  margin-bottom: 0px !important;
+}
+
+.list-group-item:hover{
+  color: #fff;
+}
+
+.list-group {
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1em;
+  border-radius: 4px;
+  display: none;
+  width: 90%;
+  text-align: left;
+  text-transform: capitalize;
+  
+}
+
+.gallery-item:hover .image-text {
+  display: block;
+}
+
+/* For Webkit Browsers (Chrome, Safari, Edge) */
+
+/* Main scrollbar track (background) */
+::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+/* The scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #3d3d3d !important;
+  border-radius: 6px !important;
+}
+
+/* On hover, change thumb color */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555 !important;
+}
+
+/* The scrollbar track (background area) */
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+/* footer ----*/
+.all-product-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.all-product-content {
+  flex: 1;
+}
+
+.product-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.mobile-filter {
+  display: none;
+  margin: -0.3rem 1.5rem 1rem 0.5rem !important ;
+  width: 60% !important;
+}
+
+.mobile-title {
+  padding: 0rem 1.5rem !important;
+  margin: 0  !important;
+  opacity: 0 !important;
+}
+
+.mobile-title h1{
+  font-size: 65px;
+  font-weight: 800;
+}
+
+.mobile-filter .dropdown-toggle {
+  width: 100%;
+  background-color: #171515;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.mobile-filter .dropdown-toggle::after {
+  margin-left: auto;
+  display: none;
+}
+.mobile-filter .dropdown-menu {
+  width: 100% !important;
+  background-color: #171515;
+  border: none;
+  /* transform: translate3d(30px, 43px, 0px) !important ; */
+ 
+}
+.mobile-filter .dropdown-item {
+  color: #fff;
+  opacity: 1;
+}
+.mobile-filter .dropdown-item {
+  color: #fff;
+  opacity: 0.5 ;
+}
+
+.mobile-filter .dropdown-item:hover {
+  background-color: transparent ;
+}
+
+.mobile-filter .dropdown-item.active {
+  background-color: transparent ;
+  opacity: 1 ;
+}
+
+.icon-overlay {
+  
+  bottom: 0px ; /* Distance from the bottom of the image */
+  position: static;
+  right: 0px; /* Distance from the right of the image */
+  opacity: 1 ; /* Initially hide the icon */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  pointer-events: none; /* Make sure the icon doesn't block clicks */
+  rotate: 90deg;
+}
+
+
+
+.btn.show, .btn:first-child:active{
+  background-color: #fff !important ;
+  color: #000000 ;
+}
+
+.btn:first-child:active > .icon-overlay svg{
+  color: #000000  !important;
+}
+
+@media (max-width: 768px) {
+  /* .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+    max-height: calc(100vh - 180px);
+  } */
+
+  .desktop-title {
+    display: none;
+  }
+
+  #build-button{
+    border-radius: 0px ;
+    padding: 0.5rem 3rem;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    width: 100% !important;
+  }
+
+  .mobile-title {
+    display: block;
+    opacity: 1 !important;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .mobile-filter {
+    display: block;
+  }
+
+  .gallery-container {
+    margin-top: 8vh ;
+  }
+}
+
+@media (min-width: 1920px){
+  .image-text{
+    font-size: 28px;
+    letter-spacing: 0.03em !important;
+    font-weight: 500 !important;
+  }
+
+
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1320px) {
+  .hover-button{
+    font-size: 20px !important;
+  }
+  }
+
+

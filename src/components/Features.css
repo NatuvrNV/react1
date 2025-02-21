@@ -1,0 +1,372 @@
+/* Featured Section Background */
+.featured-section {
+  background: linear-gradient(180deg, #252525 79%, #000000 100%);
+  padding: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Featured Projects Navigation */
+.project-navigation {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  justify-content: end;
+  padding: 0 27px;
+}
+
+.project-button-prev,
+.project-button-next {
+  width: 38px;
+  height: 38px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.project-button-prev::after,
+.project-button-next::after {
+  font-size: 1rem;
+}
+
+.pin-spacer{
+  overflow: hidden;
+  background: linear-gradient(180deg, #252525 79%, #000000 100%);
+}
+
+/* Featured Text Styling */
+.featured-text {
+  font-family: "Degular Display", sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+  /* margin-bottom: 20px; */
+}
+
+/* Extra Large Devices (1200px and above) */
+
+
+/* Image Row for Continuous Scrolling */
+.featured-row-wrapper {
+  padding: 0 0px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.featured-row {
+  display: flex;
+  gap: 2px; /* Space between images */
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+  width: max-content; /* Only takes as much width as needed */
+  padding-right: 0px; /* Adjust to ensure extra space at the end */
+}
+
+.featured-image img {
+  width: 420px; /* Adjust based on actual image width */
+  height: auto;
+}
+
+/* Featured Image Hover Effects -------------------------------------- */
+.featured-image {
+  flex: 1;
+  transition: transform 0.3s ease, filter 0.3s;
+  -webkit-transition: transform 0.3s ease, filter 0.3s;
+  -moz-transition: transform 0.3s ease, filter 0.3s;
+  -o-transition: transform 0.3s ease, filter 0.3s;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.featured-image:hover #icon-overlay{
+  opacity: 1;
+}
+
+/* Icon overlay */
+#icon-overlay {
+  position: absolute;
+  bottom: 40px; /* Distance from the bottom of the image */
+  right: 15px; /* Distance from the right of the image */
+  opacity: 1; /* Initially hide the icon */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  pointer-events: none; /* Make sure the icon doesn't block clicks */
+  z-index: 1;
+  opacity: 0;
+}
+
+/* Show icon when image is hovered */
+.featured-image:hover .icon-overlay {
+  opacity: 1; /* Show icon on hover */
+  transform: translateY(0); /* Icon should stay in place */
+}
+
+/* Optional: Hover effect for image */
+.featured-image:hover img {
+  opacity: 0.8; /* Slight fade effect on image */
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.featured-text-mob{
+  display: none;
+}
+
+
+.featured-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, z-index 0.3s; /* Smooth transition */
+  -moz-transition: transform 0.3s ease, z-index 0.3s; /* Smooth transition */
+  -o-transition: transform 0.3s ease, z-index 0.3s; /* Smooth transition */
+  -webkit-transition: transform 0.3s ease, z-index 0.3s; /* Smooth transition */
+  transform: scale(0.85); /* Scale down slightly to fit in the slider */
+}
+.featured-image:hover img {
+  transform: scale(0.9); /* Full size on hover */
+  z-index: 1; /* Bring the hovered image in front */
+}
+
+/* Hover Effects */
+.featured-row:hover .featured-image {
+  filter: grayscale(100%); /* Make all images grayscale */
+}
+
+.featured-row .featured-image:hover {
+  filter: grayscale(0); /* Remove grayscale on hover */
+  transform: scale(1.1) translateY(15px); /* Scale to increase size */
+  z-index: 1; /* Bring the hovered image to the front */
+}
+
+/* Button Styling */
+.hover-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #343434;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+  font-family: "Degular Display", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  width: auto;
+  /* margin-top: 20px; */
+}
+
+
+
+/* Button Hover Effect */
+.hover-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: left 0.4s ease-in-out;
+  z-index: 0;
+  border: none;
+}
+
+.hover-button:hover::before {
+  left: 0;
+  border: none;
+}
+
+.hover-button:hover {
+  color: #343434;
+  border: none;
+}
+
+.hover-button span {
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .featured-row-wrapper{
+    transform: translateY(-70px);
+  }
+
+  #project-button{
+    padding: 1rem 5rem !important;
+  }
+  
+  #project-button:hover{
+   transform: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .featured-section {
+    padding: 0px !important;
+  }
+.project-button-prev,
+.project-button-next {
+display: none;
+}
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .featured-text {
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+  }
+
+  .featured-text {
+  display: none;
+  }
+
+  .featured-text-mob{
+    display: block;
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+  }
+
+
+  #icon-overlay{
+    bottom: 25px;
+    right: 14px;
+  }
+
+
+
+
+
+.slider-container{
+  gap:0px !important;
+  padding: 0px 20px  !important;
+}
+
+ #project-button {
+    font-size: 20px;
+    padding: 0.6rem 3rem;
+    font-weight: 900;
+    width: auto !important;
+  }
+
+  #project-button:hover{
+    transform: none;
+  }
+  .featured-image {
+    flex: auto; /* Show fewer images on smaller screens */
+  }
+
+ 
+
+
+}
+
+/* Desktop/Mobile View Management */
+.desktop-view {
+  display: block;
+}
+
+.mobile-view {
+  display: none;
+}
+
+/* Mobile Slider Styles */
+.mobile-view .slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  gap: 20px;
+  padding: 20px;
+}
+
+.mobile-view .slider-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.mobile-view .slider-item {
+  flex: 0 0 50%;
+  scroll-snap-align: start;
+  margin-right: 0px;
+}
+
+.mobile-view .featured-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.mobile-view .featured-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .desktop-view {
+    display: none;
+  }
+
+  
+
+  .icon-overlay{
+    opacity: 0 !important ;
+  }
+
+  .featured-image:hover .icon-overlay {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+
+
+  .mobile-view {
+    display: block;
+  }
+
+  .featured-projects-section {
+    padding: 20px 0;
+  }
+}
+
+/* Pagination Dots Styles */
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #666;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #fff;
+  transform: scale(1);
+}
+
+@media (min-width: 1200px) and (max-width:1919px) {
+  .featured-text{
+    font-size: 5em !important;
+  }
+
+
+
+
+ }

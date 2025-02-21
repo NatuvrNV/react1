@@ -1,0 +1,50 @@
+/* Ensure the container takes the full viewport height */
+.bg-image {
+  background-image: url('../../public/banner.png');
+  /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  /* Full height */
+  position: relative;
+  /* Allows content positioning */
+}
+
+.banner-heading-text {
+  font-family: Degular Display;
+  font-size: 72px;
+  font-weight: 900;
+  padding: 1rem;
+}
+
+.bannner-content-text {
+  color: #fff;
+  font-family: Degular Display;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 70px;
+  text-align: center;
+
+}
+
+.content-overlay {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+  .banner-heading-text {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-heading-text {
+    font-size: 8vw;
+  }
+}

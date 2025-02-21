@@ -1,0 +1,285 @@
+.metaland-container {
+  position: relative;
+  width: 100%;
+  height:auto; /* Ensure there's enough scrollable content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  transition: transform 1.2s ease-in-out; /* Smooth zoom transition */
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.img-text{
+  text-align: center;
+  font-size: 1rem;
+  line-height: 20px;
+
+}
+
+.products-text{
+  
+  line-height: 40px;
+}
+
+
+.meta-box{
+  flex-direction: column;
+  margin-top: 0.8em !important;
+  margin-right: -10px;
+}
+
+.pe-8{
+  padding-right: 1.4rem;
+}
+
+.meta-icon{
+  width: 80px;
+  height: 60px;
+  object-fit: contain;
+}
+
+#meta-section{
+align-items: flex-start;
+
+}
+
+#metaland-text{
+  text-align: left;
+  letter-spacing: 0.02em;
+  font-size: 1.4rem;
+  font-weight: 100 !important;
+  line-height: 0.6em;
+}
+
+#metaland-text2 p{
+  text-align: left;
+  letter-spacing: 0.02em;
+  line-height: 1.6em;
+  font-size: 1.4rem;
+  font-weight: 100 !important;
+}
+
+.meta-head{
+  font-size: 5em;
+  font-weight: 900;
+}
+
+
+
+.content {
+  max-width: 80%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.button-container {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.hover-button {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.metaland-text {
+  font-family: "Degular Display", sans-serif;
+  font-size: 100px;
+  
+  line-height: 100px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) and (max-width:1919px) {
+  .metaland-text{
+    font-size: 5em;
+  }
+ }
+
+/* Extra Large Devices (1200px and above) */
+@media (min-width: 1920px)  {
+  #metaland-text {
+   margin-top: 20px !important;
+    font-size: 1.8rem;
+    
+  }
+
+  #metaland-text2 p{
+    line-height: 1.8em;
+  }
+ }
+
+
+
+/* Media Queries */
+
+/* Extra Large Screens (1200px and above) */
+@media (min-width: 1200px) {
+  .metaland-text {
+    font-size: 90px; /* Slightly smaller font for large screens */
+  }
+}
+
+/* Large Screens (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .metaland-text {
+    font-size: 80px; /* Adjust font size */
+  }
+
+  #meta-head{
+    text-align: left !important;
+    letter-spacing: 2px;
+    font-family: Degular Display;
+    font-size: 5em !important;
+    
+    line-height: 64px;
+    
+  }
+
+  iframe {
+    height: 450px; /* Smaller iframe height */
+  }
+}
+
+/* Medium Screens (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .metaland-container {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .metaland-text {
+    font-size: 60px; /* Smaller font size */
+  }
+
+  iframe {
+    height: 400px; /* Reduced iframe height */
+  }
+
+  .button-container {
+    right: 1.5rem;
+  }
+}
+
+/* Small Screens (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .metaland-container {
+    padding: 10px; /* Add padding for smaller devices */
+  }
+
+  .metaland-text {
+    font-size: 50px; /* Smaller font size */
+  }
+
+  iframe {
+    height: 350px; /* Reduced iframe height */
+  }
+
+  .button-container {
+    right: 1rem;
+  }
+}
+
+/* Extra Small Screens (Below 576px) */
+@media (max-width: 575px) {
+  .metaland-container {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    margin: 20px 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .meta-box{
+    display: none !important;
+  }
+
+  #meta-head{
+    text-align: center !important;
+    font-size: 56px;
+    
+  }
+
+  .meta-text{
+    padding: 10px 0px;
+    line-height: 24px;
+  }
+
+  .products-text{
+    font-size: 15px ;
+    line-height: 20px;
+  }
+
+  .content {
+    max-width: 100%;
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
+
+  .video-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  iframe {
+    height: 300px;
+    width: 100%;
+  }
+
+  .button-container {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+/* Ultra Small Devices (Below 400px) */
+@media (max-width: 576px) {
+  .metaland-text {
+    font-size: 30px; /* Further reduce text size */
+  }
+
+  #metaland-text {
+    text-align: center;
+    font-size: 1.4rem;
+    
+  }
+
+  #metaland-text2 p {
+    text-align: center;
+    font-size: 18px !important;
+    line-height: 30px;
+  }
+
+  .meta-head{
+    text-align: center;
+    font-weight: 500 !important;
+  }
+
+  .meta-icon{
+    width: 40px;
+    height: 40px;
+  }
+
+  iframe {
+    height: 200px; /* Adjust iframe height for very small screens */
+  }
+}

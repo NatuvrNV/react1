@@ -1,0 +1,273 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+  position: relative;
+  aspect-ratio: 1 / 0.7;
+  overflow: visible;
+  transition: z-index 0.3s ease-out;
+  padding: 5px;
+}
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+/* Active state - Apply effects on click */
+.grid-item.active {
+  z-index: 10;
+}
+
+/* Default positioning - for items that are not in the last row */
+.grid-item.active:not(.last-row) .grid-image {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0; /* Scale from top */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* For items in the first two columns */
+.grid-item:nth-child(3n-2).active .grid-image,
+.grid-item:nth-child(3n-1).active .grid-image {
+  left: 0;
+  transform-origin: left center;
+}
+
+/* For the last column */
+.grid-item:nth-child(3n).active .grid-image {
+  right: 0;
+  transform-origin: right center;
+}
+
+/* Dim other images when one is active */
+.image-grid .grid-item:not(.active) .grid-image {
+  filter: brightness(0.9);
+}
+
+/* Handle last row scaling from bottom to top */
+.grid-item.last-row.active .grid-image {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  bottom: 0; /* Scale from bottom */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform-origin: center bottom; /* Scale upwards */
+}
+
+.transition-button {
+  align-items: center;
+  background-color: #171515;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 11px;
+  height: 45px;
+  justify-content: center;
+  margin: 10px 0px 0px -5px;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: relative;
+  transition: width 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  width: 80px;
+}
+
+.transition-button .icon {
+  color: #fff;
+  font-size: 21px;
+  transition: color 0.3s ease;
+}
+
+.transition-button .text {
+  color: #fff;
+  font-size: 12px;
+  left: -100%;
+  opacity: 0;
+  position: absolute;
+  transition: left 0.3s ease, opacity 0.3s ease;
+  line-height: 10px;
+}
+
+.transition-button:before {
+  background-color: #fff;
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transition: left 0.3s ease;
+  width: 100%;
+  z-index: 0;
+}
+
+.transition-button:hover {
+  width: 80px; /* Increase width on hover */
+}
+
+.transition-button:hover .text {
+  left: 5px; /* Slide in the text */
+  opacity: 1; /* Show text */
+}
+
+.transition-button:hover .icon {
+  color: black; /* Change icon color to black on hover */
+}
+
+.transition-button:hover::before {
+  left: 0; /* Move the white background from left to right */
+}
+
+.transition-button:hover .text {
+  color: #000; /* Text color becomes black on hover */
+}
+/* Light Mode */
+.light-mode {
+  background-color: #171515; /* White background */
+  color: #000000; /* Black text */
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 0px 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #171515; /* Black background */
+  color: #ffffff; /* White text */
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 0px 20px;
+}
+
+/* Header Container for alignment */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px; /* Adds padding inside */
+}
+
+/* Time Text */
+.time-text {
+  font-size: 21px;
+  margin: 0;
+  text-align: left;
+  color: #fff;
+}
+
+/* Toggle Button */
+.toggle-button {
+  background: none;
+  border: 2px solid #fff; /* Black border in light mode */
+  color: #000; /* Black icon in light mode */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.toggle-button:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.dark-mode .toggle-button {
+  border: 2px solid #fff; /* White border in dark mode */
+  color: #fff; /* White icon in dark mode */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item:nth-child(2n).active .grid-image {
+    right: 0;
+    left: auto;
+    transform-origin: right center;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item.active .grid-image {
+    position: relative;
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;
+    transform: none;
+    transform-origin: center;
+  }
+}
+
+/* Back Button Styling */
+.back-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #343434;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+  font-family: "Degular Display", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.back-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: left 0.4s ease-in-out;
+  z-index: 0;
+  border: none;
+}
+
+.back-button:hover::before {
+  left: 0;
+  border: none;
+}
+.back-button:hover {
+  color: #0e0d0d;
+  background-color: #fff;
+  border: none;
+}
+
+.back-button span {
+  position: relative;
+  z-index: 1;
+  color: inherit;
+}
+
+.back-button .arrow {
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  color: inherit;
+}
