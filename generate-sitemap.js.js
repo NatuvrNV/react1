@@ -1,24 +1,26 @@
 const fs = require('fs');
 const path = require('path');
 const { SitemapStream, streamToPromise } = require('sitemap');
-const glob = require('glob');
 
 (async () => {
-    const pages = glob.sync('src/pages/**/*.js'); // Adjust if needed
-    const urls = pages.map((page) => {
-        const route = page.replace(/^src\/pages\/|\.js$/g, '').replace(/\/index$/, '');
-        return route === 'home' ? '/' : `/${route}`;
-    });
+    const urls = [
+        { url: '/', changefreq: 'daily', priority: 1.0 },
+        { url: '/projects', changefreq: 'weekly', priority: 0.8 },
+        { url: '/projects/single-project-1', changefreq: 'weekly', priority: 0.8 },
+        { url: '/products', changefreq: 'weekly', priority: 0.8 },
+        { url: '/contact', changefreq: 'monthly', priority: 0.7 },
+        { url: '/about', changefreq: 'monthly', priority: 0.7 },
+    ];
 
     const sitemap = new SitemapStream({ hostname: 'https://metaguise.com' });
-    
-    urls.forEach((url) => {
-        sitemap.write({ url, changefreq: 'daily', priority: url === '/' ? 1.0 : 0.8 });
+
+    urls.forEach((entry) => {
+        sitemap.write(entry);
     });
 
     sitemap.end();
 
     const data = await streamToPromise(sitemap);
     fs.writeFileSync(path.join(__dirname, 'public', 'sitemap.xml'), data);
-    console.log('✅ Sitemap generated!');
+    console.log('✅ Sitemap generated correctly!');
 })();

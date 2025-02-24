@@ -51,7 +51,7 @@ const Contact = () => {
     const emailParams = {
       from_name: formData.name,
       from_email: formData.email,
-      phone: formData.phone,
+       from_phone: formData.phone,
       message: formData.message,
     };
 
