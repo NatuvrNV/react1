@@ -84,22 +84,23 @@ const Partner = () => {
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">
           {/* Left Section */}
-          <Col md={6} className="contact-left d-flex flex-column justify-content-center gap-4">
+          <Col md={6} className="contact-left d-flex align-items-center justify-content-center gap-4">
             <div id="contact-desktop" className="contactus-text">
               <p>We'd Love</p>
               <p>to Work</p>
               <p>With You.</p>
+              <div className="lead-contact mt-4">
+              <p>Interested in collaborating with us?</p>
+              <p>Let's discuss how we can help and</p>
+              <p>support your creative needs.</p>
+            </div>
             </div>
 
             <div id="contact-mob" className="contactus-text">
               <p>We'd Love to </p>
               <p>Work With You.</p>
             </div>
-            <div className="lead-contact">
-              <p>Interested in collaborating with us?</p>
-              <p>Let's discuss how we can help and</p>
-              <p>support your creative needs.</p>
-            </div>
+         
           </Col>
 
           {/* Right Section */}
@@ -145,7 +146,7 @@ const Partner = () => {
   dropdownClass="bg-dark text-white"
   value={formData.phone}
   onChange={handlePhoneChange}
-  placeholder="Enter your Mobile number" // Force placeholder
+  placeholder="Enter phone number with Country Code" // Force placeholder
   required
 />
 

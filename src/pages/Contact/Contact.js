@@ -86,20 +86,22 @@ const Contact = () => {
 
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">
-          <Col md={6} className="contact-left d-flex flex-column justify-content-center gap-4">
+          <Col md={6} className="contact-left d-flex align-items-center justify-content-center gap-4">
             <div id="contact-desktop" className="contactus-text">
               <p>We'd Love</p>
               <p>to Connect</p>
               <p>with You.</p>
+
+              <div className="lead-contact mt-4">
+              <p>Share your vision, and let's create</p>
+              <p>something amazing together.</p>
+            </div>
             </div>
             <div id="contact-mob" className="contactus-text">
               <p>We'd Love to </p>
               <p>Connect with You.</p>
             </div>
-            <div className="lead-contact">
-              <p>Share your vision, and let's create</p>
-              <p>something amazing together.</p>
-            </div>
+          
           </Col>
 
           <Col md={6} className="contact-right d-flex flex-column justify-content-center">
@@ -144,7 +146,7 @@ const Contact = () => {
   dropdownClass="bg-dark text-white"
   value={formData.phone}
   onChange={handlePhoneChange}
-  placeholder="Enter your Mobile number" // Added placeholder here
+  placeholder="Enter phone number with Country Code " // Added placeholder here
   required
 />
 

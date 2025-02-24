@@ -705,7 +705,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaShingle",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/QqrYA55JYHE",
       youtubeLink: "https://www.youtube.com/shorts/x5Gy-hhy9xI",
       instagramLink: "https://www.instagram.com/p/C7BWFlryZs4/",
       Productname:"MetaShingles",
@@ -730,7 +730,7 @@ export const SingleProductDetail = [
     },
     {
       name: "CascadingKeys",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/JF9Y-sPUlEM",
       youtubeLink: "https://www.youtube.com/watch?v=WddafN0E69M",
       instagramLink: "https://www.instagram.com/p/C6TeqtOSgsn/?img_index=1",
       Productname:"Cascading Keys",
@@ -748,7 +748,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaCassette",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/oOiyN07PwQE",
       youtubeLink: "https://www.youtube.com/watch?v=AtzVGYkpOxs",
       instagramLink: "https://www.instagram.com/p/C6svvLSSWU2/?img_index=1",
       Productname:"MetaCassette",
@@ -781,7 +781,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaFlute",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/xQ9DUg325RM",
       youtubeLink: "https://www.youtube.com/shorts/L6R_17NCRcY",
       instagramLink: "https://www.instagram.com/p/C52rD3KyYBU/?img_index=4",
       Productname:"MetaFlute",
@@ -809,7 +809,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaFold",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/bztzIQXiq30",
       youtubeLink: "https://www.youtube.com/watch?v=Zyfa8ufnC0s",
       instagramLink: "https://www.instagram.com/p/DGSqyO1IT63/?img_index=1",
       Productname:"MetaFold",
@@ -828,7 +828,7 @@ export const SingleProductDetail = [
     {
       name: "MetaFin",
       videoLink: "https://www.youtube.com/watch?v=HVRcBLgKIeA",
-      youtubeLink: "",
+      youtubeLink: "https://www.youtube.com/watch?v=HVRcBLgKIeA",
       instagramLink: "https://www.instagram.com/p/C0ok5qASjfQ/?img_index=3",
       Productname:"MetaFin",
       metatittles:"Parametric Metal Facade with Fluid Curves",
@@ -846,7 +846,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaHydra",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=WZQaImzTZiE",
       youtubeLink: "https://www.youtube.com/watch?v=WZQaImzTZiE",
       instagramLink: "https://www.instagram.com/p/Cxp-xPFv7RR/?img_index=1",
       Productname:"MetaHydra",
@@ -863,7 +863,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaLouver",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/HVUP7YV59PM",
       youtubeLink: "https://www.youtube.com/shorts/EerdVK4Ax9M",
       instagramLink: "https://www.instagram.com/p/C_m5fBNhNuX/?img_index=1",
       Productname:"MetaLouver",
@@ -885,7 +885,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaPlank",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/gSDtx-QkGhw",
       youtubeLink: "https://www.youtube.com/shorts/gSDtx-QkGhw",
       instagramLink: "https://www.instagram.com/p/C-nDsgvyP1z/?img_index=1",
       Productname:"MetaPlank",
@@ -903,7 +903,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaGate",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/2hPBUOLftgA",
       youtubeLink: "https://www.youtube.com/watch?v=3Fm3gxL0lPg",
       instagramLink: "https://www.instagram.com/p/C55XSGxSSsh/?img_index=3",
       Productname:"MetaGate",
@@ -922,7 +922,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaSlider",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=bFMkX9cXhPM",
       youtubeLink: "https://www.youtube.com/watch?v=bFMkX9cXhPM",
       instagramLink: "https://www.instagram.com/reel/DAFyTxQSMWu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Productname:"MetaSlider",
@@ -938,7 +938,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaBlox",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=YzKljcP5S4s",
       youtubeLink: "https://www.youtube.com/watch?v=YzKljcP5S4s",
       instagramLink: "https://www.instagram.com/p/Cr5Xh-INnvp/",
       Productname:"MetaBlox",
@@ -954,7 +954,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaCopper",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=-pLr2ZVXycY",
       youtubeLink: "https://www.youtube.com/watch?v=-pLr2ZVXycY",
       instagramLink: "https://www.instagram.com/p/C39pYFwyFKK/",
       Productname:"MetaCopper",
@@ -978,7 +978,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaCorten",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=MG0e8RfM-6s",
       youtubeLink: "https://www.youtube.com/watch?v=MG0e8RfM-6s",
       instagramLink: "https://www.instagram.com/p/CgXMjRilJco/",
       Productname:"MetaCorten",
@@ -997,7 +997,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaGrey",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=AtzVGYkpOxs",
       youtubeLink: "https://www.youtube.com/watch?v=AtzVGYkpOxs",
       instagramLink: "https://www.instagram.com/p/DCrHdiwyBBL/?img_index=1",
       Productname:"MetaGrey",
@@ -1020,7 +1020,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaPatina",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/VP3dKv1dUAw",
       youtubeLink: "https://www.youtube.com/watch?v=zk2w03avHp4",
       instagramLink: "https://www.instagram.com/p/C_FQoMaSB8-/?img_index=1",
       Productname:"MetaPatina",
@@ -1041,7 +1041,7 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaWood",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/f-mC4kTXhCg",
       youtubeLink: "https://www.youtube.com/shorts/sRjbbaa9cbw",
       instagramLink: "https://www.instagram.com/p/C8_hZvXS2OA/?img_index=1",
       Productname:"MetaWood",
@@ -1065,7 +1065,7 @@ export const SingleProductDetail = [
     },
     {
       name: "SolidPanel",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/VTGrtakTJgM",
       youtubeLink: "https://www.youtube.com/watch?v=oEKOjT0tAWk",
       instagramLink: "https://www.instagram.com/p/C_kTfLGSf3W/",
       Productname:"Solid Panels",
