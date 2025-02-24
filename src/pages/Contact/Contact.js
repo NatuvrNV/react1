@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PhoneInput from "react-phone-input-2";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import Footer from "../../components/Footer"; // Import Footer component
 import "./Contact.css";
@@ -14,6 +15,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
 
@@ -25,6 +27,21 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const handlePhoneChange = (value) => {
+    setFormData({ ...formData, phone: value });
+  };
+
+  useEffect(() => {
+    const inputField = document.querySelector(".form-text input");
+    if (inputField) {
+      if (!formData.phone || formData.phone.length <= 3) {
+        inputField.setAttribute("placeholder", "Enter your mobile number");
+      } else {
+        inputField.setAttribute("placeholder", "");
+      }
+    }
+  }, [formData.phone]);
+
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent page refresh
@@ -34,6 +51,7 @@ const Contact = () => {
     const emailParams = {
       from_name: formData.name,
       from_email: formData.email,
+      phone: formData.phone,
       message: formData.message,
     };
 
@@ -46,8 +64,8 @@ const Contact = () => {
       );
 
       console.log("Email sent successfully!", response);
-      setFeedbackMessage("Email sent successfully! We'll be in touch soon.");
-      setFormData({ name: "", email: "", message: "" }); // Reset form fields
+      setFeedbackMessage("Thank you for your enquiry. We will get in touch with you soon!");
+      setFormData({ name: "", email: "", phone: "", message: "" }); // Reset form fields
     } catch (error) {
       console.error("Error sending email:", error);
       setFeedbackMessage("Failed to send email. Please try again.");
@@ -68,14 +86,12 @@ const Contact = () => {
 
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">
-          {/* Left Section */}
           <Col md={6} className="contact-left d-flex flex-column justify-content-center gap-4">
             <div id="contact-desktop" className="contactus-text">
               <p>We'd Love</p>
               <p>to Connect</p>
               <p>with You.</p>
             </div>
-
             <div id="contact-mob" className="contactus-text">
               <p>We'd Love to </p>
               <p>Connect with You.</p>
@@ -86,7 +102,6 @@ const Contact = () => {
             </div>
           </Col>
 
-          {/* Right Section */}
           <Col md={6} className="contact-right d-flex flex-column justify-content-center">
             <Form className="w-100" onSubmit={handleSubmit}>
               <Row>
@@ -118,12 +133,31 @@ const Contact = () => {
                 </Col>
               </Row>
 
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formPhone">
+                  <PhoneInput
+  enableSearch
+  inputClass="bg-contact form-text border-0 w-100"
+  containerClass="w-100"
+  inputStyle={{ width: "100%" }}
+  dropdownClass="bg-dark text-white"
+  value={formData.phone}
+  onChange={handlePhoneChange}
+  placeholder="Enter your Mobile number" // Added placeholder here
+  required
+/>
+
+                  </Form.Group>
+                </Col>
+              </Row>
+
               <Form.Group controlId="formMessage" className="mb-4">
                 <Form.Control
                   as="textarea"
                   rows={4}
                   name="message"
-                  placeholder="Message"
+                  placeholder="Tell us more about your Project"
                   className="bg-contact form-text border-0"
                   value={formData.message}
                   onChange={handleChange}
@@ -137,9 +171,8 @@ const Contact = () => {
                 </button>
               </div>
 
-              {/* Feedback message */}
               {feedbackMessage && (
-                <p className={`mt-3 ${feedbackMessage.includes("success") ? "text-success" : "text-danger"}`}>
+                <p className={`mt-3 ${feedbackMessage.includes("success") ? "text-success" : "text"}`}>
                   {feedbackMessage}
                 </p>
               )}
@@ -148,7 +181,6 @@ const Contact = () => {
         </Row>
       </Container>
 
-      {/* Add Footer */}
       <Footer />
     </>
   );

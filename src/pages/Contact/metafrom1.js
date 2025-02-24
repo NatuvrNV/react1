@@ -51,18 +51,6 @@ const Contact = ({ brochureName }) => {
       "Coffee Table Book": "/assets/brochure/12-2-25-mobile.pdf",
     };
 
-    const changeFavicon = (faviconURL) => {
-      const link = document.querySelector("link[rel~='icon']");
-      if (!link) {
-        const newLink = document.createElement("link");
-        newLink.rel = "icon";
-        newLink.href = faviconURL;
-        document.head.appendChild(newLink);
-      } else {
-        link.href = faviconURL;
-      }
-    };
-
     const filePath = brochureMap[detectedBrochure];
 
     if (filePath) {
@@ -169,7 +157,7 @@ const Contact = ({ brochureName }) => {
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formPhone">
                     <PhoneInput
-                      country={"in"}
+                     
                       enableSearch
                       inputClass="bg-contact form-text border-0 w-100"
                       containerClass="w-100"

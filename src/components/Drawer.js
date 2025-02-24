@@ -3,6 +3,7 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Drawer.css";
 import logo1 from "../assets/metaguiseblk.png";
+import { MdArrowOutward } from "react-icons/md";  // Import the icon
 
 function Drawer({ isOpen, toggleDrawer }) {
   return (
@@ -40,7 +41,7 @@ function Drawer({ isOpen, toggleDrawer }) {
         {/* Contact Section */}
         <Col
           md={8}
-          className="d-flex flex-column justify-content-center p-4 contact-section"
+          className="d-flex flex-column  p-4 contact-section"
         >
           <div className="text-right">
             <button
@@ -51,7 +52,7 @@ function Drawer({ isOpen, toggleDrawer }) {
               ✕
             </button>
           </div>
-          <div className="text-justify ">
+          <div className="text-justify px-2 ">
             <img
               src={logo1}
               alt="Metaguise Logo"
@@ -63,14 +64,28 @@ function Drawer({ isOpen, toggleDrawer }) {
               <h5 className="nav-haeding" style={{ paddingLeft: "40px" }}>
                 Metaland by Metaguise
               </h5>
+
               <p className="nav-text" style={{ paddingLeft: "40px",lineHeight:"30px" }}>
-                Basement Floor, K9/46, DLF PH 2, <br></br>Gurgaon, Haryana
+              Visit our Flagship experience Center at <br></br>
+                 Basement Floor, K9/46, DLF PH 2, Gurgaon, Haryana
+                 <br></br>
+
+<a id="visit"
+      href="https://www.google.com/maps/place/METALAND%E2%84%A2+BY+METAGUISE%C2%AE/@28.4631664,77.0973513,17z/data=!3m1!4b1!4m6!3m5!1s0x390d19455a6f62b1:0x60bdf56eb4db946d!8m2!3d28.4631664!4d77.0973513!16s%2Fg%2F11tk30q8yv?entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="visit-now-link"
+    >
+      Visit Now <MdArrowOutward></MdArrowOutward>
+    </a>
+               
               </p>
               {/* First Section */}
               <Col md={6}>
                 <div>
-                  <h5 className="nav-haeding">Email</h5>
-                  <p className="nav-text">contactus@metaguise.com</p>
+                  <h5 className="nav-haeding">Get in Touch</h5>
+                  <a className="nav-text" href="mailto:contactus@metaguise.com">contactus@metaguise.com</a>
+                  
                 </div>
               </Col>
 
@@ -78,17 +93,20 @@ function Drawer({ isOpen, toggleDrawer }) {
               <Col md={6}>
                 <div>
                   <h5 className="nav-haeding">Phone</h5>
-                  <p className="nav-text">9811604449 / 9355604449</p>
+                  <a className="nav-text" href="tel:9811604449">
+                  9811604449 / 9355604449
+                  </a>
+                
                 </div>
               </Col>
             </Row>
           </Container>
-          <Container>
+          <Container id="social">
             <Row>
               {/* First Section */}
               <Col md={6}>
                 <div>
-                  <h5 className="nav-haeding">Social</h5>
+                  <h5 className="nav-haeding ">Social</h5>
 
                   <div
                     style={{

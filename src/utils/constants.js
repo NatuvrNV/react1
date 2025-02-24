@@ -55,7 +55,7 @@ export const SingleprojectDetail = [
     //Luxe
     {
       name: "Luxe",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/rMUBnzQeJps",
       youtubeLink: "https://www.youtube.com/shorts/6Wk0hLXPGPo?feature=share",
       instagramLink: "https://www.instagram.com/reel/DDeZaTDyLPS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Luxe Manor",
@@ -81,7 +81,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "A13-43",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=bsZgLDDyA3A",
       youtubeLink: "https://www.youtube.com/watch?v=bsZgLDDyA3A",
       instagramLink: "https://www.instagram.com/p/CyTO-QXyZGj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A13-43",
@@ -107,7 +107,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "D5-3",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=hFQKyKcM1G8",
       youtubeLink: "https://www.youtube.com/shorts/gE5wc_E-6Jg?feature=share",
       instagramLink: "https://www.instagram.com/p/DADNgGVyMxC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"D5-3",
@@ -134,7 +134,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "gowri",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/KzYLNPaMkB8",
       youtubeLink: "https://www.youtube.com/shorts/KzYLNPaMkB8?feature=share",
       instagramLink: "https://www.instagram.com/reel/C5VhWpTyXzx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Gowri Jewelers",
@@ -175,7 +175,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "deepak",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=dAarntEa15o",
       youtubeLink: "https://www.youtube.com/watch?v=dAarntEa15o",
       instagramLink: "https://www.instagram.com/p/C8bd64HyWOX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Deepak Sweets",
@@ -208,7 +208,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "A19",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/EerdVK4Ax9M?feature=share",
       youtubeLink: "https://www.youtube.com/shorts/EerdVK4Ax9M?feature=share",
       instagramLink: "https://www.instagram.com/p/DBQQFHRyB7-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A19-DL1",
@@ -235,7 +235,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "A18",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=-K2JTghXJTw",
       youtubeLink: "https://www.youtube.com/watch?v=-K2JTghXJTw",
       instagramLink: "https://www.instagram.com/reel/Cy6EXmmSizr/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A18-DL1",
@@ -263,7 +263,9 @@ export const SingleprojectDetail = [
     },
     {
       name: "MVA-DL1",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=N5lCQ8fSvgA",
+      youtubeLink: "https://www.youtube.com/watch?v=N5lCQ8fSvgA",
+      instagramLink: "https://www.instagram.com/p/C92IFsGSdqx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"MVA-DL1",
       metatittles:"Modern Residential Elevation with MetaCassette & MetaGate",
       metadescription:"Metaguise designed a sleek residential facade featuring a durable MetaGate and grooved MetaCassette panels, combining security with modern aesthetics",
@@ -287,7 +289,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "metaland",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=mwmFELxs14E",
       youtubeLink: "https://www.youtube.com/watch?v=mwmFELxs14E",
       instagramLink: "https://www.instagram.com/reel/C6f5mGtSajX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Metaland",
@@ -311,7 +313,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "micasa",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=d_0Ie4xGsKQ&feature=youtu.be",
       youtubeLink: "https://www.youtube.com/watch?v=d_0Ie4xGsKQ&feature=youtu.be",
       instagramLink: "https://www.instagram.com/p/DAhz8F2S2Sf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Micasa",
@@ -330,7 +332,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "Yashika",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/PjSB1brakw0?feature=share",
       youtubeLink: "https://www.youtube.com/shorts/PjSB1brakw0?feature=share",
       instagramLink: "https://www.instagram.com/p/C3Uxk3VSyQO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Yashika",
@@ -350,7 +352,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "C76",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=r6kNjqo6PgQ",
       youtubeLink: "https://www.youtube.com/watch?v=r6kNjqo6PgQ",
       instagramLink: "https://www.instagram.com/reel/C5lPK9QSXHU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"C76",
@@ -376,7 +378,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "5107",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/oOiyN07PwQE?feature=share",
       youtubeLink: "https://www.youtube.com/shorts/oOiyN07PwQE?feature=share",
       instagramLink: "https://www.instagram.com/p/C0d5yYYS90q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"5107",
@@ -400,7 +402,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "A297",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=_ei1jkRmp_Q",
       youtubeLink: "https://www.youtube.com/watch?v=_ei1jkRmp_Q",
       instagramLink: "https://www.instagram.com/p/C3KeYlvyFdK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A297",
@@ -440,7 +442,7 @@ export const SingleprojectDetail = [
     // },
     {
       name: "C34-573",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=O99SARUeRa0",
       youtubeLink: "https://www.youtube.com/watch?v=O99SARUeRa0",
       instagramLink: "https://www.instagram.com/p/C8wEVfgSrCF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"C3/4-S73",
@@ -462,7 +464,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "DLF4",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=gi0qDnaOmfI",
       youtubeLink: "https://www.youtube.com/watch?v=gi0qDnaOmfI",
       instagramLink: "https://www.instagram.com/p/C2uQpm1y7JB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"DLF4",
@@ -488,7 +490,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "CS5-MA",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=6RoELQ5I-1g",
       youtubeLink: "https://www.youtube.com/watch?v=6RoELQ5I-1g",
       instagramLink: "https://www.instagram.com/p/CyDrwYkSG7e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"CS5-MA",
@@ -517,7 +519,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "espace",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=0Or6FQP59x4",
       youtubeLink: "https://www.youtube.com/watch?v=0Or6FQP59x4",
       instagramLink: "https://www.instagram.com/p/C4NN0B3yv82/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Espace Nirvana",
@@ -544,7 +546,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "MA-543",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=Urze-UjHcLU",
       youtubeLink: "https://www.youtube.com/watch?v=Urze-UjHcLU",
       instagramLink: "https://www.instagram.com/p/C_CsfuZy_UM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"MA-543",
@@ -567,7 +569,7 @@ export const SingleprojectDetail = [
     },
     {
       name: "Q62-RA",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/watch?v=oEKOjT0tAWk",
       youtubeLink:"https://www.youtube.com/watch?v=oEKOjT0tAWk",
       instagramLink:"https://www.instagram.com/p/C_m5fBNhNuX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Q62-RA",

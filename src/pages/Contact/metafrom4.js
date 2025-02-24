@@ -156,7 +156,7 @@ const Contact = ({ brochureName }) => {
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formPhone">
                     <PhoneInput
-                      country={"in"}
+                 
                       enableSearch
                       inputClass="bg-contact form-text border-0 w-100"
                       containerClass="w-100"

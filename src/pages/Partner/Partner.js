@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
+import PhoneInput from "react-phone-input-2";
 import Footer from "../../components/Footer"; // Import Footer component
 import "./Partner.css";
 import { Helmet } from "react-helmet-async";
 import emailjs from "@emailjs/browser"; // Import EmailJS for SMTP
+
 
 const Partner = () => {
   // State for form data
@@ -13,12 +16,23 @@ const Partner = () => {
     message: "",
   });
 
+  useEffect(() => {
+    const phoneInputField = document.querySelector(".phone-input input");
+    if (phoneInputField) {
+      phoneInputField.setAttribute("placeholder", "Enter your Mobile number");
+    }
+  }, [formData.phone]); // Reapply placeholder when phone value updates
+
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
 
   // Handle input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handlePhoneChange = (value) => {
+    setFormData({ ...formData, phone: value });
   };
 
   // Handle form submission
@@ -42,7 +56,7 @@ const Partner = () => {
       );
 
       console.log("Email sent successfully!", response);
-      setFeedbackMessage("Email sent successfully! We'll be in touch soon.");
+      setFeedbackMessage("Thank you for your enquiry. We will get in touch with you soon!.");
       setFormData({ name: "", email: "", message: "" }); // Reset form fields
     } catch (error) {
       console.error("Error sending email:", error);
@@ -51,6 +65,11 @@ const Partner = () => {
       setIsSending(false);
     }
   };
+
+
+
+
+
 
   return (
     <>
@@ -115,12 +134,31 @@ const Partner = () => {
                 </Col>
               </Row>
 
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formPhone">
+                  <PhoneInput
+  enableSearch
+  inputClass="bg-contact form-text border-0 w-100 phone-input"
+  containerClass="w-100"
+  inputStyle={{ width: "100%" }}
+  dropdownClass="bg-dark text-white"
+  value={formData.phone}
+  onChange={handlePhoneChange}
+  placeholder="Enter your Mobile number" // Force placeholder
+  required
+/>
+
+                  </Form.Group>
+                </Col>
+              </Row>
+
               <Form.Group controlId="formMessage" className="mb-4">
                 <Form.Control
                   as="textarea"
                   rows={4}
                   name="message"
-                  placeholder="Message"
+                  placeholder="Add a Message"
                   className="bg-contact form-text border-0"
                   value={formData.message}
                   onChange={handleChange}
@@ -136,7 +174,7 @@ const Partner = () => {
 
               {/* Feedback message */}
               {feedbackMessage && (
-                <p className={`mt-3 ${feedbackMessage.includes("success") ? "text-success" : "text-danger"}`}>
+                <p className={`mt-3 ${feedbackMessage.includes("success") ? "text" : "text"}`}>
                   {feedbackMessage}
                 </p>
               )}

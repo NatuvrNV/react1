@@ -61,9 +61,26 @@ html, body, #root {
   height: 100%;
 }
 
+#visit{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 12px 0px;
+}
+
 /* Text styles */
 .nav-haeding {
   font-size: 36px;
+  font-family: 'Degular Display', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-left: 25px; 
+}
+
+.nav-haeding2 {
+  font-size: 25px;
   font-family: 'Degular Display', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
@@ -76,7 +93,14 @@ html, body, #root {
   font-weight: normal;
   letter-spacing: 1px;
   text-align: justify;
-  padding-left: 30px;
+  padding-left: 25px;
+  color: #000;
+}
+
+.nav-text a {
+  font-family: 'Degular Display', sans-serif;
+  color: #000;
+  font-size: 18px;
 }
 
 .text-white {
@@ -97,4 +121,17 @@ html, body, #root {
 }
 .flex-column {
   padding-left: 50px;
+}
+
+#social{
+  padding-top: 1.5rem !important;
+}
+
+@media (min-width: 1920px){
+  .contact-section{
+    gap: 40px !important;
+  }
+  #social{
+    padding-top: 0rem !important;
+  }
 }
