@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="tw-flex tw-gap-4">
               <img src={PhoneIcon} alt="phone" />
               <a
-                href="phoneto:981-160-4449"
+                href="981-160-4449"
                 className="tw-text-sm md:tw-text-base"
               >
                 981-160-4449 / 935-560-4449

@@ -66,7 +66,6 @@ const Contact = ({ brochureName }) => {
     const filePath = brochureMap[detectedBrochure];
 
     if (filePath) {
-      changeFavicon("/%PUBLIC_URL%/favicon.png"); // Change favicon
       window.open(filePath, "_blank"); // Open in a new tab
     }
   };
