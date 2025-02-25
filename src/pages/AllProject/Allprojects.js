@@ -9,6 +9,7 @@ import { SingleprojectDetail } from "../../utils/constants";
 import { ProjectImages as images } from "../../utils/constants";
 import { Helmet } from "react-helmet-async";
 
+
 const Allprojects = () => {
   const navigate = useNavigate(); // Initialize navigate function
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);

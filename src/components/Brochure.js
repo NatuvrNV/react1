@@ -9,6 +9,8 @@ import Metafunction from "../assets/Brochures/functionopen.jpg";
 import Metaparametric from "../assets/Brochures/parametricopen.jpg";
 import Metasurface from "../assets/Brochures/patinaopen.jpg";
 
+
+
 const Brochure = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const navigate = useNavigate();
