@@ -408,6 +408,7 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
             alt="YouTube Video Thumbnail"
             className="grid-image"
+            loading="lazy" 
           />
           <div className="play-icon">
             <FaPlay size={40} color="white" />
@@ -430,6 +431,7 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
         src={`${process.env.PUBLIC_URL}/${image}`}
         className="grid-image"
         alt={`Project item ${index + 1}`}
+        loading="lazy" 
       />
     </div>
   );

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import LazyLoad from "react-lazy-load"; // Import LazyLoad
 import "./Metaland.css";
 import VR from '../assets/vr.png';
 import Maze from '../assets/maze.png';
@@ -8,6 +7,7 @@ import Building from '../assets/building.png';
 const Metaland = () => {
   const [scale, setScale] = useState(1);
   const [iframeScale, setIframeScale] = useState(1);
+  const [isMouseOver, setIsMouseOver] = useState(false);
   const [prevScrollY, setPrevScrollY] = useState(0);
   const scaleFactor = 0.005;
   const iframeScaleFactor = 0.008;
@@ -63,23 +63,16 @@ const Metaland = () => {
               </p>
             </div>
             <div className="row mt-xl-4 mb-4 mb-xl-0 ">
-              {/* Lazy Loading Images */}
               <div className="col-4 d-flex align-items-center meta-box ">
-                <LazyLoad height={80}>
-                  <img src={VR} alt="arrow" className="w-full meta-icon" />
-                </LazyLoad>
+                <img src={VR} alt="arrow" className="w-full meta-icon"></img>
                 <p className="text-sm mt-2 img-text">Experiential Technology</p>
               </div>
               <div className="col-4 d-flex align-items-center meta-box ">
-                <LazyLoad height={80}>
-                  <img src={Maze} alt="maze" className="w-full meta-icon" />
-                </LazyLoad>
+                <img src={Maze} alt="maze" className="w-full meta-icon"></img>
                 <p className="text-sm mt-2 img-text">Interactivity & Experience</p>
               </div>
               <div className="col-4 d-flex align-items-center meta-box ">
-                <LazyLoad height={80}>
-                  <img src={Building} alt="building" className="w-full meta-icon" />
-                </LazyLoad>
+                <img src={Building} alt="building" className="w-full meta-icon"></img>
                 <p className="text-sm mt-2 img-text">Hands-on project Consultation</p>
               </div>
             </div>
@@ -87,40 +80,46 @@ const Metaland = () => {
           {/* Right Column */}
           <div className="col-xl-8 col-12">
             <p id="metaland-text2" className="text-sm text-left text-gray-600">
-              <p>
-                MetaLand by Metaguise is DRV’s immersive experience center, redefining architecture through cutting-edge sensory technologies.
-              </p>
-              <p>
-                Here, visitors engage in an interactive journey exploring architectural possibilities where innovation and imagination converge. From the experiential Product Maze to CGI, VR, and AR applications, MetaLand offers a glimpse into the future. It’s a space where today’s innovations meet tomorrow’s potential, with facade products at the forefront of design.
-              </p>
-              <p>
-                MetaLand is not just a destination—it’s an immersion into architectural evolution.
-              </p>
+          <p>
+          MetaLand by Metaguise is DRV’s immersive experience center, redefining architecture through cutting-edge sensory technologies.
+          </p>
+
+          <p>
+         
+              
+              Here, visitors engage in an interactive journey exploring architectural possibilities where innovation and imagination converge. From the experiential Product Maze to CGI, VR, and AR applications, MetaLand offers a glimpse into the future. It’s a space where today’s innovations meet tomorrow’s potential, with facade products at the forefront of design.
+            
+          </p>
+
+          <p>
+     
+              MetaLand is not just a destination—it’s an immersion into architectural evolution.
+          </p>
             </p>
           </div>
         </div>
         <div className="col-12 mt-xl-5 mt-4"
-          style={{ transform: `scale(${scale})`, transition: `transform ${transitionDuration} ease` }}>
+          style={{ transform: `scale(${scale})`, transition: `transform ${transitionDuration} ease` }}
+          onMouseEnter={() => setIsMouseOver(true)}
+          onMouseLeave={() => setIsMouseOver(false)}>
           <div className="video-container">
-            {/* Lazy Loading YouTube Video */}
-            <LazyLoad height={500}>
-              <iframe
-                width="100%"
-                height="500"
-                src="https://www.youtube.com/embed/mwmFELxs14E?si=IAtqZx13mJ8kiMUo"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </LazyLoad>
+       
+          <iframe 
+  width="100%" 
+  height="500" 
+  src="https://www.youtube.com/embed/mwmFELxs14E?rel=0&modestbranding=1&autohide=1&showinfo=0" 
+  title="YouTube video player" 
+  frameBorder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerPolicy="strict-origin-when-cross-origin" 
+  allowFullScreen
+></iframe>
             <div className="button-container">
-              <a href="https://www.google.com/maps/place/METALAND%E2%84%A2+BY+METAGUISE%C2%AE/@28.4631664,77.0973513,17z/data=!3m1!4b1!4m6!3m5!1s0x390d19455a6f62b1:0x60bdf56eb4db946d!8m2!3d28.4631664!4d77.0973513!16s%2Fg%2F11tk30q8yv?entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">
-                <button id="project-button" className="hover-button">
-                  <span>Visit Now</span>
-                </button>
-              </a>
+            <a href="https://maps.app.goo.gl/BqNxHRHAGkMU96qJ6" target="_blank" rel="noopener noreferrer">
+  <button id="project-button" className="hover-button">
+    <span>Visit Now</span>
+  </button>
+</a>
             </div>
           </div>
         </div>

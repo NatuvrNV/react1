@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "./Product.css";
@@ -8,79 +8,72 @@ import Product3 from "../assets/products/caskey.jpg";
 import Product4 from "../assets/products/shingle.jpg";
 import Arrow from "../assets/arrow.png";
 import gsap from "gsap";
-import { Link } from 'react-router-dom';
-
-
-
-const products = [
-  { id: 1, name: "MetaCoin", image: Product1, slug: "metacoin" },
-  { id: 2, name: "MetaSequin", image: Product2, slug: "metasequin" },
-  { id: 3, name: "Cascading Keys", image: Product3, slug: "cascadingkeys" },
-  { id: 4, name: "MetaShingles", image: Product4, slug: "metashingle" }
-];
+import { Link } from "react-router-dom";
 
 const Product = () => {
   const [activeSlide, setActiveSlide] = useState(0);
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate();
   const sliderRef = useRef(null);
-  gsap.registerPlugin();
 
-  const handleMouseEnter = (e) => {
+  // Memoized product list to avoid re-creating it on re-renders
+  const products = useMemo(
+    () => [
+      { id: 1, name: "MetaCoin", image: Product1, slug: "metacoin" },
+      { id: 2, name: "MetaSequin", image: Product2, slug: "metasequin" },
+      { id: 3, name: "Cascading Keys", image: Product3, slug: "cascadingkeys" },
+      { id: 4, name: "MetaShingles", image: Product4, slug: "metashingle" }
+    ],
+    []
+  );
+
+  // Mouse Enter animation
+  const handleMouseEnter = useCallback((e) => {
     const arrow = e.currentTarget.querySelector(".arrow-icon");
     const name = e.currentTarget.querySelector(".product-card p");
-    gsap.to(arrow, { x: 20, duration: 0.2, opacity: 1, ease: "bounce.in" });
+    gsap.to(arrow, { x: 20, opacity: 1, duration: 0.2, ease: "bounce.in" });
     gsap.to(name, { x: -10, duration: 0.2 });
-  };
+  }, []);
 
-  const handleMouseLeave = (e) => {
+  // Mouse Leave animation
+  const handleMouseLeave = useCallback((e) => {
     const arrow = e.currentTarget.querySelector(".arrow-icon");
     const name = e.currentTarget.querySelector(".product-card p");
-    gsap.to(arrow, { x: 0, duration: 0.2, opacity: 0 });
+    gsap.to(arrow, { x: 0, opacity: 0, duration: 0.2 });
     gsap.to(name, { x: 0, duration: 0.2 });
-  };
+  }, []);
 
-  const handleScroll = () => {
+  // Scroll handler for updating active slide
+  const handleScroll = useCallback(() => {
     if (sliderRef.current) {
       const scrollPosition = sliderRef.current.scrollLeft;
       const itemWidth = sliderRef.current.offsetWidth / 1.5;
-      const newActiveSlide = Math.round(scrollPosition / itemWidth);
-      setActiveSlide(newActiveSlide);
+      setActiveSlide(Math.round(scrollPosition / itemWidth));
     }
-  };
-
-  // Handle navigation on click
-  const handleProductClick = (slug) => {
-    // You can perform other actions here (e.g., analytics tracking) before navigating
-    console.log("Navigating to product:", slug); // Example logging
-  };
+  }, []);
 
   return (
     <Container className="top-products-section text-center">
       <h1 className="products-title">Top Products</h1>
       <div className="product-container">
+        {/* Desktop View */}
         <div className="desktop-view">
           <Row className="product-row my-4">
             {products.map((product) => (
               <Col key={product.id} xs={6} md={6} lg={3} className="product-col mb-4">
-                {/* Link and handle click navigation */}
-                <Link 
-                  to={`/all-products/${product.slug}`} 
-                  onClick={() => handleProductClick(product.slug)}
+                <Link
+                  to={`/all-products/${product.slug}`}
                   className="product-card tw-cursor-pointer"
+                  onClick={() => console.log("Navigating to:", product.slug)}
                 >
                   <div
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                     className="product-card tw-cursor-pointer"
                   >
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="product-image"
-                    />
+                    <img src={product.image} alt={product.name} className="product-image" />
                     <p className="font tw-flex tw-justify-center tw-items-center">
                       <span className="font-span">{product.name}</span>
-                      <img src={Arrow} alt="arrow" className="arrow-icon"></img>
+                      <img src={Arrow} alt="arrow" className="arrow-icon" />
                     </p>
                   </div>
                 </Link>
@@ -89,28 +82,16 @@ const Product = () => {
           </Row>
         </div>
 
+        {/* Mobile View */}
         <div className="mobile-view">
           <div id="top-container" className="slider-container" ref={sliderRef} onScroll={handleScroll}>
             {products.map((product) => (
-              <Link 
-                key={product.id} 
-                to={`/all-products/${product.slug}`} 
-                onClick={() => handleProductClick(product.slug)}
-                className="slider-item"
-              >
-                <div
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                  className="product-card tw-cursor-pointer"
-                >
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="product-image"
-                  />
+              <Link key={product.id} to={`/all-products/${product.slug}`} className="slider-item">
+                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="product-card tw-cursor-pointer">
+                  <img src={product.image} alt={product.name} className="product-image" />
                   <p className="font tw-flex tw-justify-center tw-items-center">
                     <span className="font-span">{product.name}</span>
-                    <img src={Arrow} alt="arrow" className="arrow-icon"></img>
+                    <img src={Arrow} alt="arrow" className="arrow-icon" />
                   </p>
                 </div>
               </Link>
@@ -124,18 +105,17 @@ const Product = () => {
         </div>
       </div>
 
-      
-      <button 
-  id="product-button" 
-  className="hover-button" 
-  onClick={() => {
-    window.scrollTo(0, 0); // Scroll to top
-    navigate("/all-products");
-  }}
->
-  <span>See All Products</span>
-</button>
-      
+      {/* See All Products Button */}
+      <button
+        id="product-button"
+        className="hover-button"
+        onClick={() => {
+          window.scrollTo(0, 0);
+          navigate("/all-products");
+        }}
+      >
+        <span>See All Products</span>
+      </button>
     </Container>
   );
 };
