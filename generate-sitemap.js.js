@@ -24,3 +24,20 @@ const { SitemapStream, streamToPromise } = require('sitemap');
     fs.writeFileSync(path.join(__dirname, 'public', 'sitemap.xml'), data);
     console.log('✅ Sitemap generated correctly!');
 })();
+
+const TerserPlugin = require("terser-webpack-plugin");
+
+module.exports = {
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
+};
+
+module.exports = {
+    plugins: [
+      require("cssnano")({
+        preset: "default",
+      }),
+    ],
+  };
