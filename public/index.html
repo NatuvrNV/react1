@@ -21,17 +21,24 @@
 
     <title>Metaguise | India’s Leading Experts in Luxury Metal Facades</title>
 
-    <!-- Google Tag Manager -->
-    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-2EMNJ0PYTH"></script>
-    <script defer>
+    <!-- Optimize Google Tag Manager -->
+    <script>
+      window.requestIdleCallback(function() {
+        var script = document.createElement('script');
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-2EMNJ0PYTH";
+        script.async = true;
+        document.head.appendChild(script);
+      });
+    </script>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-2EMNJ0PYTH');
+      gtag('config', 'G-2EMNJ0PYTH', { 'anonymize_ip': true, 'send_page_view': false });
     </script>
 
-    <!-- Microsoft Clarity Analytics -->
-    <script defer type="text/javascript">
+    <!-- Lazy Load Microsoft Clarity -->
+    <script defer>
       (function(c, l, a, r, i, t, y) {
           c[a] = c[a] || function() { (c[a].q = c[a].q || []).push(arguments) };
           t = l.createElement(r); t.defer = 1; t.src = "https://www.clarity.ms/tag/" + i;
@@ -39,9 +46,12 @@
       })(window, document, "clarity", "script", "qepraxoxrh");
     </script>
 
-    <!-- React & ReactDOM (defer for optimized loading) -->
+    <!-- Load React & ReactDOM -->
     <script defer src="https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js"></script>
+
+    <!-- Load Main JS File -->
+    <script defer src="%PUBLIC_URL%/js/main.8fc30c28.js"></script>
   </head>
 
   <body>
@@ -51,10 +61,15 @@
         height="0" width="0" style="display:none;visibility:hidden">
       </iframe>
     </noscript>
-    <!-- End Google Tag Manager -->
 
     <noscript>Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India.</noscript>
 
     <div id="root"></div>
+
+    <!-- Optimized YouTube Embed -->
+    <lite-youtube videoid="mwmFELxs14E"></lite-youtube>
+    <script type="module">
+      import 'https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.1/src/lite-yt-embed.js';
+    </script>
   </body>
 </html>
