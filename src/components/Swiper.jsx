@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 
 // ✅ Lazy load images & preload for better LCP
 const banners = [
-  "../assets/banner4.jpg",
-  "../assets/banner1.jpg",
-  "../assets/banner3.jpg",
+  "../assets/banner4.webp",
+  "../assets/banner1.webp",
+  "../assets/banner3.webp",
 ];
 
 export const Swipper = () => {
