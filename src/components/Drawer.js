@@ -128,7 +128,7 @@ function Drawer({ isOpen, toggleDrawer }) {
                       <FaFacebook />
                     </a>
                     <a
-                      href="ttps://www.instagram.com/metaguise/"
+                      href="https://www.instagram.com/metaguise/"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
