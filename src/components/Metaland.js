@@ -6,11 +6,11 @@ import Building from '../assets/building.png';
 
 const Metaland = () => {
   const [scale, setScale] = useState(1);
-  const [iframeScale, setIframeScale] = useState(1);
   const prevScrollY = useRef(0);
   const metaSectionRef = useRef(null);
+  const requestRef = useRef(null);
+  
   const scaleFactor = 0.005;
-  const iframeScaleFactor = 0.008;
   const transitionDuration = "1s";
 
   useEffect(() => {
@@ -23,22 +23,22 @@ const Metaland = () => {
       const scrollY = window.scrollY;
       const minScale = 0.6;
       const maxScale = 1;
-      const minIframeScale = 1;
-      const maxIframeScale = 1.2;
       const scrollDiff = scrollY - prevScrollY.current;
 
-      setScale((prevScale) =>
-        scrollDiff > 0 ? Math.min(maxScale, prevScale + scaleFactor) : Math.max(minScale, prevScale - scaleFactor)
-      );
-      setIframeScale((prevIframeScale) =>
-        scrollDiff > 0 ? Math.min(maxIframeScale, prevIframeScale + iframeScaleFactor) : Math.max(minIframeScale, prevIframeScale - iframeScaleFactor)
-      );
+      requestRef.current = requestAnimationFrame(() => {
+        setScale((prevScale) =>
+          scrollDiff > 0 ? Math.min(maxScale, prevScale + scaleFactor) : Math.max(minScale, prevScale - scaleFactor)
+        );
+      });
 
       prevScrollY.current = scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      cancelAnimationFrame(requestRef.current);
+    };
   }, []);
 
   return (
@@ -58,18 +58,16 @@ const Metaland = () => {
               </p>
             </div>
             <div className="row mt-xl-4 mb-4 mb-xl-0">
-              <div className="col-4 d-flex align-items-center meta-box">
-                <img src={VR} alt="VR" className="w-full meta-icon" />
-                <p className="text-sm mt-2 img-text">Experiential Technology</p>
-              </div>
-              <div className="col-4 d-flex align-items-center meta-box">
-                <img src={Maze} alt="Maze" className="w-full meta-icon" />
-                <p className="text-sm mt-2 img-text">Interactivity & Experience</p>
-              </div>
-              <div className="col-4 d-flex align-items-center meta-box">
-                <img src={Building} alt="Building" className="w-full meta-icon" />
-                <p className="text-sm mt-2 img-text">Hands-on Project Consultation</p>
-              </div>
+              {[
+                { img: VR, text: "Experiential Technology" },
+                { img: Maze, text: "Interactivity & Experience" },
+                { img: Building, text: "Hands-on Project Consultation" }
+              ].map(({ img, text }, index) => (
+                <div key={index} className="col-4 d-flex align-items-center meta-box">
+                  <img src={img} alt={text} className="w-full meta-icon" loading="lazy" />
+                  <p className="text-sm mt-2 img-text">{text}</p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -83,7 +81,7 @@ const Metaland = () => {
           </div>
         </div>
 
-        {/* Video Section */}
+        {/* Video Section (Auto-load YouTube Embed) */}
         <div className="col-12 mt-xl-5 mt-4" style={{ transform: `scale(${scale})`, transition: `transform ${transitionDuration} ease` }}>
           <div className="video-container">
             <iframe
