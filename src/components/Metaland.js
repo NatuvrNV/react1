@@ -102,26 +102,25 @@ const Metaland = () => {
           style={{ transform: `scale(${scale})`, transition: `transform ${transitionDuration} ease` }}
           onMouseEnter={() => setIsMouseOver(true)}
           onMouseLeave={() => setIsMouseOver(false)}>
-          <div className="video-container">
-       
-          <iframe 
-  width="100%" 
-  height="500" 
-  src="https://www.youtube.com/embed/mwmFELxs14E?rel=0&modestbranding=1&autohide=1&showinfo=0" 
-  title="YouTube video player" 
-  frameBorder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  referrerPolicy="strict-origin-when-cross-origin" 
-  allowFullScreen
-></iframe>
-            <div className="button-container">
-            <a href="https://maps.app.goo.gl/BqNxHRHAGkMU96qJ6" target="_blank" rel="noopener noreferrer">
-  <button id="project-button" className="hover-button">
-    <span>Visit Now</span>
-  </button>
-</a>
-            </div>
-          </div>
+       <div className="video-container">
+  <iframe
+    width="100%"
+    height="500"
+    src="https://www.youtube.com/embed/mwmFELxs14E"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    loading="lazy"
+    allowFullScreen
+  ></iframe>
+  <div className="button-container">
+    <a href="https://maps.app.goo.gl/BqNxHRHAGkMU96qJ6" target="_blank" rel="noopener noreferrer">
+      <button id="project-button" className="hover-button">
+        <span>Visit Now</span>
+      </button>
+    </a>
+  </div>
+</div>
         </div>
       </div>
     </div>
