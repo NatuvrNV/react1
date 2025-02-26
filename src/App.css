@@ -15,6 +15,34 @@
   overflow: hidden;
 }
 
+.privacy-text p{
+  text-align: left;
+  font-weight: 400;
+}
+
+.privacy-text h1,h2{
+  font-weight: 800;
+}
+
+.privacy-text ul,li{
+  padding-left: 0 ;
+}
+
+@media (max-width: 768px){
+  .privacy-text p{
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  .privacy-text h1,h2{
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -1,12 +1,16 @@
 import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Drawer.css";
 import logo1 from "../assets/metaguiseblk.png";
 import { MdArrowOutward } from "react-icons/md";  // Import the icon
 
+
 function Drawer({ isOpen, toggleDrawer }) {
   return (
+
+    
     <Container fluid className={`drawer ${isOpen ? "open" : ""}`}>
       <Row className="h-100">
         {/* Navbar Section */}
@@ -33,6 +37,12 @@ function Drawer({ isOpen, toggleDrawer }) {
               </Nav.Link>
               <Nav.Link className="text-white" href="/contact">
                 Get In Touch
+              </Nav.Link>
+              <Nav.Link  className="text-white Privacy-mob" href="/privacy-policy">
+                Privacy Policy
+              </Nav.Link>
+              <Nav.Link className="text-white Privacy-mob" href="/terms-conditions">
+               Terms & Conditions
               </Nav.Link>
             </Nav>
           </div>
@@ -113,6 +123,7 @@ function Drawer({ isOpen, toggleDrawer }) {
                       display: "flex",
                       gap: "10px",
                       paddingLeft: "30px",
+                      paddingTop: "13px",
                     }}
                   >
                     <a
@@ -159,7 +170,15 @@ function Drawer({ isOpen, toggleDrawer }) {
               <Col md={6}>
                 <div>
                   <h5 className="nav-haeding">Legal</h5>
-                  <p className="nav-text">Privacy | Terms</p>
+                  <p id="Privacy" className="nav-text">
+                  <Nav.Link className="text-black" href="/privacy-policy">
+                  Privacy Policy
+              </Nav.Link>
+              | 
+              <Nav.Link className="text-black" href="/terms-conditions">
+              Terms & Conditions
+              </Nav.Link>
+  </p>
                 </div>
               </Col>
             </Row>
