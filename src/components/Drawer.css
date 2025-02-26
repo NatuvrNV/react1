@@ -176,3 +176,36 @@ html, body, #root {
 
 }
 }
+
+.privacy-text p{
+  text-align: left;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 100;
+  letter-spacing: 0.03em;
+}
+
+.privacy-text h1,h2{
+  font-weight: 800;
+}
+
+.privacy-text ul,li{
+  padding-left: 0 ;
+}
+
+@media (max-width: 768px){
+  .privacy-text p{
+    text-align: left;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  
+  .privacy-text h1,h2{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+  }

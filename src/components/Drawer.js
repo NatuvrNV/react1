@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
+
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Drawer.css";
 import logo1 from "../assets/metaguiseblk.png";

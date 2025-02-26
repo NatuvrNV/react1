@@ -15,8 +15,6 @@ import MetaForm from './pages/Contact/metafrom1';
 import MetaFunction from './pages/Contact/metafrom2';
 import MetaParametric from './pages/Contact/metafrom3';
 import MetaSurface from './pages/Contact/metafrom4';
-import PrivacyPolicy from './pages/Policy&Conditions/PrivacyPolicy';
-import Terms from './pages/Policy&Conditions/TermsConditions';
 import { About } from './pages/About/About';
 import Metavision from './components/Metavision';
 import MetaExperience from './components/MetaExperience';
@@ -25,6 +23,7 @@ import CTB from './pages/Contact/coffeform';
 
 
 function App() {
+
   return (
     
     <HelmetProvider>
@@ -46,8 +45,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/metavision" element={<Metavision />} />
           <Route path="/metaexperience" element={<MetaExperience />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-conditions" element={<Terms />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </Layout>
