@@ -28,7 +28,7 @@ function Home() {
 
 
       {/* Page Components */}
-      <Swipper />  {/* Fixed import */}
+      
 
 <Helmet>
         <title>Metaguise | India’s Leading Experts in Luxury Metal Facades</title>
