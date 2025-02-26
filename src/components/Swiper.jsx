@@ -14,10 +14,9 @@ const banners = [
 ];
 
 export const Swipper = () => {
-  const [loadedImages, setLoadedImages] = useState([]);
+  const [loadedImages, setLoadedImages] = useState([banners[0]]); // Preload first image
 
   useEffect(() => {
-    // ✅ Preload images to improve LCP
     banners.forEach((src) => {
       const img = new Image();
       img.src = src;
@@ -45,7 +44,6 @@ export const Swipper = () => {
         modules={[Navigation, Autoplay]}
         style={{ height: "80vh" }}
       >
-        {/* ✅ Keep Navigation Inside */}
         <div className="swiper-navigation">
           <div className="swiper-button-prev">
             <MdArrowBack size={30} />
@@ -60,7 +58,9 @@ export const Swipper = () => {
             <div
               className="slide banner-slide"
               style={{
-                backgroundImage: `url(${loadedImages.includes(src) ? src : ""})`,
+                backgroundImage: `url(${loadedImages.includes(src) ? src : banners[0]})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
                 backgroundColor: "#f5f5f5", // ✅ Placeholder color while loading
               }}
             >
@@ -76,3 +76,4 @@ export const Swipper = () => {
     </div>
   );
 };
+
