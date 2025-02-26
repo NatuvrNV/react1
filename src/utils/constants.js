@@ -1,4 +1,6 @@
-export const SingleprojectDetail = [
+export 
+
+const SingleprojectDetail = [
     {
       name: "ardete",
       youtubeLink: "https://www.youtube.com/shorts/Z_o_1Y3Cnpc?feature=share",

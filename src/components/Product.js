@@ -10,6 +10,7 @@ import Arrow from "../assets/arrow.png";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
 
+
 const Product = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const navigate = useNavigate();
