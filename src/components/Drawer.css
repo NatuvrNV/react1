@@ -168,4 +168,11 @@ html, body, #root {
 .content-desk{
   margin: 80px 0px ;
 }
+
+.list-disc li{
+  font-size: 15px;
+  font-weight: 400;
+  
+
+}
 }
