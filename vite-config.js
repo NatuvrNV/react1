@@ -6,12 +6,12 @@ export default defineConfig({
   plugins: [
     react(),
     compression({
-      algorithm: "brotliCompress", // Uses Brotli compression (better than Gzip)
+      algorithm: "brotliCompress", // Uses Brotli compression
       ext: ".br",
       threshold: 1024, // Only compress files larger than 1KB
     }),
     compression({
-      algorithm: "gzip", // Uses Gzip compression as a fallback
+      algorithm: "gzip", // Uses Gzip as a fallback
       ext: ".gz",
       threshold: 1024,
     }),
