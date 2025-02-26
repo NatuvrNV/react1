@@ -22,13 +22,20 @@ function Home() {
     <div className='Home'>
 
 <Helmet>
-        <title>Metaguise | India’s Leading Experts in Luxury Metal Facades</title>
-        <meta name="description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India." />
-        <meta property="og:title" content="Metaguise | India’s Leading Experts in Luxury Metal Facades" />
-        <meta property="og:description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India.." />
-        <meta property="og:image" content="https://yourwebsite.com/home-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/" />
-        <meta name="robots" content="index, follow" />
+<head>
+    <title>Metaguise | India’s Leading Experts in Luxury Metal Facades</title>
+    <meta name="description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India." />
+    
+    <meta property="og:title" content="Metaguise | India’s Leading Experts in Luxury Metal Facades" />
+    <meta property="og:description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India." />
+    <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
+    <meta property="og:url" content="https://metaguise.com/" />
+
+  
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
       </Helmet>
       <Swipper />
       {/* <MainContent /> */}
