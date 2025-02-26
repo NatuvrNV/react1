@@ -1,8 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
+import "https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.1/src/lite-yt-embed.js";
 import "./Metaland.css";
-import VR from '../assets/vr.png';
-import Maze from '../assets/maze.png';
-import Building from '../assets/building.png';
+import VR from '../assets/vr.webp';
+import Maze from '../assets/maze.webp';
+import Building from '../assets/building.webp';
 
 const Metaland = () => {
   const [scale, setScale] = useState(1);
