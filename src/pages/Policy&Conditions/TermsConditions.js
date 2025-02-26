@@ -29,7 +29,7 @@ function Terms() {
       <p>Welcome to Metaguise!</p>
       <p>
         These terms and conditions outline the rules and regulations for the use
-        of Metaguise’s Website, located at https://www.metaguise.com/.
+        of Metaguise’s Website, located at <a href="http://www.metaguise.com/" target="_blank" rel="noopener noreferrer">www.metaguise.com</a>
       </p>
       <p>
         By accessing this website we assume you accept these terms and

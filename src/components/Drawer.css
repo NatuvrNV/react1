@@ -98,6 +98,15 @@ html, body, #root {
   margin:  100px 50px 50px 50px;
 }
 
+.list-disc li{
+  font-size: 25px;
+  font-weight: 400;
+  
+
+}
+
+
+
 .nav-text {
   font-family: 'Degular Display', sans-serif;
   font-size: 18px;
