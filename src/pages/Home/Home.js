@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Helmet } from "react-helmet-async";
+
 
 // Importing Components
 import Footer from '../../components/Footer';
@@ -15,21 +15,7 @@ import MetaExperience1 from '../../components/MetaExperience1';
 function Home() {
   return (
     <div className='Home'>
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Metaguise | India’s Leading Experts in Luxury Metal Facades</title>
-        <meta name="description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India." />
-        
-        {/* Open Graph Meta Tags (for Social Media) */}
-        <meta property="og:title" content="Metaguise | India’s Leading Experts in Luxury Metal Facades" />
-        <meta property="og:description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India." />
-        <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
-        <meta property="og:url" content="https://metaguise.com/" />
-
-        {/* General Meta Tags */}
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Helmet>
+   
 
       {/* Page Components */}
       <Swipper />  {/* Fixed import */}
