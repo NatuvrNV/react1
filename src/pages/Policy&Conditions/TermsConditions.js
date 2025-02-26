@@ -25,7 +25,7 @@ function Terms() {
         {/* <main> */}
         <div className="container-fluid my-5">
         <div className="container mx-auto p-6 privacy-text">
-      <h1 className="text-3xl font-bold my-4">Terms and Conditions</h1>
+      <h1 className="text-3xl font-semibold my-4">Terms and Conditions</h1>
       <p>Welcome to Metaguise!</p>
       <p>
         These terms and conditions outline the rules and regulations for the use

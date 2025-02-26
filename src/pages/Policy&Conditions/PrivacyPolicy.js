@@ -25,7 +25,7 @@ function PrivacyPolicy() {
         {/* <main> */}
         <div className="container-fluid my-5">
         <div className="container privacy-text">
-      <h1 className="text-3xl font-bold my-4">Privacy Policy</h1>
+      <h1 className="text-3xl font-semibold my-4">Privacy Policy</h1>
       <p><strong>Who we are</strong></p>
       <p>Our website address is: <a href="http://www.metaguise.com/" target="_blank" rel="noopener noreferrer">www.metaguise.com</a></p>
 
