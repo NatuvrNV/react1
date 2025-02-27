@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import MailIcon from "../assets/footer/phone.svg"; // Ensure correct path
+import MailIcon from "../assets/footer/mail.svg"; // Ensure correct path
 
 const FloatingButton = () => {
   const navigate = useNavigate();

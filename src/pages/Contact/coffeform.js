@@ -67,16 +67,16 @@ const Contact = ({ brochureName }) => {
     const emailParams = {
       from_name: formData.name,
       from_email: formData.email,
-      user_phone: formData.phone,
+      from_phone: formData.phone,
       message: `The user has requested the ${detectedBrochure} brochure.`,
     };
 
     try {
       await emailjs.send(
-        "service_o43hhwe", // Replace with your actual Service ID
-        "template_aca3uxp", // Replace with your actual Template ID
+        "service_hbh6e6a", // Replace with your actual Service ID
+        "template_sp4d06m", // Replace with your actual Template ID
         emailParams,
-        "xnaiRgy_8MdLN2Vh5" // Replace with your actual Public Key
+        "aEASMHR8n6Vmgtj3l" // Replace with your actual Public Key
       );
 
       openPDF(); // Open the brochure in a new tab

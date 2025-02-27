@@ -155,6 +155,7 @@ const SingleProduct = () => {
   clickedIndex={clickedIndex}
   ref={imageGridRef}
   videoLink={selectedProduct.videoLink} // Add this line
+ 
 />
         </div>
         <Sidebar
@@ -293,7 +294,7 @@ const Sidebar = ({
   instagramLink,
 }) => {
   return (
-    <div className="col-md-3 col-sm-12 sidebar-section pe-lg-5">
+    <div className="col-md-3 col-sm-12 sidebar-section pe-lg-4">
       <h3 style={{ fontWeight: "bold" }}>
         {selectedProduct.Productname.charAt(0).toUpperCase() +
           selectedProduct.Productname.slice(1)}
@@ -321,7 +322,7 @@ const Sidebar = ({
         />
    
       </div>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaabIioPAYAnCxDaY2hFZjSf7qeU9qJGc_DuYZxtxI_G_nWUTiefpS62FNo_aem_KRmg-CrKFIxQiXf9Mtglow">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
         <button id="build-button" className="hover-button">
           <span>Build Your Dream</span>
         </button>
@@ -451,7 +452,7 @@ const Button = ({ icon, text, onClick, active }) => {
 
 const BuildButton = () => {
   return (
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaabIioPAYAnCxDaY2hFZjSf7qeU9qJGc_DuYZxtxI_G_nWUTiefpS62FNo_aem_KRmg-CrKFIxQiXf9Mtglow">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
       <button id="build-button" className="mobile-controls hover-button">
         <span>Build Your Dream</span>
       </button>
