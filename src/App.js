@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './App.css';
+import NotFound from "./components/Notfound";
 import { HelmetProvider } from "react-helmet-async";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -49,7 +50,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/metavision" element={<Metavision />} />
           <Route path="/metaexperience" element={<MetaExperience />} />
-          <Route path="*" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </Router>
