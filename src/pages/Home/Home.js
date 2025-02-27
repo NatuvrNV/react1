@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import MainContent from '../../components/MainContent';
 
 import Footer from '../../components/Footer';
+import FloatingButton from "../../components/Floatingbutton";
 //import Metavision from '../../components/Metavision';
 import Cofee from '../../components/Cofee';
 //import Features from '../../components/Features';
@@ -47,7 +48,7 @@ function Home() {
 
       <Featured />
       {/* <Features /> */}
-   
+      <FloatingButton />
       <MetaExperience1 />
       <Product />
       <Metaland />
