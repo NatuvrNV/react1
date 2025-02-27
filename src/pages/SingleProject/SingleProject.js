@@ -159,6 +159,7 @@ const SingleProject = () => {
   clickedIndex={clickedIndex}
   ref={imageGridRef}
   videoLink={selectedProject.videoLink} // Add this line
+  darkMode={darkMode} // Pass darkMode here
 />
         </div>
         <Sidebar
@@ -347,7 +348,7 @@ const Sidebar = ({
   instagramLink,
 }) => {
   return (
-    <div className="col-md-3 col-sm-12 sidebar-section pe-lg-5">
+    <div className="col-md-3 col-sm-12 sidebar-section pe-md-4 ">
       <h3 style={{ fontWeight: "bold" }}>
         {selectedProject.Projectname.charAt(0).toUpperCase() +
           selectedProject.Projectname.slice(1)}
@@ -420,7 +421,7 @@ const Sidebar = ({
         />
    
       </div>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaabIioPAYAnCxDaY2hFZjSf7qeU9qJGc_DuYZxtxI_G_nWUTiefpS62FNo_aem_KRmg-CrKFIxQiXf9Mtglow">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
         <button id="build-button" className="hover-button">
           <span>Build Your Dream</span>
         </button>
@@ -438,17 +439,18 @@ const ImageGrid = ({
   clickedIndex,
   ref,
   videoLink,
+  darkMode, // Added darkMode as a prop
 }) => {
   return (
-    <div className="image-grid" ref={ref}>
-      {filteredImages.length === 0 && !videoLink ? (
+    <div id="product-grid" className="image-grid" ref={ref}>
+      {filteredImages.length === 0 ? (
         <div className="no-images-found">
           No images found.
           <span>Go Back to Day</span>
         </div>
       ) : (
         <>
-          {videoLink && (
+          {!darkMode && videoLink && ( // Only show video when darkMode is false
             <VideoItem
               videoUrl={videoLink}
               index={0} // Position before first image
@@ -550,7 +552,7 @@ const Button = ({ icon, text, onClick, active }) => {
 
 const BuildButton = () => {
   return (
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaabIioPAYAnCxDaY2hFZjSf7qeU9qJGc_DuYZxtxI_G_nWUTiefpS62FNo_aem_KRmg-CrKFIxQiXf9Mtglow">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
       <button id="build-button" className="mobile-controls hover-button">
         <span>Build Your Dream</span>
       </button>

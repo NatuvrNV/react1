@@ -595,8 +595,8 @@ const SingleprojectDetail = [
     },
     {
       name: "z1012",
-      videoLink: "",
-      youtubeLink: "",
+      videoLink: "https://www.youtube.com/watch?v=AwvlRroIAKA",
+      youtubeLink: "https://www.youtube.com/watch?v=AwvlRroIAKA",
       instagramLink: "https://www.instagram.com/p/DA3Pqdey03I/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Z1012",
       metatittles:"Residential Facade | MetaFlute & MetaShingle for a Modern Look",
@@ -1092,92 +1092,113 @@ export const ProductImages = [
     {
       imgPath: "assets/Allproducts/MetaParametric/metacoin/cover/metacoin.webp",
       imgText: "MetaCoin",
+      order: 1,
     },
     {
       imgPath:
         "assets/Allproducts/MetaParametric/metasequin/cover/metasequin1.webp",
       imgText: "MetaSequin",
+      order: 2,
     },
     {
       imgPath: "assets/Allproducts/MetaForm/metapyramid/cover/metapyramid.webp",
       imgText: "MetaPyramid",
+      order: 4,
     },
     {
       imgPath: "assets/Allproducts/MetaForm/metashingle/cover/metashingle.webp",
       imgText: "MetaShingles",
+      order: 5,
     },
     {
       imgPath: "assets/Allproducts/MetaForm/CascadingKeys/cover/caskey1.webp",
       imgText: "Cascading Keys",
+      order: 6,
     },
     {
       imgPath:
         "assets/Allproducts/MetaForm/metacassette/cover/metacassette.webp",
       imgText: "MetaCassette",
+      order: 3,
     },
     {
       imgPath: "assets/Allproducts/MetaForm/metaflute/cover/metaflute.webp",
       imgText: "MetaFlute",
+      order: 8,
     },
     {
       imgPath: "assets/Allproducts/MetaFunction/metafold/cover/metafold1.webp",
       imgText: "MetaFold",
+      order: 10,
     },
     {
       imgPath: "assets/Allproducts/MetaParametric/metafin/cover/metafin.webp",
       imgText: "MetaFin",
+      order: 9,
     },
     {
       imgPath:
         "assets/Allproducts/MetaParametric/metahydra/cover/metahydra.webp",
       imgText: "MetaHydra",
+      order: 19,
     },
     {
       imgPath: "assets/Allproducts/MetaForm/metalouver/cover/metalouver.webp",
       imgText: "MetaLouver",
+      order: 21,
     },
     {
       imgPath: "assets/Allproducts/MetaForm/metaplank/cover/metaplank.webp",
       imgText: "MetaPlank",
+      order: 12,
     },
     {
       imgPath: "assets/Allproducts/MetaFunction/metagate/cover/metagate4.webp",
       imgText: "MetaGate",
+      order: 13,
     },
     {
       imgPath:
         "assets/Allproducts/MetaFunction/metaslider/cover/metaslider.webp",
       imgText: "MetaSlider",
+      order: 11,
     },
     {
       imgPath: "assets/Allproducts/MetaParametric/metablox/cover/metablox.webp",
       imgText: "MetaBlox",
+      order: 20,
     },
     {
       imgPath:
         "assets/Allproducts/MetaSurface/metacopper/cover/metacopper1.webp",
       imgText: "MetaCopper",
+      order: 14,
     },
     {
       imgPath:
         "assets/Allproducts/MetaSurface/metacorten/cover/metacorten3.webp",
       imgText: "MetaCorten",
+      order: 16,
     },
     {
       imgPath: "assets/Allproducts/MetaSurface/metagrey/cover/metagrey.webp",
       imgText: "MetaGrey",
+      order: 17,
     },
     {
       imgPath: "assets/Allproducts/MetaSurface/metapatina/cover/metapatina.webp",
       imgText: "MetaPatina",
+      order: 15,
     },
     {
       imgPath: "assets/Allproducts/MetaSurface/metawood/cover/metawood.webp",
       imgText: "MetaWood",
+      order: 18,
     },
     {
       imgPath: "assets/Allproducts/MetaForm/SolidPanel/cover/solidpanel.webp",
       imgText: "SolidPanel",
+      order: 7,
     },
   ];
 
@@ -1237,4 +1258,4 @@ export const products = [
   },
 ];
 
-
+export const sortedProductImages = ProductImages.sort((a, b) => a.order - b.order);
