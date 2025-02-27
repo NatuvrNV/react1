@@ -20,6 +20,8 @@ import Metavision from './components/Metavision';
 import MetaExperience from './components/MetaExperience';
 import Partner from './pages/Partner/Partner';
 import CTB from './pages/Contact/coffeform';
+import PrivacyPolicy from './pages/Policy&Conditions/PrivacyPolicy';
+import Terms from './pages/Policy&Conditions/TermsConditions';
 
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
           <Route path="/metaparametric" element={<MetaParametric />} />
           <Route path="/metasurface" element={<MetaSurface />} />
           <Route path="/partner" element={<Partner />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-conditions" element={<Terms />} />
           <Route path="/all-products/:productName" element={<SingleProduct />} />
           <Route path="/all-projects/:projectName" element={<SingleProject />} />
           <Route path="/about" element={<About />} />
