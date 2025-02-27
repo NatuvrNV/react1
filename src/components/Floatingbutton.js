@@ -27,6 +27,7 @@ const FloatingButton = () => {
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             cursor: pointer;
             transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            z-index:99999;
           }
 
           .floating-button:hover {

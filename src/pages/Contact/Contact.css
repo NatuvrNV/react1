@@ -8,8 +8,17 @@
   padding-top: 80px;
 }
 
+#not-text{
+  font-size: 40px;
+}
+
 .contact-row {
   min-height: calc(100vh - 80px);
+  padding: 5rem;
+}
+
+.text-row {
+  min-height: calc(100vh - 20vh);
   padding: 5rem;
 }
 
@@ -117,6 +126,15 @@
 
   .contact-row {
     min-height: calc(100vh - 60px);
+    padding: 1rem 1.5rem !important;
+  }
+
+  #not-text{
+    font-size: 20px;
+  }
+
+  .text-row {
+    min-height: calc(100vh - 40vh);
     padding: 1rem 1.5rem !important;
   }
 
