@@ -617,9 +617,9 @@ const SingleprojectDetail = [
 
     {
       name: "painflame",
-      videoLink: "https://www.youtube.com/watch?v=AwvlRroIAKA",
-      youtubeLink: "https://www.youtube.com/watch?v=AwvlRroIAKA",
-      instagramLink: "https://www.instagram.com/p/DA3Pqdey03I/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
       Projectname:"Pain Flame",
       metatittles:"Residential Facade | MetaFlute & MetaShingle for a Modern Look",
       metadescription:"Elevate your home's facade with MetaFlute for sleek linear detail and MetaShingle for layered depth, creating a refined and contemporary aesthetic",
@@ -643,9 +643,9 @@ const SingleprojectDetail = [
 
     {
       name: "premhospital",
-      videoLink: "https://www.youtube.com/watch?v=AwvlRroIAKA",
-      youtubeLink: "https://www.youtube.com/watch?v=AwvlRroIAKA",
-      instagramLink: "https://www.instagram.com/p/DA3Pqdey03I/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
       Projectname:"Prem Hospital",
       metatittles:"Residential Facade | MetaFlute & MetaShingle for a Modern Look",
       metadescription:"Elevate your home's facade with MetaFlute for sleek linear detail and MetaShingle for layered depth, creating a refined and contemporary aesthetic",
