@@ -62,6 +62,13 @@ const Contact = ({ brochureName }) => {
     setIsSending(true);
     setMessage(""); // Reset message on submit
 
+              // Validate fields before proceeding
+  if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
+    setMessage("❌ All fields are required.");
+    setIsSending(false);
+    return;
+  }
+
     const emailParams = {
       from_name: formData.name,
       from_email: formData.email,

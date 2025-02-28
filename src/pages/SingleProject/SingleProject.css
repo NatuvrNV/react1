@@ -149,6 +149,7 @@
     max-height: 65vh;
     object-fit: cover;
     order: 1;
+    
 }
 
 .grid-item.active img {

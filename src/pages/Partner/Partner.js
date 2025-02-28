@@ -41,6 +41,13 @@ const Partner = () => {
     setIsSending(true);
     setFeedbackMessage("");
 
+          // Validate fields before proceeding
+  if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
+    setFeedbackMessage("❌ All fields are required.");
+    setIsSending(false);
+    return;
+  }
+
     const emailParams = {
       from_name: formData.name,
       from_email: formData.email,
