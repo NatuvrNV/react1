@@ -618,8 +618,8 @@ const SingleprojectDetail = [
     {
       name: "painflame",
       videoLink: "",
-      youtubeLink: "",
-      instagramLink: "",
+      youtubeLink: "https://www.youtube.com/watch?v=s6evsnaSFms",
+      instagramLink: "https://www.instagram.com/p/DF68iI7Sslb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Pain Flame",
       metatittles:"Parametric & Layered Facade for Healthcare Clinic ",
       metadescription:"Metaguise crafted a precision-engineered elevation for a Gurugram clinic, featuring the Parametric MetaCoin and Monochromatic MetaShingles for a dynamic, layered look.",
@@ -643,9 +643,9 @@ const SingleprojectDetail = [
 
     {
       name: "premhospital",
-      videoLink: "",
-      youtubeLink: "",
-      instagramLink: "",
+      videoLink: "https://www.youtube.com/shorts/UV4ZyH_EFDc",
+      youtubeLink: "https://www.youtube.com/watch?v=P4JgguI1nVg",
+      instagramLink: "https://www.instagram.com/p/DDwba3FSzEo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Prem Hospital",
       metatittles:"A Precision-Engineered Facade for a Hospital",
       metadescription:"Metaguise elevates healthcare architecture with MetaCassette Perforated and Grooved Panels, integrating logo-based perforations, and structured textures, in Gurugram",
