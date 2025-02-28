@@ -16,19 +16,22 @@ const SingleProject = () => {
 
   const handleImageClick = (index) => {
     setClickedIndex(clickedIndex === index ? null : index);
-    
-    // Scroll to top functionality
-    if (imageGridRef.current) {
-      imageGridRef.current.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }
+  
+    // Scroll entire page to top
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      left: 0,
+      behavior: "smooth",
     });
-  }
+  
+    // Optional: Also prevent #products-grid from overriding the scroll
+    document.getElementById("product-grid")?.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+  
   const navigate = useNavigate();
   
   const { projectName } = useParams();
