@@ -621,8 +621,8 @@ const SingleprojectDetail = [
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Pain Flame",
-      metatittles:"Residential Facade | MetaFlute & MetaShingle for a Modern Look",
-      metadescription:"Elevate your home's facade with MetaFlute for sleek linear detail and MetaShingle for layered depth, creating a refined and contemporary aesthetic",
+      metatittles:"Parametric & Layered Facade for Healthcare Clinic ",
+      metadescription:"Metaguise crafted a precision-engineered elevation for a Gurugram clinic, featuring the Parametric MetaCoin and Monochromatic MetaShingles for a dynamic, layered look.",
       images: [
         "assets/Allprojects/commercial/Painflame/metacoin/6.webp",
         "assets/Allprojects/commercial/Painflame/metacoin/8.webp",
@@ -647,8 +647,8 @@ const SingleprojectDetail = [
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Prem Hospital",
-      metatittles:"Residential Facade | MetaFlute & MetaShingle for a Modern Look",
-      metadescription:"Elevate your home's facade with MetaFlute for sleek linear detail and MetaShingle for layered depth, creating a refined and contemporary aesthetic",
+      metatittles:"A Precision-Engineered Facade for a Hospital",
+      metadescription:"Metaguise elevates healthcare architecture with MetaCassette Perforated and Grooved Panels, integrating logo-based perforations, and structured textures, in Gurugram",
       images: [
         "assets/Allprojects/commercial/PremHospital/metacassette-grooved/prem2.webp",
         "assets/Allprojects/commercial/PremHospital/metacassette-grooved/prem6.webp",
@@ -930,14 +930,12 @@ export const SingleProductDetail = [
         "MetaLouver offers a harmonious balance of form and functionality. Its adjustable, angular metal panels allow for optimal control of light and ventilation while shielding interiors from rain and harsh sunlight. Whether used for facades or shading systems, MetaLouver adds a distinctive architectural rhythm to buildings​​.",
       images: [
         "assets/Allproducts/MetaForm/metalouver/metalouver1.webp",
-        "assets/Allproducts/MetaForm/metalouver/metalouver2.webp",
-        "assets/Allproducts/MetaForm/metalouver/metalouver3.webp",
+        "assets/Allproducts/MetaForm/metalouver/metalouver9.webp",
         "assets/Allproducts/MetaForm/metalouver/metalouver4.webp",
         "assets/Allproducts/MetaForm/metalouver/metalouver5.webp",
         "assets/Allproducts/MetaForm/metalouver/metalouver6.webp",
         "assets/Allproducts/MetaForm/metalouver/metalouver7.webp",
         "assets/Allproducts/MetaForm/metalouver/metalouver8.webp",
-        "assets/Allproducts/MetaForm/metalouver/metalouver9.webp",
       ],
     },
     {
