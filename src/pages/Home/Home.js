@@ -40,7 +40,7 @@ function Home() {
         <meta property="og:image" content="%PUBLIC_URL%/favicon.png" />
 
         <meta property="og:image" content="https://yourwebsite.com/home-image.jpg" />
-        <meta property="og:image" content="https://metaguise.com/favicon.ico" />
+        <meta property="og:image" content="https://metaguise.com/favicon.ico" />        <meta property="og:image" content="https://yourwebsite.com/home-image.jpg" />
 
         <meta property="og:url" content="https://yourwebsite.com/" />
         <meta name="robots" content="index, follow" />
