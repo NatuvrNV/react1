@@ -86,7 +86,7 @@ export const Swipper = () => {
               <div className="slide-content">
                 {index === 0 && <h1>India’s Leading Facade & Wall Cladding Experts</h1>}
                 {index === 1 && <h1>Masters in Parametric Design & Execution</h1>}
-                {index === 2 && <h1>Metal is Metaguise – Crafting Innovation, Defining Excellence.</h1>}
+                {index === 2 && <h1>Metal is Metaguise: The Future of Facades</h1>}
               </div>
             </div>
           </SwiperSlide>

@@ -59,9 +59,9 @@
   border: none;
 }
 
-.transition-button .icon svg{
+/* .transition-button .icon svg{
   margin-right: 15px !important;
-}
+} */
 
 #single-sidebar .dim{
   opacity: 1;
