@@ -1,9 +1,15 @@
-# Redirect all traffic to HTTPS
+# Enable Rewrite Engine
 RewriteEngine On
+
+# Force HTTPS before non-www redirection to minimize redirects
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
-# Redirect all requests to index.html (for React routes)
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.metaguise\.com [NC]
+RewriteRule ^(.*)$ https://metaguise.com/$1 [L,R=301]
+
+# Redirect all requests to index.html for React (SPA handling)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [QSA,L]

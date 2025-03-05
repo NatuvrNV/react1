@@ -36,6 +36,9 @@
   left: auto;
 }
 
+
+
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 0;
@@ -112,6 +115,10 @@
 
 .swiper-container {
   position: relative; /* Ensure the parent is positioned */
+  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE */
 }
 
 @media screen and (min-width: 769px) and (max-width:991px) {
@@ -157,7 +164,20 @@
 .banner-slide .swiper-button-prev{
   width: 28px;
   height: 28px;
+  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE */
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  user-select: none;  /* Prevent text selection */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE */
+}
+
 
 .swiper-button-next:after,
 .swiper-button-prev:after {

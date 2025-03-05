@@ -9,6 +9,7 @@ import "./SingleProject.css";
 import { SingleprojectDetail } from "../../utils/constants";
 import { Helmet } from "react-helmet"; 
 import { FaPlay } from "react-icons/fa";
+import { ProjectImages } from "../../utils/constants";
 
 const SingleProject = () => {
 
@@ -163,6 +164,7 @@ const SingleProject = () => {
   ref={imageGridRef}
   videoLink={selectedProject.videoLink} // Add this line
   darkMode={darkMode} // Pass darkMode here
+  selectedProject={projectName} // Dynamically set project name
 />
         </div>
         <Sidebar
@@ -443,7 +445,15 @@ const ImageGrid = ({
   ref,
   videoLink,
   darkMode, // Added darkMode as a prop
+  selectedProject, // Add selected project as a prop
 }) => {
+  // Normalize function to handle special characters
+  const normalizeName = (name) => name.toLowerCase().replace(/[^a-z0-9]/gi, '');
+
+  // Find the cover image dynamically
+  const coverImage = ProjectImages.find(
+    (img) => normalizeName(img.imgPath).includes(normalizeName(selectedProject))
+  );
   return (
     <div id="product-grid" className="image-grid" ref={ref}>
       {filteredImages.length === 0 ? (
@@ -458,6 +468,17 @@ const ImageGrid = ({
               videoUrl={videoLink}
               index={0} // Position before first image
               handleImageClick={handleImageClick}
+              clickedIndex={clickedIndex}
+            />
+          )}
+
+      {/* Show cover image only if it matches the selected project */}
+      {coverImage && (
+            <Image
+              key={`cover-${selectedProject}`} // Unique key for cover image
+              image={coverImage.imgPath} // Pass imgPath from object
+              handleImageClick={handleImageClick}
+              isLastRow={isLastRow}
               clickedIndex={clickedIndex}
             />
           )}

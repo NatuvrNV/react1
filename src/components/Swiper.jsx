@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 const banners = [
   "https://res.cloudinary.com/dptxcqnnw/image/upload/v1740550101/assets/z1tjh4xby2gkx28yfkng.webp",
   "https://res.cloudinary.com/dptxcqnnw/image/upload/v1740550101/assets/fqdmoinhevw40lln6x51.webp",
-  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1740550101/assets/kkl0pqxszgwgrdgmbfyh.webp",
+  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1741175604/banner3_4_vljrvj.webp",
 ];
 
 export const Swipper = () => {
@@ -24,6 +24,19 @@ export const Swipper = () => {
         setLoadedImages((prev) => [...prev, src]);
       };
     });
+
+    // ✅ Prevent text selection when clicking swiper buttons
+    const preventSelection = (event) => {
+      if (event.target.closest(".swiper-button-next, .swiper-button-prev")) {
+        event.preventDefault();
+      }
+    };
+
+    document.addEventListener("mousedown", preventSelection);
+
+    return () => {
+      document.removeEventListener("mousedown", preventSelection);
+    };
   }, []);
 
   return (
@@ -45,10 +58,16 @@ export const Swipper = () => {
         style={{ height: "80vh" }}
       >
         <div className="swiper-navigation">
-          <div className="swiper-button-prev">
+          <div
+            className="swiper-button-prev"
+            onMouseDown={(e) => e.preventDefault()} // ✅ Prevent selection inline
+          >
             <MdArrowBack size={30} />
           </div>
-          <div className="swiper-button-next">
+          <div
+            className="swiper-button-next"
+            onMouseDown={(e) => e.preventDefault()} // ✅ Prevent selection inline
+          >
             <MdArrowForward size={30} />
           </div>
         </div>
@@ -67,7 +86,7 @@ export const Swipper = () => {
               <div className="slide-content">
                 {index === 0 && <h1>India’s Leading Facade & Wall Cladding Experts</h1>}
                 {index === 1 && <h1>Masters in Parametric Design & Execution</h1>}
-                {index === 2 && <h1>Tailored facades that reflect your identity</h1>}
+                {index === 2 && <h1>Metal is Metaguise – Crafting Innovation, Defining Excellence.</h1>}
               </div>
             </div>
           </SwiperSlide>
@@ -76,4 +95,3 @@ export const Swipper = () => {
     </div>
   );
 };
-
