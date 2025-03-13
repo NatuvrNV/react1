@@ -731,7 +731,7 @@ export const SingleProductDetail = [
       metatittles:"Dynamic Parametric Facade with Custom Design",
       metadescription:"MetaSequin is a customizable parametric facade system, creating dynamic surfaces that shift with light, angle, and perspective.",
       description:
-        "Elevate your structure with MetaShingles, a system of overlapping metal panels designed to create dynamic textures and visual depth. Fully customizable in shape, size, color and finish, MetaShingles offer endless design possibilities to suit any architectural vision. These shingles bring a contemporary flair to facades while ensuring durability and weather resistance. Perfect for residential and commercial projects, MetaShingles strike a balance between aesthetic appeal and robust functionality, allowing you to tailor your facade to your unique style​.",
+        "MetaSequin transforms facades into moving expressions of art. Crafted from premium metals with MetaSurface finishes, it offers unmatched customizability in shape, size, color, and arrangement. Its fluid design interacts with light and perspective, creating captivating visual effects—ideal for luxury residences, commercial buildings, and iconic landmarks. Durable, sustainable, and visually striking, MetaSequin marks the future of facade design.",
       images: [
         "assets/Allproducts/MetaParametric/metasequin/metasequin2.webp",
         "assets/Allproducts/MetaParametric/metasequin/metasequin3.webp",
