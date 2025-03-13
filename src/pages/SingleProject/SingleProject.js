@@ -162,9 +162,10 @@ const SingleProject = () => {
   isLastRow={isLastRow}
   clickedIndex={clickedIndex}
   ref={imageGridRef}
-  videoLink={selectedProject.videoLink} // Add this line
-  darkMode={darkMode} // Pass darkMode here
-  selectedProject={projectName} // Dynamically set project name
+  videoLink={selectedProject.videoLink}
+  darkMode={darkMode}
+  selectedProject={projectName}
+  setDarkMode={setDarkMode} // Pass setDarkMode here
 />
         </div>
         <Sidebar
@@ -444,39 +445,44 @@ const ImageGrid = ({
   clickedIndex,
   ref,
   videoLink,
-  darkMode, // Added darkMode as a prop
-  selectedProject, // Add selected project as a prop
+  darkMode,
+  selectedProject,
+  setDarkMode, // Receive setDarkMode here
 }) => {
-  // Normalize function to handle special characters
   const normalizeName = (name) => name.toLowerCase().replace(/[^a-z0-9]/gi, '');
 
-  // Find the cover image dynamically
   const coverImage = ProjectImages.find(
     (img) => normalizeName(img.imgPath).includes(normalizeName(selectedProject))
   );
+
+  const handleGoBackToDay = () => {
+    setDarkMode(false); // Turn off dark mode
+  };
+
   return (
     <div id="product-grid" className="image-grid" ref={ref}>
       {filteredImages.length === 0 ? (
         <div className="no-images-found">
           No images found.
-          <span>Go Back to Day</span>
+          <span onClick={handleGoBackToDay} style={{ cursor: 'pointer', }}>
+            Go Back to Day
+          </span>
         </div>
       ) : (
         <>
-          {!darkMode && videoLink && ( // Only show video when darkMode is false
+          {!darkMode && videoLink && (
             <VideoItem
               videoUrl={videoLink}
-              index={0} // Position before first image
+              index={0}
               handleImageClick={handleImageClick}
               clickedIndex={clickedIndex}
             />
           )}
 
-      {/* Show cover image only if it matches the selected project */}
-      {coverImage && (
+          {coverImage && (
             <Image
-              key={`cover-${selectedProject}`} // Unique key for cover image
-              image={coverImage.imgPath} // Pass imgPath from object
+              key={`cover-${selectedProject}`}
+              image={coverImage.imgPath}
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
               clickedIndex={clickedIndex}
@@ -485,9 +491,9 @@ const ImageGrid = ({
 
           {filteredImages.map((image, index) => (
             <Image
-              key={index + 1} // Avoid duplicate keys
+              key={index + 1}
               image={image}
-              index={index + 1} // Shift index forward
+              index={index + 1}
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
               clickedIndex={clickedIndex}
