@@ -23,16 +23,6 @@
   pointer-events: none; /* Allow clicks to pass through to the swiper */
 }
 
-.banner-slide .swiper-button-next svg path {
- margin: 0 auto;
- text-align: center;
-}
-
-.banner-slide .swiper-button-prev svg path {
-  margin: 0 auto;
-  text-align: center;
- }
-
 /* Position arrows at bottom right */
 .banner-slide .swiper-button-next,
 .banner-slide .swiper-button-prev {
@@ -48,13 +38,33 @@
   pointer-events: auto; /* Enable clicks */
 }
 
+
+
 .banner-slide .swiper-button-next {
   right: 60px;
+  text-align: center !important;
+  margin: 0 auto !important;
+  display: flex;
+  justify-content: center !important;
 }
+
+.banner-slide .swiper-button-next svg path {
+ margin: 0 auto;
+ text-align: center;
+}
+
+.banner-slide .swiper-button-prev svg path {
+  margin: 0 auto;
+  text-align: center;
+ }
 
 .banner-slide .swiper-button-prev {
   right: 118px !important;
   left: auto;
+  text-align: center !important;
+  margin: 0 auto !important;
+  display: flex;
+  justify-content: center !important;
 }
 
 /* Remove default arrow icons */
@@ -192,6 +202,7 @@
   .swiper-button-next:after,
   .swiper-button-prev:after {
     font-size: 0rem;
+    
   }
 
   .swiper-pagination {
