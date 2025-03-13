@@ -5,15 +5,25 @@
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
+  position: relative; /* Required for absolute positioning of arrows */
 }
 
+/* Navigation arrows container */
+.swiper-navigation {
+  position: absolute;
+  bottom: 4%; /* Center vertically */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); /* Adjust for exact center */
+  display: flex;
+  justify-content: space-between; /* Space out the arrows */
+  align-items: center; /* Center vertically */
 
+  z-index: 10; /* Ensure arrows are above the slides */
+  pointer-events: none; /* Allow clicks to pass through to the swiper */
+}
 
 /* Position arrows at bottom right */
-.banner-slide .swiper {
-  position: relative;
-}
-
 .banner-slide .swiper-button-next,
 .banner-slide .swiper-button-prev {
   color: white;
@@ -25,32 +35,32 @@
   top: auto;
   bottom: 20px;
   margin-top: 0;
+  pointer-events: auto; /* Enable clicks */
 }
 
-.banner-slide  .swiper-button-next {
+.banner-slide .swiper-button-next {
   right: 60px;
 }
 
- .banner-slide .swiper-button-prev {
+.banner-slide .swiper-button-prev {
   right: 118px !important;
   left: auto;
 }
 
-
-
-
+/* Remove default arrow icons */
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 0;
 }
 
+/* Hover effect for arrows */
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background: rgba(0, 0, 0, 0.8);
   transform: scale(1);
 }
 
-
+/* Slide styles */
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -72,7 +82,6 @@
   padding: 80px;
   padding-bottom: 100px;
   color: white;
-
 }
 
 .slide-content h1 {
@@ -81,7 +90,6 @@
   margin: 0;
   margin-bottom: 0;
   letter-spacing: 2px;
-
 }
 
 .slide-content p {
@@ -121,13 +129,14 @@
   -ms-user-select: none; /* IE */
 }
 
-@media screen and (min-width: 769px) and (max-width:991px) {
+/* Responsive adjustments */
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .slide-content {
     padding: 30px 20px;
     text-align: left !important;
   }
 
-  .swiper-pagination{
+  .swiper-pagination {
     bottom: 10px !important;
   }
 
@@ -136,13 +145,13 @@
     line-height: 40px;
   }
 
-  #banner-slide{
+  #banner-slide {
     height: 45vh !important;
   }
+
   .slide-content p {
     text-align: left !important;
     letter-spacing: 2px;
-   
   }
 }
 
@@ -152,72 +161,60 @@
     text-align: left !important;
   }
 
-  .banner-slide .swiper-button-next{
+  .banner-slide .swiper-button-next {
     right: 30px;
   }
 
-  .banner-slide .swiper-button-prev{
+  .banner-slide .swiper-button-prev {
     right: 78px !important;
   }
 
   .banner-slide .swiper-button-next,
-.banner-slide .swiper-button-prev{
-  width: 28px;
-  height: 28px;
-  user-select: none; /* Prevent text selection */
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE */
-}
+  .banner-slide .swiper-button-prev {
+    width: 28px;
+    height: 28px;
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE */
+  }
 
-.swiper-button-next,
-.swiper-button-prev {
-  user-select: none;  /* Prevent text selection */
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE */
-}
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 0rem;
+  }
 
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 0rem;
-
-}
-
-  .swiper-pagination{
+  .swiper-pagination {
     bottom: 10px !important;
     text-align: right;
     left: -16px !important;
   }
-
-
-
-
 
   .slide-content h1 {
     font-size: 24px;
     line-height: 30px;
   }
 
-  #banner-slide{
+  #banner-slide {
     height: 40vh !important;
   }
 
-  .slide{
+  .slide {
     justify-content: start;
   }
+
   .slide-content p {
     text-align: left !important;
     letter-spacing: 2px;
-    text-align: left !important;
-   font-size: 18px !important;
-   transform: translateY(-8px);
+    font-size: 18px !important;
+    transform: translateY(-8px);
   }
 
+  .swiper-navigation{
+    bottom: 2%  !important;
+  }
 
-
-  .swiper-pagination-bullet{
+  .swiper-pagination-bullet {
     width: 35px;
   }
 }
