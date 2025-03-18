@@ -8,17 +8,18 @@ font-size: 6rem;
     font-size: 6rem;
     font-weight: 500;
       }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
+
   
   /* Header */
   .blog-header {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 40px;
+  }
+
+  #head-text{
+    font-size: 2rem !important;
+
   }
   
   /* Search and Categories */
@@ -55,8 +56,8 @@ font-size: 6rem;
   }
 
   .blog-card img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     
   }
@@ -141,7 +142,6 @@ font-size: 6rem;
   }
 
   .blog-text{
-    justify-content: space-between;
     display: flex
 ;
     flex-direction: column;
@@ -154,6 +154,8 @@ font-size: 6rem;
     margin-bottom: 10px;
     line-height: 20px;
     text-align: left;
+    height: 80px;
+    overflow: hidden;
   }
 
   .single-text {
@@ -254,6 +256,14 @@ font-size: 6rem;
     grid-auto-flow: column;
     grid-gap: 20px;
    
+  }
+
+  .first-image{
+    height: 210px;
+  }
+
+  .second-image{
+    height: 100px;
   }
 
   .search-bar{
