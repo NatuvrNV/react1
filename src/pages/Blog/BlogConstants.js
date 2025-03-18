@@ -62,6 +62,34 @@ export const SingleBlogDetail = [
       },
 
            {
+        title: "Parametric Facades Redefining Modern Architecture",
+        date: "12-3-25",
+        category: "Project Highlights",
+        metatittles:"Customizable Parametric Facade System",
+        metadescription:"Customize every detail of your facade with MetaCoin—control shape, size, color, and pattern for a unique architectural design.",
+        description:
+          "In today's architectural landscape, parametric facades have transformed the possibilities of design. By seamlessly integrating art, technology, and function, they empower architects to envision and execute complex, organic structures...",
+        images: [
+          "assets/Blogs/3.png",
+    
+        ],
+      },
+
+      {
+        title: "Case Study: Crafting the Iconic Tanishq Store Facade",
+        date: "12-3-25",
+        category: "Industry Trends",
+        metatittles:"Customizable Parametric Facade System",
+        metadescription:"Customize every detail of your facade with MetaCoin—control shape, size, color, and pattern for a unique architectural design.",
+        description:
+          "When Metaguise was approached to design the facade for the new Tanishq jewellery store in South Extension, Delhi, the brief was clear: elegance, luxury, and uniqueness. Embracing this vision, our team leveraged the dynamic parametric capabilities...",
+        images: [
+          "assets/Blogs/4.png",
+    
+        ],
+      },
+
+      {
         title: "Metacoin: Versatile Facade Solutions for Every Project",
         date: "12-3-25",
         category: "Facade Innovations",
