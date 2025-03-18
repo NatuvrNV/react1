@@ -52,7 +52,7 @@ const SingleBlogPage = () => {
         {/* Desktop Layout */}
         <div className="d-none d-xl-block">
           <Row>
-            <Col xl={3} className="order-1">
+            <Col xl={3}>
               <BlogButton navigate={navigate} />
             </Col>
             <Col xl={6}>
@@ -68,8 +68,8 @@ const SingleBlogPage = () => {
               <p className="text-sm mt-xl-2 blog-fulldescription mt-xl-5">{blog.Fulldescription}</p>
             </Col>
 
-            <Col xl={6} className="order-xl-1">
-              <div className="image-gallery">
+            <Col xl={6} >
+              <div className="image-gallery mt-xl-5">
                 <img src={`/assets/Blogs/${blog.images[0].split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg w-100 mb-4" />
                 <div className="grid grid-cols-2 gap-4 single-grid">
                   <img src={`/assets/Blogs/${blog.images[1].split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg w-100" />
