@@ -39,39 +39,33 @@ const Blog = () => {
               className="search-bar"
               
             />
-  {/* Category Button with Hover Dropdown */}
-  <div
-      className="category-container"
-      onMouseEnter={() => setIsDropdownOpen(true)}
-      onMouseLeave={() => setIsDropdownOpen(false)}
-    >
-      <button id="category-button" className="blog-button">
-        <span>Categories</span>
-        <MdArrowOutward />
-      </button>
-      {isDropdownOpen && (
-        <div className="category-dropdown">
-          <ul>
-            <li>Facade Innovations
-</li>
-            <li>Project Highlights
-</li>
-            <li>Architectural Insights
-</li>
-            <li>Material Spotlight
-</li>
-<li>
-Sustainability
-</li>
-<li>Behind the Design
-</li>
-<li>Industry Trends
-</li>
-<li>Company News & Updates</li>
-          </ul>
-        </div>
-      )}
+ {/* Category Button with Hover and Click Dropdown */}
+<div
+  className="category-container"
+  onMouseEnter={() => setIsDropdownOpen(true)}
+  onMouseLeave={() => setIsDropdownOpen(false)}
+  onClick={() => setIsDropdownOpen(!isDropdownOpen)} // Handle clicks for mobile
+>
+  <button id="category-button" className="blog-button">
+    <span>Categories</span>
+    <MdArrowOutward />
+  </button>
+  {isDropdownOpen && (
+    <div className="category-dropdown">
+      <ul>
+        <li>Facade Innovations</li>
+        <li>Project Highlights</li>
+        <li>Architectural Insights</li>
+        <li>Material Spotlight</li>
+        <li>Sustainability</li>
+        <li>Behind the Design</li>
+        <li>Industry Trends</li>
+        <li>Company News & Updates</li>
+      </ul>
     </div>
+  )}
+</div>
+
           </div>
         </Row>
 
