@@ -11,6 +11,8 @@ import SingleProduct from './pages/SingleProduct/SingleProduct';
 import SingleProject from './pages/SingleProject/SingleProject';
 import Allproducts from './pages/AllProduct/Allproducts';
 import Allprojects from './pages/AllProject/Allprojects';
+import Blogs from './pages/Blog/Blog';
+import SingleBlogPage from './pages/Blog/SingleBlog';
 import Contact from './pages/Contact/Contact';
 import MetaForm from './pages/Contact/metafrom1';
 import MetaFunction from './pages/Contact/metafrom2';
@@ -35,6 +37,7 @@ function App() {
         <Routes>
           <Route index element={<Home/>} />
           <Route path="/all-products" element={<Allproducts />} />
+          <Route path="/blogs" element={<Blogs/>} />
           <Route path="/all-projects" element={<Allprojects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/metaform" element={<MetaForm />} />
@@ -50,6 +53,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/metavision" element={<Metavision />} />
           <Route path="/metaexperience" element={<MetaExperience />} />
+          <Route path="/blog/:id" element={<SingleBlogPage />} />
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
