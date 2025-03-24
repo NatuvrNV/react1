@@ -44,6 +44,10 @@ function Drawer({ isOpen, toggleDrawer }) {
               <Nav.Link className="text-white Privacy-mob" href="/terms-conditions">
                Terms & Conditions
               </Nav.Link>
+
+              <Nav.Link className="text-white" href="/blogs">
+              Blogs
+              </Nav.Link>
             </Nav>
           </div>
         </Col>
