@@ -678,6 +678,74 @@ const SingleprojectDetail = [
         "assets/Allprojects/commercial/PremHospital/night/prem18.webp",
       ],
     },
+
+    {
+      name: "varunkapoor",
+      videoLink: "https://www.youtube.com/shorts/-70rvppz8fU",
+      youtubeLink: "https://www.youtube.com/watch?v=azbJqoT5Wy8",
+      instagramLink: "https://www.instagram.com/p/DGSqyO1IT63/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
+      Projectname:"Varun Kapoor",
+      metatittles:"Copper-Gold Facade with MetaCassette & MetaFold in Gurugram",
+      metadescription:"Metaguise blends MetaCassette perforated panels and MetaFold’s adaptive system for a dynamic residence facade in Gurugram, finished with wood-textured and copper-toned MetaFlutes.",
+      images: [
+        "assets/Allprojects/residential/VarunKapoor/metacassette/varunkapoor6.webp",
+        "assets/Allprojects/residential/VarunKapoor/metacassette/varunkapoor7.webp",
+        "assets/Allprojects/residential/VarunKapoor/metacassette/varunkapoor8.webp",
+        "assets/Allprojects/residential/VarunKapoor/metacassette/varunkapoor9.webp",
+        "assets/Allprojects/residential/VarunKapoor/metacassette/varunkapoor10.webp",
+        "assets/Allprojects/residential/VarunKapoor/metafold/varunkapoor2.webp",
+        "assets/Allprojects/residential/VarunKapoor/metafold/varunkapoor3.webp",
+        "assets/Allprojects/residential/VarunKapoor/metafold/varunkapoor4.webp",
+        "assets/Allprojects/residential/VarunKapoor/metafold/varunkapoor5.webp",
+      ],
+    },
+
+    {
+      name: "peachstreet",
+      videoLink: "https://www.youtube.com/shorts/rfSF_661G8U",
+      youtubeLink: "https://www.youtube.com/watch?v=dsuhIROYiyc",
+      instagramLink: "https://www.instagram.com/reel/DC3_Qu0yfbM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
+      Projectname:"Peach Street",
+      metatittles:"First Triangular MetaCoin Facade in Rose Gold by Metaguise",
+      metadescription:"Metaguise debuts its first triangular MetaCoin panels in radiant rose gold, paired with MetaGrey MetaFlutes and solid accents—creating a bold, light-responsive facade for a Gurugram residence by Studio Mathema.",
+      images: [
+        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet2.webp",
+        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet3.webp",
+        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet4.webp",
+        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet7.webp",
+        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet9.webp",
+        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet10.webp",
+        "assets/Allprojects/residential/PeachStreet/metalouver/peachstreet5.webp",
+        "assets/Allprojects/residential/PeachStreet/metalouver/peachstreet6.webp",
+        "assets/Allprojects/residential/PeachStreet/metalouver/peachstreet8.webp",
+       
+      ],
+    },
+
+    {
+      name: "Chandna",
+      videoLink: "https://www.youtube.com/shorts/L6R_17NCRcY",
+      youtubeLink: "https://www.youtube.com/watch?v=rXSQRmGuXnw",
+      instagramLink: "https://www.instagram.com/p/C-nDsgvyP1z/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
+      Projectname:"Chandna",
+      metatittles:"Sustainable Facade with MetaLouvers & MetaPlank in MetaWood Finish",
+      metadescription:"Designed by Cityspace’82 Architects, this cinematic facade features MetaWood-finish MetaLouvers and MetaPlank underceilings—merging sustainability with modern elegance in a bold architectural statement by Metaguise.",
+      images: [
+      
+        "assets/Allprojects/residential/chandna/metaflute/chandna2.webp",
+        "assets/Allprojects/residential/chandna/metaflute/chandna3.webp",
+        "assets/Allprojects/residential/chandna/metaflute/chandna4.webp",
+        "assets/Allprojects/residential/chandna/metaflute/chandna5.webp",
+        "assets/Allprojects/residential/chandna/metaflute/chandna6.webp",
+        "assets/Allprojects/residential/chandna/metaflute/chandna7.webp",
+        "assets/Allprojects/residential/chandna/metaflute/chandna8.webp",
+        "assets/Allprojects/residential/chandna/metaflute/chandna9.webp",
+        "assets/Allprojects/residential/chandna/metalouver/chandna8.webp",
+        "assets/Allprojects/residential/chandna/metalouver/chandna10.webp",
+        "assets/Allprojects/residential/chandna/metalouver/chandna11.webp",
+        "assets/Allprojects/residential/chandna/metalouver/chandna12.webp",
+      ],
+    },
   ];
 
 export const SingleProductDetail = [
@@ -731,7 +799,7 @@ export const SingleProductDetail = [
       metatittles:"Dynamic Parametric Facade with Custom Design",
       metadescription:"MetaSequin is a customizable parametric facade system, creating dynamic surfaces that shift with light, angle, and perspective.",
       description:
-        "MetaSequin transforms facades into moving expressions of art. Crafted from premium metals with MetaSurface finishes, it offers unmatched customizability in shape, size, color, and arrangement. Its fluid design interacts with light and perspective, creating captivating visual effects—ideal for luxury residences, commercial buildings, and iconic landmarks. Durable, sustainable, and visually striking, MetaSequin marks the future of facade design.",
+        "Elevate your structure with MetaShingles, a system of overlapping metal panels designed to create dynamic textures and visual depth. Fully customizable in shape, size, color and finish, MetaShingles offer endless design possibilities to suit any architectural vision. These shingles bring a contemporary flair to facades while ensuring durability and weather resistance. Perfect for residential and commercial projects, MetaShingles strike a balance between aesthetic appeal and robust functionality, allowing you to tailor your facade to your unique style​.",
       images: [
         "assets/Allproducts/MetaParametric/metasequin/metasequin2.webp",
         "assets/Allproducts/MetaParametric/metasequin/metasequin3.webp",
@@ -1301,6 +1369,9 @@ export const ProjectImages = [
     { imgPath: "assets/Allprojects/residential/CS5-MA/cover/vishal1.webp",order: 15 },
     { imgPath: "assets/Allprojects/residential/Espace/cover/espace1.webp",order: 6 },
     { imgPath: "assets/Allprojects/residential/MA-543/cover/manoj1.webp", order: 25 },
+    { imgPath: "assets/Allprojects/residential/PeachStreet/cover/peachstreet1.webp",},
+    { imgPath: "assets/Allprojects/residential/VarunKapoor/cover/varunkapoor1.webp",},
+    { imgPath: "assets/Allprojects/residential/chandna/cover/chandna1.webp",},
     { imgPath: "assets/Allprojects/residential/Q62-RA/cover/tejbir1.webp",order: 8 },
     { imgPath: "assets/Allprojects/residential/z1012/cover/z10121.webp",order: 26 },
     { imgPath: "assets/Allprojects/residential/Luxe/cover/luxe16.webp",order: 3 },
