@@ -56,20 +56,20 @@ const SingleBlogPage = () => {
         {/* Desktop Layout */}
         <div className="d-none d-xl-block">
           <Row>
-            <Col xl={3}>
+            <Col xl={12}>
               <BlogButton navigate={navigate} />
             </Col>
-            <Col xl={6}>
-              <h2 id='head-text' className="text-4xl mb-4 blog-title text-center">{blog.title}</h2>
-            </Col>
-            <Col xl={3}>
-              <p className="text-xs text-gray-400 date-text text-end">{blog.date}</p>
-            </Col>
+
           </Row>
 
-          <Row>
+          <Row className='py-xl-3'>
             <Col xl={6}>
-              <p className="text-sm  blog-fulldescription mt-xl-4">{blog.Fulldescription}</p>
+  
+              <h2 id='head-text' className="text-4xl mt-xl-4 blog-title text-start">{blog.title}</h2>
+           
+              <p className="text-xs text-gray-400 date-text text-start">{blog.date}</p>
+            
+              <p className="text-sm  blog-fulldescription ">{blog.Fulldescription}</p>
             </Col>
 
             <Col xl={6} >
