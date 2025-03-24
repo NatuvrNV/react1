@@ -684,7 +684,7 @@ const SingleprojectDetail = [
       videoLink: "https://www.youtube.com/shorts/-70rvppz8fU",
       youtubeLink: "https://www.youtube.com/watch?v=azbJqoT5Wy8",
       instagramLink: "https://www.instagram.com/p/DGSqyO1IT63/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
-      Projectname:"Varun Kapoor",
+      Projectname:"Copper Canvas",
       metatittles:"Copper-Gold Facade with MetaCassette & MetaFold in Gurugram",
       metadescription:"Metaguise blends MetaCassette perforated panels and MetaFold’s adaptive system for a dynamic residence facade in Gurugram, finished with wood-textured and copper-toned MetaFlutes.",
       images: [
