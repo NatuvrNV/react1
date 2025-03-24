@@ -25,13 +25,16 @@ import Partner from './pages/Partner/Partner';
 import CTB from './pages/Contact/coffeform';
 import PrivacyPolicy from './pages/Policy&Conditions/PrivacyPolicy';
 import Terms from './pages/Policy&Conditions/TermsConditions';
+import Preloader from './components/Preloader';
 
 
 function App() {
 
   return (
-    
+
     <HelmetProvider>
+          <Preloader >
+  </Preloader>
     <Router>
       <Layout>
         <Routes>
