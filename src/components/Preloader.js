@@ -58,7 +58,7 @@ const Preloader = () => {
       }}
     >
       <div
-        className="container"
+        className="container preloader-container "
         style={{
           width: '50vw',
           height: '50vw',
