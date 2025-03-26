@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Dropdown, ListGroup } from "react-bootstrap";
-import { FaYoutube, FaInstagram, } from "react-icons/fa";
+import { FaYoutube, FaInstagram } from "react-icons/fa";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import Footer from "../../components/Footer";
@@ -12,7 +12,6 @@ import { FaPlay } from "react-icons/fa";
 import { ProjectImages } from "../../utils/constants";
 
 const SingleProject = () => {
-
   const imageGridRef = useRef(null);
 
   const handleImageClick = (index) => {
@@ -52,7 +51,6 @@ const SingleProject = () => {
 
   const handleButtonClick = (index) => {
     setActiveButton(activeButton === index ? null : index);
-    
   };
 
   const categories = Array.from(
@@ -67,8 +65,6 @@ const SingleProject = () => {
     )
   );
 
-
-
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (gridRef.current && !gridRef.current.contains(event.target)) {
@@ -76,8 +72,6 @@ const SingleProject = () => {
       }
       window.scrollTo(0, 0);
     };
-
-    
 
     document.addEventListener("click", handleOutsideClick);
     return () => {
@@ -97,7 +91,9 @@ const SingleProject = () => {
 
   const toggleTheme = () => {
     setDarkMode(!darkMode);
+    setSelectedCategory(""); // Reset category filter when switching modes
   };
+
   useEffect(() => {
     const nightImages = selectedProject.images.filter(
       (item) => item.split("/")[4] === "night"
@@ -128,11 +124,8 @@ const SingleProject = () => {
   }, []);
 
   return (
- 
- 
-
     <div className="container main-container">
-           <Helmet>
+      <Helmet>
         <title>{selectedProject.Projectname} | {selectedProject.metatittles}</title>
         <meta name="description" content={selectedProject.metadescription} />
         <meta property="og:title" content={selectedProject.metatittles}  />
@@ -151,22 +144,23 @@ const SingleProject = () => {
               showTimeDropdown={showTimeDropdown}
               setShowTimeDropdown={setShowTimeDropdown}
               setDarkMode={setDarkMode}
-              selectedCategory={selectedCategory} // Pass this prop
+              selectedCategory={selectedCategory}
+              darkMode={darkMode}
             />
           )}
         </div>
         <div className="col-9 xs-12">
-        <ImageGrid
-  filteredImages={filteredImages}
-  handleImageClick={handleImageClick}
-  isLastRow={isLastRow}
-  clickedIndex={clickedIndex}
-  ref={imageGridRef}
-  videoLink={selectedProject.videoLink}
-  darkMode={darkMode}
-  selectedProject={projectName}
-  setDarkMode={setDarkMode} // Pass setDarkMode here
-/>
+          <ImageGrid
+            filteredImages={filteredImages}
+            handleImageClick={handleImageClick}
+            isLastRow={isLastRow}
+            clickedIndex={clickedIndex}
+            ref={imageGridRef}
+            videoLink={selectedProject.videoLink}
+            darkMode={darkMode}
+            selectedProject={projectName}
+            setDarkMode={setDarkMode}
+          />
         </div>
         <Sidebar
           selectedProject={selectedProject}
@@ -205,6 +199,7 @@ const MobileControls = ({
   setShowTimeDropdown,
   setDarkMode,
   selectedCategory,
+  darkMode,
 }) => {
   return (
     <div className="mobile-controls">
@@ -216,6 +211,7 @@ const MobileControls = ({
           filterImagesByCategory={filterImagesByCategory}
           categories={categories}
           selectedCategory={selectedCategory}
+          darkMode={darkMode}
         />
         <TimeDropdown
           showTimeDropdown={showTimeDropdown}
@@ -250,6 +246,7 @@ const ElementsDropdown = ({
   filterImagesByCategory,
   categories,
   selectedCategory,
+  darkMode,
 }) => {
   return (
     <Dropdown
@@ -272,7 +269,7 @@ const ElementsDropdown = ({
           All
           {selectedCategory === "" && <MdArrowOutward size={20} />}
         </Dropdown.Item>
-        {categories.map((category, index) => (
+        {!darkMode && categories.map((category, index) => (
           <Dropdown.Item
             key={index}
             onClick={() => filterImagesByCategory(category)}
@@ -378,7 +375,7 @@ const Sidebar = ({
             All
             {selectedCategory === "" && <MdArrowOutward size={20} />}
           </ListGroup.Item>
-          {categories.map((category, index) => (
+          {!darkMode && categories.map((category, index) => (
             <ListGroup.Item
               key={index}
               action
@@ -413,7 +410,7 @@ const Sidebar = ({
         </div>
       </div>
       <div className="button-row" style={{ padding: "5px" }}>
-      <Button
+        <Button
           icon={<FaYoutube />}
           text="See on YouTube"
           onClick={() => window.open(youtubeLink, "_blank")}
@@ -425,7 +422,6 @@ const Sidebar = ({
           onClick={() => window.open(instagramLink, "_blank")}
           active={activeButton === 1}
         />
-   
       </div>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
         <button id="build-button" className="hover-button">
@@ -436,8 +432,6 @@ const Sidebar = ({
   );
 };
 
-
-
 const ImageGrid = ({
   filteredImages,
   handleImageClick,
@@ -447,7 +441,7 @@ const ImageGrid = ({
   videoLink,
   darkMode,
   selectedProject,
-  setDarkMode, // Receive setDarkMode here
+  setDarkMode,
 }) => {
   const normalizeName = (name) => name.toLowerCase().replace(/[^a-z0-9]/gi, '');
 
@@ -456,7 +450,7 @@ const ImageGrid = ({
   );
 
   const handleGoBackToDay = () => {
-    setDarkMode(false); // Turn off dark mode
+    setDarkMode(false);
   };
 
   return (
@@ -464,7 +458,7 @@ const ImageGrid = ({
       {filteredImages.length === 0 ? (
         <div className="no-images-found">
           No images found.
-          <span onClick={handleGoBackToDay} style={{ cursor: 'pointer', }}>
+          <span onClick={handleGoBackToDay} style={{ cursor: 'pointer' }}>
             Go Back to Day
           </span>
         </div>
@@ -506,7 +500,6 @@ const ImageGrid = ({
 };
 
 const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
-  // Extract Video ID from YouTube Link
   const getVideoId = (url) => {
     if (url.includes("shorts/")) {
       return url.split("/shorts/")[1]?.split("?")[0];
