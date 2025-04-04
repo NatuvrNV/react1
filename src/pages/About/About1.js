@@ -33,12 +33,12 @@ function About() {
     
     <div className="container-fluid text-center">
       <Helmet>
-              <title>Metaguise | Innovators in Luxury Metal Facades</title>
-              <meta name="description" content="Metaguise pioneers high-end metal facades, blending craftsmanship, technology, and innovation to redefine modern architecture." />
+              <title>About Metaguise | Experts in Metal Facade Design </title>
+              <meta name="description" content="Metaguise creates custom metal facade designs and claddings that bring modern structures to life." />
               <meta name="keywords" content="home, react, SEO, web development" />
               <meta name="author" content="Your Name" />
-              <meta property="og:title" content="Metaguise | Innovators in Luxury Metal Facades" />
-              <meta property="og:description" content="Metaguise pioneers high-end metal facades, blending craftsmanship, technology, and innovation to redefine modern architecture." />
+              <meta property="og:title" content="About Metaguise | Experts in Metal Facade Design " />
+              <meta property="og:description" content="Metaguise creates custom metal facade designs and claddings that bring modern structures to life." />
               <meta property="og:image" content="https://yourwebsite.com/home-image.jpg" />
               <meta property="og:url" content="https://yourwebsite.com/" />
               <meta name="robots" content="index, follow" />
