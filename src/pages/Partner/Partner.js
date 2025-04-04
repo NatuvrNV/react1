@@ -79,10 +79,10 @@ const Partner = () => {
   return (
     <>
       <Helmet>
-        <title>Partner with Metaguise | Let's Collaborate on Innovative Facades</title>
-        <meta name="description" content="Collaborate with Metaguise on groundbreaking facade designs. Let’s create, innovate, and redefine architectural excellence together" />
-        <meta property="og:title" content="Partner with Metaguise | Let's Collaborate on Innovative Facades" />
-        <meta property="og:description" content="Collaborate with Metaguise on groundbreaking facade designs. Let’s create, innovate, and redefine architectural excellence together" />
+        <title>Partner with Metaguise | Innovative Facade Cladding Experts</title>
+        <meta name="description" content="Collaborate with Metaguise on custom facade cladding and metal facade solutions designed for standout architectural impact." />
+        <meta property="og:title" content="Partner with Metaguise | Innovative Facade Cladding Experts" />
+        <meta property="og:description" content="Collaborate with Metaguise on custom facade cladding and metal facade solutions designed for standout architectural impact." />
         <meta name="robots" content="index, follow" />
       </Helmet>
 
