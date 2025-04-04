@@ -99,21 +99,23 @@ const Contact = ({ brochureName }) => {
 
   return (
     <>
-      <Helmet>
-        <title>Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding</title>
-        <meta
-          name="description"
-          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
-        />
-        <meta
-          property="og:title"
-          content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`}
-        />
-        <meta
-          property="og:description"
-          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
-        />
-      </Helmet>
+     <Helmet>
+           <title>Download {detectedBrochure}  |  Metal Cladding Surface Finishes</title>
+           <meta
+             name="description"
+             content={`
+             Explore textured metal facade finishes crafted for modern architecture in the ${detectedBrochure} brochure.
+             `}
+           />
+           <meta
+             property="og:title"
+             content={`Download ${detectedBrochure}  |  Metal Cladding Surface Finishes`}
+           />
+           <meta
+             property="og:description"
+             content={`Explore textured metal facade finishes crafted for modern architecture in the ${detectedBrochure} brochure.`}
+           />
+         </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">

@@ -7,8 +7,8 @@ const SingleprojectDetail = [
       videoLink: "https://www.youtube.com/shorts/IQTRbf0rZCk",
       instagramLink: "https://www.instagram.com/reel/C6x6Q5lSON8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Studio Ardete HQ",
-      metatittles:"Studio Ardete, Mohali | Parametric Facade with MetaFin & MetaSequin",
-      metadescription:"Metaguise crafted a striking parametric facade for Ardete HQ, blending fluid MetaFin surfaces with dynamic MetaSequin elements for a bold, modern design",
+      metatittles:"Studio Ardete | Parametric Facade with MetaFin & MetaSequin",
+      metadescription:"A dynamic parametric facade in Mohali, featuring MetaFin and shimmering MetaSequin panels by Metaguise.",
       
       images: [
   
@@ -38,8 +38,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=nJSmApEceRE",
       instagramLink: "https://www.instagram.com/p/C7yTAU0y66T/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Tanishq Jewellery",
-      metatittles:"Tanishq Jewellers, New Delhi | Iconic Parametric Facade with MetaCoin & MetaFlute",
-      metadescription:"Metaguise designed a striking facade for Tanishq, featuring uniquely shaped parametric MetaCoin and wooden MetaFlute panels, creating a shimmering, jewel-like effect.",
+      metatittles:"Tanishq Delhi | Parametric Coin Facade with MetaFlutes & MetaCassette",
+      metadescription:"A signature parametric coin facade in gold tones complemneted by MetaCoin and MetaFlute for Tanishq Jewellers.",
       images: [
         "assets/Allprojects/commercial/Tanishq/metacoin/tanishq1.webp",
         "assets/Allprojects/commercial/Tanishq/metacoin/tanishq5.webp",
@@ -93,8 +93,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=bsZgLDDyA3A",
       instagramLink: "https://www.instagram.com/p/CyTO-QXyZGj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A13-43",
-      metatittles:"Modern Residential Facade with MetaPyramid, MetaLouver & MetaPlank",
-      metadescription:"Metaguise crafted a bold residential facade for a modern home featuring MetaPyramid, MetaLover and MetaPlank",
+      metatittles:"Modern Home | Metal Facade with MetaPyramid & MetaLouver",
+      metadescription:"This residence features metal facade detailing with MetaPyramids, MetaLouvers, and linear MetaPlank panels.",
       images: [
         "assets/Allprojects/residential/A13-43/metalouver/a13-433.webp",
         "assets/Allprojects/residential/A13-43/metalouver/a13-437.webp",
@@ -122,8 +122,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/shorts/gE5wc_E-6Jg?feature=share",
       instagramLink: "https://www.instagram.com/p/DADNgGVyMxC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"D5-3",
-      metatittles:"Residential Facade with MetaCassette MetaFlute, MetaFold & MetaLouver",
-      metadescription:"Metaguise designed a contemporary residential facade featuring MetaCassette grooved panels, MetaFlute, MetaFold, and MetaLouver for a refined, modern aesthetic",
+      metatittles:"Contemporary Home | Facade Cladding with MetaFold & MetaLouvers",
+      metadescription:"A seamless facade cladding mix of MetaFold, MetaCassette, and MetaLouver for layered elevation design.",
       images: [
         "assets/Allprojects/residential/D5-3/metacassette-grooved/ankit10.webp",
         "assets/Allprojects/residential/D5-3/metacassette-grooved/ankit11.webp",
@@ -149,8 +149,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/shorts/KzYLNPaMkB8?feature=share",
       instagramLink: "https://www.instagram.com/reel/C5VhWpTyXzx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Gowri Jewelers",
-      metatittles:"Gowri's Jewellery, Hyderabad | Radiant Facade with Parametric MetaSequin",
-      metadescription:"Metaguise created a striking facade for Gowri's Jewellery, featuring MetaSequin’s dynamic parametric design that shimmers like a jewel in changing light",
+      metatittles:"Gowri’s Jewellery | Metal Sequin Facade Crafted by Metaguise",
+      metadescription:"A bespoke metal sequin facade designed for visual movement and light interaction.",
       images: [
         "assets/Allprojects/commercial/Gowri/metasequin/gowri1.webp",
         "assets/Allprojects/commercial/Gowri/metasequin/gowri3.webp",
@@ -168,8 +168,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/shorts/L1BRTrBobAI",
       instagramLink: "https://www.instagram.com/p/C0oeC5NSFp0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"E10-HK",
-      metatittles:"Commercial Facade | Fluid Parametric Design with MetaFin",
-      metadescription:"This commercial facade features MetaFin’s fluid parametric design, creating seamless curves and a bold, modern architectural statement",
+      metatittles:"Commercial Architecture | Parametric Facade with MetaFin",
+      metadescription:"A fluid parametric facade using MetaFin’s seamless curves for a bold and organic commercial presence.",
       images: [
         "assets/Allprojects/commercial/E10/metafin/e101.webp",
         "assets/Allprojects/commercial/E10/metafin/e103.webp",
@@ -190,8 +190,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=dAarntEa15o",
       instagramLink: "https://www.instagram.com/p/C8bd64HyWOX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Deepak Sweets",
-      metatittles:"Deepak Sweets, Bareilly | Striking Facade with MetaSequin, MetaPyramid & MetaCassette ",
-      metadescription:"Metaguise designed a bold facade for Deepak Sweets, featuring MetaSequin, MetaPyramid, and perforated MetaCassette for depth, texture, and dynamic light play",
+      metatittles:"Deepak Sweets | Metal Facade with MetaSequin & MetaCassette ",
+      metadescription:"This vibrant store front in Bareilly showcases a metal facade cladding with MetaSequin and MetaCassette.",
       images: [
         "assets/Allprojects/commercial/Deepak/metacassette-perforated/deepak6.webp",
         "assets/Allprojects/commercial/Deepak/metacassette-perforated/deepak13.webp",
@@ -223,8 +223,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/shorts/EerdVK4Ax9M?feature=share",
       instagramLink: "https://www.instagram.com/p/DBQQFHRyB7-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A19-DL1",
-      metatittles:"Modern Residential Facade with MetaCassette, MetaFlute & MetaLouver",
-      metadescription:"Metaguise crafted a refined residential facade featuring grooved and perforated MetaCassette, MetaFlute, and MetaLouver for a sleek, modern aesthetic",
+      metatittles:"Modern Home | Facade Panels with MetaCassette & MetaLouver",
+      metadescription:"A fresh residential elevation using MetaLouvers and MetaCassette facade panels for modern rhythm and ventilation.",
       images: [
         "assets/Allprojects/residential/A19/metacassette-grooved/a1910.webp",
         "assets/Allprojects/residential/A19/metacassette-grooved/a1911.webp",
@@ -250,8 +250,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=-K2JTghXJTw",
       instagramLink: "https://www.instagram.com/reel/Cy6EXmmSizr/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A18-DL1",
-      metatittles:"Elegant Residential Facade with MetaCassette, MetaFlute & MetaLouver",
-      metadescription:"Metaguise designed a contemporary residential facade featuring perforated MetaCassette, MetaFlute, and MetaLouver for depth, ventilation, and modern aesthetics",
+      metatittles:"Elegant Elevation | Metal Facade with MetaFlute & MetaLouvers",
+      metadescription:"This refined home uses our high value metal facade materials with fluted and louvered profiles for contrast and depth.",
       images: [
         "assets/Allprojects/residential/A18/metacassette-perforated/a182.webp",
         "assets/Allprojects/residential/A18/metacassette-perforated/a184.webp",
@@ -278,8 +278,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=N5lCQ8fSvgA",
       instagramLink: "https://www.instagram.com/p/C92IFsGSdqx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"MVA-DL1",
-      metatittles:"Modern Residential Elevation with MetaCassette & MetaGate",
-      metadescription:"Metaguise designed a sleek residential facade featuring a durable MetaGate and grooved MetaCassette panels, combining security with modern aesthetics",
+      metatittles:"Modern Home | Metal Facade Gate with MetaCassette",
+      metadescription:"A strong architectural expression with metal facade cladding using MetaCassette grooved panels and integrated MetaGate entrance.",
       images: [
         "assets/Allprojects/residential/MVA-DL1/metacassette-grooved/varun2.webp",
         "assets/Allprojects/residential/MVA-DL1/metacassette-grooved/varun3.webp",
@@ -304,8 +304,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=mwmFELxs14E",
       instagramLink: "https://www.instagram.com/reel/C6f5mGtSajX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Metaland",
-      metatittles:" Metaguise's Flagship Experience Center with Parametric MetaSequin",
-      metadescription:"Metaland is Metaguise’s flagship experience center, featuring MetaSequin’s parametric design and innovative metal craftsmanship",
+      metatittles:" METALAND™ | Parametric Sequin Facade by Metaguise",
+      metadescription:"Our flagship experience center with bespoke shimmering parametric metal sequin panels.",
       images: [
         "assets/Allprojects/commercial/Metaland/metasequin/metaland14.webp",
         "assets/Allprojects/commercial/Metaland/metasequin/metaland8.webp",
@@ -328,8 +328,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=d_0Ie4xGsKQ&feature=youtu.be",
       instagramLink: "https://www.instagram.com/p/DAhz8F2S2Sf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Micasa",
-      metatittles:"Striking Commercial Facade with Parametric MetaCoin",
-      metadescription:"Metaguise designed a bold commercial facade for Micasa, featuring MetaCoin’s parametric elements for a dynamic and eye-catching exterior",
+      metatittles:"Micasa Delhi | A Bold Parametric Coin Facade ",
+      metadescription:"Commercial building with a striking gold parametric coin matrix facade featuring a wave like pattern.",
       images: [
         "assets/Allprojects/commercial/Micasa/metacoin/micasa2.webp",
         "assets/Allprojects/commercial/Micasa/metacoin/micasa3.webp",
@@ -347,8 +347,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/shorts/PjSB1brakw0?feature=share",
       instagramLink: "https://www.instagram.com/p/C3Uxk3VSyQO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Yashika",
-      metatittles:"A Bold Commercial Facade with Parametric MetaCoin",
-      metadescription:"Featuring parametric MetaCoin elements, this commercial facade creates a striking, dynamic visual identity that stands out in urban architecture",
+      metatittles:"Bold Commercial | Parametric Facade with MetaCoin",
+      metadescription:"A bold statement in commercial architecture using parametric facade technology with MetaCoin.",
       images: [
         "assets/Allprojects/commercial/yashika/metacoin/yashika2.webp",
         "assets/Allprojects/commercial/yashika/metacoin/yashika3.webp",
@@ -367,8 +367,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=r6kNjqo6PgQ",
       instagramLink: "https://www.instagram.com/reel/C5lPK9QSXHU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"C76",
-      metatittles:"Modern Residential Facade | Grooved MetaCassette & MetaFlute",
-      metadescription:"Enhance your residential facade with grooved MetaCassette panels and MetaFlute accents, designed for durability, depth, and a sleek modern look",
+      metatittles:"Grooved Facade | Metal Facade Panels with MetaCassette & MetaFlute",
+      metadescription:"This residence features Metacassette grooved metal facade panels with vertical fluting for a modern look.",
       images: [
         "assets/Allprojects/residential/C76/metacassette-grooved/c769.webp",
         "assets/Allprojects/residential/C76/metacassette-grooved/c7612.webp",
@@ -393,8 +393,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/shorts/oOiyN07PwQE?feature=share",
       instagramLink: "https://www.instagram.com/p/C0d5yYYS90q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"5107",
-      metatittles:"Modern Residential Facade | Perforated MetaCassette Panels",
-      metadescription:"Upgrade your residential facade with perforated MetaCassette panels, offering a sleek design, ventilation, and modern architectural appeal",
+      metatittles:"Modern Residential Design | Perforated Facade Panels ",
+      metadescription:"Perforated facade panels in MetaCassette allow light, shadow, and texture to define this modern home.",
       images: [
         "assets/Allprojects/residential/5107/metacassette-perforated/51072.webp",
         "assets/Allprojects/residential/5107/metacassette-perforated/51073.webp",
@@ -417,8 +417,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=_ei1jkRmp_Q",
       instagramLink: "https://www.instagram.com/p/C3KeYlvyFdK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A297",
-      metatittles:"MetaShingle, MetaFlute & MetaLouver",
-      metadescription:"Enhance your home's facade with MetaFlute, MetaLouver, and MetaShingle—combining durability, ventilation, and modern aesthetics",
+      metatittles:"Modern Facade | MetaFlutes, MetaShingles and Metal Louver Facade",
+      metadescription:"A layered metal facade design combining MetaShingle, MetaFlute, and functional MetaLouver panels.",
       images: [
         "assets/Allprojects/residential/A297/metaflute/a2973.webp",
         "assets/Allprojects/residential/A297/metaflute/a2975.webp",
@@ -457,8 +457,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=O99SARUeRa0",
       instagramLink: "https://www.instagram.com/p/C8wEVfgSrCF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"C3/4-S73",
-      metatittles:"Parametric MetaCoin & Overlapping MetaShingle",
-      metadescription:"Upgrade your home's facade with MetaCoin and MetaShingle—combining parametric elegance and layered textures for a modern architectural look",
+      metatittles:"Residential Elevation | Parametric Facade with MetaCoin & MetaShingle",
+      metadescription:"A dynamic parametric facade combining MetaCoin with overlapping MetaShingles.",
       images: [
         "assets/Allprojects/residential/C34-573/metacoin/kapil2.webp",
         "assets/Allprojects/residential/C34-573/metacoin/kapil3.webp",
@@ -479,8 +479,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=gi0qDnaOmfI",
       instagramLink: "https://www.instagram.com/p/C2uQpm1y7JB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"DLF4",
-      metatittles:"Residential Facade | Sleek MetaFlute & Solid Panel Design",
-      metadescription:"Enhance your home's facade with MetaFlute and solid panels—offering durability, sleek lines, and a modern aesthetic with minimal maintenance",
+      metatittles:"Modern Home | Metal Facade with Flutes & Solid Panels",
+      metadescription:"A sleek metal facade elevation using MetaFlute and solid panels for linear definition and form.",
       images: [
         "assets/Allprojects/residential/DLF4/metaflute/dlf15.webp",
         "assets/Allprojects/residential/DLF4/metaflute/dlf16.webp",
@@ -505,8 +505,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=6RoELQ5I-1g",
       instagramLink: "https://www.instagram.com/p/CyDrwYkSG7e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"CS5-MA",
-      metatittles:"Residential Facade | Perforated MetaCassette, MetaFlute & MetaLouve",
-      metadescription:"Upgrade your home's facade with perforated MetaCassette, MetaFlute, and MetaLouver—offering ventilation, depth, and a sleek modern design",
+      metatittles:"A sleek metal facade elevation using MetaFlute and solid panels for linear definition and form.",
+      metadescription:"This facade blends perforated MetaCassette facade panels and metal flutes and louvers for elevation.",
       images: [
         "assets/Allprojects/residential/CS5-MA/metacassette-perforated/vishal2.webp",
         "assets/Allprojects/residential/CS5-MA/metacassette-perforated/vishal9.webp",
@@ -534,8 +534,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=0Or6FQP59x4",
       instagramLink: "https://www.instagram.com/p/C4NN0B3yv82/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Espace Nirvana",
-      metatittles:"Residential Facade | Perforated MetaCassette, MetaLouver & MetaPlank",
-      metadescription:"Transform your home's facade with perforated MetaCassette, grey and wood-tone MetaLouver, and wood-finish MetaPlank for a modern, textured look",
+      metatittles:"Residential Facade | MetaCassette, Plank & Metal Louver Facade",
+      metadescription:"A refined facade cladding approach with MetaCassette, MetaPlank and MetaLouvers. ",
       images: [
         "assets/Allprojects/residential/Espace/metacassette-perforated/espace2.webp",
         "assets/Allprojects/residential/Espace/metacassette-perforated/espace5.webp",
@@ -561,8 +561,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=Urze-UjHcLU",
       instagramLink: "https://www.instagram.com/p/C_CsfuZy_UM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"MA-543",
-      metatittles:"Residential Facade | Parametric MetaCoin, MetaLouver & MetaPlank",
-      metadescription:"Enhance your home's facade with parametric MetaCoin, MetaLouver for ventilation, and wood-finish MetaPlank for a dynamic and modern look",
+      metatittles:"Residential Design | Parametric Coin & Metal Louver Facade",
+      metadescription:"A soft parametric coin matrix facade balanced with MetaLouvers and structured MetaPlank panels.",
       images: [
         "assets/Allprojects/residential/MA-543/metacoin/manoj8.webp",
         "assets/Allprojects/residential/MA-543/metacoin/manoj10.webp",
@@ -584,8 +584,8 @@ const SingleprojectDetail = [
       youtubeLink:"https://www.youtube.com/watch?v=oEKOjT0tAWk",
       instagramLink:"https://www.instagram.com/p/C_m5fBNhNuX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Q62-RA",
-      metatittles:"Residential Facade | MetaFlute, MetaLouver & Solid Panels",
-      metadescription:"Upgrade your home's facade with MetaFlute for texture, MetaLouver for ventilation, and solid panels for a sleek, durable, and modern finish",
+      metatittles:"Modern Facade | MetaFlute & Metal Louver Facade",
+      metadescription:"A bold look created with solid panels, fluted textures and metal louver facade.",
       images: [
         "assets/Allprojects/residential/Q62-RA/metaflute/tejbir4.webp",
         "assets/Allprojects/residential/Q62-RA/metaflute/tejbir6.webp",
@@ -608,8 +608,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=AwvlRroIAKA",
       instagramLink: "https://www.instagram.com/p/DA3Pqdey03I/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Z1012",
-      metatittles:"Residential Facade | MetaFlute & MetaShingle for a Modern Look",
-      metadescription:"Elevate your home's facade with MetaFlute for sleek linear detail and MetaShingle for layered depth, creating a refined and contemporary aesthetic",
+      metatittles:"Contemporary Metal Facade | Sleek MetaFlute & Overlapping MetaShingles",
+      metadescription:"This elevation features a metal facade combining sleek MetaFlutes and layered MetaShingles",
       images: [
         "assets/Allprojects/residential/z1012/metaflute/z10122.webp",
         "assets/Allprojects/residential/z1012/metaflute/z10123.webp",
@@ -755,8 +755,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=d_0Ie4xGsKQ",
       instagramLink: "https://www.instagram.com/p/C1HSCBGSJyU/",
       Productname:"MetaCoin",
-      metatittles:"Customizable Parametric Facade System",
-      metadescription:"Customize every detail of your facade with MetaCoin—control shape, size, color, and pattern for a unique architectural design.",
+      metatittles:"MetaCoin | Customizable Metal Coin Facade System ",
+      metadescription:"Design a parametric coin facade that's truly yours. Customize shape, size, colour and pattern for standout architecture",
       description:
         "A revolutionary parametric facade system designed to elevate architectural aesthetics. Crafted with premium metals and enhanced with MetaSurface finishes, MetaCoin offers unparalleled customizability, from the shape and size of each element to its color and arrangement. Its dynamic design reacts to light and perspective, creating ever-changing visual effects. Ideal for contemporary and iconic structures, MetaCoin transforms facades into captivating works of art that are sustainable, durable, and visually stunning​​.",
       images: [
@@ -796,8 +796,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/shorts/Z_o_1Y3Cnpc",
       instagramLink: "https://www.instagram.com/p/DDMsrWUykg_/?img_index=1",
       Productname:"MetaSequin",
-      metatittles:"Dynamic Parametric Facade with Custom Design",
-      metadescription:"MetaSequin is a customizable parametric facade system, creating dynamic surfaces that shift with light, angle, and perspective.",
+      metatittles:"MetaSequin | Bespoke Parametric Metal Sequin Facades ",
+      metadescription:"Create dynamic elevations with our metal sequin facade panels, customizable in shape, size, colour and patterns. ",
       description:
         "Elevate your structure with MetaShingles, a system of overlapping metal panels designed to create dynamic textures and visual depth. Fully customizable in shape, size, color and finish, MetaShingles offer endless design possibilities to suit any architectural vision. These shingles bring a contemporary flair to facades while ensuring durability and weather resistance. Perfect for residential and commercial projects, MetaShingles strike a balance between aesthetic appeal and robust functionality, allowing you to tailor your facade to your unique style​.",
       images: [
@@ -831,8 +831,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/shorts/nkCT_bRGOdQ",
       instagramLink: "https://www.instagram.com/p/C6VouzvSSN6/?img_index=1",
       Productname:"MetaPyramids",
-      metatittles:"3D Metal Facade Inspired by Egypt’s Pyramids",
-      metadescription:"MetaPyramids is a 3D metal facade system inspired by Egyptian pyramids, featuring fixed pyramid-shaped panels that add depth and shadows",
+      metatittles:"MetaPyramids | 3D Metal Facade Panels for Elevations",
+      metadescription:"MetaPyramids is a 3D metal facade system inspired by the Egyptian Pyramids, adding depth, shadow, and structure to elevations.",
       description:
         "A tribute to ancient architectural wonders, MetaPyramid captures the essence of the pyramids with its geometric precision. Featuring 3D perforations that play with light and shadow, these facades create dynamic visual patterns that change throughout the day. Ideal for bold and iconic designs, MetaPyramid adds a layer of intrigue and timeless sophistication to modern architecture​.",
       images: [
@@ -858,8 +858,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/shorts/x5Gy-hhy9xI",
       instagramLink: "https://www.instagram.com/p/C7BWFlryZs4/",
       Productname:"MetaShingles",
-      metatittles:"Overlapping Metal Facade System",
-      metadescription:"MetaShingles is a metal facade system with interlocking, overlapping panels that enhance texture, create depth, and play with light and shadow.",
+      metatittles:"MetaShingles | Overlapping Metal Facade System",
+      metadescription:"MetaShingles is a metal facade system with interlocking, overlapping panels that add texture and create depth in elevations.",
       description:
         "Elevate your structure with MetaShingles, a system of overlapping metal panels designed to create dynamic textures and visual depth. These shingles bring a contemporary flair to facades while ensuring durability and weather resistance. Perfect for residential and commercial projects, MetaShingles strike a balance between aesthetic appeal and robust functionality​.",
       images: [
@@ -883,8 +883,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=WddafN0E69M",
       instagramLink: "https://www.instagram.com/p/C6TeqtOSgsn/?img_index=1",
       Productname:"Cascading Keys",
-      metatittles:"Parametric Metal Facade with Fluid Design",
-      metadescription:"Cascading Keys is a parametric metal facade with layered, flowing panels that create movement, dynamic depth, and interactive light effects.",
+      metatittles:"Cascading Keys | Parametric Facade Metarials with Fluid Design",
+      metadescription:"A parametric metal facade product inspired by chimes, Cascading Keys features keys that flow with light, depth, and movement.",
       description:
         "An architectural ode to natural harmony, Cascading Keys incorporates aluminum and stainless steel in flowing forms that mimic the rhythm of nature. These facades resemble the gentle hum of wind chimes or the flutter of butterfly wings, captivating viewers with their elegance. Ideal for tranquil, design-forward spaces, Cascading Keys creates a seamless blend of beauty and function​.",
       images: [
@@ -901,8 +901,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=AtzVGYkpOxs",
       instagramLink: "https://www.instagram.com/p/C6svvLSSWU2/?img_index=1",
       Productname:"MetaCassette",
-      metatittles:"Versatile Metal Cladding for Facades",
-      metadescription:"MetaCassette is a metal cladding system with solid, perforated, and grooved panels, offering durability, ventilation, and modern aesthetics.",
+      metatittles:"MetaCassette | Versatile Metal Facade Cladding Solutions",
+      metadescription:"MetaCassette is a metal facade cladding system with solid, perforated, and grooved panels.",
       description:
         "A versatile facade solution, MetaCassette offers three distinct panel types—grooved, perforated, and solid—each designed to bring unique aesthetic and functional qualities to architectural projects. Together, these options empower architects and designers to craft facades that are not only visually captivating but also tailored to specific functional requirements​​.",
       images: [
@@ -934,8 +934,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/shorts/L6R_17NCRcY",
       instagramLink: "https://www.instagram.com/p/C52rD3KyYBU/?img_index=4",
       Productname:"MetaFlute",
-      metatittles:"Durable Metal Cladding with Linear Profiles",
-      metadescription:"MetaFlute is a metal cladding system with strong, linear profiles that add depth, texture, and a sleek, modern touch to facades.",
+      metatittles:"MetaFlute | Durable Metal Facade Cladding System",
+      metadescription:"MetaFlute is a metal facade cladding system with bold lines and linear profiles adding depth and texture.",
       description:
         "A sleek solution for architectural facades, MetaFlute combines lightweight yet durable metals to create rhythmic, vertical lines that enhance any structure. These extrusions shield buildings from harsh weather while adding a touch of modern sophistication. MetaFlute is ideal for projects requiring elegance, resilience, and minimal maintenance​​.",
       images: [
@@ -962,8 +962,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=Zyfa8ufnC0s",
       instagramLink: "https://www.instagram.com/p/DGSqyO1IT63/?img_index=1",
       Productname:"MetaFold",
-      metatittles:"Folding Metal Facade System for Flexible Design",
-      metadescription:"MetaFold is a folding metal facade system with multi-faceted panels that create dynamic openings, seamless transitions, and modern aesthetics.",
+      metatittles:"MetaFold | Folding Metal Facade System ",
+      metadescription:"MetaFold is a functional metal facade system with folding panels designed for flexibility, ventilation, and smooth indoor-outdoor transitions.",
       description:
         "MetaFold transforms spaces with its innovative folding panels, seamlessly connecting indoor and outdoor environments. Featuring multi-faceted panes crafted from premium metals, it creates dynamic openings that enhance airflow and natural light. Perfect for modern homes and commercial spaces, MetaFold embodies functional luxury and design flexibility​.",
       images: [
@@ -980,8 +980,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=HVRcBLgKIeA",
       instagramLink: "https://www.instagram.com/p/C0ok5qASjfQ/?img_index=3",
       Productname:"MetaFin",
-      metatittles:"Parametric Metal Facade with Fluid Curves",
-      metadescription:"MetaFin is a parametric metal facade system with seamless, curvilinear surfaces that create flowing, organic forms for modern architecture.",
+      metatittles:"MetaFin | Parametric Facade in Metal with Fluid Curves",
+      metadescription:"MetaFin is a parametric facade system with fluid, curving forms - ideal for creating soft, sculptural surfaces in architecture.",
       description:
         "Showcasing the perfect blend of fluidity and structure, MetaFin features parametric designs crafted from lightweight metals. With its smooth, organic curves and ability to reflect and play with light, MetaFin creates a stunning visual narrative. This facade system is ideal for projects that demand sustainable, artistic, and high-performance solutions​​.",
       images: [
@@ -999,8 +999,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=WZQaImzTZiE",
       instagramLink: "https://www.instagram.com/p/Cxp-xPFv7RR/?img_index=1",
       Productname:"MetaHydra",
-      metatittles:"Sculpted 3D Copper Facade with Living Patina",
-      metadescription:"MetaHydra is a 3D metal facade crafted from pure copper, evolving with a living patina to create dynamic colors and organic movement",
+      metatittles:"MetaHydra | Sculpted Copper Metal Facade Cladding",
+      metadescription:"MetaHydra is a metal facade product made with copper that evolves over time, revealing rich tones and organic textures.",
       description:
         "MetaHydra brings together the beauty of copper and the resilience of parametric design. Its unique panels mimic the fluidity of water, transforming facades into living works of art. The pure copper material ages gracefully, developing a rich patina that adds character over time, making it a luxurious choice for iconic architectural projects​.",
       images: [
@@ -1016,8 +1016,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/shorts/EerdVK4Ax9M",
       instagramLink: "https://www.instagram.com/p/C_m5fBNhNuX/?img_index=1",
       Productname:"MetaLouver",
-      metatittles:"Angled Metal Louvers for Light & Ventilation",
-      metadescription:"MetaLouver is a metal louver system with precisely angled panels that balance natural light, airflow, and sun protection for facades",
+      metatittles:"MetaLouver | Metal Louver Facade System for Elevations",
+      metadescription:"MetaLouver is a metal louver facade system designed for light, airflow, and shade - a durable, high-value solution for any project.",
       description:
         "MetaLouver offers a harmonious balance of form and functionality. Its adjustable, angular metal panels allow for optimal control of light and ventilation while shielding interiors from rain and harsh sunlight. Whether used for facades or shading systems, MetaLouver adds a distinctive architectural rhythm to buildings​​.",
       images: [
@@ -1036,8 +1036,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/shorts/gSDtx-QkGhw",
       instagramLink: "https://www.instagram.com/p/C-nDsgvyP1z/?img_index=1",
       Productname:"MetaPlank",
-      metatittles:"Sleek Metal Cladding with Linear Extrusions",
-      metadescription:"MetaPlank is a metal cladding system featuring linear extrusions that provide a clean, modern facade with durability and low maintenance",
+      metatittles:"MetaPlank | Sleek Metal Facade Cladding Material",
+      metadescription:"MetaPlank is a metal facade cladding system with sleek extrusions - a low-maintenance material built for modern design.",
       description:
         "MetaPlank combines the natural appeal of wood with the resilience of metal, offering a durable, weather-resistant cladding solution. Its earthy tones and realistic textures bring warmth to any structure, while its maintenance-free properties make it a sustainable and cost-effective alternative to traditional wood​​.",
       images: [
@@ -1054,8 +1054,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=3Fm3gxL0lPg",
       instagramLink: "https://www.instagram.com/p/C55XSGxSSsh/?img_index=3",
       Productname:"MetaGate",
-      metatittles:"Premium Metal Gates with Manual & Auto Options",
-      metadescription:"MetaGate is a high-end metal gate system offering swing, sliding, and bi-fold functions with optional automation for seamless operation",
+      metatittles:"MetaGate | Architectural Metal Facade Gates by Metaguise",
+      metadescription:"MetaGate is a premium metal gate system, designed with our facade cladding solutions for seamless architecture.",
       description:
         "A stylish and functional entry solution, MetaGate is crafted from lightweight aluminum and can be customized with manual or automated sliding, swinging, or folding mechanisms. Offering sleek aesthetics and robust performance, it’s the perfect addition to both contemporary and classic architectural designs​.",
       images: [
@@ -1073,8 +1073,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=bFMkX9cXhPM",
       instagramLink: "https://www.instagram.com/reel/DAFyTxQSMWu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Productname:"MetaSlider",
-      metatittles:"Sliding Metal Facade for Adaptive Architecture",
-      metadescription:"MetaSlider is a metal facade system with sliding panels that adjust for light control, ventilation, and aesthetic flexibility in design",
+      metatittles:"MetaSlider | Sliding Metal Facade System",
+      metadescription:"MetaSlider is a metal facade system with sliding panels that enhance design flexibility, airflow, and natural light control.",
       description:
         " MetaSlider integrates sliding facade technology to create dynamic architectural expressions. Whether open to embrace natural light or closed for privacy, it adapts seamlessly to climatic and aesthetic needs. MetaSlider’s versatility makes it a go-to solution for modern facades that balance functionality and design​.",
       images: [
@@ -1089,8 +1089,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=YzKljcP5S4s",
       instagramLink: "https://www.instagram.com/p/Cr5Xh-INnvp/",
       Productname:"MetaBlox",
-      metatittles:"Modular Shape-Changing Metal Cladding System",
-      metadescription:"MetaBlox is a shape-changing metal cladding system made of modular aluminum blocks, creating dynamic, customizable facades",
+      metatittles:"MetaBlox | Shape Changing Metal Facade Cladding System",
+      metadescription:"MetaBlox is a modular metal facade cladding system with kinetic blocks that form bold, ever-evolving facades.",
       description:
         "The first-ever shape-changing facade system, MetaBlox combines cutting-edge parametric technology with visually mesmerizing designs. Made from pure aluminum, it offers a unique, customizable facade solution that adapts to light and perspective, making every project a masterpiece​.",
       images: [
@@ -1105,8 +1105,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=-pLr2ZVXycY",
       instagramLink: "https://www.instagram.com/p/C39pYFwyFKK/",
       Productname:"MetaCopper",
-      metatittles:" Pure Copper Finish for Timeless Elegance",
-      metadescription:"MetaCopper is a premium pure copper surface with a natural warm hue, offering durability, antimicrobial properties, and a refined finish.",
+      metatittles:"MetaCopper | Pure Copper Finish for Facade Cladding",
+      metadescription:"MetaCopper is a refined metal facade surface crafted in pure copper for a durable, timeless finish.",
       description:
         "A timeless material reimagined, MetaCopper integrates the warmth and character of copper into modern architectural designs. Its rustic ochre-red hues, combined with its durability and resistance to corrosion, make it a stunning choice for facades that exude both tradition and innovation​.",
       images: [
@@ -1129,8 +1129,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=MG0e8RfM-6s",
       instagramLink: "https://www.instagram.com/p/CgXMjRilJco/",
       Productname:"MetaCorten",
-      metatittles:"Weathered Steel Surface with a Rustic Finish",
-      metadescription:"MetaCorten is a corrosion-resistant weathered steel surface that develops a rich, rust-like patina while remaining maintenance-free.",
+      metatittles:"MetaCorten | Rustic Surface Finish for Facade Cladding",
+      metadescription:"MetaCorten is a metal cladding surface with a weathered finish - ideal for durable, rustic-inspired facade cladding.",
       description:
         "Embracing the raw beauty of weathered steel, MetaCorten offers a rich reddish-brown facade that evolves aesthetically over time. Its advanced coating ensures maintenance-free performance, making it a sustainable, modern choice for architectural cladding​.",
       images: [
@@ -1148,8 +1148,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=AtzVGYkpOxs",
       instagramLink: "https://www.instagram.com/p/DCrHdiwyBBL/?img_index=1",
       Productname:"MetaGrey",
-      metatittles:"Versatile Grey-Toned Metal Surface for Facades",
-      metadescription:"MetaGrey is a premium metal surface available in a range of grayscale finishes, seamlessly blending into modern and minimalist designs.",
+      metatittles:"MetaGrey | Grey Metal Facade Surface Finish",
+      metadescription:"MetaGrey is a metal facade surface finish for a sleek, industrial look.",
       description:
         "A sophisticated grayscale facade system, MetaGrey blends seamlessly with contemporary architecture. Its subtle tones provide visual balance and versatility, making it ideal for projects that require understated elegance with a modern edge​.",
       images: [
@@ -1171,8 +1171,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=zk2w03avHp4",
       instagramLink: "https://www.instagram.com/p/C_FQoMaSB8-/?img_index=1",
       Productname:"MetaPatina",
-      metatittles:"Aged Copper & Brass Surface with Verdigris Effect",
-      metadescription:"MetaPatina is a treated copper and brass surface that develops a striking verdigris patina, enhancing both durability and architectural charm",
+      metatittles:"MetaPatina | Verdigris Metal Facade Surface Finish",
+      metadescription:"MetaPatina is a metal facade surface in aged copper and brass giving a a timeless look with a natural verdigris finish.",
       description:
         " MetaPatina showcases the artistry of oxidized metals, featuring verdigris tints on copper and brass for a luxurious, aged look. With its antimicrobial properties and striking color contrasts, MetaPatina is perfect for interior and exterior applications that demand both beauty and functionality​.",
       images: [
@@ -1192,8 +1192,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/shorts/sRjbbaa9cbw",
       instagramLink: "https://www.instagram.com/p/C8_hZvXS2OA/?img_index=1",
       Productname:"MetaWood",
-      metatittles:"Metal Surface with a Realistic Natural Wood Finish",
-      metadescription:"MetaWood offers the warmth of wood with the durability of metal, providing a termite-proof, weather-resistant, and maintenance-free solution.",
+      metatittles:"MetaWood | Wood-Finish Metal Facade Surface ",
+      metadescription:"MetaWood is a durable metal facade surface finish with a wooden texture for an organic look.",
       description:
         "A sustainable reimagining of natural wood, MetaWood combines the visual appeal of earthy textures with the strength of metal. Resistant to weather, fire, and termites, it is an environmentally friendly, durable solution for cladding and decorative applications​.",
       images: [
@@ -1216,8 +1216,8 @@ export const SingleProductDetail = [
       youtubeLink: "https://www.youtube.com/watch?v=oEKOjT0tAWk",
       instagramLink: "https://www.instagram.com/p/C_kTfLGSf3W/",
       Productname:"Solid Panels",
-      metatittles:"Durable Architectural Surfaces",
-      metadescription:"Our solid metal panels provide a strong, weather-resistant surface available in various finishes, ideal for modern and industrial designs.",
+      metatittles:"Solid Metal Panels | Durable Facade Panels for Architecture",
+      metadescription:"Our solid metal facade panels offer strength and style for modern and industrial architecture.",
       description:
         "Durable and versatile, Solid Panels are crafted from premium metals for seamless, modern facades. With exceptional weather resistance and low maintenance, they suit both bold designs and intricate architectural projects. Fully customizable in size, finish, and color, Solid Panels blend strength with aesthetic appeal for a variety of applications.",
       images: [
