@@ -23,10 +23,10 @@ function Home() {
     <div className='Home'>
 
 <Helmet>
-        <title>Metaguise | India’s Leading Experts in Luxury Metal Facades</title>
-        <meta name="description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India." />
-        <meta property="og:title" content="Metaguise | India’s Leading Experts in Luxury Metal Facades" />
-        <meta property="og:description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India.." />
+        <title>Metaguise | Leading experts in Metal Facades & Parametric Architecture </title>
+        <meta name="description" content="Specializing in bespoke metal cladding solutions & parametric architecture, redefining modern facade design." />
+        <meta property="og:title" content="Metaguise | Leading experts in Metal Facades & Parametric Architecture " />
+        <meta property="og:description" content="Specializing in bespoke metal cladding solutions & parametric architecture, redefining modern facade design.." />
         <meta property="og:image" content="https://yourwebsite.com/home-image.jpg" />
         <meta property="og:url" content="https://yourwebsite.com/" />
         <meta name="robots" content="index, follow" />
