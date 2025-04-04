@@ -84,10 +84,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Metaguise | Get in Touch for Facade Solutions</title>
-        <meta name="description" content="Reach out to Metaguise for inquiries, collaborations, or project consultations. Let’s discuss your facade needs and bring your vision to life" />
-        <meta property="og:title" content="Contact Metaguise | Get in Touch for Facade Solutions" />
-        <meta property="og:description" content="Reach out to Metaguise for inquiries, collaborations, or project consultations. Let’s discuss your facade needs and bring your vision to life" />
+        <title>Contact Metaguise | Metal Facade Cladding Experts</title>
+        <meta name="description" content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project." />
+        <meta property="og:title" content="Contact Metaguise | Metal Facade Cladding Experts" />
+        <meta property="og:description" content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project." />
         <meta name="robots" content="index, follow" />
       </Helmet>
 
