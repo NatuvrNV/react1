@@ -82,12 +82,12 @@ const Allproducts = () => {
   return (
     <div className="gallery-container">
            <Helmet>
-                    <title>Metaguise Products | Premium Metal Facades & Cladding</title>
-                    <meta name="description" content="Explore Metaguise’s range of luxury metal facades, cladding, parametric designs, and surface finishes for modern architectural excellence" />
+                    <title>Metaguise Products | Metal Facade Cladding Solutions</title>
+                    <meta name="description" content="Browse our range of parametric facade and metal cladding products crafted for standout design and long-term performance." />
                     <meta name="keywords" content="home, react, SEO, web development" />
                     <meta name="author" content="Your Name" />
-                    <meta property="og:title" content="Metaguise Products | Premium Metal Facades & Cladding" />
-                    <meta property="og:description" content="Explore Metaguise’s range of luxury metal facades, cladding, parametric designs, and surface finishes for modern architectural excellence" />
+                    <meta property="og:title" content="Metaguise Products | Metal Facade Cladding Solutions" />
+                    <meta property="og:description" content="Browse our range of parametric facade and metal cladding products crafted for standout design and long-term performance." />
                     <meta property="og:image" content="https://yourwebsite.com/home-image.jpg" />
                     <meta property="og:url" content="https://yourwebsite.com/" />
                     <meta name="robots" content="index, follow" />
