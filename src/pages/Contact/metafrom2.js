@@ -100,18 +100,22 @@ const Contact = ({ brochureName }) => {
   return (
     <>
       <Helmet>
-        <title>Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding</title>
+        <title>
+        Download ${detectedBrochure} | Functional Metal Facade Systems 
+        </title>
         <meta
           name="description"
-          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+          content={`
+          Discover functional metal facade systems that blend aesthetics with performance in our ${detectedBrochure} design brochure.
+          `}
         />
         <meta
           property="og:title"
-          content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`}
+          content={`Download ${detectedBrochure} | Functional Metal Facade Systems `}
         />
         <meta
           property="og:description"
-          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+          content={`Discover functional metal facade systems that blend aesthetics with performance in our ${detectedBrochure} design brochure.`}
         />
       </Helmet>
 
