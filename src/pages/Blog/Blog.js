@@ -77,7 +77,7 @@ const Blog = () => {
                 className="flex cursor-pointer blog-card"
                 onClick={() => handleBlogClick(index)}
               >
-                <img src={blog.images[0]} alt={blog.title} className="object-cover rounded-lg" />
+                <img src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`} alt={blog.title}  className="object-cover rounded-lg" />
                 <div className="mx-xl-4 blog-text">
                   <h2 className="text-xl  blog-title">{blog.title}</h2>
                   <p className="text-sm mt-xl-2 blog-description">{blog.description}</p>
