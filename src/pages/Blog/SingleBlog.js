@@ -39,10 +39,10 @@ const SingleBlogPage = () => {
           <BlogButton navigate={navigate} />
           <div className="mobile-image-gallery mt-3">
             <div className="d-flex">
-              <img src={`/assets/Blogs/${blog.images[0]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg w-50 first-image" />
+              <img src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg w-50 first-image" />
               <div className="d-flex flex-column w-50 ms-2">
-                <img src={`/assets/Blogs/${blog.images[1]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg mb-2 second-image" />
-                <img src={`/assets/Blogs/${blog.images[2]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg second-image" />
+                <img src={`/assets/Blogs/${blog.folderName}/${blog.images[1]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg mb-2 second-image" />
+                <img src={`/assets/Blogs/${blog.folderName}/${blog.images[2]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg second-image" />
               </div>
             </div>
           </div>
@@ -59,25 +59,40 @@ const SingleBlogPage = () => {
             <Col xl={12}>
               <BlogButton navigate={navigate} />
             </Col>
-
           </Row>
 
           <Row className='py-xl-3'>
             <Col xl={6}>
-  
               <h2 id='head-text' className="text-4xl mt-xl-4 blog-title text-start">{blog.title}</h2>
-           
               <p className="text-xs text-gray-400 date-text text-start">{blog.date}</p>
-            
-              <p className="text-sm  blog-fulldescription ">{blog.Fulldescription}</p>
+              <p className="text-sm blog-fulldescription ">{blog.Fulldescription}</p>
             </Col>
 
-            <Col xl={6} >
+            <Col xl={6}>
               <div className="image-gallery mt-xl-4">
-                <img src={`/assets/Blogs/${blog.images[0]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg w-100 mb-4" />
+                <img 
+                  src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`} 
+                  alt={blog.title} 
+                  className="object-cover rounded-lg w-100 mb-4" 
+                  loading="lazy" // lazy load the first image
+                />
                 <div className="grid grid-cols-2 gap-4 single-grid">
-                  <img src={`/assets/Blogs/${blog.images[1]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg w-100" />
-                  <img src={`/assets/Blogs/${blog.images[2]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg w-100" />
+                  {blog.images[1] && (
+                    <img 
+                      src={`/assets/Blogs/${blog.folderName}/${blog.images[1]?.split('/').pop()}`} 
+                      alt={blog.title} 
+                      className="object-cover rounded-lg w-100" 
+                      loading="lazy" // lazy load
+                    />
+                  )}
+                  {blog.images[2] && (
+                    <img 
+                      src={`/assets/Blogs/${blog.folderName}/${blog.images[2]?.split('/').pop()}`} 
+                      alt={blog.title} 
+                      className="object-cover rounded-lg w-100" 
+                      loading="lazy" // lazy load
+                    />
+                  )}
                 </div>
               </div>
             </Col>
@@ -105,7 +120,7 @@ const SingleBlogPage = () => {
                 className="flex cursor-pointer blog-card"
                 onClick={() => handleBlogClick(index)}
               >
-                <img src={`/assets/Blogs/${relatedBlog.images[0]?.split('/').pop()}`} alt={relatedBlog.title} className="object-cover rounded-lg" />
+                <img src={`/assets/Blogs/${relatedBlog.folderName}/${relatedBlog.images[0]?.split('/').pop()}`} alt={relatedBlog.title} className="object-cover rounded-lg" />
                 <div className="mx-xl-4 blog-text">
                   <h2 className="text-xl blog-title">{relatedBlog.title}</h2>
                   <p className="text-sm mt-xl-2 blog-description">{relatedBlog.description}</p>
