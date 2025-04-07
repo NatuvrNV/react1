@@ -45,9 +45,9 @@ function Drawer({ isOpen, toggleDrawer }) {
                Terms & Conditions
               </Nav.Link>
 
-              {/* <Nav.Link className="text-white" href="/blogs">
+              <Nav.Link className="text-white" href="/blogs">
               Blogs
-              </Nav.Link> */}
+              </Nav.Link>
             </Nav>
           </div>
         </Col>
