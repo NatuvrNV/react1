@@ -10,7 +10,7 @@ const Blog = () => {
   const navigate = useNavigate();
   
   // State to track selected category and dropdown state
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Function to handle blog click navigation
@@ -58,7 +58,7 @@ const Blog = () => {
               onClick={() => setIsDropdownOpen(!isDropdownOpen)} // Handle clicks for mobile
             >
               <button id="category-button" className="blog-button">
-                <span>Categories</span>
+                <span>{selectedCategory === "All" ? "Categories" : selectedCategory}</span>
                 <MdArrowOutward />
               </button>
               {isDropdownOpen && (
