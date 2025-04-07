@@ -50,7 +50,7 @@ const SingleBlogPage = () => {
           <p className="text-xs text-gray-400 text-start single-text ">
             {blog.date} | {blog.category}
           </p>
-          <p className="text-sm blog-fulldescription mt-4 ">{blog.Fulldescription}</p>
+          <p className="text-sm blog-fulldescription mt-4" dangerouslySetInnerHTML={{ __html: blog.Fulldescription }}></p>
         </div>
 
         {/* Desktop Layout */}
@@ -65,7 +65,7 @@ const SingleBlogPage = () => {
             <Col xl={6}>
               <h2 id='head-text' className="text-4xl mt-xl-4 blog-title text-start">{blog.title}</h2>
               <p className="text-xs text-gray-400 date-text text-start">{blog.date}</p>
-              <p className="text-sm blog-fulldescription ">{blog.Fulldescription}</p>
+              <p className="text-sm blog-fulldescription " dangerouslySetInnerHTML={{ __html: blog.Fulldescription }}></p>
             </Col>
 
             <Col xl={6}>
