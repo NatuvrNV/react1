@@ -182,7 +182,7 @@ font-size: 6rem;
 
   .blog-fulldescription b {
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 400;
     color: #fff;
   }
 
@@ -294,8 +294,8 @@ font-size: 6rem;
 
   .first-image{
     height: 210px;
-    object-fit: cover;
-    object-position: center;
+            object-fit: cover;
+        object-position: center;
   }
 
   .second-image{
