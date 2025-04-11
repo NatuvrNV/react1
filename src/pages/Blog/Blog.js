@@ -14,9 +14,11 @@ const Blog = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [searchInput, setSearchInput] = useState("");
 
-  // Function to handle blog click navigation
-  const handleBlogClick = (id) => {
-    navigate(`/blog/${id}`);
+  // Function to handle blog click navigation with title-based URL
+  const handleBlogClick = (blogTitle) => {
+    // Convert title to URL-friendly format (replace spaces with hyphens)
+    const urlFriendlyTitle = blogTitle.toLowerCase().replace(/\s+/g, '-');
+    navigate(`/blog/${urlFriendlyTitle}`);
   };
 
   // Function to handle category selection
@@ -59,7 +61,7 @@ const Blog = () => {
               placeholder="Search blogs..."
               className="search-bar"
               value={searchInput}
-              onChange={handleSearchChange} // Handle search input
+              onChange={handleSearchChange}
             />
 
             {/* Category Dropdown */}
@@ -100,13 +102,15 @@ const Blog = () => {
             </div>
           ) : (
             <div className="grid grid-cols-2 gap-8 blog-grid mt-xl-5 px-xl-5 mt-4">
-              {filteredBlogs.map((blog, index) => (
+              {filteredBlogs.map((blog) => (
                 <div
-                  key={index}
+                  key={blog.title} // Using title as key
                   className="flex cursor-pointer blog-card"
-                  onClick={() => handleBlogClick(index)}
+                  onClick={() => handleBlogClick(blog.title)}
                 >
-                  <img src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`} alt={blog.title}  className="object-cover rounded-lg" />
+                  <img src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`} 
+                       alt={blog.title}  
+                       className="object-cover rounded-lg" />
                   <div className="mx-xl-4 blog-text">
                     <h2 className="text-xl blog-title">{blog.title}</h2>
                     <p className="text-sm mt-xl-2 blog-description">{blog.description}</p>
