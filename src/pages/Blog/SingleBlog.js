@@ -6,16 +6,25 @@ import "./Blog.css";
 import Footer from "../../components/Footer";
 
 const SingleBlogPage = () => {
-  const { id } = useParams();
+  const { title } = useParams(); // Get title from URL
   const navigate = useNavigate();
-  const blog = SingleBlogDetail[parseInt(id, 10)];
+  
+  // Find the blog by converting URL-friendly title back to original title
+  const blog = SingleBlogDetail.find(blog => 
+    blog.title.toLowerCase().replace(/\s+/g, '-') === title.toLowerCase()
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [id]);
+    if (!blog) {
+      navigate('/404');
+    }
+  }, [title, blog, navigate]);
 
-  const handleBlogClick = (id) => {
-    navigate(`/blog/${id}`);
+  const handleBlogClick = (blogTitle) => {
+    // Convert title to URL-friendly format
+    const urlFriendlyTitle = blogTitle.toLowerCase().replace(/\s+/g, '-');
+    navigate(`/blog/${urlFriendlyTitle}`);
   };
 
   const BlogButton = ({ navigate }) => {
@@ -26,13 +35,11 @@ const SingleBlogPage = () => {
     );
   };
 
-  if (!blog || !blog.images) {
-    navigate('/404');
-    return null;
+  if (!blog) {
+    return null; // Already handling 404 in useEffect
   }
-
   return (
-    <div className="singleblog-container ">
+    <div className="singleblog-container">
       <Container className='mt-4'>
         {/* Mobile Layout */}
         <div className="d-block d-xl-none">
@@ -46,8 +53,8 @@ const SingleBlogPage = () => {
               </div>
             </div>
           </div>
-          <h2 className="text-4xl mb-4 blog-title mt-4 ">{blog.title}</h2>
-          <p className="text-xs text-gray-400 text-start single-text ">
+          <h2 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h2>
+          <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>
           <p className="text-sm blog-fulldescription mt-4" dangerouslySetInnerHTML={{ __html: blog.Fulldescription }}></p>
@@ -62,19 +69,19 @@ const SingleBlogPage = () => {
           </Row>
 
           <Row className='py-xl-3'>
-            <Col xl={6}>
+            <Col xl={7}>
               <h2 id='head-text' className="text-4xl mt-xl-4 blog-title text-start">{blog.title}</h2>
               <p className="text-xs text-gray-400 date-text text-start">{blog.date}</p>
-              <p className="text-sm blog-fulldescription " dangerouslySetInnerHTML={{ __html: blog.Fulldescription }}></p>
+              <p className="text-sm blog-fulldescription" dangerouslySetInnerHTML={{ __html: blog.Fulldescription }}></p>
             </Col>
 
-            <Col xl={6}>
+            <Col xl={5}>
               <div className="image-gallery mt-xl-4">
                 <img 
                   src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`} 
                   alt={blog.title} 
                   className="object-cover rounded-lg w-100 mb-4" 
-                  loading="lazy" // lazy load the first image
+                  loading="lazy"
                 />
                 <div className="grid grid-cols-2 gap-4 single-grid">
                   {blog.images[1] && (
@@ -82,7 +89,7 @@ const SingleBlogPage = () => {
                       src={`/assets/Blogs/${blog.folderName}/${blog.images[1]?.split('/').pop()}`} 
                       alt={blog.title} 
                       className="object-cover rounded-lg w-100" 
-                      loading="lazy" // lazy load
+                      loading="lazy"
                     />
                   )}
                   {blog.images[2] && (
@@ -90,7 +97,7 @@ const SingleBlogPage = () => {
                       src={`/assets/Blogs/${blog.folderName}/${blog.images[2]?.split('/').pop()}`} 
                       alt={blog.title} 
                       className="object-cover rounded-lg w-100" 
-                      loading="lazy" // lazy load
+                      loading="lazy"
                     />
                   )}
                 </div>
@@ -114,11 +121,11 @@ const SingleBlogPage = () => {
 
         <Row>
           <div className="grid grid-cols-2 gap-8 blog-grid mt-xl-5 px-xl-5 mt-4">
-            {SingleBlogDetail.map((relatedBlog, index) => (
+            {SingleBlogDetail.filter(b => b.title !== blog.title).map((relatedBlog) => (
               <div
-                key={index}
+                key={relatedBlog.title}
                 className="flex cursor-pointer blog-card"
-                onClick={() => handleBlogClick(index)}
+                onClick={() => handleBlogClick(relatedBlog.title)}
               >
                 <img src={`/assets/Blogs/${relatedBlog.folderName}/${relatedBlog.images[0]?.split('/').pop()}`} alt={relatedBlog.title} className="object-cover rounded-lg" />
                 <div className="mx-xl-4 blog-text">
