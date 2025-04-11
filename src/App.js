@@ -56,7 +56,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/metavision" element={<Metavision />} />
           <Route path="/metaexperience" element={<MetaExperience />} />
-          <Route path="/blog/:id" element={<SingleBlogPage />} />
+          <Route path="/blog/:title" element={<SingleBlogPage />} />
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
