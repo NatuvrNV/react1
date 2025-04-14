@@ -16,7 +16,7 @@ const NotFound = () => {
         const redirectTimer = setTimeout(() => {
             window.scrollTo(0, 0);
             navigate("/");
-        }, 3000);
+        }, 5000);
 
         // Cleanup timers when component unmounts
         return () => {
