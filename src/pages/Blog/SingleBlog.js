@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Container, Row, Col } from "react-bootstrap";
 import { SingleBlogDetail } from './BlogConstants';
@@ -6,11 +7,10 @@ import "./Blog.css";
 import Footer from "../../components/Footer";
 
 const SingleBlogPage = () => {
-  const { title } = useParams(); // Get title from URL
+  const { title } = useParams();
   const navigate = useNavigate();
-  
-  // Find the blog by converting URL-friendly title back to original title
-  const blog = SingleBlogDetail.find(blog => 
+
+  const blog = SingleBlogDetail.find(blog =>
     blog.title.toLowerCase().replace(/\s+/g, '-') === title.toLowerCase()
   );
 
@@ -22,7 +22,6 @@ const SingleBlogPage = () => {
   }, [title, blog, navigate]);
 
   const handleBlogClick = (blogTitle) => {
-    // Convert title to URL-friendly format
     const urlFriendlyTitle = blogTitle.toLowerCase().replace(/\s+/g, '-');
     navigate(`/blog/${urlFriendlyTitle}`);
   };
@@ -36,10 +35,30 @@ const SingleBlogPage = () => {
   };
 
   if (!blog) {
-    return null; // Already handling 404 in useEffect
+    return null;
   }
+
+  // Get related blogs from the same category (excluding current blog)
+  let relatedBlogs = SingleBlogDetail.filter(b =>
+    b.category === blog.category && b.title !== blog.title
+  );
+
+  // If no related blogs, show all other blogs
+  if (relatedBlogs.length === 0) {
+    relatedBlogs = SingleBlogDetail.filter(b => b.title !== blog.title);
+  }
+
+  const metaTitle = blog.metaTitle || blog.title;
+  const metaDescription = blog.metaDescription || blog.description;
+
   return (
     <div className="singleblog-container">
+      {/* Meta Tags */}
+      <Helmet>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+      </Helmet>
+
       <Container className='mt-4'>
         {/* Mobile Layout */}
         <div className="d-block d-xl-none">
@@ -77,26 +96,26 @@ const SingleBlogPage = () => {
 
             <Col xl={5}>
               <div className="image-gallery mt-xl-4">
-                <img 
-                  src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`} 
-                  alt={blog.title} 
-                  className="object-cover rounded-lg w-100 mb-4" 
+                <img
+                  src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`}
+                  alt={blog.title}
+                  className="object-cover rounded-lg w-100 mb-4"
                   loading="lazy"
                 />
                 <div className="grid grid-cols-2 gap-4 single-grid">
                   {blog.images[1] && (
-                    <img 
-                      src={`/assets/Blogs/${blog.folderName}/${blog.images[1]?.split('/').pop()}`} 
-                      alt={blog.title} 
-                      className="object-cover rounded-lg w-100" 
+                    <img
+                      src={`/assets/Blogs/${blog.folderName}/${blog.images[1]?.split('/').pop()}`}
+                      alt={blog.title}
+                      className="object-cover rounded-lg w-100"
                       loading="lazy"
                     />
                   )}
                   {blog.images[2] && (
-                    <img 
-                      src={`/assets/Blogs/${blog.folderName}/${blog.images[2]?.split('/').pop()}`} 
-                      alt={blog.title} 
-                      className="object-cover rounded-lg w-100" 
+                    <img
+                      src={`/assets/Blogs/${blog.folderName}/${blog.images[2]?.split('/').pop()}`}
+                      alt={blog.title}
+                      className="object-cover rounded-lg w-100"
                       loading="lazy"
                     />
                   )}
@@ -107,39 +126,41 @@ const SingleBlogPage = () => {
         </div>
       </Container>
 
-      <Container fluid>
-        <Row>
-          <Col xl={12}>
-            <div className="desktop-title mb-3 single-title">
-              <h1 className="text-5xl text-center mb-10">Related Articles</h1>
-            </div>
-            <div className="mobile-title mb-3 single-title">
-              <h1 className="text-5xl text-center mb-10">Related Articles</h1>
-            </div>
-          </Col>
-        </Row>
-
-        <Row>
-          <div className="grid grid-cols-2 gap-8 blog-grid mt-xl-5 px-xl-5 mt-4">
-            {SingleBlogDetail.filter(b => b.title !== blog.title).map((relatedBlog) => (
-              <div
-                key={relatedBlog.title}
-                className="flex cursor-pointer blog-card"
-                onClick={() => handleBlogClick(relatedBlog.title)}
-              >
-                <img src={`/assets/Blogs/${relatedBlog.folderName}/${relatedBlog.images[0]?.split('/').pop()}`} alt={relatedBlog.title} className="object-cover rounded-lg" />
-                <div className="mx-xl-4 blog-text">
-                  <h2 className="text-xl blog-title">{relatedBlog.title}</h2>
-                  <p className="text-sm mt-xl-2 blog-description">{relatedBlog.description}</p>
-                  <p className="text-xs text-gray-400 text-start date-text">
-                    {relatedBlog.date} | {relatedBlog.category}
-                  </p>
-                </div>
+      {relatedBlogs.length > 0 && (
+        <Container fluid>
+          <Row>
+            <Col xl={12}>
+              <div className="desktop-title mb-3 single-title">
+                <h1 className="text-5xl text-center mb-10">Related Articles</h1>
               </div>
-            ))}
-          </div>
-        </Row>
-      </Container>
+              <div className="mobile-title mb-3 single-title">
+                <h1 className="text-5xl text-center mb-10">Related Articles</h1>
+              </div>
+            </Col>
+          </Row>
+
+          <Row>
+            <div className="grid grid-cols-2 gap-8 blog-grid mt-xl-5 px-xl-5 mt-4">
+              {relatedBlogs.map((relatedBlog) => (
+                <div
+                  key={relatedBlog.title}
+                  className="flex cursor-pointer blog-card"
+                  onClick={() => handleBlogClick(relatedBlog.title)}
+                >
+                  <img src={`/assets/Blogs/${relatedBlog.folderName}/${relatedBlog.images[0]?.split('/').pop()}`} alt={relatedBlog.title} className="object-cover rounded-lg" />
+                  <div className="mx-xl-4 blog-text">
+                    <h2 className="text-xl blog-title">{relatedBlog.title}</h2>
+                    <p className="text-sm mt-xl-2 blog-description">{relatedBlog.description}</p>
+                    <p className="text-xs text-gray-400 text-start date-text">
+                      {relatedBlog.date} | {relatedBlog.category}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Row>
+        </Container>
+      )}
       <Footer />
     </div>
   );
