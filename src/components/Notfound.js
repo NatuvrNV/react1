@@ -5,25 +5,34 @@ import { useEffect, useState } from "react";
 const NotFound = () => {
     const navigate = useNavigate();
     const [countdown, setCountdown] = useState(3);
+    const [isPreloaderDone, setIsPreloaderDone] = useState(false);
+
+    // Simulate preloader finishing
+    useEffect(() => {
+        const preloaderTimeout = setTimeout(() => {
+            setIsPreloaderDone(true); // Replace this logic with your actual preloader logic
+        }, 1500); // Simulated preloader time
+
+        return () => clearTimeout(preloaderTimeout);
+    }, []);
 
     useEffect(() => {
-        // Start countdown when component mounts
+        if (!isPreloaderDone) return;
+
         const timer = setInterval(() => {
             setCountdown((prev) => prev - 1);
         }, 1000);
 
-        // Redirect after 3 seconds
         const redirectTimer = setTimeout(() => {
             window.scrollTo(0, 0);
             navigate("/");
-        }, 5000);
+        }, 3000);
 
-        // Cleanup timers when component unmounts
         return () => {
             clearInterval(timer);
             clearTimeout(redirectTimer);
         };
-    }, [navigate]);
+    }, [isPreloaderDone, navigate]);
 
     return (
         <Container fluid className="bg-dark text-white contact-container">
@@ -33,9 +42,13 @@ const NotFound = () => {
                         <p id="not-text" className="text-xl text-gray-600 mt-1">
                             Oops! Page Not Found
                         </p>
-                        <p className="text-gray-500 mt-2">
-                            Redirecting to homepage in {countdown} second{countdown !== 1 ? 's' : ''}...
-                        </p>
+                        {isPreloaderDone ? (
+                            <p className="text-gray-500 mt-2">
+                                Redirecting to homepage in {countdown} second{countdown !== 1 ? 's' : ''}...
+                            </p>
+                        ) : (
+                            <p className="text-gray-500 mt-2">Loading...</p>
+                        )}
                     </div>
                 </Col>
             </Row>
