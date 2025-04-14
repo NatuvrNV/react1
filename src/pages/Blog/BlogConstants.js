@@ -1,10 +1,11 @@
 export const SingleBlogDetail = [
     {
         title: "The Rise of Parametric facades: Designing with Algorithmic Elegance",
-        metatittles: "Customizable Parametric Facade System",
+       metaTitle: "Metaguise Blog | The Rise of Parametric Facade Design ",
+        
         date: "01-04-25",
         category: "Facade Innovations",
-        metadescription: "Customize every detail of your facade with MetaCoin—control shape, size, color, and pattern for a unique architectural design.",
+        metaDescription: "Learn how parametric facade design are revolutionizing architecture with algorithmic design and elegant structural innovation.",
         Fulldescription: ` In recent years, the architectural world has witnessed a remarkable shift - one where mathematics, material science, and digital creativity intersect. At the heart of this movement is parametric architecture, a design approach that uses algorithms and data to shape complex yet elegant structures. From museums and cultural centres to luxury residences and retail flagships, this method is redefining what buildings can be - both visually and functionally.
       
         Among its many expressions, none are more captivating or transformative than parametric facades.
@@ -70,10 +71,10 @@ At Metaguise, we are proud to be at the forefront of this transformation, blendi
       
       {
         title: "Metal is Metaguise: Why Metal is the Future of Sustainable Architecture",
-        metatittles: "Customizable Parametric Facade System",
+       metaTitle: "Metaguise Blog | Why Metal Facade Design is the Future of Sustainable Architecture",
         date: "03-04-25",
         category: "Sustainability",
-        metadescription: "Customize every detail of your facade with MetaCoin—control shape, size, color, and pattern for a unique architectural design.",
+        metaDescription: "Explore the role of metal facade design in sustainable architecture, and how they are shaping the future of eco-friendly design",
         Fulldescription: ` At Metaguise, metal isn’t just a material - it’s a mindset. It represents strength, precision, and progress. In a world where buildings must be more efficient, expressive, and enduring, metal facade systems are shaping the future of architecture.
 
 Designers, developers, and decision-makers are turning to metal not just for aesthetics, but for what it delivers: performance, longevity, and environmental responsibility. Here's why metal cladding is becoming the go-to solution for modern facade design.
@@ -132,10 +133,10 @@ Metal is Metaguise. And the future of sustainable architecture has never looked 
 
       {
         title: "How our MetaFunction products Revolutionize Everyday Architecture",
-        metatittles: "Customizable Parametric Facade System",
+       metaTitle: "Metaguise Blog | Functional Metal Cladding Solutions ",
         date: "04-04-25",
         category: "Behind the Design",
-        metadescription: "Customize every detail of your facade with MetaCoin—control shape, size, color, and pattern for a unique architectural design.",
+        metaDescription: "Learn how our functional metal cladding solutions are reshaping everyday architecture with innovative solutions.",
         Fulldescription: ` Not every building is a skyscraper or a museum. Most of the architecture we interact with daily - homes, offices, schools, stores - exists in a space that often prioritizes function over flair. But at Metaguise, we believe the two can and should coexist. That’s the vision behind MetaFunction - a product line that makes performance-driven design accessible to everyday architecture.
 
 Engineered with precision and built to last, our MetaFunction systems transform how buildings perform - visually, structurally, and sustainably - using advanced facade materials that do more than cover a surface. They enhance it.
@@ -195,10 +196,10 @@ Because functional doesn’t have to be forgettable. With MetaFunction, every pa
 
       {
         title: "Living, Breathing Facades: The Science and Soul of MetaPatina",
-        metatittles: "Customizable Parametric Facade System",
+       metaTitle: "Metaguise Blog | MetaPatina - The Science Behind a Living Metal Facade",
         date: "06-04-25",
         category: "Material Spotlight",
-        metadescription: "Customize every detail of your facade with MetaCoin—control shape, size, color, and pattern for a unique architectural design.",
+        metaDescription: "Delve into the science of MetaPatina and how it brings life to a metal facade to create dynamic architectural designs.",
         Fulldescription: ` There’s something poetic about materials that age with grace. That shift color with time, deepen with exposure, and reveal new layers of beauty as they weather. MetaPatina, our living metal facade surface, is a tribute to that very idea - a facade that doesn’t just protect a building, but brings it to life.
 
 At Metaguise, we believe that great architecture is both science and soul. With MetaPatina, we’ve crafted a product that embodies both - blending technical excellence with the organic elegance of time-honored metals like copper and brass.
@@ -264,13 +265,13 @@ At Metaguise, we call that soulful engineering. MetaPatina is more than just fac
         folderName: "patina", // <-- Make sure to add the folder name here
         slug: "my-first-blog-post", // Add slug here based on the title
       },
-
+    
       {
         title: "Architectural Luxury, Within Reach: Why MetaFlutes and MetaLouvers Are the Smartest Investment in Metal Facades",
-        metatittles: "Customizable Parametric Facade System",
+       metaTitle: "Metaguise Blog | Value Products for Luxury Metal Facade Design",
         date: "07-04-25",
         category: "Architectural Insights",
-        metadescription: "Customize every detail of your facade with MetaCoin—control shape, size, color, and pattern for a unique architectural design.",
+        metaDescription: "Discover why investing in MetaFlutes, MetaLouvers and MetaCassette enhances the luxury and durability of metal facade design.",
         Fulldescription: ` In today’s built environment, luxury is no longer defined by extravagance - it’s defined by intention. It’s about refined details, enduring finishes, and design that performs as beautifully as it looks. At Metaguise, our metal facade systems - MetaFlutes, MetaLouvers, and MetaCassette Perforated - are crafted to bring that standard of architectural luxury within reach.
 
 From premium homes to scalable commercial projects, these systems deliver high-impact aesthetics, long-term performance, and architectural clarity - all with thoughtful design and material efficiency.
@@ -330,7 +331,129 @@ When you’re designing with purpose, choosing the right metal facade system mak
         ],
 
         folderName: "architectural luxury", // <-- Make sure to add the folder name here
-        slug: "my-first-blog-post", // Add slug here based on the title
+     
       },
-    
+
+//       {
+//         title: "METABLOX™ by Metaguise: A Breakthrough in Parametric Facade Design",
+//        metaTitle: "Metaguise Blog | METABLOX™: A First-of-its-Kind Parametric Facade Technology",
+//         date: "09-04-25",
+//         category: "Facade Innovations",
+//         metaDescription: "Discover METABLOX™ by Metaguise - a parametric facade technology made of modular 3D blocks, redefining architecture with motion, identity, and precision.",
+//         Fulldescription: ` At the intersection of culture, craftsmanship, and cutting-edge geometry, METABLOX™ emerges as a bold new direction in architectural innovation. Introduced by Metaguise, this first-of-its-kind parametric facade technology makes its striking debut at the RJ Jewellers flagship store in Jaipur - setting a new benchmark in the world of metal design and modern Indian architecture.
+
+// In a world where facades are no longer passive skins, but active storytellers, METABLOX™ brings together movement, rhythm, and narrative - all embedded in its very form.
+
+// Inspired by Nature. Powered by Parametric Thinking.
+
+// The foundation of METABLOX™ lies in the enduring intelligence of nature. Drawing inspiration from the geometry of the honeycomb, METABLOX™ is built from modular 3D blocks - each shaped with mathematical precision and arranged using advanced parametric design tools.
+
+// This facade doesn’t rely on repetition; it thrives on variation. As the viewer moves past the building, the blocks transform visually, unfolding into a blooming lotus silhouette - a powerful symbol of purity and renewal in Indian culture.
+
+// Here, parametric facade design isn’t just a method. It’s a language. One that allows materials to move without motors and forms to shift without force.
+
+
+// A facade Made to Flow
+
+// Unlike traditional cladding systems that prioritize flatness or uniformity, METABLOX™ introduces dimension and depth. The interplay between the angled surfaces of the blocks and their precise spacing creates a dynamic visual rhythm that changes depending on where you stand.
+
+// What makes this facade truly exceptional is its shape-shifting quality - achieved entirely through geometry and placement, not mechanics. This approach pushes the boundaries of parametric facade techniques and opens up new possibilities for metal designers and architects seeking meaningful interaction between architecture and observer.
+
+
+// Built in Metal. Designed to Endure.
+
+// The visual language of METABLOX™ is deeply tied to its materiality. Crafted in metal and finished in a rich champagne gold, the facade not only reflects light beautifully but also celebrates the strength and malleability of metal as a medium.
+
+// As a leading name in metal design in India, Metaguise has long explored the creative potential of metallic finishes and fabrication. METABLOX™ is a natural extension of this journey - combining design vision with precision engineering to create a facade that is both visually arresting and materially robust.
+
+// Each 3D block functions like a metal panel, working together as part of a modular whole. This level of precision reflects Metaguise’s deep expertise in custom metal fabrication and collaboration with some of the most forward-thinking metal designers in India.
+
+// A New Icon in Jaipur’s Urban Landscape
+
+// The RJ Jewellers store, located in the heart of Jaipur, is the first project to showcase this pioneering system. Beyond its striking aesthetic, the METABLOX™ facade makes the building a conversation piece - a landmark not just of retail, but of parametric architecture in India.
+
+// This project also signals a growing shift in the Indian design landscape. As parametric buildings gain global momentum, India is emerging as a fertile ground for innovation - where tradition, symbolism, and advanced technology intersect. METABLOX™ stands at that very crossroads.
+
+// More Than a facade - A Statement
+
+// With METABLOX™, facades become identities. The lotus form that reveals itself in motion is not just an ornamental element - it’s an embodiment of Indian culture and a reflection of the client’s brand philosophy. It shows how metal panels can go beyond function and become tools for expression.
+
+// For architects and developers looking to push the boundaries of form, storytelling, and fabrication, METABLOX™ offers a blueprint for the future - a parametric facade system that merges metal design, meaning, and movement.
+
+// In today’s architecture, the envelope is more than a barrier - it's a canvas. METABLOX™ reimagines this canvas through the lens of parametric design, transforming metal into motion and buildings into stories.
+
+// As a leading voice in metal design in India, Metaguise is proud to introduce METABLOX™ - not just a product, but a new way of building, thinking, and expressing.
+
+//  `,
+//         description: "At the intersection of culture, craftsmanship, and cutting-edge geometry, METABLOX™ emerges as a bold new direction in architectural innovation. Introduced by Metaguise, this first-of-its-kind parametric facade technology makes its striking debut at the RJ Jewellers flagship store in Jaipur - setting a new benchmark in the world of metal design and modern Indian architecture.",
+//         images: [
+//             "assets/Blogs/architectural luxury/luxury3.jpg",
+//             "assets/Blogs/architectural luxury/luxury2.jpg",
+//             "assets/Blogs/architectural luxury/luxury1.jpg",
+//         ],
+
+//       },
+
+//       {
+//         title: "Your Facade is Your Identity: Crafting Signature Statements with Our Customizable Parametrics",
+//        metaTitle: "Metaguise Blogs | Custom Parametric Facade Design by Metaguise",
+//         date: "11-04-25",
+//         category: "Facade Innovations",
+//         metaDescription: "Explore customizable parametric facade design by Metaguise. From MetaCoin to MetaSequin, we craft architectural identities that move, reflect, and inspire.",
+//         Fulldescription: ` In architecture, first impressions aren't just important - they're permanent. Your facade is more than a surface. It’s the visual voice of your building, the first and most lasting statement it makes. At Metaguise, we treat every facade as an opportunity to express identity, ambition, and originality - especially when designed through parametric architecture.
+
+// Our customizable parametric facade systems allow architects, brands, and homeowners to create design-forward elevations that don’t just follow form - they define it. With a material vocabulary rooted in metal design and a process powered by technology, our work goes beyond surface decoration. It becomes architectural storytelling.
+
+// The Power of Parametric Design
+
+// In traditional architecture, form follows function. But with parametric design, form and function evolve together. It’s a design process rooted in algorithms and adaptable variables, allowing surfaces to respond to sunlight, wind, movement, or programmatic needs.
+
+// At Metaguise, this design intelligence is transformed into fabricated metal panels, giving shape to unique and expressive building skins. From flowing curves to layered patterns and kinetic elements, our parametric facades are digitally designed and precisely fabricated - making each one distinct to its environment and purpose.
+
+// MetaCoin: Where Custom Meets Code
+
+// Among our most expressive technologies is MetaCoin - a signature parametric facade design system composed of modular “coins” that vary in size, shape, and orientation. These elements reflect light in endlessly shifting ways, making every glance feel like a new experience.
+
+// But MetaCoin is more than visual impact. It’s a fully customizable system that allows control over geometry, rhythm, and spatial density. Whether you want radial patterns, randomized layouts, or vertical continuity, MetaCoin is algorithmically tailored to fit your design language. It’s especially relevant in retail and hospitality, where identity and engagement matter most.
+
+// And yes, if you’re building a coin building facade, this is your ultimate toolkit.
+
+// MetaFin & MetaSequin: Flow, Texture, and Spark
+
+// Where MetaCoin adds sculptural rhythm, MetaFin introduces flowing, seamless surfaces that sweep across elevations - perfect for expressive forms and curved metal facades. With the elegance of motion, it reimagines metal panels as living surfaces that interact with light and air.
+
+// MetaSequin, on the other hand, brings shimmer and energy. Made of metallic discs that catch sunlight, it creates sparkle and depth - making it ideal for cultural spaces or high-impact retail fronts. 
+
+// Personalisation Built Into the Process
+
+// Every project starts with a vision - a feeling you want the building to evoke. Our role is to translate that into a metallic skin that performs, lasts, and most importantly, expresses.
+
+// That’s why all our custom facade systems are built from scratch. You choose the pattern, the material, the finish. 
+
+// As leading metal designers in India, we collaborate closely with clients to ensure that every element aligns with the story the building aims to tell.
+
+// Why It Matters
+
+// Buildings are more than structures - they’re experiences. A school should feel open and progressive. A residence should feel warm, personal, secure. A retail store should express energy, elegance, or exclusivity.
+
+// Parametric facades make that expression tangible. No extra signage. No overlays. Just architecture, designed with purpose - and built to embody it.
+
+// Conclusion: Make Your Mark
+
+// At Metaguise, we don't believe in standard facades. We believe in signature facades - systems that respond to their users, their surroundings, and their stories.
+
+// Through customizable parametric architecture systems like MetaCoin, MetaFin, and MetaSequin, we provide the tools to create facades that are as personal as a fingerprint - expressive, efficient, and entirely yours.
+
+// Because in the end, your facade is your identity. Let’s make it unforgettable.
+//  `,
+//         description: "In architecture, first impressions aren't just important - they're permanent. Your facade is more than a surface. It’s the visual voice of your building, the first and most lasting statement it makes. At Metaguise, we treat every facade as an opportunity to express identity, ambition, and originality - especially when designed through parametric architecture.",
+//         images: [
+//             "assets/Blogs/architectural luxury/luxury3.jpg",
+//             "assets/Blogs/architectural luxury/luxury2.jpg",
+//             "assets/Blogs/architectural luxury/luxury1.jpg",
+//         ],
+
+     
+        
+//       },
   ];

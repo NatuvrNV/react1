@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet'; // Import Helmet
 import "./Blog.css";
 import { useNavigate } from 'react-router-dom';
 import { Container, Row } from "react-bootstrap";
@@ -43,6 +44,15 @@ const Blog = () => {
 
   return (
     <div className="singleblog-container">
+      {/* Add Meta Tags */}
+      <Helmet>
+        <title>  Metaguise Blog | Architectural Insights & Facade Innovations </title>
+        <meta 
+          name="description" 
+          content="Explore our latest articles on facade innovations, architectural trends, and project highlights. Discover expert insights, material spotlights, and behind-the-scenes design stories in our comprehensive blog collection." 
+        />
+      </Helmet>
+
       <Container fluid>
         <Row>
           <div className="desktop-title mb-3 blog-title">
