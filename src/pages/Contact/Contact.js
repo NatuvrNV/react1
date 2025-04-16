@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
 import { Container, Row, Col, Form } from "react-bootstrap";
-import Footer from "../../components/Footer"; // Import Footer component
+import Footer from "../../components/Footer";
 import "./Contact.css";
 import { Helmet } from "react-helmet-async";
-import emailjs from "@emailjs/browser"; // Import EmailJS for SMTP
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // State for form data
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -22,7 +21,6 @@ const Contact = () => {
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
 
-  // Handle input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -42,23 +40,25 @@ const Contact = () => {
     }
   }, [formData.phone]);
 
-  // Handle form submission
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent page refresh
+    e.preventDefault();
     setIsSending(true);
     setFeedbackMessage("");
 
-      // Validate fields before proceeding
-  if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
-    setFeedbackMessage("❌ All fields are required.");
-    setIsSending(false);
-    return;
-  }
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.phone.trim()
+    ) {
+      setFeedbackMessage("❌ All fields are required.");
+      setIsSending(false);
+      return;
+    }
 
     const emailParams = {
       from_name: formData.name,
       from_email: formData.email,
-       from_phone: formData.phone,
+      from_phone: formData.phone,
       message: formData.message,
     };
 
@@ -71,8 +71,17 @@ const Contact = () => {
       );
 
       console.log("Email sent successfully!", response);
-      setFeedbackMessage("Thank you for your enquiry. We will get in touch with you soon!");
-      setFormData({ name: "", email: "", phone: "", message: "" }); // Reset form fields
+      setFeedbackMessage(
+        "Thank you for your enquiry. We will get in touch with you soon!"
+      );
+      setFormData({ name: "", email: "", phone: "", message: "" });
+
+      // ✅ Google Ads Conversion Tracking
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "conversion", {
+          send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
+        });
+      }
     } catch (error) {
       console.error("Error sending email:", error);
       setFeedbackMessage("Failed to send email. Please try again.");
@@ -85,33 +94,58 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact Metaguise | Metal Facade Cladding Experts</title>
-        <meta name="description" content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project." />
-        <meta property="og:title" content="Contact Metaguise | Metal Facade Cladding Experts" />
-        <meta property="og:description" content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project." />
+        <meta
+          name="description"
+          content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project."
+        />
+        <meta
+          property="og:title"
+          content="Contact Metaguise | Metal Facade Cladding Experts"
+        />
+        <meta
+          property="og:description"
+          content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project."
+        />
         <meta name="robots" content="index, follow" />
+
+        {/* ✅ Google Ads Conversion Tracking Script */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16992180594');
+          `}
+        </script>
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">
-          <Col md={6} className="contact-left d-flex align-items-center justify-content-center gap-4">
+          <Col
+            md={6}
+            className="contact-left d-flex align-items-center justify-content-center gap-4"
+          >
             <div id="contact-desktop" className="contactus-text">
               <p>We'd Love</p>
               <p>to Connect</p>
               <p>with You.</p>
 
               <div className="lead-contact mt-4">
-              <p>Share your vision, and let's create</p>
-              <p>something amazing together.</p>
-            </div>
+                <p>Share your vision, and let's create</p>
+                <p>something amazing together.</p>
+              </div>
             </div>
             <div id="contact-mob" className="contactus-text">
               <p>We'd Love to </p>
               <p>Connect with You.</p>
             </div>
-          
           </Col>
 
-          <Col md={6} className="contact-right d-flex flex-column justify-content-center">
+          <Col
+            md={6}
+            className="contact-right d-flex flex-column justify-content-center"
+          >
             <Form className="w-100" onSubmit={handleSubmit}>
               <Row>
                 <Col md={6} className="mb-3 mb-md-4">
@@ -145,18 +179,17 @@ const Contact = () => {
               <Row>
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formPhone">
-                  <PhoneInput
-  enableSearch
-  inputClass="bg-contact form-text border-0 w-100"
-  containerClass="w-100"
-  inputStyle={{ width: "100%" }}
-  dropdownClass="bg-dark text-white"
-  value={formData.phone}
-  onChange={handlePhoneChange}
-  placeholder="Enter phone number with Country Code " // Added placeholder here
-  required
-/>
-
+                    <PhoneInput
+                      enableSearch
+                      inputClass="bg-contact form-text border-0 w-100"
+                      containerClass="w-100"
+                      inputStyle={{ width: "100%" }}
+                      dropdownClass="bg-dark text-white"
+                      value={formData.phone}
+                      onChange={handlePhoneChange}
+                      placeholder="Enter phone number with Country Code"
+                      required
+                    />
                   </Form.Group>
                 </Col>
               </Row>
@@ -175,13 +208,23 @@ const Contact = () => {
               </Form.Group>
 
               <div className="button-wrapper">
-                <button type="submit" className="send-button" disabled={isSending}>
+                <button
+                  type="submit"
+                  className="send-button"
+                  disabled={isSending}
+                >
                   <span>{isSending ? "Sending..." : "Send"}</span>
                 </button>
               </div>
 
               {feedbackMessage && (
-                <p className={`mt-3 ${feedbackMessage.includes("success") ? "text-success" : "text"}`}>
+                <p
+                  className={`mt-3 ${
+                    feedbackMessage.includes("Thank you")
+                      ? "text-success"
+                      : "text-danger"
+                  }`}
+                >
                   {feedbackMessage}
                 </p>
               )}
