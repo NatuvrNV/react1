@@ -25,6 +25,12 @@
   
 }
 
+#single-text h1 {
+  line-height: 23px;
+  padding: 6px 15px;
+  letter-spacing: 0.03em;
+}
+
 .single-product-footer {
   position: relative;
   bottom: 0;
