@@ -303,9 +303,9 @@ const Sidebar = ({
       </h3>
      <div id="single-text" className="sidebar p-4 bg-darkrounded tw-text-white">
               <ListGroup variant="flush">
-                <ListGroup.Item action variant="dark" style={{ fontSize: "15px" }}>
+                <h1 action variant="dark" style={{ fontSize: "15px" }}>
                   {selectedProduct.description.charAt(0).toUpperCase() + selectedProduct.description.slice(1)}
-                </ListGroup.Item>
+                </h1>
               </ListGroup>
             </div>
     
