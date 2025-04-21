@@ -32,6 +32,7 @@ const SingleprojectDetail = [
         "assets/Allprojects/commercial/Ardete/night/ardete20.webp",
       ],
     },
+    
     {
       name: "tanishq",
       videoLink: "https://www.youtube.com/watch?v=nJSmApEceRE",
@@ -746,6 +747,336 @@ const SingleprojectDetail = [
         "assets/Allprojects/residential/LinearRetreat/metalouver/linearretreat12.webp",
       ],
     },
+
+    //11 item 
+    {
+      name: "theresonance",
+      videoLink: "https://youtu.be/XAKwEOasMSE",
+      youtubeLink: "https://youtu.be/XAKwEOasMSE",
+      instagramLink: "https://www.instagram.com/reel/DHXobO2yz1-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"The Resonance",
+      metatittles:"The Resonance Facade | Elegant Facade with MetaCassette, MetaFlute & MetaLouver",
+      metadescription:"Designed by Design Symposium and crafted by Metaguise, this refined facade features MetaCassette panels, warm MetaFlutes, and MetaGrey MetaLouvers—layering light, texture, and rhythm into a composition of architectural grace and timeless cohesion.",
+      images: [
+      
+        "assets/Allprojects/residential/TheResonance/metaflute/karan2.webp",
+        "assets/Allprojects/residential/TheResonance/metaflute/karan4.webp",
+        "assets/Allprojects/residential/TheResonance/metaflute/karan7.webp",
+        "assets/Allprojects/residential/TheResonance/metaflute/karan9.webp",
+        "assets/Allprojects/residential/TheResonance/metaflute/karan10.webp",
+        "assets/Allprojects/residential/TheResonance/metaflute/karan11.webp",
+        "assets/Allprojects/residential/TheResonance/metalouver/karan3.webp",
+        "assets/Allprojects/residential/TheResonance/metalouver/karan5.webp",
+        "assets/Allprojects/residential/TheResonance/metacassette-perforated/karan6.webp",
+        "assets/Allprojects/residential/TheResonance/metacassette-perforated/karan8.webp",
+        "assets/Allprojects/residential/TheResonance/metacassette-perforated/karan12.webp",
+      ],
+    },
+
+    {
+      name: "theelevato",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "https://www.instagram.com/reel/DIdXmNOSwvw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"The Elevato",
+      metatittles:"The Elevato Facade | Rhythmic Facade with MetaLouver & MetaFlute by Metaguise",
+      metadescription:"Designed by Studio Mathema, this dynamic three-sided elevation blends MetaLouvers and MetaFlutes in warm MetaWood, framed by crisp white solid panels—creating a rhythmic facade that shifts with every step, balancing motion, texture, and elegance.",
+      images: [
+      
+        "assets/Allprojects/residential/TheElevato/metaflute/neeraj3.webp",
+        "assets/Allprojects/residential/TheElevato/metaflute/neeraj4.webp",
+        "assets/Allprojects/residential/TheElevato/metaflute/neeraj6.webp",
+        "assets/Allprojects/residential/TheElevato/metaflute/neeraj8.webp",
+        "assets/Allprojects/residential/TheElevato/metaflute/neeraj9.webp",
+        "assets/Allprojects/residential/TheElevato/metaflute/neeraj11.webp",
+        "assets/Allprojects/residential/TheElevato/solid-panel/neeraj2.webp",
+        "assets/Allprojects/residential/TheElevato/solid-panel/neeraj5.webp",
+        "assets/Allprojects/residential/TheElevato/solid-panel/neeraj7.webp",
+        "assets/Allprojects/residential/TheElevato/solid-panel/neeraj10.webp",
+        "assets/Allprojects/residential/TheElevato/night/neeraj12.webp",
+        "assets/Allprojects/residential/TheElevato/night/neeraj13.webp",
+        "assets/Allprojects/residential/TheElevato/night/neeraj14.webp",
+        
+      ],
+    },
+
+    {
+      name: "thecurtain",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Curtain",
+      metatittles:"The Curtain | MetaLouver in MetaGrey by Metaguise",
+      metadescription:"Metaguise’s first tall-format facade features MetaLouvers in MetaGrey, wrapping two elevations with rhythm and refinement. This lightweight, functional system blends lightness, airflow, and elegance—transforming the structure into a bold architectural statement.",
+      images: [
+      
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega2.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega3.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega4.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega5.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega6.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega8.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega9.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega10.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega11.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega12.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega13.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega14.webp",
+        "assets/Allprojects/commercial/TheCurtain/metalouver/vega17.webp",
+       
+      
+        
+      ],
+    },
+
+    {
+      name: "TheCrystal",
+      videoLink: "https://youtu.be/BQyDoZNDi90",
+      youtubeLink: "https://youtu.be/BQyDoZNDi90",
+      instagramLink: "https://www.instagram.com/reel/DGcn0PjyHoE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"The Crystal",
+      metatittles:"Crystal Facade | Futuristic Facade in Solid Panel Corten & White by Metaguise",
+      metadescription:"A bold upcoming project by Studio Ardete, featuring Metaguise’s fusion of Solid Panel Corten and White finishes—where sharp angles, raw textures, and modern minimalism collide to shape a striking, future-forward facade.",
+      images: [
+      
+        "assets/Allprojects/residential/TheCrystal/solid-panel/bikaner2.webp",
+        "assets/Allprojects/residential/TheCrystal/solid-panel/bikaner3.webp",
+        "assets/Allprojects/residential/TheCrystal/solid-panel/bikaner4.webp",
+        "assets/Allprojects/residential/TheCrystal/solid-panel/bikaner5.webp",
+        "assets/Allprojects/residential/TheCrystal/solid-panel/bikaner6.webp",
+        "assets/Allprojects/residential/TheCrystal/solid-panel/bikaner8.webp",
+        "assets/Allprojects/residential/TheCrystal/solid-panel/bikaner9.webp",
+        "assets/Allprojects/residential/TheCrystal/solid-panel/bikaner10.webp",
+        "assets/Allprojects/residential/TheCrystal/solid-panel/bikaner11.webp",
+        "assets/Allprojects/residential/TheCrystal/solid-panel/bikaner7.webp",
+       
+       
+      
+        
+      ],
+    },
+
+    {
+      name: "rjjewellers",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "https://www.instagram.com/reel/DITmjRfoQXy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"RJ Jewellers",
+      metatittles:"RJ Jewellers, Jaipur | Parametric METABLOX™ Facade by Metaguise",
+      metadescription:"Debuting on the RJ Jewellers flagship in Jaipur, METABLOX™ by Metaguise is a modular, shape-shifting facade system. Inspired by beehives and blooming like a lotus, this champagne gold parametric marvel redefines metal as motion, rhythm, and identity.",
+      images: [
+      
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj2.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj3.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj4.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj5.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj13.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj10.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj12.webp",
+        "assets/Allprojects/commercial/RJJewellers/night/rj6.webp",
+        "assets/Allprojects/commercial/RJJewellers/night/rj7.webp",
+        "assets/Allprojects/commercial/RJJewellers/night/rj8.webp",
+        "assets/Allprojects/commercial/RJJewellers/night/rj9.webp",
+        "assets/Allprojects/commercial/RJJewellers/night/rj15.webp",
+        "assets/Allprojects/commercial/RJJewellers/night/rj11.webp",
+        "assets/Allprojects/commercial/RJJewellers/night/rj14.webp",
+       
+       
+      
+        
+      ],
+    },
+
+    {
+      name: "farm15",
+      videoLink: "",
+      youtubeLink: "https://youtu.be/UA4mT5K3oBA",
+      instagramLink: "https://www.instagram.com/reel/DCTanxYSWkl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"Farm 15",
+      metatittles:"The Farmhouse | Organic Facade with MetaLouver in MetaWood & MetaGrey",
+      metadescription:"Designed by Cityspace’82 Architects, this farmhouse features a serene blend of MetaLouver panels in MetaWood and MetaGrey—crafting a three-sided elevation that flows with nature, balancing contemporary elegance with earthy warmth in true Metaguise style.",
+      images: [
+      
+        "assets/Allprojects/residential/Farm15/metagate/farm5.webp",
+        "assets/Allprojects/residential/Farm15/metagate/farm12.webp",
+        "assets/Allprojects/residential/Farm15/metagate/farm20.webp",
+        "assets/Allprojects/residential/Farm15/metaflute/farm2.webp",
+        "assets/Allprojects/residential/Farm15/metaflute/farm3.webp",
+        "assets/Allprojects/residential/Farm15/metaflute/farm4.webp",
+        "assets/Allprojects/residential/Farm15/metaflute/farm9.webp",
+        "assets/Allprojects/residential/Farm15/metaflute/farm10.webp",
+        "assets/Allprojects/residential/Farm15/metaflute/farm13.webp",
+        "assets/Allprojects/residential/Farm15/metaflute/farm14.webp",
+        "assets/Allprojects/residential/Farm15/metaflute/farm15.webp",
+        "assets/Allprojects/residential/Farm15/metaflute/farm16.webp",
+        "assets/Allprojects/residential/Farm15/metaflute/farm17.webp",
+        "assets/Allprojects/residential/Farm15/night/farm6.webp",
+        "assets/Allprojects/residential/Farm15/night/farm7.webp",
+        "assets/Allprojects/residential/Farm15/night/farm8.webp",
+        "assets/Allprojects/residential/Farm15/night/farm11.webp",
+        "assets/Allprojects/residential/Farm15/night/farm18.webp",
+        "assets/Allprojects/residential/Farm15/night/farm19.webp",
+       
+       
+      
+        
+      ],
+    },
+
+    {
+      name: "e81",
+      videoLink: "",
+      youtubeLink: "https://youtu.be/aOam-UJ-k9A",
+      instagramLink: "https://www.instagram.com/p/DG0Vp_pyuL9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"E81",
+      metatittles:"E81 Facade | Layered Facade with MetaCassette & MetaFlute Harmony",
+      metadescription:"A dual-elevation marvel by Design India 99, featuring MetaCassette perforated panels and warm wood-finish MetaFlutes—flowing seamlessly across surfaces to create a rhythmic blend of light, depth, and contemporary luxury.",
+      images: [
+      
+        "assets/Allprojects/residential/E81/metaflute/e81_2.webp",
+        "assets/Allprojects/residential/E81/metaflute/e81_7.webp",
+        "assets/Allprojects/residential/E81/metaflute/e81_8.webp",
+        "assets/Allprojects/residential/E81/metaflute/e81_10.webp",
+        "assets/Allprojects/residential/E81/metacassette-perfoated/e81_3.webp",
+        "assets/Allprojects/residential/E81/metacassette-perfoated/e81_4.webp",
+        "assets/Allprojects/residential/E81/metacassette-perfoated/e81_5.webp",
+        "assets/Allprojects/residential/E81/metacassette-perfoated/e81_6.webp",
+        "assets/Allprojects/residential/E81/metacassette-perfoated/e81_9.webp",
+        "assets/Allprojects/residential/E81/metacassette-perfoated/e81_11.webp",
+        
+       
+       
+      
+        
+      ],
+    },
+
+    {
+      name: "B38",
+      videoLink: "",
+      youtubeLink: "https://www.youtube.com/shorts/a_SobJmIYv4?feature=share",
+      instagramLink: "https://www.instagram.com/reel/CnMURWCpO0x/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"B38",
+      metatittles:"B38 Facade | MetaCassette in MetaCorten by Metaguise",
+      metadescription:"B38 facade features MetaCassette panels in enduring MetaCorten—a rust-free, stain-proof finish that ages gracefully. A timeless elevation that reflects our philosophy: design that endures, materials that evolve, beauty that stays.",
+      images: [
+      
+     
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_2.webp",
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_3.webp",
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_4.webp",
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_5.webp",
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_6.webp",
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_7.webp",
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_8.webp",
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_9.webp",
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_10.webp",
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_11.webp",
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_12.webp",
+        "assets/Allprojects/residential/B38/metacassette-perforated/b38_13.webp",
+        
+        
+       
+       
+      
+        
+      ],
+    },
+
+    {
+      name: "a56",
+      videoLink: "",
+      youtubeLink: "https://youtu.be/N5lCQ8fSvgA",
+      instagramLink: "https://www.instagram.com/reel/C94KkssS9Wt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"A56",
+      metatittles:"A56 Facade | Sculptural Facade with MetaPyramid, MetaLouver & MetaFlute",
+      metadescription:"Designed by FAIR Build and elevated by Metaguise, this residence features avant-garde MetaPyramid panels in MetaGrey, harmonized with MetaWood-finished MetaLouver and MetaFlute elements—creating a facade of refined luxury, rhythm, and architectural excellence.",
+      images: [
+      
+     
+        "assets/Allprojects/residential/A56/metapyramid/a56_2.webp",
+        "assets/Allprojects/residential/A56/metapyramid/a56_3.webp",
+        "assets/Allprojects/residential/A56/metapyramid/a56_4.webp",
+        "assets/Allprojects/residential/A56/metapyramid/a56_5.webp",
+        "assets/Allprojects/residential/A56/metapyramid/a56_6.webp",
+        "assets/Allprojects/residential/A56/metapyramid/a56_7.webp",
+        "assets/Allprojects/residential/A56/metapyramid/a56_8.webp",
+        "assets/Allprojects/residential/A56/metapyramid/a56_9.webp",
+        "assets/Allprojects/residential/A56/metalouver/a56_12.webp",
+        "assets/Allprojects/residential/A56/metalouver/a56_13.webp",
+        "assets/Allprojects/residential/A56/metaflute/a56_11.webp",
+        "assets/Allprojects/residential/A56/metaflute/a56_10.webp",
+        
+        
+       
+       
+      
+        
+      ],
+    },
+
+    {
+      name: "3dlf1",
+      videoLink: "",
+      youtubeLink: "https://youtu.be/-pLr2ZVXycY",
+      instagramLink: "https://www.instagram.com/reel/C39pYFwyFKK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"3DLF1",
+      metatittles:"3 DLF 1 Facade | Artistic Facade with MetaCopper & MetaFlute Accents",
+      metadescription:"A stunning home facade by ASRO Arcade, featuring intricate MetaCopper panels from MetaLab, paired with warm MetaFlute in MetaWood and sleek MetaGrey finishes for a harmonious, modern aesthetic.",
+      images: [
+      
+     
+        "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_2.webp",
+        "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_3.webp",
+        "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_4.webp",
+        "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_11.webp",
+        "assets/Allprojects/residential/3DLF1/metaflute/3dlf1_8.webp",
+        "assets/Allprojects/residential/3DLF1/metaflute/3dlf1_9.webp",
+        "assets/Allprojects/residential/3DLF1/metaflute/3dlf1_10.webp",
+        "assets/Allprojects/residential/3DLF1/metacassette-perforated/3dlf1_5.webp",
+        "assets/Allprojects/residential/3DLF1/metacassette-perforated/3dlf1_6.webp",
+        "assets/Allprojects/residential/3DLF1/metacassette-perforated/3dlf1_7.webp",
+        
+        
+       
+       
+      
+        
+      ],
+    },
+
+    {
+      name: "thewaveform",
+      videoLink: "",
+      youtubeLink: "https://youtu.be/fI3GdK5MMuA",
+      instagramLink: "https://www.instagram.com/reel/DFU1kfryqz0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"The Waveform",
+      metatittles:"The Waveform | MetaCoin, MetaPyramid, MetaShingle & MetaLouver in Harmony",
+      metadescription:"A showcase of Metaguise’s finest, this residential facade blends MetaCoin’s fluid waves, MetaPyramid’s mystique, MetaShingle’s rhythm, and MetaLouver’s warmth—crafting a textured, geometric narrative that redefines contemporary architectural expression.",
+      images: [
+      
+     
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal5.webp",
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal7.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal4.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal6.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal2.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal13.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal8.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal9.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal11.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal12.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal3.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal10.webp",
+  
+        
+        
+       
+       
+      
+        
+      ],
+    },
   ];
 
 export const SingleProductDetail = [
@@ -1372,6 +1703,17 @@ export const ProjectImages = [
     { imgPath: "assets/Allprojects/residential/PeachStreet/cover/peachstreet1.webp",},
     { imgPath: "assets/Allprojects/residential/CopperCanvas/cover/coppercanvas1.webp",},
     { imgPath: "assets/Allprojects/residential/LinearRetreat/cover/linearretreat1.webp",},
+    { imgPath: "assets/Allprojects/residential/TheResonance/cover/karan1.webp",},
+    { imgPath: "assets/Allprojects/residential/TheElevato/cover/neeraj1.webp",},
+    { imgPath: "assets/Allprojects/commercial/TheCurtain/cover/vega1.webp",},
+    { imgPath: "assets/Allprojects/residential/TheCrystal/cover/bikaner1.webp",},
+    { imgPath: "assets/Allprojects/commercial/RJJewellers/cover/rj1.webp",},
+    { imgPath: "assets/Allprojects/residential/Farm15/cover/farm1.webp",},
+    { imgPath: "assets/Allprojects/residential/E81/cover/e81_1.webp",},
+    { imgPath: "assets/Allprojects/residential/B38/cover/b38_1.webp",},
+    { imgPath: "assets/Allprojects/residential/A56/cover/a56_1.webp",},
+    { imgPath: "assets/Allprojects/residential/3DLF1/cover/3dlf1_1.webp",},
+    { imgPath: "assets/Allprojects/residential/TheWaveform/cover/khandelwal1.webp",},
     { imgPath: "assets/Allprojects/residential/Q62-RA/cover/tejbir1.webp",order: 8 },
     { imgPath: "assets/Allprojects/residential/z1012/cover/z10121.webp",order: 26 },
     { imgPath: "assets/Allprojects/residential/Luxe/cover/luxe16.webp",order: 3 },
