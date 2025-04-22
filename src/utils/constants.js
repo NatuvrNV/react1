@@ -775,8 +775,8 @@ const SingleprojectDetail = [
 
     {
       name: "theelevato",
-      videoLink: "",
-      youtubeLink: "",
+      videoLink: "https://www.youtube.com/shorts/GMLmGxfBO1E?feature=share",
+      youtubeLink: "https://www.youtube.com/shorts/GMLmGxfBO1E?feature=share",
       instagramLink: "https://www.instagram.com/reel/DIdXmNOSwvw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Elevato",
       metatittles:"The Elevato Facade | Rhythmic Facade with MetaLouver & MetaFlute by Metaguise",
@@ -802,9 +802,9 @@ const SingleprojectDetail = [
 
     {
       name: "thecurtain",
-      videoLink: "",
-      youtubeLink: "",
-      instagramLink: "",
+      videoLink: "https://youtube.com/shorts/Hl_P526YgY0?feature=share",
+      youtubeLink: "https://youtube.com/shorts/Hl_P526YgY0?feature=share",
+      instagramLink: "https://www.instagram.com/p/DHp3v2PyXv2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Curtain",
       metatittles:"The Curtain | MetaLouver in MetaGrey by Metaguise",
       metadescription:"Metaguise’s first tall-format facade features MetaLouvers in MetaGrey, wrapping two elevations with rhythm and refinement. This lightweight, functional system blends lightness, airflow, and elegance—transforming the structure into a bold architectural statement.",
@@ -858,8 +858,8 @@ const SingleprojectDetail = [
 
     {
       name: "rjjewellers",
-      videoLink: "",
-      youtubeLink: "",
+      videoLink: "https://youtube.com/shorts/N7gs1DPJmdY?feature=share",
+      youtubeLink: "https://youtube.com/shorts/N7gs1DPJmdY?feature=share",
       instagramLink: "https://www.instagram.com/reel/DITmjRfoQXy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"RJ Jewellers",
       metatittles:"RJ Jewellers, Jaipur | Parametric METABLOX™ Facade by Metaguise",
@@ -925,7 +925,7 @@ const SingleprojectDetail = [
 
     {
       name: "e81",
-      videoLink: "",
+      videoLink: "https://youtu.be/aOam-UJ-k9A",
       youtubeLink: "https://youtu.be/aOam-UJ-k9A",
       instagramLink: "https://www.instagram.com/p/DG0Vp_pyuL9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"E81",
