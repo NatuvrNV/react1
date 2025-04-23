@@ -7,19 +7,15 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = async () => {
-    const res = await fetch("https://metaguise.com/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      credentials: "include",
-      body: JSON.stringify({ username, password }),
-    });
+  // Define hardcoded credentials
+  const hardcodedUsername = "admin";
+  const hardcodedPassword = "password123";
 
-    const data = await res.json();
-    if (res.ok) {
+  const handleLogin = () => {
+    if (username === hardcodedUsername && password === hardcodedPassword) {
       window.location.href = "/admin";
     } else {
-      alert(data.message);
+      alert("Invalid username or password");
     }
   };
 
@@ -27,18 +23,17 @@ const Login = () => {
     <Container fluid className="bg-dark text-white min-vh-100 d-flex align-items-center justify-content-center">
       <Row className="w-100">
         <Col md={12} className="d-flex align-items-center justify-content-center">
-          <div className=" p-8 rounded-xl shadow-lg text-center w-96">
+          <div className="p-8 rounded-xl shadow-lg text-center w-96">
             {/* Logo */}
             <img src={logo} alt="Metaguise Logo" className="mx-auto mb-4 w-24" />
-
-            {/* <h2 className="text-2xl font-semibold mb-4 text-white text-center ">Admin Login</h2> */}
 
             {/* Username Field */}
             <div className="mb-4 loginfield">
               <input
                 type="text"
                 placeholder="Username"
-                className="w-full "
+                className="w-full"
+                value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
             </div>
@@ -48,7 +43,8 @@ const Login = () => {
               <input
                 type="password"
                 placeholder="Password"
-                className="w-full "
+                className="w-full"
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
