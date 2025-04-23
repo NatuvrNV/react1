@@ -26,6 +26,8 @@ import CTB from './pages/Contact/coffeform';
 import PrivacyPolicy from './pages/Policy&Conditions/PrivacyPolicy';
 import Terms from './pages/Policy&Conditions/TermsConditions';
 import Preloader from './components/Preloader';
+import Login from "./pages/BackendAdmin/Login";
+import Admin from "./pages/BackendAdmin/Admin";
 
 
 function App() {
@@ -54,6 +56,8 @@ function App() {
           <Route path="/all-products/:productName" element={<SingleProduct />} />
           <Route path="/all-projects/:projectName" element={<SingleProject />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/metavision" element={<Metavision />} />
           <Route path="/metaexperience" element={<MetaExperience />} />
           <Route path="/blog/:title" element={<SingleBlogPage />} />
