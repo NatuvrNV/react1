@@ -8,7 +8,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    const res = await fetch("http://localhost:5000/api/login", {
+    const res = await fetch("https://metaguise.com/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
