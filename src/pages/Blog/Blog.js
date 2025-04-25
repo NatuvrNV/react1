@@ -51,6 +51,7 @@ const Blog = () => {
           name="description" 
           content="Explore our latest articles on facade innovations, architectural trends, and project highlights. Discover expert insights, material spotlights, and behind-the-scenes design stories in our comprehensive blog collection." 
         />
+        <link rel="canonical" href="https://metaguise.com/blogs" />
       </Helmet>
 
       <Container fluid>
