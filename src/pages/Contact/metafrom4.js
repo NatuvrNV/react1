@@ -12,7 +12,7 @@ const Contact = ({ brochureName }) => {
     window.scrollTo(0, 0);
   }, []);
 
-  const location = useLocation(); // Detect current page URL
+  const location = useLocation();
   const pageBrochureMap = {
     "/metasurface": "MetaSurface",
     "/metaparametric": "MetaParametric",
@@ -30,7 +30,7 @@ const Contact = ({ brochureName }) => {
   });
 
   const [isSending, setIsSending] = useState(false);
-  const [message, setMessage] = useState(""); // State to store success/failure message
+  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -40,7 +40,6 @@ const Contact = ({ brochureName }) => {
     setFormData({ ...formData, phone: value });
   };
 
-  // Function to open the correct PDF in a new tab
   const openPDF = () => {
     const brochureMap = {
       MetaSurface: "/assets/brochure/METASURFACE.pdf",
@@ -53,21 +52,20 @@ const Contact = ({ brochureName }) => {
     const filePath = brochureMap[detectedBrochure];
 
     if (filePath) {
-      window.open(filePath, "_blank"); // Open in a new tab
+      window.open(filePath, "_blank");
     }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
-    setMessage(""); // Reset message on submit
+    setMessage("");
 
-              // Validate fields before proceeding
-  if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
-    setMessage("❌ All fields are required.");
-    setIsSending(false);
-    return;
-  }
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
+      setMessage("❌ All fields are required.");
+      setIsSending(false);
+      return;
+    }
 
     const emailParams = {
       from_name: formData.name,
@@ -78,17 +76,21 @@ const Contact = ({ brochureName }) => {
 
     try {
       await emailjs.send(
-        "service_hbh6e6a", // Replace with your actual Service ID
-        "template_sp4d06m", // Replace with your actual Template ID
+        "service_hbh6e6a",
+        "template_sp4d06m",
         emailParams,
-        "aEASMHR8n6Vmgtj3l" // Replace with your actual Public Key
+        "aEASMHR8n6Vmgtj3l"
       );
 
-      openPDF(); // Open the brochure in a new tab
       setMessage("✅ Thanks for your query! Your download will begin shortly.");
-      
-      // Reset form fields
       setFormData({ name: "", email: "", phone: "" });
+
+      // Google Ads Conversion Tracking
+      window.gtag && window.gtag("event", "conversion", {
+        send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_", // Replace with your actual values
+        event_callback: openPDF, // Triggers opening the PDF after tracking
+      });
+
     } catch (error) {
       console.error("Error sending email:", error);
       setMessage("❌ Failed to send message. Please try again.");
@@ -99,23 +101,33 @@ const Contact = ({ brochureName }) => {
 
   return (
     <>
-     <Helmet>
-           <title>Download {detectedBrochure}  |  Metal Cladding Surface Finishes</title>
-           <meta
-             name="description"
-             content={`
-             Explore textured metal facade finishes crafted for modern architecture in the ${detectedBrochure} brochure.
-             `}
-           />
-           <meta
-             property="og:title"
-             content={`Download ${detectedBrochure}  |  Metal Cladding Surface Finishes`}
-           />
-           <meta
-             property="og:description"
-             content={`Explore textured metal facade finishes crafted for modern architecture in the ${detectedBrochure} brochure.`}
-           />
-         </Helmet>
+      <Helmet>
+        <title>Download {detectedBrochure} | Metal Cladding Surface Finishes</title>
+        <meta
+          name="description"
+          content={`Explore textured metal facade finishes crafted for modern architecture in the ${detectedBrochure} brochure.`}
+        />
+        <meta property="og:title" content={`Download ${detectedBrochure} | Metal Cladding Surface Finishes`} />
+        <meta property="og:description" content={`Explore textured metal facade finishes crafted for modern architecture in the ${detectedBrochure} brochure.`} />
+
+                  {/* ✅ Canonical Tag */}
+  <link
+    rel="canonical"
+    href={`https://metaguise.com${location.pathname}`}
+  />
+        {/* Google Ads Global Site Tag (replace with actual if not already added globally) */}
+
+           {/* ✅ Google Ads Conversion Tracking Script */}
+           <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16992180594');
+          `}
+        </script>
+      </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">
@@ -165,7 +177,6 @@ const Contact = ({ brochureName }) => {
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formPhone">
                     <PhoneInput
-                 
                       enableSearch
                       inputClass="bg-contact form-text border-0 w-100"
                       containerClass="w-100"
@@ -186,7 +197,6 @@ const Contact = ({ brochureName }) => {
                 </button>
               </div>
 
-              {/* Message Display */}
               {message && (
                 <p className={`mt-3 ${message.includes("✅") ? "text-success" : "text-danger"}`}>
                   {message}
