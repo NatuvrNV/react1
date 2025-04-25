@@ -105,8 +105,9 @@ const SingleProject = () => {
       setContentToRender(darkMode ? nightImages : selectedProject.images);
     }
   }, [darkMode, selectedProject.images]);
-
+  
   const filterImagesByCategory = (category) => {
+    if (darkMode && category !== "") return; // Prevent selecting other categories in night mode
     setSelectedCategory(category);
   };
 
@@ -130,6 +131,7 @@ const SingleProject = () => {
         <meta name="description" content={selectedProject.metadescription} />
         <meta property="og:title" content={selectedProject.metatittles}  />
         <meta property="og:description" content={selectedProject.metadescription} />
+        <link rel="canonical" href={`https://metaguise.com/all-projects/${projectName}`} />
       </Helmet>
       <div className="row">
         <div className="col-12">
@@ -269,15 +271,20 @@ const ElementsDropdown = ({
           All
           {selectedCategory === "" && <MdArrowOutward size={20} />}
         </Dropdown.Item>
-        {!darkMode && categories.map((category, index) => (
+        {categories.map((category, index) => (
           <Dropdown.Item
             key={index}
-            onClick={() => filterImagesByCategory(category)}
-            active={selectedCategory === category}
-            style={{ display: "flex", justifyContent: "space-between" }}
+            onClick={() => !darkMode && filterImagesByCategory(category)}
+            active={!darkMode && selectedCategory === category}
+            style={{ 
+              display: "flex", 
+              justifyContent: "space-between",
+              pointerEvents: darkMode ? "none" : "auto",
+              opacity: darkMode ? 0.5 : 1
+            }}
           >
             {category}
-            {selectedCategory === category && <MdArrowOutward size={20} />}
+            {selectedCategory === category && !darkMode && <MdArrowOutward size={20} />}
           </Dropdown.Item>
         ))}
       </Dropdown.Menu>
@@ -375,17 +382,24 @@ const Sidebar = ({
             All
             {selectedCategory === "" && <MdArrowOutward size={20} />}
           </ListGroup.Item>
-          {!darkMode && categories.map((category, index) => (
+          {categories.map((category, index) => (
             <ListGroup.Item
               key={index}
               action
               variant="light"
-              className={selectedCategory === category ? "highlight" : "dim"}
-              onClick={() => filterImagesByCategory(category)}
-              style={{ display: "flex", justifyContent: "space-between" }}
+              className={`${selectedCategory === category ? "highlight" : "dim"} ${
+                darkMode ? "disabled-category" : ""
+              }`}
+              onClick={() => !darkMode && filterImagesByCategory(category)}
+              style={{ 
+                display: "flex", 
+                justifyContent: "space-between",
+                pointerEvents: darkMode ? "none" : "auto",
+                opacity: darkMode ? 0.5 : 1
+              }}
             >
               {category.charAt(0).toUpperCase() + category.slice(1)}
-              {selectedCategory === category && <MdArrowOutward size={20} />}
+              {selectedCategory === category && !darkMode && <MdArrowOutward size={20} />}
             </ListGroup.Item>
           ))}
         </ListGroup>
