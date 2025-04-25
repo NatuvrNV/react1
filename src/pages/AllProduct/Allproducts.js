@@ -1,119 +1,74 @@
-import React, { useState, useRef, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import { Dropdown, ListGroup } from "react-bootstrap";
-import { FaYoutube, FaInstagram } from "react-icons/fa";
-import { FaSun, FaMoon } from "react-icons/fa";
-import { MdArrowOutward } from "react-icons/md";
+import React, { useState, useEffect } from "react";
+
+import { useNavigate } from "react-router-dom";
+import { Container, Row, Col, ListGroup, Dropdown } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 import Footer from "../../components/Footer";
-import "./SingleProject.css";
-import { SingleprojectDetail } from "../../utils/constants";
-import { Helmet } from "react-helmet"; 
-import { FaPlay } from "react-icons/fa";
-import { ProjectImages } from "../../utils/constants";
+import { MdArrowOutward } from "react-icons/md";
+import "./Allproducts.css";
+import { SingleProductDetail } from "../../utils/constants";
+import { ProductImages as images } from "../../utils/constants";
+import { Helmet } from "react-helmet-async";
 
-const SingleProject = () => {
-  const imageGridRef = useRef(null);
+const categories = [
+  { name: "All", value: "" },
+  { name: "MetaParametric", value: "MetaParametric" },
+  { name: "MetaForm", value: "MetaForm" },
+  { name: "MetaFunction", value: "MetaFunction" },
+  { name: "MetaSurfaces", value: "MetaSurface" },
+];
 
-  const handleImageClick = (index) => {
-    setClickedIndex(clickedIndex === index ? null : index);
-  
-    // Scroll entire page to top
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  
-    // Optional: Also prevent #products-grid from overriding the scroll
-    document.getElementById("product-grid")?.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-  
-  const navigate = useNavigate();
-  
-  const { projectName } = useParams();
-  const selectedProject = SingleprojectDetail.find(
-    (item) => item.name.toLowerCase() === projectName
-  );
-
-  const [clickedIndex, setClickedIndex] = useState(null);
-  const [contentToRender, setContentToRender] = useState([]);
-  const gridRef = useRef(null);
-  const [selectedCategory, setSelectedCategory] = useState("");
-  const [darkMode, setDarkMode] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const [showElementsDropdown, setShowElementsDropdown] = useState(false);
-  const [showTimeDropdown, setShowTimeDropdown] = useState(false);
-  const [activeButton, setActiveButton] = useState(null);
-
-  const handleButtonClick = (index) => {
-    setActiveButton(activeButton === index ? null : index);
-  };
-
-  const categories = Array.from(
-    new Set(
-      selectedProject.images
-        .map((item) =>
-          item.split("/")[4] !== "night"
-            ? item.split("/")[4].toLowerCase()
-            : null
-        )
-        .filter((item) => item)
-    )
-  );
-
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (gridRef.current && !gridRef.current.contains(event.target)) {
-        setClickedIndex(null);
-      }
+const Allproducts = () => {
+    useEffect(() => {
       window.scrollTo(0, 0);
-    };
+  }, []);
+  const navigate = useNavigate(); // Initialize navigate function
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [showDropdown, setShowDropdown] = useState(false);
 
-    document.addEventListener("click", handleOutsideClick);
-    return () => {
-      document.removeEventListener("click", handleOutsideClick);
-    };
-  }, [gridRef]);
+  function productClickHandler(img) {
+    const selectedSubProductcat = img.imgPath.split("/")[3].toLowerCase();
+    const selectedProduct = SingleProductDetail.find((item) => item.name.toLowerCase() === selectedSubProductcat);
+    navigate(`/all-products/${selectedSubProductcat}`, { state: { selectedProduct } }); // Redirect to SingleProduct page with dynamic URL
+    // navigate(`/single-product/${selectedSubProductcat}`, { state: { selectedProduct } }); // Redirect to SingleProduct page with dynamic URL
+  }
 
-  const isLastRow = (index) => {
-    return (
-      index >=
-      selectedProject.images.length -
-        (selectedProject.images.length % 3 === 0
-          ? 3
-          : selectedProject.images.length % 3)
-    );
-  };
+  function filterImagesByCategory(category) {
+    setSelectedCategory(category);
+  }
 
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-    setSelectedCategory(""); // Reset category filter when switching modes
-  };
+  // Filter images based on selected category
+  const filteredImages = selectedCategory
+    ? images.filter((img) => img.imgPath.includes(selectedCategory))
+    : images;
+
+  const location = useLocation();
 
   useEffect(() => {
-    const nightImages = selectedProject.images.filter(
-      (item) => item.split("/")[4] === "night"
-    );
-  
-    if (darkMode && nightImages.length === 0) {
-      setContentToRender([]);
-    } else {
-      setContentToRender(darkMode ? nightImages : selectedProject.images);
-    }
-  }, [darkMode, selectedProject.images]);
-  
-  const filterImagesByCategory = (category) => {
-    if (darkMode && category !== "") return; // Prevent selecting other categories in night mode
-    setSelectedCategory(category);
-  };
+    const handleScrollBehavior = () => {
+      const isMobile = window.innerWidth <= 768;
+      if (location.pathname === "/all-products" && !isMobile) {
+        // Only prevent scrolling on desktop
+        document.body.style.overflowY = "hidden";
+      } else {
+        // Allow scrolling on mobile or other pages
+        document.body.style.overflowY = "auto";
+      }
+    };
 
-  const filteredImages = selectedCategory
-    ? contentToRender.filter((img) => img.includes(selectedCategory))
-    : contentToRender;
+    // Initial check
+    handleScrollBehavior();
+
+    // Add resize listener to update scroll behavior when screen size changes
+    window.addEventListener("resize", handleScrollBehavior);
+
+    // Cleanup
+    return () => {
+      document.body.style.overflowY = "auto";
+      window.removeEventListener("resize", handleScrollBehavior);
+    };
+  }, [location]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -125,476 +80,117 @@ const SingleProject = () => {
   }, []);
 
   return (
-    <div className="container main-container">
-      <Helmet>
-        <title>{selectedProject.Projectname} | {selectedProject.metatittles}</title>
-        <meta name="description" content={selectedProject.metadescription} />
-        <meta property="og:title" content={selectedProject.metatittles}  />
-        <meta property="og:description" content={selectedProject.metadescription} />
-        <link rel="canonical" href={`https://metaguise.com/all-projects/${projectName}`} />
-      </Helmet>
-      <div className="row">
-        <div className="col-12">
-          <BackButton navigate={navigate} />
-          {isMobile && (
-            <MobileControls
-              selectedProject={selectedProject}
-              showElementsDropdown={showElementsDropdown}
-              setShowElementsDropdown={setShowElementsDropdown}
-              filterImagesByCategory={filterImagesByCategory}
-              categories={categories}
-              showTimeDropdown={showTimeDropdown}
-              setShowTimeDropdown={setShowTimeDropdown}
-              setDarkMode={setDarkMode}
-              selectedCategory={selectedCategory}
-              darkMode={darkMode}
-            />
-          )}
-        </div>
-        <div className="col-9 xs-12">
-          <ImageGrid
-            filteredImages={filteredImages}
-            handleImageClick={handleImageClick}
-            isLastRow={isLastRow}
-            clickedIndex={clickedIndex}
-            ref={imageGridRef}
-            videoLink={selectedProject.videoLink}
-            darkMode={darkMode}
-            selectedProject={projectName}
-            setDarkMode={setDarkMode}
-          />
-        </div>
-        <Sidebar
-          selectedProject={selectedProject}
-          categories={categories}
-          selectedCategory={selectedCategory}
-          filterImagesByCategory={filterImagesByCategory}
-          darkMode={darkMode}
-          toggleTheme={toggleTheme}
-          activeButton={activeButton}
-          handleButtonClick={handleButtonClick}
-          youtubeLink={selectedProject.youtubeLink}
-          instagramLink={selectedProject.instagramLink}
-        />
-        {isMobile && <BuildButton />}
+    <div className="gallery-container">
+           <Helmet>
+                    <title>Metaguise Products | Metal Facade Cladding Solutions</title>
+                    <meta name="description" content="Browse our range of parametric facade and metal cladding products crafted for standout design and long-term performance." />
+                    <meta name="keywords" content="home, react, SEO, web development" />
+                    <meta name="author" content="Your Name" />
+                    <meta property="og:title" content="Metaguise Products | Metal Facade Cladding Solutions" />
+                    <meta property="og:description" content="Browse our range of parametric facade and metal cladding products crafted for standout design and long-term performance." />
+                    <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
+                    <meta property="og:url" content="https://metaguise.com/" />
+                    <meta name="robots" content="index, follow" />
+                    <link rel="canonical" href="https://metaguise.com/all-products" />
+                  </Helmet>
+      <div className="gallery-content">
+        <Container fluid>
+          <Row>
+            <div className="mobile-title">
+              <h1>Our Products</h1>
+            </div>
+            <Col md={9}>
+              {isMobile && (
+                <div className="mobile-filter">
+                  <Dropdown
+                    show={showDropdown}
+                    onToggle={(isOpen) => setShowDropdown(isOpen)}
+                  >
+                    <Dropdown.Toggle variant="dark" id="type-dropdown">
+                      Filter by Type
+                      <div id="arrow-icon" className="icon-overlay">
+                        <MdArrowOutward size={20} />
+                      </div>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      {categories.map((category) => (
+                       // Update the Dropdown.Item in the mobile view
+<Dropdown.Item
+  key={category.value}
+  onClick={() => {
+    filterImagesByCategory(category.value);
+    setShowDropdown(false);
+  }}
+  active={selectedCategory === category.value}
+>
+  <div className="d-flex justify-content-between align-items-center">
+    {category.name}
+    {selectedCategory === category.value && (
+      <MdArrowOutward className="ms-2" />
+    )}
+  </div>
+</Dropdown.Item>
+                      ))}
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </div>
+              )}
+
+              <div className="gallery">
+                {filteredImages.map((img, index) => (
+                  <div
+                    key={index}
+                    className="gallery-item"
+                    onClick={() => productClickHandler(img)}
+                  >
+                    <div className="hover-effect">
+                      <img
+                        src={`${process.env.PUBLIC_URL}/${img.imgPath}`}
+                        alt={img.imgText}
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="image-text">{img.imgText}</div>
+                  </div>
+                ))}
+              </div>
+            </Col>
+            <Col md={2} className="mb-3">
+              <h1 className="desktop-title mb-3">Our Products</h1>
+
+              <div className="sidebar">
+                <h4 className="mb-3">Filter by Type</h4>
+                <ListGroup>
+                  {categories.map((category) => (
+                   // Update the ListGroup.Item in the desktop view
+<ListGroup.Item
+  key={category.value}
+  action
+  onClick={() => filterImagesByCategory(category.value)}
+  className={selectedCategory === category.value ? "highlight" : "dim"}
+>
+  <div className="d-flex justify-content-between align-items-center">
+    {category.name}
+    {selectedCategory === category.value && (
+      <MdArrowOutward className="ms-2" />
+    )}
+  </div>
+</ListGroup.Item>
+                  ))}
+                </ListGroup>
+              </div>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
+                <button id="build-button" className="hover-button">
+                  <span>Build Your Dream</span>
+                </button>
+              </a>
+            </Col>
+          </Row>
+        </Container>
       </div>
       <Footer />
     </div>
   );
 };
 
-const BackButton = ({ navigate }) => {
-  return (
-    <button onClick={() => navigate(-1)} className="back-button">
-      <span className="arrow">&larr; Back</span>
-    </button>
-  );
-};
-
-const MobileControls = ({
-  selectedProject,
-  showElementsDropdown,
-  setShowElementsDropdown,
-  filterImagesByCategory,
-  categories,
-  showTimeDropdown,
-  setShowTimeDropdown,
-  setDarkMode,
-  selectedCategory,
-  darkMode,
-}) => {
-  return (
-    <div className="mobile-controls">
-      <ProjectHeader selectedProject={selectedProject} />
-      <div className="Elements">
-        <ElementsDropdown
-          showElementsDropdown={showElementsDropdown}
-          setShowElementsDropdown={setShowElementsDropdown}
-          filterImagesByCategory={filterImagesByCategory}
-          categories={categories}
-          selectedCategory={selectedCategory}
-          darkMode={darkMode}
-        />
-        <TimeDropdown
-          showTimeDropdown={showTimeDropdown}
-          setShowTimeDropdown={setShowTimeDropdown}
-          setDarkMode={setDarkMode}
-        />
-        <SocialIcons
-          youtubeLink={selectedProject?.youtubeLink}
-          instagramLink={selectedProject?.instagramLink}
-        />
-      </div>
-    </div>
-  );
-};
-
-const ProjectHeader = ({ selectedProject }) => {
-  return (
-    <div className="col-12 single-head mb-3 px-3">
-      <h3>
-        {selectedProject?.Projectname
-          ? selectedProject.Projectname.charAt(0).toUpperCase() +
-            selectedProject.Projectname.slice(1)
-          : "Project"}
-      </h3>
-    </div>
-  );
-};
-
-const ElementsDropdown = ({
-  showElementsDropdown,
-  setShowElementsDropdown,
-  filterImagesByCategory,
-  categories,
-  selectedCategory,
-  darkMode,
-}) => {
-  return (
-    <Dropdown
-      show={showElementsDropdown}
-      onToggle={(isOpen) => setShowElementsDropdown(isOpen)}
-      className="description-dropdown"
-    >
-      <Dropdown.Toggle variant="dark" id="elements-dropdown">
-        Elements
-        <div id="arrow-icon" className="icon-overlay">
-          <MdArrowOutward size={20} />
-        </div>
-      </Dropdown.Toggle>
-      <Dropdown.Menu>
-        <Dropdown.Item
-          onClick={() => filterImagesByCategory("")}
-          active={selectedCategory === ""}
-          style={{ display: "flex", justifyContent: "space-between" }}
-        >
-          All
-          {selectedCategory === "" && <MdArrowOutward size={20} />}
-        </Dropdown.Item>
-        {categories.map((category, index) => (
-          <Dropdown.Item
-            key={index}
-            onClick={() => !darkMode && filterImagesByCategory(category)}
-            active={!darkMode && selectedCategory === category}
-            style={{ 
-              display: "flex", 
-              justifyContent: "space-between",
-              pointerEvents: darkMode ? "none" : "auto",
-              opacity: darkMode ? 0.5 : 1
-            }}
-          >
-            {category}
-            {selectedCategory === category && !darkMode && <MdArrowOutward size={20} />}
-          </Dropdown.Item>
-        ))}
-      </Dropdown.Menu>
-    </Dropdown>
-  );
-};
-
-const TimeDropdown = ({ showTimeDropdown, setShowTimeDropdown, setDarkMode }) => {
-  return (
-    <Dropdown
-      show={showTimeDropdown}
-      onToggle={(isOpen) => setShowTimeDropdown(isOpen)}
-      className="description-dropdown"
-    >
-      <Dropdown.Toggle variant="dark" id="time-dropdown">
-        Time
-        <div id="arrow-icon" className="icon-overlay">
-          <MdArrowOutward size={20} />
-        </div>
-      </Dropdown.Toggle>
-      <Dropdown.Menu>
-        <Dropdown.Item onClick={() => setDarkMode(false)}>
-          <span className="d-flex align-items-center">
-            <FaSun className="me-2" />
-            <span>Day</span>
-          </span>
-        </Dropdown.Item>
-        <Dropdown.Item onClick={() => setDarkMode(true)}>
-          <span className="d-flex align-items-center">
-            <FaMoon className="me-2" />
-            <span>Night</span>
-          </span>
-        </Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
-  );
-};
-
-const SocialIcons = ({ youtubeLink, instagramLink }) => {
-  return (
-    <div className="social-icons">
-      <button
-        className="icon-button"
-        onClick={() => instagramLink && window.open(instagramLink, "_blank")}
-        disabled={!instagramLink}
-      >
-        <FaInstagram />
-      </button>
-
-      <button
-        className="icon-button"
-        onClick={() => youtubeLink && window.open(youtubeLink, "_blank")}
-        disabled={!youtubeLink}
-      >
-        <FaYoutube />
-      </button>
-    </div>
-  );
-};
-
-const Sidebar = ({
-  selectedProject,
-  categories,
-  selectedCategory,
-  filterImagesByCategory,
-  darkMode,
-  toggleTheme,
-  activeButton,
-  handleButtonClick,
-  youtubeLink,
-  instagramLink,
-}) => {
-  return (
-    <div className="col-md-3 col-sm-12 sidebar-section pe-md-4 ">
-      <h3 style={{ fontWeight: "bold" }}>
-        {selectedProject.Projectname.charAt(0).toUpperCase() +
-          selectedProject.Projectname.slice(1)}
-      </h3>
-      <div
-        id="single-sidebar"
-        className="sidebar p-4 bg-darkrounded "
-        style={{ marginBottom: "10px" }}
-      >
-        <h4 className="mb-3"> Filter by Products</h4>
-        
-        <ListGroup variant="flush">
-          <ListGroup.Item
-            action
-            variant="dark"
-            className={selectedCategory === "" ? "highlight" : "dim"}
-            onClick={() => filterImagesByCategory("")}
-            active={selectedCategory === ""}
-            style={{ display: "flex", justifyContent: "space-between" }}
-          >
-            All
-            {selectedCategory === "" && <MdArrowOutward size={20} />}
-          </ListGroup.Item>
-          {categories.map((category, index) => (
-            <ListGroup.Item
-              key={index}
-              action
-              variant="light"
-              className={`${selectedCategory === category ? "highlight" : "dim"} ${
-                darkMode ? "disabled-category" : ""
-              }`}
-              onClick={() => !darkMode && filterImagesByCategory(category)}
-              style={{ 
-                display: "flex", 
-                justifyContent: "space-between",
-                pointerEvents: darkMode ? "none" : "auto",
-                opacity: darkMode ? 0.5 : 1
-              }}
-            >
-              {category.charAt(0).toUpperCase() + category.slice(1)}
-              {selectedCategory === category && !darkMode && <MdArrowOutward size={20} />}
-            </ListGroup.Item>
-          ))}
-        </ListGroup>
-      </div>
-      <div className={darkMode ? "dark-mode" : "light-mode"}>
-        <div className="header-container">
-          <p className="time-text">Time</p>
-          <div
-            className={`switch ${darkMode ? "active" : ""}`}
-            onClick={toggleTheme}
-          >
-            <input
-              type="checkbox"
-              checked={darkMode}
-              onChange={toggleTheme}
-            />
-            <span className="slider">
-              <FaSun className="icon sun" />
-              <FaMoon className="icon moon" />
-            </span>
-          </div>
-        </div>
-      </div>
-      <div className="button-row" style={{ padding: "5px" }}>
-        <Button
-          icon={<FaYoutube />}
-          text="See on YouTube"
-          onClick={() => window.open(youtubeLink, "_blank")}
-          active={activeButton === 0}
-        />
-        <Button
-          icon={<FaInstagram />}
-          text="See on Instagram"
-          onClick={() => window.open(instagramLink, "_blank")}
-          active={activeButton === 1}
-        />
-      </div>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
-        <button id="build-button" className="hover-button">
-          <span>Build Your Dream</span>
-        </button>
-      </a>
-    </div>
-  );
-};
-
-const ImageGrid = ({
-  filteredImages,
-  handleImageClick,
-  isLastRow,
-  clickedIndex,
-  ref,
-  videoLink,
-  darkMode,
-  selectedProject,
-  setDarkMode,
-}) => {
-  const normalizeName = (name) => name.toLowerCase().replace(/[^a-z0-9]/gi, '');
-
-  const coverImage = ProjectImages.find(
-    (img) => normalizeName(img.imgPath).includes(normalizeName(selectedProject))
-  );
-
-  const handleGoBackToDay = () => {
-    setDarkMode(false);
-  };
-
-  return (
-    <div id="product-grid" className="image-grid" ref={ref}>
-      {filteredImages.length === 0 ? (
-        <div className="no-images-found">
-          No images found.
-          <span onClick={handleGoBackToDay} style={{ cursor: 'pointer' }}>
-            Go Back to Day
-          </span>
-        </div>
-      ) : (
-        <>
-          {!darkMode && videoLink && (
-            <VideoItem
-              videoUrl={videoLink}
-              index={0}
-              handleImageClick={handleImageClick}
-              clickedIndex={clickedIndex}
-            />
-          )}
-
-          {coverImage && (
-            <Image
-              key={`cover-${selectedProject}`}
-              image={coverImage.imgPath}
-              handleImageClick={handleImageClick}
-              isLastRow={isLastRow}
-              clickedIndex={clickedIndex}
-            />
-          )}
-
-          {filteredImages.map((image, index) => (
-            <Image
-              key={index + 1}
-              image={image}
-              index={index + 1}
-              handleImageClick={handleImageClick}
-              isLastRow={isLastRow}
-              clickedIndex={clickedIndex}
-            />
-          ))}
-        </>
-      )}
-    </div>
-  );
-};
-
-const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
-  const getVideoId = (url) => {
-    if (url.includes("shorts/")) {
-      return url.split("/shorts/")[1]?.split("?")[0];
-    } else if (url.includes("v=")) {
-      return url.split("v=")[1]?.split("&")[0];
-    }
-    return null;
-  };
-
-  const videoId = getVideoId(videoUrl);
-  if (!videoId) return null;
-
-  return (
-    <div
-      className={`grid-item video-thumbnail ${clickedIndex === index ? "active" : ""}`}
-      onClick={() => handleImageClick(index)}
-    >
-      {clickedIndex === index ? (
-        <iframe
-          width="100%"
-          height="200"
-          src={`https://www.youtube.com/embed/${videoId}`}
-          title="YouTube Video"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      ) : (
-        <>
-          <img
-            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-            alt="YouTube Video Thumbnail"
-            className="grid-image"
-            loading="lazy" 
-          />
-          <div className="play-icon">
-            <FaPlay size={40} color="white" />
-          </div>
-        </>
-      )}
-    </div>
-  );
-};
-
-const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
-  return (
-    <div
-      className={`grid-item ${isLastRow(index) ? "last-row" : ""} ${
-        clickedIndex === index ? "active" : ""
-      }`}
-      onClick={() => handleImageClick(index)}
-    >
-      <img
-        src={`${process.env.PUBLIC_URL}/${image}`}
-        className="grid-image"
-        alt={`Project item ${index + 1}`}
-        loading="lazy" 
-      />
-    </div>
-  );
-};
-
-const Button = ({ icon, text, onClick, active }) => {
-  return (
-    <button
-      className={`transition-button ${active ? "active" : ""}`}
-      onClick={onClick}
-    >
-      <span className="icon">{icon}</span>
-      <span className="text">{text}</span>
-    </button>
-  );
-};
-
-const BuildButton = () => {
-  return (
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
-      <button id="build-button" className="mobile-controls hover-button">
-        <span>Build Your Dream</span>
-      </button>
-    </a>
-  );
-};
-
-export default SingleProject;
+export default Allproducts;
