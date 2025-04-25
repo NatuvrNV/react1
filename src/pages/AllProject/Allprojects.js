@@ -74,9 +74,10 @@ const Allprojects = () => {
                           <meta name="author" content="Your Name" />
                           <meta property="og:title" content="Metaguise Projects | Metal Facades & Parametric Architecture " />
                           <meta property="og:description" content="Explore iconic projects featuring our parametric architecture and custom facade designs across India." />
-                          <meta property="og:image" content="https://yourwebsite.com/home-image.jpg" />
-                          <meta property="og:url" content="https://yourwebsite.com/" />
+                          <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
+                          <meta property="og:url" content="https://metaguise.com/" />
                           <meta name="robots" content="index, follow" />
+                          <link rel="canonical" href="https://metaguise.com/all-projects" />
                         </Helmet>
       <div className="gallery-content">
         <Container fluid>

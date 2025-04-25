@@ -118,6 +118,8 @@ const Contact = () => {
             gtag('config', 'AW-16992180594');
           `}
         </script>
+
+        <link rel="canonical" href="https://metaguise.com/contact" />
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">

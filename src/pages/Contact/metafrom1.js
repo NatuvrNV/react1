@@ -10,10 +10,24 @@ import { useLocation } from "react-router-dom";
 const Contact = ({ brochureName }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    
+
+    // Load Google Ads Tracking Script
+    if (!window.gtag) {
+      const script = document.createElement("script");
+      script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16992180594";
+      script.async = true;
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+      window.gtag("js", new Date());
+      window.gtag("config", "AW-16992180594");
+    }
   }, []);
 
-  const location = useLocation(); // Detect current page URL
+  const location = useLocation();
   const pageBrochureMap = {
     "/metasurface": "MetaSurface",
     "/metaparametric": "MetaParametric",
@@ -31,7 +45,7 @@ const Contact = ({ brochureName }) => {
   });
 
   const [isSending, setIsSending] = useState(false);
-  const [message, setMessage] = useState(""); // State to store success/failure message
+  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -41,7 +55,6 @@ const Contact = ({ brochureName }) => {
     setFormData({ ...formData, phone: value });
   };
 
-  // Function to open the correct PDF in a new tab
   const openPDF = () => {
     const brochureMap = {
       MetaSurface: "/assets/brochure/METASURFACE.pdf",
@@ -52,23 +65,32 @@ const Contact = ({ brochureName }) => {
     };
 
     const filePath = brochureMap[detectedBrochure];
-
     if (filePath) {
-      window.open(filePath, "_blank"); // Open in a new tab
+      window.open(filePath, "_blank");
+    }
+  };
+
+  const trackConversion = () => {
+    if (window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
+        event_callback: () => {
+          console.log("✅ Conversion tracked");
+        },
+      });
     }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
-    setMessage(""); // Reset message on submit
+    setMessage("");
 
-          // Validate fields before proceeding
-  if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
-    setMessage("❌ All fields are required.");
-    setIsSending(false);
-    return;
-  }
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
+      setMessage("❌ All fields are required.");
+      setIsSending(false);
+      return;
+    }
 
     const emailParams = {
       from_name: formData.name,
@@ -79,19 +101,22 @@ const Contact = ({ brochureName }) => {
 
     try {
       await emailjs.send(
-        "service_hbh6e6a", // Replace with your actual Service ID
-        "template_sp4d06m", // Replace with your actual Template ID
+        "service_hbh6e6a",
+        "template_sp4d06m",
         emailParams,
-        "aEASMHR8n6Vmgtj3l" // Replace with your actual Public Key
+        "aEASMHR8n6Vmgtj3l"
       );
 
-      openPDF(); // Open the brochure in a new tab
+      // Track conversion
+      trackConversion();
+
+      // Open brochure
+      openPDF();
+
       setMessage("✅ Thanks for your query! Your download will begin shortly.");
-      
-      // Reset form fields
       setFormData({ name: "", email: "", phone: "" });
     } catch (error) {
-      console.error("Error sending email:", error);
+      console.error("❌ Error sending email:", error);
       setMessage("❌ Failed to send message. Please try again.");
     } finally {
       setIsSending(false);
@@ -101,20 +126,36 @@ const Contact = ({ brochureName }) => {
   return (
     <>
       <Helmet>
-        <title>Download {detectedBrochure}  | Luxury Metal Facades & Cladding Brochure</title>
+        <title>Download {detectedBrochure} | Luxury Metal Facades & Cladding Brochure</title>
         <meta
           name="description"
-          content={`Explore our premium metal facade and facade cladding solutions in the ${detectedBrochure} brochure - crafted for modern architecture.
-          `}
+          content={`Explore our premium metal facade and facade cladding solutions in the ${detectedBrochure} brochure - crafted for modern architecture.`}
         />
         <meta
           property="og:title"
-          content={`Download {detectedBrochure}  | Luxury Metal Facades & Cladding Brochure`}
+          content={`Download ${detectedBrochure} | Luxury Metal Facades & Cladding Brochure`}
         />
         <meta
           property="og:description"
           content={`Explore our premium metal facade and facade cladding solutions in the ${detectedBrochure} brochure - crafted for modern architecture.`}
         />
+
+          {/* ✅ Canonical Tag */}
+  <link
+    rel="canonical"
+    href={`https://metaguise.com${location.pathname}`}
+  />
+
+           {/* ✅ Google Ads Conversion Tracking Script */}
+           <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16992180594');
+          `}
+        </script>
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">
@@ -165,7 +206,6 @@ const Contact = ({ brochureName }) => {
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formPhone">
                     <PhoneInput
-                     
                       enableSearch
                       inputClass="bg-contact form-text border-0 w-100"
                       containerClass="w-100"
@@ -186,7 +226,6 @@ const Contact = ({ brochureName }) => {
                 </button>
               </div>
 
-              {/* Message Display */}
               {message && (
                 <p className={`mt-3 ${message.includes("✅") ? "text-success" : "text-danger"}`}>
                   {message}

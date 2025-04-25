@@ -39,9 +39,10 @@ function About() {
               <meta name="author" content="Your Name" />
               <meta property="og:title" content="About Metaguise | Experts in Metal Facade Design " />
               <meta property="og:description" content="Metaguise creates custom metal facade designs and claddings that bring modern structures to life." />
-              <meta property="og:image" content="https://yourwebsite.com/home-image.jpg" />
-              <meta property="og:url" content="https://yourwebsite.com/" />
+              <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
+              <meta property="og:url" content="https://metaguise.com/" />
               <meta name="robots" content="index, follow" />
+              <link rel="canonical" href="https://metaguise.com//about" />
             </Helmet>
       <div className="content">
         {/* <main> */}

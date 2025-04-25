@@ -133,6 +133,7 @@ const SingleProduct = () => {
         <meta name="description" content={selectedProduct.metadescription} />
         <meta property="og:title" content={selectedProduct.metatittles}  />
         <meta property="og:description" content={selectedProduct.metadescription} />
+        <link rel="canonical" href={`https://metaguise.com/all-products/${productName}`} />
       </Helmet>
       <div className="row">
         <div className="col-12">
