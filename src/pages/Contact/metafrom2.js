@@ -42,19 +42,16 @@ const Contact = ({ brochureName }) => {
 
   const openPDF = () => {
     const brochureMap = {
-      Metasurface: "/assets/brochure/METASURFACE.pdf",
-      Metaparametric: "/assets/brochure/METAPARAMETRIC.pdf",
+      MetaSurface: "/assets/brochure/METASURFACE.pdf",
+      MetaParametric: "/assets/brochure/METAPARAMETRIC.pdf",
       MetaForm: "/assets/brochure/METAFORM.pdf",
-      Metafunction: "/assets/brochure/METAFUNCTION.pdf",
-      "Coffee Table Book": "/assets/brochure/ctb.pdf",
+      MetaFunction: "/assets/brochure/METAFUNCTION.pdf",
+      "Coffee Table Book": "/assets/brochure/12-2-25-mobile.pdf",
     };
 
     const filePath = brochureMap[detectedBrochure];
-
     if (filePath) {
-      setTimeout(() => {
-        window.open(filePath, "_blank", "noopener,noreferrer");
-      }, 500);
+      window.open(filePath, "_blank");
     }
   };
 
@@ -84,10 +81,10 @@ const Contact = ({ brochureName }) => {
         "aEASMHR8n6Vmgtj3l"
       );
 
-      // 🔥 Google Ads Conversion Tracking
+      // ✅ Trigger Google Ads Conversion
       if (typeof window !== "undefined" && window.gtag) {
         window.gtag("event", "conversion", {
-          send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_", // Replace with your actual Google Ads Conversion ID and Label
+          send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_", // 🔁 Replace with your actual ID/Label
         });
       }
 
@@ -105,16 +102,11 @@ const Contact = ({ brochureName }) => {
   return (
     <>
       <Helmet>
-        <title>Download {detectedBrochure} | Coffee Table Book on Metal Facades</title>
-        <meta name="description" content={`Journey through landmark metal facade projects and in our signature coffee table book.`} />
-        <meta property="og:title" content={`Download ${detectedBrochure} Brochure | Coffee Table Book on Metal Facades`} />
-        <meta property="og:description" content={`Journey through landmark metal facade projects and in our signature coffee table book.`} />
-
-                  {/* ✅ Canonical Tag */}
-  <link
-    rel="canonical"
-    href={`https://metaguise.com${location.pathname}`}
-  />
+        <title>Download ${detectedBrochure} | Functional Metal Facade Systems</title>
+        <meta
+          name="description"
+          content={`Discover functional metal facade systems that blend aesthetics with performance in our ${detectedBrochure} design brochure.`}
+        />
 
            {/* ✅ Google Ads Conversion Tracking Script */}
            <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>
@@ -126,6 +118,13 @@ const Contact = ({ brochureName }) => {
             gtag('config', 'AW-16992180594');
           `}
         </script>
+        <meta property="og:title" content={`Download ${detectedBrochure} | Functional Metal Facade Systems`} />
+        <meta property="og:description" content={`Discover functional metal facade systems that blend aesthetics with performance in our ${detectedBrochure} design brochure.`} />
+                  {/* ✅ Canonical Tag */}
+  <link
+    rel="canonical"
+    href={`https://metaguise.com${location.pathname}`}
+  />
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">
@@ -134,7 +133,7 @@ const Contact = ({ brochureName }) => {
             <div className="contactus1-text">
               <p>Thank you for</p>
               <p>showing interest in</p>
-              <p>{detectedBrochure}</p>
+              <p>{detectedBrochure} brochure!</p>
             </div>
             <div className="lead-contact">
               <p>Please fill the form to download it.</p>
@@ -176,7 +175,6 @@ const Contact = ({ brochureName }) => {
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formPhone">
                     <PhoneInput
-                      country={"in"}
                       enableSearch
                       inputClass="bg-contact form-text border-0 w-100"
                       containerClass="w-100"
@@ -193,7 +191,7 @@ const Contact = ({ brochureName }) => {
 
               <div className="button-wrapper">
                 <button type="submit" className="send-button" disabled={isSending}>
-                  <span>{isSending ? "Sending..." : `Send & View ${detectedBrochure}`}</span>
+                  <span>{isSending ? "Sending..." : `Send & View ${detectedBrochure} Brochure`}</span>
                 </button>
               </div>
 
