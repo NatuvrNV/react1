@@ -12,6 +12,13 @@
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
+
+    <url>
+    <loc>https://metaguise.com/blogs</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
   <url>
     <loc>https://metaguise.com/all-products</loc>
     <lastmod>2025-02-24</lastmod>
@@ -32,6 +39,20 @@
   </url>
   <url>
     <loc>https://metaguise.com/contact</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+    <url>
+    <loc>https://metaguise.com/privacy-policy</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+    <url>
+    <loc>https://metaguise.com/terms-conditions</loc>
     <lastmod>2025-02-24</lastmod>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
@@ -332,6 +353,135 @@
   </url>
   <url>
     <loc>https://metaguise.com/all-projects/z1012</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+
+
+    <url>
+    <loc>https://metaguise.com/all-projects/premhospital</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://metaguise.com/all-projects/painflame</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://metaguise.com/all-projects/theresonance</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://metaguise.com/all-projects/theelevato</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://metaguise.com/all-projects/thecurtain</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://metaguise.com/all-projects/thecrystal</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://metaguise.com/all-projects/farm15</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://metaguise.com/all-projects/rjjewellers</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://metaguise.com/all-projects/e81</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://metaguise.com/all-projects/b38</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+    <url>
+    <loc>https://metaguise.com/all-projects/a56</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://metaguise.com/all-projects/3dlf1</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+    <url>
+    <loc>https://metaguise.com/all-projects/thewaveform</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- blogs -->
+
+      <url>
+    <loc>https://metaguise.com/blog/the-rise-of-parametric-facades:-designing-with-algorithmic-elegance</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+      <url>
+    <loc>https://metaguise.com/blog/metal-is-metaguise:-why-metal-is-the-future-of-sustainable-architecture</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+      <url>
+    <loc>https://metaguise.com/blog/how-our-metafunction-products-revolutionize-everyday-architecture</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+      <url>
+    <loc>https://metaguise.com/blog/living,-breathing-facades:-the-science-and-soul-of-metapatina</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+      <url>
+    <loc>https://metaguise.com/blog/architectural-luxury,-within-reach:-why-metaflutes-and-metalouvers-are-the-smartest-investment-in-metal-facades</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+        <url>
+    <loc>https://metaguise.com/blog/metablox%E2%84%A2-by-metaguise:-a-breakthrough-in-parametric-facade-design</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+        <url>
+    <loc>https://metaguise.com/blog/your-facade-is-your-identity:-crafting-signature-statements-with-our-customizable-parametrics</loc>
     <lastmod>2025-02-24</lastmod>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
