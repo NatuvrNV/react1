@@ -28,7 +28,7 @@ const Footer = () => {
           {/* Contact Links */}
           <div className="tw-flex tw-text-base tw-flex-col tw-items-center md:tw-items-start tw-gap-4 footer-links col-lg-10 col-xl-6">
             <div className="tw-flex tw-items-center tw-gap-2">
-              <img src={MailIcon} alt="mail" />
+              <img src={PhoneIcon} alt="mail" />
               <a
                 href="mailto:contactus@metaguise.com"
                 className="tw-text-sm md:tw-text-base"
@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
 
             <div className="tw-flex tw-gap-4">
-              <img src={PhoneIcon} alt="phone" />
+              <img src={MailIcon} alt="phone" />
               <a
                 href="tel:981-160-4449"
                 className="tw-text-sm md:tw-text-base"
@@ -63,7 +63,7 @@ const Footer = () => {
    {/* Contact Links */}
    <div className="tw-flex tw-text-base tw-flex-col tw-items-center md:tw-items-start tw-gap-4 footer-links col-lg-10 col-xl-6">
             <div className="tw-flex tw-items-center tw-gap-2">
-              <img src={MailIcon} alt="mail" />
+              <img src={PhoneIcon} alt="mail" />
               <a
                 href="mailto:contactus@metaguise.com"
                 className="tw-text-sm md:tw-text-base"
@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
 
             <div className="tw-flex tw-gap-4">
-              <img src={PhoneIcon} alt="phone" />
+              <img src={MailIcon} alt="phone" />
               <a
                 href="tel:981-160-4449"
                 className="tw-text-sm md:tw-text-base"
