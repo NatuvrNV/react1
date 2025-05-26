@@ -459,4 +459,98 @@ When you’re designing with purpose, choosing the right metal facade system mak
      
         
        },
+
+      //  2
+
+         {
+         title: "5 Landmark Projects That Used MetaCoin to Transform Facades",
+        metaTitle: "Metaguise Blogs | Custom Parametric Facade Design by Metaguise",
+         date: "13-05-25",
+         category: "Facade Innovations",
+         metaDescription: "Explore customizable parametric facade design by Metaguise. From MetaCoin to MetaSequin, we craft architectural identities that move, reflect, and inspire.",
+         Fulldescription: ` When it comes to parametric architecture, MetaCoin stands out as a revolutionary metal coin facade system. Crafted with precision, it offers dynamic aesthetics, adaptability, and a unique identity to structures. Let's delve into five notable projects where MetaCoin has redefined architectural facades.
+
+         1. Miraj Stadium, Rajasthan
+
+A testament to large-scale application, the upcoming Miraj Stadium in Rajasthan showcases MetaCoin on an unprecedented scale. Thousands of gold-toned metal coins are choreographed to depict iconic sporting moments, turning the facade into a luminous tribute to India's cricketing spirit. This project exemplifies the fusion of parametric facade design with cultural storytelling.
+
+2. Tanishq Flagship Store, South Extension, Delhi
+
+In the heart of Delhi, the Tanishq Flagship Store gleams with a bespoke MetaCoin facade. Each coin is meticulously crafted with a 'T' at its center, symbolizing the brand's identity. Complemented by MetaCassette and MetaFlutes, this parametric structure transforms the store into a jewel box, reflecting luxury and brand ethos. 
+
+3. Malibu Residence
+
+The Malibu Residence introduces a unique twist to MetaCoin with its triangular-shaped coins. This tri-panel design interlocks to form a dynamic parametric facade, playing with light and shadow to create depth and movement. It's a prime example of how parametric buildings can embody both innovation and elegance. 
+
+4. Yashika Experience Center
+
+As a commercial facade, the Yashika Experience Center in Gurugram employs MetaCoin to craft a bold and dynamic exterior. The metal facade cladding not only enhances visual appeal but also embodies the brand's forward-thinking approach, making it a standout in parametric architecture. 
+
+5. Residential Facade with Pergola and Gate Integration
+
+In a bespoke residential project, MetaCoin extends beyond the facade to adorn the pergola boundary and the main gate. This integration showcases the versatility of metal cladding, seamlessly blending functionality with aesthetic appeal, and highlighting the adaptability of parametric facade design in residential settings.
+These projects underscore the transformative power of MetaCoin in modern architecture. Whether it's a stadium, a retail outlet, or a private residence, MetaCoin brings a unique blend of design, functionality, and identity to every structure.
+  `,
+         description: "When it comes to parametric architecture, MetaCoin stands out as a revolutionary metal coin facade system. Crafted with precision, it offers dynamic aesthetics, adaptability, and a unique identity to structures. Let's delve into five notable projects where MetaCoin has redefined architectural facades.",
+         images: [
+              "assets/Blogs/Landmark/miraj.webp",
+             "assets/Blogs/Landmark/tanishq.webp",
+             "assets/Blogs/Landmark/malibu.webp",
+             
+         ],
+
+         folderName: "Landmark", 
+     
+        
+       },
+
+          {
+         title: "Why Facade Design Is More Than Just Aesthetic - The Role of Function, Climate, and Material",
+        metaTitle: "Metaguise Blogs | Custom Parametric Facade Design by Metaguise",
+         date: "15-05-25",
+         category: "Facade Innovations",
+         metaDescription: "In the world of contemporary architecture, facade design is far more than a visual statement, it is a critical intersection of art, engineering, and environmental science. At Metaguise, this philosophy manifests through a dynamic portfolio of metal cladding solutions that transcend decorative appeal to deliver performance, sustainability, and contextual harmony.",
+         Fulldescription: ` 
+         In the world of contemporary architecture, facade design is far more than a visual statement, it is a critical intersection of art, engineering, and environmental science. At Metaguise, this philosophy manifests through a dynamic portfolio of metal cladding solutions that transcend decorative appeal to deliver performance, sustainability, and contextual harmony.
+Function First: The Intelligent Facade
+
+A well-designed facade performs multiple roles: it shields, ventilates, insulates, and communicates. Our MetaFunction range encapsulates this ideology by integrating utility with elegance. Systems like MetaFold, MetaSlide, MetaGate, and MetaScreen are engineered to adapt to real-life scenarios-be it enhancing privacy, controlling light, or allowing airflow-all while maintaining a sleek metal finish.
+These products prove that in architecture, function and flair are not mutually exclusive but are, in fact, co-dependent.
+
+Responding to Climate: Smart Materials for Indian Conditions
+
+India’s diverse climate demands facade materials that are both resilient and adaptable. Metaguise specializes in aluminium cladding and metal facade cladding solutions that withstand harsh weather conditions. Our aluminum alloy panels are fire-resistant, corrosion-proof, and seepage-free, crafted to thrive in extreme climates without compromising on aesthetic quality.
+Products like MetaCorten and MetaPatina take climate responsiveness further. While MetaCorten replicates the rustic charm of weathered steel without its pitfalls, MetaPatina evolves over time, creating living, breathing facades that respond organically to the environment.
+
+Material Mastery: The Metal Mindset
+
+At Metaguise, metal is more than a medium, it’s a philosophy. From the fluid geometries of MetaCoin to the shimmering dynamism of MetaSequin, our products embody the future of parametric architecture. Metals like aluminium and copper enable us to sculpt parametric facades that are not only stunning but structurally sound and sustainable.
+
+Sustainability in Every Surface
+
+A core advantage of our aluminium wall panels and metal facade panels is their eco-consciousness. Metal is infinitely recyclable, and our coatings are VOC-free and certified for up to 35 years of exterior performance. This makes our facade panels not only a wise choice for aesthetics but a responsible one for the planet.
+Products like MetaFlutes, MetaLouvers, and MetaCassette Perforated further demonstrate how metal cladding can serve both beauty and purpose-offering shading, structural rhythm, and architectural character.
+
+Projects That Speak
+
+Our portfolio spans a range of parametric buildings and commercial facades that showcase this integrated approach. Whether it’s the elegant rhythmicity of MetaLouvers or the ornamental complexity of MetaSequin, each project redefines the skyline with both function and form. Explore some of our standout works on the projects page.
+
+The Future Is Facade-Forward
+
+As buildings evolve into intelligent entities, facades will play an increasingly crucial role. They are no longer passive wrappers but active components in environmental control, energy efficiency, and urban storytelling. At Metaguise, we champion this evolution through facade metal cladding that is artistic, adaptive, and aligned with the future of architecture.
+
+  `,
+         description: "In the world of contemporary architecture, facade design is far more than a visual statement, it is a critical intersection of art, engineering, and environmental science. At Metaguise, this philosophy manifests through a dynamic portfolio of metal cladding solutions that transcend decorative appeal to deliver performance, sustainability, and contextual harmony.",
+         images: [
+             "assets/Blogs/why facade/1.webp",
+             "assets/Blogs/why facade/2.webp",
+             "assets/Blogs/why facade/3.webp",
+            
+             
+         ],
+
+         folderName: "why facade", 
+     
+        
+       },
   ];
