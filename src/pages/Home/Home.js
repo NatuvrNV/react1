@@ -24,6 +24,7 @@ function Home() {
 
 <Helmet>
         <title>Metaguise | Leading experts in Metal Facades & Parametric Architecture </title>
+         <link rel="canonical" href="https://metaguise.com/" /> 
         <meta name="description" content="Specializing in bespoke metal cladding solutions & parametric architecture, redefining modern facade design." />
         <meta property="og:title" content="Metaguise | Leading experts in Metal Facades & Parametric Architecture " />
         <meta property="og:description" content="Specializing in bespoke metal cladding solutions & parametric architecture, redefining modern facade design.." />
