@@ -4,27 +4,11 @@ import Footer from "../../components/Footer";
 import "./Contact.css";
 import PhoneInput from "react-phone-input-2";
 import { Helmet } from "react-helmet-async";
-import emailjs from "@emailjs/browser";
 import { useLocation } from "react-router-dom";
 
 const Contact = ({ brochureName }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-
-    // Load Google Ads Tracking Script
-    if (!window.gtag) {
-      const script = document.createElement("script");
-      script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16992180594";
-      script.async = true;
-      document.head.appendChild(script);
-
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () {
-        window.dataLayer.push(arguments);
-      };
-      window.gtag("js", new Date());
-      window.gtag("config", "AW-16992180594");
-    }
   }, []);
 
   const location = useLocation();
@@ -42,10 +26,11 @@ const Contact = ({ brochureName }) => {
     name: "",
     email: "",
     phone: "",
+    message: `The user has requested the ${detectedBrochure} brochure.`,
   });
 
   const [isSending, setIsSending] = useState(false);
-  const [message, setMessage] = useState("");
+  const [feedbackMessage, setFeedbackMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -55,69 +40,76 @@ const Contact = ({ brochureName }) => {
     setFormData({ ...formData, phone: value });
   };
 
+  useEffect(() => {
+    const inputField = document.querySelector(".form-text input");
+    if (inputField) {
+      if (!formData.phone || formData.phone.length <= 3) {
+        inputField.setAttribute("placeholder", "Enter your mobile number");
+      } else {
+        inputField.setAttribute("placeholder", "");
+      }
+    }
+  }, [formData.phone]);
+
   const openPDF = () => {
     const brochureMap = {
       MetaSurface: "/assets/brochure/METASURFACE.pdf",
       MetaParametric: "/assets/brochure/METAPARAMETRIC.pdf",
       MetaForm: "/assets/brochure/METAFORM.pdf",
       MetaFunction: "/assets/brochure/METAFUNCTION.pdf",
-      "Coffee Table Book": "/assets/brochure/12-2-25-mobile.pdf",
+      "Coffee Table Book": "/assets/brochure/ctb.pdf",
     };
 
     const filePath = brochureMap[detectedBrochure];
+
     if (filePath) {
       window.open(filePath, "_blank");
-    }
-  };
-
-  const trackConversion = () => {
-    if (window.gtag) {
-      window.gtag("event", "conversion", {
-        send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
-        event_callback: () => {
-          console.log("✅ Conversion tracked");
-        },
-      });
     }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
-    setMessage("");
+    setFeedbackMessage("");
 
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
-      setMessage("❌ All fields are required.");
+      setFeedbackMessage("❌ All fields are required.");
       setIsSending(false);
       return;
     }
 
-    const emailParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      from_phone: formData.phone,
-      message: `The user has requested the ${detectedBrochure} brochure.`,
+    const leadData = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      brochure: detectedBrochure,
     };
 
     try {
-      await emailjs.send(
-        "service_hbh6e6a",
-        "template_sp4d06m",
-        emailParams,
-        "aEASMHR8n6Vmgtj3l"
-      );
+      const response = await fetch("http://localhost:5000/api/submit-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify(leadData),
+      });
 
-      // Track conversion
-      trackConversion();
-
-      // Open brochure
-      openPDF();
-
-      setMessage("✅ Thanks for your query! Your download will begin shortly.");
-      setFormData({ name: "", email: "", phone: "" });
+      const result = await response.json();
+      if (response.ok) {
+        openPDF();
+        setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: `The user has requested the ${detectedBrochure} brochure.`,
+        });
+      } else {
+        setFeedbackMessage(`❌ ${result.message || "Failed to submit. Please try again."}`);
+      }
     } catch (error) {
-      console.error("❌ Error sending email:", error);
-      setMessage("❌ Failed to send message. Please try again.");
+      console.error("❌ Error submitting lead:", error);
+      setFeedbackMessage("❌ Server error. Please try again later.");
     } finally {
       setIsSending(false);
     }
@@ -126,36 +118,11 @@ const Contact = ({ brochureName }) => {
   return (
     <>
       <Helmet>
-        <title>Download {detectedBrochure} | Luxury Metal Facades & Cladding Brochure</title>
-        <meta
-          name="description"
-          content={`Explore our premium metal facade and facade cladding solutions in the ${detectedBrochure} brochure - crafted for modern architecture.`}
-        />
-        <meta
-          property="og:title"
-          content={`Download ${detectedBrochure} | Luxury Metal Facades & Cladding Brochure`}
-        />
-        <meta
-          property="og:description"
-          content={`Explore our premium metal facade and facade cladding solutions in the ${detectedBrochure} brochure - crafted for modern architecture.`}
-        />
-
-          {/* ✅ Canonical Tag */}
-  <link
-    rel="canonical"
-    href={`https://metaguise.com${location.pathname}`}
-  />
-
-           {/* ✅ Google Ads Conversion Tracking Script */}
-           <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-16992180594');
-          `}
-        </script>
+        <title>Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding</title>
+       <link rel="canonical" href={`https://metaguise.com/${detectedBrochure}`} />
+        <meta name="description" content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`} />
+        <meta property="og:title" content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`} />
+        <meta property="og:description" content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`} />
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">
@@ -225,12 +192,7 @@ const Contact = ({ brochureName }) => {
                   <span>{isSending ? "Sending..." : `Send & View ${detectedBrochure} Brochure`}</span>
                 </button>
               </div>
-
-              {message && (
-                <p className={`mt-3 ${message.includes("✅") ? "text-success" : "text-danger"}`}>
-                  {message}
-                </p>
-              )}
+              {feedbackMessage && <p className="mt-3">{feedbackMessage}</p>}
             </Form>
           </Col>
         </Row>
