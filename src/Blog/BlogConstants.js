@@ -464,7 +464,7 @@ When you’re designing with purpose, choosing the right metal facade system mak
 
          {
          title: "5 Landmark Projects That Used MetaCoin to Transform Facades",
-        metaTitle: "Metaguise Blogs | Custom Parametric Facade Design by Metaguise",
+        metaTitle: "Metaguise Blogs | 5 Iconic Projects with Parametric Coin Facades",
          date: "13-05-25",
          category: "Facade Innovations",
          metaDescription: "Explore customizable parametric facade design by Metaguise. From MetaCoin to MetaSequin, we craft architectural identities that move, reflect, and inspire.",
@@ -506,7 +506,7 @@ These projects underscore the transformative power of MetaCoin in modern archite
 
           {
          title: "Why Facade Design Is More Than Just Aesthetic - The Role of Function, Climate, and Material",
-        metaTitle: "Metaguise Blogs | Custom Parametric Facade Design by Metaguise",
+        metaTitle: "Metaguise Blogs | Why Facade Cladding Is More Than Just Aesthetic",
          date: "15-05-25",
          category: "Facade Innovations",
          metaDescription: "In the world of contemporary architecture, facade design is far more than a visual statement, it is a critical intersection of art, engineering, and environmental science. At Metaguise, this philosophy manifests through a dynamic portfolio of metal cladding solutions that transcend decorative appeal to deliver performance, sustainability, and contextual harmony.",
@@ -550,6 +550,189 @@ As buildings evolve into intelligent entities, facades will play an increasingly
          ],
 
          folderName: "why facade", 
+     
+        
+       },
+
+
+      //  June Blogs
+
+       {
+         title: "How Kinetic Facades Improve Building Performance and User Experience",
+        metaTitle: "Metaguise Blogs | How Kinetic Facades Add Value",
+         date: "25-05-25",
+         category: "Facade Innovations",
+         metaDescription: "Discover how kinetic facades using aluminium cladding panels and metal louvers improve user experience.",
+         Fulldescription: ` 
+         Most people think of a building’s facade as just its face,what you see from the outside. But more and more, that face is starting to move. Literally.
+Kinetic facades are changing the way buildings behave. Instead of being fixed and static, these facades respond. To sunlight. To wind. Even to how people use the space. They’re not just eye-catching, they’re smart. And when done right, they make buildings more comfortable, more energy-efficient, and honestly, a lot more interesting to be around.
+So, what exactly is a kinetic facade?
+Think of panels that open and close depending on how hot it is outside. Or louvers that shift to let in just the right amount of sunlight. Some rotate, others slide or fold. Some even shimmer and ripple in the breeze like a metal curtain. These facades are designed to move,and that movement isn’t just for show.
+At Metaguise, we see kinetic facades as a natural step forward. Our designs bring together smart technology, environmental awareness, and a love for beautiful materials,especially metal. With systems like MetaFold, MetaSlide, and MetaScreen, we’ve helped buildings breathe, shade themselves, and create privacy on demand.
+But not all movement has to be mechanical. Some of our most stunning projects use parametric design,that’s where the shapes and patterns themselves create the illusion of movement. Products like MetaCoin and MetaSequin fall into this category. They're shaped and layered in ways that catch light and cast shadows differently as the day goes on.
+Why make a facade kinetic?
+The biggest reason? Performance.
+Energy savings: Buildings lose a ton of energy just by overheating. A kinetic facade that responds to the sun,closing up at noon and opening in the evening,can keep temperatures comfortable without blasting the AC all day.
+
+
+Better airflow: Opening panels or sliding screens allow for natural ventilation, which can reduce stuffiness and improve indoor air quality.
+
+
+Comfort and control: When you can adjust your environment, it just feels better. Whether it's keeping glare off your laptop or getting a breeze without inviting a dust storm in, a moving facade can help.
+
+
+Visual impact: And yes, they look amazing. A kinetic facade turns a plain surface into something alive and ever-changing. That’s not just a design win,it’s something people remember.
+
+
+And what about materials?
+This is where metal really shines. Lightweight aluminium wall panels, tough facade cladding, and intricate metal louvers all lend themselves perfectly to movement. They’re durable, corrosion-resistant, and can be finished in hundreds of textures,from raw industrial to rich patina.
+Plus, they’re recyclable. Which means your facade doesn’t just work better, it’s more sustainable too.
+Not every project needs to be high-tech
+It’s easy to assume kinetic facades are just for fancy museums or high-budget buildings. But with the right design, even a simple folding panel or sliding screen can make a big difference. That’s the idea behind our MetaFunction systems, making performance-based design accessible for everyday architecture.
+Whether it's a privacy screen in a residential courtyard or a sliding wall that opens a retail store to the street, these systems bring the benefits of kinetic architecture to real life.
+Buildings don’t have to just sit there. They can move. They can respond. And when they do, they’re better for the people inside, and the planet too.
+At Metaguise, we believe facades should be more than beautiful, they should be useful, smart, and a little bit magical. If you’re thinking about how your next project can breathe, shade, and shift like it’s alive, a kinetic facade design might be the answer.
+
+  `,
+         description: "Kinetic facades are changing the way buildings behave. Instead of being fixed and static, these facades respond. To sunlight. To wind. Even to how people use the space. They’re not just eye-catching, they’re smart. And when done right, they make buildings more comfortable, more energy-efficient, and honestly, a lot more interesting to be around.",
+         images: [
+             "assets/Blogs/kinetic/kinetic1.jpg",
+             "assets/Blogs/kinetic/kinetic2.jpg",
+             "assets/Blogs/kinetic/kinetic3.jpg",
+            
+             
+         ],
+
+         folderName: "kinetic", 
+     
+        
+       },
+
+        {
+         title: "Why Architects Are Turning to Custom Metal Louvers in 2025",
+        metaTitle: "Metaguise Blogs | Why Metal Louvers for Wall Are Big in 2025",
+         date: "03-06-25",
+         category: "Facade Innovations",
+         metaDescription: "Architects prefer custom metal louvers facade design and aluminium fins facade for performance and style.",
+         Fulldescription: ` 
+        There’s something quietly brilliant happening in architecture right now. As buildings become more responsive and designers look for ways to merge aesthetics with performance, one feature is making a serious comeback, custom metal louvers.
+They're not new, but in 2025, metal louvers are showing up in smarter, sleeker, and far more beautiful ways. And architects love them.
+So what’s driving the rise of metal louvers?
+1. They solve real problems beautifully
+At their core, louvers help control sunlight, air flow, and privacy. That’s especially important in warm climates like much of India, where solar shading can make or break a building’s energy performance. But the difference today is how louvers are being designed: not just as functional add-ons, but as integrated architectural statements.
+Designers are now using metal louver facade systems not just to block heat, but to define the look of an entire building.
+2. Custom is the new standard
+Gone are the days of off-the-shelf slats bolted onto a wall. Today’s louvers are custom-shaped, layered, and patterned to match the rhythm of the facade. Some are vertical fins that double as sun-breakers. Others form dynamic, angled patterns that cast ever-changing shadows throughout the day.
+At Metaguise, our MetaLouver systems are built with this kind of custom thinking. Whether it’s a modern residence needing subtle airflow or a commercial space that wants to stand out with a dramatic vertical pattern, we create metal louvers facade design that works and wows.
+Why metal? Because it lasts
+Metal louvers,especially those made from aluminium,strike the perfect balance between durability and design flexibility. They're lightweight, corrosion-resistant, and can be formed into almost any profile. Whether it’s a brushed aluminium fins facade or a powder-coated sheet metal louvers grid, these materials are built to last without losing their edge.
+Plus, they’re low maintenance and 100% recyclable, which makes them a hit with sustainability-focused architects.
+Real applications, real results
+You’ll see louvers for elevation popping up across all kinds of projects:
+On homes: Where privacy and shading are key, without blocking views or airflow.
+
+
+On commercial buildings: Where visual identity matters, and a bold metal louver facade can set the tone.
+
+
+On gates and boundaries: Where airflow meets security, and louvers can blend beauty with purpose.
+
+
+One of our recent residential projects featured custom aluminium louvers design across the upper floor,angled just right to let in winter sun and block summer glare. Another used vertical c channel metal fins to create a strong architectural rhythm on a retail facade.
+And they’re surprisingly flexible
+Think louvers are just for high-end builds? Not true. With modular design options and smart detailing, you can get the performance of aluminium cladding panels and the visual punch of metal design even on smaller projects. Our team at Metaguise frequently works on everything from private villas to experience centers, all using tailored louver profiles to enhance both function and form.
+2025: The year louvers stopped blending in
+What’s different this year isn’t the product,it’s the approach. Architects are designing with louvers from day one. They're using them to:
+Animate facades
+
+
+Guide natural ventilation
+
+
+Add texture and rhythm
+
+
+Reduce mechanical cooling needs
+
+
+And in many cases, express the brand or personality of the space
+
+
+It’s a shift from utility to intentionality. Louvers aren’t hiding anymore,they’re the main event.
+If you’re an architect designing for performance, beauty, and environmental intelligence, custom metal louvers are worth considering. They’re sculptural, efficient, and increasingly essential to modern buildings,especially when designed with care.
+At Metaguise, we don’t just make louvers,we design architectural experiences that move with light, weather, and life. Want to explore the possibilities? Check out MetaLouver or browse our projects to see how metal louvers for wall are reshaping facades in 2025.
+
+  `,
+         description: "There’s something quietly brilliant happening in architecture right now. As buildings become more responsive and designers look for ways to merge aesthetics with performance, one feature is making a serious comeback, custom metal louvers.",
+         images: [
+             "assets/Blogs/custom/custom1.jpg",
+             "assets/Blogs/custom/custom2.jpg",
+             "assets/Blogs/custom/custom3.jpg",
+            
+             
+         ],
+
+         folderName: "custom", 
+     
+        
+       },
+
+        {
+         title: "From Code to Construction: How Parametric Facades Are Built",
+        metaTitle: "Metaguise Blogs | How Parametric Facade Design Becomes Reality",
+         date: "10-06-25",
+         category: "Facade Innovations",
+         metaDescription: "Learn how Metaguise turns parametric facade design into metal facade cladding using custom metal panels.",
+         Fulldescription: ` 
+       Some buildings just make you look twice. Maybe it’s the way the facade curves. Or how the surface catches the light at different times of day. Often, what you’re seeing is more than just a design, it’s a parametric facade.
+These facades aren’t created panel by panel. They’re generated from patterns, logic, and intent. And at Metaguise, we take that abstract idea and bring it to life in metal,turning code into construction, and theory into something you can touch.
+Here’s how it all comes together.
+
+What Is a Parametric Facade, Really?
+
+Parametric design is about defining relationships,not just drawing shapes.
+Rather than designing a single panel and copying it, we create a set of rules. These rules might control size, spacing, rotation, or layering. When applied across a surface, they generate forms that adapt,flowing, shifting, and scaling to fit the building’s geometry.
+
+The result? A facade that feels natural, yet incredibly precise.
+Step One: Design with Purpose
+Every parametric facade we build starts with a purpose. Maybe it's to create a unique identity for a retail store. Or to craft a residence that feels alive and sculptural. That intent drives the patterns we create, whether it’s a tessellation of triangles, a cascading ripple, or a sculptural relief that mimics natural forms.
+Each of our facade technologies are developed to offer different visual narratives, using parametric facade design to bring motion, intricacy, or brand identity into the architectural skin.
+Step Two: Geometry Gets Real
+After the concept is set, we break it down,literally.
+
+Every individual panel, curve, or fin is translated into precise geometric data. And because no two pieces are exactly alike, everything is tagged, documented, and nested for fabrication.
+Whether we’re working with aluminium cladding, metal panels, or aluminium wall panels, precision is key. These facades might look free-flowing, but every detail is engineered down to the millimetre.
+Step Three: Fabrication, With Focus
+Now, the digital model becomes metal.
+
+Each unit is cut, folded, or formed in-house at Metaguise. Surfaces are treated to match the vision, brushed, coated, anodized, or given signature finishes from our MetaSurface range.
+The challenge? Making sure that hundreds of custom parts fit together flawlessly, both visually and structurally. With tolerance levels as tight as 3mm, it’s a process that demands care,and it’s where we excel.
+Step Four: Assembly On-Site
+Once everything is ready, installation begins. And because parametric structures are often non-linear or asymmetrical, sequencing matters.
+Panels are installed like puzzle pieces, following mapped layouts and custom fixing systems. Even complex facades like those using MetaFin or MetaSequin maintain alignment and integrity, creating a seamless appearance even from wildly varied parts.
+
+Why Parametric Design Matters
+
+At its core, parametric facade technology isn’t about flash. It’s about flexibility.
+It lets us adapt designs to any building shape. It makes mass customization possible. It means that every piece serves a role,visual, spatial, or symbolic.
+For architects and developers who want to make a statement without repeating what’s been done before, parametric buildings are the answer. And for fabricators like us at Metaguise, it’s an opportunity to craft something that feels like both art and architecture.
+Parametric facades aren’t futuristic anymore, they’re happening now. And they’re changing how buildings look, feel, and speak.
+If you’re ready to build something bold, precise, and deeply expressive, our parametric facade technologies are ready for you. 
+
+  `,
+         description: "Some buildings just make you look twice. Maybe it’s the way the facade curves. Or how the surface catches the light at different times of day. Often, what you’re seeing is more than just a design, it’s a parametric facade.",
+         images: [
+             "assets/Blogs/code/code1.jpg",
+             "assets/Blogs/code/code2.jpg",
+             "assets/Blogs/code/code3.jpg",
+              "assets/Blogs/code/code4.jpg",
+             "assets/Blogs/code/code5.jpg",
+             "assets/Blogs/code/code6.jpg",
+            
+             
+         ],
+
+         folderName: "code", 
      
         
        },
