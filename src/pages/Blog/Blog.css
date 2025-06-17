@@ -190,6 +190,12 @@ font-size: 6rem;
     color: #fff;
   }
 
+    .blog-fulldescription strong {
+   
+    font-weight: 500;
+    color: #fff;
+  }
+
   
   .blog-meta {
     font-size: 0.8rem;
