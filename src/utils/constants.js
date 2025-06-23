@@ -779,8 +779,8 @@ const SingleprojectDetail = [
 
       {
       name: "dev622",
-      videoLink: "https://youtu.be/a1LPuUgutZc",
-      youtubeLink: "https://youtu.be/a1LPuUgutZc",
+      videoLink: "https://www.youtube.com/watch?v=a1LPuUgutZc",
+      youtubeLink: "https://www.youtube.com/watch?v=a1LPuUgutZc",
       instagramLink: "https://www.instagram.com/p/CzvmxaBtF_V/?utm_source=ig_web_copy_link&igsh=dDB5ZnFpODc2ZDhw",
       Projectname:"Monolith Garden",
       metatittles:" Modern Home Facade | MetaWood, MetaCassette & MetaFlute Design",
@@ -803,8 +803,8 @@ const SingleprojectDetail = [
 
          {
       name: "ishaan",
-      videoLink: "https://youtu.be/SJT31qFO1x4",
-      youtubeLink: "https://youtu.be/SJT31qFO1x4",
+      videoLink: "https://www.youtube.com/watch?v=SJT31qFO1x4",
+      youtubeLink: "https://www.youtube.com/watch?v=SJT31qFO1x4",
       instagramLink: "https://www.instagram.com/p/DHGN0Ptyiy2/?utm_source=ig_web_copy_link&igsh=YW9rb2Ywc2RmbHV5",
       Projectname:"Peacock Mesh",
       metatittles:" Retrofit Facade Design | MetaCoin Peacock Motif in Copper Finish ",
@@ -823,8 +823,8 @@ const SingleprojectDetail = [
 
             {
       name: "pritesh",
-      videoLink: "https://youtu.be/HK6Zzr5T-6I",
-      youtubeLink: "https://youtu.be/HK6Zzr5T-6I",
+      videoLink: "https://www.youtube.com/watch?v=HK6Zzr5T-6I",
+      youtubeLink: "https://www.youtube.com/watch?v=HK6Zzr5T-6I",
       instagramLink: "https://www.instagram.com/p/DJ3tFbySPzx/?utm_source=ig_web_copy_link&igsh=MTc0cWNndTJqMmJ6Ng==",
       Projectname:"Sacred Geometry",
       metatittles:"Minimal Home Facade | MetaWood Planks & MetaGrey Louvers",
@@ -846,8 +846,8 @@ const SingleprojectDetail = [
 
               {
       name: "sachi",
-      videoLink: "https://youtu.be/HnIuN8fa0u0",
-      youtubeLink: "https://youtu.be/HnIuN8fa0u0",
+      videoLink: "https://www.youtube.com/watch?v=HnIuN8fa0u0",
+      youtubeLink: "https://www.youtube.com/watch?v=HnIuN8fa0u0",
       instagramLink: "https://www.instagram.com/p/DIbY-m4yttN/?utm_source=ig_web_copy_link&igsh=dGlidzMyMGNlOWMx",
       Projectname:"Sachi",
       metatittles:" Commercial Facade Design | MetaCoin in Copper & Gold Tones ",
@@ -892,8 +892,8 @@ const SingleprojectDetail = [
 
               {
       name: "hlp",
-      videoLink: "https://youtu.be/XtQhLEm19OI",
-      youtubeLink: "https://youtu.be/XtQhLEm19OI",
+      videoLink: "https://www.youtube.com/watch?v=XtQhLEm19OI",
+      youtubeLink: "https://www.youtube.com/watch?v=XtQhLEm19OI",
       instagramLink: "https://www.instagram.com/p/DJEh3Mfy8CM/?utm_source=ig_web_copy_link&igsh=MXA2ODRiYTNpaDFhYw==",
       Projectname:"HLP",
       metatittles:" Parametric Facade | Large-Scale MetaCoin Elevation in Copper & Gold ",
@@ -912,8 +912,8 @@ const SingleprojectDetail = [
 
                  {
       name: "sbi",
-      videoLink: "https://youtu.be/9WmdkuNl2io",
-      youtubeLink: "https://youtu.be/9WmdkuNl2io",
+      videoLink: "https://www.youtube.com/watch?v=9WmdkuNl2io",
+      youtubeLink: "https://www.youtube.com/watch?v=9WmdkuNl2io",
       instagramLink: "https://www.instagram.com/reel/DJZIDW3SWtc/?utm_source=ig_web_copy_link&igsh=MXhxZThtejB3d3Ntcg==",
       Projectname:"SBI",
       metatittles:" Commercial Facade | MetaCoin, MetaLouver & MetaFlute Design ",
