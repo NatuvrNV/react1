@@ -748,6 +748,248 @@ const SingleprojectDetail = [
       ],
     },
 
+    //June Projects
+
+     {
+      name: "anj",
+      videoLink: "https://youtube.com/shorts/Uda7k0yxwu4?feature=share",
+      youtubeLink: "https://youtube.com/shorts/Uda7k0yxwu4?feature=share",
+      instagramLink: "https://www.instagram.com/reel/DK-b8QxTmsl/?utm_source=ig_web_copy_link&igsh=NWozYmNhNnk2bzJk",
+      Projectname:"Skyport House",
+      metatittles:" Residential Facade | MetaPlank, MetaLouver & MetaFlute Design",
+      metadescription:"A striking modern home with MetaPlank ceilings, MetaLouvers, MetaCassette panels and copper accents—designed to glow by night and frame light by day.",
+      images: [
+      
+        "assets/Allprojects/residential/anj/metacassette/anj2.webp",
+        "assets/Allprojects/residential/anj/metacassette/anj15.webp",
+        "assets/Allprojects/residential/anj/metaflute/anj10.webp",
+        "assets/Allprojects/residential/anj/metaflute/anj12.webp",
+        "assets/Allprojects/residential/anj/metaflute/anj14.webp",
+        "assets/Allprojects/residential/anj/metaplank/anj4.webp",
+        "assets/Allprojects/residential/anj/solidpanel/anj8.webp",
+        "assets/Allprojects/residential/anj/solidpanel/anj13.webp",
+        "assets/Allprojects/residential/anj/night/anj3.webp",
+        "assets/Allprojects/residential/anj/night/anj5.webp",
+        "assets/Allprojects/residential/anj/night/anj6.webp",
+        "assets/Allprojects/residential/anj/night/anj7.webp",
+        "assets/Allprojects/residential/anj/night/anj9.webp",
+        "assets/Allprojects/residential/anj/night/anj11.webp",
+      ],
+    },
+
+      {
+      name: "dev622",
+      videoLink: "https://youtu.be/a1LPuUgutZc",
+      youtubeLink: "https://youtu.be/a1LPuUgutZc",
+      instagramLink: "https://www.instagram.com/p/CzvmxaBtF_V/?utm_source=ig_web_copy_link&igsh=dDB5ZnFpODc2ZDhw",
+      Projectname:"Monolith Garden",
+      metatittles:" Modern Home Facade | MetaWood, MetaCassette & MetaFlute Design",
+      metadescription:"A sleek residential elevation featuring MetaWood profiles, MetaCassette panels, and MetaFlute textures—merging minimalism with function and warm materiality.",
+      images: [
+      
+        "assets/Allprojects/residential/dev622/metaflute/dev2.webp",
+        "assets/Allprojects/residential/dev622/metaflute/dev3.webp",
+        "assets/Allprojects/residential/dev622/metaflute/dev4.webp",
+        "assets/Allprojects/residential/dev622/metaflute/dev6.webp",
+        "assets/Allprojects/residential/dev622/metafold/dev7.webp",
+        "assets/Allprojects/residential/dev622/metafold/dev8.webp",
+        "assets/Allprojects/residential/dev622/metafold/dev10.webp",
+        "assets/Allprojects/residential/dev622/solidpanel/dev5.webp",
+        "assets/Allprojects/residential/dev622/solidpanel/dev9.webp",
+        
+      ],
+    },
+
+
+         {
+      name: "ishaan",
+      videoLink: "https://youtu.be/SJT31qFO1x4",
+      youtubeLink: "https://youtu.be/SJT31qFO1x4",
+      instagramLink: "https://www.instagram.com/p/DHGN0Ptyiy2/?utm_source=ig_web_copy_link&igsh=YW9rb2Ywc2RmbHV5",
+      Projectname:"Peacock Mesh",
+      metatittles:" Retrofit Facade Design | MetaCoin Peacock Motif in Copper Finish ",
+      metadescription:"A transformative retrofit featuring MetaCoin panels in a copper peacock motif—breathing new life into a dated facade through parametric design and light-responsive detail.",
+      images: [
+      
+        "assets/Allprojects/residential/ishaan/coin/ishaan2.webp",
+        "assets/Allprojects/residential/ishaan/coin/ishaan3.webp",
+        "assets/Allprojects/residential/ishaan/coin/ishaan4.webp",
+        "assets/Allprojects/residential/ishaan/coin/ishaan5.webp",
+        "assets/Allprojects/residential/ishaan/coin/ishaan6.webp",
+        "assets/Allprojects/residential/ishaan/coin/ishaan7.webp",
+        
+      ],
+    },
+
+            {
+      name: "pritesh",
+      videoLink: "https://youtu.be/HK6Zzr5T-6I",
+      youtubeLink: "https://youtu.be/HK6Zzr5T-6I",
+      instagramLink: "https://www.instagram.com/p/DJ3tFbySPzx/?utm_source=ig_web_copy_link&igsh=MTc0cWNndTJqMmJ6Ng==",
+      Projectname:"Sacred Geometry",
+      metatittles:"Minimal Home Facade | MetaWood Planks & MetaGrey Louvers",
+      metadescription:"A refined residential elevation with MetaPlank in warm MetaWood and MetaLouver in cool MetaGrey—bringing softness, structure, and modern simplicity to the facade.",
+      images: [
+      
+        "assets/Allprojects/residential/pritesh/metalouver/pritesh2.webp",
+        "assets/Allprojects/residential/pritesh/metalouver/pritesh7.webp",
+        "assets/Allprojects/residential/pritesh/metalouver/pritesh8.webp",
+        "assets/Allprojects/residential/pritesh/metaplank/pritesh3.webp",
+        "assets/Allprojects/residential/pritesh/metaplank/pritesh4.webp",
+        "assets/Allprojects/residential/pritesh/metaplank/pritesh5.webp",
+        "assets/Allprojects/residential/pritesh/metaplank/pritesh6.webp",
+        "assets/Allprojects/residential/pritesh/metaplank/pritesh9.webp",
+        
+      ],
+    },
+
+
+              {
+      name: "sachi",
+      videoLink: "https://youtu.be/HnIuN8fa0u0",
+      youtubeLink: "https://youtu.be/HnIuN8fa0u0",
+      instagramLink: "https://www.instagram.com/p/DIbY-m4yttN/?utm_source=ig_web_copy_link&igsh=dGlidzMyMGNlOWMx",
+      Projectname:"Sachi",
+      metatittles:" Commercial Facade Design | MetaCoin in Copper & Gold Tones ",
+      metadescription:" A bold commercial elevation crowned with MetaCoin panels in copper and gold—blending warm metallic hues with texture and light-responsive movement. ",
+      images: [
+      
+        "assets/Allprojects/residential/sachi/metacoin/sachi2.webp",
+         "assets/Allprojects/residential/sachi/metacoin/sachi3.webp",
+          "assets/Allprojects/residential/sachi/metacoin/sachi4.webp",
+           "assets/Allprojects/residential/sachi/metacoin/sachi5.webp",
+            "assets/Allprojects/residential/sachi/metacoin/sachi6.webp",
+             "assets/Allprojects/residential/sachi/metacoin/sachi7.webp",
+        
+      ],
+    },
+
+    
+              {
+      name: "vivek",
+      videoLink: "https://youtube.com/shorts/YIqhJ3ii33s?feature=share",
+      youtubeLink: "https://youtube.com/shorts/YIqhJ3ii33s?feature=share",
+      instagramLink: "https://www.instagram.com/p/DJoyqwrzrNP/?utm_source=ig_web_copy_link&igsh=ZTY0OHhlcHdzNm45",
+      Projectname:"Obsidian",
+      metatittles:" Bold Residential Facade | MetaShingles, MetaCassette & Solid Panels ",
+      metadescription:" A sculptural home featuring oval MetaShingles, grooved MetaCassette panels, and clean Solid Panels—minimal in colour, bold in architectural expression. ",
+      images: [
+      
+        "assets/Allprojects/residential/vivek/metacassettegrooved/vivek9.webp",
+        "assets/Allprojects/residential/vivek/metashingles/vivek2.webp",
+        "assets/Allprojects/residential/vivek/metashingles/vivek3.webp",
+        "assets/Allprojects/residential/vivek/metashingles/vivek4.webp",
+        "assets/Allprojects/residential/vivek/metashingles/vivek5.webp",
+        "assets/Allprojects/residential/vivek/metashingles/vivek6.webp",
+        "assets/Allprojects/residential/vivek/metashingles/vivek7.webp",
+        "assets/Allprojects/residential/vivek/metashingles/vivek8.webp",
+        "assets/Allprojects/residential/vivek/solidpanel/vivek10.webp",
+        "assets/Allprojects/residential/vivek/solidpanel/vivek11.webp",
+        "assets/Allprojects/residential/vivek/solidpanel/vivek12.webp",
+        
+      ],
+    },
+
+              {
+      name: "hlp",
+      videoLink: "https://youtu.be/XtQhLEm19OI",
+      youtubeLink: "https://youtu.be/XtQhLEm19OI",
+      instagramLink: "https://www.instagram.com/p/DJEh3Mfy8CM/?utm_source=ig_web_copy_link&igsh=MXA2ODRiYTNpaDFhYw==",
+      Projectname:"HLP",
+      metatittles:" Parametric Facade | Large-Scale MetaCoin Elevation in Copper & Gold ",
+      metadescription:"A dynamic commercial facade clad in MetaCoin—thousands of copper and gold-toned coin panels flowing across a wide elevation for a bold, kinetic effect",
+      images: [
+      
+        "assets/Allprojects/commercial/hlp/coin/hlp2.webp",
+        "assets/Allprojects/commercial/hlp/coin/hlp3.webp",
+        "assets/Allprojects/commercial/hlp/coin/hlp4.webp",
+        "assets/Allprojects/commercial/hlp/coin/hlp5.webp",
+        "assets/Allprojects/commercial/hlp/coin/hlp6.webp",
+        "assets/Allprojects/commercial/hlp/coin/hlp7.webp",
+        
+      ],
+    },
+
+                 {
+      name: "sbi",
+      videoLink: "https://youtu.be/9WmdkuNl2io",
+      youtubeLink: "https://youtu.be/9WmdkuNl2io",
+      instagramLink: "https://www.instagram.com/reel/DJZIDW3SWtc/?utm_source=ig_web_copy_link&igsh=MXhxZThtejB3d3Ntcg==",
+      Projectname:"SBI",
+      metatittles:" Commercial Facade | MetaCoin, MetaLouver & MetaFlute Design ",
+      metadescription:" A parametric facade with cascading MetaCoin panels, MetaGrey louvers, and warm MetaWood flutes—blending precision, movement, and material harmony. ",
+      images: [
+      
+        "assets/Allprojects/commercial/sbi/coin/sbi2.webp",
+        "assets/Allprojects/commercial/sbi/coin/sbi6.webp",
+        "assets/Allprojects/commercial/sbi/coin/sbi8.webp",
+        "assets/Allprojects/commercial/sbi/coin/sbi10.webp",
+        "assets/Allprojects/commercial/sbi/metaflute/sbi3.webp",
+        "assets/Allprojects/commercial/sbi/metaflute/sbi5.webp",
+        "assets/Allprojects/commercial/sbi/metalouver/sbi7.webp",
+        "assets/Allprojects/commercial/sbi/metalouver/sbi9.webp",
+        
+      ],
+    },
+
+                   {
+      name: "zenith",
+      videoLink: "https://youtube.com/shorts/8BpsryeWzMM?feature=share",
+      youtubeLink: "https://youtube.com/shorts/8BpsryeWzMM?feature=share",
+      instagramLink: "https://www.instagram.com/reel/DKg9lYsyODS/?utm_source=ig_web_copy_link&igsh=Nmo5aHpxcTI0Znlz",
+      Projectname:"Zenith",
+      metatittles:" MetaCoin Facade | Two-Sided Parametric Design in Champagne Gold ",
+      metadescription:" A sculptural MetaCoin facade crafted with thousands of champagne-gold coins flowing across a glass building—shimmering by day, glowing by night ",
+      images: [
+      
+        "assets/Allprojects/commercial/zenith/coin/zen2.webp",
+        "assets/Allprojects/commercial/zenith/coin/zen3.webp",
+        "assets/Allprojects/commercial/zenith/coin/zen4.webp",
+        "assets/Allprojects/commercial/zenith/coin/zen5.webp",
+        "assets/Allprojects/commercial/zenith/coin/zen6.webp",
+        "assets/Allprojects/commercial/zenith/coin/zen7.webp",
+        "assets/Allprojects/commercial/zenith/coin/zen8.webp",
+        "assets/Allprojects/commercial/zenith/coin/zen9.webp",
+        "assets/Allprojects/commercial/zenith/coin/zen10.webp",
+        "assets/Allprojects/commercial/zenith/night/zen11.webp",
+        "assets/Allprojects/commercial/zenith/night/zen12.webp",
+        "assets/Allprojects/commercial/zenith/night/zen13.webp",
+        "assets/Allprojects/commercial/zenith/night/zen14.webp",
+        "assets/Allprojects/commercial/zenith/night/zen15.webp",
+        
+      ],
+    },
+
+
+                   {
+      name: "wvcity",
+      videoLink: "https://youtube.com/shorts/OS9Aa7kpJic?feature=shared",
+      youtubeLink: "https://youtube.com/shorts/OS9Aa7kpJic?feature=shared",
+      instagramLink: "https://www.instagram.com/p/DKwr6UnyzVB/?utm_source=ig_web_copy_link&igsh=MWI2djFwcDc5Y3E1dg==",
+      Projectname:"WVcity",
+      metatittles:" Parametric Ceiling Design | MetaSequin in Gold & Bronze ",
+      metadescription:"A dynamic commercial ceiling crafted with MetaSequin panels in rich gold and bronze tones—designed to shimmer, ripple, and transform with light and motion.",
+      images: [
+      
+        "assets/Allprojects/commercial/wvcity/metasequin/wv3.webp",
+        "assets/Allprojects/commercial/wvcity/metasequin/wv4.webp",
+        "assets/Allprojects/commercial/wvcity/metasequin/wv6.webp",
+        "assets/Allprojects/commercial/wvcity/metasequin/wv12.webp",
+        "assets/Allprojects/commercial/wvcity/metasequin/wv13.webp",
+        "assets/Allprojects/commercial/wvcity/metasequin/wv14.webp",
+        "assets/Allprojects/commercial/wvcity/metasequin/wv15.webp",
+        "assets/Allprojects/commercial/wvcity/metasequin/wv16.webp",
+        "assets/Allprojects/commercial/wvcity/night/wv5.webp",
+        "assets/Allprojects/commercial/wvcity/night/wv7.webp",
+        "assets/Allprojects/commercial/wvcity/night/wv9.webp",
+        "assets/Allprojects/commercial/wvcity/night/wv10.webp",
+        "assets/Allprojects/commercial/wvcity/night/wv11.webp",
+         "assets/Allprojects/commercial/wvcity/night/wv2.webp",
+        
+      ],
+    },
+
+
     //11 item 
     {
       name: "theresonance",
@@ -1713,6 +1955,12 @@ export const ProjectImages = [
     { imgPath: "assets/Allprojects/residential/B38/cover/b38_1.webp",},
     { imgPath: "assets/Allprojects/residential/A56/cover/a56_1.webp",},
     { imgPath: "assets/Allprojects/residential/3DLF1/cover/3dlf1_1.webp",},
+    { imgPath: "assets/Allprojects/residential/anj/cover/anj1.webp",},
+     { imgPath: "assets/Allprojects/residential/pritesh/cover/pritesh1.webp",},
+      { imgPath: "assets/Allprojects/residential/ishaan/cover/ishaan1.webp",},
+       { imgPath: "assets/Allprojects/residential/sachi/cover/sachi1.webp",},
+       { imgPath: "assets/Allprojects/residential/vivek/cover/vivek1.webp",},
+         { imgPath: "assets/Allprojects/residential/dev622/cover/dev1.webp",},
     { imgPath: "assets/Allprojects/residential/TheWaveform/cover/khandelwal1.webp",},
     { imgPath: "assets/Allprojects/residential/Q62-RA/cover/tejbir1.webp",order: 8 },
     { imgPath: "assets/Allprojects/residential/z1012/cover/z10121.webp",order: 26 },
@@ -1720,6 +1968,10 @@ export const ProjectImages = [
     { imgPath: "assets/Allprojects/commercial/E10/cover/e105.webp",order: 17 },
     { imgPath: "assets/Allprojects/commercial/Painflame/cover/15.webp", order: 12 },
     { imgPath: "assets/Allprojects/commercial/PremHospital/cover/prem1.webp",order: 10 },
+    { imgPath: "assets/Allprojects/commercial/hlp/cover/hlp1.webp",order: 10 },
+    { imgPath: "assets/Allprojects/commercial/sbi/cover/sbi1.webp",order: 10 },
+    { imgPath: "assets/Allprojects/commercial/wvcity/cover/wv1.webp",order: 10 },
+    { imgPath: "assets/Allprojects/commercial/zenith/cover/zen1.webp",order: 10 },
   ];
 
   // In your constants.js (or directly in the component)
