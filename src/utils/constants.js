@@ -766,8 +766,8 @@ const SingleprojectDetail = [
         "assets/Allprojects/residential/anj/metaflute/anj12.webp",
         "assets/Allprojects/residential/anj/metaflute/anj14.webp",
         "assets/Allprojects/residential/anj/metaplank/anj4.webp",
-        "assets/Allprojects/residential/anj/solidpanel/anj8.webp",
-        "assets/Allprojects/residential/anj/solidpanel/anj13.webp",
+        "assets/Allprojects/residential/anj/solid-panel/anj8.webp",
+        "assets/Allprojects/residential/anj/solid-panel/anj13.webp",
         "assets/Allprojects/residential/anj/night/anj3.webp",
         "assets/Allprojects/residential/anj/night/anj5.webp",
         "assets/Allprojects/residential/anj/night/anj6.webp",
@@ -794,8 +794,8 @@ const SingleprojectDetail = [
         "assets/Allprojects/residential/dev622/metafold/dev7.webp",
         "assets/Allprojects/residential/dev622/metafold/dev8.webp",
         "assets/Allprojects/residential/dev622/metafold/dev10.webp",
-        "assets/Allprojects/residential/dev622/solidpanel/dev5.webp",
-        "assets/Allprojects/residential/dev622/solidpanel/dev9.webp",
+        "assets/Allprojects/residential/dev622/solid-panel/dev5.webp",
+        "assets/Allprojects/residential/dev622/solid-panel/dev9.webp",
         
       ],
     },
@@ -875,7 +875,7 @@ const SingleprojectDetail = [
       metadescription:" A sculptural home featuring oval MetaShingles, grooved MetaCassette panels, and clean Solid Panels—minimal in colour, bold in architectural expression. ",
       images: [
       
-        "assets/Allprojects/residential/vivek/metacassettegrooved/vivek9.webp",
+        "assets/Allprojects/residential/vivek/metacassette-grooved/vivek9.webp",
         "assets/Allprojects/residential/vivek/metashingles/vivek2.webp",
         "assets/Allprojects/residential/vivek/metashingles/vivek3.webp",
         "assets/Allprojects/residential/vivek/metashingles/vivek4.webp",
@@ -883,9 +883,9 @@ const SingleprojectDetail = [
         "assets/Allprojects/residential/vivek/metashingles/vivek6.webp",
         "assets/Allprojects/residential/vivek/metashingles/vivek7.webp",
         "assets/Allprojects/residential/vivek/metashingles/vivek8.webp",
-        "assets/Allprojects/residential/vivek/solidpanel/vivek10.webp",
-        "assets/Allprojects/residential/vivek/solidpanel/vivek11.webp",
-        "assets/Allprojects/residential/vivek/solidpanel/vivek12.webp",
+        "assets/Allprojects/residential/vivek/solid-panel/vivek10.webp",
+        "assets/Allprojects/residential/vivek/solid-panel/vivek11.webp",
+        "assets/Allprojects/residential/vivek/solid-panel/vivek12.webp",
         
       ],
     },
@@ -966,7 +966,7 @@ const SingleprojectDetail = [
       videoLink: "https://youtube.com/shorts/OS9Aa7kpJic?feature=shared",
       youtubeLink: "https://youtube.com/shorts/OS9Aa7kpJic?feature=shared",
       instagramLink: "https://www.instagram.com/p/DKwr6UnyzVB/?utm_source=ig_web_copy_link&igsh=MWI2djFwcDc5Y3E1dg==",
-      Projectname:"WVcity",
+      Projectname:"Wavecity",
       metatittles:" Parametric Ceiling Design | MetaSequin in Gold & Bronze ",
       metadescription:"A dynamic commercial ceiling crafted with MetaSequin panels in rich gold and bronze tones—designed to shimmer, ripple, and transform with light and motion.",
       images: [
