@@ -29,7 +29,6 @@ const Contact = ({ brochureName }) => {
     message: `The user has requested the ${detectedBrochure} brochure.`,
   });
 
-  const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
 
   const handleChange = (e) => {
@@ -61,68 +60,48 @@ const Contact = ({ brochureName }) => {
     };
 
     const filePath = brochureMap[detectedBrochure];
-
     if (filePath) {
       window.open(filePath, "_blank");
     }
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setIsSending(true);
     setFeedbackMessage("");
 
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
       setFeedbackMessage("❌ All fields are required.");
-      setIsSending(false);
       return;
     }
 
-    const leadData = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      message: formData.message,
-      brochure: detectedBrochure,
-    };
-
-    try {
-      const response = await fetch("http://localhost:5000/api/submit-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-        body: JSON.stringify(leadData),
-      });
-
-      const result = await response.json();
-      if (response.ok) {
-        openPDF();
-        setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          message: `The user has requested the ${detectedBrochure} brochure.`,
-        });
-      } else {
-        setFeedbackMessage(`❌ ${result.message || "Failed to submit. Please try again."}`);
-      }
-    } catch (error) {
-      console.error("❌ Error submitting lead:", error);
-      setFeedbackMessage("❌ Server error. Please try again later.");
-    } finally {
-      setIsSending(false);
-    }
+    // Simulate success
+    openPDF();
+    setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: `The user has requested the ${detectedBrochure} brochure.`,
+    });
   };
 
   return (
     <>
       <Helmet>
         <title>Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding</title>
-       <link rel="canonical" href={`https://metaguise.com/${detectedBrochure}`} />
-        <meta name="description" content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`} />
-        <meta property="og:title" content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`} />
-        <meta property="og:description" content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`} />
+        <link rel="canonical" href={`https://metaguise.com/${detectedBrochure}`} />
+        <meta
+          name="description"
+          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+        />
+        <meta
+          property="og:title"
+          content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`}
+        />
+        <meta
+          property="og:description"
+          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+        />
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">
@@ -188,8 +167,8 @@ const Contact = ({ brochureName }) => {
               </Row>
 
               <div className="button-wrapper">
-                <button type="submit" className="send-button" disabled={isSending}>
-                  <span>{isSending ? "Sending..." : `Send & View ${detectedBrochure} Brochure`}</span>
+                <button type="submit" className="send-button">
+                  <span>{`Send & View ${detectedBrochure} Brochure`}</span>
                 </button>
               </div>
               {feedbackMessage && <p className="mt-3">{feedbackMessage}</p>}
