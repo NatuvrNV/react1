@@ -61,13 +61,12 @@ const Contact = ({ brochureName }) => {
     };
 
     const filePath = brochureMap[detectedBrochure];
-
     if (filePath) {
       window.open(filePath, "_blank");
     }
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
     setFeedbackMessage("");
@@ -78,41 +77,16 @@ const Contact = ({ brochureName }) => {
       return;
     }
 
-    const leadData = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      message: formData.message,
-      brochure: detectedBrochure,
-    };
-
-    try {
-      const response = await fetch("http://localhost:5000/api/submit-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-        body: JSON.stringify(leadData),
-      });
-
-      const result = await response.json();
-      if (response.ok) {
-        openPDF();
-        setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          message: `The user has requested the ${detectedBrochure} brochure.`,
-        });
-      } else {
-        setFeedbackMessage(`❌ ${result.message || "Failed to submit. Please try again."}`);
-      }
-    } catch (error) {
-      console.error("❌ Error submitting lead:", error);
-      setFeedbackMessage("❌ Server error. Please try again later.");
-    } finally {
-      setIsSending(false);
-    }
+    // Simulated form success
+    openPDF();
+    setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: `The user has requested the ${detectedBrochure} brochure.`,
+    });
+    setIsSending(false);
   };
 
   return (
