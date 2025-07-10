@@ -26,7 +26,7 @@ export const AtAGlanceSection = () => {
     },
     {
       id: 3,
-      heading: "Over 1200 projects completed globally",
+      heading: "Over 1700 projects completed globally",
       icon: AboutIcon2,
     },
     {
