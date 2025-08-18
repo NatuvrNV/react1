@@ -1372,7 +1372,7 @@ export const SingleProductDetail = [
       metatittles:"MetaSequin | Bespoke Parametric Metal Sequin Facades ",
       metadescription:"Create dynamic elevations with our metal sequin facade panels, customizable in shape, size, colour and patterns. ",
       description:
-        "Elevate your structure with MetaShingles, a system of overlapping metal panels designed to create dynamic textures and visual depth. Fully customizable in shape, size, color and finish, MetaShingles offer endless design possibilities to suit any architectural vision. These shingles bring a contemporary flair to facades while ensuring durability and weather resistance. Perfect for residential and commercial projects, MetaShingles strike a balance between aesthetic appeal and robust functionality, allowing you to tailor your facade to your unique style​.",
+        "MetaSequin is a parametric facade technology that combines lightweight, modular panels with high visual impact. Each panel features a sequin-like surface that interacts with light, creating dynamic patterns and movement across the facade. Designed for commercial and luxury residential projects, MetaSequin is fully customizable in layout, colour, and finish, allowing architects to create intricate geometries and textures. Its parametric design ensures both aesthetic flexibility and practical performance, with easy installation, durability, and low maintenance.",
       images: [
         "assets/Allproducts/MetaParametric/metasequin/metasequin2.webp",
         "assets/Allproducts/MetaParametric/metasequin/metasequin3.webp",
