@@ -956,6 +956,11 @@ const SingleprojectDetail = [
         "assets/Allprojects/commercial/zenith/night/zen13.webp",
         "assets/Allprojects/commercial/zenith/night/zen14.webp",
         "assets/Allprojects/commercial/zenith/night/zen15.webp",
+          "assets/Allprojects/commercial/zenith/night/zen16.webp",
+          "assets/Allprojects/commercial/zenith/night/zen17.webp",
+          "assets/Allprojects/commercial/zenith/night/zen18.webp",
+          "assets/Allprojects/commercial/zenith/night/zen19.webp",
+          "assets/Allprojects/commercial/zenith/night/zen20.webp",
         
       ],
     },
