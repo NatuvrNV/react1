@@ -185,7 +185,7 @@ const SingleProject = () => {
 
 const BackButton = ({ navigate }) => {
   return (
-    <button onClick={() => navigate(-1)} className="back-button">
+    <button onClick={() => navigate("/all-projects")} className="back-button">
       <span className="arrow">&larr; Back</span>
     </button>
   );
