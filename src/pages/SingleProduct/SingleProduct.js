@@ -182,7 +182,7 @@ const SingleProduct = () => {
 
 const BackButton = ({ navigate }) => {
   return (
-    <button onClick={() => navigate(-1)} className="back-button">
+    <button onClick={() => navigate("/all-products")} className="back-button">
       <span className="arrow">&larr; Back</span>
     </button>
   );
