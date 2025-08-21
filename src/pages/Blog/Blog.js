@@ -46,7 +46,7 @@ const Blog = () => {
     <div className="singleblog-container">
       {/* Add Meta Tags */}
       <Helmet>
-        <title>  Metaguise Blog | Architectural Insights & Facade Innovations </title>
+        <title>Metaguise Blog | Architectural Insights & Facade Innovations</title>
         <meta 
           name="description" 
           content="Explore our latest articles on facade innovations, architectural trends, and project highlights. Discover expert insights, material spotlights, and behind-the-scenes design stories in our comprehensive blog collection." 
@@ -113,15 +113,17 @@ const Blog = () => {
             </div>
           ) : (
             <div className="grid grid-cols-2 gap-8 blog-grid mt-xl-5 px-xl-5 mt-4">
-              {filteredBlogs.map((blog) => (
+              {filteredBlogs.slice().reverse().map((blog) => (
                 <div
                   key={blog.title} // Using title as key
                   className="flex cursor-pointer blog-card"
                   onClick={() => handleBlogClick(blog.title)}
                 >
-                  <img src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`} 
-                       alt={blog.title}  
-                       className="object-cover rounded-lg" />
+                  <img 
+                    src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`} 
+                    alt={blog.title}  
+                    className="object-cover rounded-lg" 
+                  />
                   <div className="mx-xl-4 blog-text">
                     <h2 className="text-xl blog-title">{blog.title}</h2>
                     <p className="text-sm mt-xl-2 blog-description">{blog.description}</p>
