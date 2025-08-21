@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet'; // Import Helmet
 import "./Blog.css";
 import { useNavigate } from 'react-router-dom';
 import { Container, Row } from "react-bootstrap";
@@ -17,6 +17,7 @@ const Blog = () => {
 
   // Function to handle blog click navigation with title-based URL
   const handleBlogClick = (blogTitle) => {
+    // Convert title to URL-friendly format (replace spaces with hyphens)
     const urlFriendlyTitle = blogTitle.toLowerCase().replace(/\s+/g, '-');
     navigate(`/blog/${urlFriendlyTitle}`);
   };
@@ -32,18 +33,6 @@ const Blog = () => {
     setSearchInput(e.target.value.toLowerCase());
   };
 
-  // Function to parse MM-DD-YY format into a standard Date object
-  const parseDate = (dateString) => {
-    // Handle MM-DD-YY format (e.g., "01-04-25")
-    if (/^\d{2}-\d{2}-\d{2}$/.test(dateString)) {
-      const [month, day, year] = dateString.split('-');
-      return new Date(`20${year}-${month}-${day}`);
-    }
-    
-    // Handle other formats or return current date as fallback
-    return new Date();
-  };
-
   // Filter blogs based on selected category and search query
   const filteredBlogs = SingleBlogDetail.filter(blog => {
     const matchesCategory = selectedCategory === "All" || blog.category === selectedCategory;
@@ -53,21 +42,16 @@ const Blog = () => {
     return matchesCategory && matchesSearch;
   });
 
-  // Sort blogs by date in descending order (newest first)
-  const sortedBlogs = [...filteredBlogs].sort((a, b) => {
-    const dateA = parseDate(a.date);
-    const dateB = parseDate(b.date);
-    return dateB - dateA; // For descending order (newest first)
-  });
-
   return (
     <div className="singleblog-container">
+      {/* Add Meta Tags */}
       <Helmet>
-        <title>Metaguise Blog | Architectural Insights & Facade Innovations</title>
+        <title>  Metaguise Blog | Architectural Insights & Facade Innovations </title>
         <meta 
           name="description" 
           content="Explore our latest articles on facade innovations, architectural trends, and project highlights. Discover expert insights, material spotlights, and behind-the-scenes design stories in our comprehensive blog collection." 
         />
+        <link rel="canonical" href="https://metaguise.com/blogs" />
       </Helmet>
 
       <Container fluid>
@@ -123,15 +107,15 @@ const Blog = () => {
         </Row>
 
         <Row className='Blog-row'>
-          {sortedBlogs.length === 0 ? (
+          {filteredBlogs.length === 0 ? (
             <div className="no-blogs-message text-center">
               <p>No Blogs Found</p>
             </div>
           ) : (
             <div className="grid grid-cols-2 gap-8 blog-grid mt-xl-5 px-xl-5 mt-4">
-              {sortedBlogs.map((blog) => (
+              {filteredBlogs.map((blog) => (
                 <div
-                  key={blog.title}
+                  key={blog.title} // Using title as key
                   className="flex cursor-pointer blog-card"
                   onClick={() => handleBlogClick(blog.title)}
                 >
