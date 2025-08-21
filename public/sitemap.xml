@@ -82,7 +82,7 @@
     <loc>https://metaguise.com/all-products/cascadingkeys</loc>
     <lastmod>2025-02-24</lastmod>
     <priority>0.6</priority>
-    <changereq>monthly</changefreq>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://metaguise.com/all-products/metacassette</loc>
