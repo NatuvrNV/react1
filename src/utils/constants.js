@@ -1361,6 +1361,8 @@ const SingleprojectDetail = [
       ],
     },
 
+    
+
         {
       name: "3939a",
       videoLink: "",
@@ -1390,6 +1392,59 @@ const SingleprojectDetail = [
           "assets/Allprojects/residential/3939A/metashingles/3939A_17.webp",
           "assets/Allprojects/residential/3939A/metashingles/3939A_18.webp",
           "assets/Allprojects/residential/3939A/night/3939A_19.webp",
+      ],
+    },
+
+
+      {
+      name: "88arjun",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"88Arjun",
+      metatittles:"",
+      metadescription:"",
+      images: [
+      
+     
+        
+        "assets/Allprojects/residential/88 Arjun/metashingles/88_8.webp",
+          "assets/Allprojects/residential/88 Arjun/metashingles/88_10.webp",
+          "assets/Allprojects/residential/88 Arjun/metashingles/88_11.webp",
+          "assets/Allprojects/residential/88 Arjun/metashingles/88_13.webp",
+           "assets/Allprojects/residential/88 Arjun/metaflute/88_7.webp",
+           "assets/Allprojects/residential/88 Arjun/metaflute/88_15.webp",
+           "assets/Allprojects/residential/88 Arjun/metaflute/88_16.webp",
+          "assets/Allprojects/residential/88 Arjun/metafin/88_6.webp",
+          "assets/Allprojects/residential/88 Arjun/metafin/88_9.webp",
+          "assets/Allprojects/residential/88 Arjun/metafin/88_12.webp",
+          "assets/Allprojects/residential/88 Arjun/metafin/88_14.webp",
+      ],
+    },
+
+
+      {
+      name: "w12",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"W12",
+      metatittles:"",
+      metadescription:"",
+      images: [
+
+          "assets/Allprojects/residential/W12/metafin/w12_2.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_3.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_4.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_5.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_6.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_7.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_8.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_9.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_10.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_11.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_12.webp",
+          "assets/Allprojects/residential/W12/metafin/w12_13.webp",
       ],
     },
 
