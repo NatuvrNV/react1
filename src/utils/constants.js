@@ -2044,6 +2044,9 @@ export const ProductImages = [
   ];
 
 export const ProjectImages = [
+    { imgPath: "assets/Allprojects/commercial/whiteland/cover/wl1.webp",order: 1 },
+    { imgPath: "assets/Allprojects/residential/3939A/cover/3939A_7.webp",  order: 1},
+      { imgPath: "assets/Allprojects/residential/caskey/cover/caskey1.webp",  order: 1},
     { imgPath: "assets/Allprojects/commercial/hlp/cover/hlp1.webp",order: 1 },
     { imgPath: "assets/Allprojects/commercial/sbi/cover/sbi1.webp",order: 1 },
     { imgPath: "assets/Allprojects/commercial/wvcity/cover/wv1.webp",order: 1 },
