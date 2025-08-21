@@ -1408,17 +1408,17 @@ const SingleprojectDetail = [
       
      
         
-        "assets/Allprojects/residential/88 Arjun/metashingles/88_8.webp",
-          "assets/Allprojects/residential/88 Arjun/metashingles/88_10.webp",
-          "assets/Allprojects/residential/88 Arjun/metashingles/88_11.webp",
-          "assets/Allprojects/residential/88 Arjun/metashingles/88_13.webp",
-           "assets/Allprojects/residential/88 Arjun/metaflute/88_7.webp",
-           "assets/Allprojects/residential/88 Arjun/metaflute/88_15.webp",
-           "assets/Allprojects/residential/88 Arjun/metaflute/88_16.webp",
-          "assets/Allprojects/residential/88 Arjun/metafin/88_6.webp",
-          "assets/Allprojects/residential/88 Arjun/metafin/88_9.webp",
-          "assets/Allprojects/residential/88 Arjun/metafin/88_12.webp",
-          "assets/Allprojects/residential/88 Arjun/metafin/88_14.webp",
+        "assets/Allprojects/residential/88Arjun/metashingles/88_8.webp",
+          "assets/Allprojects/residential/88Arjun/metashingles/88_10.webp",
+          "assets/Allprojects/residential/88Arjun/metashingles/88_11.webp",
+          "assets/Allprojects/residential/88Arjun/metashingles/88_13.webp",
+           "assets/Allprojects/residential/88Arjun/metaflute/88_7.webp",
+           "assets/Allprojects/residential/88Arjun/metaflute/88_15.webp",
+           "assets/Allprojects/residential/88Arjun/metaflute/88_16.webp",
+          "assets/Allprojects/residential/88Arjun/metafin/88_6.webp",
+          "assets/Allprojects/residential/88Arjun/metafin/88_9.webp",
+          "assets/Allprojects/residential/88Arjun/metafin/88_12.webp",
+          "assets/Allprojects/residential/88Arjun/metafin/88_14.webp",
       ],
     },
 
