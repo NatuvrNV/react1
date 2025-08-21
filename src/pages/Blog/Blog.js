@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet'; // Import Helmet
+import { Helmet } from 'react-helmet';
 import "./Blog.css";
 import { useNavigate } from 'react-router-dom';
 import { Container, Row } from "react-bootstrap";
@@ -40,6 +40,14 @@ const Blog = () => {
                           blog.description.toLowerCase().includes(searchInput) || 
                           blog.category.toLowerCase().includes(searchInput);
     return matchesCategory && matchesSearch;
+  });
+
+  // Sort blogs by date in descending order (newest first)
+  const sortedBlogs = [...filteredBlogs].sort((a, b) => {
+    // Convert dates to Date objects for comparison
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB - dateA; // For ascending order: dateA - dateB
   });
 
   return (
@@ -107,13 +115,13 @@ const Blog = () => {
         </Row>
 
         <Row className='Blog-row'>
-          {filteredBlogs.length === 0 ? (
+          {sortedBlogs.length === 0 ? (
             <div className="no-blogs-message text-center">
               <p>No Blogs Found</p>
             </div>
           ) : (
             <div className="grid grid-cols-2 gap-8 blog-grid mt-xl-5 px-xl-5 mt-4">
-              {filteredBlogs.map((blog) => (
+              {sortedBlogs.map((blog) => (
                 <div
                   key={blog.title} // Using title as key
                   className="flex cursor-pointer blog-card"
