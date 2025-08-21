@@ -993,6 +993,41 @@ const SingleprojectDetail = [
     },
 
 
+    //whiteland
+
+      {
+      name: "whiteland",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"WhiteLand",
+      metatittles:"  ",
+      metadescription:"",
+      images: [
+      
+        "assets/Allprojects/commercial/whiteland/parametric-panels/wl2.webp",
+          "assets/Allprojects/commercial/whiteland/parametric-panels/wl3.webp",
+          "assets/Allprojects/commercial/whiteland/parametric-panels/wl4.webp",
+          "assets/Allprojects/commercial/whiteland/parametric-panels/wl6.webp",
+          "assets/Allprojects/commercial/whiteland/parametric-panels/wl7.webp",
+          "assets/Allprojects/commercial/whiteland/parametric-panels/wl12.webp",
+          "assets/Allprojects/commercial/whiteland/parametric-panels/wl13.webp",
+          "assets/Allprojects/commercial/whiteland/parametric-panels/wl14.webp",
+          "assets/Allprojects/commercial/whiteland/parametric-panels/wl15.webp",
+          "assets/Allprojects/commercial/whiteland/parametric-panels/wl16.webp",
+          "assets/Allprojects/commercial/whiteland/parametric-panels/wl18.webp",
+          "assets/Allprojects/commercial/whiteland/night/wl5.webp",
+          "assets/Allprojects/commercial/whiteland/night/wl8.webp",
+          "assets/Allprojects/commercial/whiteland/night/wl9.webp",
+          "assets/Allprojects/commercial/whiteland/night/wl10.webp",
+          "assets/Allprojects/commercial/whiteland/night/wl11.webp",
+          "assets/Allprojects/commercial/whiteland/night/wl17.webp",
+          "assets/Allprojects/commercial/whiteland/night/wl19.webp",
+        
+      ],
+    },
+
+
     //11 item 
     {
       name: "theresonance",
@@ -1289,6 +1324,76 @@ const SingleprojectDetail = [
         
       ],
     },
+
+    {
+      name: "caskey",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"CASKEY",
+      metatittles:"",
+      metadescription:"",
+      images: [
+      
+     
+        "assets/Allprojects/residential/caskey/Cascading-Keys/caskey2.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey3.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey4.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey5.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey6.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey7.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey8.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey9.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey10.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey11.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey12.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey13.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey15.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey16.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey17.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey18.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey19.webp", 
+          "assets/Allprojects/residential/caskey/Cascading-Keys/caskey20.webp", 
+          "assets/Allprojects/residential/caskey/metalouver/caskey14.webp", 
+          "assets/Allprojects/residential/caskey/metalouver/caskey21.webp", 
+          "assets/Allprojects/residential/caskey/metalouver/caskey22.webp", 
+        
+      ],
+    },
+
+        {
+      name: "3939a",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"3939A",
+      metatittles:"",
+      metadescription:"",
+      images: [
+      
+     
+        "assets/Allprojects/residential/3939A/metashingles/3939A.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_2.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_3.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_4.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_5.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_6.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_8.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_9.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_10.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_11.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_12.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_13.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_14.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_15.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_16.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_17.webp",
+          "assets/Allprojects/residential/3939A/metashingles/3939A_18.webp",
+          "assets/Allprojects/residential/3939A/night/3939A_19.webp",
+      ],
+    },
+
+    
 
     {
       name: "thewaveform",
