@@ -9,9 +9,8 @@ import { SingleprojectDetail } from "../../utils/constants";
 import { ProjectImages as images } from "../../utils/constants";
 import { Helmet } from "react-helmet-async";
 
-
 const Allprojects = () => {
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -21,7 +20,7 @@ const Allprojects = () => {
     const selectedProject = SingleprojectDetail.find(
       (item) => item.name.toLowerCase() === selectedSubProjectCat
     );
-    navigate(`/all-projects/${selectedSubProjectCat}`, { state: { selectedProject } }); // Redirect to SingleProject page with dynamic URL
+    navigate(`/all-projects/${selectedSubProjectCat}`, { state: { selectedProject } });
   };
 
   const filterImagesByCategory = (category) => {
@@ -33,6 +32,15 @@ const Allprojects = () => {
         img.imgPath.toLowerCase().includes(selectedCategory.toLowerCase())
       )
     : images;
+
+  // Function to get project name from SingleprojectDetail
+  const getProjectName = (imgPath) => {
+    const imgName = imgPath.split("/")[3].toLowerCase();
+    const project = SingleprojectDetail.find(
+      (item) => item.name.toLowerCase() === imgName
+    );
+    return project ? project.ProjectName : "Project";
+  };
 
   const location = useLocation();
 
@@ -47,7 +55,6 @@ const Allprojects = () => {
     };
 
     handleScrollBehavior();
-
     window.addEventListener("resize", handleScrollBehavior);
 
     return () => {
@@ -67,18 +74,18 @@ const Allprojects = () => {
 
   return (
     <div className="gallery-container">
-            <Helmet>
-                          <title>Metaguise Projects | Metal Facades & Parametric Architecture </title>
-                          <meta name="description" content="Explore iconic projects featuring our parametric architecture and custom facade designs across India." />
-                          <meta name="keywords" content="home, react, SEO, web development" />
-                          <meta name="author" content="Your Name" />
-                          <meta property="og:title" content="Metaguise Projects | Metal Facades & Parametric Architecture " />
-                          <meta property="og:description" content="Explore iconic projects featuring our parametric architecture and custom facade designs across India." />
-                          <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
-                          <meta property="og:url" content="https://metaguise.com/" />
-                          <meta name="robots" content="index, follow" />
-                          <link rel="canonical" href="https://metaguise.com/all-projects" />
-                        </Helmet>
+      <Helmet>
+        <title>Metaguise Projects | Metal Facades & Parametric Architecture</title>
+        <meta name="description" content="Explore iconic projects featuring our parametric architecture and custom facade designs across India." />
+        <meta name="keywords" content="home, react, SEO, web development" />
+        <meta name="author" content="Your Name" />
+        <meta property="og:title" content="Metaguise Projects | Metal Facades & Parametric Architecture" />
+        <meta property="og:description" content="Explore iconic projects featuring our parametric architecture and custom facade designs across India." />
+        <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
+        <meta property="og:url" content="https://metaguise.com/" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://metaguise.com/all-projects" />
+      </Helmet>
       <div className="gallery-content">
         <Container fluid>
           <Row>
@@ -99,37 +106,34 @@ const Allprojects = () => {
                       </div>
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
-  <Dropdown.Item
-    onClick={() => filterImagesByCategory("")}
-    active={selectedCategory === ""}
-  >
-    <div className="d-flex justify-content-between align-items-center">
-    All
-    {selectedCategory === "" && <MdArrowOutward className="dropdown-arrow" />}
-    </div>
-   
-  </Dropdown.Item>
-  <Dropdown.Item
-    onClick={() => filterImagesByCategory("residential")}
-    active={selectedCategory === "residential"}
-  >
-    <div className="d-flex justify-content-between align-items-center">
-    Residential
-    {selectedCategory === "residential" && <MdArrowOutward className="dropdown-arrow" />}
-    </div>
- 
-  </Dropdown.Item>
-  <Dropdown.Item
-    onClick={() => filterImagesByCategory("commercial")}
-    active={selectedCategory === "commercial"}
-  >
-    <div className="d-flex justify-content-between align-items-center">
-    Commercial
-    {selectedCategory === "commercial" && <MdArrowOutward className="dropdown-arrow" />}
-    </div>
-   
-  </Dropdown.Item>
-</Dropdown.Menu>
+                      <Dropdown.Item
+                        onClick={() => filterImagesByCategory("")}
+                        active={selectedCategory === ""}
+                      >
+                        <div className="d-flex justify-content-between align-items-center">
+                          All
+                          {selectedCategory === "" && <MdArrowOutward className="dropdown-arrow" />}
+                        </div>
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        onClick={() => filterImagesByCategory("residential")}
+                        active={selectedCategory === "residential"}
+                      >
+                        <div className="d-flex justify-content-between align-items-center">
+                          Residential
+                          {selectedCategory === "residential" && <MdArrowOutward className="dropdown-arrow" />}
+                        </div>
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        onClick={() => filterImagesByCategory("commercial")}
+                        active={selectedCategory === "commercial"}
+                      >
+                        <div className="d-flex justify-content-between align-items-center">
+                          Commercial
+                          {selectedCategory === "commercial" && <MdArrowOutward className="dropdown-arrow" />}
+                        </div>
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
                   </Dropdown>
                 </div>
               )}
@@ -146,6 +150,8 @@ const Allprojects = () => {
                         alt={`Gallery ${index}`}
                       />
                     </div>
+                    {/* Add the image text that shows on hover */}
+                    <div className="image-text">{getProjectName(img.imgPath)}</div>
                   </div>
                 ))}
               </div>
@@ -153,7 +159,7 @@ const Allprojects = () => {
             <Col lg={2} md={4} className="mb-4">
               <h1 className="desktop-title mb-3">Our Projects</h1>
               <div className="sidebar">
-                <h4 className="mb-3"> Filter by Type</h4>
+                <h4 className="mb-3">Filter by Type</h4>
                 <ListGroup variant="flush">
                   <ListGroup.Item
                     action
@@ -162,9 +168,9 @@ const Allprojects = () => {
                     onClick={() => filterImagesByCategory("")}
                   >
                     <div className="d-flex justify-content-between align-items-center">
-      All
-      {selectedCategory === "" && <MdArrowOutward className="sidebar-arrow" />}
-    </div>
+                      All
+                      {selectedCategory === "" && <MdArrowOutward className="sidebar-arrow" />}
+                    </div>
                   </ListGroup.Item>
                   <ListGroup.Item
                     action
@@ -174,10 +180,10 @@ const Allprojects = () => {
                     }
                     onClick={() => filterImagesByCategory("residential")}
                   >
-                   <div className="d-flex justify-content-between align-items-center">
-      Residential
-      {selectedCategory === "residential" && <MdArrowOutward className="sidebar-arrow" />}
-    </div>
+                    <div className="d-flex justify-content-between align-items-center">
+                      Residential
+                      {selectedCategory === "residential" && <MdArrowOutward className="sidebar-arrow" />}
+                    </div>
                   </ListGroup.Item>
                   <ListGroup.Item
                     action
@@ -187,10 +193,10 @@ const Allprojects = () => {
                     }
                     onClick={() => filterImagesByCategory("commercial")}
                   >
-                      <div className="d-flex justify-content-between align-items-center">
-      Commercial
-      {selectedCategory === "commercial" && <MdArrowOutward className="sidebar-arrow" />}
-    </div>
+                    <div className="d-flex justify-content-between align-items-center">
+                      Commercial
+                      {selectedCategory === "commercial" && <MdArrowOutward className="sidebar-arrow" />}
+                    </div>
                   </ListGroup.Item>
                 </ListGroup>
               </div>
