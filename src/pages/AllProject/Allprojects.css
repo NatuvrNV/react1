@@ -9,6 +9,40 @@
   overflow-x: hidden;
 }
 
+.hover-effect:hover  .image-text{
+  filter: brightness(1);
+  transition: 0.4s ease-in-out;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1em;
+  border-radius: 4px;
+  display: none;
+  width: 90%;
+  text-align: left;
+  text-transform: capitalize;
+  
+}
+
+.gallery-item:hover .image-text {
+  display: block;
+}
+
+@media (min-width: 1920px){
+  .image-text{
+    font-size: 28px;
+    letter-spacing: 0.03em !important;
+    font-weight: 500 !important;
+  }
+
+
+}
+
 @media (min-width: 1920px) {
   #build-button{
     width: 100% !important;
