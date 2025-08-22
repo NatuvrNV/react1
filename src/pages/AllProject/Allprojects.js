@@ -34,12 +34,12 @@ const Allprojects = () => {
     : images;
 
   // Function to get project name from SingleprojectDetail
-  const getProjectName = (imgPath) => {
+  const getProjectname = (imgPath) => {
     const imgName = imgPath.split("/")[3].toLowerCase();
     const project = SingleprojectDetail.find(
       (item) => item.name.toLowerCase() === imgName
     );
-    return project ? project.ProjectName : "Project";
+    return project ? project.Projectname : "Project";
   };
 
   const location = useLocation();
@@ -151,7 +151,7 @@ const Allprojects = () => {
                       />
                     </div>
                     {/* Add the image text that shows on hover */}
-                    <div className="image-text">{getProjectName(img.imgPath)}</div>
+                    <div className="image-text">{getProjectname(img.imgPath)}</div>
                   </div>
                 ))}
               </div>
