@@ -799,8 +799,7 @@ Browse our design systems:  <a href=" https://metaguise.com/metaparametric ">Met
 Explore all projects: <a href="https://metaguise.com/all-projects">All Projects</a>
 
   `,
-         description: "In architecture, a facade is more than a face - it’s a voice. A building's elevation speaks volumesabout the brand it represents. At Metaguise, we don’t just clad buildings, we craft identities. Through metal, pattern, and parametric design, we help brands build a lasting first impression.
-",
+         description: "In architecture, a facade is more than a face - it’s a voice. A building's elevation speaks volumesabout the brand it represents. At Metaguise, we don’t just clad buildings, we craft identities. Through metal, pattern, and parametric design, we help brands build a lasting first impression.",
          images: [
              "assets/Blogs/story/1a.webp",
               "assets/Blogs/story/1b.webp",
@@ -820,6 +819,7 @@ Explore all projects: <a href="https://metaguise.com/all-projects">All Projects<
         
        },
   ];
+
 
 
 
