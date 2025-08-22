@@ -1848,6 +1848,13 @@ export const SingleProductDetail = [
         "assets/Allproducts/MetaParametric/metablox/metablox1.webp",
         "assets/Allproducts/MetaParametric/metablox/metablox2.webp",
         "assets/Allproducts/MetaParametric/metablox/cover/metablox.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj2.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj3.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj4.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj5.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj13.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj10.webp",
+        "assets/Allprojects/commercial/RJJewellers/metablox/rj12.webp",
       ],
     },
     {
