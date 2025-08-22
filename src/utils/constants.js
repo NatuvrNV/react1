@@ -1330,7 +1330,7 @@ const SingleprojectDetail = [
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
-      Projectname:"CASKEY",
+      Projectname:"Kinetic Grid",
       metatittles:"",
       metadescription:"",
       images: [
@@ -1368,7 +1368,7 @@ const SingleprojectDetail = [
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
-      Projectname:"3939A",
+      Projectname:"Scaled Symphony",
       metatittles:"",
       metadescription:"",
       images: [
@@ -1401,7 +1401,7 @@ const SingleprojectDetail = [
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
-      Projectname:"88Arjun",
+      Projectname:"Parametric Crown",
       metatittles:"",
       metadescription:"",
       images: [
@@ -1428,7 +1428,7 @@ const SingleprojectDetail = [
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
-      Projectname:"W12",
+      Projectname:"The Undercurrent",
       metatittles:"",
       metadescription:"",
       images: [
