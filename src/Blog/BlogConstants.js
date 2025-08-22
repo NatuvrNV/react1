@@ -736,4 +736,88 @@ If you’re ready to build something bold, precise, and deeply expressive, our p
      
         
        },
+
+      {
+         title: "Your Facade is Your Brand: How Businesses Use Facades to Tell Their Story",
+        metaTitle: "Metaguise Blogs | How Parametric Facade Design Becomes Reality",
+         date: "20-08-25",
+         category: "Facade Innovations",
+         metaDescription: "Learn how Metaguise turns parametric facade design into metal facade cladding using custom metal panels.",
+         Fulldescription: ` 
+      In architecture, a facade is more than a face - it’s a voice. A building's elevation speaks volumes
+about the brand it represents. At Metaguise, we don’t just clad buildings, we craft identities.
+Through metal, pattern, and parametric design, we help brands build a lasting first impression.
+Here’s how four very different spaces use facades to tell powerful stories:
+
+1. RJ Jewellers – Gold That Glows with Meaning
+In the heart of Jaipur, the <strong>RJ Jewellers</strong> flagship tells a story of heritage, luxury, and
+transformation. Using METABLOX™, a breakthrough in parametric design, the facade blooms
+into a lotus as you move across it - an homage to purity and renewal in Indian culture.
+Each block reflects light differently, making the building feel alive—much like the jewellery it
+houses.
+
+📍 Project page:  <a href="https://metaguise.com/all-projects/rjjewellers">RJ Jewellers</a>
+
+2. Zenith – Duality in Motion
+The <strong>Zenith commercial building</strong>  stands as a beacon of symmetry and movement. Composed
+entirely of <strong>MetaCoins</strong> , both sides of the building mirror each other perfectly. The cascading
+arrangement of the discs mimics natural patterns, like flowing grass or hair, capturing wind, light,
+and rhythm in a timeless loop.
+
+This kinetic texture reflects the brand’s duality: rooted yet dynamic.
+📍 Project page:  <a href="https://metaguise.com/all-projects/zenith"> Zenith</a>
+📌 Product used:  <a href="https://metaguise.com/all-products/metacoin"> MetaCoin</a>
+
+3. Prem Hospital – Care Etched in Metal
+Few facades carry emotion as intimately as <strong>Prem Hospital</strong> . Its centerpiece is a heartwarming
+image - a baby’s hand held inside an adult palm, set within a cross. This custom perforation
+expresses protection, healing, and hope all at once.
+Crafted using <strong>MetaCassette</strong> , the facade acts as a soft yet striking symbol of the hospital’s
+mission to nurture life.
+
+📍 Project page:  <a href="https://metaguise.com/all-projects/premhospital">Prem Hospital</a>
+📌 Product used:  <a href="https://metaguise.com/all-products/metacassette"> MetaCassette</a>
+
+4. Wave City – Suspended Identity in the Sky
+More than just a roof, <strong>the Wave City pavilion</strong>  is a monumental expression of fluidity and
+ambition. The massive overhead canopy is built from shimmering <strong>MetaSequins</strong> , choreographed
+into a swirling pattern that shifts with sunlight.
+This parametric elevation floats like a halo, turning the everyday into something sculptural,
+iconic, and futuristic.
+
+📍 Project page:  <a href="https://metaguise.com/all-projects/wvcity">Wave City</a>
+📌Product used:  <a href="https://metaguise.com/all-products/metasequin">MetaSequin</a>
+
+Architecture That Speaks for You
+
+Whether it’s a retail storefront or an urban landmark, your facade is a living signature. With
+parametric design and material precision, Metaguise transforms blank walls into brand
+narratives - crafted in metal, grounded in identity.
+
+🧠 Want to explore how your facade can tell your story?
+Browse our design systems:  <a href=" https://metaguise.com/metaparametric ">MetaParametric</a>
+Explore all projects: <a href="https://metaguise.com/all-projects">All Projects</a>
+
+  `,
+         description: "In architecture, a facade is more than a face - it’s a voice. A building's elevation speaks volumesabout the brand it represents. At Metaguise, we don’t just clad buildings, we craft identities. Through metal, pattern, and parametric design, we help brands build a lasting first impression.
+",
+         images: [
+             "assets/Blogs/story/1a.webp",
+              "assets/Blogs/story/1b.webp",
+              "assets/Blogs/story/2a.webp",
+              "assets/Blogs/story/2b.webp",
+              "assets/Blogs/story/3a.webp",
+              "assets/Blogs/story/3b.webp",
+              "assets/Blogs/story/4a.webp",
+              "assets/Blogs/story/4b.webp",
+          
+            
+             
+         ],
+
+         folderName: "story", 
+     
+        
+       },
   ];
+
