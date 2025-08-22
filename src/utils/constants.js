@@ -1757,7 +1757,6 @@ export const SingleProductDetail = [
         "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas8.webp",
         "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas9.webp",
         "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas10.webp",
-           "assets/Allprojects/residential/vivek/metacassettegrooved/vivek9.webp",
                "assets/Allprojects/residential/anj/metacassette/anj2.webp",
         "assets/Allprojects/residential/anj/metacassette/anj15.webp",
            "assets/Allprojects/residential/3DLF1/metacassette-perforated/3dlf1_5.webp",
@@ -2193,8 +2192,6 @@ export const SingleProductDetail = [
         "assets/Allprojects/residential/TheElevato/solid-panel/neeraj5.webp",
         "assets/Allprojects/residential/TheElevato/solid-panel/neeraj7.webp",
         "assets/Allprojects/residential/TheElevato/solid-panel/neeraj10.webp",
-          "assets/Allprojects/residential/dev622/solidpanel/dev5.webp",
-        "assets/Allprojects/residential/dev622/solidpanel/dev9.webp",
           
       ],
     },
