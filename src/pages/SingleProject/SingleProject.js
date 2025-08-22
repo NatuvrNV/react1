@@ -326,21 +326,23 @@ const TimeDropdown = ({ showTimeDropdown, setShowTimeDropdown, setDarkMode }) =>
 const SocialIcons = ({ youtubeLink, instagramLink }) => {
   return (
     <div className="social-icons">
-      <button
-        className="icon-button"
-        onClick={() => instagramLink && window.open(instagramLink, "_blank")}
-        disabled={!instagramLink}
-      >
-        <FaInstagram />
-      </button>
-
-      <button
-        className="icon-button"
-        onClick={() => youtubeLink && window.open(youtubeLink, "_blank")}
-        disabled={!youtubeLink}
-      >
-        <FaYoutube />
-      </button>
+      {instagramLink && (
+        <button
+          className="icon-button"
+          onClick={() => window.open(instagramLink, "_blank")}
+        >
+          <FaInstagram />
+        </button>
+      )}
+      
+      {youtubeLink && (
+        <button
+          className="icon-button"
+          onClick={() => window.open(youtubeLink, "_blank")}
+        >
+          <FaYoutube />
+        </button>
+      )}
     </div>
   );
 };
@@ -423,20 +425,26 @@ const Sidebar = ({
           </div>
         </div>
       </div>
-      <div className="button-row" style={{ padding: "5px" }}>
-        <Button
-          icon={<FaYoutube />}
-          text="See on YouTube"
-          onClick={() => window.open(youtubeLink, "_blank")}
-          active={activeButton === 0}
-        />
-        <Button
-          icon={<FaInstagram />}
-          text="See on Instagram"
-          onClick={() => window.open(instagramLink, "_blank")}
-          active={activeButton === 1}
-        />
-      </div>
+      {(youtubeLink || instagramLink) && (
+        <div className="button-row" style={{ padding: "5px" }}>
+          {youtubeLink && (
+            <Button
+              icon={<FaYoutube />}
+              text="See on YouTube"
+              onClick={() => window.open(youtubeLink, "_blank")}
+              active={activeButton === 0}
+            />
+          )}
+          {instagramLink && (
+            <Button
+              icon={<FaInstagram />}
+              text="See on Instagram"
+              onClick={() => window.open(instagramLink, "_blank")}
+              active={activeButton === 1}
+            />
+          )}
+        </div>
+      )}
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
         <button id="build-button" className="hover-button">
           <span>Build Your Dream</span>
