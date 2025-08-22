@@ -815,9 +815,10 @@ Explore all projects: <a href="https://metaguise.com/all-projects">All Projects<
              
          ],
 
-         folderName: "story", 
+         folderName: "Story", 
      
         
        },
   ];
+
 
