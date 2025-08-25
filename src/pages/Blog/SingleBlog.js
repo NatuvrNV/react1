@@ -51,32 +51,52 @@ const SingleBlogPage = () => {
   const metaTitle = blog.metaTitle || blog.title;
   const metaDescription = blog.metaDescription || blog.description;
 
+  // Function to render images in rows of 2
+  const renderImageRows = () => {
+    const rows = [];
+    for (let i = 0; i < blog.images.length; i += 2) {
+      const imagePair = blog.images.slice(i, i + 2);
+      rows.push(
+        <Row key={i} className="mb-4">
+          {imagePair.map((image, index) => (
+            <Col key={i + index} xs={6}>
+              <img
+                src={`/assets/Blogs/${blog.folderName}/${image.split('/').pop()}`}
+                alt={`${blog.title} ${i + index + 1}`}
+                className="object-cover rounded-lg w-100"
+                loading="lazy"
+                style={{objectFit: 'cover', height: '200px'}}
+              />
+            </Col>
+          ))}
+        </Row>
+      );
+    }
+    return rows;
+  };
+
   return (
     <div className="singleblog-container">
       {/* Meta Tags */}
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={`https://metaguise.com/blog/${title}`} />
       </Helmet>
 
       <Container className='mt-4'>
         {/* Mobile Layout */}
         <div className="d-block d-xl-none">
           <BlogButton navigate={navigate} />
-          <div className="mobile-image-gallery mt-3">
-            <div className="d-flex">
-              <img src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg w-50 first-image" />
-              <div className="d-flex flex-column w-50 ms-2">
-                <img src={`/assets/Blogs/${blog.folderName}/${blog.images[1]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg mb-2 second-image" />
-                <img src={`/assets/Blogs/${blog.folderName}/${blog.images[2]?.split('/').pop()}`} alt={blog.title} className="object-cover rounded-lg second-image" />
-              </div>
-            </div>
-          </div>
           <h2 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h2>
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>
+          
+          {/* Mobile image gallery - show all images in rows of 2 */}
+          <div className="mobile-image-gallery mt-3">
+            {renderImageRows()}
+          </div>
+          
           <p className="text-sm blog-fulldescription mt-4" dangerouslySetInnerHTML={{ __html: blog.Fulldescription }}></p>
         </div>
 
@@ -91,36 +111,14 @@ const SingleBlogPage = () => {
           <Row className='py-xl-3'>
             <Col xl={7}>
               <h2 id='head-text' className="text-4xl mt-xl-4 blog-title text-start">{blog.title}</h2>
-              <p className="text-xs text-gray-400 date-text text-start">{blog.date}</p>
+              <p className="text-xs text-gray-400 date-text text-start">{blog.date} | {blog.category}</p>
               <p className="text-sm blog-fulldescription" dangerouslySetInnerHTML={{ __html: blog.Fulldescription }}></p>
             </Col>
 
             <Col xl={5}>
               <div className="image-gallery mt-xl-4">
-                <img
-                  src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`}
-                  alt={blog.title}
-                  className="object-cover rounded-lg w-100 mb-4"
-                  loading="lazy"
-                />
-                <div className="grid grid-cols-2 gap-4 single-grid">
-                  {blog.images[1] && (
-                    <img
-                      src={`/assets/Blogs/${blog.folderName}/${blog.images[1]?.split('/').pop()}`}
-                      alt={blog.title}
-                      className="object-cover rounded-lg w-100"
-                      loading="lazy"
-                    />
-                  )}
-                  {blog.images[2] && (
-                    <img
-                      src={`/assets/Blogs/${blog.folderName}/${blog.images[2]?.split('/').pop()}`}
-                      alt={blog.title}
-                      className="object-cover rounded-lg w-100"
-                      loading="lazy"
-                    />
-                  )}
-                </div>
+                {/* Show all images in rows of 2 */}
+                {renderImageRows()}
               </div>
             </Col>
           </Row>
