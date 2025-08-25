@@ -65,7 +65,7 @@ const SingleBlogPage = () => {
                 alt={`${blog.title} ${i + index + 1}`}
                 className="object-cover rounded-lg w-100"
                 loading="lazy"
-                style={{objectFit: 'cover', height: '200px'}}
+                style={{objectFit: 'cover', height: '300px'}}
               />
             </Col>
           ))}
@@ -166,3 +166,4 @@ const SingleBlogPage = () => {
 };
 
 export default SingleBlogPage;
+
