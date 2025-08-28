@@ -42,6 +42,14 @@ function Home() {
 
 
         <title>Metaguise | Leading experts in Metal Facades & Parametric Architecture </title>
+        <!-- Open Graph Meta -->
+    <meta property="og:image" content="https://metaguise.com/favicon.ico" />
+   
+<!--     <link rel="canonical" href="https://metaguise.com/" /> -->
+    
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://metaguise.com/favicon.ico" />
          <link rel="canonical" href="https://metaguise.com/" /> 
         <meta name="description" content="Specializing in bespoke metal cladding solutions & parametric architecture, redefining modern facade design." />
         <meta property="og:title" content="Metaguise | Leading experts in Metal Facades & Parametric Architecture " />
