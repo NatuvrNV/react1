@@ -601,6 +601,20 @@
     <changefreq>monthly</changefreq>
   </url>
 
+              <url>
+    <loc>https://metaguise.com/blog/your-facade-is-your-brand:-how-businesses-use-facades-to-tell-their-story</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+              <url>
+    <loc>https://metaguise.com/blog/from-code-to-construction:-how-parametric-facades-are-built</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 
 </urlset>
 
