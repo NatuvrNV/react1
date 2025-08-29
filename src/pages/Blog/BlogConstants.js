@@ -818,7 +818,62 @@ Explore all projects: <a href="https://metaguise.com/all-projects">All Projects<
      
         
        },
+
+     {
+         title: "What Makes MetaFlutes the Most Elegant Choice for Vertical Design",
+        metaTitle: "Metaguise Blogs | How Parametric Facade Design Becomes Reality",
+         date: "27-08-25",
+         category: "Facade Innovations",
+         metaDescription: "Learn how Metaguise turns parametric facade design into metal facade cladding using custom metal panels.",
+         Fulldescription: ` 
+     When it comes to vertical elevation, it’s the details that define the design. MetaFlutes by Metaguise offer just that - a clean, structured look that adds clarity to any facade, whether it's a home, a commercial space, or a public building.
+     Their vertical lines don’t just elevate surfaces visually - they bring order, rhythm, and a strong design language that suits everything from minimal architecture to bolder parametric styles.
+     
+<b>More Than Just a Metal Panel</b>
+
+Crafted from high-quality aluminium alloy, MetaFlutes are engineered for strength, longevity, and clean expression. The profiles are lightweight yet sturdy, making them ideal for a range of applications.
+These fluted systems also integrate beautifully with other architectural elements like aluminium fins facade, sheet metal louvers, and even custom aluminium c sections, depending on the project’s detailing.
+
+<b> Designed for Indian Conditions </b>
+
+MetaFlutes are built to handle tough Indian weather. Whether it's humidity, pollution, heat, or rain - their corrosion resistance, fire-safe construction, and zero maintenance finish make them a practical long-term choice.
+All our metal finishes, including flutes, are VOC-free and certified for exterior use. That means no fading, no seepage issues, and no worries.
+
+<b>Seamless With Parametric Facades</b>
+
+MetaFlutes are also a natural fit for parametric facade design. Because they’re precise and modular, they can be repeated, rotated, or combined with curved or data-driven forms - offering designers flexibility without compromising alignment or installation ease.
+These profiles have been used to bring consistency across changing forms - tying together different elevations through a unified metal language.
+
+<b>Locally Made, Globally Designed</b>
+
+Every MetaFlute is designed and fabricated in-house at Metaguise. From the drawing board to the final install, we control every part of the process - ensuring the detailing is crisp, the lines are clean, and the product performs exactly as promised.
+
+<b>Final Word: Vertical, Defined</b>
+
+MetaFlutes are simple to look at but powerful in what they do. They help shape your facade with elegance, repetition, and timeless verticality.
+If you're designing with clarity, rhythm, and durability in mind - MetaFlutes are the way forward.
+
+<a href="https://metaguise.com/all-products/metaflute">Explore MetaFlute here</a>
+
+  `,
+         description: "When it comes to vertical elevation, it’s the details that define the design. MetaFlutes by Metaguise offer just that - a clean, structured look that adds clarity to any facade, whether it's a home, a commercial space, or a public building.",
+         images: [
+             "assets/Blogs/metaflute blog/flute1.jpg",
+             "assets/Blogs/metaflute blog/flute2.jpg",
+             "assets/Blogs/metaflute blog/flute3.jpg",
+             "assets/Blogs/metaflute blog/flute4.jpg",
+             "assets/Blogs/metaflute blog/flute5.jpg",
+          
+            
+             
+         ],
+
+         folderName: "metaflute blog", 
+     
+        
+       },
   ];
+
 
 
 
