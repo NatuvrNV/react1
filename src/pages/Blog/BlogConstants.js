@@ -927,11 +927,11 @@ Now that you know the difference, which one does your facade need?
   `,
          description: "Metal cladding isn’t just about finishing a building - it’s about how the surface behaves, how it reflects light, and how it defines form. At Metaguise, two popular facade options offer very different design possibilities: MetaCoin and MetaCassette Perforated.",
          images: [
-             "assets/Blogs/coin v. perforated/coin1.jpg",
-             "assets/Blogs/coin v. perforated/coin2.jpg",
-             "assets/Blogs/coin v. perforated/coin3.jpg",
-             "assets/Blogs/coin v. perforated/coin4.jpg",
-             "assets/Blogs/coin v. perforated/coin5.jpg",
+             "assets/Blogs/coin perforated/coin1.jpg",
+             "assets/Blogs/coin perforated/coin2.jpg",
+             "assets/Blogs/coin perforated/coin3.jpg",
+             "assets/Blogs/coin perforated/coin4.jpg",
+             "assets/Blogs/coin perforated/coin5.jpg",
             
              
          ],
@@ -942,6 +942,7 @@ Now that you know the difference, which one does your facade need?
        },
     
   ];
+
 
 
 
