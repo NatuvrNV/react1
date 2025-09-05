@@ -29,7 +29,7 @@ const SingleBlogPage = () => {
   const BlogButton = ({ navigate }) => {
     return (
       <button onClick={() => navigate('/blogs')} className="blog-button">
-        <span className="arrow">&larr; </span>
+        <span className="arrow"> &larr; Back </span>
       </button>
     );
   };
@@ -166,3 +166,4 @@ const SingleBlogPage = () => {
 };
 
 export default SingleBlogPage;
+
