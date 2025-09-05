@@ -882,7 +882,7 @@ If you're designing with clarity, rhythm, and durability in mind - MetaFlutes ar
          category: "Facade Innovations",
          metaDescription: "Compare MetaCoin parametric facade design with MetaCassette perforated panels. Discover which metal cladding system suits your facade project best.",
          Fulldescription: ` 
-  Metal cladding isn’t just about finishing a building - it’s about how the surface behaves, how it reflects light, and how it defines form. At Metaguise, two popular facade options offer very different design possibilities: <b>MetaCoin</b> and <b>MetaCassette Perforated</b>.
+  Metal cladding isn’t just about finishing a building - it’s about how the surface behaves, how it reflects light, and how it defines form. At Metaguise, two popular facade options offer very different design possibilities: <strong>MetaCoin</strong> and <strong>MetaCassette Perforated</strong>.
 If you're deciding between the two, it helps to understand not just how they look - but how they think.
 
 <strong>MetaCoin: Where Form is Algorithmic</strong>
@@ -942,6 +942,7 @@ Now that you know the difference, which one does your facade need?
        },
     
   ];
+
 
 
 
