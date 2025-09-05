@@ -26,13 +26,14 @@ const SingleBlogPage = () => {
     navigate(`/blog/${urlFriendlyTitle}`);
   };
 
-  const BlogButton = ({ navigate }) => {
-    return (
-      <button onClick={() => navigate(-1)} className="blog-button">
-        <span className="arrow">&larr; Back</span>
-      </button>
-    );
-  };
+const BlogButton = ({ navigate }) => {
+  return (
+    <button onClick={() => navigate('/blogs')} className="blog-button">
+      <span className="arrow">&larr; </span>
+      Back 
+    </button>
+  );
+};
 
   if (!blog) {
     return null;
@@ -166,4 +167,5 @@ const SingleBlogPage = () => {
 };
 
 export default SingleBlogPage;
+
 
