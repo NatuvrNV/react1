@@ -878,7 +878,7 @@ If you're designing with clarity, rhythm, and durability in mind - MetaFlutes ar
      {
          title: "Coin Facade vs. Perforated Panels: Which Metal Cladding System Is Right for You?",
         metaTitle: "Metaguise Blogs | Coin Facade vs Perforated Panels | Metaguise Metal Cladding",
-         date: "05-08-25",
+         date: "05-09-25",
          category: "Facade Innovations",
          metaDescription: "Compare MetaCoin parametric facade design with MetaCassette perforated panels. Discover which metal cladding system suits your facade project best.",
          Fulldescription: ` 
@@ -942,6 +942,7 @@ Now that you know the difference, which one does your facade need?
        },
     
   ];
+
 
 
 
