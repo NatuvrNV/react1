@@ -61,6 +61,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="icon"
+                  alt="Connect with Metaguise on Facebook - Showcasing iconic facades with global presence and design leadership."
               >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
@@ -69,6 +70,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="icon"
+                   alt="Watch Metaguise on YouTube - Discover facade innovation from India’s most trusted name in metal architecture."
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
@@ -77,6 +79,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="icon"
+                   alt="Follow Metaguise on Instagram - Trusted by architects across India and beyond, with 1800+ projects delivered PAN India."
               >
                 <FontAwesomeIcon icon={faYoutube} />
               </a>
@@ -97,7 +100,7 @@ function Header() {
 
         <div className="header-center">
           <a href="/">
-            <img src={logo} alt="Metaguise Logo" className="logo" />
+            <img src={logo} alt="Stylized Metaguise logo featuring interlocking geometric blocks in grayscale. Symbol of India’s premier metal façade design house with 1800+ projects, PAN India presence, and global reach; trusted by architects nationwide." className="logo" />
           </a>
         </div>
 
