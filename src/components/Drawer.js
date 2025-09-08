@@ -69,7 +69,7 @@ function Drawer({ isOpen, toggleDrawer }) {
           <div className="text-justify px-2 ">
             <img
               src={logo1}
-              alt="Metaguise Logo"
+              alt="Stylized Metaguise logo featuring interlocking geometric blocks in grayscale. Symbol of India’s premier metal façade design house with 1800+ projects, PAN India presence, and global reach; trusted by architects nationwide."
               style={{ maxWidth: "200px", paddingLeft: "5x" }}
             />
           </div>
