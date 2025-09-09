@@ -72,6 +72,7 @@ export const VisionAndMission = () => {
                 icon={vision.icon}
                 description1={vision.description1}
                 description2={vision.description2}
+                alt={vision.alt}   // ✅ pass alt
               />
             </div>
           ))}
@@ -100,6 +101,7 @@ export const VisionAndMission = () => {
             icon={vision.icon}
             description1={vision.description1}
             description2={vision.description2}
+            alt={vision.alt}   // ✅ pass alt
           />
         ))}
       </div>
