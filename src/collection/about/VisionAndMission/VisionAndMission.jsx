@@ -107,7 +107,7 @@ export const VisionAndMission = () => {
   );
 };
 
-const VisionAndMissionCard = ({ title, icon, description1, description2 }) => {
+const VisionAndMissionCard = ({ title, icon, description1, description2, alt }) => {
   return (
     <div className="vision-mission-card">
       <img src={icon} alt={alt} className="card-icon" />
