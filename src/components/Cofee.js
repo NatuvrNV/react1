@@ -26,7 +26,7 @@ const Cofee = () => {
         <div className="image-section">
           <img
             src={bookCover}
-            alt="METAGUISE Odyssey Book Cover"
+            alt="Cover of Metaguise Odyssey book featuring a sculpted metallic wing motif in bronze tones."
             loading="lazy" // Native lazy loading
           />
         </div>
