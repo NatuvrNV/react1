@@ -55,7 +55,7 @@ const SingleProject = () => {
 
   const categories = Array.from(
     new Set(
-      selectedProject.images
+      selectedProject.s
         .map((item) =>
           item.split("/")[4] !== "night"
             ? item.split("/")[4].toLowerCase()
@@ -82,10 +82,10 @@ const SingleProject = () => {
   const isLastRow = (index) => {
     return (
       index >=
-      selectedProject.images.length -
-        (selectedProject.images.length % 3 === 0
+      selectedProject.s.length -
+        (selectedProject.s.length % 3 === 0
           ? 3
-          : selectedProject.images.length % 3)
+          : selectedProject.s.length % 3)
     );
   };
 
@@ -95,23 +95,23 @@ const SingleProject = () => {
   };
 
   useEffect(() => {
-    const nightImages = selectedProject.images.filter(
+    const nights = selectedProject.s.filter(
       (item) => item.split("/")[4] === "night"
     );
   
-    if (darkMode && nightImages.length === 0) {
+    if (darkMode && nights.length === 0) {
       setContentToRender([]);
     } else {
-      setContentToRender(darkMode ? nightImages : selectedProject.images);
+      setContentToRender(darkMode ? nights : selectedProject.s);
     }
-  }, [darkMode, selectedProject.images]);
+  }, [darkMode, selectedProject.s]);
   
-  const filterImagesByCategory = (category) => {
+  const filtersByCategory = (category) => {
     if (darkMode && category !== "") return; // Prevent selecting other categories in night mode
     setSelectedCategory(category);
   };
 
-  const filteredImages = selectedCategory
+  const filtereds = selectedCategory
     ? contentToRender.filter((img) => img.includes(selectedCategory))
     : contentToRender;
 
@@ -141,7 +141,7 @@ const SingleProject = () => {
               selectedProject={selectedProject}
               showElementsDropdown={showElementsDropdown}
               setShowElementsDropdown={setShowElementsDropdown}
-              filterImagesByCategory={filterImagesByCategory}
+              filtersByCategory={filtersByCategory}
               categories={categories}
               showTimeDropdown={showTimeDropdown}
               setShowTimeDropdown={setShowTimeDropdown}
@@ -152,12 +152,12 @@ const SingleProject = () => {
           )}
         </div>
         <div className="col-9 xs-12">
-          <ImageGrid
-            filteredImages={filteredImages}
-            handleImageClick={handleImageClick}
+          <Grid
+            filtereds={filtereds}
+            handleClick={handleClick}
             isLastRow={isLastRow}
             clickedIndex={clickedIndex}
-            ref={imageGridRef}
+            ref={GridRef}
             videoLink={selectedProject.videoLink}
             darkMode={darkMode}
             selectedProject={projectName}
@@ -169,7 +169,7 @@ const SingleProject = () => {
           selectedProject={selectedProject}
           categories={categories}
           selectedCategory={selectedCategory}
-          filterImagesByCategory={filterImagesByCategory}
+          filtersByCategory={filtersByCategory}
           darkMode={darkMode}
           toggleTheme={toggleTheme}
           activeButton={activeButton}
@@ -196,7 +196,7 @@ const MobileControls = ({
   selectedProject,
   showElementsDropdown,
   setShowElementsDropdown,
-  filterImagesByCategory,
+  filtersByCategory,
   categories,
   showTimeDropdown,
   setShowTimeDropdown,
@@ -211,7 +211,7 @@ const MobileControls = ({
         <ElementsDropdown
           showElementsDropdown={showElementsDropdown}
           setShowElementsDropdown={setShowElementsDropdown}
-          filterImagesByCategory={filterImagesByCategory}
+          filtersByCategory={filtersByCategory}
           categories={categories}
           selectedCategory={selectedCategory}
           darkMode={darkMode}
@@ -504,7 +504,7 @@ const ImageGrid = ({
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
               clickedIndex={clickedIndex}
-              alt={selectedProject.alt}   // 👈 same here
+              alt={alt || `${selectedProject} cover image`}   // ✅ pass alt
             />
           )}
 
@@ -568,7 +568,7 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
   );
 };
 
-const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
+const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, alt }) => {
   return (
     <div
       className={`grid-item ${isLastRow(index) ? "last-row" : ""} ${
@@ -579,7 +579,7 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
       <img
         src={`${process.env.PUBLIC_URL}/${image}`}
         className="grid-image"
-       alt={alt || `Project image ${index + 1}`} 
+      alt={alt || `${selectedProject} cover image`}   // ✅ pass alt
         loading="lazy" 
       />
     </div>
