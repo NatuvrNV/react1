@@ -58,14 +58,28 @@ const Metaland = () => {
                 of Architectural Innovation
               </p>
             </div>
+
+            {/* Feature Icons */}
             <div className="row mt-xl-4 mb-4 mb-xl-0">
               {[
-                { img: VR, text: "Experiential Technology" },
-                { img: Maze, text: "Interactivity & Experience" },
-                { img: Building, text: "Hands-on Project Consultation" }
-              ].map(({ img, text }, index) => (
+                { 
+                  img: VR, 
+                  text: "Experiential Technology", 
+                  alt: "VR headset icon representing Metaguise’s use of experiential design technologies." 
+                },
+                { 
+                  img: Maze, 
+                  text: "Interactivity & Experience", 
+                  alt: "Maze-like icon symbolizing immersive design interactivity and client engagement." 
+                },
+                { 
+                  img: Building, 
+                  text: "Hands-on Project Consultation", 
+                  alt: "Technical drawing icon representing personalized, on-site project consultation." 
+                }
+              ].map(({ img, text, alt }, index) => (
                 <div key={index} className="col-4 d-flex align-items-center meta-box">
-                  <img src={img} alt={text} className="w-full meta-icon" loading="lazy" />
+                  <img src={img} alt={alt} className="w-full meta-icon" loading="lazy" />
                   <p className="text-sm mt-2 img-text">{text}</p>
                 </div>
               ))}
@@ -82,21 +96,28 @@ const Metaland = () => {
           </div>
         </div>
 
-        {/* Video Section (Auto-load YouTube Embed) */}
-        <div className="col-12 mt-xl-5 mt-4" style={{ transform: `scale(${scale})`, transition: `transform ${transitionDuration} ease` }}>
+        {/* Video Section */}
+        <div 
+          className="col-12 mt-xl-5 mt-4" 
+          style={{ transform: `scale(${scale})`, transition: `transform ${transitionDuration} ease` }}
+        >
           <div className="video-container">
             <iframe
               width="100%"
               height="500"
               src="https://www.youtube.com/embed/mwmFELxs14E?rel=0&modestbranding=1&autohide=1&showinfo=0"
-              title="YouTube video player"
+              title="Metaland immersive architecture experience video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
             <div className="button-container">
-              <a href="https://maps.app.goo.gl/Nntum7Fj4LQmpPXa7" target="_blank" rel="noopener noreferrer">
+              <a 
+                href="https://maps.app.goo.gl/Nntum7Fj4LQmpPXa7" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
                 <button id="project-button" className="hover-button">
                   <span>Visit Now</span>
                 </button>
