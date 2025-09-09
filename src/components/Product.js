@@ -16,16 +16,16 @@ const Product = () => {
   const navigate = useNavigate();
   const sliderRef = useRef(null);
 
-  // Memoized product list to avoid re-creating it on re-renders
-  const products = useMemo(
-    () => [
-      { id: 1, name: "MetaCoin", image: Product1, slug: "metacoin" },
-      { id: 2, name: "MetaSequin", image: Product2, slug: "metasequin" },
-      { id: 3, name: "Cascading Keys", image: Product3, slug: "cascadingkeys" },
-      { id: 4, name: "MetaShingles", image: Product4, slug: "metashingle" }
-    ],
-    []
-  );
+const products = useMemo(
+  () => [
+    { id: 1, name: "MetaCoin", image: Product1, slug: "metacoin", alt: "MetaCoin panels with round golden discs forming a coin matrix that creates a rippling surface illusion." },
+    { id: 2, name: "MetaSequin", image: Product2, slug: "metasequin", alt: "Custom-shaped golden MetaSequins catching fiery red light, forming a shimmering, parametric facade." },
+    { id: 3, name: "Cascading Keys", image: Product3, slug: "cascadingkeys", alt: "Reflective Cascading Keys arranged vertically on the facade of a building creating a kinetic facade." },
+    { id: 4, name: "MetaShingles", image: Product4, slug: "metashingle", alt: "Curved balcony facade clad in monochromatic grey MetaShingles with a fish scale-like texture." }
+  ],
+  []
+);
+
 
   // Mouse Enter animation
   const handleMouseEnter = useCallback((e) => {
@@ -71,7 +71,7 @@ const Product = () => {
                     onMouseLeave={handleMouseLeave}
                     className="product-card tw-cursor-pointer"
                   >
-                    <img src={product.image} alt={product.name} className="product-image" />
+                    <img src={product.image} alt={product.alt} className="product-image" />
                     <p className="font tw-flex tw-justify-center tw-items-center">
                       <span className="font-span">{product.name}</span>
                       <img src={Arrow} alt="arrow" className="arrow-icon" />
@@ -89,7 +89,7 @@ const Product = () => {
             {products.map((product) => (
               <Link key={product.id} to={`/all-products/${product.slug}`} className="slider-item">
                 <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="product-card tw-cursor-pointer">
-                  <img src={product.image} alt={product.name} className="product-image" />
+                 <img src={product.image} alt={product.alt} className="product-image" />
                   <p className="font tw-flex tw-justify-center tw-items-center">
                     <span className="font-span">{product.name}</span>
                     <img src={Arrow} alt="arrow" className="arrow-icon" />
