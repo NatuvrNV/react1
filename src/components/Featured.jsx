@@ -20,16 +20,16 @@ import Featured8 from "../assets/Featured/f8.webp";
 
 const Features = () => {
   const navigate = useNavigate();
-  const featuredImages = [
-    { image: Featured1, name: "ardete" },
-    { image: Featured2, name: "tanishq" },
-    { image: Featured3, name: "yashika" },
-    { image: Featured4, name: "metaland" },
-    { image: Featured5, name: "a13-43" },
-    { image: Featured6, name: "gowri" },
-    { image: Featured7, name: "deepak" },
-    { image: Featured8, name: "c76" },
-  ];
+const featuredImages = [
+  { image: Featured1, name: "ardete", alt: "Facade of Studio Ardete HQ featuring a parametric gold-toned Metasequin metal cladding system with fluid organic curves wrapping around large glass openings, illuminated at twilight." },
+  { image: Featured2, name: "tanishq", alt: "Tanishq retail facade clad in textured copper-toned MetaCoin wooden MetaLouvers framed in a MetaCassette border, and illuminated central signage, set against a clear blue sky." },
+  { image: Featured3, name: "yashika", alt: "Commercial building wrapped in a sweeping beige-toned, sand-dune inspired MetaCoin metal facade system, with a cobbled driveway and landscaped greenery." },
+  { image: Featured4, name: "metaland", alt: "Entrance of Metaland covered in MetaSequin metal cladding, dramatically backlit with green lighting and highlighted signage at the doorway." },
+  { image: Featured5, name: "a13-43", alt: "Luxury modern residence featuring cuboidal metal and glass volumes with layered terraces, ambient lighting, and planted balconies. The products used in this elevation include MetaLouvers, MetaPlanks and 3D Metapyramids." },
+  { image: Featured6, name: "gowri", alt: "Close-up of a metal facade panel featuring overlapping MetaSequin with embossed ‘Gowri Jewellery’ branding and crest, in a bronze finish." },
+  { image: Featured7, name: "deepak", alt: "Storefront elevation for Deepak Sweets clad in a dynamic gold MetaSequin metal pattern with illuminated signage, also featuring the 3D MetaPyramids and Perforated MetaCassette, paired with a sleek blue-glass side elevation at night." },
+  { image: Featured8, name: "c76", alt: "Modern multi-level residence with sharp geometries and warm perimeter lighting accents featuring MetaCassette Grooved Panels and MetaFlutes." },
+];
 
   useEffect(() => {
     // ✅ Prevent text selection when clicking swiper buttons
@@ -88,7 +88,7 @@ const Features = () => {
             <SwiperSlide key={index}>
               <div className="featured-image">
                 <Link to={`/all-projects/${project.name}`}>
-                  <img src={project.image} alt={`Project ${index + 1}`} />
+                  <img src={project.image} alt={project.alt} />
                   <div id="icon-overlay" className="icon-overlay">
                     <MdArrowOutward size={34} color="white" />
                   </div>
