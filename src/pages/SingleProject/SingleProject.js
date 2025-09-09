@@ -162,6 +162,7 @@ const SingleProject = () => {
             darkMode={darkMode}
             selectedProject={projectName}
             setDarkMode={setDarkMode}
+            alt={selectedProject.alt}   
           />
         </div>
         <Sidebar
@@ -464,6 +465,7 @@ const ImageGrid = ({
   darkMode,
   selectedProject,
   setDarkMode,
+  alt,
 }) => {
   const normalizeName = (name) => name.toLowerCase().replace(/[^a-z0-9]/gi, '');
 
@@ -502,6 +504,7 @@ const ImageGrid = ({
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
               clickedIndex={clickedIndex}
+              alt={selectedProject.alt}   // 👈 same here
             />
           )}
 
@@ -576,7 +579,7 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
       <img
         src={`${process.env.PUBLIC_URL}/${image}`}
         className="grid-image"
-        alt={`Project item ${index + 1}`}
+       alt={alt || `Project image ${index + 1}`} 
         loading="lazy" 
       />
     </div>
