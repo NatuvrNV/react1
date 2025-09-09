@@ -23,36 +23,43 @@ export const AtAGlanceSection = () => {
       id: 2,
       heading: "India’s Premier Metal Facade and Cladding Company",
       icon: AboutIcon,
+      alt: "Podium icon with the number 1, symbolizing Metaguise’s leadership in facade innovation.",
     },
     {
       id: 3,
       heading: "Over 1700 projects completed globally",
       icon: AboutIcon2,
+      alt: "Globe icon representing Metaguise’s international project footprint.",
     },
     {
       id: 4,
       heading: "Flagship Experience Center",
       icon: AboutIcon3,
+      alt: "Star icon symbolizing Metaguise’s flagship experience and innovation center.",
     },
     {
       id: 5,
       heading: "Leveraging innovative technologies like CGI, VR and AR",
       icon: AboutIcon4,
+      alt: "VR headset icon denoting immersive tech like CGI, VR, and AR in facade design.",
     },
     {
       id: 6,
       heading: "Wide range of metal materials and patterns",
       icon: AboutIcon5,
+      alt: "Facade icon with layered panels representing diverse materials and surface patterns.",
     },
     {
       id: 7,
       heading: "Revolutionary parametric engineering algorithms",
       icon: AboutIcon6,
+      alt: "Connected nodes icon illustrating advanced parametric design capabilities.",
     },
     {
       id: 8,
       heading: "All weather tested products with warranty",
       icon: AboutIcon7,
+      alt: "Target over cloud icon symbolizing durability through rigorous weather testing.",
     },
   ];
 
