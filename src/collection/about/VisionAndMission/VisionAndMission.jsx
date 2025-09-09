@@ -13,6 +13,7 @@ export const VisionAndMission = () => {
       id: 1,
       icon: VisionIcon,
       title: "Vision",
+       alt: "Target icon symbolizing Metaguise’s design vision, focus, and aspirational goals.",   // ✅ Added descriptive alt
       description1: ` Inspired by Shri Deepak Raheja’s vision(DRV) and pioneering spirit, our vision is to embrace the limitless potential of design, innovation and technology. Guided by the belief that "Anything is Possible.", we uphold unwavering standards, boundless creativity, and incorruptible values.`,
       description2: `We strive to reshape the architectural landscape, creating a legacy where resilience meets artistry, and ambition transforms into timeless excellence.`,
     },
@@ -20,6 +21,7 @@ export const VisionAndMission = () => {
       id: 2,
       icon: MissionIcon,
       title: "Mission",
+       alt: "Compass icon representing Metaguise’s mission to guide architectural innovation. ",   // ✅ Added descriptive alt
       description1: `At Metaguise, our mission is to transform architecture with innovation, precision, and craftsmanship. We challenge conventions to create visionary façades that endure, inspire, and redefine urban landscapes.`,
       description2: `With a steadfast commitment to sustainability and customization, we empower architects, designers, and developers to turn bold ideas into iconic landmarks that stand the test of time.
  `,
