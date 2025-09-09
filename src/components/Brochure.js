@@ -9,17 +9,15 @@ import Metafunction from "../assets/Brochures/functionopen.jpg";
 import Metaparametric from "../assets/Brochures/parametricopen.jpg";
 import Metasurface from "../assets/Brochures/patinaopen.jpg";
 
-
-
 const Brochure = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const navigate = useNavigate();
 
   const gallery = [
-    { src: Metaform, name: "MetaForm", path: "/metaform" },
-    { src: Metafunction, name: "MetaFunction", path: "/metafunction" },
-    { src: Metaparametric, name: "MetaParametric", path: "/metaparametric" },
-    { src: Metasurface, name: "MetaSurface", path: "/metasurface" },
+    { src: Metaform, name: "MetaForm", path: "/metaform", alt: "Close-up of horizontal MetaLouvers with a green houseplant peeking out and an underceiling with solid panels." },
+    { src: Metafunction, name: "MetaFunction", path: "/metafunction", alt: "Tall vertical MetaLouvers in a MetaFold Syetem on a residential facade providing shading and privacy." },
+    { src: Metaparametric, name: "MetaParametric", path: "/metaparametric", alt: "Sharp-edged corner view of the Tanishq facade clad in custom MetaCoin panels with the blue sky and a plan flying above." },
+    { src: Metasurface, name: "MetaSurface", path: "/metasurface", alt: "Circular MetaPatina panels with a hand-finished copper oxide texture in green and bronze tones." },
   ];
 
   return (
@@ -43,14 +41,19 @@ const Brochure = () => {
               style={{ cursor: "pointer" }}
             >
               <div className="image-brochure-container">
-                {/* Ensure the height and width stay fixed while loading */}
-                <LazyLoad 
-                  height={"100%"}  // Set height based on container
-                  offset={200} // Start loading slightly before visible
-                  debounce={500} // Reduce unnecessary re-renders
-                  placeholder={<div className="image-placeholder"></div>} // Placeholder for smooth transition
+                <LazyLoad
+                  height={"100%"}
+                  offset={200}
+                  debounce={500}
+                  placeholder={<div className="image-placeholder"></div>}
                 >
-                  <img src={item.src} alt={item.name} className="img-fluid" />
+                  {/* ✅ Alt tag added for all brochure images */}
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="img-fluid"
+                    loading="lazy"
+                  />
                 </LazyLoad>
                 <div className="brochure-overlay">
                   {item.name} <MdArrowOutward />
