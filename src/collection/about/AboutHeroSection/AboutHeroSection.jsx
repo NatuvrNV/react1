@@ -23,7 +23,7 @@ export const AboutHeroSection = () => {
       <div className={styles.imageSection}>
         <img
           src={AboutHero}
-          alt="Metaguise architectural innovation"
+          alt="An image of the facade of Metaland featuring the white MetaSequin panels forming the tree of knowledge pattern "
           className={styles.heroImage}
           loading="eager"
         />
