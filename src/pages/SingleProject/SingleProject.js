@@ -55,7 +55,7 @@ const SingleProject = () => {
 
   const categories = Array.from(
     new Set(
-      selectedProject.s
+      selectedProject.images
         .map((item) =>
           item.split("/")[4] !== "night"
             ? item.split("/")[4].toLowerCase()
@@ -82,10 +82,10 @@ const SingleProject = () => {
   const isLastRow = (index) => {
     return (
       index >=
-      selectedProject.s.length -
-        (selectedProject.s.length % 3 === 0
+      selectedProject.images.length -
+        (selectedProject.images.length % 3 === 0
           ? 3
-          : selectedProject.s.length % 3)
+          : selectedProject.images.length % 3)
     );
   };
 
@@ -95,23 +95,22 @@ const SingleProject = () => {
   };
 
   useEffect(() => {
-    const nights = selectedProject.s.filter(
+    const nightImages = selectedProject.images.filter(
       (item) => item.split("/")[4] === "night"
     );
   
-    if (darkMode && nights.length === 0) {
+    if (darkMode && nightImages.length === 0) {
       setContentToRender([]);
     } else {
-      setContentToRender(darkMode ? nights : selectedProject.s);
+      setContentToRender(darkMode ? nightImages : selectedProject.images);
     }
-  }, [darkMode, selectedProject.s]);
-  
-  const filtersByCategory = (category) => {
-    if (darkMode && category !== "") return; // Prevent selecting other categories in night mode
+  }, [darkMode, selectedProject.images]);
+
+  const filterImagesByCategory = (category) => {
     setSelectedCategory(category);
   };
 
-  const filtereds = selectedCategory
+  const filteredImages = selectedCategory
     ? contentToRender.filter((img) => img.includes(selectedCategory))
     : contentToRender;
 
@@ -131,7 +130,6 @@ const SingleProject = () => {
         <meta name="description" content={selectedProject.metadescription} />
         <meta property="og:title" content={selectedProject.metatittles}  />
         <meta property="og:description" content={selectedProject.metadescription} />
-        <link rel="canonical" href={`https://metaguise.com/all-projects/${projectName}`} />
       </Helmet>
       <div className="row">
         <div className="col-12">
@@ -141,7 +139,7 @@ const SingleProject = () => {
               selectedProject={selectedProject}
               showElementsDropdown={showElementsDropdown}
               setShowElementsDropdown={setShowElementsDropdown}
-              filtersByCategory={filtersByCategory}
+              filterImagesByCategory={filterImagesByCategory}
               categories={categories}
               showTimeDropdown={showTimeDropdown}
               setShowTimeDropdown={setShowTimeDropdown}
@@ -152,24 +150,23 @@ const SingleProject = () => {
           )}
         </div>
         <div className="col-9 xs-12">
-          <Grid
-            filtereds={filtereds}
-            handleClick={handleClick}
+          <ImageGrid
+            filteredImages={filteredImages}
+            handleImageClick={handleImageClick}
             isLastRow={isLastRow}
             clickedIndex={clickedIndex}
-            ref={GridRef}
+            ref={imageGridRef}
             videoLink={selectedProject.videoLink}
             darkMode={darkMode}
             selectedProject={projectName}
             setDarkMode={setDarkMode}
-            alt={selectedProject.alt}   
           />
         </div>
         <Sidebar
           selectedProject={selectedProject}
           categories={categories}
           selectedCategory={selectedCategory}
-          filtersByCategory={filtersByCategory}
+          filterImagesByCategory={filterImagesByCategory}
           darkMode={darkMode}
           toggleTheme={toggleTheme}
           activeButton={activeButton}
@@ -186,7 +183,7 @@ const SingleProject = () => {
 
 const BackButton = ({ navigate }) => {
   return (
-    <button onClick={() => navigate("/all-projects")} className="back-button">
+    <button onClick={() => navigate(-1)} className="back-button">
       <span className="arrow">&larr; Back</span>
     </button>
   );
@@ -196,7 +193,7 @@ const MobileControls = ({
   selectedProject,
   showElementsDropdown,
   setShowElementsDropdown,
-  filtersByCategory,
+  filterImagesByCategory,
   categories,
   showTimeDropdown,
   setShowTimeDropdown,
@@ -211,7 +208,7 @@ const MobileControls = ({
         <ElementsDropdown
           showElementsDropdown={showElementsDropdown}
           setShowElementsDropdown={setShowElementsDropdown}
-          filtersByCategory={filtersByCategory}
+          filterImagesByCategory={filterImagesByCategory}
           categories={categories}
           selectedCategory={selectedCategory}
           darkMode={darkMode}
@@ -272,20 +269,15 @@ const ElementsDropdown = ({
           All
           {selectedCategory === "" && <MdArrowOutward size={20} />}
         </Dropdown.Item>
-        {categories.map((category, index) => (
+        {!darkMode && categories.map((category, index) => (
           <Dropdown.Item
             key={index}
-            onClick={() => !darkMode && filterImagesByCategory(category)}
-            active={!darkMode && selectedCategory === category}
-            style={{ 
-              display: "flex", 
-              justifyContent: "space-between",
-              pointerEvents: darkMode ? "none" : "auto",
-              opacity: darkMode ? 0.5 : 1
-            }}
+            onClick={() => filterImagesByCategory(category)}
+            active={selectedCategory === category}
+            style={{ display: "flex", justifyContent: "space-between" }}
           >
             {category}
-            {selectedCategory === category && !darkMode && <MdArrowOutward size={20} />}
+            {selectedCategory === category && <MdArrowOutward size={20} />}
           </Dropdown.Item>
         ))}
       </Dropdown.Menu>
@@ -327,23 +319,21 @@ const TimeDropdown = ({ showTimeDropdown, setShowTimeDropdown, setDarkMode }) =>
 const SocialIcons = ({ youtubeLink, instagramLink }) => {
   return (
     <div className="social-icons">
-      {instagramLink && (
-        <button
-          className="icon-button"
-          onClick={() => window.open(instagramLink, "_blank")}
-        >
-          <FaInstagram />
-        </button>
-      )}
-      
-      {youtubeLink && (
-        <button
-          className="icon-button"
-          onClick={() => window.open(youtubeLink, "_blank")}
-        >
-          <FaYoutube />
-        </button>
-      )}
+      <button
+        className="icon-button"
+        onClick={() => instagramLink && window.open(instagramLink, "_blank")}
+        disabled={!instagramLink}
+      >
+        <FaInstagram />
+      </button>
+
+      <button
+        className="icon-button"
+        onClick={() => youtubeLink && window.open(youtubeLink, "_blank")}
+        disabled={!youtubeLink}
+      >
+        <FaYoutube />
+      </button>
     </div>
   );
 };
@@ -385,24 +375,17 @@ const Sidebar = ({
             All
             {selectedCategory === "" && <MdArrowOutward size={20} />}
           </ListGroup.Item>
-          {categories.map((category, index) => (
+          {!darkMode && categories.map((category, index) => (
             <ListGroup.Item
               key={index}
               action
               variant="light"
-              className={`${selectedCategory === category ? "highlight" : "dim"} ${
-                darkMode ? "disabled-category" : ""
-              }`}
-              onClick={() => !darkMode && filterImagesByCategory(category)}
-              style={{ 
-                display: "flex", 
-                justifyContent: "space-between",
-                pointerEvents: darkMode ? "none" : "auto",
-                opacity: darkMode ? 0.5 : 1
-              }}
+              className={selectedCategory === category ? "highlight" : "dim"}
+              onClick={() => filterImagesByCategory(category)}
+              style={{ display: "flex", justifyContent: "space-between" }}
             >
               {category.charAt(0).toUpperCase() + category.slice(1)}
-              {selectedCategory === category && !darkMode && <MdArrowOutward size={20} />}
+              {selectedCategory === category && <MdArrowOutward size={20} />}
             </ListGroup.Item>
           ))}
         </ListGroup>
@@ -426,26 +409,20 @@ const Sidebar = ({
           </div>
         </div>
       </div>
-      {(youtubeLink || instagramLink) && (
-        <div className="button-row" style={{ padding: "5px" }}>
-          {youtubeLink && (
-            <Button
-              icon={<FaYoutube />}
-              text="See on YouTube"
-              onClick={() => window.open(youtubeLink, "_blank")}
-              active={activeButton === 0}
-            />
-          )}
-          {instagramLink && (
-            <Button
-              icon={<FaInstagram />}
-              text="See on Instagram"
-              onClick={() => window.open(instagramLink, "_blank")}
-              active={activeButton === 1}
-            />
-          )}
-        </div>
-      )}
+      <div className="button-row" style={{ padding: "5px" }}>
+        <Button
+          icon={<FaYoutube />}
+          text="See on YouTube"
+          onClick={() => window.open(youtubeLink, "_blank")}
+          active={activeButton === 0}
+        />
+        <Button
+          icon={<FaInstagram />}
+          text="See on Instagram"
+          onClick={() => window.open(instagramLink, "_blank")}
+          active={activeButton === 1}
+        />
+      </div>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
         <button id="build-button" className="hover-button">
           <span>Build Your Dream</span>
@@ -465,7 +442,6 @@ const ImageGrid = ({
   darkMode,
   selectedProject,
   setDarkMode,
-  alt,
 }) => {
   const normalizeName = (name) => name.toLowerCase().replace(/[^a-z0-9]/gi, '');
 
@@ -504,7 +480,6 @@ const ImageGrid = ({
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
               clickedIndex={clickedIndex}
-              alt={alt || `${selectedProject} cover image`}   // ✅ pass alt
             />
           )}
 
@@ -568,7 +543,7 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
   );
 };
 
-const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, alt }) => {
+const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
   return (
     <div
       className={`grid-item ${isLastRow(index) ? "last-row" : ""} ${
@@ -579,7 +554,7 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, alt })
       <img
         src={`${process.env.PUBLIC_URL}/${image}`}
         className="grid-image"
-      alt={alt || `${selectedProject} cover image`}   // ✅ pass alt
+        alt={`Project item ${index + 1}`}
         loading="lazy" 
       />
     </div>
