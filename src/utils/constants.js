@@ -1445,7 +1445,7 @@ const SingleprojectDetail = [
 
 
       {
-      name: "88arjun",
+      name: "parametriccrown",
           alt:"Residential facade featuring monochromatic MetaShingles paired with vertically flowing MetaFin panels, adding layered texture across the upper levels and fluidity and depth on the lower facade.",
       videoLink: "",
       youtubeLink: "",
@@ -1473,7 +1473,7 @@ const SingleprojectDetail = [
 
 
       {
-      name: "w12",
+      name: "undercurrent",
       videoLink: "",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
