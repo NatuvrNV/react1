@@ -268,7 +268,7 @@ const SingleprojectDetail = [
         "assets/Allprojects/residential/A18/metacassette-perforated/a184.webp",
         "assets/Allprojects/residential/A18/metacassette-perforated/a185.webp",
         "assets/Allprojects/residential/A18/metacassette-perforated/a186.webp",
-        "assets/Allprojects/residential/A18/metacassette-perforated/a188.webp",
+        "assets/Allprojects/residential/A18/metacassette-perforated/a1.webp",
         "assets/Allprojects/residential/A18/metacassette-perforated/a1812.webp",
         "assets/Allprojects/residential/A18/metacassette-perforated/a1817.webp",
         "assets/Allprojects/residential/A18/metacassette-perforated/a1819.webp",
@@ -1445,7 +1445,7 @@ const SingleprojectDetail = [
 
 
       {
-      name: "parametriccrown",
+      name: "parametric-crown",
           alt:"Residential facade featuring monochromatic MetaShingles paired with vertically flowing MetaFin panels, adding layered texture across the upper levels and fluidity and depth on the lower facade.",
       videoLink: "",
       youtubeLink: "",
