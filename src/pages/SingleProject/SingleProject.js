@@ -133,7 +133,7 @@ const SingleProject = () => {
       </Helmet>
       <div className="row">
         <div className="col-12">
-          <BackButton navigate={navigate} />
+          <Button navigate={navigate} />
           {isMobile && (
             <MobileControls
               selectedProject={selectedProject}
@@ -183,7 +183,7 @@ const SingleProject = () => {
 
 const BackButton = ({ navigate }) => {
   return (
-    <button onClick={() => navigate(-1)} className="back-button">
+    <button onClick={() => navigate('/all-projects')} className="back-button">
       <span className="arrow">&larr; Back</span>
     </button>
   );
