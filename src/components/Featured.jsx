@@ -9,7 +9,7 @@ import "./Features.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import Featured1 from "../assets/Featured/tanishq.webp";
+import Featured1 from "../assets/Featured/tanishq.jpg";
 import Featured2 from "../assets/Featured/f2.webp";
 import Featured3 from "../assets/Featured/f3.webp";
 import Featured4 from "../assets/Featured/f4.webp";
