@@ -16,19 +16,19 @@ import Featured4 from "../assets/Featured/f4.webp";
 import Featured5 from "../assets/Featured/f5.webp";
 import Featured6 from "../assets/Featured/f6.webp";
 import Featured7 from "../assets/Featured/f7.webp";
-import Featured8 from "../assets/Featured/tanishq.webp";
+import Featured8 from "../assets/Featured/f8.webp";
 
 const Features = () => {
   const navigate = useNavigate();
 const featuredImages = [
-  { image: Featured1, name: "whiteland", alt: "Facade of Studio Ardete HQ featuring a parametric gold-toned Metasequin metal cladding system with fluid organic curves wrapping around large glass openings, illuminated at twilight." },
-  { image: Featured2, name: "wvcity", alt: "Tanishq retail facade clad in textured copper-toned MetaCoin wooden MetaLouvers framed in a MetaCassette border, and illuminated central signage, set against a clear blue sky." },
-  { image: Featured3, name: "vivek", alt: "Commercial building wrapped in a sweeping beige-toned, sand-dune inspired MetaCoin metal facade system, with a cobbled driveway and landscaped greenery." },
-  { image: Featured4, name: "rjjewellers", alt: "Entrance of Metaland covered in MetaSequin metal cladding, dramatically backlit with green lighting and highlighted signage at the doorway." },
-  { image: Featured5, name: "peachstreet", alt: "Luxury modern residence featuring cuboidal metal and glass volumes with layered terraces, ambient lighting, and planted balconies. The products used in this elevation include MetaLouvers, MetaPlanks and 3D Metapyramids." },
-  { image: Featured6, name: "3939a", alt: "Close-up of a metal facade panel featuring overlapping MetaSequin with embossed ‘Gowri Jewellery’ branding and crest, in a bronze finish." },
-  { image: Featured7, name: "zenith", alt: "Storefront elevation for Deepak Sweets clad in a dynamic gold MetaSequin metal pattern with illuminated signage, also featuring the 3D MetaPyramids and Perforated MetaCassette, paired with a sleek blue-glass side elevation at night." },
-  { image: Featured8, name: "tanishq", alt: "Modern multi-level residence with sharp geometries and warm perimeter lighting accents featuring MetaCassette Grooved Panels and MetaFlutes." },
+  { image: Featured1, name: "ardete", alt: "Ardete Featured Project" },
+  { image: Featured2, name: "tanishq", alt: "Tanishq Featured Project" },
+  { image: Featured3, name: "yashika", alt: "Yashika Featured Project" },
+  { image: Featured4, name: "metaland", alt: "Metaland Featured Project" },
+  { image: Featured5, name: "a13-43", alt: "A13-43 Featured Project" },
+  { image: Featured6, name: "gowri", alt: "Gowri Featured Project" },
+  { image: Featured7, name: "deepak", alt: "Deepak Featured Project" },
+  { image: Featured8, name: "c76", alt: "C76 Featured Project" },
 ];
 
   useEffect(() => {
