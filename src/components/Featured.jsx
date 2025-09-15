@@ -9,26 +9,26 @@ import "./Features.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import Featured1 from "../assets/Featured/f1.webp";
+import Featured1 from "../assets/Featured/tanishq.webp";
 import Featured2 from "../assets/Featured/f2.webp";
 import Featured3 from "../assets/Featured/f3.webp";
 import Featured4 from "../assets/Featured/f4.webp";
 import Featured5 from "../assets/Featured/f5.webp";
 import Featured6 from "../assets/Featured/f6.webp";
 import Featured7 from "../assets/Featured/f7.webp";
-import Featured8 from "../assets/Featured/f8.webp";
+import Featured8 from "../assets/Featured/f1.webp";
 
 const Features = () => {
   const navigate = useNavigate();
   const featuredImages = [
-    { image: Featured1, name: "ardete" },
-    { image: Featured2, name: "tanishq" },
-    { image: Featured3, name: "yashika" },
-    { image: Featured4, name: "metaland" },
-    { image: Featured5, name: "a13-43" },
-    { image: Featured6, name: "gowri" },
-    { image: Featured7, name: "deepak" },
-    { image: Featured8, name: "c76" },
+    { image: Featured1, name: "tanishq" },
+    { image: Featured2, name: "wvcity" },
+    { image: Featured3, name: "vivek" },
+    { image: Featured4, name: "rjjewellers" },
+    { image: Featured5, name: "peachstreet" },
+    { image: Featured6, name: "3939a" },
+    { image: Featured7, name: "zenith" },
+    { image: Featured8, name: "whiteland" },
   ];
 
   useEffect(() => {
