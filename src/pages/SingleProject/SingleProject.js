@@ -133,7 +133,7 @@ const SingleProject = () => {
       </Helmet>
       <div className="row">
         <div className="col-12">
-          <Button navigate={navigate} />
+          <BackButton navigate={navigate} />
           {isMobile && (
             <MobileControls
               selectedProject={selectedProject}
@@ -486,7 +486,7 @@ const ImageGrid = ({
           {filteredImages.map((image, index) => (
             <Image
               key={index + 1}
-              image={image}
+               image={image} // ✅ now this has {src, alt}
               index={index + 1}
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
@@ -554,7 +554,7 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
       <img
         src={`${process.env.PUBLIC_URL}/${image}`}
         className="grid-image"
-        alt={`Project item ${index + 1}`}
+        alt={image.alt || `Project item ${index + 1}`}
         loading="lazy" 
       />
     </div>
