@@ -16,7 +16,7 @@ import Featured4 from "../assets/Featured/f4.webp";
 import Featured5 from "../assets/Featured/f5.webp";
 import Featured6 from "../assets/Featured/f6.webp";
 import Featured7 from "../assets/Featured/f7.webp";
-import Featured8 from "../assets/Featured/f8.webp";
+import Featured8 from "../assets/Featured/tanishq.webp";
 
 const Features = () => {
   const navigate = useNavigate();
