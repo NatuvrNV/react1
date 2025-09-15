@@ -20,16 +20,16 @@ import Featured8 from "../assets/Featured/f8.webp";
 
 const Features = () => {
   const navigate = useNavigate();
-const featuredImages = [
-  { image: Featured1, name: "ardete", alt: "Ardete Featured Project" },
-  { image: Featured2, name: "tanishq", alt: "Tanishq Featured Project" },
-  { image: Featured3, name: "yashika", alt: "Yashika Featured Project" },
-  { image: Featured4, name: "metaland", alt: "Metaland Featured Project" },
-  { image: Featured5, name: "a13-43", alt: "A13-43 Featured Project" },
-  { image: Featured6, name: "gowri", alt: "Gowri Featured Project" },
-  { image: Featured7, name: "deepak", alt: "Deepak Featured Project" },
-  { image: Featured8, name: "c76", alt: "C76 Featured Project" },
-];
+  const featuredImages = [
+    { image: Featured1, name: "ardete" },
+    { image: Featured2, name: "tanishq" },
+    { image: Featured3, name: "yashika" },
+    { image: Featured4, name: "metaland" },
+    { image: Featured5, name: "a13-43" },
+    { image: Featured6, name: "gowri" },
+    { image: Featured7, name: "deepak" },
+    { image: Featured8, name: "c76" },
+  ];
 
   useEffect(() => {
     // ✅ Prevent text selection when clicking swiper buttons
@@ -88,7 +88,7 @@ const featuredImages = [
             <SwiperSlide key={index}>
               <div className="featured-image">
                 <Link to={`/all-projects/${project.name}`}>
-                  <img src={project.image} alt={project.alt} />
+                  <img src={project.image} alt={`Project ${index + 1}`} />
                   <div id="icon-overlay" className="icon-overlay">
                     <MdArrowOutward size={34} color="white" />
                   </div>
