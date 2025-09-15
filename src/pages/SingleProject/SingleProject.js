@@ -483,16 +483,18 @@ const ImageGrid = ({
             />
           )}
 
-          {filteredImages.map((image, index) => (
-            <Image
-              key={index + 1}
-               image={image} // ✅ now this has {src, alt}
-              index={index + 1}
-              handleImageClick={handleImageClick}
-              isLastRow={isLastRow}
-              clickedIndex={clickedIndex}
-            />
-          ))}
+  {filteredImages.map((image, index) => (
+  <Image
+    key={index + 1}
+    image={image}
+    index={index + 1}
+    handleImageClick={handleImageClick}
+    isLastRow={isLastRow}
+    clickedIndex={clickedIndex}
+    projectAlt={project.alt}   // ✅ pass the project-level alt text
+  />
+))}
+
         </>
       )}
     </div>
@@ -543,7 +545,7 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
   );
 };
 
-const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
+const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, projectAlt }) => {
   return (
     <div
       className={`grid-item ${isLastRow(index) ? "last-row" : ""} ${
@@ -554,12 +556,13 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
       <img
         src={`${process.env.PUBLIC_URL}/${image}`}
         className="grid-image"
-        alt={image.alt || `Project item ${index + 1}`}
-        loading="lazy" 
+        alt={projectAlt}   // ✅ every image gets the same alt text
+        loading="lazy"
       />
     </div>
   );
 };
+
 
 const Button = ({ icon, text, onClick, active }) => {
   return (
