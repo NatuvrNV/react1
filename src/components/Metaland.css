@@ -13,6 +13,17 @@
   scrollbar-width: none;
 }
 
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    max-width: 100% !important;
+}
+
 .img-text{
   text-align: center;
   font-size: 1rem;
