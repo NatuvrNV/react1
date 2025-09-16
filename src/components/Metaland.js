@@ -97,34 +97,31 @@ const Metaland = () => {
         </div>
 
         {/* Video Section */}
-        <div 
-          className="col-12 mt-xl-5 mt-4" 
-          style={{ transform: `scale(${scale})`, transition: `transform ${transitionDuration} ease` }}
-        >
-          <div className="video-container">
-            <iframe
-              width="100%"
-              height="500"
-              src="https://www.youtube.com/embed/mwmFELxs14E?rel=0&modestbranding=1&autohide=1&showinfo=0"
-              title="Metaland immersive architecture experience video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
-            <div className="button-container">
-              <a 
-                href="https://maps.app.goo.gl/Nntum7Fj4LQmpPXa7" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <button id="project-button" className="hover-button">
-                  <span>Visit Now</span>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
+<div 
+  className="col-12 mt-xl-5 mt-4" 
+  style={{ transform: `scale(${scale})`, transition: `transform ${transitionDuration} ease` }}
+>
+  <div className="video-container">
+    <lite-youtube 
+      videoid="mwmFELxs14E" 
+      style={{ width: "100%", height: "500px" }}
+      params="modestbranding=1&rel=0"
+      title="Metaland immersive architecture experience video"
+    ></lite-youtube>
+
+    <div className="button-container">
+      <a 
+        href="https://maps.app.goo.gl/Nntum7Fj4LQmpPXa7" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <button id="project-button" className="hover-button">
+          <span>Visit Now</span>
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
 
       </div>
     </div>
