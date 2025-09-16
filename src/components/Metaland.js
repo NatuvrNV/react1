@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import "https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.1/src/lite-yt-embed.js";
-import "lite-youtube-embed/src/lite-yt-embed.css"; // styles for thumbnail + play button
+import "https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.1/src/lite-yt-embed.css"; // styles for thumbnail + play button
 import "./Metaland.css";
 import VR from '../assets/vr.webp';
 import Maze from '../assets/maze.webp';
