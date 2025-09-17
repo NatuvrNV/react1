@@ -13,7 +13,7 @@ const Features = () => {
 
   // ✅ Use Cloudinary URLs directly
   const featuredImages = [
-    { image: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_auto,dpr_auto/f5_qxkpfe.webp", name: "aredete" },
+    { image: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_auto,dpr_auto/f5_qxkpfe.webp", name: "ardete" },
     { image: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_auto,dpr_auto/f7_y1ifpm.webp", name: "caskey" },
     { image: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_auto,dpr_auto/f3_uyfv39.webp", name: "vivek" },
     { image: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_auto,dpr_auto/f8_unuj4n.webp", name: "rjjewellers" },
