@@ -1,7 +1,6 @@
 import React from "react";
 import "./Cofee.css";
 import { useNavigate } from "react-router-dom";
-import bookCover from "../assets/cover.png"; // Static import
 
 const Cofee = () => {
   const navigate = useNavigate();
@@ -25,9 +24,9 @@ const Cofee = () => {
 
         <div className="image-section">
           <img
-            src={bookCover}
+            src="https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_800/v1758101791/cover.5be3ada55864939a96cc_ieymmt.png"
             alt="Cover of Metaguise Odyssey book featuring a sculpted metallic wing motif in bronze tones."
-            loading="lazy" // Native lazy loading
+            loading="lazy"
           />
         </div>
       </main>
