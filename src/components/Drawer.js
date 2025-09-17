@@ -3,7 +3,6 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Drawer.css";
-import logo1 from "../assets/metaguiseblk.png";
 import { MdArrowOutward } from "react-icons/md";  // Import the icon
 
 
@@ -68,7 +67,7 @@ function Drawer({ isOpen, toggleDrawer }) {
           </div>
           <div className="text-justify px-2 ">
             <img
-              src={logo1}
+              src="https://res.cloudinary.com/dptxcqnnw/image/upload/v1758105387/metaguiseblk.94b32fcaeeab938e555c_gvpmzy.png"
               alt="Stylized Metaguise logo featuring interlocking geometric blocks in grayscale. Symbol of India’s premier metal façade design house with 1800+ projects, PAN India presence, and global reach; trusted by architects nationwide."
               style={{ maxWidth: "200px", paddingLeft: "5x" }}
             />
