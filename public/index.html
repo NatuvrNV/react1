@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Preconnect for faster DNS -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+  <link rel="preconnect" href="https://www.clarity.ms" crossorigin>
+
   <!-- Preload hero image -->
   <link rel="preload" as="image" href="https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_1200/z1tjh4xby2gkx28yfkng.webp">
 
@@ -15,14 +20,14 @@
   <title>Metaguise | India’s Leading Experts in Luxury Metal Facades</title>
 
   <!-- ========== Google Tag Manager ========== -->
-  <script>
+  <script defer>
     (function(w,d,s,l,i){
       w[l]=w[l]||[];
       w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
       var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),
           dl=l!='dataLayer'?'&l='+l:'';
-      j.async=true;
+      j.defer=true;
       j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;
       f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5DNFJRWL');
@@ -55,7 +60,7 @@
   </noscript>
 
   <script defer src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>
-  <script>
+  <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -63,22 +68,25 @@
   </script>
   <!-- ==================================== -->
 
-  <!-- ========== Facebook Pixel ========== -->
+  <!-- ========== Facebook Pixel (delayed load) ========== -->
   <script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq) return;
-      n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq) f._fbq=n;
-      n.push=n; n.loaded=!0; n.version='2.0';
-      n.queue=[];
-      t=b.createElement(e); t.async=!0;
-      t.src=v; s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)
-    }(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '1922267571644016');
-    fbq('track', 'PageView');
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        !function(f,b,e,v,n,t,s){
+          if(f.fbq) return;
+          n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq) f._fbq=n;
+          n.push=n; n.loaded=!0; n.version='2.0';
+          n.queue=[];
+          t=b.createElement(e); t.defer=!0;
+          t.src=v; s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)
+        }(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1922267571644016');
+        fbq('track', 'PageView');
+      }, 1500);
+    });
   </script>
 
   <noscript>
@@ -89,7 +97,7 @@
 
   <!-- ========== Google Analytics (GA4) ========== -->
   <script defer src="https://www.googletagmanager.com/gtag/js?id=G-2EMNJ0PYTH"></script>
-  <script>
+  <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -97,21 +105,21 @@
   </script>
   <!-- ============================================ -->
 
-  <!-- ========== Microsoft Clarity ========== -->
-  <script async type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r); t.async=1;
-      t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];
-      y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "qepraxoxrh");
+  <!-- ========== Microsoft Clarity (delayed load) ========== -->
+  <script>
+    window.addEventListener("scroll", function loadClarity() {
+      var s = document.createElement("script");
+      s.src="https://www.clarity.ms/tag/qepraxoxrh";
+      s.defer = true;
+      document.head.appendChild(s);
+      window.removeEventListener("scroll", loadClarity);
+    });
   </script>
   <!-- ======================================= -->
 
-  <!-- ========== Duplicate Google Ads Tag? ========== -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>
-  <script>
+  <!-- ========== Duplicate Google Ads Tag (kept but deferred) ========== -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>
+  <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
