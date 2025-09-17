@@ -10,13 +10,13 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import Featured1 from "../assets/Featured/tanishq.jpg";
-import Featured2 from "https://res.cloudinary.com/dptxcqnnw/image/upload/v1758096684/f7_y1ifpm.webp";
-import Featured3 from "https://res.cloudinary.com/dptxcqnnw/image/upload/v1758096684/f3_uyfv39.webp";
-import Featured4 from "https://res.cloudinary.com/dptxcqnnw/image/upload/v1758096684/f8_unuj4n.webp";
-import Featured5 from "https://res.cloudinary.com/dptxcqnnw/image/upload/v1758096684/f6_kb4dxy.webp";
-import Featured6 from "https://res.cloudinary.com/dptxcqnnw/image/upload/v1758096684/f2_kym96e.webp";
-import Featured7 from "https://res.cloudinary.com/dptxcqnnw/image/upload/v1758096684/f4_cebj45.webp";
-import Featured8 from "https://res.cloudinary.com/dptxcqnnw/image/upload/v1758096684/f1_cxmeie.webp";
+import Featured2 from "../assets/Featured/f2.webp";
+import Featured3 from "../assets/Featured/f3.webp";
+import Featured4 from "../assets/Featured/f4.webp";
+import Featured5 from "../assets/Featured/f5.webp";
+import Featured6 from "../assets/Featured/f6.webp";
+import Featured7 from "../assets/Featured/f7.webp";
+import Featured8 from "../assets/Featured/f1.webp";
 
 const Features = () => {
   const navigate = useNavigate();
