@@ -1,0 +1,383 @@
+Website: https://metaguise.com/
+Last Updated: 2025-09-19
+
+===================================
+ABOUT
+===================================
+Metaguise is an India-based design & architecture studio specializing in bespoke luxury metal facades, parametric designs, and architectural cladding. Their mission is to transform architecture with innovation, precision, and craftsmanship. :contentReference[oaicite:0]{index=0}
+
+===================================
+NAVIGATION STRUCTURE
+===================================
+- Home: https://metaguise.com/ :contentReference[oaicite:1]{index=1}  
+- About Us: https://metaguise.com/about :contentReference[oaicite:2]{index=2}  
+- Projects / All Projects: https://metaguise.com/all-projects :contentReference[oaicite:3]{index=3}  
+- Products / All Products: https://metaguise.com/all-products :contentReference[oaicite:4]{index=4}  
+- Blog: https://metaguise.com/blog :contentReference[oaicite:5]{index=5}  
+- Contact (assumed via About or site footer)  
+
+===================================
+PROJECTS
+===================================
+Name: Parametric Crown
+URL: https://metaguise.com/all-projects/88arjun
+
+
+
+Name: The Undercurrent
+URL: https://metaguise.com/all-projects/w12
+
+
+
+Name: Whiteland
+URL: https://metaguise.com/all-projects/whiteland
+
+
+Name: Scaled Symphony
+URL: https://metaguise.com/all-projects/3939a
+
+
+Name: Kinetic Grid
+URL: https://metaguise.com/all-projects/caskey
+
+
+Name: HLP
+URL: https://metaguise.com/all-projects/hlp
+
+
+Name: SBI
+URL: https://metaguise.com/all-projects/sbi
+
+
+Name: Wavecity
+URL: https://metaguise.com/all-projects/wvcity
+
+
+Name: Zenith
+URL: https://metaguise.com/all-projects/zenith
+
+
+Name: 3DLF1
+URL: https://metaguise.com/all-projects/3dlf1
+
+
+Name: Skyport House
+URL: https://metaguise.com/all-projects/anj
+
+
+Name: Sacred Geometry
+URL: https://metaguise.com/all-projects/pritesh
+
+
+Name: Peacock Mesh
+URL: https://metaguise.com/all-projects/ishaan
+
+
+Name: Sachi
+URL: https://metaguise.com/all-projects/sachi
+
+
+Name: Obsidian
+URL: https://metaguise.com/all-projects/vivek
+
+
+Name: Monolith Garden
+URL: https://metaguise.com/all-projects/dev622
+
+
+Name: Peachstreet
+URL: https://metaguise.com/all-projects/peachstreet
+
+
+Name: Coppercanvas
+URL: https://metaguise.com/all-projects/coppercanvas
+
+
+Name: Linearretreat
+URL: https://metaguise.com/all-projects/linearretreat
+
+
+Name: Theresonance
+URL: https://metaguise.com/all-projects/theresonance
+
+
+Name: Theelevato
+URL: https://metaguise.com/all-projects/theelevato
+
+
+Name: Thecurtain
+URL: https://metaguise.com/all-projects/thecurtain
+
+
+Name: Thecrystal
+URL: https://metaguise.com/all-projects/thecrystal
+
+
+Name: Rjjewellers
+URL: https://metaguise.com/all-projects/rjjewellers
+
+
+Name: Farm15
+URL: https://metaguise.com/all-projects/farm15
+
+
+Name: E81
+URL: https://metaguise.com/all-projects/e81
+
+
+Name: B38
+URL: https://metaguise.com/all-projects/b38
+
+
+Name: A56
+URL: https://metaguise.com/all-projects/a56
+
+
+Name: Studio Ardete HQ
+URL: https://metaguise.com/all-projects/ardete
+
+
+Name: Thewaveform
+URL: https://metaguise.com/all-projects/thewaveform
+
+
+Name: Tanishq Jewellery
+URL: https://metaguise.com/all-projects/tanishq
+
+
+Name: Luxe Manor
+URL: https://metaguise.com/all-projects/luxe
+
+
+Name: D5 3
+URL: https://metaguise.com/all-projects/d5-3
+
+
+Name: Gowri's Jewellery
+URL: https://metaguise.com/all-projects/gowri
+
+
+Name: Espace
+URL: https://metaguise.com/all-projects/espace
+
+
+Name: A13 43
+URL: https://metaguise.com/all-projects/a13-43
+
+
+Name: Q62 Ra
+URL: https://metaguise.com/all-projects/q62-ra
+
+
+Name: Premhospital
+URL: https://metaguise.com/all-projects/premhospital
+
+
+Name: A18
+URL: https://metaguise.com/all-projects/a18
+
+
+Name: Painflame
+URL: https://metaguise.com/all-projects/painflame
+
+
+Name: Deepak Sweets
+URL: https://metaguise.com/all-projects/deepak
+
+
+Name: A297
+URL: https://metaguise.com/all-projects/a297
+
+
+Name: A19
+URL: https://metaguise.com/all-projects/a19
+
+
+Name: MVA DL1
+URL: https://metaguise.com/all-projects/mva-dl1
+
+
+Name: Metaland
+URL: https://metaguise.com/all-projects/metaland
+
+
+Name: Micasa
+URL: https://metaguise.com/all-projects/micasa
+
+
+Name: Yashika
+URL: https://metaguise.com/all-projects/yashika
+
+
+Name: 5107
+URL: https://metaguise.com/all-projects/5107
+
+
+Name: Cs5 Ma
+URL: https://metaguise.com/all-projects/cs5-ma
+
+
+Name: E10
+URL: https://metaguise.com/all-projects/e10
+
+
+Name: C76
+URL: https://metaguise.com/all-projects/c76
+
+
+Name: C34 573
+URL: https://metaguise.com/all-projects/c34-573
+
+
+Name: DLF4
+URL: https://metaguise.com/all-projects/dlf4
+
+
+Name: MA 543
+URL: https://metaguise.com/all-projects/ma-543
+
+
+Name: Z1012
+URL: https://metaguise.com/all-projects/z1012
+
+
+
+
+===================================
+PRODUCTS / SERVICES
+===================================
+MetaCoin
+URL: https://metaguise.com/all-products/metacoin
+Summary: A unique design element with a coin-inspired metallic finish for modern architectural surfaces.
+
+
+MetaSequin
+URL: https://metaguise.com/all-products/metasequin
+Summary: Decorative panels with a sequin-like reflective texture, offering vibrant and dynamic visual effects.
+
+
+MetaCassette
+URL: https://metaguise.com/all-products/metacassette
+Summary: A modular cassette-style panel system suitable for cladding and interior design.
+
+
+Cascading Keys
+URL: https://metaguise.com/all-products/cascadingkeys
+Summary: Interlocked key-pattern inspired design, delivering cascading textures for walls and facades.
+
+
+Solid Panel
+URL: https://metaguise.com/all-products/solidpanel
+Summary:  Durable and versatile solid surface panel for architectural and commercial use.
+
+
+MetaFlute
+URL: https://metaguise.com/all-products/metaflute
+Summary:  Fluted panel design with vertical grooves, adding rhythm and elegance to surfaces.
+
+
+MetaFin
+URL: https://metaguise.com/all-products/metafin
+Summary: Sleek fin-style product for shading, partitioning, and architectural detailing.
+
+
+MetaFold
+URL: https://metaguise.com/all-products/metafold
+Summary:   Folded panel structure with geometric precision, ideal for modern facades and interiors.
+
+
+MetaSlider
+URL: https://metaguise.com/all-products/metaslider
+Summary: Sliding system for modular and flexible space division.
+
+
+MetaPlank
+URL: https://metaguise.com/all-products/metaplank
+Summary: Wooden plank-inspired product offering a natural and warm texture with modern performance.
+
+
+MetaGate
+URL: https://metaguise.com/all-products/metagate
+Summary:  Structural and decorative gate solution combining durability and design.
+
+
+MetaCopper
+URL: https://metaguise.com/all-products/metacopper
+Summary:  Copper-finish surface panels for luxury architectural applications.
+
+
+MetaPatina
+URL: https://metaguise.com/all-products/metapatina
+Summary: Aged patina finish product, bringing character and vintage appeal to surfaces.
+
+
+MetaCorten
+URL: https://metaguise.com/all-products/metacorten
+Summary: Weathered steel look panels with industrial strength and rustic finish.
+
+
+MetaGrey
+URL: https://metaguise.com/all-products/metagrey
+Summary: Neutral grey-finish panel offering modern minimalism and versatility.
+
+
+MetaWood
+URL: https://metaguise.com/all-products/metawood
+Summary: Wood-textured design with the resilience of advanced materials.
+
+
+MetaHydra
+URL: https://metaguise.com/all-products/metahydra
+Summary:   Water-inspired design product, offering fluid patterns and dynamic surfaces.
+
+
+MetaBlox
+URL: https://metaguise.com/all-products/metablox
+Summary: Modular block-inspired system for creative construction and interior solutions.
+
+MetaLouver
+URL: https://metaguise.com/all-products/metalouver
+Summary: Louver-based shading and ventilation product for architecture.
+
+
+===================================
+BLOG HIGHLIGHTS
+===================================
+Functional Metal Cladding Solutions
+URL: https://metaguise.com/blog/how-our-metafunction-products-revolutionize-everyday-architecture
+Summary: Discusses the MetaFunction product family and how it offers scalable cladding solutions for various projects.
+
+Value Products for Luxury Metal Facade Design
+URL: https://metaguise.com/blog/architectural-luxury%2C-within-reach%3A-why-metaflutes-and-metalouvers-are-the-smartest-investment-in-metal-facades
+Summary: Explains cost-effective approaches to luxury metal facades using MetaFlutes and MetaLouvers.
+
+How to Choose the Right Facade Cladding System
+URL: https://metaguise.com/blog/how-to-choose-the-right-facade-cladding-system-for-your-project
+Summary: A guide to selecting facade systems based on performance, maintenance, and aesthetics.
+
+The Science Behind a Living Metal Facade (MetaPatina)
+URL: https://metaguise.com/blog/living%2C-breathing-facades%3A-the-science-and-soul-of-metapatina
+Summary: Explores patina treatments and evolving finishes for metal facades.
+
+How Kinetic Facades Add Value
+URL: https://metaguise.com/blog/how-kinetic-facades-improve-building-performance-and-user-experience
+Summary: Looks at the benefits of kinetic systems in facades for environmental control and engagement.
+
+METABLOX™: A First‑of‑its‑Kind Parametric Facade Design
+URL: https://metaguise.com/blog/metablox%E2%84%A2-by-metaguise%3A-a-breakthrough-in-parametric-facade-design
+Summary: Introduces the METABLOX system and its parametric advantages in facade design.
+
+Why Metal is the Future of Sustainable Architecture
+URL: https://metaguise.com/blog/metal-is-metaguise%3A-why-metal-is-the-future-of-sustainable-architecture
+Summary: An article outlining sustainability benefits of metal in modern architecture.
+
+Why Architects Are Turning to Custom Metal Louvers in 2025
+URL: https://metaguise.com/blog/why-architects-are-turning-to-custom-metal-louvers-in-2025
+Summary: Discusses trends and reasons for increased use of custom metal louvers in contemporary projects.
+
+===================================
+CONTACT & COMPANY INFO
+===================================
+Email: contactus@metaguise.com 
+Phone: 981-160-4449 / 935-560-4449 
+
