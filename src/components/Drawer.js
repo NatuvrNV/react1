@@ -96,14 +96,36 @@ function Drawer({ isOpen, toggleDrawer }) {
                         Visit Now <MdArrowOutward></MdArrowOutward>
                       </a>
                     </p>
-                    
+                    <MailchimpForm />
                   </div>
                 </Col>
 
                 {/* Newsletter Section - col-6 */}
                 <Col md={6}>
                   <div style={{ paddingLeft: "25px" }}>
-               <MailchimpForm />
+                    <h5 className="news-haeding">Stay Updated</h5>
+                    <Form>
+                      <Form.Control
+                        type="email"
+                        placeholder="Enter your email"
+                        style={{ 
+                          borderRadius: "0",
+                          border: "1px solid #000",
+                          padding: "8px 12px",
+                          marginBottom: "10px"
+                        }}
+                      />
+                      <Button 
+                        variant="dark" 
+                        style={{ 
+                          borderRadius: "0",
+                          padding: "8px 16px",
+                          width: "100%"
+                        }}
+                      >
+                        Sign Up
+                      </Button>
+                    </Form>
                   </div>
                 </Col>
               </Row>
