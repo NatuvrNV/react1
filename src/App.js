@@ -28,6 +28,7 @@ import Terms from './pages/Policy&Conditions/TermsConditions';
 import Preloader from './components/Preloader';
 import Login from "./pages/BackendAdmin/Login";
 import Admin from "./pages/BackendAdmin/Admin";
+import Build from './pages/Build Your Facade/build.js';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <Route path="/metaform" element={<MetaForm />} />
           <Route path="/ctb" element={<CTB />} />
           <Route path="/metafunction" element={<MetaFunction />} />
+  <Route path="/build" element={<Build />} />
           <Route path="/metaparametric" element={<MetaParametric />} />
           <Route path="/metasurface" element={<MetaSurface />} />
           <Route path="/partner" element={<Partner />} />
