@@ -41,9 +41,9 @@ function Drawer({ isOpen, toggleDrawer }) {
               <Nav.Link className="text-white Privacy-mob" href="/terms-conditions">
                 Terms & Conditions
               </Nav.Link>
-              <Nav.Link className="text-white" href="/build">
-                Build Your Facade
-              </Nav.Link>
+              // <Nav.Link className="text-white" href="/build">
+              //   Build Your Facade
+              // </Nav.Link>
                <Nav.Link className="text-white" href="/blogs">
                 Blogs
               </Nav.Link>
@@ -96,36 +96,14 @@ function Drawer({ isOpen, toggleDrawer }) {
                         Visit Now <MdArrowOutward></MdArrowOutward>
                       </a>
                     </p>
-                    <MailchimpForm />
+                    
                   </div>
                 </Col>
 
                 {/* Newsletter Section - col-6 */}
                 <Col md={6}>
                   <div style={{ paddingLeft: "25px" }}>
-                    <h5 className="news-haeding">Stay Updated</h5>
-                    <Form>
-                      <Form.Control
-                        type="email"
-                        placeholder="Enter your email"
-                        style={{ 
-                          borderRadius: "0",
-                          border: "1px solid #000",
-                          padding: "8px 12px",
-                          marginBottom: "10px"
-                        }}
-                      />
-                      <Button 
-                        variant="dark" 
-                        style={{ 
-                          borderRadius: "0",
-                          padding: "8px 16px",
-                          width: "100%"
-                        }}
-                      >
-                        Sign Up
-                      </Button>
-                    </Form>
+                <MailchimpForm />
                   </div>
                 </Col>
               </Row>
