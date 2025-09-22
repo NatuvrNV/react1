@@ -1,15 +1,13 @@
 import React from "react";
-import { Container, Row, Col, Nav } from "react-bootstrap";
-
+import { Container, Row, Col, Nav, Form, Button } from "react-bootstrap";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Drawer.css";
-import { MdArrowOutward } from "react-icons/md";  // Import the icon
-
+import logo1 from "../assets/metaguiseblk.png";
+import MailchimpForm from "./MailchimpForm";
+import { MdArrowOutward } from "react-icons/md";
 
 function Drawer({ isOpen, toggleDrawer }) {
   return (
-
-    
     <Container fluid className={`drawer ${isOpen ? "open" : ""}`}>
       <Row className="h-100">
         {/* Navbar Section */}
@@ -37,25 +35,24 @@ function Drawer({ isOpen, toggleDrawer }) {
               <Nav.Link className="text-white" href="/contact">
                 Get In Touch
               </Nav.Link>
-              <Nav.Link  className="text-white Privacy-mob" href="/privacy-policy">
+              <Nav.Link className="text-white Privacy-mob" href="/privacy-policy">
                 Privacy Policy
               </Nav.Link>
               <Nav.Link className="text-white Privacy-mob" href="/terms-conditions">
-               Terms & Conditions
+                Terms & Conditions
               </Nav.Link>
-
-              <Nav.Link className="text-white" href="/blogs">
-              Blogs
+              <Nav.Link className="text-white" href="/build">
+                Build Your Facade
+              </Nav.Link>
+               <Nav.Link className="text-white" href="/blogs">
+                Blogs
               </Nav.Link>
             </Nav>
           </div>
         </Col>
 
         {/* Contact Section */}
-        <Col
-          md={8}
-          className="d-flex flex-column  p-4 contact-section"
-        >
+        <Col md={8} className="d-flex flex-column p-4 contact-section">
           <div className="text-right">
             <button
               className="btn btn-outline-dark"
@@ -67,60 +64,81 @@ function Drawer({ isOpen, toggleDrawer }) {
           </div>
           <div className="text-justify px-2 ">
             <img
-              src="https://res.cloudinary.com/dptxcqnnw/image/upload/v1758105387/metaguiseblk.94b32fcaeeab938e555c_gvpmzy.png"
-              alt="Stylized Metaguise logo featuring interlocking geometric blocks in grayscale. Symbol of India’s premier metal façade design house with 1800+ projects, PAN India presence, and global reach; trusted by architects nationwide."
+              src={logo1}
+              alt="Metaguise Logo"
               style={{ maxWidth: "200px", paddingLeft: "5x" }}
             />
           </div>
+          
           <Container>
             <Row>
-              <h5 className="nav-haeding" style={{ paddingLeft: "40px" }}>
+            
+
+              {/* Address and Newsletter in a 6/6 column layout */}
+              <Row className="px-3">
+                {/* Address Section - col-6 */}
+                <Col md={6}>
+                  <div>
+                      <h5 className="nav-haeding">
                 Metaland by Metaguise
               </h5>
+                    <p className="nav-text" style={{ lineHeight: "30px" }}>
+                      Visit our Flagship experience Center at <br />
+                      Basement Floor, K9/46, DLF PH 2, Gurgaon, Haryana
+                      <br />
+                      <a
+                        id="visit"
+                        href="https://www.google.com/maps/place/METALAND%E2%84%A2+BY+METAGUISE%C2%AE/@28.4631664,77.0973513,17z/data=!3m1!4b1!4m6!3m5!1s0x390d19455a6f62b1:0x60bdf56eb4db946d!8m2!3d28.4631664!4d77.0973513!16s%2Fg%2F11tk30q8yv?entry=ttu&g_ep=EgoyMDI5MDIxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="visit-now-link"
+                      >
+                        Visit Now <MdArrowOutward></MdArrowOutward>
+                      </a>
+                    </p>
+                    
+                  </div>
+                </Col>
 
-              <p className="nav-text" style={{ paddingLeft: "40px",lineHeight:"30px" }}>
-              Visit our Flagship experience Center at <br></br>
-                 Basement Floor, K9/46, DLF PH 2, Gurgaon, Haryana
-                 <br></br>
+                {/* Newsletter Section - col-6 */}
+                <Col md={6}>
+                  <div style={{ paddingLeft: "25px" }}>
+               <MailchimpForm />
+                  </div>
+                </Col>
+              </Row>
 
-<a id="visit"
-      href="https://www.google.com/maps/place/METALAND%E2%84%A2+BY+METAGUISE%C2%AE/@28.4631664,77.0973513,17z/data=!3m1!4b1!4m6!3m5!1s0x390d19455a6f62b1:0x60bdf56eb4db946d!8m2!3d28.4631664!4d77.0973513!16s%2Fg%2F11tk30q8yv?entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="visit-now-link"
-    >
-      Visit Now <MdArrowOutward></MdArrowOutward>
-    </a>
-               
-              </p>
-              {/* First Section */}
-              <Col md={6}>
-                <div>
-                  <h5 className="nav-haeding">Get in Touch</h5>
-                  <a className="nav-text" href="mailto:contactus@metaguise.com">contactus@metaguise.com</a>
-                  
-                </div>
-              </Col>
+              {/* Contact Info Section */}
+              <Row className="mt-4 px-3">
+                {/* First Section */}
+                <Col md={6}>
+                  <div>
+                    <h5 className="nav-haeding">Get in Touch</h5>
+                    <a className="nav-text" href="mailto:contactus@metaguise.com">
+                      contactus@metaguise.com
+                    </a>
+                  </div>
+                </Col>
 
-              {/* Second Section */}
-              <Col md={6}>
-                <div>
-                  <h5 className="nav-haeding">Phone</h5>
-                  <a className="nav-text" href="tel:9811604449">
-                  9811604449 / 9355604449
-                  </a>
-                
-                </div>
-              </Col>
+                {/* Second Section */}
+                <Col md={6}>
+                  <div>
+                    <h5 className="nav-haeding">Phone</h5>
+                    <a className="nav-text" href="tel:9811604449">
+                      9811604449 / 9355604449
+                    </a>
+                  </div>
+                </Col>
+              </Row>
             </Row>
           </Container>
-          <Container id="social">
+          
+          <Container id="social" className="mt-4">
             <Row>
               {/* First Section */}
               <Col md={6}>
                 <div>
                   <h5 className="nav-haeding ">Social</h5>
-
                   <div
                     style={{
                       display: "flex",
@@ -174,14 +192,14 @@ function Drawer({ isOpen, toggleDrawer }) {
                 <div>
                   <h5 className="nav-haeding">Legal</h5>
                   <p id="Privacy" className="nav-text">
-                  <Nav.Link className="text-black" href="/privacy-policy">
-                  Privacy Policy
-              </Nav.Link>
-              | 
-              <Nav.Link className="text-black" href="/terms-conditions">
-              Terms & Conditions
-              </Nav.Link>
-  </p>
+                    <Nav.Link className="text-black" href="/privacy-policy">
+                      Privacy Policy
+                    </Nav.Link>
+                    | 
+                    <Nav.Link className="text-black" href="/terms-conditions">
+                      Terms & Conditions
+                    </Nav.Link>
+                  </p>
                 </div>
               </Col>
             </Row>
