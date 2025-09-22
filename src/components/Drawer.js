@@ -41,15 +41,20 @@ function Drawer({ isOpen, toggleDrawer }) {
               <Nav.Link className="text-white Privacy-mob" href="/terms-conditions">
                 Terms & Conditions
               </Nav.Link>
-              // <Nav.Link className="text-white" href="/build">
-              //   Build Your Facade
-              // </Nav.Link>
+          
                <Nav.Link className="text-white" href="/blogs">
                 Blogs
               </Nav.Link>
             </Nav>
           </div>
         </Col>
+
+
+
+ {/*     <Nav.Link className="text-white" href="/build">
+                Build Your Facade
+              </Nav.Link>*/}
+
 
         {/* Contact Section */}
         <Col md={8} className="d-flex flex-column p-4 contact-section">
@@ -102,7 +107,7 @@ function Drawer({ isOpen, toggleDrawer }) {
 
                 {/* Newsletter Section - col-6 */}
                 <Col md={6}>
-                  <div style={{ paddingLeft: "25px" }}>
+                  <div style={{ paddingLeft: "0px" }}>
                 <MailchimpForm />
                   </div>
                 </Col>
