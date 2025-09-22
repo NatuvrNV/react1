@@ -1261,12 +1261,13 @@ Explore MetaCoin: https://metaguise.com/all-products/metacoin
              
          ],
 
-         folderName: "mwtacoin-blog", 
+         folderName: "metacoin-blog", 
      
         
        },
     
   ];
+
 
 
 
