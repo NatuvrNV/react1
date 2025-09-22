@@ -1210,8 +1210,64 @@ If you're an architect, developer, or designer looking to bring your next projec
      
         
        },
+
+             {
+         title: "Why MetaCoin Is the Most Iconic Facade Innovation in Modern Architecture",
+        metaTitle: "Metaguise Blogs | Why MetaCoin Is the Most Iconic Facade Innovation in Modern Architecture ",
+         date: "22-09-25",
+         category: "Facade Innovations",
+         metaDescription: "",
+         Fulldescription: ` 
+At Metaguise, we’ve always believed that a building’s facade should do more than cover - it should communicate. It should carry the building’s identity, its rhythm, and its soul. That’s exactly why we created MetaCoin, and why it has quickly become our most sought-after parametric facade technology.
+
+MetaCoin isn’t just another metal facade system. It’s a design language - one that architects across India are using to create buildings that don’t just stand, but stand out. It’s a parametric facade system made up of thousands of circular panels - or “coins” - arranged in ways that create depth, flow, and movement across a surface.
+
+Unlike traditional cladding systems, where panels repeat uniformly, MetaCoin allows each “coin” to be placed with algorithmic precision. This means the surface is always shifting, always alive. Walk past a MetaCoin facade, and you’ll notice it feels different from every angle - like fabric in the wind, or ripples on water.
+
+This ability to move and breathe visually is what makes MetaCoin so special in facade design.
+
+Architects and metal designers often tell us that MetaCoin has become their go-to system for large projects. Here’s why:
+
+Highly customizable – Every MetaCoin project can be tailored. From the size of the coins to the finish and patterning, it’s a system that adapts to the architect’s vision.
+Scalable and value-driven – Whether it’s a retail flagship or a commercial tower, MetaCoin is engineered to deliver impact at scale without compromising on performance.
+Designed for performance – As a modern metal facade cladding system, MetaCoin is corrosion-resistant, fire-safe, and tested for India’s toughest climates.
+Visually iconic – More than elevation design, it turns facades into sculptures - memorable, photogenic, and timeless.
+
+
+For Tanishq’s flagship store in New Delhi, we designed a custom-shaped MetaCoin that reflects the brand’s luxury and craftsmanship. Here, every individual coin shape contributes to the facade’s character - each one distinct, each one intentional.
+
+It’s a nod to the brand itself: much like jewellery, where every piece is unique, the Tanishq MetaCoin facade shines because of the individuality of its components. The system elevates the store’s aluminium facade into something more than surface - it becomes brand identity in architectural form.
+
+In Rajasthan, on the other hand, the Cricket Stadium uses the original round MetaCoin, but here the focus is not on each coin, but on the overall choreography they create together. Thousands of discs form silhouettes of iconic sporting moments, etched into the stadium’s very skin.
+
+The individual coins shimmer and catch light, but it’s the collective effect that tells the story. It’s a perfect example of parametric facade design used at scale - where the facade becomes part of the cultural memory of the space.
+
+What makes MetaCoin iconic is its adaptability. It can be tailored to celebrate individuality, like at Tanishq, or scaled to narrate collective energy, like at the stadium. And in both, it performs as a long lasting, low maintenance facade - engineered from aluminium, resistant to climate, and designed to endure.
+
+With 1800+ projects delivered, PAN India, a growing global presence, and trust from architects nationwide, Metaguise has become one of the leading facade companies in India. MetaCoin is our proudest innovation - one that proves how metal design can be both practical and poetic.
+
+MetaCoin shows us that a facade isn’t just a skin - it’s a story. At Tanishq, every shape matters. At the Cricket Stadium, it’s the pattern that speaks. In both, MetaCoin transforms architecture into identity. Because at Metaguise, we believe: your facade is your identity.
+
+Explore MetaCoin: https://metaguise.com/all-products/metacoin
+
+  `,
+         description: "At Metaguise, we’ve always believed that a building’s facade should do more than cover - it should communicate. It should carry the building’s identity, its rhythm, and its soul. That’s exactly why we created MetaCoin, and why it has quickly become our most sought-after parametric facade technology.",
+         images: [
+             "assets/Blogs/metacoin-blog/coin1.webp",
+             "assets/Blogs/metacoin-blog/coin2.webp",
+             "assets/Blogs/metacoin-blog/coin3.webp",
+             "assets/Blogs/metacoin-blog/coin4.webp",
+             
+             
+         ],
+
+         folderName: "mwtacoin-blog", 
+     
+        
+       },
     
   ];
+
 
 
 
