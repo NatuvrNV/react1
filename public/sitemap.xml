@@ -643,5 +643,12 @@
     <changefreq>monthly</changefreq>
   </url>
 
+                     <url>
+    <loc>https://metaguise.com/blog/why-metacoin-is-the-most-iconic-facade-innovation-in-modern-architecture</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
