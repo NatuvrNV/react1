@@ -43,7 +43,7 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, phone: value }));
   };
 
-  // Submit form
+  // Submit form (no page refresh)
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
@@ -56,7 +56,6 @@ const Contact = () => {
       return;
     }
 
-    // Data to send
     const leadData = {
       name: formData.name,
       city: formData.city,
@@ -70,15 +69,16 @@ const Contact = () => {
     };
 
     try {
-      // Send to Zapier webhook
-      const response = await fetch("https://hooks.zapier.com/hooks/catch/22435559/umlsnz0/", {
+      const response = await fetch("https://hook.eu2.make.com/jppie74gnfp2fvct6zrl5d02c4p0rk23", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(leadData),
       });
 
       if (response.ok) {
-        setMessage("✅ Lead saved successfully!");
+        setMessage("✅ Lead sent successfully!");
+
+        // Reset form fields only
         setFormData({
           name: "",
           city: "",
