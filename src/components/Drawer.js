@@ -41,7 +41,11 @@ function Drawer({ isOpen, toggleDrawer }) {
               <Nav.Link className="text-white Privacy-mob" href="/terms-conditions">
                 Terms & Conditions
               </Nav.Link>
-          
+
+            <Nav.Link className="text-white" href="/build">
+                Build Your Facade
+              </Nav.Link>
+            
                <Nav.Link className="text-white" href="/blogs">
                 Blogs
               </Nav.Link>
@@ -51,9 +55,7 @@ function Drawer({ isOpen, toggleDrawer }) {
 
 
 
- {/*     <Nav.Link className="text-white" href="/build">
-                Build Your Facade
-              </Nav.Link>*/}
+ 
 
 
         {/* Contact Section */}
