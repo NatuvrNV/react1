@@ -645,7 +645,14 @@
 
                      <url>
     <loc>https://metaguise.com/blog/why-metacoin-is-the-most-iconic-facade-innovation-in-modern-architecture</loc>
-    <lastmod>2025-09-15</lastmod>
+    <lastmod>2025-09-22</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+                       <url>
+    <loc>https://metaguise.com/blog/laser-cut-metal-facades:-where-design-meets-detail</loc>
+    <lastmod>2025-09-26</lastmod>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
