@@ -1216,7 +1216,7 @@ If you're an architect, developer, or designer looking to bring your next projec
         metaTitle: "Metaguise Blogs | Why MetaCoin Is the Most Iconic Facade Innovation in Modern Architecture ",
          date: "22-09-25",
          category: "Facade Innovations",
-         metaDescription: "",
+         metaDescription: "Explore MetaCoin by Metaguise, our most sought after parametric facade technology",
          Fulldescription: ` 
 At Metaguise, we’ve always believed that a building’s facade should do more than cover - it should communicate. It should carry the building’s identity, its rhythm, and its soul. That’s exactly why we created MetaCoin, and why it has quickly become our most sought-after parametric facade technology.
 
@@ -1271,7 +1271,7 @@ Explore MetaCoin: https://metaguise.com/all-products/metacoin
         metaTitle: "Metaguise Blogs | Laser Cut Metal Facades: Where Design Meets Detail ",
          date: "26-09-25",
          category: "Facade Innovations",
-         metaDescription: "",
+         metaDescription: " Discover Metaguise’s laser cut metal panels and facade cladding. Trusted PAN India for low-maintenance, long-lasting metal facades.",
          Fulldescription: ` 
 In architecture, it’s often the smallest details that leave the biggest impression. One such detail, quietly transforming skylines and entrances across India, is the laser cut metal panel. Clean, controlled, and endlessly creative, these designs bring life and movement to what would otherwise be flat, rigid surfaces.
 
@@ -1336,7 +1336,7 @@ Explore our range of customisable facades, view our <a href="https://metaguise.c
                      {
          title: "Before There Were Copies, There Was Metaguise: The Story of India’s Facade Pioneer",
         metaTitle: "Metaguise Blogs | India’s Facade Pioneer | Parametric & Metal Facade Design by Metaguise  ",
-         date: "26-09-25",
+         date: "29-09-25",
          category: "Facade Innovations",
          metaDescription: "Explore Metaguise, India's leading metal facade company revolutionizing architecture with parametric facade design, aluminium facades & elevation solutions.",
          Fulldescription: ` 
@@ -1388,6 +1388,7 @@ See our legacy in action at <a href="https://metaguise.com/all-projects">metagui
        },
     
   ];
+
 
 
 
