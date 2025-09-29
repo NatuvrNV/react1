@@ -2515,6 +2515,11 @@ export const ProductImages = [
   ];
 
 export const ProjectImages = [
+    { imgPath: "assets/Allprojects/residential/Sculpted Silence/cover/A2_1.webp",  order: 1},
+    { imgPath: "assets/Allprojects/residential/The Haven/cover/rochak_1.webp",  order: 1},
+    { imgPath: "assets/Allprojects/residential/Apex Residence/cover/manish_1.webp",  order: 1},
+    { imgPath: "assets/Allprojects/commercial/Blossoms/cover/blossoms1.webp",  order: 1},
+    { imgPath: "assets/Allprojects/commercial/Cityspace82/cover/cityspace82_1.webp",  order: 1},
      { imgPath: "assets/Allprojects/residential/88Arjun/cover/88_5.webp",  order: 1},
      { imgPath: "assets/Allprojects/residential/W12/cover/w12_1.webp",  order: 1},
     { imgPath: "assets/Allprojects/commercial/whiteland/cover/wl1.webp",order: 1 },
