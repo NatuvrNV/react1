@@ -515,7 +515,42 @@
     <changefreq>monthly</changefreq>
   </url>
 
- 
+
+
+     <url>
+    <loc>https://metaguise.com/all-projects/sculpted%20silence</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+     <url>
+    <loc>https://metaguise.com/all-projects/the%20haven</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+     <url>
+    <loc>https://metaguise.com/all-projects/apex%20residence</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+     <url>
+    <loc>https://metaguise.com/all-projects/blossoms</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+     <url>
+    <loc>https://metaguise.com/all-projects/cityspace82</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 
   <!-- blogs -->
 
