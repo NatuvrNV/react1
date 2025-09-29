@@ -33,6 +33,131 @@ const SingleprojectDetail = [
         "assets/Allprojects/commercial/Ardete/night/ardete20.webp",
       ],
     },
+
+        {
+      name: "sculpted silence",
+        alt: "",
+      youtubeLink: "",
+      videoLink: "",
+      instagramLink: "",
+      Projectname:"Sculpted Silence",
+      metatittles:"",
+      metadescription:"",
+      
+      images: [
+  
+        "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_2.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_3.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_4.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_5.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_6.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_7.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_8.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_9.webp",
+      ],
+    },
+
+         {
+      name: "the haven",
+        alt: "",
+      youtubeLink: "",
+      videoLink: "",
+      instagramLink: "",
+      Projectname:"The Haven",
+      metatittles:"",
+      metadescription:"",
+      
+      images: [
+  
+        "assets/Allprojects/residential/The Haven/metaflute/rochak_6.webp",
+          "assets/Allprojects/residential/The Haven/metaflute/rochak_9.webp",
+          "assets/Allprojects/residential/The Haven/metaflute/rochak_11.webp",
+          "assets/Allprojects/residential/The Haven/metafold/rochak_2.webp",
+          "assets/Allprojects/residential/The Haven/metafold/rochak_7.webp",
+          "assets/Allprojects/residential/The Haven/metafold/rochak_8.webp",
+          "assets/Allprojects/residential/The Haven/metafold/rochak_10.webp",
+          "assets/Allprojects/residential/The Haven/metapyramid/rochak_3.webp",
+          "assets/Allprojects/residential/The Haven/metapyramid/rochak_4.webp",
+          "assets/Allprojects/residential/The Haven/metapyramid/rochak_5.webp",
+      ],
+    },
+
+          {
+      name: "apex residence",
+        alt: "",
+      youtubeLink: "",
+      videoLink: "",
+      instagramLink: "",
+      Projectname:"Apex Residence",
+      metatittles:"",
+      metadescription:"",
+      
+      images: [
+  
+        "assets/Allprojects/residential/Apex Residence/metacassette/manish_8.webp",
+          "assets/Allprojects/residential/Apex Residence/metacassette/manish_9.webp",
+          "assets/Allprojects/residential/Apex Residence/metacassette/manish_11.webp",
+          "assets/Allprojects/residential/Apex Residence/metafold/manish_2.webp",
+          "assets/Allprojects/residential/Apex Residence/metafold/manish_3.webp",
+          "assets/Allprojects/residential/Apex Residence/metafold/manish_4.webp",
+          "assets/Allprojects/residential/Apex Residence/metafold/manish_12.webp",
+          "assets/Allprojects/residential/Apex Residence/metafold/manish_13.webp",
+          "assets/Allprojects/residential/Apex Residence/metashingle/manish_5.webp",
+          "assets/Allprojects/residential/Apex Residence/metashingle/manish_6.webp",
+          "assets/Allprojects/residential/Apex Residence/metashingle/manish_7.webp",
+      ],
+    },
+
+                {
+      name: "blossoms",
+        alt: "",
+      youtubeLink: "",
+      videoLink: "",
+      instagramLink: "",
+      Projectname:"Blossoms",
+      metatittles:"",
+      metadescription:"",
+      
+      images: [
+  
+        "assets/Allprojects/commercial/Blossoms/metacoin/blossoms2.webp",
+          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms3.webp",
+          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms4.webp",
+          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms5.webp",
+          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms6.webp",
+          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms7.webp",
+          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms8.webp",
+      ],
+    },
+
+              {
+      name: "cityspace82",
+        alt: "",
+      youtubeLink: "",
+      videoLink: "",
+      instagramLink: "",
+      Projectname:"Cityspace82",
+      metatittles:"",
+      metadescription:"",
+      
+      images: [
+  
+       "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_2.webp",
+          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_3.webp",
+          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_4.webp",
+          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_5.webp",
+          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_9.webp",
+          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_10.webp",
+          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_11.webp",
+          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_12.webp",
+          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_13.webp",
+           "assets/Allprojects/commercial/Cityspace82/night/cityspace82_6.webp",
+           "assets/Allprojects/commercial/Cityspace82/night/cityspace82_7.webp",
+           "assets/Allprojects/commercial/Cityspace82/night/cityspace82_8.webp",
+      
+      ],
+    },
+    
     
     {
       name: "tanishq",
