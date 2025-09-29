@@ -657,5 +657,12 @@
     <changefreq>monthly</changefreq>
   </url>
 
+                         <url>
+    <loc>https://metaguise.com/blog/before-there-were-copies,-there-was-metaguise:-the-story-of-india%E2%80%99s-facade-pioneer</loc>
+    <lastmod>2025-09-29</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
