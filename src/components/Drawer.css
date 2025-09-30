@@ -11,6 +11,10 @@ html, body, #root {
   gap: 04px;
 }
 
+.newsletter-mob{
+  display:none;
+}
+
 /* Styles for the drawer */
 .drawer {
   position: fixed;
@@ -202,6 +206,10 @@ html, body, #root {
     line-height: 20px;
     letter-spacing: 0.03em;
   }
+
+  .newsletter-mob{
+  display:block;
+}
 
   .newsletter-section{
     padding-left:0px !important;
