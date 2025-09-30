@@ -1674,6 +1674,13 @@ export const SingleProductDetail = [
       description:
         "A revolutionary parametric facade system designed to elevate architectural aesthetics. Crafted with premium metals and enhanced with MetaSurface finishes, MetaCoin offers unparalleled customizability, from the shape and size of each element to its color and arrangement. Its dynamic design reacts to light and perspective, creating ever-changing visual effects. Ideal for contemporary and iconic structures, MetaCoin transforms facades into captivating works of art that are sustainable, durable, and visually stunning​​.",
       images: [
+        "assets/Allprojects/commercial/Blossoms/metacoin/blossoms2.webp",
+        "assets/Allprojects/commercial/Blossoms/metacoin/blossoms3.webp",
+        "assets/Allprojects/commercial/Blossoms/metacoin/blossoms4.webp",
+        "assets/Allprojects/commercial/Blossoms/metacoin/blossoms5.webp",
+        "assets/Allprojects/commercial/Blossoms/metacoin/blossoms6.webp",
+        "assets/Allprojects/commercial/Blossoms/metacoin/blossoms7.webp",
+        "assets/Allprojects/commercial/Blossoms/metacoin/blossoms8.webp",
         "assets/Allproducts/MetaParametric/metacoin/metacoin1.webp",
         "assets/Allproducts/MetaParametric/metacoin/metacoin2.webp",
         "assets/Allproducts/MetaParametric/metacoin/metacoin3.webp",
@@ -1797,6 +1804,9 @@ export const SingleProductDetail = [
       description:
         "A tribute to ancient architectural wonders, MetaPyramid captures the essence of the pyramids with its geometric precision. Featuring 3D perforations that play with light and shadow, these facades create dynamic visual patterns that change throughout the day. Ideal for bold and iconic designs, MetaPyramid adds a layer of intrigue and timeless sophistication to modern architecture​.",
       images: [
+           "assets/Allprojects/residential/The Haven/metapyramid/rochak_3.webp",
+          "assets/Allprojects/residential/The Haven/metapyramid/rochak_4.webp",
+          "assets/Allprojects/residential/The Haven/metapyramid/rochak_5.webp",
         "assets/Allproducts/MetaForm/metapyramid/metapyramid1.webp",
         "assets/Allproducts/MetaForm/metapyramid/metapyramid2.webp",
         "assets/Allproducts/MetaForm/metapyramid/metapyramid3.webp",
@@ -1825,6 +1835,17 @@ export const SingleProductDetail = [
       description:
         "Elevate your structure with MetaShingles, a system of overlapping metal panels designed to create dynamic textures and visual depth. These shingles bring a contemporary flair to facades while ensuring durability and weather resistance. Perfect for residential and commercial projects, MetaShingles strike a balance between aesthetic appeal and robust functionality​.",
       images: [
+           "assets/Allprojects/residential/Apex Residence/metashingle/manish_5.webp",
+          "assets/Allprojects/residential/Apex Residence/metashingle/manish_6.webp",
+          "assets/Allprojects/residential/Apex Residence/metashingle/manish_7.webp",
+           "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_2.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_3.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_4.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_5.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_6.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_7.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_8.webp",
+          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_9.webp",
         "assets/Allproducts/MetaForm/metashingle/metashingle1.webp",
         "assets/Allproducts/MetaForm/metashingle/metashingle2.webp",
         "assets/Allproducts/MetaForm/metashingle/metashingle3.webp",
@@ -1917,6 +1938,9 @@ export const SingleProductDetail = [
       description:
         "A versatile facade solution, MetaCassette offers three distinct panel types—grooved, perforated, and solid—each designed to bring unique aesthetic and functional qualities to architectural projects. Together, these options empower architects and designers to craft facades that are not only visually captivating but also tailored to specific functional requirements​​.",
       images: [
+           "assets/Allprojects/residential/Apex Residence/metacassette/manish_8.webp",
+          "assets/Allprojects/residential/Apex Residence/metacassette/manish_9.webp",
+          "assets/Allprojects/residential/Apex Residence/metacassette/manish_11.webp",
         "assets/Allproducts/MetaForm/metacassette/metacassette1.webp",
         "assets/Allproducts/MetaForm/metacassette/metacassette2.webp",
         "assets/Allproducts/MetaForm/metacassette/metacassette3.webp",
@@ -2017,6 +2041,11 @@ export const SingleProductDetail = [
           "assets/Allprojects/residential/88Arjun/metaflute/88_7.webp",
            "assets/Allprojects/residential/88Arjun/metaflute/88_15.webp",
            "assets/Allprojects/residential/88Arjun/metaflute/88_16.webp",
+          "assets/Allprojects/residential/The Haven/metaflute/rochak_6.webp",
+          "assets/Allprojects/residential/The Haven/metaflute/rochak_9.webp",
+          "assets/Allprojects/residential/The Haven/metaflute/rochak_11.webp",
+       
+         
       
       ],
     },
@@ -2032,16 +2061,25 @@ export const SingleProductDetail = [
       description:
         "MetaFold transforms spaces with its innovative folding panels, seamlessly connecting indoor and outdoor environments. Featuring multi-faceted panes crafted from premium metals, it creates dynamic openings that enhance airflow and natural light. Perfect for modern homes and commercial spaces, MetaFold embodies functional luxury and design flexibility​.",
       images: [
+        "assets/Allprojects/residential/Apex Residence/metafold/manish_2.webp",
+        "assets/Allprojects/residential/Apex Residence/metafold/manish_3.webp",
+        "assets/Allprojects/residential/Apex Residence/metafold/manish_4.webp",
+        "assets/Allprojects/residential/Apex Residence/metafold/manish_12.webp",
+        "assets/Allprojects/residential/Apex Residence/metafold/manish_13.webp",
+        "assets/Allprojects/residential/The Haven/metafold/rochak_2.webp",
+        "assets/Allprojects/residential/The Haven/metafold/rochak_7.webp",
+        "assets/Allprojects/residential/The Haven/metafold/rochak_8.webp",
+        "assets/Allprojects/residential/The Haven/metafold/rochak_10.webp",
         "assets/Allproducts/MetaFunction/metafold/metafold2.webp",
         "assets/Allproducts/MetaFunction/metafold/metafold3.webp",
         "assets/Allproducts/MetaFunction/metafold/metafold4.webp",
         "assets/Allproducts/MetaFunction/metafold/metafold5.webp",
         "assets/Allproducts/MetaFunction/metafold/metafold6.webp",
-          "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas2.webp",
+        "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas2.webp",
         "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas3.webp",
         "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas4.webp",
         "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas5.webp",
-           "assets/Allprojects/residential/dev622/metafold/dev7.webp",
+        "assets/Allprojects/residential/dev622/metafold/dev7.webp",
         "assets/Allprojects/residential/dev622/metafold/dev8.webp",
         "assets/Allprojects/residential/dev622/metafold/dev10.webp",
         
@@ -2077,7 +2115,6 @@ export const SingleProductDetail = [
            "assets/Allprojects/residential/W12/metafin/w12_11.webp",
            "assets/Allprojects/residential/W12/metafin/w12_12.webp",
           "assets/Allprojects/residential/W12/metafin/w12_13.webp",
-         
           "assets/Allprojects/residential/88Arjun/metafin/88_6.webp",
           "assets/Allprojects/residential/88Arjun/metafin/88_9.webp",
           "assets/Allprojects/residential/88Arjun/metafin/88_12.webp",
@@ -2114,6 +2151,15 @@ export const SingleProductDetail = [
       description:
         "MetaLouver offers a harmonious balance of form and functionality. Its adjustable, angular metal panels allow for optimal control of light and ventilation while shielding interiors from rain and harsh sunlight. Whether used for facades or shading systems, MetaLouver adds a distinctive architectural rhythm to buildings​​.",
       images: [
+        "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_2.webp",
+        "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_3.webp",
+        "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_4.webp",
+        "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_5.webp",
+        "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_9.webp",
+        "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_10.webp",
+        "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_11.webp",
+        "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_12.webp",
+        "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_13.webp",
         "assets/Allproducts/MetaForm/metalouver/metalouver1.webp",
         "assets/Allproducts/MetaForm/metalouver/metalouver9.webp",
         "assets/Allproducts/MetaForm/metalouver/metalouver4.webp",
