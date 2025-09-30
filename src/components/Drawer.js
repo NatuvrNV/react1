@@ -50,6 +50,7 @@ function Drawer({ isOpen, toggleDrawer }) {
                 Blogs
               </Nav.Link>
             </Nav>
+            <MailchimpForm />
           </div>
         </Col>
 
