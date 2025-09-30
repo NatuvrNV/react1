@@ -202,6 +202,22 @@ html, body, #root {
     line-height: 20px;
     letter-spacing: 0.03em;
   }
+
+  .newsletter-section{
+    padding-left:0px !important;
+  }
+
+  .newsletter-section input{
+    padding:0px 10px !important;
+  }
+
+   .newsletter-section button{
+    text-align: left;
+  }
+
+  .news-haeding{
+    display:none;
+  }
   
   .privacy-text h1,h2{
     font-weight: 800;
