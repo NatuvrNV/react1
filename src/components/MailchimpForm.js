@@ -32,7 +32,7 @@ function MailchimpForm() {
   };
 
   return (
-    <div style={{ paddingLeft: "25px" }}>
+    <div className="newsletter-section" style={{ paddingLeft: "25px" }}>
       <h5 className="news-haeding">Stay Updated</h5>
 
       <form onSubmit={handleSubmit}>
@@ -82,3 +82,4 @@ function MailchimpForm() {
 }
 
 export default MailchimpForm;
+
