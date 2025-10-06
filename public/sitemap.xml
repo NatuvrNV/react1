@@ -699,5 +699,19 @@
     <changefreq>monthly</changefreq>
   </url>
 
+                           <url>
+    <loc>https://metaguise.com/blog/the-problem-with-cheaper-cladding:-engineering-vs.-aesthetic-gimmicks</loc>
+    <lastmod>2025-10-01</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+                           <url>
+    <loc>https://metaguise.com/blog/why-metaguise%E2%80%99s-facade-process-is-the-benchmark-for-architectural-excellence</loc>
+    <lastmod>2025-10-06</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
