@@ -1526,7 +1526,7 @@ Every element, whether a <strong>parametric facade, a Corten elevation, or an al
 
 Metaguise has delivered over <strong>1800+ projects</strong> across India, from boutique homes to large-scale commercial facades. Our pan India footprint is matched only by the <strong>global appeal</strong> of our materials and finishes - crafted in-house using state-of-the-art tech and patented surface solutions.
 
-Each project, whether it's in Delhi, Mumbai, or Chennai, reflects the same rigor and refinement - from our proprietary finishes like MetaPatina to performance-driven systems like MetaFold and MetaSlide.
+Each project, whether it's in Delhi, Mumbai, or Chennai, reflects the same rigor and refinement - from our proprietary finishes like <a href="https://metaguise.com/all-products/metapatina">MetaPatina</a>  to performance-driven systems like <a href="https://metaguise.com/all-products/metafold">MetaFold</a> and <a href="https://metaguise.com/all-products/metaslider">MetaSlide</a>.
 
 <strong>Engineered for Elevation Design That Performs</strong>
 
@@ -1571,6 +1571,7 @@ So when you’re ready for a metal facade that will outlast trends, climates, an
        },
     
   ];
+
 
 
 
