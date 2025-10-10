@@ -713,5 +713,12 @@
     <changefreq>monthly</changefreq>
   </url>
 
+                          <url>
+    <loc>https://metaguise.com/blog/from-metal-to-masterpiece:-the-craft-behind-every-metaguise-facade</loc>
+    <lastmod>2025-10-10</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
