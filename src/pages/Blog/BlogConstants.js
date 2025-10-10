@@ -1663,6 +1663,7 @@ Because at Metaguise, we don’t just create metal facades - we create masterpie
              "assets/Blogs/masterpiece/masterpiece3.jpg",
              "assets/Blogs/masterpiece/masterpiece4.jpg",
              "assets/Blogs/masterpiece/masterpiece5.jpg",
+             "assets/Blogs/masterpiece/masterpiece6.jpg",
                 
          ],
 
@@ -1672,6 +1673,7 @@ Because at Metaguise, we don’t just create metal facades - we create masterpie
        },
     
   ];
+
 
 
 
