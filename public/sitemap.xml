@@ -720,5 +720,12 @@
     <changefreq>monthly</changefreq>
   </url>
 
+                          <url>
+    <loc>https://metaguise.com/blog/the-science-of-shadows:-how-facade-design-shapes-light-and-mood</loc>
+    <lastmod>2025-10-13</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
