@@ -1772,8 +1772,7 @@ Our facades aren’t just designed to last - they’re designed to live with the
 Because when architecture learns to master light, it becomes more than construction - it becomes art.
 
   `,
-         description: "Architecture has always been about more than structure - it’s about rhythm, reflection, and the way light interacts with space.At Metaguise, we see every innovative facade as a living canvas, one that transforms not just how a building looks, but how it feels. Light becomes our material, and shadow becomes our tool.This is the art and the science behind MetaLouvers, MetaCassette, and the entire Metaguise facade family.
-",
+         description: "Architecture has always been about more than structure - it’s about rhythm, reflection, and the way light interacts with space.At Metaguise, we see every innovative facade as a living canvas, one that transforms not just how a building looks, but how it feels. Light becomes our material, and shadow becomes our tool.This is the art and the science behind MetaLouvers, MetaCassette, and the entire Metaguise facade family.",
          images: [
              "assets/Blogs/shadow/shadow1.jpg",
               "assets/Blogs/shadow/shadow2.jpg",
@@ -1790,6 +1789,7 @@ Because when architecture learns to master light, it becomes more than construct
 
     
   ];
+
 
 
 
