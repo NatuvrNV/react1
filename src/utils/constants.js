@@ -300,7 +300,7 @@ const SingleprojectDetail = [
       videoLink: "https://www.youtube.com/shorts/L1BRTrBobAI",
       youtubeLink: "https://www.youtube.com/shorts/L1BRTrBobAI",
       instagramLink: "https://www.instagram.com/p/C0oeC5NSFp0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      Projectname:"E10-HK",
+      Projectname:"The Ripple Effect",
       metatittles:"Commercial Architecture | Parametric Facade with MetaFin",
       metadescription:"A fluid parametric facade using MetaFin’s seamless curves for a bold and organic commercial presence.",
       images: [
