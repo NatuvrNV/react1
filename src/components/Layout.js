@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   const location = useLocation();
 
   // Hide header on login and admin pages
-  const hideHeader = location.pathname === "/login" || location.pathname.startsWith("/admin") || location.pathname.startsWith("/projects") || location.pathname.startsWith("/products");
+  const hideHeader = location.pathname === "/login" || location.pathname.startsWith("/admin") || location.pathname.startsWith("/projects") || location.pathname.startsWith("/products")|| location.pathname.startsWith("/app") || location.pathname.startsWith("/products")|| location.pathname.startsWith("/twostep");
 
   return (
     <div>
