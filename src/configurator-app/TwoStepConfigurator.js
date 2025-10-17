@@ -690,22 +690,27 @@ const TwoStepConfigurator = () => {
         });
     };
 
-    // Add / remove product
-    const handleAddProduct = () => {
-        const newProduct = {
-            id: Date.now(),
-            name: `Product ${products.length + 1}`,
-            category: '',
-            subcategory: '',
-            color: '',
-            squareFootage: 500,
-            city: '',
-            isActive: false,
-            previewImage: null
-        };
-        setProducts([...products, newProduct]);
-        setActiveProductTab(newProduct.id);
+// Add / remove product
+const handleAddProduct = () => {
+    if (products.length >= 4) {
+        alert("Maximum limit of 4 products reached. You cannot add more products.");
+        return;
+    }
+    
+    const newProduct = {
+        id: Date.now(),
+        name: `Product ${products.length + 1}`,
+        category: '',
+        subcategory: '',
+        color: '',
+        squareFootage: 500,
+        city: '',
+        isActive: false,
+        previewImage: null
     };
+    setProducts([...products, newProduct]);
+    setActiveProductTab(newProduct.id);
+};
 
     const handleRemoveProduct = (productId, e) => {
         e.stopPropagation();
@@ -1200,7 +1205,14 @@ const TwoStepConfigurator = () => {
                                                                                 </button>
                                                                             </div>
                                                                         ))}
-                                                                        <button className="btn btn-success btn-sm" onClick={handleAddProduct}><i className="bi bi-plus-lg"></i> Add Product</button>
+                                                                        <button 
+    className="btn btn-success btn-sm" 
+    onClick={handleAddProduct} 
+    disabled={products.length >= 4}
+>
+    <i className="bi bi-plus-lg"></i> Add Product
+    {products.length >= 4 && " (Max reached)"}
+</button>
                                                                     </div>
 
                                                                     <form onSubmit={handleSubmit}>
