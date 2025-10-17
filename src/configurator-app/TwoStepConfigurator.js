@@ -123,7 +123,8 @@ const TwoStepConfigurator = () => {
                 name: 'Block',
                 description: 'Small, delicate flutes for subtle texture',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
             {
@@ -131,7 +132,8 @@ const TwoStepConfigurator = () => {
                 name: 'Circles',
                 description: 'Small, delicate flutes for subtle texture',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
             {
@@ -139,7 +141,8 @@ const TwoStepConfigurator = () => {
                 name: 'Step',
                 description: 'Small, delicate flutes for subtle texture',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
             {
@@ -147,7 +150,8 @@ const TwoStepConfigurator = () => {
                 name: 'Grooves',
                 description: 'Small, delicate flutes for subtle texture',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
             {
@@ -155,7 +159,8 @@ const TwoStepConfigurator = () => {
                 name: 'Mixed block',
                 description: 'Small, delicate flutes for subtle texture',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
             {
@@ -163,7 +168,8 @@ const TwoStepConfigurator = () => {
                 name: 'Concave',
                 description: 'Small, delicate flutes for subtle texture',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
             {
@@ -171,7 +177,8 @@ const TwoStepConfigurator = () => {
                 name: 'Mini block',
                 description: 'Small, delicate flutes for subtle texture',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
             {
@@ -179,7 +186,9 @@ const TwoStepConfigurator = () => {
                 name: 'Wave',
                 description: 'Small, delicate flutes for subtle texture',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
+                
             },
 
             {
@@ -187,7 +196,8 @@ const TwoStepConfigurator = () => {
                 name: 'Small block',
                 description: 'Small, delicate flutes for subtle texture',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
 
@@ -198,28 +208,32 @@ const TwoStepConfigurator = () => {
                 name: 'Square',
                 description: 'Stationary louver blades for consistent appearance',
                 image: 'https://images.unsplash.com/photo-1583845112207-683c6d38c0dd?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1583845112207-683c6d38c0dd?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1583845112207-683c6d38c0dd?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'sub2_louvers',
                 name: 'Concave wide',
                 description: 'Adjustable blades for ventilation control',
                 image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'sub3_louvers',
                 name: 'Concave slim',
                 description: 'Ornamental louver designs',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'sub4_louvers',
                 name: 'Slim',
                 description: 'Ornamental louver designs',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
             {
@@ -227,7 +241,8 @@ const TwoStepConfigurator = () => {
                 name: 'Wide',
                 description: 'Ornamental louver designs',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
             {
@@ -235,7 +250,8 @@ const TwoStepConfigurator = () => {
                 name: 'Convex',
                 description: 'Ornamental louver designs',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
             {
@@ -243,7 +259,8 @@ const TwoStepConfigurator = () => {
                 name: 'Trapezoid',
                 description: 'Ornamental louver designs',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
 
             {
@@ -251,7 +268,8 @@ const TwoStepConfigurator = () => {
                 name: 'Round',
                 description: 'Ornamental louver designs',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
         ],
         cat3: [ // Solid Panels subcategories
@@ -263,21 +281,24 @@ const TwoStepConfigurator = () => {
                 name: 'Hexagon',
                 description: 'Classic overlapping shingle pattern',
                 image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'sub2_shingles',
                 name: 'Circle',
                 description: 'Contemporary shingle designs',
                 image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'sub3_shingles',
                 name: 'Triangle',
                 description: 'Decorative scalloped edge shingles',
                 image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             }
         ],
         cat5: [ // Planks subcategories
@@ -303,7 +324,8 @@ const TwoStepConfigurator = () => {
                 color: '#8B4513',
                 description: 'Natural wood grain finish',
                 image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color3_flutes',
@@ -311,7 +333,8 @@ const TwoStepConfigurator = () => {
                 color: '#B87333',
                 description: 'Warm metallic copper finish',
                 image: 'https://images.unsplash.com/photo-1449247709967-d4461a6a6103?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1449247709967-d4461a6a6103?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1449247709967-d4461a6a6103?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color4_flutes',
@@ -319,7 +342,8 @@ const TwoStepConfigurator = () => {
                 color: '#6B8E23',
                 description: 'Aged green patina effect',
                 image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color5_flutes',
@@ -327,7 +351,8 @@ const TwoStepConfigurator = () => {
                 color: '#808080',
                 description: 'Modern neutral grey',
                 image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             }
         ],
         cat2: [ // Louvers colors
@@ -337,7 +362,8 @@ const TwoStepConfigurator = () => {
                 color: '#A52A2A',
                 description: 'Rustic weathered steel',
                 image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color2_louvers',
@@ -345,7 +371,8 @@ const TwoStepConfigurator = () => {
                 color: '#000000',
                 description: 'Matte black finish',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color3_louvers',
@@ -353,7 +380,8 @@ const TwoStepConfigurator = () => {
                 color: '#FFFFFF',
                 description: 'Clean white finish',
                 image: 'https://images.unsplash.com/photo-1583845112207-683c6d38c0dd?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1583845112207-683c6d38c0dd?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1583845112207-683c6d38c0dd?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color4_louvers',
@@ -361,7 +389,8 @@ const TwoStepConfigurator = () => {
                 color: '#CD7F32',
                 description: 'Rich bronze metallic',
                 image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             }
         ],
         cat3: [ // Solid Panels colors
@@ -371,7 +400,8 @@ const TwoStepConfigurator = () => {
                 color: '#A52A2A',
                 description: 'Weathered steel look',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color2_solid',
@@ -379,7 +409,8 @@ const TwoStepConfigurator = () => {
                 color: '#36454F',
                 description: 'Dark charcoal grey',
                 image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color3_solid',
@@ -387,7 +418,8 @@ const TwoStepConfigurator = () => {
                 color: '#878681',
                 description: 'Metallic titanium finish',
                 image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color4_solid',
@@ -395,7 +427,8 @@ const TwoStepConfigurator = () => {
                 color: '#0F0F0F',
                 description: 'Deep black onyx',
                 image: 'https://images.unsplash.com/photo-1449247709967-d4461a6a6103?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1449247709967-d4461a6a6103?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1449247709967-d4461a6a6103?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             }
         ],
         cat4: [ // Shingles colors
@@ -405,7 +438,8 @@ const TwoStepConfigurator = () => {
                 color: '#A52A2A',
                 description: 'Traditional weathered look',
                 image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color2_shingles',
@@ -413,7 +447,8 @@ const TwoStepConfigurator = () => {
                 color: '#C19A6B',
                 description: 'Natural cedar tone',
                 image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color3_shingles',
@@ -421,7 +456,8 @@ const TwoStepConfigurator = () => {
                 color: '#708090',
                 description: 'Slate grey appearance',
                 image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color4_shingles',
@@ -429,7 +465,8 @@ const TwoStepConfigurator = () => {
                 color: '#E2725B',
                 description: 'Warm terracotta red',
                 image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             }
         ],
         cat5: [ // Planks colors
@@ -439,7 +476,8 @@ const TwoStepConfigurator = () => {
                 color: '#A52A2A',
                 description: 'Rustic steel finish',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color2_planks',
@@ -447,7 +485,8 @@ const TwoStepConfigurator = () => {
                 color: '#773F1A',
                 description: 'Rich walnut wood tone',
                 image: 'https://images.unsplash.com/photo-1583845112207-683c6d38c0dd?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1583845112207-683c6d38c0dd?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1583845112207-683c6d38c0dd?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color3_planks',
@@ -455,7 +494,8 @@ const TwoStepConfigurator = () => {
                 color: '#DFBE8A',
                 description: 'Natural oak appearance',
                 image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             },
             {
                 id: 'color4_planks',
@@ -463,7 +503,8 @@ const TwoStepConfigurator = () => {
                 color: '#555D50',
                 description: 'Dark ebony finish',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
-                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop'
+                preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
+                 multiplier: 1.2,
             }
         ]
     };
@@ -1421,3 +1462,4 @@ const handleAddProduct = () => {
 };
 
 export default TwoStepConfigurator;
+
