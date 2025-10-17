@@ -727,5 +727,12 @@
     <changefreq>monthly</changefreq>
   </url>
 
+                            <url>
+    <loc>https://metaguise.com/blog/beyond-the-surface:-the-emotional-intelligence-of-architectural-materials</loc>
+    <lastmod>2025-10-17</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
