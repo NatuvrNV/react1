@@ -2007,11 +2007,11 @@ Because true innovation isn’t about sealing buildings off from nature.
   `,
          description: "A technical yet accessible explainer on ventilated metal facade cladding and how it improves air circulation, insulation, and building performance.",
          images: [
-             "assets/Blogs/beyond surface/surface1.webp",
-             "assets/Blogs/beyond surface/surface2.jpg",
-             "assets/Blogs/beyond surface/surface3.jpg",
-             "assets/Blogs/beyond surface/surface4.jpg",
-             "assets/Blogs/beyond surface/surface5.jpg",
+             "assets/Blogs/breathe/breathe1.jpg",
+             "assets/Blogs/breathe/breathe2.jpg",
+             "assets/Blogs/breathe/breathe3.jpg",
+             "assets/Blogs/breathe/breathe4.jpg",
+             
                 
          ],
 
@@ -2020,6 +2020,7 @@ Because true innovation isn’t about sealing buildings off from nature.
         
        },
   ];
+
 
 
 
