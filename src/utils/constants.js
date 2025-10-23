@@ -1599,7 +1599,7 @@ const SingleprojectDetail = [
 // October Projects
 
      {
-      name: "verdigris-veil",
+      name: "Verdigris Veil",
       videoLink: "",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
@@ -1627,7 +1627,7 @@ const SingleprojectDetail = [
     },
 
      {
-      name: "casa-stilgrove",
+      name: "Casa Stilgrove",
       videoLink: "",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
@@ -1656,7 +1656,7 @@ const SingleprojectDetail = [
     },
 
      {
-      name: "cornerstone",
+      name: "The Cornerstone",
       videoLink: "",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
@@ -1682,34 +1682,10 @@ const SingleprojectDetail = [
       ],
     },
 
-     {
-      name: "w12",
-      videoLink: "",
-           alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
-      youtubeLink: "",
-      instagramLink: "",
-      Projectname:"The Undercurrent",
-      metatittles:"",
-      metadescription:"",
-      images: [
 
-          "assets/Allprojects/residential/W12/metafin/w12_2.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_3.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_4.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_5.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_6.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_7.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_8.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_9.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_10.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_11.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_12.webp",
-          "assets/Allprojects/residential/W12/metafin/w12_13.webp",
-      ],
-    },
 
      {
-      name: "golden-bloom",
+      name: "The Golden Bloom",
       videoLink: "",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
@@ -1733,7 +1709,7 @@ const SingleprojectDetail = [
     },
 
      {
-      name: "stillwave",
+      name: "The Stillwave",
       videoLink: "",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
@@ -1756,7 +1732,7 @@ const SingleprojectDetail = [
 
 
         {
-      name: "achintya",
+      name: "Achintya",
         alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
       videoLink: "",
       youtubeLink: "",
