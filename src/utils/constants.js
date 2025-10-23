@@ -1695,16 +1695,16 @@ const SingleprojectDetail = [
       metadescription:"",
       images: [
 
-          "assets/Allprojects/residential/Golden Bloom/metacoin/coin_3.webp",
-          "assets/Allprojects/residential/Golden Bloom/metacoin/coin_4.webp",
-          "assets/Allprojects/residential/Golden Bloom/metacoin/coin_5.webp",
-          "assets/Allprojects/residential/Golden Bloom/metacoin/coin_6.webp",
-          "assets/Allprojects/residential/Golden Bloom/metacoin/coin_11.webp",
-          "assets/Allprojects/residential/Golden Bloom/metaflute/coin_2.webp",
-          "assets/Allprojects/residential/Golden Bloom/metaflute/coin_7.webp",
-          "assets/Allprojects/residential/Golden Bloom/metaflute/coin_10.webp",
-          "assets/Allprojects/residential/Golden Bloom/solid panel/coin_8.webp",
-          "assets/Allprojects/residential/Golden Bloom/solid panel/coin_9.webp",
+          "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_3.webp",
+          "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_4.webp",
+          "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_5.webp",
+          "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_6.webp",
+          "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_11.webp",
+          "assets/Allprojects/residential/The Golden Bloom/metaflute/coin_2.webp",
+          "assets/Allprojects/residential/The Golden Bloom/metaflute/coin_7.webp",
+          "assets/Allprojects/residential/The Golden Bloom/metaflute/coin_10.webp",
+          "assets/Allprojects/residential/The Golden Bloom/solid panel/coin_8.webp",
+          "assets/Allprojects/residential/The Golden Bloom/solid panel/coin_9.webp",
       ],
     },
 
@@ -1752,7 +1752,7 @@ const SingleprojectDetail = [
     },
 
         {
-      name: "ab-jewels",
+      name: "AB Jewels",
         alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
       videoLink: "",
       youtubeLink: "",
@@ -2817,8 +2817,8 @@ export const ProjectImages = [
     { imgPath: "assets/Allprojects/commercial/E10/cover/e105.webp",order: 17 },
     { imgPath: "assets/Allprojects/commercial/Painflame/cover/15.webp", order: 12 },
     { imgPath: "assets/Allprojects/commercial/PremHospital/cover/prem1.webp",order: 10 },
-          { imgPath: "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",order: 10 },
-          { imgPath: "assets/Allprojects/commercial/Achintya/cover/achintya_1.webp",order: 10 },
+          { imgPath: "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",order: 1 },
+          { imgPath: "assets/Allprojects/commercial/Achintya/cover/achintya_1.webp",order: 1 },
   ];
 
   // In your constants.js (or directly in the component)
