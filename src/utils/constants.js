@@ -2752,6 +2752,8 @@ export const ProductImages = [
 
 export const ProjectImages = [
     { imgPath: "assets/Allprojects/residential/Sculpted Silence/cover/A2_1.webp",  order: 1},
+     { imgPath: "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",order: 1 },
+          { imgPath: "assets/Allprojects/commercial/Achintya/cover/achintya_1.webp",order: 1 },
           { imgPath: "assets/Allprojects/residential/Casa Stilgrove/cover/casa_1.webp",  order: 1},
           { imgPath: "assets/Allprojects/residential/The Cornerstone/cover/nitiKa_1.webp",  order: 1},
           { imgPath: "assets/Allprojects/residential/The Golden Bloom/cover/coin_1.webp",  order: 1},
@@ -2817,8 +2819,7 @@ export const ProjectImages = [
     { imgPath: "assets/Allprojects/commercial/E10/cover/e105.webp",order: 17 },
     { imgPath: "assets/Allprojects/commercial/Painflame/cover/15.webp", order: 12 },
     { imgPath: "assets/Allprojects/commercial/PremHospital/cover/prem1.webp",order: 10 },
-          { imgPath: "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",order: 1 },
-          { imgPath: "assets/Allprojects/commercial/Achintya/cover/achintya_1.webp",order: 1 },
+         ,
   ];
 
   // In your constants.js (or directly in the component)
