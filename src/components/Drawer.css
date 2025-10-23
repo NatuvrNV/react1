@@ -207,6 +207,7 @@ html, body, #root {
     letter-spacing: 0.03em;
   }
 
+
   .newsletter-mob{
   display:block;
 }
@@ -217,6 +218,21 @@ html, body, #root {
 
   .newsletter-section input{
     padding:0px 10px !important;
+      border-radius: 0px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .newsletter-button{
+       border-radius: 0px;
+    padding: 4px 16px;
+    width: auto;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 20px;
   }
 
    .newsletter-section button{
