@@ -1595,7 +1595,221 @@ const SingleprojectDetail = [
           "assets/Allprojects/residential/88Arjun/metafin/88_14.webp",
       ],
     },
+    
+// October Projects
 
+     {
+      name: "verdigris-veil",
+      videoLink: "",
+           alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
+      youtubeLink: "",
+      instagramLink: "https://www.instagram.com/p/DPJVPxaAVG9/?utm_source=ig_web_copy_link",
+      Projectname:"Verdigris Veil",
+      metatittles:"",
+      metadescription:"",
+      images: [
+
+          "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_5.webp",
+          "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_6.webp",
+          "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_14.webp",
+          "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_15.webp",
+          "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_16.webp",
+           "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_2.webp",
+           "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_3.webp",
+           "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_4.webp",
+           "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_7.webp",
+           "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_8.webp",
+          "assets/Allprojects/residential/Verdigris Veil/night/K3_9.webp",
+          "assets/Allprojects/residential/Verdigris Veil/night/K3_10.webp",
+          
+          
+      ],
+    },
+
+     {
+      name: "casa-stilgrove",
+      videoLink: "",
+           alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"Casa Stilgrove",
+      metatittles:"",
+      metadescription:"",
+      images: [
+
+          "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_2.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_3.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_5.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_15.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_16.webp",
+           "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_4.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_6.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_7.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_9.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_10.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_11.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_13.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metaLouver/casa_8.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metaLouver/casa_12.webp",
+          "assets/Allprojects/residential/Casa Stilgrove/metaLouver/casa_14.webp",
+      ],
+    },
+
+     {
+      name: "cornerstone",
+      videoLink: "",
+           alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Cornerstone",
+      metatittles:"",
+      metadescription:"",
+      images: [
+
+          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_2.webp",
+          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_3.webp",
+          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_4.webp",
+          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_7.webp",
+          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_8.webp",
+          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_12.webp",
+          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_13.webp",
+          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_5.webp",
+          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_6.webp",
+          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_9.webp",
+          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_10.webp",
+          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_11.webp",
+          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_14.webp",
+      ],
+    },
+
+     {
+      name: "w12",
+      videoLink: "",
+           alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Undercurrent",
+      metatittles:"",
+      metadescription:"",
+      images: [
+
+          "assets/Allprojects/residential/W12/metafin/w12_2.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_3.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_4.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_5.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_6.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_7.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_8.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_9.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_10.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_11.webp",
+           "assets/Allprojects/residential/W12/metafin/w12_12.webp",
+          "assets/Allprojects/residential/W12/metafin/w12_13.webp",
+      ],
+    },
+
+     {
+      name: "golden-bloom",
+      videoLink: "",
+           alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Golden Bloom",
+      metatittles:"",
+      metadescription:"",
+      images: [
+
+          "assets/Allprojects/residential/Golden Bloom/metacoin/coin_3.webp",
+          "assets/Allprojects/residential/Golden Bloom/metacoin/coin_4.webp",
+          "assets/Allprojects/residential/Golden Bloom/metacoin/coin_5.webp",
+          "assets/Allprojects/residential/Golden Bloom/metacoin/coin_6.webp",
+          "assets/Allprojects/residential/Golden Bloom/metacoin/coin_11.webp",
+          "assets/Allprojects/residential/Golden Bloom/metaflute/coin_2.webp",
+          "assets/Allprojects/residential/Golden Bloom/metaflute/coin_7.webp",
+          "assets/Allprojects/residential/Golden Bloom/metaflute/coin_10.webp",
+          "assets/Allprojects/residential/Golden Bloom/solid panel/coin_8.webp",
+          "assets/Allprojects/residential/Golden Bloom/solid panel/coin_9.webp",
+      ],
+    },
+
+     {
+      name: "stillwave",
+      videoLink: "",
+           alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Stillwave",
+      metatittles:"",
+      metadescription:"",
+      images: [
+
+          "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_4.webp",
+          "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_5.webp",
+          "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_6.webp",
+          "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_7.webp",
+          "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_3.webp",
+          "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_10.webp",
+          "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_11.webp",
+          "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_13.webp",
+      ],
+    },
+
+
+        {
+      name: "achintya",
+        alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"Achintya",
+      metatittles:"",
+      metadescription:"",
+      images: [
+      
+        "assets/Allprojects/commercial/Achintya/metacoin/achintya_2.webp",
+          "assets/Allprojects/commercial/Achintya/metacoin/achintya_3.webp",
+          "assets/Allprojects/commercial/Achintya/metacoin/achintya_4.webp",
+          "assets/Allprojects/commercial/Achintya/metacoin/achintya_5.webp",
+          "assets/Allprojects/commercial/Achintya/metacoin/achintya_6.webp",
+        
+      ],
+    },
+
+        {
+      name: "ab-jewels",
+        alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"AB Jewels",
+      metatittles:"RJ Jewellers, Jaipur | Parametric METABLOX™ Facade by Metaguise",
+      metadescription:"Debuting on the RJ Jewellers flagship in Jaipur, METABLOX™ by Metaguise is a modular, shape-shifting facade system. Inspired by beehives and blooming like a lotus, this champagne gold parametric marvel redefines metal as motion, rhythm, and identity.",
+      images: [
+      
+        "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_2.webp",
+          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_6.webp",
+          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_9.webp",
+          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_10.webp",
+          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_11.webp",
+          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_12.webp",
+          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_13.webp",
+          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_14.webp",
+          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_15.webp",
+          "assets/Allprojects/commercial/AB Jewels/night/ab_3.webp",
+          "assets/Allprojects/commercial/AB Jewels/night/ab_4.webp",
+          "assets/Allprojects/commercial/AB Jewels/night/ab_5.webp",
+          "assets/Allprojects/commercial/AB Jewels/night/ab_7.webp",
+          "assets/Allprojects/commercial/AB Jewels/night/ab_8.webp",
+          
+       
+       
+      
+        
+      ],
+    },
+
+    //October Projects
+    
 
       {
       name: "w12",
@@ -2562,11 +2776,16 @@ export const ProductImages = [
 
 export const ProjectImages = [
     { imgPath: "assets/Allprojects/residential/Sculpted Silence/cover/A2_1.webp",  order: 1},
+          { imgPath: "assets/Allprojects/residential/Casa Stilgrove/cover/casa_1.webp",  order: 1},
+          { imgPath: "assets/Allprojects/residential/The Cornerstone/cover/nitiKa_1.webp",  order: 1},
+          { imgPath: "assets/Allprojects/residential/The Golden Bloom/cover/coin_1.webp",  order: 1},
+          { imgPath: "assets/Allprojects/residential/The Stillwave/cover/Kunal_1.webp",  order: 1},
     { imgPath: "assets/Allprojects/residential/The Haven/cover/rochak_1.webp",  order: 1},
     { imgPath: "assets/Allprojects/residential/Apex Residence/cover/manish_1.webp",  order: 1},
     { imgPath: "assets/Allprojects/commercial/Blossoms/cover/blossoms1.webp",  order: 1},
     { imgPath: "assets/Allprojects/commercial/Cityspace82/cover/cityspace82_1.webp",  order: 1},
      { imgPath: "assets/Allprojects/residential/88Arjun/cover/88_5.webp",  order: 1},
+        { imgPath: "assets/Allprojects/residential/Verdigris Veil/cover/K3_1.webp",  order: 1},
      { imgPath: "assets/Allprojects/residential/W12/cover/w12_1.webp",  order: 1},
     { imgPath: "assets/Allprojects/commercial/whiteland/cover/wl1.webp",order: 1 },
     { imgPath: "assets/Allprojects/residential/3939A/cover/3939A_7.webp",  order: 1},
@@ -2622,6 +2841,8 @@ export const ProjectImages = [
     { imgPath: "assets/Allprojects/commercial/E10/cover/e105.webp",order: 17 },
     { imgPath: "assets/Allprojects/commercial/Painflame/cover/15.webp", order: 12 },
     { imgPath: "assets/Allprojects/commercial/PremHospital/cover/prem1.webp",order: 10 },
+          { imgPath: "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",order: 10 },
+          { imgPath: "assets/Allprojects/commercial/Achintya/cover/achintya_1.webp",order: 10 },
   ];
 
   // In your constants.js (or directly in the component)
