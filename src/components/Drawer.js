@@ -35,13 +35,7 @@ function Drawer({ isOpen, toggleDrawer }) {
               <Nav.Link className="text-white" href="/contact">
                 Get In Touch
               </Nav.Link>
-              // <Nav.Link className="text-white Privacy-mob" href="/privacy-policy">
-              //   Privacy Policy
-              // </Nav.Link>
-              // <Nav.Link className="text-white Privacy-mob" href="/terms-conditions">
-              //   Terms & Conditions
-              // </Nav.Link>
-
+       
             <Nav.Link className="text-white" href="/build">
                 Build Your Facade
               </Nav.Link>
