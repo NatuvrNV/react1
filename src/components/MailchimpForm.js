@@ -40,6 +40,7 @@ function MailchimpForm() {
           type="email"
           name="EMAIL"
           placeholder="Enter your email"
+className="newsletter-input"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -53,6 +54,7 @@ function MailchimpForm() {
         />
         <button
           type="submit"
+className="newsletter-button"
           style={{
             borderRadius: "0",
             padding: "8px 16px",
@@ -82,5 +84,6 @@ function MailchimpForm() {
 }
 
 export default MailchimpForm;
+
 
 
