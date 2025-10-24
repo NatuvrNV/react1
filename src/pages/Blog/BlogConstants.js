@@ -2131,8 +2131,7 @@ Because when you breathe new life into the past, the future begins to shine.
              "assets/Blogs/reimagine/3.webp",
              "assets/Blogs/reimagine/4.webp",
              "assets/Blogs/reimagine/5.webp",
-
-             
+             "assets/Blogs/reimagine/6.webp",
                 
          ],
 
@@ -2141,6 +2140,7 @@ Because when you breathe new life into the past, the future begins to shine.
         
        },
   ];
+
 
 
 
