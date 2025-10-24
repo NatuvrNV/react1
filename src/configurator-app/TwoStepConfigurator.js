@@ -96,7 +96,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub1_flutes',
                 name: 'Angled',
-                description: 'Standard depth flutes for general applications',
+                description: 'A stepped, slanted profile that creates sharp highlights and shadows, adding a dynamic, modern rhythm to the façade.',
                 image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop',
                 multiplier: 1.1,
@@ -104,7 +104,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub2_flutes',
                 name: 'Block spaced',
-                description: 'Deep profile flutes for dramatic shadow effects',
+                description: 'Evenly spaced rectangular flutes that form a balanced grid, offering a clean, minimal, and well-proportioned visual order.',
                 image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=400&h=300&fit=crop',
                 multiplier: 1.2,
@@ -112,7 +112,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub3_flutes',
                 name: 'Triangle',
-                description: 'Small, delicate flutes for subtle texture',
+                description: 'A repeating V-shaped profile that produces bold lines and dramatic shadow play, ideal for statement façades with a geometric character.',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
                 multiplier: 1.4,
@@ -121,7 +121,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub4_flutes',
                 name: 'Block',
-                description: 'Small, delicate flutes for subtle texture',
+                description: 'Straight, solid rectangular projections that provide a strong, uniform rhythm for a clean and structured façade language.',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -130,7 +130,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub5_flutes',
                 name: 'Circles',
-                description: 'Small, delicate flutes for subtle texture',
+                description: 'A series of circular extrusions that soften the surface with rounded contours, creating a playful yet elegant visual flow.',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -139,7 +139,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub6_flutes',
                 name: 'Step',
-                description: 'Small, delicate flutes for subtle texture',
+                description: 'A tiered, cascading form that mimics steps, generating layered shadows and subtle depth across the elevation.',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -147,8 +147,8 @@ const TwoStepConfigurator = () => {
 
             {
                 id: 'sub7_flutes',
-                name: 'Grooves',
-                description: 'Small, delicate flutes for subtle texture',
+                name: 'Grooved',
+                description: 'Fine, closely spaced linear ribs that add texture and tactile refinement, perfect for a subdued, detail-oriented surface.',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -157,7 +157,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub8_flutes',
                 name: 'Mixed block',
-                description: 'Small, delicate flutes for subtle texture',
+                description: 'Blocks of varied heights that break visual monotony and introduce a lively, rhythmic façade composition.',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -166,7 +166,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub9_flutes',
                 name: 'Concave',
-                description: 'Small, delicate flutes for subtle texture',
+                description: 'A deep inward-curved form that captures light elegantly, creating soft highlights and a sculptural surface effect.',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -175,7 +175,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub10_flutes',
                 name: 'Mini block',
-                description: 'Small, delicate flutes for subtle texture',
+                description: 'Compact, tightly spaced block elements that deliver a refined, micro-scaled texture with consistent repetition.',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -184,7 +184,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub11_flutes',
                 name: 'Wave',
-                description: 'Small, delicate flutes for subtle texture',
+                description: 'A smooth, flowing contour that moves like a gentle ripple, lending softness, motion, and fluidity to the façade.',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -194,7 +194,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub12_flutes',
                 name: 'Small block',
-                description: 'Small, delicate flutes for subtle texture',
+                description: 'Uniform, compact rectangular forms that maintain order and simplicity, offering a neat and minimal façade expression.',
                 image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -206,7 +206,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub1_louvers',
                 name: 'Square',
-                description: 'Stationary louver blades for consistent appearance',
+                description: 'A balanced, uniform profile that delivers a clean and minimal look. Its sharp geometry creates an orderly rhythm, ideal for modern, grid-driven façades.',
                 image: 'https://images.unsplash.com/photo-1583845112207-683c6d38c0dd?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1583845112207-683c6d38c0dd?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -214,7 +214,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub2_louvers',
                 name: 'Concave wide',
-                description: 'Adjustable blades for ventilation control',
+                description: 'A broad inward-curved profile that softens the elevation with gentle contours. Its wider arc captures light gracefully, adding depth and a sculpted presence.',
                 image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1494526585095-c41746248156?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -222,7 +222,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub3_louvers',
                 name: 'Concave slim',
-                description: 'Ornamental louver designs',
+                description: 'A narrower inward curve with a sleek silhouette. It offers a refined, elegant look with subtle highlights and shadows, perfect for understated façades.',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -230,7 +230,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub4_louvers',
                 name: 'Slim',
-                description: 'Ornamental louver designs',
+                description: 'A tall, slender profile that emphasises verticality. Its minimal footprint creates a light and streamlined appearance without visual bulk.',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -239,7 +239,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub5_louvers',
                 name: 'Wide',
-                description: 'Ornamental louver designs',
+                description: 'A broader rectangular form that feels solid and grounded. It offers stronger visual weight and bold lines for impactful, architectural compositions.',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -248,7 +248,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub6_louvers',
                 name: 'Convex',
-                description: 'Ornamental louver designs',
+                description: 'A smooth outward curve that introduces softness and volume. This profile reflects light beautifully, adding movement and a sculptural feel to the surface.',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -257,7 +257,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub7_louvers',
                 name: 'Trapezoid',
-                description: 'Ornamental louver designs',
+                description: 'A tapered geometric profile that adds dynamism to the façade. Its angled sides create sharp transitions and dramatic shadows for a striking design language.',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -266,7 +266,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub8_louvers',
                 name: 'Round',
-                description: 'Ornamental louver designs',
+                description: 'A circular profile with a soft, continuous edge. It brings a gentle, flowing character to the façade, balancing modern lines with organic form.',
                 image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -279,7 +279,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub1_shingles',
                 name: 'Hexagon',
-                description: 'Classic overlapping shingle pattern',
+                description: 'A tessellated hexagonal pattern that creates a seamless, honeycomb-like surface. The geometry distributes light evenly and brings a modern, architectural rhythm to the façade.',
                 image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -287,7 +287,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub2_shingles',
                 name: 'Circle',
-                description: 'Contemporary shingle designs',
+                description: 'A soft, scalloped form that adds curvature and fluidity to the surface. Its overlapping arrangement creates elegant shadows and a timeless, tiled aesthetic.',
                 image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -295,7 +295,7 @@ const TwoStepConfigurator = () => {
             {
                 id: 'sub3_shingles',
                 name: 'Triangle',
-                description: 'Decorative scalloped edge shingles',
+                description: 'A sharp, angular shingle that delivers a bold, graphic expression. The triangular repetition introduces depth, drama, and a dynamic play of highlights across the façade.',
                 image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=150&h=150&fit=crop',
                 preview: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop',
                  multiplier: 1.2,
@@ -1462,4 +1462,5 @@ const handleAddProduct = () => {
 };
 
 export default TwoStepConfigurator;
+
 
