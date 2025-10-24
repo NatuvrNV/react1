@@ -1600,7 +1600,7 @@ const SingleprojectDetail = [
 
      {
       name: "Verdigris Veil",
-      videoLink: "",
+      videoLink: "https://www.instagram.com/p/DPJVPxaAVG9/?utm_source=ig_web_copy_link",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DPJVPxaAVG9/?utm_source=ig_web_copy_link",
@@ -1628,10 +1628,10 @@ const SingleprojectDetail = [
 
      {
       name: "Casa Stilgrove",
-      videoLink: "",
+      videoLink: "https://www.instagram.com/p/DLHNdyWSHEK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
-      instagramLink: "",
+      instagramLink: "https://www.instagram.com/p/DLHNdyWSHEK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Casa Stilgrove",
       metatittles:"",
       metadescription:"",
@@ -1657,10 +1657,10 @@ const SingleprojectDetail = [
 
      {
       name: "The Cornerstone",
-      videoLink: "",
+      videoLink: "https://www.instagram.com/p/DJWxORdSkKR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
-      instagramLink: "",
+      instagramLink: "https://www.instagram.com/p/DJWxORdSkKR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Cornerstone",
       metatittles:"",
       metadescription:"",
@@ -1686,10 +1686,10 @@ const SingleprojectDetail = [
 
      {
       name: "The Golden Bloom",
-      videoLink: "",
+      videoLink: "https://www.youtube.com/shorts/hi-nBldGue0",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
-      youtubeLink: "",
-      instagramLink: "",
+      youtubeLink: "https://www.youtube.com/shorts/hi-nBldGue0?feature=share",
+      instagramLink: "https://www.instagram.com/p/DPnl6qagXk0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Golden Bloom",
       metatittles:"",
       metadescription:"",
@@ -1713,7 +1713,7 @@ const SingleprojectDetail = [
       videoLink: "",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
-      instagramLink: "",
+      instagramLink: "https://www.instagram.com/p/DOdyKVBgZfy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Stillwave",
       metatittles:"",
       metadescription:"",
@@ -1736,7 +1736,7 @@ const SingleprojectDetail = [
         alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
       videoLink: "",
       youtubeLink: "",
-      instagramLink: "",
+      instagramLink: "https://www.instagram.com/p/DLmAChpS7oL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Achintya",
       metatittles:"",
       metadescription:"",
@@ -1756,10 +1756,10 @@ const SingleprojectDetail = [
         alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
       videoLink: "",
       youtubeLink: "",
-      instagramLink: "",
+      instagramLink: "https://www.instagram.com/p/DP8DOfnAeKW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"AB Jewels",
-      metatittles:"RJ Jewellers, Jaipur | Parametric METABLOX™ Facade by Metaguise",
-      metadescription:"Debuting on the RJ Jewellers flagship in Jaipur, METABLOX™ by Metaguise is a modular, shape-shifting facade system. Inspired by beehives and blooming like a lotus, this champagne gold parametric marvel redefines metal as motion, rhythm, and identity.",
+      metatittles:"",
+      metadescription:"",
       images: [
       
         "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_2.webp",
