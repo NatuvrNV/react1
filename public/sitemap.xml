@@ -797,5 +797,12 @@
     <changefreq>monthly</changefreq>
   </url>
 
+                                  <url>
+    <loc>https://metaguise.com/blog/scaling-design:-why-metacoin-is-the-future-of-large-scale-parametric-facades</loc>
+    <lastmod>2025-10-27</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
