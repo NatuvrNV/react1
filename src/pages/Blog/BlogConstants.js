@@ -2154,7 +2154,7 @@ At that scale, every choice matters. Every joint, every panel, every reflection 
 And that’s where MetaCoin, Metaguise’s breakthrough parametric facade system, rises above everything else.
 
 
-The Challenge of Monumental Architecture
+<strong>The Challenge of Monumental Architecture</strong>
 
 
 Large projects like the Miraj Cricket Stadium in Rajasthan push facade engineering to its limits. They demand design fluidity across massive surfaces, withstanding everything from high winds and dust storms to extreme temperature shifts.
@@ -2164,7 +2164,7 @@ For facades of that scale, ordinary systems often fall short - panels lose align
 Metaguise designed MetaCoin to change that - to combine parametric precision with long-term performance in a system that makes large-scale architecture practical, powerful, and enduring.
 
 
-MetaCoin: Designed for Scale, Engineered for Performance
+<strong>MetaCoin: Designed for Scale, Engineered for Performance</strong>
 
 
 MetaCoin is a high-performance metal facade technology crafted from premium aluminium alloy and finished with MetaSurface coatings tested for India’s toughest climates.
@@ -2176,7 +2176,7 @@ Every component is modular, lightweight, and installation-efficient, making Meta
 It’s a system that brings architectural ambition and practical execution onto the same page.
 
 
-Enduring Design That Outperforms Its Cost
+<strong>Enduring Design That Outperforms Its Cost</strong>
 
 
 In large-scale projects, longevity and performance are the real measures of value. A facade that resists corrosion, fading, and distortion over decades isn’t just cost-efficient - it’s intelligent architecture.
@@ -2190,7 +2190,7 @@ And because MetaCoin is parametrically optimized and fabricated in-house, it min
 It’s performance that pays back - not through discounts, but through longevity, precision, and confidence.
 
 
-Why MetaCoin Stands Out in Large-Scale Projects
+<strong>Why MetaCoin Stands Out in Large-Scale Projects</strong>
 
 
 Innovative facade design projects like the Miraj Cricket Stadium demand a facade that can do more than cover a structure - it must inspire, protect, and perform.
@@ -2215,7 +2215,7 @@ Low maintenance lifecycle, ensuring beauty and performance endure
 MetaCoin offers the kind of lasting reliability that architects and developers appreciate - because every project looks as good years later as it did on opening day.
 
 
-A Facade for a Generation, Not a Season
+<strong>A Facade for a Generation, Not a Season</strong>
 
 
 Unlike systems that chase trends or temporary appeal, MetaCoin is built for endurance. It’s designed to look just as striking after ten summers of Rajasthan sun as it did on day one.
@@ -2252,6 +2252,7 @@ And that’s the promise of MetaCoin.
         
        },
   ];
+
 
 
 
