@@ -16,6 +16,18 @@ export const About = () => {
   }, []);
   return (
     <>
+         <Helmet>
+              <title>About Metaguise | Experts in Metal Facade Design </title>
+              <meta name="description" content="Metaguise creates custom metal facade designs and claddings that bring modern structures to life." />
+              <meta name="keywords" content="home, react, SEO, web development" />
+              <meta name="author" content="Your Name" />
+              <meta property="og:title" content="About Metaguise | Experts in Metal Facade Design " />
+              <meta property="og:description" content="Metaguise creates custom metal facade designs and claddings that bring modern structures to life." />
+              <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
+              <meta property="og:url" content="https://metaguise.com/" />
+              <meta name="robots" content="index, follow" />
+              <link rel="canonical" href="https://metaguise.com//about" />
+            </Helmet>
       <div id="hero-section">
         <div  className="tw-py-5  tw-mt-20">
           <AboutHeroSection />
