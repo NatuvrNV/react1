@@ -4,6 +4,7 @@ import { VisionAndMission } from "../../collection/about/VisionAndMission/Vision
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Footer from "../../components/Footer";
+import { Helmet } from "react-helmet-async";
 import { AtAGlanceSection } from "../../collection/about/AtAGlanceSection/AtAGlanceSection";
 import { ReverseHeroSection } from "../../collection/about/ReverseHeroSection/ReverseHeroSection";
 // import { MeetTeam } from "../../collection/about/MeetTeam/MeetTeam";
