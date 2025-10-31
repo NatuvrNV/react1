@@ -124,3 +124,12 @@
 .drawer {
   transition: transform 0.3s ease-in-out;
 }
+
+.archello-icon {
+  width: 22px;
+  height: 25px;
+  object-fit: contain;
+
+  transition: filter 0.3s ease, transform 0.3s ease;
+  vertical-align: middle;
+}
