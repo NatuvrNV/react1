@@ -9,6 +9,7 @@ import {
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
 import logo from "../assets/logo.png";
+import Archello_icon from "../assets/Archello_icon.png";
 import Drawer from "./Drawer";
 
 function Header() {
@@ -82,6 +83,21 @@ function Header() {
                    alt="Follow Metaguise on Instagram - Trusted by architects across India and beyond, with 1800+ projects delivered PAN India."
               >
                 <FontAwesomeIcon icon={faYoutube} />
+              </a>
+
+                  {/* Archello */}
+              <a
+                href="https://archello.com/brand/metaguise"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon"
+                aria-label="View Metaguise on Archello"
+              >
+            <img
+  src={Archello_icon}
+  alt="Archello icon - Visit Metaguise on Archello, the global architecture and design network."
+  className="archello-icon"
+/>
               </a>
             </div>
           </div>
