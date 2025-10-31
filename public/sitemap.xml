@@ -804,5 +804,12 @@
     <changefreq>monthly</changefreq>
   </url>
 
+                                    <url>
+    <loc>https://metaguise.com/blog/designing-for-india:-how-metaguise-creates-facades-that-withstand-every-climate</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
