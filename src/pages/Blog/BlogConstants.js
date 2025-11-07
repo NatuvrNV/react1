@@ -2478,7 +2478,7 @@ If you’re planning a project that deserves more than a surface, let's co-creat
        },
 
                      {
-         title: "Parametric Architecture in India: Why It’s Shaping the Future of Facade Design",
+         title: "5 Visionary Architects and the Facade Narratives We Brought to Life",
         metaTitle: "Metaguise Blogs | 5 Visionary Architects & the Facade Stories We Built | Metaguise ",
          date: "07-11-25",
          category: "Facade Innovations",
@@ -2558,6 +2558,7 @@ Metaguise isn’t just a name - it’s a movement in metal. From Ahmedabad to Mo
         
        },
   ];
+
 
 
 
