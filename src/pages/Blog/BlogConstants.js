@@ -2492,33 +2492,33 @@ From flowing parametric architecture to sculptural metal facade cladding, here a
 
 <strong>1. Studio Ardete – HQ, Mohali</strong>
 Architects: Badrinath & Prerna Kaleru
- Explore the Project ➝
+<a href="https://metaguise.com/all-projects/ardete"> Explore the Project ➝</a>
 For their own headquarters, the team at Studio Ardete wanted a facade that moved - literally and metaphorically. We responded with a richly layered parametric facade design featuring MetaSequin, our algorithmic sequin system that creates a wave-like illusion across the elevation.
 MetaFin added fluid, curvilinear forms, giving the building sculptural depth, while MetaCassette panels provided a clean, structural framework with weather resistance and insulation - delivering not just beauty, but performance. A perfect blend of metal design and architectural expression.
 
 
 <strong>2. Cityspace’82 Architects – Head Office, Gurugram</strong>
-Explore the Project ➝
+<a href="https://metaguise.com/all-projects/cityspace82"> Explore the Project ➝</a>
 Cityspace’82’s own studio needed a facade that reflected their refined, modernist approach. We used MetaLouvers in a warm MetaWood finish to introduce light, shadow, and texture. By day, it’s tactile and sun-kissed; by night, a soft-lit sculpture.
 Paired with a MetaGate and solid terrace panels, the design balances natural warmth with contemporary finesse - making it a durable, low maintenance facade that ages gracefully. It's a signature example of smart, contextual facade architecture.
 
 
 <strong>3. Zenith – Mohali</strong>
 Architect: Sachit Pathak, Paragrid Arch
- Explore the Project ➝
+<a href="https://metaguise.com/all-projects/zenith"> Explore the Project ➝</a>
 Zenith is anything but a typical glass tower. Architect Sachit Pathak imagined something bold and organic - and we helped shape it with a flowing facade of champagne-gold MetaCoins, each one catching light like a jewel.
 Framed with solid panels and set against exposed brick arches, the elevation blends modern language with traditional cues. This is parametric architecture made tangible - where movement, rhythm, and craft come together in a metal facade that commands attention yet respects its context.
 
 
 <strong>4. AB Jewels – Ahmedabad</strong>
 Architect: Raveena Panchal, The Art Container
- Explore the Project ➝
+<a href="https://metaguise.com/all-projects/ab%20jewels"> Explore the Project ➝</a>
 Built to honour a 75-year legacy, the AB Jewels flagship is a facade you won’t forget. Sculpted from custom inverted diamond modules in aluminium, it gleams with precision. We call it MetaJewelled.
 The double-height MetaGate, with its gold-toned jaali design, mirrors the geometry of the elevation. The entire structure is treated with certified, exterior-grade coatings - ensuring it stays stunning with minimal upkeep. This is a true celebration of metal design that radiates heritage, elegance, and endurance.
 
 
 <strong>5. Private Residences with Studio Mathema</strong>
-Explore More ➝
+<a href="https://metaguise.com/all-projects/achintya"> Explore the Project ➝</a>
 Studio Mathema’s design approach is grounded in logic, analysis, and deep client conversations. We’ve collaborated with them across India on elegant residential facades that are both refined and highly functional.
 From fluted details using MetaFlute, to airflow-conscious MetaLouver screens, and transformable entryways with MetaFold, these homes show how thoughtful facade design can elevate everyday living. The result? Long lasting facades that look as good as they perform - and reflect the lives lived inside.
 
@@ -2558,6 +2558,7 @@ Metaguise isn’t just a name - it’s a movement in metal. From Ahmedabad to Mo
         
        },
   ];
+
 
 
 
