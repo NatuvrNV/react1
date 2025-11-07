@@ -818,5 +818,12 @@
     <changefreq>monthly</changefreq>
   </url>
 
+                                        <url>
+    <loc>https://metaguise.com/blog/5-visionary-architects-and-the-facade-narratives-we-brought-to-life</loc>
+    <lastmod>2025-11-7</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
