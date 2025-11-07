@@ -2476,7 +2476,89 @@ If you’re planning a project that deserves more than a surface, let's co-creat
      
         
        },
+
+                     {
+         title: "Parametric Architecture in India: Why It’s Shaping the Future of Facade Design",
+        metaTitle: "Metaguise Blogs | 5 Visionary Architects & the Facade Stories We Built | Metaguise ",
+         date: "07-11-25",
+         category: "Facade Innovations",
+         metaDescription: "Discover how Metaguise collaborated with top architects across India to craft iconic metal and parametric facades. From Mohali to Ahmedabad, explore innovative facade designs.",
+         Fulldescription: ` 
+
+At Metaguise, we believe every building should speak. And the facade is where that story begins. Across India, we’ve partnered with some of the country’s most forward-thinking architects to turn bold ideas into built realities - through expressive, high-performance metal facade systems that are beautiful, functional, and built to last.
+
+From flowing parametric architecture to sculptural metal facade cladding, here are five projects that reveal what happens when creativity meets precision - each one shaped by collaboration, craftsmanship, and trust.
+
+
+<strong>1. Studio Ardete – HQ, Mohali</strong>
+Architects: Badrinath & Prerna Kaleru
+ Explore the Project ➝
+For their own headquarters, the team at Studio Ardete wanted a facade that moved - literally and metaphorically. We responded with a richly layered parametric facade design featuring MetaSequin, our algorithmic sequin system that creates a wave-like illusion across the elevation.
+MetaFin added fluid, curvilinear forms, giving the building sculptural depth, while MetaCassette panels provided a clean, structural framework with weather resistance and insulation - delivering not just beauty, but performance. A perfect blend of metal design and architectural expression.
+
+
+<strong>2. Cityspace’82 Architects – Head Office, Gurugram</strong>
+Explore the Project ➝
+Cityspace’82’s own studio needed a facade that reflected their refined, modernist approach. We used MetaLouvers in a warm MetaWood finish to introduce light, shadow, and texture. By day, it’s tactile and sun-kissed; by night, a soft-lit sculpture.
+Paired with a MetaGate and solid terrace panels, the design balances natural warmth with contemporary finesse - making it a durable, low maintenance facade that ages gracefully. It's a signature example of smart, contextual facade architecture.
+
+
+<strong>3. Zenith – Mohali</strong>
+Architect: Sachit Pathak, Paragrid Arch
+ Explore the Project ➝
+Zenith is anything but a typical glass tower. Architect Sachit Pathak imagined something bold and organic - and we helped shape it with a flowing facade of champagne-gold MetaCoins, each one catching light like a jewel.
+Framed with solid panels and set against exposed brick arches, the elevation blends modern language with traditional cues. This is parametric architecture made tangible - where movement, rhythm, and craft come together in a metal facade that commands attention yet respects its context.
+
+
+<strong>4. AB Jewels – Ahmedabad</strong>
+Architect: Raveena Panchal, The Art Container
+ Explore the Project ➝
+Built to honour a 75-year legacy, the AB Jewels flagship is a facade you won’t forget. Sculpted from custom inverted diamond modules in aluminium, it gleams with precision. We call it MetaJewelled.
+The double-height MetaGate, with its gold-toned jaali design, mirrors the geometry of the elevation. The entire structure is treated with certified, exterior-grade coatings - ensuring it stays stunning with minimal upkeep. This is a true celebration of metal design that radiates heritage, elegance, and endurance.
+
+
+<strong>5. Private Residences with Studio Mathema</strong>
+Explore More ➝
+Studio Mathema’s design approach is grounded in logic, analysis, and deep client conversations. We’ve collaborated with them across India on elegant residential facades that are both refined and highly functional.
+From fluted details using MetaFlute, to airflow-conscious MetaLouver screens, and transformable entryways with MetaFold, these homes show how thoughtful facade design can elevate everyday living. The result? Long lasting facades that look as good as they perform - and reflect the lives lived inside.
+
+
+<strong>Why These Stories Matter</strong>
+
+Across every collaboration, a few things remain constant:
+
+We create <strong>parametric facades</strong> and aluminium facade systems that are engineered, expressive, and custom-built.
+
+
+We work <strong>PAN India</strong>, with a growing global presence, bringing the Metaguise ethos wherever bold design is needed.
+
+
+We’re trusted by <strong>top architects</strong>, known for our technical depth, aesthetic intuition, and reliability.
+
+
+We build <strong>low maintenance facades</strong>, metal facade cladding, and smart elevation design solutions that last for decades - not just seasons.
+
+
+Metaguise isn’t just a name - it’s a movement in metal. From Ahmedabad to Mohali, Gurugram to residences across the country, we’ve helped reimagine architecture one facade at a time. If you’re ready to design something extraordinary, let’s build it - together.
+
+  `,
+         description: " A look at the architectural philosophies of five top architects we’ve worked with",
+         images: [
+             "assets/Blogs/visionary/1.jpg",
+             "assets/Blogs/visionary/2.jpg",
+             "assets/Blogs/visionary/3.jpg",
+             "assets/Blogs/visionary/4.jpg",
+             "assets/Blogs/visionary/5.jpg",
+             "assets/Blogs/visionary/6.jpg",
+                
+         ],
+
+         folderName: "visionary", 
+     
+        
+       },
   ];
+
 
 
 
