@@ -825,5 +825,12 @@
     <changefreq>monthly</changefreq>
   </url>
 
+                                         <url>
+    <loc>https://metaguise.com/blog/5-reasons-to-choose-metasequin-for-your-facade</loc>
+    <lastmod>2025-11-10</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
