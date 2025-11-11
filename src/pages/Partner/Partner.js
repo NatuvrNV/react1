@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import "./Partner.css";
 import { Helmet } from "react-helmet-async";
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha"; // ✅ Import reCAPTCHA
+import ReCAPTCHA from "react-google-recaptcha"; // ✅ Import CAPTCHA
 
 const Partner = () => {
   const [formData, setFormData] = useState({
@@ -15,7 +15,7 @@ const Partner = () => {
     message: "",
   });
 
-  const [captchaToken, setCaptchaToken] = useState(null); // ✅ Captcha state
+  const [captchaToken, setCaptchaToken] = useState(null); // ✅ Store CAPTCHA token
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
 
@@ -43,7 +43,6 @@ const Partner = () => {
     setIsSending(true);
     setFeedbackMessage("");
 
-    // ✅ Validation checks
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
       setFeedbackMessage("❌ All fields are required.");
       setIsSending(false);
@@ -51,7 +50,7 @@ const Partner = () => {
     }
 
     if (!captchaToken) {
-      setFeedbackMessage("⚠️ Please complete the CAPTCHA before submitting.");
+      setFeedbackMessage("⚠️ Please complete the CAPTCHA verification.");
       setIsSending(false);
       return;
     }
@@ -74,7 +73,7 @@ const Partner = () => {
       console.log("Email sent successfully!", response);
       setFeedbackMessage("✅ Thank you for your enquiry. We will get in touch with you soon!");
       setFormData({ name: "", email: "", phone: "", message: "" });
-      setCaptchaToken(null); // reset captcha
+      setCaptchaToken(null);
 
       // ✅ Google Ads Conversion Tracking Trigger
       if (typeof window !== "undefined" && window.gtag) {
@@ -82,7 +81,6 @@ const Partner = () => {
           send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
         });
       }
-
     } catch (error) {
       console.error("Error sending email:", error);
       setFeedbackMessage("❌ Failed to send email. Please try again.");
@@ -99,10 +97,7 @@ const Partner = () => {
           name="description"
           content="Collaborate with Metaguise on custom facade cladding and metal facade solutions designed for standout architectural impact."
         />
-        <meta
-          property="og:title"
-          content="Partner with Metaguise | Innovative Facade Cladding Experts"
-        />
+        <meta property="og:title" content="Partner with Metaguise | Innovative Facade Cladding Experts" />
         <meta
           property="og:description"
           content="Collaborate with Metaguise on custom facade cladding and metal facade solutions designed for standout architectural impact."
@@ -124,10 +119,7 @@ const Partner = () => {
 
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">
-          <Col
-            md={6}
-            className="contact-left d-flex align-items-center justify-content-center gap-4"
-          >
+          <Col md={6} className="contact-left d-flex align-items-center justify-content-center gap-4">
             <div id="contact-desktop" className="contactus-text">
               <p>We'd Love</p>
               <p>to Work</p>
@@ -145,10 +137,7 @@ const Partner = () => {
             </div>
           </Col>
 
-          <Col
-            md={6}
-            className="contact-right d-flex flex-column justify-content-center"
-          >
+          <Col md={6} className="contact-right d-flex flex-column justify-content-center">
             <Form className="w-100" onSubmit={handleSubmit}>
               <Row>
                 <Col md={6} className="mb-3 mb-md-4">
@@ -210,10 +199,10 @@ const Partner = () => {
                 />
               </Form.Group>
 
-              {/* ✅ Google reCAPTCHA */}
-              <div className="mb-3 text-center">
+              {/* ✅ Google reCAPTCHA Section */}
+              <div className="mb-4 d-flex justify-content-center">
                 <ReCAPTCHA
-                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" // ⚠️ Replace this with your real reCAPTCHA site key
+                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev" // ⬅️ Replace this with your reCAPTCHA site key
                   onChange={handleCaptchaChange}
                 />
               </div>
@@ -224,9 +213,7 @@ const Partner = () => {
                 </button>
               </div>
 
-              {feedbackMessage && (
-                <p className="mt-3 text-center">{feedbackMessage}</p>
-              )}
+              {feedbackMessage && <p className="mt-3">{feedbackMessage}</p>}
             </Form>
           </Col>
         </Row>

@@ -6,6 +6,7 @@ import PhoneInput from "react-phone-input-2";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha"; // ✅ Import reCAPTCHA
+import emailjs from "@emailjs/browser"; // ✅ Added EmailJS to send data via email
 
 const Contact = ({ brochureName }) => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const Contact = ({ brochureName }) => {
   }, []);
 
   const location = useLocation();
+
   const pageBrochureMap = {
     "/metasurface": "MetaSurface",
     "/metaparametric": "MetaParametric",
@@ -47,17 +49,6 @@ const Contact = ({ brochureName }) => {
     setCaptchaToken(token);
   };
 
-  useEffect(() => {
-    const inputField = document.querySelector(".form-text input");
-    if (inputField) {
-      if (!formData.phone || formData.phone.length <= 3) {
-        inputField.setAttribute("placeholder", "Enter your mobile number");
-      } else {
-        inputField.setAttribute("placeholder", "");
-      }
-    }
-  }, [formData.phone]);
-
   const openPDF = () => {
     const brochureMap = {
       MetaSurface: "/assets/brochure/METASURFACE.pdf",
@@ -73,7 +64,7 @@ const Contact = ({ brochureName }) => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
     setFeedbackMessage("");
@@ -90,17 +81,44 @@ const Contact = ({ brochureName }) => {
       return;
     }
 
-    // Simulated form success
-    openPDF();
-    setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: `The user has requested the ${detectedBrochure} brochure.`,
-    });
-    setCaptchaToken(null); // reset captcha
-    setIsSending(false);
+    const emailParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      from_phone: formData.phone,
+      message: formData.message,
+    };
+
+    try {
+      await emailjs.send(
+        "service_hbh6e6a", // ✅ Replace with your EmailJS service ID
+        "template_sp4d06m", // ✅ Replace with your template ID
+        emailParams,
+        "aEASMHR8n6Vmgtj3l" // ✅ Replace with your public key
+      );
+
+      setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
+      openPDF();
+
+      // ✅ Google Ads Conversion Tracking Trigger
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
+        });
+      }
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: `The user has requested the ${detectedBrochure} brochure.`,
+      });
+      setCaptchaToken(null);
+    } catch (error) {
+      console.error("Email send error:", error);
+      setFeedbackMessage("❌ Failed to send message. Please try again later.");
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -125,6 +143,16 @@ const Contact = ({ brochureName }) => {
           property="og:description"
           content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
         />
+        {/* ✅ Google Ads Conversion Tracking */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16992180594');
+          `}
+        </script>
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">
@@ -198,13 +226,17 @@ const Contact = ({ brochureName }) => {
               {/* ✅ Google reCAPTCHA */}
               <div className="mb-3 text-center">
                 <ReCAPTCHA
-                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" // ⚠️ Replace with your actual site key
+                  sitekey="YOUR_REAL_RECAPTCHA_SITE_KEY" // ⚠️ Replace this with your actual reCAPTCHA v2 site key
                   onChange={handleCaptchaChange}
                 />
               </div>
 
               <div className="button-wrapper">
-                <button type="submit" className="send-button" disabled={isSending}>
+                <button
+                  type="submit"
+                  className="send-button"
+                  disabled={isSending}
+                >
                   <span>
                     {isSending
                       ? "Sending..."
