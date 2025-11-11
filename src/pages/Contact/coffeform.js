@@ -226,7 +226,7 @@ const Contact = ({ brochureName }) => {
               {/* ✅ Google reCAPTCHA */}
               <div className="mb-3 text-center">
                 <ReCAPTCHA
-                  sitekey="YOUR_REAL_RECAPTCHA_SITE_KEY" // ⚠️ Replace this with your actual reCAPTCHA v2 site key
+                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev" // ⚠️ Replace this with your actual reCAPTCHA v2 site key
                   onChange={handleCaptchaChange}
                 />
               </div>
