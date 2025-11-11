@@ -5,6 +5,7 @@ import "./Contact.css";
 import PhoneInput from "react-phone-input-2";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha"; // ✅ import reCAPTCHA
 
 const Contact = ({ brochureName }) => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const Contact = ({ brochureName }) => {
 
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [captchaValue, setCaptchaValue] = useState(null); // ✅ captcha state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -66,6 +68,10 @@ const Contact = ({ brochureName }) => {
     }
   };
 
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
@@ -77,7 +83,13 @@ const Contact = ({ brochureName }) => {
       return;
     }
 
-    // Simulated form success
+    if (!captchaValue) {
+      setFeedbackMessage("⚠️ Please verify the reCAPTCHA before submitting.");
+      setIsSending(false);
+      return;
+    }
+
+    // Simulated success
     openPDF();
     setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
     setFormData({
@@ -86,22 +98,40 @@ const Contact = ({ brochureName }) => {
       phone: "",
       message: `The user has requested the ${detectedBrochure} brochure.`,
     });
+    setCaptchaValue(null); // reset captcha
     setIsSending(false);
   };
 
   return (
     <>
       <Helmet>
-        <title>Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding</title>
-        <link rel="canonical" href={`https://metaguise.com/${detectedBrochure}`} />
-        <meta name="description" content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`} />
-        <meta property="og:title" content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`} />
-        <meta property="og:description" content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`} />
+        <title>
+          Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding
+        </title>
+        <link
+          rel="canonical"
+          href={`https://metaguise.com/${detectedBrochure}`}
+        />
+        <meta
+          name="description"
+          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+        />
+        <meta
+          property="og:title"
+          content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`}
+        />
+        <meta
+          property="og:description"
+          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+        />
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">
-          <Col md={6} className="contact-left d-flex flex-column justify-content-center gap-4">
+          <Col
+            md={6}
+            className="contact-left d-flex flex-column justify-content-center gap-4"
+          >
             <div className="contactus1-text">
               <p>Thank you for</p>
               <p>showing interest in</p>
@@ -112,7 +142,10 @@ const Contact = ({ brochureName }) => {
             </div>
           </Col>
 
-          <Col md={6} className="contact-right d-flex flex-column justify-content-center">
+          <Col
+            md={6}
+            className="contact-right d-flex flex-column justify-content-center"
+          >
             <Form className="w-100" onSubmit={handleSubmit}>
               <Row>
                 <Col md={6} className="mb-3 mb-md-4">
@@ -161,11 +194,29 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
+              {/* ✅ reCAPTCHA field */}
+              <div className="mb-3 d-flex justify-content-center">
+                <ReCAPTCHA
+                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev" // ⬅️ Replace this with your site key
+                  onChange={handleCaptchaChange}
+                  theme="dark"
+                />
+              </div>
+
               <div className="button-wrapper">
-                <button type="submit" className="send-button" disabled={isSending}>
-                  <span>{isSending ? "Sending..." : `Send & View ${detectedBrochure} Brochure`}</span>
+                <button
+                  type="submit"
+                  className="send-button"
+                  disabled={isSending}
+                >
+                  <span>
+                    {isSending
+                      ? "Sending..."
+                      : `Send & View ${detectedBrochure} Brochure`}
+                  </span>
                 </button>
               </div>
+
               {feedbackMessage && <p className="mt-3">{feedbackMessage}</p>}
             </Form>
           </Col>

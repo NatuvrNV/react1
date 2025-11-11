@@ -5,6 +5,7 @@ import "./Contact.css";
 import PhoneInput from "react-phone-input-2";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha"; // ✅ import reCAPTCHA
 
 const Contact = ({ brochureName }) => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const Contact = ({ brochureName }) => {
 
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [captchaValue, setCaptchaValue] = useState(null); // ✅ captcha state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -67,6 +69,10 @@ const Contact = ({ brochureName }) => {
     }
   };
 
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
@@ -74,6 +80,12 @@ const Contact = ({ brochureName }) => {
 
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
       setFeedbackMessage("❌ All fields are required.");
+      setIsSending(false);
+      return;
+    }
+
+    if (!captchaValue) {
+      setFeedbackMessage("⚠️ Please verify the reCAPTCHA before submitting.");
       setIsSending(false);
       return;
     }
@@ -86,6 +98,7 @@ const Contact = ({ brochureName }) => {
       phone: "",
       message: `The user has requested the ${detectedBrochure} brochure.`,
     });
+    setCaptchaValue(null); // reset captcha
     setIsSending(false);
   };
 
@@ -94,9 +107,18 @@ const Contact = ({ brochureName }) => {
       <Helmet>
         <title>Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding</title>
         <link rel="canonical" href={`https://metaguise.com/${detectedBrochure}`} />
-        <meta name="description" content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`} />
-        <meta property="og:title" content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`} />
-        <meta property="og:description" content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`} />
+        <meta
+          name="description"
+          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+        />
+        <meta
+          property="og:title"
+          content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`}
+        />
+        <meta
+          property="og:description"
+          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+        />
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">
@@ -161,9 +183,22 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
+              {/* ✅ reCAPTCHA added here */}
+              <div className="mb-3 d-flex justify-content-center">
+                <ReCAPTCHA
+                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev" // ⬅️ Replace this with your real reCAPTCHA key
+                  onChange={handleCaptchaChange}
+                  theme="dark"
+                />
+              </div>
+
               <div className="button-wrapper">
                 <button type="submit" className="send-button" disabled={isSending}>
-                  <span>{isSending ? "Sending..." : `Send & View ${detectedBrochure} Brochure`}</span>
+                  <span>
+                    {isSending
+                      ? "Sending..."
+                      : `Send & View ${detectedBrochure} Brochure`}
+                  </span>
                 </button>
               </div>
               {feedbackMessage && <p className="mt-3">{feedbackMessage}</p>}

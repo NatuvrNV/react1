@@ -5,6 +5,7 @@ import "./Contact.css";
 import PhoneInput from "react-phone-input-2";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha"; // ✅ import reCAPTCHA
 
 const Contact = ({ brochureName }) => {
   useEffect(() => {
@@ -20,7 +21,8 @@ const Contact = ({ brochureName }) => {
     "/ctb": "Coffee Table Book",
   };
 
-  const detectedBrochure = pageBrochureMap[location.pathname] || brochureName || "Unknown";
+  const detectedBrochure =
+    pageBrochureMap[location.pathname] || brochureName || "Unknown";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -30,7 +32,8 @@ const Contact = ({ brochureName }) => {
   });
 
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [isSending, setIsSending] = useState(false); // Kept for UI consistency
+  const [isSending, setIsSending] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState(null); // ✅ reCAPTCHA state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -67,6 +70,10 @@ const Contact = ({ brochureName }) => {
     }
   };
 
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
@@ -74,6 +81,12 @@ const Contact = ({ brochureName }) => {
 
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
       setFeedbackMessage("❌ All fields are required.");
+      setIsSending(false);
+      return;
+    }
+
+    if (!captchaValue) {
+      setFeedbackMessage("⚠️ Please verify the reCAPTCHA before submitting.");
       setIsSending(false);
       return;
     }
@@ -88,21 +101,39 @@ const Contact = ({ brochureName }) => {
       message: `The user has requested the ${detectedBrochure} brochure.`,
     });
     setIsSending(false);
+    setCaptchaValue(null);
   };
 
   return (
     <>
       <Helmet>
-        <title>Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding</title>
-        <link rel="canonical" href={`https://metaguise.com/${detectedBrochure}`} />
-        <meta name="description" content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`} />
-        <meta property="og:title" content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`} />
-        <meta property="og:description" content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`} />
+        <title>
+          Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding
+        </title>
+        <link
+          rel="canonical"
+          href={`https://metaguise.com/${detectedBrochure}`}
+        />
+        <meta
+          name="description"
+          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+        />
+        <meta
+          property="og:title"
+          content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`}
+        />
+        <meta
+          property="og:description"
+          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+        />
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">
-          <Col md={6} className="contact-left d-flex flex-column justify-content-center gap-4">
+          <Col
+            md={6}
+            className="contact-left d-flex flex-column justify-content-center gap-4"
+          >
             <div className="contactus1-text">
               <p>Thank you for</p>
               <p>showing interest in</p>
@@ -113,7 +144,10 @@ const Contact = ({ brochureName }) => {
             </div>
           </Col>
 
-          <Col md={6} className="contact-right d-flex flex-column justify-content-center">
+          <Col
+            md={6}
+            className="contact-right d-flex flex-column justify-content-center"
+          >
             <Form className="w-100" onSubmit={handleSubmit}>
               <Row>
                 <Col md={6} className="mb-3 mb-md-4">
@@ -162,11 +196,25 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
+              {/* ✅ Add reCAPTCHA */}
+              <div className="mb-3 d-flex justify-content-center">
+                <ReCAPTCHA
+                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev" // ⬅️ Replace with your real reCAPTCHA site key
+                  onChange={handleCaptchaChange}
+                  theme="dark" // optional
+                />
+              </div>
+
               <div className="button-wrapper">
                 <button type="submit" className="send-button" disabled={isSending}>
-                  <span>{isSending ? "Sending..." : `Send & View ${detectedBrochure} Brochure`}</span>
+                  <span>
+                    {isSending
+                      ? "Sending..."
+                      : `Send & View ${detectedBrochure} Brochure`}
+                  </span>
                 </button>
               </div>
+
               {feedbackMessage && <p className="mt-3">{feedbackMessage}</p>}
             </Form>
           </Col>
