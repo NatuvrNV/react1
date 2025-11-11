@@ -5,7 +5,6 @@ import Footer from "../../components/Footer";
 import "./Contact.css";
 import { Helmet } from "react-helmet-async";
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha"; // ✅ Import captcha
 
 const Contact = () => {
   useEffect(() => {
@@ -21,7 +20,6 @@ const Contact = () => {
 
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [captchaValue, setCaptchaValue] = useState(null); // ✅ Captcha state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,10 +27,6 @@ const Contact = () => {
 
   const handlePhoneChange = (value) => {
     setFormData({ ...formData, phone: value });
-  };
-
-  const handleCaptchaChange = (value) => {
-    setCaptchaValue(value);
   };
 
   useEffect(() => {
@@ -51,20 +45,12 @@ const Contact = () => {
     setIsSending(true);
     setFeedbackMessage("");
 
-    // ✅ Check for required fields
     if (
       !formData.name.trim() ||
       !formData.email.trim() ||
       !formData.phone.trim()
     ) {
       setFeedbackMessage("❌ All fields are required.");
-      setIsSending(false);
-      return;
-    }
-
-    // ✅ Check captcha
-    if (!captchaValue) {
-      setFeedbackMessage("❌ Please verify the captcha before submitting.");
       setIsSending(false);
       return;
     }
@@ -89,7 +75,6 @@ const Contact = () => {
         "Thank you for your enquiry. We will get in touch with you soon!"
       );
       setFormData({ name: "", email: "", phone: "", message: "" });
-      setCaptchaValue(null); // ✅ Reset captcha
 
       // ✅ Google Ads Conversion Tracking
       if (typeof window.gtag === "function") {
@@ -223,14 +208,6 @@ const Contact = () => {
                   required
                 />
               </Form.Group>
-
-              {/* ✅ Google reCAPTCHA */}
-              <div className="d-flex justify-content-start mb-4">
-                <ReCAPTCHA
-                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
-                  onChange={handleCaptchaChange}
-                />
-              </div>
 
               <div className="button-wrapper">
                 <button
