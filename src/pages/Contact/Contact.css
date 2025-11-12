@@ -173,3 +173,35 @@
     padding: 0;
   }
 }
+
+/* ✅ Fix reCAPTCHA overlap issue on mobile */
+.g-recaptcha {
+  transform: scale(0.95); /* slightly smaller for mobile */
+  transform-origin: 0 0;
+}
+
+@media (max-width: 768px) {
+  .g-recaptcha {
+    transform: scale(0.85);
+    transform-origin: left top;
+  }
+}
+
+/* Ensure it appears above any hidden overflow parents */
+.recaptcha-container {
+  position: relative;
+  z-index: 10;
+}
+
+/* Prevent overlapping of elements below it */
+.button-wrapper {
+  position: relative;
+  z-index: 5;
+}
+
+/* In case some parent container clips it */
+.contact-container,
+.contact-right,
+form {
+  overflow: visible !important;
+}
