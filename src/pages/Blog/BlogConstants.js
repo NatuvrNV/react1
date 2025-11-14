@@ -2615,7 +2615,7 @@ Explore MetaSequin
        },
 
                              {
-         title: "Then & Now: How Metaguise Facades from Years Ago Still Stand Flawless Today",
+         title: "Then and Now: How Metaguise Facades from Years Ago Still Stand Flawless Today",
         metaTitle: "Metaguise Blogs | Then & Now: Why Metaguise Facades Still Look Flawless After Years | MetaCorten Finish ",
          date: "14-11-25",
          category: "Project Highlights",
@@ -2697,6 +2697,7 @@ With Metaguise, the answer is clear: Just as flawless as it does today.
         
        },
   ];
+
 
 
 
