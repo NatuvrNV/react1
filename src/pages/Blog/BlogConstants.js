@@ -2613,7 +2613,91 @@ Explore MetaSequin
      
         
        },
+
+                             {
+         title: "Then & Now: How Metaguise Facades from Years Ago Still Stand Flawless Today",
+        metaTitle: "Metaguise Blogs | Then & Now: Why Metaguise Facades Still Look Flawless After Years | MetaCorten Finish ",
+         date: "14-11-25",
+         category: "Project Highlights",
+         metaDescription: "Discover how Metaguise’s first metal facade from 2018 - crafted with MetaCassette and MetaCorten finish - still stands flawless today. A low-maintenance, weatherproof aluminium facade designed to age beautifully across decades.",
+         Fulldescription: ` 
+In 2018, we crafted our very first façade. It was more than an architectural envelope - it was our manifesto in metal. Fast forward to today, and that very project still stands tall and flawless, untouched by time, weather, or wear. It’s proof that at Metaguise, we don’t just build facades - we build legacies.
+
+
+<strong>The Project That Started It All</strong>
+
+
+Clad in <strong>MetaCassette perforated panels</strong>, finished in the now-iconic <strong>MetaCorten</strong>, our debut project introduced India to a new kind of <strong>metal facade</strong> - one that was bold, climate-conscious, and designed for permanence.
+
+The <strong>MetaCorten</strong> finish, known for its rich weathered steel appearance, has aged gracefully. What was once vibrant orange-brown is now a deeper, more complex patina - evolving in hue, yet retaining its original design intent. It’s what we call design that matures, not fades.
+
+
+<strong>Why MetaCorten Still Stands Strong</strong>
+
+
+Here’s why this aluminium facade system continues to impress, seven years on:
+
+<strong>High-grade materials</strong>: Built from durable alloys and engineered metals, our panels are corrosion-resistant and built for strength.
+
+
+<strong>Low-maintenance design</strong>: There’s been no need for painting, polishing, or replacement. The facade remains pristine - saving both cost and effort.
+
+
+<strong>Weatherproof finishes</strong>: Rain, dust, sun, pollution - none have left a mark. MetaCorten was formulated to resist India’s harshest climates.
+
+
+<strong>Thoughtful detailing</strong>: Precision-cut perforations and concealed joints ensure not only aesthetics but long-term performance.
+
+
+This project continues to serve as a reference for clients seeking low maintenance facades that blend artistry with resilience.
+
+
+<strong>A Living Philosophy in Metal</strong>
+
+
+Even back then, Metaguise stood for the same things we do today:
+Durable metal design
+
+
+Climate-ready facade architecture
+
+
+Sculptural, expressive elevation design
+
+
+Smart, long-term solutions from one of the most trusted facade companies in India
+
+
+From 2018 to today, the evolution of that façade is a quiet reminder of what we promise:
+ Design that endures. Materials that evolve. Beauty that stays.
+ 
+ 
+<strong>Still Standing. Still Stunning.</strong>
+
+
+Whether you're building a home, a showroom, or a high-rise, the question is the same - how will this look 10 years from now?
+With Metaguise, the answer is clear: Just as flawless as it does today.
+
+
+  `,
+         description: "At Metaguise, we believe the facade of a building isn’t just its outer layer - it’s its identity. And in today’s design landscape",
+         images: [
+             "assets/Blogs/then and now/1.jpg",
+             "assets/Blogs/then and now/2.webp",
+             "assets/Blogs/then and now/3.webp",
+             "assets/Blogs/then and now/4.jpg",
+             "assets/Blogs/then and now/5.webp",
+             "assets/Blogs/then and now/6.webp",
+     
+                
+         ],
+
+         folderName: "then and now", 
+     
+        
+       },
   ];
+
 
 
 
