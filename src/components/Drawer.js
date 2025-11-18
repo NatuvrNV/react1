@@ -127,7 +127,7 @@ function Drawer({ isOpen, toggleDrawer }) {
                   <div>
                     <h5 className="nav-haeding">Phone</h5>
                     <a className="nav-text" href="tel:9811604449">
-                      9811604449 / 9355604449
+                      9811604449 
                     </a>
                   </div>
                 </Col>
