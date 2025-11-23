@@ -853,5 +853,19 @@
     <changefreq>monthly</changefreq>
   </url>
 
+                                               <url>
+    <loc>https://metaguise.com/blog/custom-metal-facade-cladding:-what-you-need-to-know-before-you-build</loc>
+    <lastmod>2025-11-24</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+                                               <url>
+    <loc>https://metaguise.com/blog/sustainability-through-design:-how-metal-facades-support-greener-architecture-</loc>
+    <lastmod>2025-11-28</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
