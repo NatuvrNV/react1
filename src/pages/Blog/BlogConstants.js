@@ -615,9 +615,13 @@ At Metaguise, we believe facades should be more than beautiful, they should be u
          category: "Architectural Insights",
          metaDescription: "Architects prefer custom metal louvers facade design and aluminium fins facade for performance and style.",
          Fulldescription: ` 
+         
         There’s something quietly brilliant happening in architecture right now. As buildings become more responsive and designers look for ways to merge aesthetics with performance, one feature is making a serious comeback, custom metal louvers.
+        
 They're not new, but in 2025, metal louvers are showing up in smarter, sleeker, and far more beautiful ways. And architects love them.
+
 So what’s driving the rise of metal louvers?
+
 1. They solve real problems beautifully
 At their core, louvers help control sunlight, air flow, and privacy. That’s especially important in warm climates like much of India, where solar shading can make or break a building’s energy performance. But the difference today is how louvers are being designed: not just as functional add-ons, but as integrated architectural statements.
 Designers are now using metal louver facade systems not just to block heat, but to define the look of an entire building.
@@ -3057,12 +3061,18 @@ Let’s design a greener future, one elevation at a time.
          category: "Project Highlights",
          metaDescription: "Explore how Metaguise ensures consistent quality in metal facades and elevation design across India. From logistics to engineering, discover how our PAN India presence supports every facade project seamlessly.",
          Fulldescription: ` 
+         
 India is a vast and varied canvas - each city bringing its own climate, culture, and construction challenges. At Metaguise, we see this diversity not as complexity, but as opportunity. With a robust network spanning every region, we deliver high-performance facade architecture and metal facade cladding solutions with precision, wherever your project may be.
+
 From the heat of Ahmedabad to the rains of Kochi, the bustle of Bengaluru to the calm of Chandigarh - we’ve built a system that guarantees design consistency, material reliability, and engineering excellence across India. Here’s how we do it.
-1. Local Reach with a National Backbone
+
+
+<strong>1. Local Reach with a National Backbone</strong>
 Metaguise has established a strong PAN India presence through carefully structured teams, zonal partners, and an agile supply chain. Whether it's a retail elevation in Delhi NCR or a boutique store in Coimbatore, we ensure that material delivery, installation support, and design coordination flow seamlessly.
 We operate with the same precision in every geography - making us one of the most trusted facade companies in India.
-2. Standardised Systems, Customised Execution
+
+
+<strong>2. Standardised Systems, Customised Execution </strong>
 Every Metaguise product - whether it’s MetaCassette, MetaSequin, or MetaLouver - is pre-engineered for scalability. This means we can guarantee uniform metal design quality across cities, while tailoring patterns, shapes, and finishes to each location’s need.
 Whether you're building in Tier 1 metros or emerging design hubs, we maintain:
 Material consistency
@@ -3078,7 +3088,9 @@ Finish durability
 
 
 It’s how we deliver the same elevated experience across India.
-3. Engineering Support, Wherever You Build
+
+
+<strong>3. Engineering Support, Wherever You Build</strong>
 We don’t just ship panels - we build relationships. Our network of in-house engineers, project managers, and approved installers ensures your facade design is supported from drawing board to site execution.
 Our regional teams help with:
 Site measurements and feasibility
@@ -3094,7 +3106,9 @@ Technical resolutions on ground
 
 
 No matter where your site is, Metaguise is right there with you.
-4. Climate-Specific Thinking, Nationwide
+
+
+<strong>4. Climate-Specific Thinking, Nationwide</strong>
 India’s diverse environments demand adaptable solutions. That’s why our facades are engineered to perform across conditions - from coastal humidity to urban heat islands.
 Our aluminium facade systems and weatherproof coatings are tested for:
 Corrosion resistance
@@ -3110,10 +3124,16 @@ Structural durability across seismic zones
 
 
 This ensures low maintenance facades that continue to perform - whether you’re in Punjab, Kerala, or Maharashtra.
-5. Trusted by Architects Across India
+
+
+<strong>5. Trusted by Architects Across India</strong>
 Our growing portfolio includes collaborations with some of India’s most respected names in architecture - from Studio Ardete in Mohali and Cityspace’82 in Gurugram, to Paragrid Arch, The Art Container, and Studio Mathema.
 This nationwide trust is built on consistent delivery, adaptable design systems, and a deep respect for regional design languages.
-Metaguise. Everywhere You Build.
+
+
+<strong>Metaguise. Everywhere You Build.</strong>
+
+
 Whether you’re designing a showroom in Surat, a residence in Hyderabad, or a landmark HQ in Mumbai - Metaguise offers the tools, the teams, and the trust to make your elevation vision a reality.
 With a blend of parametric architecture, smart logistics, and product excellence, we help you build with confidence - everywhere.
 
@@ -3135,6 +3155,7 @@ With a blend of parametric architecture, smart logistics, and product excellence
        },
   ];
   ];
+
 
 
 
