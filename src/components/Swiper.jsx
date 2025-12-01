@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 
 // ✅ Lazy load images & preload for better LCP
 const banners = [
-  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1740550101/assets/z1tjh4xby2gkx28yfkng.webp",
-  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1740550101/assets/fqdmoinhevw40lln6x51.webp",
-  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1741175604/banner3_4_vljrvj.webp",
+  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1764598484/1_qus0uz.jpg",
+  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1764598485/3_jhfdce.jpg",
+  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1764598485/2_dxdr7m.jpg",
 ];
 
 export const Swipper = () => {
@@ -83,11 +83,11 @@ export const Swipper = () => {
                 backgroundColor: "#f5f5f5", // ✅ Placeholder color while loading
               }}
             >
-              <div className="slide-content">
+              {/* <div className="slide-content">
                 {index === 0 && <h1>India’s Leading Facade & Wall Cladding Experts</h1>}
                 {index === 1 && <h1>Masters in Parametric Design & Execution</h1>}
                 {index === 2 && <h1>Metal is Metaguise: The Future of Facades</h1>}
-              </div>
+              </div> */}
             </div>
           </SwiperSlide>
         ))}
