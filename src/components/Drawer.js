@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Drawer.css";
 import logo1 from "../assets/metaguiseblk.png";
 import MailchimpForm from "./MailchimpForm";
-import ADpro_icon from "../assets/ADprocolor.png";
+import ADpro_icon from "../assets/ADproblack.png";
 import { MdArrowOutward } from "react-icons/md";
 
 function Drawer({ isOpen, toggleDrawer }) {
