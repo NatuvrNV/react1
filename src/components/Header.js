@@ -10,6 +10,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
 import logo from "../assets/logo.png";
 import Archello_icon from "../assets/Archello_icon.png";
+import ADpro_icon from "../assets/ADprowhite.png";
 import Drawer from "./Drawer";
 
 function Header() {
@@ -95,6 +96,21 @@ function Header() {
               >
             <img
   src={Archello_icon}
+  alt="Archello icon - Visit Metaguise on Archello, the global architecture and design network."
+  className="archello-icon"
+/>
+              </a>
+
+                      {/* ADPro */}
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon"
+                aria-label="View Metaguise on Archello"
+              >
+            <img
+  src={ADpro_icon}
   alt="Archello icon - Visit Metaguise on Archello, the global architecture and design network."
   className="archello-icon"
 />
