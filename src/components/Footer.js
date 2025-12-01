@@ -3,6 +3,7 @@ import "./Footer.css";
 import logo from "../assets/logo.png";
 import MailIcon from "../assets/footer/mail.svg";
 import PhoneIcon from "../assets/footer/phone.svg";
+import ADpro_icon from "../assets/ADprocolor.png";
 
 const Footer = () => {
   return (
@@ -11,6 +12,7 @@ const Footer = () => {
     <div className="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center md:tw-items-start tw-gap-8 md:tw-gap-32 font ">
         {/* Image 1 */}
         <img id="footer-logo" className="tw-w-32 md:tw-w-40 " src={logo} alt="METAGUISE Logo" />
+     <img id="footer-logo" className="tw-w-32 md:tw-w-40 " src={ADpro_icon} alt="METAGUISE Logo" />
 
         <div className="tw-flex tw-flex-col md:tw-flex-row tw-items-center md:tw-items-start tw-gap-8 md:tw-gap-32">
           {/* Home Links */}
@@ -60,6 +62,7 @@ const Footer = () => {
         <div className="tw-flex tw-flex-col md:tw-flex-row tw-items-center md:tw-items-start tw-gap-8 md:tw-gap-32 section-1 ">
        
         <img id="footer-logo" className="tw-w-32 md:tw-w-40 " src={logo} alt="METAGUISE Logo" />
+      <img id="footer-logo" className="tw-w-32 md:tw-w-40 " src={ADpro_icon} alt="METAGUISE Logo" />
    {/* Contact Links */}
    <div className="tw-flex tw-text-base tw-flex-col tw-items-center md:tw-items-start tw-gap-4 footer-links col-lg-10 col-xl-6">
             <div className="tw-flex tw-items-center tw-gap-2">
