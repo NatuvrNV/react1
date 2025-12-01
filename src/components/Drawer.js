@@ -4,6 +4,7 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Drawer.css";
 import logo1 from "../assets/metaguiseblk.png";
 import MailchimpForm from "./MailchimpForm";
+import ADpro_icon from "../assets/ADprocolor.png";
 import { MdArrowOutward } from "react-icons/md";
 
 function Drawer({ isOpen, toggleDrawer }) {
@@ -67,6 +68,12 @@ function Drawer({ isOpen, toggleDrawer }) {
           <div className="text-justify px-2 ">
             <img
               src={logo1}
+              alt="Metaguise Logo"
+              style={{ maxWidth: "200px", paddingLeft: "5x" }}
+            />
+
+                 <img
+              src={ADpro_icon}
               alt="Metaguise Logo"
               style={{ maxWidth: "200px", paddingLeft: "5x" }}
             />
