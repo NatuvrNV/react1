@@ -75,7 +75,7 @@ function Drawer({ isOpen, toggleDrawer }) {
                  <img
               src={ADpro_icon}
               alt="Metaguise Logo"
-              style={{ Width: "150px", paddingLeft: "5x" }}
+              style={{ width: "150px", paddingLeft: "5x" }}
             />
           </div>
           
