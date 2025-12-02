@@ -65,7 +65,7 @@ function Drawer({ isOpen, toggleDrawer }) {
               ✕
             </button>
           </div>
-          <div className="text-justify px-2 ">
+          <div className="text-justify px-2 d-flex ">
             <img
               src={logo1}
               alt="Metaguise Logo"
@@ -75,7 +75,7 @@ function Drawer({ isOpen, toggleDrawer }) {
                  <img
               src={ADpro_icon}
               alt="Metaguise Logo"
-              style={{ maxWidth: "200px", paddingLeft: "5x" }}
+              style={{ Width: "150px", paddingLeft: "5x" }}
             />
           </div>
           
