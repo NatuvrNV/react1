@@ -72,11 +72,15 @@ function Drawer({ isOpen, toggleDrawer }) {
               style={{ maxWidth: "200px", paddingLeft: "5x" }}
             />
 
-                 <img
-              src={ADpro_icon}
-              alt="Metaguise Logo"
-              style={{ width: "150px", paddingLeft: "5x" }}
-            />
+          <img
+  src={ADpro_icon}
+  alt="Metaguise Logo"
+  style={{
+    width: "150px",
+    paddingLeft: "5px",   // fixed typo (5x → 5px)
+    objectFit: "contain",
+  }}
+/>
           </div>
           
           <Container>
