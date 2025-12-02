@@ -11,8 +11,15 @@ const Footer = () => {
     <div className="Desk-footer">
     <div className="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center md:tw-items-start tw-gap-8 md:tw-gap-32 font ">
         {/* Image 1 */}
-        <img id="footer-logo" className="tw-w-32 md:tw-w-40 " src={logo} alt="METAGUISE Logo" />
-     <img id="footer-logo" className="tw-w-32 md:tw-w-40 " src={ADpro_icon} alt="METAGUISE Logo" />
+       <div className="tw-flex tw-items-center tw-gap-4">
+  <img className="tw-w-32 md:tw-w-40" src={logo} alt="METAGUISE Logo" />
+
+  <img
+    className="tw-w-[80px]"       // 👈 80px width
+    src={ADpro_icon}
+    alt="ADpro Logo"
+  />
+</div>
 
         <div className="tw-flex tw-flex-col md:tw-flex-row tw-items-center md:tw-items-start tw-gap-8 md:tw-gap-32">
           {/* Home Links */}
