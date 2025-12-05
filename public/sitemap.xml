@@ -870,7 +870,14 @@
 
                                                  <url>
     <loc>https://metaguise.com/blog/building-pan-india:-how-metaguise-delivers-consistent-facade-excellence-nationwide</loc>
-    <lastmod>2025-11-28</lastmod>
+    <lastmod>2025-12-01</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+                                                   <url>
+    <loc>https://metaguise.com/blog/why-metal-panels-make-buildings-more-dynamic,-expressive-&-future-ready</loc>
+    <lastmod>2025-12-05</lastmod>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
