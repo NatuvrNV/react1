@@ -1,4 +1,53 @@
-# https://www.robotstxt.org/robotstxt.html
+# Allow all search engines
 User-agent: *
-Disallow:
+Allow: /
+
+# Allow ChatGPT (OpenAI GPTBot)
+User-agent: GPTBot
+Allow: /
+
+# Allow OpenAI's other crawler for training
+User-agent: OAI-SearchBot
+Allow: /
+
+# Allow Google AI crawler (Gemini)
+User-agent: Google-Extended
+Allow: /
+
+# Allow Google Search
+User-agent: Googlebot
+Allow: /
+
+# Allow Bing AI + Copilot
+User-agent: Bingbot
+Allow: /
+
+# Allow Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Allow Anthropic Claude
+User-agent: Claude-Web
+Allow: /
+
+# Allow Apple AI
+User-agent: Applebot
+Allow: /
+
+# Allow Facebook Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Allow Common Crawl (used by 90% AI models)
+User-agent: CCBot
+Allow: /
+
+# Allow Ahrefs/Botify/Semrush (helps indexing)
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+# Sitemap
 Sitemap: https://metaguise.com/sitemap.xml
