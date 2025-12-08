@@ -14,11 +14,15 @@ const Footer = () => {
        <div className="tw-flex tw-items-center tw-gap-4">
   <img className="tw-w-32 md:tw-w-40" src={logo} alt="METAGUISE Logo" />
 
+<a href=" https://www.architecturaldigest.in/adpro/directory/profile/metaguise/" style={{ display: "inline-block" }}>
   <img
-    className="tw-w-[100px]"       // 👈 80px width
+    className="tw-w-[100px]"
     src={ADpro_icon}
     alt="ADpro Logo"
+    style={{ cursor: "pointer" }}
   />
+</a>
+
 </div>
 
         <div className="tw-flex tw-flex-col md:tw-flex-row tw-items-center md:tw-items-start tw-gap-8 md:tw-gap-32">
