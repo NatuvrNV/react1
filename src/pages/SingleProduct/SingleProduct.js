@@ -345,7 +345,7 @@ const ImageGrid = ({
   videoLink,
 }) => {
   return (
-    <div  className="image-grid" ref={ref}>
+    <div id="product-grid"  className="image-grid" ref={ref}>
       {filteredImages.length === 0 && !videoLink ? (
         <div className="no-images-found">
           No images found.
