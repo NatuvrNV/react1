@@ -65,7 +65,6 @@
 .grid-item {
   position: relative;
   aspect-ratio: 1 / 0.6;
-  overflow: hidden;
   padding: 5px;
   max-height: 100vh;
 
