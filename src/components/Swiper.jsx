@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 
 // ✅ Lazy load images & preload for better LCP
 const banners = [
-  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1764651199/1_a20e7u.jpg",
-  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1764651200/3_gi5hw3.jpg",
-  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1764651199/2_hpo03h.jpg",
+  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1765181940/1_lmlaxu.webp",
+  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1765181941/3_sicqip.webp",
+  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1765181940/2_vzrerp.webp",
 ];
 
 export const Swipper = () => {
