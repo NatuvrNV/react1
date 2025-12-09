@@ -24,7 +24,7 @@ font-size: 6rem;
 
     #head-text2{
     font-size: 3.5rem !important;
-
+    line-height: 50px !important;
   }
   
   /* Search and Categories */
@@ -432,4 +432,5 @@ font-size: 6rem;
     }
  
   
+
 
