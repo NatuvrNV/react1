@@ -125,7 +125,7 @@ const Blog = () => {
                     className="object-cover rounded-lg" 
                   />
                   <div className="mx-xl-4 blog-text">
-                    <h2 className="text-xl blog-title">{blog.title}</h2>
+                    <h2 className="text-xl blog-title-head">{blog.title}</h2>
                     <p className="text-sm mt-xl-2 blog-description">{blog.description}</p>
                     <p className="text-xs text-gray-400 text-start date-text">
                       {blog.date} | {blog.category}
