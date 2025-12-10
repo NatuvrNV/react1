@@ -130,6 +130,41 @@ const SingleProject = () => {
         <meta name="description" content={selectedProject.metadescription} />
         <meta property="og:title" content={selectedProject.metatittles}  />
         <meta property="og:description" content={selectedProject.metadescription} />
+
+  
+  {/* ✅ PROJECT SCHEMA FOR AI & SEARCH */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": selectedProject.Projectname,
+      "url": `https://metaguise.com/all-projects/${projectName}`,
+      "description": selectedProject.metadescription,
+      "image": selectedProject.images?.map(
+        img => `https://metaguise.com/${img}`
+      ),
+      "creator": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "url": "https://metaguise.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/logo.png"
+        }
+      },
+      "keywords": selectedProject.tags || [
+        "metal facade",
+        "parametric architecture",
+        "architectural cladding",
+        "custom metal design"
+      ],
+      "inLanguage": "en-IN"
+    })}
+  </script>
       </Helmet>
       <div className="row">
         <div className="col-12">
