@@ -134,6 +134,33 @@ const SingleProduct = () => {
         <meta property="og:title" content={selectedProduct.metatittles}  />
         <meta property="og:description" content={selectedProduct.metadescription} />
         <link rel="canonical" href={`https://metaguise.com/all-products/${productName}`} />
+
+  
+  {/* ✅ PRODUCT SCHEMA FOR AI + GOOGLE */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": selectedProduct.Productname,
+      "description": selectedProduct.metadescription,
+      "url": `https://metaguise.com/all-products/${productName}`,
+      "image": selectedProduct.images?.map(
+        img => `${window.location.origin}/${img}`
+      ),
+      "brand": {
+        "@type": "Brand",
+        "name": "Metaguise"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "url": "https://metaguise.com"
+      },
+      "category": "Architectural Metal Products",
+      "material": selectedProduct.materials || "Metal",
+      "inLanguage": "en-IN"
+    })}
+  </script>
       </Helmet>
       <div className="row">
         <div className="col-12">
