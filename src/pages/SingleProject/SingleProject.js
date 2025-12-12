@@ -505,6 +505,7 @@ const ImageGrid = ({
               index={0}
               handleImageClick={handleImageClick}
               clickedIndex={clickedIndex}
+              altText={selectedProject.alt}
             />
           )}
 
@@ -569,6 +570,7 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
             alt="YouTube Video Thumbnail"
             className="grid-image"
+              alt={altText}
             loading="lazy" 
           />
           <div className="play-icon">
