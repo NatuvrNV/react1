@@ -193,7 +193,7 @@ const SingleProject = () => {
             ref={imageGridRef}
             videoLink={selectedProject.videoLink}
             darkMode={darkMode}
-              selectedProject={selectedProject}
+            selectedProject={projectName}
             setDarkMode={setDarkMode}
           />
         </div>
