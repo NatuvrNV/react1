@@ -515,6 +515,7 @@ const ImageGrid = ({
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
               clickedIndex={clickedIndex}
+              altText={selectedProject.alt} 
             />
           )}
 
@@ -526,6 +527,7 @@ const ImageGrid = ({
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
               clickedIndex={clickedIndex}
+              altText={selectedProject.alt}
             />
           ))}
         </>
@@ -578,7 +580,7 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
   );
 };
 
-const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
+const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, altText  }) => {
   return (
     <div
       className={`grid-item ${isLastRow(index) ? "last-row" : ""} ${
@@ -589,7 +591,7 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
       <img
         src={`${process.env.PUBLIC_URL}/${image}`}
         className="grid-image"
-        alt={`Project item ${index + 1}`}
+        alt={altText}
         loading="lazy" 
       />
     </div>
