@@ -888,5 +888,19 @@
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
+                                                       <url>
+    <loc>https://metaguise.com/blog/why-architects-love-metacoin:-parametric-texture-meets-durability</loc>
+    <lastmod>2025-12-12</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+                                                       <url>
+    <loc>https://metaguise.com/blog/are-metal-louvers-worth-it-pros-designs-and-use-cases-in-indian-homes</loc>
+    <lastmod>2025-12-15</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
 
