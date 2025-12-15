@@ -3405,7 +3405,7 @@ From concept to installation, we offer full-stack support: design consulting, pr
   },
 
           {
-    title: "Are Metal Louvers Worth It? Pros, Designs, and Use Cases in Indian Homes",
+    title: "Are Metal Louvers Worth It  Pros Designs and Use Cases in Indian Homes",
     metaTitle:
       "Metaguise Blogs | Are Metal Louvers Worth It? Pros, Designs, and Use Cases in Indian Homes",
     date: "15-12-25",
@@ -3508,8 +3508,10 @@ They’re not just additions - they’re architectural upgrades. And when paired
  </p>`,
   ],
 
-  },
+  }
+    
   ];
+
 
 
 
