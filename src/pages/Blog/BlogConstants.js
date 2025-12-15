@@ -3325,7 +3325,7 @@ Because in a world of facades, it pays to think beyond the surface.
     description:
       "When it comes to facade design, every detail matters. A building’s surface isn't just about looks - it speaks of its performance, longevity, and intent. ",
 
-    folderName: "Perforated Metal Panels",
+    folderName: "Why Architects Love",
 
     images: [
       "assets/Blogs/Why Architects Love/banner.webp",
@@ -3418,7 +3418,7 @@ From concept to installation, we offer full-stack support: design consulting, pr
     description:
       "When you're designing a home that needs to breathe, adapt, and still look effortlessly elegant, metal louvers are a serious contender",
 
-    folderName: "Perforated Metal Panels",
+    folderName: "Are Metal Louvers Worth It",
 
     images: [
       "assets/Blogs/Are Metal Louvers Worth It/banner.webp",
@@ -3510,6 +3510,7 @@ They’re not just additions - they’re architectural upgrades. And when paired
 
   },
   ];
+
 
 
 
