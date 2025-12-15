@@ -3422,9 +3422,9 @@ From concept to installation, we offer full-stack support: design consulting, pr
 
     images: [
       "assets/Blogs/Are Metal Louvers Worth It/banner.webp",
-        "assets/Blogs/Are Metal Louvers Worth It/banner.webp",
-        "assets/Blogs/Are Metal Louvers Worth It/banner.webp",
-        "assets/Blogs/Are Metal Louvers Worth It/banner.webp",
+        "assets/Blogs/Are Metal Louvers Worth It/What Are Metal Louvers.webp",
+        "assets/Blogs/Are Metal Louvers Worth It/Pros of Choosing Metal Louvers.webp",
+        "assets/Blogs/Are Metal Louvers Worth It/Why Choose Metaguise for Your Louvered Facade System.webp",
     ],
 
   contentSections: [
@@ -3510,6 +3510,7 @@ They’re not just additions - they’re architectural upgrades. And when paired
 
   },
   ];
+
 
 
 
