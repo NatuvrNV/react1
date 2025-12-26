@@ -24,6 +24,15 @@ const Contact = ({ brochureName }) => {
 
   const detectedBrochure = pageBrochureMap[location.pathname] || brochureName || "Contact Form";
 
+  // Square feet options for dropdown (no headings, just options)
+  const squareFeetOptions = [
+    { value: "", label: "Select Area Range" },
+    { value: "0-1000", label: "Under 1,000 Sq ft" },
+    { value: "1000-3000", label: "1,000-3,000 Sq ft" },
+    { value: "3000-10000", label: "3,000-10,000 Sq ft" },
+    { value: "10000+", label: "Over 10,000 Sq ft" },
+  ];
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -121,9 +130,21 @@ const Contact = ({ brochureName }) => {
     return { min: 0, max: 0 };
   };
 
-  const findMatchingEmployees = (sqft) => {
-    const sqftNum = parseInt(sqft);
-    if (isNaN(sqftNum)) return [];
+  const findMatchingEmployees = (sqftRange) => {
+    if (!sqftRange) return [];
+    
+    let sqftNum;
+    if (sqftRange === "10000+") {
+      sqftNum = 10000; // Minimum for Over 10,000
+    } else {
+      // Get the average of the range for matching
+      const rangeParts = sqftRange.split('-');
+      if (rangeParts.length === 2 && !isNaN(rangeParts[0]) && !isNaN(rangeParts[1])) {
+        sqftNum = (parseInt(rangeParts[0]) + parseInt(rangeParts[1])) / 2;
+      } else {
+        return [];
+      }
+    }
 
     const matchingEmployees = employees.filter(emp => {
       const range = parseRange(emp.employeeAssignmentRange);
@@ -141,17 +162,38 @@ const Contact = ({ brochureName }) => {
     }));
   };
 
+  // Calculate approximate square feet from range
+  const calculateApproximateSqFt = (sqftRange) => {
+    if (!sqftRange) return 0;
+    
+    if (sqftRange === "10000+") {
+      return 15000; // Default for Over 10,000
+    } else {
+      const rangeParts = sqftRange.split('-');
+      if (rangeParts.length === 2 && !isNaN(rangeParts[0]) && !isNaN(rangeParts[1])) {
+        return (parseInt(rangeParts[0]) + parseInt(rangeParts[1])) / 2;
+      }
+    }
+    return 0;
+  };
+
   const createLead = async () => {
-    // Find matching employees
+    // Find matching employees based on square feet range
     const matchedEmployees = findMatchingEmployees(formData.squareFeet);
     
     if (matchedEmployees.length === 0) {
-      console.log("No matching employees found for SQFT:", formData.squareFeet);
-      return; // Don't create lead if no employee matches
+      console.log("No matching employees found for SQFT range:", formData.squareFeet);
+      return false;
     }
 
     // Prepare lead assignments
     const leadAssignments = prepareLeadAssignments(matchedEmployees);
+
+    // Calculate approximate square feet
+    const approximateSqFt = calculateApproximateSqFt(formData.squareFeet);
+
+    // Get selected label for display
+    const selectedLabel = squareFeetOptions.find(opt => opt.value === formData.squareFeet)?.label || '';
 
     // Prepare final payload
     const payload = {
@@ -170,13 +212,13 @@ const Contact = ({ brochureName }) => {
       customerType: "END_USER",
       engagementTimeline: "IMMEDIATE",
       has3dOrSiteDrawings: true,
-      approximateFacadeCladdingSqFt: parseInt(formData.squareFeet) || 0,
+      approximateFacadeCladdingSqFt: approximateSqFt,
       projectBrief: formData.message,
       productCategory: "COMMERCIAL",
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
+      remarks: `Requested ${detectedBrochure} brochure. Area: ${selectedLabel}. ${formData.message}`,
       callRegistration: true,
       leadAssignments: leadAssignments
     };
@@ -232,19 +274,10 @@ const Contact = ({ brochureName }) => {
     }
 
     // For brochure pages, validate square feet
-    if (location.pathname !== "/contact" && (!formData.squareFeet.trim())) {
-      setFeedbackMessage("❌ Square Feet Area is required.");
+    if (location.pathname !== "/contact" && !formData.squareFeet) {
+      setFeedbackMessage("❌ Area Range is required.");
       setIsSending(false);
       return;
-    }
-
-    if (location.pathname !== "/contact") {
-      const sqftNum = parseInt(formData.squareFeet);
-      if (isNaN(sqftNum) || sqftNum <= 0) {
-        setFeedbackMessage("❌ Please enter a valid square feet area.");
-        setIsSending(false);
-        return;
-      }
     }
 
     if (!captchaValue) {
@@ -265,6 +298,8 @@ const Contact = ({ brochureName }) => {
         // Step 3: Show success message
         if (leadCreated && showLeadSuccess) {
           setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and our team will connect with you shortly.");
+        } else if (leadCreated) {
+          setFeedbackMessage("✅ Thanks for your query! Brochure downloaded successfully.");
         } else {
           setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
         }
@@ -274,7 +309,7 @@ const Contact = ({ brochureName }) => {
           from_name: formData.name,
           from_email: formData.email,
           from_phone: formData.phone,
-          square_feet: formData.squareFeet || "Not specified",
+          square_feet: formData.squareFeet ? squareFeetOptions.find(opt => opt.value === formData.squareFeet)?.label : "Not specified",
           message: formData.message,
         };
 
@@ -490,15 +525,19 @@ const Contact = ({ brochureName }) => {
                 <Col md={6} className="mb-3 mb-md-4">
                   <Form.Group controlId="formSquareFeet">
                     <Form.Control
-                      type="number"
+                      as="select"
                       name="squareFeet"
-                      placeholder="Square Feet Area"
-                      className="bg-contact form-text border-0"
                       value={formData.squareFeet}
+                      className="bg-contact form-text border-0"
                       onChange={handleChange}
                       required={location.pathname !== "/contact"}
-                      min="1"
-                    />
+                    >
+                      {squareFeetOptions.map((option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </Form.Control>
                   </Form.Group>
                 </Col>
               </Row>
