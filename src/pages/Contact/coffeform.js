@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
+import { Container, Row, Col, Form, Alert } from "react-bootstrap";
 import Footer from "../../components/Footer";
 import "./Contact.css";
 import PhoneInput from "react-phone-input-2";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
-import ReCAPTCHA from "react-google-recaptcha"; // ✅ Import reCAPTCHA
-import emailjs from "@emailjs/browser"; // ✅ Added EmailJS to send data via email
+import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "@emailjs/browser";
 
-const Contact = ({ brochureName }) => {
+const CoffeeForm = ({ brochureName }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const location = useLocation();
-
+  
   const pageBrochureMap = {
     "/metasurface": "MetaSurface",
     "/metaparametric": "MetaParametric",
@@ -23,19 +23,22 @@ const Contact = ({ brochureName }) => {
     "/ctb": "Coffee Table Book",
   };
 
-  const detectedBrochure =
-    pageBrochureMap[location.pathname] || brochureName || "Unknown";
+  const detectedBrochure = pageBrochureMap[location.pathname] || brochureName || "Coffee Table Book";
 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
+    squareFeet: "",
     message: `The user has requested the ${detectedBrochure} brochure.`,
   });
 
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [captchaToken, setCaptchaToken] = useState(null); // ✅ Captcha token state
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const [employees, setEmployees] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [showLeadSuccess, setShowLeadSuccess] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -47,6 +50,49 @@ const Contact = ({ brochureName }) => {
 
   const handleCaptchaChange = (token) => {
     setCaptchaToken(token);
+  };
+
+  useEffect(() => {
+    const inputField = document.querySelector(".form-text input");
+    if (inputField) {
+      if (!formData.phone || formData.phone.length <= 3) {
+        inputField.setAttribute("placeholder", "Enter your mobile number");
+      } else {
+        inputField.setAttribute("placeholder", "");
+      }
+    }
+  }, [formData.phone]);
+
+  // Fetch employees on component mount
+  useEffect(() => {
+    fetchEmployees();
+  }, []);
+
+  const fetchEmployees = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch('https://backend.cshare.in/api/genericEmployee/genericEmployeeFilter?roles=PRE_SALES&statuses=ACTIVE&page=0&size=1000', {
+        method: 'PUT',
+        headers: {
+          'companyId': '693f9759f956d25cedd37a6f',
+          'apiKey': '918ef419818745ef1f09f705a9642545',
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch employees');
+      }
+
+      const data = await response.json();
+      if (data.object && data.object.content) {
+        setEmployees(data.object.content);
+      }
+    } catch (err) {
+      console.error("Error fetching employees:", err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const openPDF = () => {
@@ -64,40 +110,187 @@ const Contact = ({ brochureName }) => {
     }
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSending(true);
-    setFeedbackMessage("");
+  const parseRange = (rangeString) => {
+    if (!rangeString) return { min: 0, max: 0 };
+    
+    const parts = rangeString.split('-').map(part => parseInt(part.trim()));
+    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+      return { min: parts[0], max: parts[1] };
+    }
+    return { min: 0, max: 0 };
+  };
 
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
-      setFeedbackMessage("❌ All fields are required.");
-      setIsSending(false);
-      return;
+  const findMatchingEmployees = (sqft) => {
+    const sqftNum = parseInt(sqft);
+    if (isNaN(sqftNum)) return [];
+
+    const matchingEmployees = employees.filter(emp => {
+      const range = parseRange(emp.employeeAssignmentRange);
+      return sqftNum >= range.min && sqftNum <= range.max;
+    });
+
+    return matchingEmployees;
+  };
+
+  const prepareLeadAssignments = (matchedEmployees) => {
+    return matchedEmployees.map(emp => ({
+      role: "PRE_SALES",
+      employeeId: emp.id,
+      employeeName: emp.fullName
+    }));
+  };
+
+  const createLead = async () => {
+    // Find matching employees
+    const matchedEmployees = findMatchingEmployees(formData.squareFeet);
+    
+    if (matchedEmployees.length === 0) {
+      console.log("No matching employees found for SQFT:", formData.squareFeet);
+      return false; // Don't create lead if no employee matches
     }
 
-    if (!captchaToken) {
-      setFeedbackMessage("⚠️ Please complete the CAPTCHA before submitting.");
-      setIsSending(false);
-      return;
-    }
+    // Prepare lead assignments
+    const leadAssignments = prepareLeadAssignments(matchedEmployees);
 
+    // Prepare final payload
+    const payload = {
+      firstName: formData.name.split(' ')[0] || formData.name,
+      fullName: formData.name,
+      contact: formData.phone,
+      email: formData.email,
+      address: "Gurugram, Haryana",
+      locality: "DLF QE",
+      city: "Gurgaon(HR)",
+      district: "Gurgaon",
+      state: "HARYANA",
+      pincode: "122002",
+      pincodeMappingId: "693f98b3f956d25cedd37dfc",
+      projectType: "RESIDENTIAL",
+      customerType: "END_USER",
+      engagementTimeline: "IMMEDIATE",
+      has3dOrSiteDrawings: true,
+      approximateFacadeCladdingSqFt: parseInt(formData.squareFeet) || 0,
+      projectBrief: formData.message,
+      productCategory: "COMMERCIAL",
+      productBrand: "Metaguise",
+      productId: "69412167f956d233e1261afc",
+      callStatus: "NEW_LEAD",
+      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
+      callRegistration: true,
+      leadAssignments: leadAssignments
+    };
+
+    console.log("Creating lead with payload:", payload);
+
+    try {
+      const response = await fetch('https://backend.cshare.in/api/customer/create', {
+        method: 'POST',
+        headers: {
+          'companyId': '693f9759f956d25cedd37a6f',
+          'apikey': '918ef419818745ef1f09f705a9642545',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const responseText = await response.text();
+      console.log("Lead creation response:", response.status, responseText);
+
+      if (response.ok) {
+        setShowLeadSuccess(true);
+        return true;
+      } else {
+        console.error("Failed to create lead:", responseText);
+        return false;
+      }
+    } catch (err) {
+      console.error("Error creating lead:", err);
+      return false;
+    }
+  };
+
+  const sendEmail = async () => {
     const emailParams = {
       from_name: formData.name,
       from_email: formData.email,
       from_phone: formData.phone,
+      square_feet: formData.squareFeet || "Not specified",
       message: formData.message,
     };
 
     try {
       await emailjs.send(
-        "service_hbh6e6a", // ✅ Replace with your EmailJS service ID
-        "template_sp4d06m", // ✅ Replace with your template ID
+        "service_hbh6e6a",
+        "template_sp4d06m",
         emailParams,
-        "aEASMHR8n6Vmgtj3l" // ✅ Replace with your public key
+        "aEASMHR8n6Vmgtj3l"
       );
+      return true;
+    } catch (error) {
+      console.error("Email send error:", error);
+      return false;
+    }
+  };
 
-      setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSending(true);
+    setFeedbackMessage("");
+    setShowLeadSuccess(false);
+
+    // Validate form
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
+      setFeedbackMessage("❌ Name, Email and Phone are required.");
+      setIsSending(false);
+      return;
+    }
+
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setFeedbackMessage("❌ Please enter a valid email address.");
+      setIsSending(false);
+      return;
+    }
+
+    // Validate square feet (required for all brochure pages)
+    if (!formData.squareFeet.trim()) {
+      setFeedbackMessage("❌ Square Feet Area is required.");
+      setIsSending(false);
+      return;
+    }
+
+    const sqftNum = parseInt(formData.squareFeet);
+    if (isNaN(sqftNum) || sqftNum <= 0) {
+      setFeedbackMessage("❌ Please enter a valid square feet area.");
+      setIsSending(false);
+      return;
+    }
+
+    if (!captchaToken) {
+      setFeedbackMessage("⚠️ Please verify the reCAPTCHA.");
+      setIsSending(false);
+      return;
+    }
+
+    try {
+      // Step 1: Open PDF
       openPDF();
+      
+      // Step 2: Create lead in backend
+      const leadCreated = await createLead();
+      
+      // Step 3: Send email notification
+      const emailSent = await sendEmail();
+      
+      // Step 4: Show success message
+      if (leadCreated) {
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and our team will connect with you shortly.");
+      } else if (emailSent) {
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent successfully.");
+      } else {
+        setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
+      }
 
       // ✅ Google Ads Conversion Tracking Trigger
       if (typeof window !== "undefined" && window.gtag) {
@@ -106,16 +299,20 @@ const Contact = ({ brochureName }) => {
         });
       }
 
+      // Reset form
       setFormData({
         name: "",
         email: "",
         phone: "",
+        squareFeet: "",
         message: `The user has requested the ${detectedBrochure} brochure.`,
       });
+
       setCaptchaToken(null);
+
     } catch (error) {
-      console.error("Email send error:", error);
-      setFeedbackMessage("❌ Failed to send message. Please try again later.");
+      console.error("Error in form submission:", error);
+      setFeedbackMessage("❌ Something went wrong. Please try again.");
     } finally {
       setIsSending(false);
     }
@@ -125,11 +322,11 @@ const Contact = ({ brochureName }) => {
     <>
       <Helmet>
         <title>
-          Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding
+          Download {detectedBrochure} | Luxury Metal Facades & Cladding
         </title>
         <link
           rel="canonical"
-          href={`https://metaguise.com/${detectedBrochure}`}
+          href={`https://metaguise.com/${detectedBrochure.toLowerCase().replace(/\s+/g, '')}`}
         />
         <meta
           name="description"
@@ -137,7 +334,7 @@ const Contact = ({ brochureName }) => {
         />
         <meta
           property="og:title"
-          content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`}
+          content={`Download ${detectedBrochure} | Luxury Metal Facades & Cladding`}
         />
         <meta
           property="og:description"
@@ -164,7 +361,7 @@ const Contact = ({ brochureName }) => {
             <div className="contactus1-text">
               <p>Thank you for</p>
               <p>showing interest in</p>
-              <p>{detectedBrochure}</p>
+              <p>{detectedBrochure}!</p>
             </div>
             <div className="lead-contact">
               <p>Please fill the form to download it.</p>
@@ -206,7 +403,7 @@ const Contact = ({ brochureName }) => {
               </Row>
 
               <Row>
-                <Col md={12} className="mb-3 mb-md-4">
+                <Col md={6} className="mb-3 mb-md-4">
                   <Form.Group controlId="formPhone">
                     <PhoneInput
                       enableSearch
@@ -221,13 +418,40 @@ const Contact = ({ brochureName }) => {
                     />
                   </Form.Group>
                 </Col>
+                <Col md={6} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formSquareFeet">
+                    <Form.Control
+                      type="number"
+                      name="squareFeet"
+                      placeholder="Square Feet Area"
+                      className="bg-contact form-text border-0"
+                      value={formData.squareFeet}
+                      onChange={handleChange}
+                      required
+                      min="1"
+                    />
+                  </Form.Group>
+                </Col>
               </Row>
+
+              <Form.Group controlId="formMessage" className="mb-4">
+                <Form.Control
+                  as="textarea"
+                  rows={4}
+                  name="message"
+                  placeholder="Tell us more about your Project (Optional)"
+                  className="bg-contact form-text border-0"
+                  value={formData.message}
+                  onChange={handleChange}
+                />
+              </Form.Group>
 
               {/* ✅ Google reCAPTCHA */}
               <div className="mb-3 text-center">
                 <ReCAPTCHA
-                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev" // ⚠️ Replace this with your actual reCAPTCHA v2 site key
+                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
                   onChange={handleCaptchaChange}
+                  theme="dark"
                 />
               </div>
 
@@ -239,13 +463,24 @@ const Contact = ({ brochureName }) => {
                 >
                   <span>
                     {isSending
-                      ? "Sending..."
-                      : `Send & View ${detectedBrochure} Brochure`}
+                      ? "Processing..."
+                      : `Send & View ${detectedBrochure}`}
                   </span>
                 </button>
               </div>
 
-              {feedbackMessage && <p className="mt-3">{feedbackMessage}</p>}
+              {feedbackMessage && (
+                <Alert 
+                  variant={
+                    feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") || feedbackMessage.includes("Failed") 
+                      ? "danger" 
+                      : "success"
+                  } 
+                  className="mt-3 text-center"
+                >
+                  {feedbackMessage}
+                </Alert>
+              )}
             </Form>
           </Col>
         </Row>
@@ -256,4 +491,4 @@ const Contact = ({ brochureName }) => {
   );
 };
 
-export default Contact;
+export default CoffeeForm;
