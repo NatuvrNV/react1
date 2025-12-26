@@ -35,7 +35,7 @@ const Contact = ({ brochureName }) => {
   const [captchaValue, setCaptchaValue] = useState(null);
   const [employees, setEmployees] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [showLeadSuccess, setShowLeadSuccess] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -80,6 +80,7 @@ const Contact = ({ brochureName }) => {
       const data = await response.json();
       if (data.object && data.object.content) {
         setEmployees(data.object.content);
+        console.log("Employees fetched:", data.object.content.length);
       }
     } catch (err) {
       console.error("Error fetching employees:", err);
@@ -117,11 +118,16 @@ const Contact = ({ brochureName }) => {
     const sqftNum = parseInt(sqft);
     if (isNaN(sqftNum)) return [];
 
+    console.log("Looking for employees matching SQFT:", sqftNum);
+    console.log("Total employees:", employees.length);
+    
     const matchingEmployees = employees.filter(emp => {
       const range = parseRange(emp.employeeAssignmentRange);
+      console.log(`Employee ${emp.fullName} has range: ${emp.employeeAssignmentRange} -> min:${range.min}, max:${range.max}`);
       return sqftNum >= range.min && sqftNum <= range.max;
     });
 
+    console.log("Matching employees found:", matchingEmployees.length);
     return matchingEmployees;
   };
 
@@ -139,8 +145,14 @@ const Contact = ({ brochureName }) => {
     
     if (matchedEmployees.length === 0) {
       console.log("No matching employees found for SQFT:", formData.squareFeet);
-      return; // Don't create lead if no employee matches
+      console.log("Available employees with ranges:");
+      employees.forEach(emp => {
+        console.log(`- ${emp.fullName}: ${emp.employeeAssignmentRange}`);
+      });
+      return false; // Return false if no matches
     }
+
+    console.log("Matched employees:", matchedEmployees);
 
     // Prepare lead assignments
     const leadAssignments = prepareLeadAssignments(matchedEmployees);
@@ -163,17 +175,17 @@ const Contact = ({ brochureName }) => {
       engagementTimeline: "IMMEDIATE",
       has3dOrSiteDrawings: true,
       approximateFacadeCladdingSqFt: parseInt(formData.squareFeet) || 0,
-      projectBrief: formData.message,
+      projectBrief: "Interested in brochure download",
       productCategory: "COMMERCIAL",
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
+      remarks: `Requested ${detectedBrochure} brochure. Interested in ${formData.squareFeet} sq ft project.`,
       callRegistration: true,
       leadAssignments: leadAssignments
     };
 
-    console.log("Creating lead with payload:", payload);
+    console.log("Creating lead with payload:", JSON.stringify(payload, null, 2));
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -187,15 +199,25 @@ const Contact = ({ brochureName }) => {
       });
 
       const responseText = await response.text();
-      console.log("Lead creation response:", response.status, responseText);
+      console.log("Lead creation response status:", response.status);
+      console.log("Lead creation response text:", responseText);
 
       if (response.ok) {
-        setShowLeadSuccess(true);
+        let responseData;
+        try {
+          responseData = responseText ? JSON.parse(responseText) : {};
+        } catch (e) {
+          responseData = {};
+        }
+        console.log("✅ Lead created successfully:", responseData);
+        return true;
       } else {
-        console.error("Failed to create lead:", responseText);
+        console.error("❌ Failed to create lead. Status:", response.status, "Response:", responseText);
+        return false;
       }
     } catch (err) {
-      console.error("Error creating lead:", err);
+      console.error("❌ Error creating lead:", err);
+      return false;
     }
   };
 
@@ -206,11 +228,12 @@ const Contact = ({ brochureName }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFeedbackMessage("");
-    setShowLeadSuccess(false);
+    setSubmitting(true);
 
     // Validate form
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.squareFeet.trim()) {
       setFeedbackMessage("❌ All fields are required.");
+      setSubmitting(false);
       return;
     }
 
@@ -218,6 +241,7 @@ const Contact = ({ brochureName }) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       setFeedbackMessage("❌ Please enter a valid email address.");
+      setSubmitting(false);
       return;
     }
 
@@ -225,26 +249,35 @@ const Contact = ({ brochureName }) => {
     const sqftNum = parseInt(formData.squareFeet);
     if (isNaN(sqftNum) || sqftNum <= 0) {
       setFeedbackMessage("❌ Please enter a valid square feet area.");
+      setSubmitting(false);
+      return;
+    }
+
+    // Validate phone (basic check)
+    if (formData.phone.replace(/\D/g, '').length < 10) {
+      setFeedbackMessage("❌ Please enter a valid phone number.");
+      setSubmitting(false);
       return;
     }
 
     if (!captchaValue) {
       setFeedbackMessage("⚠️ Please verify the reCAPTCHA.");
+      setSubmitting(false);
       return;
     }
 
     try {
-      // Step 1: Open PDF
+      // Step 1: Open PDF immediately for user
       openPDF();
       
-      // Step 2: Create lead (if matching employee found)
-      await createLead();
+      // Step 2: Try to create lead
+      const leadCreated = await createLead();
       
-      // Step 3: Show success message
-      if (showLeadSuccess) {
+      // Step 3: Show appropriate message
+      if (leadCreated) {
         setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and our team will connect with you shortly.");
       } else {
-        setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
+        setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly. Note: No matching sales representative found for your project size.");
       }
 
       // Step 4: Reset form
@@ -261,6 +294,8 @@ const Contact = ({ brochureName }) => {
     } catch (error) {
       console.error("Error in form submission:", error);
       setFeedbackMessage("❌ Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -301,6 +336,7 @@ const Contact = ({ brochureName }) => {
             </div>
             <div className="lead-contact">
               <p>Please fill the form to download it.</p>
+              {loading && <p className="text-info">Loading employee data...</p>}
             </div>
           </Col>
 
@@ -320,6 +356,7 @@ const Contact = ({ brochureName }) => {
                       value={formData.name}
                       onChange={handleChange}
                       required
+                      disabled={submitting}
                     />
                   </Form.Group>
                 </Col>
@@ -333,6 +370,7 @@ const Contact = ({ brochureName }) => {
                       value={formData.email}
                       onChange={handleChange}
                       required
+                      disabled={submitting}
                     />
                   </Form.Group>
                 </Col>
@@ -351,6 +389,7 @@ const Contact = ({ brochureName }) => {
                       value={formData.phone}
                       onChange={handlePhoneChange}
                       required
+                      disabled={submitting}
                     />
                   </Form.Group>
                 </Col>
@@ -359,13 +398,17 @@ const Contact = ({ brochureName }) => {
                     <Form.Control
                       type="number"
                       name="squareFeet"
-                      placeholder="Square Feet Area"
+                      placeholder="Square Feet Area (e.g., 35, 100, 500)"
                       className="bg-contact form-text border-0"
                       value={formData.squareFeet}
                       onChange={handleChange}
                       required
                       min="1"
+                      disabled={submitting}
                     />
+                    <Form.Text className="text-light">
+                      Enter approximate facade area in sq ft
+                    </Form.Text>
                   </Form.Group>
                 </Col>
               </Row>
@@ -373,21 +416,33 @@ const Contact = ({ brochureName }) => {
               {/* ✅ Add reCAPTCHA here */}
               <div className="mb-3 d-flex justify-content-center">
                 <ReCAPTCHA
-                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev" // ⬅️ Replace with your actual site key
+                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
                   onChange={handleCaptchaChange}
                   theme="dark"
                 />
               </div>
 
               <div className="button-wrapper">
-                <button type="submit" className="send-button">
-                  <span>{`Send & View ${detectedBrochure} Brochure`}</span>
+                <button 
+                  type="submit" 
+                  className="send-button"
+                  disabled={submitting}
+                >
+                  <span>
+                    {submitting ? "Processing..." : `Send & View ${detectedBrochure} Brochure`}
+                  </span>
                 </button>
               </div>
 
               {feedbackMessage && (
                 <Alert 
-                  variant={feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") ? "danger" : "success"} 
+                  variant={
+                    feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") 
+                      ? "danger" 
+                      : feedbackMessage.includes("✅") 
+                        ? "success" 
+                        : "info"
+                  } 
                   className="mt-3 text-center"
                 >
                   {feedbackMessage}
