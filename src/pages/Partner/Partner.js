@@ -12,7 +12,6 @@ const Partner = () => {
     name: "",
     email: "",
     phone: "",
-    squareFeet: "",
     message: "",
   });
 
@@ -84,10 +83,10 @@ const Partner = () => {
     return { min: 0, max: 0 };
   };
 
-  const findMatchingEmployees = (sqft) => {
-    const sqftNum = parseInt(sqft);
-    if (isNaN(sqftNum)) return [];
-
+  const findMatchingEmployees = () => {
+    // Use default value of 5000 since square feet is removed
+    const sqftNum = 5000;
+    
     const matchingEmployees = employees.filter(emp => {
       const range = parseRange(emp.employeeAssignmentRange);
       return sqftNum >= range.min && sqftNum <= range.max;
@@ -105,11 +104,11 @@ const Partner = () => {
   };
 
   const createLead = async () => {
-    // Find matching employees
-    const matchedEmployees = findMatchingEmployees(formData.squareFeet);
+    // Find matching employees with default value
+    const matchedEmployees = findMatchingEmployees();
     
     if (matchedEmployees.length === 0) {
-      console.log("No matching employees found for SQFT:", formData.squareFeet);
+      console.log("No matching employees found for default SQFT value");
       return false;
     }
 
@@ -133,7 +132,7 @@ const Partner = () => {
       customerType: "END_USER",
       engagementTimeline: "IMMEDIATE",
       has3dOrSiteDrawings: true,
-      approximateFacadeCladdingSqFt: parseInt(formData.squareFeet) || 0,
+      approximateFacadeCladdingSqFt: 5000, // Default value
       projectBrief: formData.message || "Partner inquiry form submission",
       productCategory: "COMMERCIAL",
       productBrand: "Metaguise",
@@ -178,7 +177,6 @@ const Partner = () => {
       from_name: formData.name,
       from_email: formData.email,
       from_phone: formData.phone,
-      square_feet: formData.squareFeet || "Not specified",
       message: formData.message || "Partner inquiry",
     };
 
@@ -217,16 +215,6 @@ const Partner = () => {
       return;
     }
 
-    // Validate square feet (if provided)
-    if (formData.squareFeet.trim()) {
-      const sqftNum = parseInt(formData.squareFeet);
-      if (isNaN(sqftNum) || sqftNum <= 0) {
-        setFeedbackMessage("❌ Please enter a valid square feet area.");
-        setIsSending(false);
-        return;
-      }
-    }
-
     if (!captchaToken) {
       setFeedbackMessage("⚠️ Please complete the CAPTCHA verification.");
       setIsSending(false);
@@ -237,11 +225,8 @@ const Partner = () => {
       // Send email
       const emailSent = await sendEmail();
       
-      // Create lead in backend if square feet is provided
-      let leadCreated = false;
-      if (formData.squareFeet.trim()) {
-        leadCreated = await createLead();
-      }
+      // Create lead in backend
+      const leadCreated = await createLead();
       
       // Show appropriate success message
       if (leadCreated && showLeadSuccess) {
@@ -264,7 +249,6 @@ const Partner = () => {
         name: "", 
         email: "", 
         phone: "", 
-        squareFeet: "", 
         message: "" 
       });
       setCaptchaToken(null);
@@ -356,8 +340,9 @@ const Partner = () => {
                 </Col>
               </Row>
 
+              {/* Phone number field - full width */}
               <Row>
-                <Col md={6} className="mb-3 mb-md-4">
+                <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formPhone">
                     <PhoneInput
                       enableSearch
@@ -369,19 +354,6 @@ const Partner = () => {
                       onChange={handlePhoneChange}
                       placeholder="Enter phone number with Country Code"
                       required
-                    />
-                  </Form.Group>
-                </Col>
-                <Col md={6} className="mb-3 mb-md-4">
-                  <Form.Group controlId="formSquareFeet">
-                    <Form.Control
-                      type="number"
-                      name="squareFeet"
-                      placeholder="Square Feet Area (Optional)"
-                      className="bg-contact form-text border-0"
-                      value={formData.squareFeet}
-                      onChange={handleChange}
-                      min="1"
                     />
                   </Form.Group>
                 </Col>
