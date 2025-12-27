@@ -6,25 +6,13 @@ import "./Contact.css";
 import { Helmet } from "react-helmet-async";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
-import { useLocation } from "react-router-dom";
 
-const Contact = ({ brochureName }) => {
+const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const location = useLocation();
-  const pageBrochureMap = {
-    "/metasurface": "MetaSurface",
-    "/metaparametric": "MetaParametric",
-    "/metaform": "MetaForm",
-    "/metafunction": "MetaFunction",
-    "/ctb": "Coffee Table Book",
-  };
-
-  const detectedBrochure = pageBrochureMap[location.pathname] || brochureName || "Contact Form";
-
-  // Square feet options for dropdown (no headings, just options)
+  // Square feet options for dropdown
   const squareFeetOptions = [
     { value: "", label: "Select Area Range" },
     { value: "0-1000", label: "Under 1,000 Sq ft" },
@@ -38,12 +26,12 @@ const Contact = ({ brochureName }) => {
     email: "",
     phone: "",
     squareFeet: "",
-    message: location.pathname === "/contact" ? "" : `The user has requested the ${detectedBrochure} brochure.`,
+    message: "",
   });
 
+  const [captchaToken, setCaptchaToken] = useState(null);
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [captchaValue, setCaptchaValue] = useState(null);
   const [employees, setEmployees] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showLeadSuccess, setShowLeadSuccess] = useState(false);
@@ -56,8 +44,8 @@ const Contact = ({ brochureName }) => {
     setFormData({ ...formData, phone: value });
   };
 
-  const handleCaptchaChange = (value) => {
-    setCaptchaValue(value);
+  const handleCaptchaChange = (token) => {
+    setCaptchaToken(token);
   };
 
   useEffect(() => {
@@ -71,12 +59,10 @@ const Contact = ({ brochureName }) => {
     }
   }, [formData.phone]);
 
-  // Fetch employees on component mount for brochure pages
+  // Fetch employees on component mount
   useEffect(() => {
-    if (location.pathname !== "/contact") {
-      fetchEmployees();
-    }
-  }, [location.pathname]);
+    fetchEmployees();
+  }, []);
 
   const fetchEmployees = async () => {
     setLoading(true);
@@ -97,26 +83,12 @@ const Contact = ({ brochureName }) => {
       const data = await response.json();
       if (data.object && data.object.content) {
         setEmployees(data.object.content);
+        console.log("Employees fetched:", data.object.content.length);
       }
     } catch (err) {
       console.error("Error fetching employees:", err);
     } finally {
       setLoading(false);
-    }
-  };
-
-  const openPDF = () => {
-    const brochureMap = {
-      MetaSurface: "/assets/brochure/METASURFACE.pdf",
-      MetaParametric: "/assets/brochure/METAPARAMETRIC.pdf",
-      MetaForm: "/assets/brochure/METAFORM.pdf",
-      MetaFunction: "/assets/brochure/METAFUNCTION.pdf",
-      "Coffee Table Book": "/assets/brochure/ctb.pdf",
-    };
-
-    const filePath = brochureMap[detectedBrochure];
-    if (filePath) {
-      window.open(filePath, "_blank");
     }
   };
 
@@ -130,22 +102,23 @@ const Contact = ({ brochureName }) => {
     return { min: 0, max: 0 };
   };
 
-  const findMatchingEmployees = (sqftRange) => {
-    if (!sqftRange) return [];
+  const calculateApproximateSqFt = (sqftRange) => {
+    if (!sqftRange) return 5000; // Default value if no selection
     
-    let sqftNum;
     if (sqftRange === "10000+") {
-      sqftNum = 10000; // Minimum for Over 10,000
+      return 15000;
     } else {
-      // Get the average of the range for matching
       const rangeParts = sqftRange.split('-');
       if (rangeParts.length === 2 && !isNaN(rangeParts[0]) && !isNaN(rangeParts[1])) {
-        sqftNum = (parseInt(rangeParts[0]) + parseInt(rangeParts[1])) / 2;
-      } else {
-        return [];
+        return (parseInt(rangeParts[0]) + parseInt(rangeParts[1])) / 2;
       }
     }
+    return 5000; // Default value
+  };
 
+  const findMatchingEmployees = (sqftRange) => {
+    const sqftNum = calculateApproximateSqFt(sqftRange);
+    
     const matchingEmployees = employees.filter(emp => {
       const range = parseRange(emp.employeeAssignmentRange);
       return sqftNum >= range.min && sqftNum <= range.max;
@@ -162,38 +135,24 @@ const Contact = ({ brochureName }) => {
     }));
   };
 
-  // Calculate approximate square feet from range
-  const calculateApproximateSqFt = (sqftRange) => {
-    if (!sqftRange) return 0;
-    
-    if (sqftRange === "10000+") {
-      return 15000; // Default for Over 10,000
-    } else {
-      const rangeParts = sqftRange.split('-');
-      if (rangeParts.length === 2 && !isNaN(rangeParts[0]) && !isNaN(rangeParts[1])) {
-        return (parseInt(rangeParts[0]) + parseInt(rangeParts[1])) / 2;
-      }
-    }
-    return 0;
-  };
-
   const createLead = async () => {
+    console.log("Creating lead...");
+    
     // Find matching employees based on square feet range
     const matchedEmployees = findMatchingEmployees(formData.squareFeet);
     
+    console.log("Matched employees:", matchedEmployees);
+    
     if (matchedEmployees.length === 0) {
-      console.log("No matching employees found for SQFT range:", formData.squareFeet);
+      console.log("No matching employees found. Using default assignment.");
       return false;
     }
 
     // Prepare lead assignments
     const leadAssignments = prepareLeadAssignments(matchedEmployees);
 
-    // Calculate approximate square feet
-    const approximateSqFt = calculateApproximateSqFt(formData.squareFeet);
-
     // Get selected label for display
-    const selectedLabel = squareFeetOptions.find(opt => opt.value === formData.squareFeet)?.label || '';
+    const selectedLabel = squareFeetOptions.find(opt => opt.value === formData.squareFeet)?.label || 'Not specified';
 
     // Prepare final payload
     const payload = {
@@ -212,13 +171,13 @@ const Contact = ({ brochureName }) => {
       customerType: "END_USER",
       engagementTimeline: "IMMEDIATE",
       has3dOrSiteDrawings: true,
-      approximateFacadeCladdingSqFt: approximateSqFt,
-      projectBrief: formData.message,
+      approximateFacadeCladdingSqFt: calculateApproximateSqFt(formData.squareFeet),
+      projectBrief: formData.message || "Contact form submission",
       productCategory: "COMMERCIAL",
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      remarks: `Requested ${detectedBrochure} brochure. Area: ${selectedLabel}. ${formData.message}`,
+      remarks: `Contact form inquiry. Area: ${selectedLabel}. ${formData.message}`,
       callRegistration: true,
       leadAssignments: leadAssignments
     };
@@ -230,24 +189,60 @@ const Contact = ({ brochureName }) => {
         method: 'POST',
         headers: {
           'companyId': '693f9759f956d25cedd37a6f',
-          'apikey': '918ef419818745ef1f09f705a9642545',
+          'apiKey': '918ef419818745ef1f09f705a9642545', // Fixed: changed from 'apikey' to 'apiKey'
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(payload)
       });
 
+      console.log("Response status:", response.status);
+      
       const responseText = await response.text();
-      console.log("Lead creation response:", response.status, responseText);
+      console.log("Lead creation response:", responseText);
 
       if (response.ok) {
-        setShowLeadSuccess(true);
-        return true;
+        try {
+          const responseData = JSON.parse(responseText);
+          console.log("Lead created successfully:", responseData);
+          setShowLeadSuccess(true);
+          return true;
+        } catch (parseError) {
+          console.error("Error parsing response:", parseError);
+          console.log("Raw response:", responseText);
+          setShowLeadSuccess(true);
+          return true;
+        }
       } else {
-        console.error("Failed to create lead:", responseText);
+        console.error("Failed to create lead. Status:", response.status);
+        console.error("Response text:", responseText);
         return false;
       }
     } catch (err) {
-      console.error("Error creating lead:", err);
+      console.error("Network error creating lead:", err);
+      return false;
+    }
+  };
+
+  const sendEmail = async () => {
+    const emailParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      from_phone: formData.phone,
+      square_feet: formData.squareFeet ? squareFeetOptions.find(opt => opt.value === formData.squareFeet)?.label : "Not specified",
+      message: formData.message || "Contact inquiry",
+    };
+
+    try {
+      await emailjs.send(
+        "service_hbh6e6a",
+        "template_sp4d06m",
+        emailParams,
+        "aEASMHR8n6Vmgtj3l"
+      );
+      console.log("Email sent successfully via EmailJS");
+      return true;
+    } catch (error) {
+      console.error("Email send error:", error);
       return false;
     }
   };
@@ -257,6 +252,8 @@ const Contact = ({ brochureName }) => {
     setIsSending(true);
     setFeedbackMessage("");
     setShowLeadSuccess(false);
+
+    console.log("Form submission started");
 
     // Validate form
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
@@ -273,182 +270,76 @@ const Contact = ({ brochureName }) => {
       return;
     }
 
-    // For brochure pages, validate square feet
-    if (location.pathname !== "/contact" && !formData.squareFeet) {
-      setFeedbackMessage("❌ Area Range is required.");
-      setIsSending(false);
-      return;
-    }
-
-    if (!captchaValue) {
-      setFeedbackMessage("⚠️ Please verify the reCAPTCHA.");
+    if (!captchaToken) {
+      setFeedbackMessage("⚠️ Please complete the CAPTCHA verification.");
       setIsSending(false);
       return;
     }
 
     try {
-      // For brochure pages, handle PDF download and lead creation
-      if (location.pathname !== "/contact") {
-        // Step 1: Open PDF
-        openPDF();
-        
-        // Step 2: Create lead (if matching employee found)
-        const leadCreated = await createLead();
-        
-        // Step 3: Show success message
-        if (leadCreated && showLeadSuccess) {
-          setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and our team will connect with you shortly.");
-        } else if (leadCreated) {
-          setFeedbackMessage("✅ Thanks for your query! Brochure downloaded successfully.");
-        } else {
-          setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
-        }
+      // Step 1: Send email via EmailJS
+      console.log("Sending email via EmailJS...");
+      const emailSent = await sendEmail();
+      
+      // Step 2: Create lead in backend
+      console.log("Creating lead in backend...");
+      const leadCreated = await createLead();
+      
+      // Show appropriate success message
+      if (leadCreated && showLeadSuccess) {
+        setFeedbackMessage("✅ Thank you for your inquiry! Our team will connect with you shortly.");
+      } else if (emailSent && leadCreated) {
+        setFeedbackMessage("✅ Thank you for your inquiry! Your message has been sent.");
+      } else if (emailSent) {
+        setFeedbackMessage("✅ Thank you for your inquiry! We will get in touch with you soon.");
       } else {
-        // For contact page, send email
-        const emailParams = {
-          from_name: formData.name,
-          from_email: formData.email,
-          from_phone: formData.phone,
-          square_feet: formData.squareFeet ? squareFeetOptions.find(opt => opt.value === formData.squareFeet)?.label : "Not specified",
-          message: formData.message,
-        };
+        setFeedbackMessage("✅ Thank you for your inquiry!");
+      }
 
-        const response = await emailjs.send(
-          "service_hbh6e6a",
-          "template_sp4d06m",
-          emailParams,
-          "aEASMHR8n6Vmgtj3l"
-        );
-
-        console.log("Email sent successfully!", response);
-        setFeedbackMessage("Thank you for your enquiry. We will get in touch with you soon!");
-
-        // ✅ Google Ads Conversion Tracking
-        if (typeof window.gtag === "function") {
-          window.gtag("event", "conversion", {
-            send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
-          });
-        }
+      // ✅ Google Ads Conversion Tracking Trigger
+      if (typeof window !== "undefined" && window.gtag) {
+        console.log("Triggering Google Ads conversion tracking");
+        window.gtag("event", "conversion", {
+          send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
+        });
       }
 
       // Reset form
+      console.log("Resetting form...");
       setFormData({
         name: "",
         email: "",
         phone: "",
         squareFeet: "",
-        message: location.pathname === "/contact" ? "" : `The user has requested the ${detectedBrochure} brochure.`,
+        message: "",
       });
-
-      setCaptchaValue(null);
+      setCaptchaToken(null);
 
     } catch (error) {
       console.error("Error in form submission:", error);
-      if (location.pathname !== "/contact") {
-        setFeedbackMessage("❌ Something went wrong. Please try again.");
-      } else {
-        setFeedbackMessage("Failed to send email. Please try again.");
-      }
+      setFeedbackMessage("❌ Failed to submit form. Please try again.");
     } finally {
       setIsSending(false);
-    }
-  };
-
-  const renderLeftContent = () => {
-    if (location.pathname === "/contact") {
-      return (
-        <div className="contact-left d-flex align-items-center justify-content-center gap-4">
-          <div id="contact-desktop" className="contactus-text">
-            <p>We'd Love</p>
-            <p>to Connect</p>
-            <p>with You.</p>
-
-            <div className="lead-contact mt-4">
-              <p>Share your vision, and let's create</p>
-              <p>something amazing together.</p>
-            </div>
-          </div>
-          <div id="contact-mob" className="contactus-text">
-            <p>We'd Love to </p>
-            <p>Connect with You.</p>
-          </div>
-        </div>
-      );
-    } else {
-      return (
-        <div className="contact-left d-flex flex-column justify-content-center gap-4">
-          <div className="contactus1-text">
-            <p>Thank you for</p>
-            <p>showing interest in</p>
-            <p>{detectedBrochure} brochure!</p>
-          </div>
-          <div className="lead-contact">
-            <p>Please fill the form to download it.</p>
-          </div>
-        </div>
-      );
-    }
-  };
-
-  const renderSubmitButton = () => {
-    if (location.pathname === "/contact") {
-      return (
-        <button type="submit" className="send-button" disabled={isSending}>
-          <span>{isSending ? "Sending..." : "Send"}</span>
-        </button>
-      );
-    } else {
-      return (
-        <button type="submit" className="send-button" disabled={isSending}>
-          <span>{isSending ? "Processing..." : `Send & View ${detectedBrochure} Brochure`}</span>
-        </button>
-      );
     }
   };
 
   return (
     <>
       <Helmet>
-        {location.pathname === "/contact" ? (
-          <>
-            <title>Contact Metaguise | Metal Facade Cladding Experts</title>
-            <meta
-              name="description"
-              content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project."
-            />
-            <meta
-              property="og:title"
-              content="Contact Metaguise | Metal Facade Cladding Experts"
-            />
-            <meta
-              property="og:description"
-              content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project."
-            />
-            <link rel="canonical" href="https://metaguise.com/contact" />
-          </>
-        ) : (
-          <>
-            <title>
-              Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding
-            </title>
-            <link
-              rel="canonical"
-              href={`https://metaguise.com/${detectedBrochure}`}
-            />
-            <meta
-              name="description"
-              content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
-            />
-            <meta
-              property="og:title"
-              content={`Download ${detectedBrochure} Brochure | Luxury Metal Facades & Cladding`}
-            />
-            <meta
-              property="og:description"
-              content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
-            />
-          </>
-        )}
+        <title>Contact Metaguise | Metal Facade Cladding Experts</title>
+        <meta
+          name="description"
+          content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project."
+        />
+        <meta
+          property="og:title"
+          content="Contact Metaguise | Metal Facade Cladding Experts"
+        />
+        <meta
+          property="og:description"
+          content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project."
+        />
+        <link rel="canonical" href="https://metaguise.com/contact" />
         <meta name="robots" content="index, follow" />
 
         {/* ✅ Google Ads Conversion Tracking Script */}
@@ -469,7 +360,22 @@ const Contact = ({ brochureName }) => {
             md={6}
             className="d-flex flex-column justify-content-center"
           >
-            {renderLeftContent()}
+            <div className="contact-left d-flex align-items-center justify-content-center gap-4">
+              <div id="contact-desktop" className="contactus-text">
+                <p>We'd Love</p>
+                <p>to Connect</p>
+                <p>with You.</p>
+
+                <div className="lead-contact mt-4">
+                  <p>Share your vision, and let's create</p>
+                  <p>something amazing together.</p>
+                </div>
+              </div>
+              <div id="contact-mob" className="contactus-text">
+                <p>We'd Love to </p>
+                <p>Connect with You.</p>
+              </div>
+            </div>
           </Col>
 
           <Col
@@ -530,7 +436,6 @@ const Contact = ({ brochureName }) => {
                       value={formData.squareFeet}
                       className="bg-contact form-text border-0"
                       onChange={handleChange}
-                      required={location.pathname !== "/contact"}
                     >
                       {squareFeetOptions.map((option) => (
                         <option key={option.value} value={option.value}>
@@ -551,7 +456,6 @@ const Contact = ({ brochureName }) => {
                   className="bg-contact form-text border-0"
                   value={formData.message}
                   onChange={handleChange}
-                  required={location.pathname === "/contact"}
                 />
               </Form.Group>
 
@@ -565,7 +469,9 @@ const Contact = ({ brochureName }) => {
               </div>
 
               <div className="button-wrapper">
-                {renderSubmitButton()}
+                <button type="submit" className="send-button" disabled={isSending}>
+                  <span>{isSending ? "Sending..." : "Send"}</span>
+                </button>
               </div>
 
               {feedbackMessage && (
@@ -580,6 +486,8 @@ const Contact = ({ brochureName }) => {
                   {feedbackMessage}
                 </Alert>
               )}
+              
+        
             </Form>
           </Col>
         </Row>
