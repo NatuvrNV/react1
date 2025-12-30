@@ -32,9 +32,6 @@ const Contact = () => {
   const [captchaToken, setCaptchaToken] = useState(null);
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [employees, setEmployees] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [showLeadSuccess, setShowLeadSuccess] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -48,6 +45,7 @@ const Contact = () => {
     setCaptchaToken(token);
   };
 
+  // Update phone input placeholder
   useEffect(() => {
     const inputField = document.querySelector(".form-text input");
     if (inputField) {
@@ -59,177 +57,19 @@ const Contact = () => {
     }
   }, [formData.phone]);
 
-  // Fetch employees on component mount
-  useEffect(() => {
-    fetchEmployees();
-  }, []);
-
-  const fetchEmployees = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch('https://backend.cshare.in/api/genericEmployee/genericEmployeeFilter?roles=PRE_SALES&statuses=ACTIVE&page=0&size=1000', {
-        method: 'PUT',
-        headers: {
-          'companyId': '693f9759f956d25cedd37a6f',
-          'apiKey': '918ef419818745ef1f09f705a9642545',
-          'Content-Type': 'application/json'
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch employees');
-      }
-
-      const data = await response.json();
-      if (data.object && data.object.content) {
-        setEmployees(data.object.content);
-        console.log("Employees fetched:", data.object.content.length);
-      }
-    } catch (err) {
-      console.error("Error fetching employees:", err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const parseRange = (rangeString) => {
-    if (!rangeString) return { min: 0, max: 0 };
-    
-    const parts = rangeString.split('-').map(part => parseInt(part.trim()));
-    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
-      return { min: parts[0], max: parts[1] };
-    }
-    return { min: 0, max: 0 };
-  };
-
-  const calculateApproximateSqFt = (sqftRange) => {
-    if (!sqftRange) return 5000; // Default value if no selection
-    
-    if (sqftRange === "10000+") {
-      return 15000;
-    } else {
-      const rangeParts = sqftRange.split('-');
-      if (rangeParts.length === 2 && !isNaN(rangeParts[0]) && !isNaN(rangeParts[1])) {
-        return (parseInt(rangeParts[0]) + parseInt(rangeParts[1])) / 2;
-      }
-    }
-    return 5000; // Default value
-  };
-
-  const findMatchingEmployees = (sqftRange) => {
-    const sqftNum = calculateApproximateSqFt(sqftRange);
-    
-    const matchingEmployees = employees.filter(emp => {
-      const range = parseRange(emp.employeeAssignmentRange);
-      return sqftNum >= range.min && sqftNum <= range.max;
-    });
-
-    return matchingEmployees;
-  };
-
-  const prepareLeadAssignments = (matchedEmployees) => {
-    return matchedEmployees.map(emp => ({
-      role: "PRE_SALES",
-      employeeId: emp.id,
-      employeeName: emp.fullName
-    }));
-  };
-
-  const createLead = async () => {
-    console.log("Creating lead...");
-    
-    // Find matching employees based on square feet range
-    const matchedEmployees = findMatchingEmployees(formData.squareFeet);
-    
-    console.log("Matched employees:", matchedEmployees);
-    
-    if (matchedEmployees.length === 0) {
-      console.log("No matching employees found. Using default assignment.");
-      return false;
-    }
-
-    // Prepare lead assignments
-    const leadAssignments = prepareLeadAssignments(matchedEmployees);
-
-    // Get selected label for display
-    const selectedLabel = squareFeetOptions.find(opt => opt.value === formData.squareFeet)?.label || 'Not specified';
-
-    // Prepare final payload
-    const payload = {
-      firstName: formData.name.split(' ')[0] || formData.name,
-      fullName: formData.name,
-      contact: formData.phone,
-      email: formData.email,
-      address: "Gurugram, Haryana",
-      locality: "DLF QE",
-      city: "Gurgaon(HR)",
-      district: "Gurgaon",
-      state: "HARYANA",
-      pincode: "122002",
-      pincodeMappingId: "693f98b3f956d25cedd37dfc",
-      projectType: "RESIDENTIAL",
-      customerType: "END_USER",
-      engagementTimeline: "IMMEDIATE",
-      has3dOrSiteDrawings: true,
-      approximateFacadeCladdingSqFt: calculateApproximateSqFt(formData.squareFeet),
-      projectBrief: formData.message || "Contact form submission",
-      productCategory: "COMMERCIAL",
-      productBrand: "Metaguise",
-      productId: "69412167f956d233e1261afc",
-      callStatus: "NEW_LEAD",
-      remarks: `Contact form inquiry. Area: ${selectedLabel}. ${formData.message}`,
-      callRegistration: true,
-      leadAssignments: leadAssignments
-    };
-
-    console.log("Creating lead with payload:", payload);
-
-    try {
-      const response = await fetch('https://backend.cshare.in/api/customer/create', {
-        method: 'POST',
-        headers: {
-          'companyId': '693f9759f956d25cedd37a6f',
-          'apiKey': '918ef419818745ef1f09f705a9642545', // Fixed: changed from 'apikey' to 'apiKey'
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(payload)
-      });
-
-      console.log("Response status:", response.status);
-      
-      const responseText = await response.text();
-      console.log("Lead creation response:", responseText);
-
-      if (response.ok) {
-        try {
-          const responseData = JSON.parse(responseText);
-          console.log("Lead created successfully:", responseData);
-          setShowLeadSuccess(true);
-          return true;
-        } catch (parseError) {
-          console.error("Error parsing response:", parseError);
-          console.log("Raw response:", responseText);
-          setShowLeadSuccess(true);
-          return true;
-        }
-      } else {
-        console.error("Failed to create lead. Status:", response.status);
-        console.error("Response text:", responseText);
-        return false;
-      }
-    } catch (err) {
-      console.error("Network error creating lead:", err);
-      return false;
-    }
-  };
-
   const sendEmail = async () => {
+    // Get the display label for square feet
+    const squareFeetLabel = formData.squareFeet 
+      ? squareFeetOptions.find(opt => opt.value === formData.squareFeet)?.label 
+      : "Not specified";
+
     const emailParams = {
       from_name: formData.name,
       from_email: formData.email,
       from_phone: formData.phone,
-      square_feet: formData.squareFeet ? squareFeetOptions.find(opt => opt.value === formData.squareFeet)?.label : "Not specified",
+      square_feet: squareFeetLabel,
       message: formData.message || "Contact inquiry",
+      project_area: formData.squareFeet, // Add the raw value as well if needed
     };
 
     try {
@@ -251,7 +91,6 @@ const Contact = () => {
     e.preventDefault();
     setIsSending(true);
     setFeedbackMessage("");
-    setShowLeadSuccess(false);
 
     console.log("Form submission started");
 
@@ -277,31 +116,24 @@ const Contact = () => {
     }
 
     try {
-      // Step 1: Send email via EmailJS
+      // Send email via EmailJS
       console.log("Sending email via EmailJS...");
       const emailSent = await sendEmail();
       
-      // Step 2: Create lead in backend
-      console.log("Creating lead in backend...");
-      const leadCreated = await createLead();
-      
-      // Show appropriate success message
-      if (leadCreated && showLeadSuccess) {
-        setFeedbackMessage("✅ Thank you for your inquiry! Our team will connect with you shortly.");
-      } else if (emailSent && leadCreated) {
-        setFeedbackMessage("✅ Thank you for your inquiry! Your message has been sent.");
-      } else if (emailSent) {
+      if (emailSent) {
         setFeedbackMessage("✅ Thank you for your inquiry! We will get in touch with you soon.");
+        
+        // ✅ Google Ads Conversion Tracking Trigger
+        if (typeof window !== "undefined" && window.gtag) {
+          console.log("Triggering Google Ads conversion tracking");
+          window.gtag("event", "conversion", {
+            send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
+          });
+        }
       } else {
-        setFeedbackMessage("✅ Thank you for your inquiry!");
-      }
-
-      // ✅ Google Ads Conversion Tracking Trigger
-      if (typeof window !== "undefined" && window.gtag) {
-        console.log("Triggering Google Ads conversion tracking");
-        window.gtag("event", "conversion", {
-          send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
-        });
+        setFeedbackMessage("❌ Failed to send email. Please try again.");
+        setIsSending(false);
+        return;
       }
 
       // Reset form
@@ -486,8 +318,6 @@ const Contact = () => {
                   {feedbackMessage}
                 </Alert>
               )}
-              
-        
             </Form>
           </Col>
         </Row>
