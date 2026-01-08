@@ -1848,6 +1848,287 @@ const SingleprojectDetail = [
         
       ],
     },
+
+    //January Projects
+
+        {
+      name: "thewaveform",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "https://youtu.be/fI3GdK5MMuA",
+      instagramLink: "https://www.instagram.com/reel/DFU1kfryqz0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"The Waveform",
+      metatittles:"The Waveform | MetaCoin, MetaPyramid, MetaShingle & MetaLouver in Harmony",
+      metadescription:"A showcase of Metaguise’s finest, this residential facade blends MetaCoin’s fluid waves, MetaPyramid’s mystique, MetaShingle’s rhythm, and MetaLouver’s warmth—crafting a textured, geometric narrative that redefines contemporary architectural expression.",
+      images: [
+      
+     
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal5.webp",
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal7.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal4.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal6.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal2.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal13.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal8.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal9.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal11.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal12.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal3.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal10.webp",
+  
+        
+        
+       
+       
+      
+        
+      ],
+    },
+
+        {
+      name: "thewaveform",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "https://youtu.be/fI3GdK5MMuA",
+      instagramLink: "https://www.instagram.com/reel/DFU1kfryqz0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"The Waveform",
+      metatittles:"The Waveform | MetaCoin, MetaPyramid, MetaShingle & MetaLouver in Harmony",
+      metadescription:"A showcase of Metaguise’s finest, this residential facade blends MetaCoin’s fluid waves, MetaPyramid’s mystique, MetaShingle’s rhythm, and MetaLouver’s warmth—crafting a textured, geometric narrative that redefines contemporary architectural expression.",
+      images: [
+      
+     
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal5.webp",
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal7.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal4.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal6.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal2.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal13.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal8.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal9.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal11.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal12.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal3.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal10.webp",
+  
+        
+        
+       
+       
+      
+        
+      ],
+    },
+
+              {
+      name: "thewaveform",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "https://youtu.be/fI3GdK5MMuA",
+      instagramLink: "https://www.instagram.com/reel/DFU1kfryqz0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"The Waveform",
+      metatittles:"The Waveform | MetaCoin, MetaPyramid, MetaShingle & MetaLouver in Harmony",
+      metadescription:"A showcase of Metaguise’s finest, this residential facade blends MetaCoin’s fluid waves, MetaPyramid’s mystique, MetaShingle’s rhythm, and MetaLouver’s warmth—crafting a textured, geometric narrative that redefines contemporary architectural expression.",
+      images: [
+      
+     
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal5.webp",
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal7.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal4.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal6.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal2.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal13.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal8.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal9.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal11.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal12.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal3.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal10.webp",
+  
+        
+        
+       
+       
+      
+        
+      ],
+    },
+
+              {
+      name: "thewaveform",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "https://youtu.be/fI3GdK5MMuA",
+      instagramLink: "https://www.instagram.com/reel/DFU1kfryqz0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"The Waveform",
+      metatittles:"The Waveform | MetaCoin, MetaPyramid, MetaShingle & MetaLouver in Harmony",
+      metadescription:"A showcase of Metaguise’s finest, this residential facade blends MetaCoin’s fluid waves, MetaPyramid’s mystique, MetaShingle’s rhythm, and MetaLouver’s warmth—crafting a textured, geometric narrative that redefines contemporary architectural expression.",
+      images: [
+      
+     
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal5.webp",
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal7.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal4.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal6.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal2.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal13.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal8.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal9.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal11.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal12.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal3.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal10.webp",
+  
+        
+        
+       
+       
+      
+        
+      ],
+    },
+
+              {
+      name: "thewaveform",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "https://youtu.be/fI3GdK5MMuA",
+      instagramLink: "https://www.instagram.com/reel/DFU1kfryqz0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"The Waveform",
+      metatittles:"The Waveform | MetaCoin, MetaPyramid, MetaShingle & MetaLouver in Harmony",
+      metadescription:"A showcase of Metaguise’s finest, this residential facade blends MetaCoin’s fluid waves, MetaPyramid’s mystique, MetaShingle’s rhythm, and MetaLouver’s warmth—crafting a textured, geometric narrative that redefines contemporary architectural expression.",
+      images: [
+      
+     
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal5.webp",
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal7.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal4.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal6.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal2.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal13.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal8.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal9.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal11.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal12.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal3.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal10.webp",
+  
+        
+        
+       
+       
+      
+        
+      ],
+    },
+
+              {
+      name: "thewaveform",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "https://youtu.be/fI3GdK5MMuA",
+      instagramLink: "https://www.instagram.com/reel/DFU1kfryqz0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      Projectname:"The Waveform",
+      metatittles:"The Waveform | MetaCoin, MetaPyramid, MetaShingle & MetaLouver in Harmony",
+      metadescription:"A showcase of Metaguise’s finest, this residential facade blends MetaCoin’s fluid waves, MetaPyramid’s mystique, MetaShingle’s rhythm, and MetaLouver’s warmth—crafting a textured, geometric narrative that redefines contemporary architectural expression.",
+      images: [
+      
+     
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal5.webp",
+        "assets/Allprojects/residential/TheWaveform/metashingles/khandelwal7.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal4.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal6.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal2.webp",
+        "assets/Allprojects/residential/TheWaveform/metacoin/khandelwal13.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal8.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal9.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal11.webp",
+        "assets/Allprojects/residential/TheWaveform/metaflute/khandelwal12.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal3.webp",
+        "assets/Allprojects/residential/TheWaveform/metapyramid/khandelwal10.webp",
+  
+        
+        
+       
+       
+      
+        
+      ],
+    },
+
+              {
+      name: "thepavilion",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Pavilion",
+      metatittles:"",
+      metadescription:"",
+      images: [
+      
+     
+        "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (1).webp", 
+          "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (2).webp", 
+          "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (3).webp", 
+          "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (4).webp", 
+          "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (5).webp", 
+          "assets/Allprojects/residential/The Pavilion/metaflute/The Pavilion (1).webp", 
+          "assets/Allprojects/residential/The Pavilion/metaflute/The Pavilion (2).webp", 
+          "assets/Allprojects/residential/The Pavilion/metaflute/The Pavilion (3).webp", 
+          "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (1).webp",
+          "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (1).webp",
+          "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (1).webp",
+        
+      ],
+    },
+
+              {
+      name: "rahulsweets",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"Rahul Sweets",
+      metatittles:"",
+      metadescription:"",
+      images: [
+      
+     
+    "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (2).webp",
+          "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (3).webp",
+          "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (4).webp",
+          "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (6).webp",
+          "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (10).webp",
+          "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (5).webp",
+          "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (7).webp",
+          "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (8).webp",
+          "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (9).webp",
+          
+        
+      ],
+    },
+
+              {
+      name: "fortis",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"Fortis",
+      metatittles:"",
+      metadescription:"",
+      images: [
+
+          "assets/Allprojects/commercial/Fortis/metacoin/Fortis (4).webp",
+          "assets/Allprojects/commercial/Fortis/metacoin/Fortis (5).webp",
+          "assets/Allprojects/commercial/Fortis/metacoin/Fortis (6).webp",
+          "assets/Allprojects/commercial/Fortis/metacoin/Fortis (7).webp",
+          "assets/Allprojects/commercial/Fortis/night/Fortis (2).webp",
+          "assets/Allprojects/commercial/Fortis/night/Fortis (3).webp",
+        
+      ],
+    },
+    
   ];
 
 export const SingleProductDetail = [
@@ -2752,7 +3033,10 @@ export const ProductImages = [
 
 export const ProjectImages = [
     { imgPath: "assets/Allprojects/residential/Sculpted Silence/cover/A2_1.webp",  order: 1},
+    { imgPath: "assets/Allprojects/residential/The Pavilion/cover/The Pavilion (1).webp",  order: 1},
      { imgPath: "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",order: 1 },
+    { imgPath: "assets/Allprojects/commercial/Fortis/cover/Fortis (1).webp",order: 1 },
+    { imgPath: "assets/Allprojects/commercial/Rahul Sweets/cover/Rahul Sweets (1).webp",order: 1 },
           { imgPath: "assets/Allprojects/commercial/Achintya/cover/achintya_1.webp",order: 1 },
           { imgPath: "assets/Allprojects/residential/Casa Stilgrove/cover/casa_1.webp",  order: 1},
           { imgPath: "assets/Allprojects/residential/The Cornerstone/cover/nitiKa_1.webp",  order: 1},
