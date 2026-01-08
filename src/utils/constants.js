@@ -1852,7 +1852,7 @@ const SingleprojectDetail = [
     //January Projects
 
          {
-      name: "thepanorama",
+      name: "the panorama",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
@@ -1874,7 +1874,7 @@ const SingleprojectDetail = [
     },
 
        {
-      name: "theframe",
+      name: "the frame",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
@@ -1900,7 +1900,7 @@ const SingleprojectDetail = [
     },
 
          {
-      name: "thecrest",
+      name: "the crest",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
@@ -1925,7 +1925,7 @@ const SingleprojectDetail = [
     },
 
            {
-      name: "thecantilever",
+      name: "the cantilever",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
@@ -1949,7 +1949,7 @@ const SingleprojectDetail = [
     },
 
            {
-      name: "thespine",
+      name: "the spine",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
@@ -1960,23 +1960,23 @@ const SingleprojectDetail = [
       images: [
       
      
-        "assets/Allprojects/residential/The Spine/metalouver/The Solace (1).webp", 
-          "assets/Allprojects/residential/The Spine/metalouver/The Solace (2).webp", 
-          "assets/Allprojects/residential/The Spine/metashingle/The Solace (1).webp", 
-          "assets/Allprojects/residential/The Spine/metashingle/The Solace (2).webp",
-          "assets/Allprojects/residential/The Spine/metashingle/The Solace (3).webp",
-          "assets/Allprojects/residential/The Spine/metaflute/The Solace (1).webp", 
-          "assets/Allprojects/residential/The Spine/metaflute/The Solace (2).webp", 
-          "assets/Allprojects/residential/The Spine/metaflute/The Solace (3).webp", 
-          "assets/Allprojects/residential/The Spine/metaflute/The Solace (4).webp", 
-          "assets/Allprojects/residential/The Spine/metaflute/The Solace (5).webp", 
+        "assets/Allprojects/residential/The Spine/metalouver/The Spine (1).webp", 
+          "assets/Allprojects/residential/The Spine/metalouver/The Spine (2).webp", 
+          "assets/Allprojects/residential/The Spine/metashingle/The Spine (1).webp", 
+          "assets/Allprojects/residential/The Spine/metashingle/The Spine (2).webp",
+          "assets/Allprojects/residential/The Spine/metashingle/The Spine (3).webp",
+          "assets/Allprojects/residential/The Spine/metaflute/The Spine (1).webp", 
+          "assets/Allprojects/residential/The Spine/metaflute/The Spine (2).webp", 
+          "assets/Allprojects/residential/The Spine/metaflute/The Spine (3).webp", 
+          "assets/Allprojects/residential/The Spine/metaflute/The Spine (4).webp", 
+          "assets/Allprojects/residential/The Spine/metaflute/The Spine (5).webp", 
           
         
       ],
     },
 
             {
-      name: "thesolace",
+      name: "the solace",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
@@ -2002,7 +2002,7 @@ const SingleprojectDetail = [
     },
 
               {
-      name: "thepavilion",
+      name: "the pavilion",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
@@ -2029,7 +2029,7 @@ const SingleprojectDetail = [
     },
 
               {
-      name: "rahulsweets",
+      name: "rahul sweets",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
