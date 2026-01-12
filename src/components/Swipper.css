@@ -93,7 +93,7 @@
   color: white;
 }
 
-.slide-content h1 {
+.slide-content h2 {
   font-size: 64px;
   line-height: 80px;
   margin: 0;
@@ -129,7 +129,7 @@
     bottom: 10px !important;
   }
 
-  .slide-content h1 {
+  .slide-content h2 {
     font-size: 32px;
     line-height: 40px;
   }
@@ -181,7 +181,7 @@
     left: -16px !important;
   }
 
-  .slide-content h1 {
+  .slide-content h2 {
     font-size: 24px;
     line-height: 30px;
   }

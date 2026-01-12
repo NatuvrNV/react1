@@ -257,6 +257,10 @@ const SingleBlogPage = () => {
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
+        <link
+        rel="canonical"
+        href={`https://metaguise.com/blog/${metaTitle}`}
+      />
       </Helmet>
 
       <Container className='mt-4'>

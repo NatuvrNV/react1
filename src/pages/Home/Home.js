@@ -44,10 +44,10 @@ function Home() {
         <meta name="description" content="Specializing in bespoke metal cladding solutions & parametric architecture, redefining modern facade design." />
         <meta property="og:title" content="Metaguise | Leading experts in Metal Facades & Parametric Architecture " />
         <meta property="og:description" content="Specializing in bespoke metal cladding solutions & parametric architecture, redefining modern facade design.." /> 
-        <meta property="og:image" content="https://yourwebsite.com/home-image.jpg" />
-        <meta property="og:image" content="https://metaguise.com/favicon.ico" />        <meta property="og:image" content="https://yourwebsite.com/home-image.jpg" />
+        <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
+        <meta property="og:image" content="https://metaguise.com/favicon.ico" />        <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
 
-        <meta property="og:url" content="https://yourwebsite.com/" />
+        <meta property="og:url" content="https://metaguise.com/" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <Swipper />

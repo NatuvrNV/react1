@@ -40,10 +40,10 @@ const MetaExperience = () => {
     <Container fluid className="metaexperience-section text-center " ref={ref}>
       <Row className="justify-content-center mt-4">
         <Col xs={12}>
-          <h1 className="display-3 metavision-title">
+          <h2 className="display-3 metavision-title">
           The Metaguise Experience
 
-          </h1>
+          </h2>
 
          
         </Col>

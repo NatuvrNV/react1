@@ -72,7 +72,7 @@ const Product = () => {
 
   return (
     <Container className="top-products-section text-center">
-      <h1 className="products-title">Top Products</h1>
+      <h2 className="products-title">Top Products</h2>
       <div className="product-container">
         {/* Desktop View */}
         <div className="desktop-view">

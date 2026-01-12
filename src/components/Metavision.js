@@ -40,13 +40,13 @@ const Metavision = () => {
     <Container fluid className="metavision-section text-center " ref={ref}>
       <Row className="justify-content-center mt-4">
         <Col xs={12}>
-          <h1 className="display-3 metavision-title">
+          <h2 className="display-3 metavision-title">
             Metavisi<img
               src={Coinback}
               alt="Coinback"
               className={`metavision-item ${inView ? 'animate' : ''}`}
             />n
-          </h1>
+          </h2>
         </Col>
       </Row>
       <Row className="justify-content-center mt-lg-4">

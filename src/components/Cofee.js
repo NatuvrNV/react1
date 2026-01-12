@@ -9,7 +9,7 @@ const Cofee = () => {
     <div className="cofee-container">
       <main className="cofee-content">
         <div className="cofee-section">
-          <h1>Get our Coffee Table Book.</h1>
+          <h2>Get our Coffee Table Book.</h2>
           <button
             id="download-button"
             className="hover-button"

@@ -51,10 +51,10 @@ const MetaExperience1 = () => {
       <Row className="justify-content-center mt-5">
         <Col xs={12}>
           <div className="tw-flex tw-justify-center tw-items-center">
-            <h1 className="display-3 metavision-title tw-text-[128px] tw-leading-[120px] tw-mb-5">
+            <h2 className="display-3 metavision-title tw-text-[128px] tw-leading-[120px] tw-mb-5">
             The Metaguise Experience
 
-            </h1>
+            </h2>
 
         
           </div>

@@ -20,7 +20,7 @@
   max-width: 45%;
 }
 
-.cofee-section h1 {
+.cofee-section h2 {
   font-family: "Degular Display", sans-serif;
   font-size: clamp(50px, 7vw, 100px);
   font-weight: 500;
@@ -61,13 +61,13 @@
 }
 
 @media (min-width: 1200px) and (max-width:1919px) {
-  .cofee-section h1{
+  .cofee-section h2{
     font-size: 5em;
   }
   }
 
 @media screen and (max-width: 1024px) {
-  .cofee-section h1 {
+  .cofee-section h2 {
     font-size: clamp(38px, 4.5vw, 72px);
   }
 }
@@ -89,7 +89,7 @@
     order: 1;
   }
 
-  .cofee-section h1 {
+  .cofee-section h2 {
     font-size: clamp(32px, 7vw, 56px);
     text-align: center;
     margin-bottom: 30px;
@@ -120,7 +120,7 @@
     margin-top: 1.5rem;
   }
 
-  .cofee-section h1 {
+  .cofee-section h2 {
     font-size: clamp(28px, 6vw, 42px);
     margin-bottom: 0px;
     text-align: left;

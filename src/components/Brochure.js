@@ -39,7 +39,7 @@ const Brochure = () => {
 
   return (
     <div className="container">
-      <h1 className="brochure-title">Our Brochures</h1>
+      <h2 className="brochure-title">Our Brochures</h2>
       <div className="row">
         <div className="col-md-1"></div>
         <div className="col-md-10">
