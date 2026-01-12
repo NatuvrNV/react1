@@ -2022,8 +2022,8 @@ const SingleprojectDetail = [
           "assets/Allprojects/residential/The Pavilion/metaflute/The Pavilion (2).webp", 
           "assets/Allprojects/residential/The Pavilion/metaflute/The Pavilion (3).webp", 
           "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (1).webp",
-          "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (1).webp",
-          "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (1).webp",
+          "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (2).webp",
+          "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (3).webp",
         
       ],
     },
