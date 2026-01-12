@@ -8,9 +8,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
-import logo from "../assets/logo.png";
 import Archello_icon from "../assets/Archello_icon.png";
-import ADpro_icon from "../assets/ADprowhite.png";
+
 import Drawer from "./Drawer";
 
 function Header() {
@@ -110,7 +109,7 @@ function Header() {
                 aria-label="View Metaguise on Archello"
               >
             <img
-  src={ADpro_icon}
+  src="https://res.cloudinary.com/dptxcqnnw/image/upload/v1768215076/ADprowhite.278186518a1f17ca65b7_qrx1xb.png"
   alt="Archello icon - Visit Metaguise on Archello, the global architecture and design network."
   className="archello-icon"
 />
