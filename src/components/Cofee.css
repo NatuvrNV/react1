@@ -30,7 +30,7 @@
   text-align: left;
 }
 
-.hover-button {
+/* .hover-button {
   background-color: #fff;
   border: none;
   padding: 16px 48px;
@@ -44,7 +44,7 @@
 .hover-button:hover {
   background-color: #f0f0f0;
   transform: translateY(-2px);
-}
+} */
 
 .image-section {
   flex: 1;
