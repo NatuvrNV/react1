@@ -3405,9 +3405,9 @@ From concept to installation, we offer full-stack support: design consulting, pr
   },
 
           {
-    title: "Are Metal Louvers Worth It  Pros Designs and Use Cases in Indian Homes",
+    title: "Are Metal Louvers Worth It Pros Designs and Use Cases in Indian Homes",
     metaTitle:
-      "Are Metal Louvers Worth It? Pros, Designs, and Use Cases in Indian Homes",
+      "Are Metal Louvers Worth It Pros Designs and Use Cases in Indian Homes",
     date: "15-12-25",
    template: 'B',
     category: "Project Highlights",
@@ -3493,7 +3493,7 @@ Each installation is customised - because no two facades or clients are the same
 
             `<p><strong>Why Choose Metaguise for Your Louvered Facade System?</strong>
 
-With over <strong>1800 projects delivered pan India</strong>, Metaguise is trusted by some of the most respected architects in the country for delivering custom metal facade systems that are as enduring as they are beautiful.
+With over <strong>1800 projects delivered pan India</strong>, Metaguise is trusted by some of the most respected architects in the country for <a href="https://metaguise.com/blog/custom-metal-facade-cladding:-what-you-need-to-know-before-you-build">delivering custom metal facade systems</a> that are as enduring as they are beautiful.
 
 Our <strong>MetaLouver</strong> system combines premium-grade aluminium with precision-crafted finishes - available in multiple textures and colour tones, all designed to thrive in Indian conditions. And with our global design expertise and end-to-end service, we make the journey from concept to installation seamless.
 
