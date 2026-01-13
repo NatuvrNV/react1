@@ -264,6 +264,7 @@ const SingleBlogPage = () => {
           rel="canonical"
           href={`https://metaguise.com/blog/${urlFriendlyTitle}`}
         />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <Container className='mt-4'>
