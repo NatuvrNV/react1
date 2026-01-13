@@ -51,6 +51,9 @@ const SingleBlogPage = () => {
 
   const metaTitle = blog.metaTitle || blog.title;
   const metaDescription = blog.metaDescription || blog.description;
+  
+  // Added urlFriendlyTitle variable for canonical URL
+  const urlFriendlyTitle = blog.title.toLowerCase().replace(/\s+/g, '-');
 
   // Function to render Template A (current layout)
   const renderTemplateA = () => {
@@ -255,12 +258,12 @@ const SingleBlogPage = () => {
     <div className="singleblog-container">
       {/* Meta Tags */}
       <Helmet>
-        <title>{metaTitle}</title>
+        <title> Metaguise Blogs | {metaTitle}</title>
         <meta name="description" content={metaDescription} />
         <link
-        rel="canonical"
-        href={`https://metaguise.com/blog/${metaTitle}`}
-      />
+          rel="canonical"
+          href={`https://metaguise.com/blog/${urlFriendlyTitle}`}
+        />
       </Helmet>
 
       <Container className='mt-4'>
