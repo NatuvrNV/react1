@@ -3419,6 +3419,7 @@ From concept to installation, we offer full-stack support: design consulting, pr
       "When you're designing a home that needs to breathe, adapt, and still look effortlessly elegant, metal louvers are a serious contender",
 
     folderName: "Are Metal Louvers Worth It",
+     imageAltText: "Are Metal Louvers Worth It Pros Designs and Use Cases in Indian Homes",
 
     images: [
       "assets/Blogs/Are Metal Louvers Worth It/banner.webp",

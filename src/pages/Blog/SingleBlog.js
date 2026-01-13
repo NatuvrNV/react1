@@ -54,6 +54,23 @@ const SingleBlogPage = () => {
   
   // Added urlFriendlyTitle variable for canonical URL
   const urlFriendlyTitle = blog.title.toLowerCase().replace(/\s+/g, '-');
+  
+  // Define the same alt tag for all images in this specific blog
+  // You can customize this for each blog
+  const getImageAltText = (blog) => {
+    // Return alt text based on blog title/category
+    if (blog.title.includes("Metal Louvers")) {
+      return "Metal Louvers Design for Indian Homes - Metaguise";
+    } else if (blog.title.includes("Parametric")) {
+      return "Parametric Facade Design - Metaguise Architecture";
+    } else if (blog.title.includes("MetaSequin")) {
+      return "MetaSequin Parametric Metal Facade System - Metaguise";
+    } else {
+      return `${blog.title} - Metaguise Architecture Design`;
+    }
+  };
+  
+  const imageAltText = getImageAltText(blog);
 
   // Function to render Template A (current layout)
   const renderTemplateA = () => {
@@ -68,7 +85,7 @@ const SingleBlogPage = () => {
               <Col key={i + index} xs={6}>
                 <img
                   src={`/assets/Blogs/${blog.folderName}/${image.split('/').pop()}`}
-                  alt={`${blog.title} ${i + index + 1}`}
+                  alt={blog.title}  // Same alt tag for all images in this blog
                   className="object-cover rounded-lg w-100"
                   loading="lazy"
                   style={{objectFit: 'cover', height: '300px'}}
@@ -155,7 +172,7 @@ const SingleBlogPage = () => {
               {/* Image */}
               <img
                 src={`/assets/Blogs/${blog.folderName}/${image.split('/').pop()}`}
-                alt={`${blog.title} ${index + 1}`}
+                alt={blog.title}  // Same alt tag for all images in this blog
                 className="object-cover rounded-lg w-100 mb-4"
                 loading="lazy"
                 style={{objectFit: 'cover', height: '200px',borderRadius:'20px'}}
@@ -203,7 +220,7 @@ const SingleBlogPage = () => {
                   <Col xl={8}>
                     <img
                       src={`/assets/Blogs/${blog.folderName}/${image.split('/').pop()}`}
-                      alt={`${blog.title} ${index + 1}`}
+                      alt={blog.title}  // Same alt tag for all images in this blog
                       className="object-cover rounded-lg w-100"
                       loading="lazy"
                       style={{objectFit: 'cover', height: '400px',borderRadius:'20px'}}
@@ -227,7 +244,6 @@ const SingleBlogPage = () => {
                               key={`${index}-${sectionIndex}`}
                               dangerouslySetInnerHTML={{ __html: section }}
                               className="my-3"
-                              
                             />
                           ));
                         })()}
@@ -264,7 +280,6 @@ const SingleBlogPage = () => {
           rel="canonical"
           href={`https://metaguise.com/blog/${urlFriendlyTitle}`}
         />
-        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <Container className='mt-4'>
@@ -277,10 +292,10 @@ const SingleBlogPage = () => {
           <Row>
             <Col xl={12}>
               <div className="desktop-title mb-3 single-title">
-                <h2 className="text-5xl text-center mb-10">Related Articles</h2>
+                <h1 className="text-5xl text-center mb-10">Related Articles</h1>
               </div>
               <div className="mobile-title mb-3 single-title">
-                <h2 className="text-5xl text-center mb-10">Related Articles</h2>
+                <h1 className="text-5xl text-center mb-10">Related Articles</h1>
               </div>
             </Col>
           </Row>
@@ -293,7 +308,11 @@ const SingleBlogPage = () => {
                   className="flex cursor-pointer blog-card"
                   onClick={() => handleBlogClick(relatedBlog.title)}
                 >
-                  <img src={`/assets/Blogs/${relatedBlog.folderName}/${relatedBlog.images[0]?.split('/').pop()}`} alt={relatedBlog.title} className="object-cover rounded-lg" />
+                  <img 
+                    src={`/assets/Blogs/${relatedBlog.folderName}/${relatedBlog.images[0]?.split('/').pop()}`} 
+                    alt={getImageAltText(relatedBlog)}  // Using same pattern for related blogs
+                    className="object-cover rounded-lg" 
+                  />
                   <div className="mx-xl-4 blog-text">
                     <h2 className="text-xl blog-title-head">{relatedBlog.title}</h2>
                     <p className="text-sm mt-xl-2 blog-description">{relatedBlog.description}</p>
