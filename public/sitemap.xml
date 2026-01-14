@@ -902,5 +902,12 @@
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
+                                                         <url>
+    <loc>https://metaguise.com/blog/the-gold-standard:-why-metaguise-is-the-1-choice-of-top-architects-in-india</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
 
