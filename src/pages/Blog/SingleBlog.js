@@ -103,7 +103,7 @@ const SingleBlogPage = () => {
         {/* Mobile Layout */}
         <div className="d-block d-xl-none">
           <BlogButton navigate={navigate} />
-          <h2 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h2>
+          <h1 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h1>
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>
@@ -126,7 +126,7 @@ const SingleBlogPage = () => {
 
           <Row className='py-xl-3'>
             <Col xl={7}>
-              <h2 id='head-text' className="text-4xl mt-xl-4 blog-title text-start">{blog.title}</h2>
+              <h1 id='head-text' className="text-4xl mt-xl-4 blog-title text-start">{blog.title}</h1>
               <p className="text-xs text-gray-400 date-text text-start">{blog.date} | {blog.category}</p>
               <p className="text-sm blog-fulldescription" dangerouslySetInnerHTML={{ __html: blog.Fulldescription }}></p>
             </Col>
@@ -161,7 +161,7 @@ const SingleBlogPage = () => {
         
         {/* Mobile Layout for Template B */}
         <div className="d-block d-xl-none">
-          <h2 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h2>
+          <h1 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h1>
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>
@@ -204,7 +204,7 @@ const SingleBlogPage = () => {
         <div className="d-none d-xl-block">
           <Row className="my-4">
             <Col xl={12}>
-              <h2 id='head-text2' className="text-4xl blog-title text-start">{blog.title}</h2>
+              <h1 id='head-text2' className="text-4xl blog-title text-start">{blog.title}</h1>
               <p className="text-xs text-gray-400 date-text2 text-start mt-2">
                 {blog.date} | {blog.category}
               </p>

@@ -99,6 +99,7 @@
   margin: 0;
   margin-bottom: 0;
   letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .slide-content p {
@@ -132,6 +133,7 @@
   .slide-content h2 {
     font-size: 32px;
     line-height: 40px;
+    font-weight: 500;
   }
 
   #banner-slide {
@@ -184,6 +186,7 @@
   .slide-content h2 {
     font-size: 24px;
     line-height: 30px;
+    font-weight: 500;
   }
 
   #banner-slide {

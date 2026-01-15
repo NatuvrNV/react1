@@ -178,10 +178,10 @@ font-size: 6rem;
   }
   
   .blog-description {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #bbb;
     margin-bottom: 10px;
-    line-height: 20px;
+    line-height: 30px;
     text-align: left;
     height: 80px;
     overflow: hidden;
@@ -394,10 +394,10 @@ font-size: 6rem;
 }
 
 .blog-description {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #bbb;
     margin-bottom: 0px;
-    line-height: 15px;
+    line-height: 30px;
     text-align: left;
     height: 45px;
     overflow: hidden;
