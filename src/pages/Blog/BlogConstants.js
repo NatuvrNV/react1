@@ -3543,56 +3543,71 @@ With a massive portfolio of <strong>1800+ projects delivered</strong>, we have p
 
 Architects are visionaries. They don’t just think about bricks and mortar; they think about light, shadow, and emotion. However, traditional building materials like stone or concrete have limits. They are heavy, hard to shape, and can look dated over time. This is where metal design changed the game.
 
-Top architects love working with <strong>Metaguise</strong> because we speak their language. When a designer comes to us with a sketch of a building that looks like a moving wave or a complex geometric puzzle, our team of expert <strong>metal designers</strong> doesn't see a problem - we see a solution. We use a method called <a href="https://metaguise.com/"></a>, which involves using advanced software to create shapes that were previously thought to be impossible to build.
+Top architects love working with <strong>Metaguise</strong> because we speak their language. When a designer comes to us with a sketch of a building that looks like a moving wave or a complex geometric puzzle, our team of expert <strong>metal designers</strong> doesn't see a problem - we see a solution. We use a method called <a href="https://metaguise.com/">Metaguise</a>, which involves using advanced software to create shapes that were previously thought to be impossible to build.
  </p>`,
 
-            `<p><strong><h2>Precision That Matters</h2></strong>
+ `<p>
+            <strong><h2>Precision That Matters</h2></strong>
 
-In architecture, even a few centimeters of error can ruin the look of a building. Most <strong>facade companies in India</strong> struggle with the high level of precision required for modern designs. At Metaguise, we have invested in technology that allows us to be accurate within millimeters. Whether we are working on a luxury villa or a massive corporate office, every panel is cut and fitted with extreme care.
+<p>In architecture, even a few centimeters of error can ruin the look of a building. Most <strong>facade companies in India</strong> struggle with the high level of precision required for modern designs. At Metaguise, we have invested in technology that allows us to be accurate within millimeters. Whether we are working on a luxury villa or a massive corporate office, every panel is cut and fitted with extreme care.
 This precision is one of the main reasons we have been able to complete 1800+ projects successfully. Our <a href="https://metaguise.com/blog/building-pan-india:-how-metaguise-delivers-consistent-facade-excellence-nationwide">Pan India presence</a> means we bring this high level of engineering to every corner of the country. From the high-tech streets of Bengaluru to the heritage-rich lanes of Jaipur, architects know that Metaguise delivers a consistent, world-class finish.
-
+</p>
  
 <strong><h3>A Partnership, Not Just a Purchase</h3></strong>
 
-Beyond the technical skills, architects choose us because of the way we work. We don't just sell a product; we offer a partnership. We stay involved from the very beginning - helping with the initial <strong>elevation design</strong> - all the way to the final installation.
+<p>Beyond the technical skills, architects choose us because of the way we work. We don't just sell a product; we offer a partnership. We stay involved from the very beginning - helping with the initial <strong>elevation design</strong> - all the way to the final installation.
 By focusing on <strong>facade architecture</strong> as a specialized field, we take the stress off the architect’s shoulders. We handle the wind-load calculations, the thermal insulation, and the material durability tests. This allows the architect to focus on the "big picture" while we handle the intricate details of the metal facade.
-
+</p>
  </p>`,
 
             `<p><strong><h2>The Metaguise Advantage</h2></strong>
 
+<p>
 Finally, our growing global footprint shows that our methods aren't just good for India; they are world-class. As we expand, we bring international trends and technologies back to our Indian clients. This keeps our architects at the cutting edge of global design.
 When you choose Metaguise, you aren't just getting a beautiful building. You are getting the security of 1,800 successful stories and the expertise of the <a href="https://metaguise.com/blog/are-metal-louvers-worth-it-pros-designs-and-use-cases-in-indian-homes">best metal designers in the industry</a>. We are proud to be the gold standard for <strong>facade design</strong> in India and beyond.
 
+</p>
  </p>`,
 
              `<p><strong><h4> FAQ's:-</h4></strong>
 
 </p>`,
 
-             `<p><strong>1. Top metal facade manufacturers for architects</strong>
+             `<p><strong><h3>1. Top metal facade manufacturers for architects</h3></strong>
 
-             Leading architects choose manufacturers that blend engineering with artistry. Globally, names like Permasteelisa and Zahner set the standard, while in India, Metaguise leads the industry. With over 1,800 completed projects, we craft bespoke metal systems, offering a 15-30 year warranty on our products. We provide architects with parametric and value-driven facade technologies, ensuring every building becomes a durable, high-performance, and signature urban landmark.
+             <p>
+                          Leading architects choose manufacturers that blend engineering with artistry. Globally, names like Permasteelisa and Zahner set the standard, while in India, Metaguise leads the industry. With over 1,800 completed projects, we craft bespoke metal systems, offering a 15-30 year warranty on our products. We provide architects with parametric and value-driven facade technologies, ensuring every building becomes a durable, high-performance, and signature urban landmark.
+
+             </p>
 </p>`,
 
-             `<p><strong>2. What is parametric facade design in architecture?</strong>
-
+             `<p><strong><h3>2. What is parametric facade design in architecture?</h3></strong>
+<p>
              <a href="https://metaguise.com/blog/the-rise-of-parametric-facades:-designing-with-algorithmic-elegance">Parametric facade design</a> uses algorithmic processes to create complex, data-driven building envelopes. Unlike static designs, these "smart skins" adapt to environmental factors like sunlight and wind. At Metaguise, we use computational tools to craft fluid geometries and non-repetitive patterns. This allows architects to achieve intricate 3D forms and superior energy efficiency, turning visionary concepts into functional, high-performance architectural reality.
+
+</p>
 </p>`,
 
-             `<p><strong>3. Best facade solutions for commercial buildings</strong>
+             `<p><strong><h3>3. Best facade solutions for commercial buildings</h3></strong>
 
-             Commercial projects demand brand identity and longevity. As pioneers of parametric facade technology, Metaguise offers value-driven systems like MetaCoin, specifically engineered for large-scale efficiency. Also, our MetaLouver, MetaCassette, and MetaFlute systems provide a sleek, modern aesthetic with superior fire safety. Backed by a 15–30 year warranty, these solutions ensure commercial landmarks maintain their premium look and thermal performance across diverse and demanding climates.
+             <p>
+                          Commercial projects demand brand identity and longevity. As pioneers of parametric facade technology, Metaguise offers value-driven systems like MetaCoin, specifically engineered for large-scale efficiency. Also, our MetaLouver, MetaCassette, and MetaFlute systems provide a sleek, modern aesthetic with superior fire safety. Backed by a 15–30 year warranty, these solutions ensure commercial landmarks maintain their premium look and thermal performance across diverse and demanding climates.
+
+             </p>
 </p>`,
 
-             `<p><strong>4. How to choose a facade company in India</strong>
+             `<p><strong><h3>4. How to choose a facade company in India</h3></strong>
+<p>
              When choosing a facade partner in India, prioritize technical engineering and climate resilience. Look for companies like Metaguise that offer end-to-end execution - from 3D simulation to turnkey installation. Ensure they use high-grade, corrosion-resistant metals and provide certified warranties. A top-tier facade brand should offer custom parametric capabilities and a proven track record of delivering seepage-free, sustainable elevations for luxury projects.
 
+</p>
 </p>`,
 
-             `<p><strong>5. Metal facade benefits for modern buildings</strong>
-
+             `<p><strong><h3>5. Metal facade benefits for modern buildings</h3></strong>
+<p>
              Metal facades offer unmatched durability, fire safety, and aesthetic versatility. High-grade materials like aluminium and zinc are lightweight, reducing structural loads while providing a recyclable, eco-friendly footprint. Modern systems, such as those by Metaguise, offer superior thermal insulation through ventilated rainscreens, significantly cutting energy consumption. With endless customization in texture and color, metal remains the most future-ready material for sustainable, iconic architecture.
+
+</p>
 </p>`,
 
   ],
