@@ -16,7 +16,7 @@ const Footer = () => {
 <a href=" https://www.architecturaldigest.in/adpro/directory/profile/metaguise/" style={{ display: "inline-block" }}>
   <img
     className="tw-w-[100px]"
-    src="https://res.cloudinary.com/dptxcqnnw/image/upload/v1768215076/ADprocolor.13e8c969fea6de8e55f5_bfbmz0.png"
+    src="https://res.cloudinary.com/dptxcqnnw/image/upload/v1768478867/AD_logo_dgfeln.png"
     alt="ADpro Logo"
     style={{ cursor: "pointer" }}
   />
@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="tw-flex tw-flex-col md:tw-flex-row tw-items-center md:tw-items-start tw-gap-8 md:tw-gap-32 section-1 ">
        
         <img id="footer-logo" className="tw-w-32 md:tw-w-40 " src={logo} alt="METAGUISE Logo" />
-      <img id="footer-logo" className="tw-w-32 md:tw-w-40 " src="https://res.cloudinary.com/dptxcqnnw/image/upload/v1768215076/ADprocolor.13e8c969fea6de8e55f5_bfbmz0.png" alt="METAGUISE Logo" />
+      <img id="footer-logo" className="tw-w-32 md:tw-w-40 " src="https://res.cloudinary.com/dptxcqnnw/image/upload/v1768478867/AD_logo_dgfeln.png" alt="METAGUISE Logo" />
    {/* Contact Links */}
    <div className="tw-flex tw-text-base tw-flex-col tw-items-center md:tw-items-start tw-gap-4 footer-links col-lg-10 col-xl-6">
             <div className="tw-flex tw-items-center tw-gap-2">
