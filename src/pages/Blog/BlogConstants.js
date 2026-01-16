@@ -1,12 +1,12 @@
 export const SingleBlogDetail = [
-    {
-        title: "The Rise of Parametric facades: Designing with Algorithmic Elegance",
-       metaTitle: "The Rise of Parametric Facade Design ",
-        
-        date: "01-04-25",
-        category: "Facade Innovations",
-        metaDescription: "Learn how parametric facade design are revolutionizing architecture with algorithmic design and elegant structural innovation.",
-        Fulldescription: ` In recent years, the architectural world has witnessed a remarkable shift - one where mathematics, material science, and digital creativity intersect. At the heart of this movement is parametric architecture, a design approach that uses algorithms and data to shape complex yet elegant structures. From museums and cultural centres to luxury residences and retail flagships, this method is redefining what buildings can be - both visually and functionally.
+  {
+    title: "The Rise of Parametric facades: Designing with Algorithmic Elegance",
+    metaTitle: "The Rise of Parametric Facade Design ",
+
+    date: "01-04-25",
+    category: "Facade Innovations",
+    metaDescription: "Learn how parametric facade design are revolutionizing architecture with algorithmic design and elegant structural innovation.",
+    Fulldescription: ` In recent years, the architectural world has witnessed a remarkable shift - one where mathematics, material science, and digital creativity intersect. At the heart of this movement is parametric architecture, a design approach that uses algorithms and data to shape complex yet elegant structures. From museums and cultural centres to luxury residences and retail flagships, this method is redefining what buildings can be - both visually and functionally.
       
         Among its many expressions, none are more captivating or transformative than parametric facades.
 
@@ -58,24 +58,24 @@ As cities grow and buildings become smarter, parametric facades will play a key 
 At Metaguise, we are proud to be at the forefront of this transformation, blending algorithmic thinking with craftsmanship to deliver facades that don’t just protect - they inspire.
 
         `,
-        description: "A revolutionary parametric facade system designed to elevate architectural aesthetics. Crafted with premium metals and enhanced with MetaSurface finishes, MetaCoin offers unparalleled customizability, from the shape and size of each element to its color and arrangement. Its dynamic design reacts to light and perspective, creating ever-changing visual effects. Ideal for contemporary and iconic structures, MetaCoin transforms facades into captivating works of art that are sustainable, durable, and visually stunning​​.",
-        images: [
-            "assets/Blogs/rise of facade/rise3.jpg",
-            "assets/Blogs/rise of facade/rise2.jpg",
-            "assets/Blogs/rise of facade/rise1.jpg",
-        ],
+    description: "A revolutionary parametric facade system designed to elevate architectural aesthetics. Crafted with premium metals and enhanced with MetaSurface finishes, MetaCoin offers unparalleled customizability, from the shape and size of each element to its color and arrangement. Its dynamic design reacts to light and perspective, creating ever-changing visual effects. Ideal for contemporary and iconic structures, MetaCoin transforms facades into captivating works of art that are sustainable, durable, and visually stunning​​.",
+    images: [
+      "assets/Blogs/rise of facade/rise3.jpg",
+      "assets/Blogs/rise of facade/rise2.jpg",
+      "assets/Blogs/rise of facade/rise1.jpg",
+    ],
 
-        folderName: "rise of facade", 
-        slug: "my-first-blog-post",  
-      },
-      
-      {
-        title: "Metal is Metaguise: Why Metal is the Future of Sustainable Architecture",
-       metaTitle: "Why Metal Facade Design is the Future of Sustainable Architecture",
-        date: "03-04-25",
-        category: "Sustainability",
-        metaDescription: "Explore the role of metal facade design in sustainable architecture, and how they are shaping the future of eco-friendly design",
-        Fulldescription: ` At Metaguise, metal isn’t just a material - it’s a mindset. It represents strength, precision, and progress. In a world where buildings must be more efficient, expressive, and enduring, metal facade systems are shaping the future of architecture.
+    folderName: "rise of facade",
+    slug: "my-first-blog-post",
+  },
+
+  {
+    title: "Metal is Metaguise: Why Metal is the Future of Sustainable Architecture",
+    metaTitle: "Why Metal Facade Design is the Future of Sustainable Architecture",
+    date: "03-04-25",
+    category: "Sustainability",
+    metaDescription: "Explore the role of metal facade design in sustainable architecture, and how they are shaping the future of eco-friendly design",
+    Fulldescription: ` At Metaguise, metal isn’t just a material - it’s a mindset. It represents strength, precision, and progress. In a world where buildings must be more efficient, expressive, and enduring, metal facade systems are shaping the future of architecture.
 
 Designers, developers, and decision-makers are turning to metal not just for aesthetics, but for what it delivers: performance, longevity, and environmental responsibility. Here's why metal cladding is becoming the go-to solution for modern facade design.
 
@@ -120,24 +120,24 @@ The world is changing, and so are our buildings. By choosing metal, you're choos
 Metal is Metaguise. And the future of sustainable architecture has never looked sharper.
 
         `,
-        description: "At Metaguise, metal isn’t just a material - it’s a mindset. It represents strength, precision, and progress. In a world where buildings must be more efficient, expressive, and enduring, metal facade systems are shaping the future of architecture.​​.",
-        images: [
-            "assets/Blogs/metal is metaguise/metal3.jpg",
-            "assets/Blogs/metal is metaguise/metal2.jpg",
-            "assets/Blogs/metal is metaguise/metal1.jpg",
-        ],
+    description: "At Metaguise, metal isn’t just a material - it’s a mindset. It represents strength, precision, and progress. In a world where buildings must be more efficient, expressive, and enduring, metal facade systems are shaping the future of architecture.​​.",
+    images: [
+      "assets/Blogs/metal is metaguise/metal3.jpg",
+      "assets/Blogs/metal is metaguise/metal2.jpg",
+      "assets/Blogs/metal is metaguise/metal1.jpg",
+    ],
 
-        folderName: "metal is metaguise", 
-        slug: "my-first-blog-post",  
-      },
+    folderName: "metal is metaguise",
+    slug: "my-first-blog-post",
+  },
 
-      {
-        title: "How our MetaFunction products Revolutionize Everyday Architecture",
-       metaTitle: "Functional Metal Cladding Solutions ",
-        date: "04-04-25",
-        category: "Behind the Design",
-        metaDescription: "Learn how our functional metal cladding solutions are reshaping everyday architecture with innovative solutions.",
-        Fulldescription: ` Not every building is a skyscraper or a museum. Most of the architecture we interact with daily - homes, offices, schools, stores - exists in a space that often prioritizes function over flair. But at Metaguise, we believe the two can and should coexist. That’s the vision behind MetaFunction - a product line that makes performance-driven design accessible to everyday architecture.
+  {
+    title: "How our MetaFunction products Revolutionize Everyday Architecture",
+    metaTitle: "Functional Metal Cladding Solutions ",
+    date: "04-04-25",
+    category: "Behind the Design",
+    metaDescription: "Learn how our functional metal cladding solutions are reshaping everyday architecture with innovative solutions.",
+    Fulldescription: ` Not every building is a skyscraper or a museum. Most of the architecture we interact with daily - homes, offices, schools, stores - exists in a space that often prioritizes function over flair. But at Metaguise, we believe the two can and should coexist. That’s the vision behind MetaFunction - a product line that makes performance-driven design accessible to everyday architecture.
 
 Engineered with precision and built to last, our MetaFunction systems transform how buildings perform - visually, structurally, and sustainably - using advanced facade materials that do more than cover a surface. They enhance it.
 
@@ -183,24 +183,24 @@ Because functional doesn’t have to be forgettable. With MetaFunction, every pa
 
 
         `,
-        description: "Not every building is a skyscraper or a museum. Most of the architecture we interact with daily - homes, offices, schools, stores - exists in a space that often prioritizes function over flair. But at Metaguise, we believe the two can and should coexist. That’s the vision behind MetaFunction - a product line that makes performance-driven design accessible to everyday architecture..​​.",
-        images: [
-            "assets/Blogs/metafunction products/function3.jpg",
-            "assets/Blogs/metafunction products/function2.jpg",
-            "assets/Blogs/metafunction products/function1.jpg",
-        ],
+    description: "Not every building is a skyscraper or a museum. Most of the architecture we interact with daily - homes, offices, schools, stores - exists in a space that often prioritizes function over flair. But at Metaguise, we believe the two can and should coexist. That’s the vision behind MetaFunction - a product line that makes performance-driven design accessible to everyday architecture..​​.",
+    images: [
+      "assets/Blogs/metafunction products/function3.jpg",
+      "assets/Blogs/metafunction products/function2.jpg",
+      "assets/Blogs/metafunction products/function1.jpg",
+    ],
 
-        folderName: "metafunction products", 
-        slug: "my-first-blog-post",  
-      },
+    folderName: "metafunction products",
+    slug: "my-first-blog-post",
+  },
 
-      {
-        title: "Living, Breathing Facades: The Science and Soul of MetaPatina",
-       metaTitle: "MetaPatina - The Science Behind a Living Metal Facade",
-        date: "06-04-25",
-        category: "Material Spotlight",
-        metaDescription: "Delve into the science of MetaPatina and how it brings life to a metal facade to create dynamic architectural designs.",
-        Fulldescription: ` There’s something poetic about materials that age with grace. That shift color with time, deepen with exposure, and reveal new layers of beauty as they weather. MetaPatina, our living metal facade surface, is a tribute to that very idea - a facade that doesn’t just protect a building, but brings it to life.
+  {
+    title: "Living, Breathing Facades: The Science and Soul of MetaPatina",
+    metaTitle: "MetaPatina - The Science Behind a Living Metal Facade",
+    date: "06-04-25",
+    category: "Material Spotlight",
+    metaDescription: "Delve into the science of MetaPatina and how it brings life to a metal facade to create dynamic architectural designs.",
+    Fulldescription: ` There’s something poetic about materials that age with grace. That shift color with time, deepen with exposure, and reveal new layers of beauty as they weather. MetaPatina, our living metal facade surface, is a tribute to that very idea - a facade that doesn’t just protect a building, but brings it to life.
 
 At Metaguise, we believe that great architecture is both science and soul. With MetaPatina, we’ve crafted a product that embodies both - blending technical excellence with the organic elegance of time-honored metals like copper and brass.
 
@@ -255,24 +255,24 @@ In a world obsessed with permanence and polish, MetaPatina embraces imperfection
 At Metaguise, we call that soulful engineering. MetaPatina is more than just facade cladding - it’s a living surface. One that changes, softens, and deepens with time, turning every facade into a canvas of quiet transformation.
 
         `,
-        description: "There’s something poetic about materials that age with grace. That shift color with time, deepen with exposure, and reveal new layers of beauty as they weather. MetaPatina, our living metal facade surface, is a tribute to that very idea - a facade that doesn’t just protect a building, but brings it to life..​​.",
-        images: [
-            "assets/Blogs/patina/patina3.jpg",
-            "assets/Blogs/patina/patina2.jpg",
-            "assets/Blogs/patina/patina1.jpg",
-        ],
+    description: "There’s something poetic about materials that age with grace. That shift color with time, deepen with exposure, and reveal new layers of beauty as they weather. MetaPatina, our living metal facade surface, is a tribute to that very idea - a facade that doesn’t just protect a building, but brings it to life..​​.",
+    images: [
+      "assets/Blogs/patina/patina3.jpg",
+      "assets/Blogs/patina/patina2.jpg",
+      "assets/Blogs/patina/patina1.jpg",
+    ],
 
-        folderName: "patina", 
-        slug: "my-first-blog-post",  
-      },
-    
-      {
-        title: "Architectural Luxury, Within Reach: Why MetaFlutes and MetaLouvers Are the Smartest Investment in Metal Facades",
-       metaTitle: "Value Products for Luxury Metal Facade Design",
-        date: "07-04-25",
-        category: "Architectural Insights",
-        metaDescription: "Discover why investing in MetaFlutes, MetaLouvers and MetaCassette enhances the luxury and durability of metal facade design.",
-        Fulldescription: ` In today’s built environment, luxury is no longer defined by extravagance - it’s defined by intention. It’s about refined details, enduring finishes, and design that performs as beautifully as it looks. At Metaguise, our metal facade systems - MetaFlutes, MetaLouvers, and MetaCassette Perforated - are crafted to bring that standard of architectural luxury within reach.
+    folderName: "patina",
+    slug: "my-first-blog-post",
+  },
+
+  {
+    title: "Architectural Luxury, Within Reach: Why MetaFlutes and MetaLouvers Are the Smartest Investment in Metal Facades",
+    metaTitle: "Value Products for Luxury Metal Facade Design",
+    date: "07-04-25",
+    category: "Architectural Insights",
+    metaDescription: "Discover why investing in MetaFlutes, MetaLouvers and MetaCassette enhances the luxury and durability of metal facade design.",
+    Fulldescription: ` In today’s built environment, luxury is no longer defined by extravagance - it’s defined by intention. It’s about refined details, enduring finishes, and design that performs as beautifully as it looks. At Metaguise, our metal facade systems - MetaFlutes, MetaLouvers, and MetaCassette Perforated - are crafted to bring that standard of architectural luxury within reach.
 
 From premium homes to scalable commercial projects, these systems deliver high-impact aesthetics, long-term performance, and architectural clarity - all with thoughtful design and material efficiency.
 
@@ -323,24 +323,24 @@ These aren’t trend-driven surfaces. They’re timeless tools of expression - p
 When you’re designing with purpose, choosing the right metal facade system makes all the difference. And sometimes, the smartest choice isn’t the most extravagant - it’s the most enduring.
 
         `,
-        description: "In today’s built environment, luxury is no longer defined by extravagance - it’s defined by intention. It’s about refined details, enduring finishes, and design that performs as beautifully as it looks. At Metaguise, our metal facade systems - MetaFlutes, MetaLouvers, and MetaCassette Perforated - are crafted to bring that standard of architectural luxury within reach..​​.",
-        images: [
-            "assets/Blogs/architectural luxury/luxury3.jpg",
-            "assets/Blogs/architectural luxury/luxury2.jpg",
-            "assets/Blogs/architectural luxury/luxury1.jpg",
-        ],
+    description: "In today’s built environment, luxury is no longer defined by extravagance - it’s defined by intention. It’s about refined details, enduring finishes, and design that performs as beautifully as it looks. At Metaguise, our metal facade systems - MetaFlutes, MetaLouvers, and MetaCassette Perforated - are crafted to bring that standard of architectural luxury within reach..​​.",
+    images: [
+      "assets/Blogs/architectural luxury/luxury3.jpg",
+      "assets/Blogs/architectural luxury/luxury2.jpg",
+      "assets/Blogs/architectural luxury/luxury1.jpg",
+    ],
 
-        folderName: "architectural luxury", 
-     
-      },
+    folderName: "architectural luxury",
 
-       {
-         title: "METABLOX™ by Metaguise: A Breakthrough in Parametric Facade Design",
-        metaTitle: "METABLOX™: A First-of-its-Kind Parametric Facade Technology",
-         date: "09-04-25",
-         category: "Facade Innovations",
-         metaDescription: "Discover METABLOX™ by Metaguise - a parametric facade technology made of modular 3D blocks, redefining architecture with motion, identity, and precision.",
-         Fulldescription: ` At the intersection of culture, craftsmanship, and cutting-edge geometry, METABLOX™ emerges as a bold new direction in architectural innovation. Introduced by Metaguise, this first-of-its-kind parametric facade technology makes its striking debut at the RJ Jewellers flagship store in Jaipur - setting a new benchmark in the world of metal design and modern Indian architecture.
+  },
+
+  {
+    title: "METABLOX™ by Metaguise: A Breakthrough in Parametric Facade Design",
+    metaTitle: "METABLOX™: A First-of-its-Kind Parametric Facade Technology",
+    date: "09-04-25",
+    category: "Facade Innovations",
+    metaDescription: "Discover METABLOX™ by Metaguise - a parametric facade technology made of modular 3D blocks, redefining architecture with motion, identity, and precision.",
+    Fulldescription: ` At the intersection of culture, craftsmanship, and cutting-edge geometry, METABLOX™ emerges as a bold new direction in architectural innovation. Introduced by Metaguise, this first-of-its-kind parametric facade technology makes its striking debut at the RJ Jewellers flagship store in Jaipur - setting a new benchmark in the world of metal design and modern Indian architecture.
 
  In a world where facades are no longer passive skins, but active storytellers, METABLOX™ brings together movement, rhythm, and narrative - all embedded in its very form.
 
@@ -385,24 +385,24 @@ When you’re designing with purpose, choosing the right metal facade system mak
  As a leading voice in metal design in India, Metaguise is proud to introduce METABLOX™ - not just a product, but a new way of building, thinking, and expressing.
 
   `,
-         description: "At the intersection of culture, craftsmanship, and cutting-edge geometry, METABLOX™ emerges as a bold new direction in architectural innovation. Introduced by Metaguise, this first-of-its-kind parametric facade technology makes its striking debut at the RJ Jewellers flagship store in Jaipur - setting a new benchmark in the world of metal design and modern Indian architecture.",
-         images: [
-             "assets/Blogs/metablox/blox3.jpg",
-             "assets/Blogs/metablox/blox2.jpg",
-             "assets/Blogs/metablox/blox1.jpg",
-         ],
+    description: "At the intersection of culture, craftsmanship, and cutting-edge geometry, METABLOX™ emerges as a bold new direction in architectural innovation. Introduced by Metaguise, this first-of-its-kind parametric facade technology makes its striking debut at the RJ Jewellers flagship store in Jaipur - setting a new benchmark in the world of metal design and modern Indian architecture.",
+    images: [
+      "assets/Blogs/metablox/blox3.jpg",
+      "assets/Blogs/metablox/blox2.jpg",
+      "assets/Blogs/metablox/blox1.jpg",
+    ],
 
-         folderName: "metablox", 
+    folderName: "metablox",
 
-       },
+  },
 
-       {
-         title: "Your Facade is Your Identity: Crafting Signature Statements with Our Customizable Parametrics",
-        metaTitle: "Custom Parametric Facade Design by Metaguise",
-         date: "11-04-25",
-         category: "Company News & Updates",
-         metaDescription: "Explore customizable parametric facade design by Metaguise. From MetaCoin to MetaSequin, we craft architectural identities that move, reflect, and inspire.",
-         Fulldescription: ` In architecture, first impressions aren't just important - they're permanent. Your facade is more than a surface. It’s the visual voice of your building, the first and most lasting statement it makes. At Metaguise, we treat every facade as an opportunity to express identity, ambition, and originality - especially when designed through parametric architecture.
+  {
+    title: "Your Facade is Your Identity: Crafting Signature Statements with Our Customizable Parametrics",
+    metaTitle: "Custom Parametric Facade Design by Metaguise",
+    date: "11-04-25",
+    category: "Company News & Updates",
+    metaDescription: "Explore customizable parametric facade design by Metaguise. From MetaCoin to MetaSequin, we craft architectural identities that move, reflect, and inspire.",
+    Fulldescription: ` In architecture, first impressions aren't just important - they're permanent. Your facade is more than a surface. It’s the visual voice of your building, the first and most lasting statement it makes. At Metaguise, we treat every facade as an opportunity to express identity, ambition, and originality - especially when designed through parametric architecture.
 
  Our customizable parametric facade systems allow architects, brands, and homeowners to create design-forward elevations that don’t just follow form - they define it. With a material vocabulary rooted in metal design and a process powered by technology, our work goes beyond surface decoration. It becomes architectural storytelling.
 
@@ -448,27 +448,27 @@ When you’re designing with purpose, choosing the right metal facade system mak
 
  Because in the end, your facade is your identity. Let’s make it unforgettable.
   `,
-         description: "In architecture, first impressions aren't just important - they're permanent. Your facade is more than a surface. It’s the visual voice of your building, the first and most lasting statement it makes. At Metaguise, we treat every facade as an opportunity to express identity, ambition, and originality - especially when designed through parametric architecture.",
-         images: [
-             "assets/Blogs/identity/identity3.jpg",
-             "assets/Blogs/identity/identity2.jpg",
-             "assets/Blogs/identity/identity1.jpg",
-         ],
+    description: "In architecture, first impressions aren't just important - they're permanent. Your facade is more than a surface. It’s the visual voice of your building, the first and most lasting statement it makes. At Metaguise, we treat every facade as an opportunity to express identity, ambition, and originality - especially when designed through parametric architecture.",
+    images: [
+      "assets/Blogs/identity/identity3.jpg",
+      "assets/Blogs/identity/identity2.jpg",
+      "assets/Blogs/identity/identity1.jpg",
+    ],
 
-         folderName: "identity", 
-     
-        
-       },
+    folderName: "identity",
 
-      //  2
 
-         {
-         title: "5 Landmark Projects That Used MetaCoin to Transform Facades",
-        metaTitle: "5 Iconic Projects with Parametric Coin Facades",
-         date: "13-05-25",
-         category: "Facade Innovations",
-         metaDescription: "Explore customizable parametric facade design by Metaguise. From MetaCoin to MetaSequin, we craft architectural identities that move, reflect, and inspire.",
-         Fulldescription: ` When it comes to parametric architecture, MetaCoin stands out as a revolutionary metal coin facade system. Crafted with precision, it offers dynamic aesthetics, adaptability, and a unique identity to structures. Let's delve into five notable projects where MetaCoin has redefined architectural facades.
+  },
+
+  //  2
+
+  {
+    title: "5 Landmark Projects That Used MetaCoin to Transform Facades",
+    metaTitle: "5 Iconic Projects with Parametric Coin Facades",
+    date: "13-05-25",
+    category: "Facade Innovations",
+    metaDescription: "Explore customizable parametric facade design by Metaguise. From MetaCoin to MetaSequin, we craft architectural identities that move, reflect, and inspire.",
+    Fulldescription: ` When it comes to parametric architecture, MetaCoin stands out as a revolutionary metal coin facade system. Crafted with precision, it offers dynamic aesthetics, adaptability, and a unique identity to structures. Let's delve into five notable projects where MetaCoin has redefined architectural facades.
 
          1. Miraj Stadium, Rajasthan
 
@@ -491,26 +491,26 @@ As a commercial facade, the Yashika Experience Center in Gurugram employs MetaCo
 In a bespoke residential project, MetaCoin extends beyond the facade to adorn the pergola boundary and the main gate. This integration showcases the versatility of metal cladding, seamlessly blending functionality with aesthetic appeal, and highlighting the adaptability of parametric facade design in residential settings.
 These projects underscore the transformative power of MetaCoin in modern architecture. Whether it's a stadium, a retail outlet, or a private residence, MetaCoin brings a unique blend of design, functionality, and identity to every structure.
   `,
-         description: "When it comes to parametric architecture, MetaCoin stands out as a revolutionary metal coin facade system. Crafted with precision, it offers dynamic aesthetics, adaptability, and a unique identity to structures. Let's delve into five notable projects where MetaCoin has redefined architectural facades.",
-         images: [
-              "assets/Blogs/Landmark/miraj.webp",
-             "assets/Blogs/Landmark/tanishq.webp",
-             "assets/Blogs/Landmark/malibu.webp",
-             
-         ],
+    description: "When it comes to parametric architecture, MetaCoin stands out as a revolutionary metal coin facade system. Crafted with precision, it offers dynamic aesthetics, adaptability, and a unique identity to structures. Let's delve into five notable projects where MetaCoin has redefined architectural facades.",
+    images: [
+      "assets/Blogs/Landmark/miraj.webp",
+      "assets/Blogs/Landmark/tanishq.webp",
+      "assets/Blogs/Landmark/malibu.webp",
 
-         folderName: "Landmark", 
-     
-        
-       },
+    ],
 
-          {
-         title: "Why Facade Design Is More Than Just Aesthetic - The Role of Function, Climate, and Material",
-        metaTitle: "Why Facade Cladding Is More Than Just Aesthetic",
-         date: "15-05-25",
-         category: "Behind the Design",
-         metaDescription: "In the world of contemporary architecture, facade design is far more than a visual statement, it is a critical intersection of art, engineering, and environmental science. At Metaguise, this philosophy manifests through a dynamic portfolio of metal cladding solutions that transcend decorative appeal to deliver performance, sustainability, and contextual harmony.",
-         Fulldescription: ` 
+    folderName: "Landmark",
+
+
+  },
+
+  {
+    title: "Why Facade Design Is More Than Just Aesthetic - The Role of Function, Climate, and Material",
+    metaTitle: "Why Facade Cladding Is More Than Just Aesthetic",
+    date: "15-05-25",
+    category: "Behind the Design",
+    metaDescription: "In the world of contemporary architecture, facade design is far more than a visual statement, it is a critical intersection of art, engineering, and environmental science. At Metaguise, this philosophy manifests through a dynamic portfolio of metal cladding solutions that transcend decorative appeal to deliver performance, sustainability, and contextual harmony.",
+    Fulldescription: ` 
          In the world of contemporary architecture, facade design is far more than a visual statement, it is a critical intersection of art, engineering, and environmental science. At Metaguise, this philosophy manifests through a dynamic portfolio of metal cladding solutions that transcend decorative appeal to deliver performance, sustainability, and contextual harmony.
 Function First: The Intelligent Facade
 
@@ -540,30 +540,30 @@ The Future Is Facade-Forward
 As buildings evolve into intelligent entities, facades will play an increasingly crucial role. They are no longer passive wrappers but active components in environmental control, energy efficiency, and urban storytelling. At Metaguise, we champion this evolution through facade metal cladding that is artistic, adaptive, and aligned with the future of architecture.
 
   `,
-         description: "In the world of contemporary architecture, facade design is far more than a visual statement, it is a critical intersection of art, engineering, and environmental science. At Metaguise, this philosophy manifests through a dynamic portfolio of metal cladding solutions that transcend decorative appeal to deliver performance, sustainability, and contextual harmony.",
-         images: [
-             "assets/Blogs/why facade/1.webp",
-             "assets/Blogs/why facade/2.webp",
-             "assets/Blogs/why facade/3.webp",
-            
-             
-         ],
-
-         folderName: "why facade", 
-     
-        
-       },
+    description: "In the world of contemporary architecture, facade design is far more than a visual statement, it is a critical intersection of art, engineering, and environmental science. At Metaguise, this philosophy manifests through a dynamic portfolio of metal cladding solutions that transcend decorative appeal to deliver performance, sustainability, and contextual harmony.",
+    images: [
+      "assets/Blogs/why facade/1.webp",
+      "assets/Blogs/why facade/2.webp",
+      "assets/Blogs/why facade/3.webp",
 
 
-      //  June Blogs
+    ],
 
-       {
-         title: "How Kinetic Facades Improve Building Performance and User Experience",
-        metaTitle: "How Kinetic Facades Add Value",
-         date: "25-05-25",
-         category: "Facade Innovations",
-         metaDescription: "Discover how kinetic facades using aluminium cladding panels and metal louvers improve user experience.",
-         Fulldescription: ` 
+    folderName: "why facade",
+
+
+  },
+
+
+  //  June Blogs
+
+  {
+    title: "How Kinetic Facades Improve Building Performance and User Experience",
+    metaTitle: "How Kinetic Facades Add Value",
+    date: "25-05-25",
+    category: "Facade Innovations",
+    metaDescription: "Discover how kinetic facades using aluminium cladding panels and metal louvers improve user experience.",
+    Fulldescription: ` 
          Most people think of a building’s facade as just its face,what you see from the outside. But more and more, that face is starting to move. Literally.
 Kinetic facades are changing the way buildings behave. Instead of being fixed and static, these facades respond. To sunlight. To wind. Even to how people use the space. They’re not just eye-catching, they’re smart. And when done right, they make buildings more comfortable, more energy-efficient, and honestly, a lot more interesting to be around.
 So, what exactly is a kinetic facade?
@@ -594,27 +594,27 @@ Buildings don’t have to just sit there. They can move. They can respond. And w
 At Metaguise, we believe facades should be more than beautiful, they should be useful, smart, and a little bit magical. If you’re thinking about how your next project can breathe, shade, and shift like it’s alive, a kinetic facade design might be the answer.
 
   `,
-         description: "Kinetic facades are changing the way buildings behave. Instead of being fixed and static, these facades respond. To sunlight. To wind. Even to how people use the space. They’re not just eye-catching, they’re smart. And when done right, they make buildings more comfortable, more energy-efficient, and honestly, a lot more interesting to be around.",
-         images: [
-             "assets/Blogs/kinetic/kinetic1.jpg",
-             "assets/Blogs/kinetic/kinetic2.jpg",
-             "assets/Blogs/kinetic/kinetic3.jpg",
-            
-             
-         ],
+    description: "Kinetic facades are changing the way buildings behave. Instead of being fixed and static, these facades respond. To sunlight. To wind. Even to how people use the space. They’re not just eye-catching, they’re smart. And when done right, they make buildings more comfortable, more energy-efficient, and honestly, a lot more interesting to be around.",
+    images: [
+      "assets/Blogs/kinetic/kinetic1.jpg",
+      "assets/Blogs/kinetic/kinetic2.jpg",
+      "assets/Blogs/kinetic/kinetic3.jpg",
 
-         folderName: "kinetic", 
-     
-        
-       },
 
-        {
-         title: "Why Architects Are Turning to Custom Metal Louvers in 2025",
-        metaTitle: "Why Metal Louvers for Wall Are Big in 2025",
-         date: "03-06-25",
-         category: "Architectural Insights",
-         metaDescription: "Architects prefer custom metal louvers facade design and aluminium fins facade for performance and style.",
-         Fulldescription: ` 
+    ],
+
+    folderName: "kinetic",
+
+
+  },
+
+  {
+    title: "Why Architects Are Turning to Custom Metal Louvers in 2025",
+    metaTitle: "Why Metal Louvers for Wall Are Big in 2025",
+    date: "03-06-25",
+    category: "Architectural Insights",
+    metaDescription: "Architects prefer custom metal louvers facade design and aluminium fins facade for performance and style.",
+    Fulldescription: ` 
          
         There’s something quietly brilliant happening in architecture right now. As buildings become more responsive and designers look for ways to merge aesthetics with performance, one feature is making a serious comeback, custom metal louvers.
         
@@ -667,27 +667,27 @@ If you’re an architect designing for performance, beauty, and environmental in
 At Metaguise, we don’t just make louvers,we design architectural experiences that move with light, weather, and life. Want to explore the possibilities? Check out MetaLouver or browse our projects to see how metal louvers for wall are reshaping facades in 2025.
 
   `,
-         description: "There’s something quietly brilliant happening in architecture right now. As buildings become more responsive and designers look for ways to merge aesthetics with performance, one feature is making a serious comeback, custom metal louvers.",
-         images: [
-             "assets/Blogs/custom/custom1.jpg",
-             "assets/Blogs/custom/custom2.jpg",
-             "assets/Blogs/custom/custom3.jpg",
-            
-             
-         ],
+    description: "There’s something quietly brilliant happening in architecture right now. As buildings become more responsive and designers look for ways to merge aesthetics with performance, one feature is making a serious comeback, custom metal louvers.",
+    images: [
+      "assets/Blogs/custom/custom1.jpg",
+      "assets/Blogs/custom/custom2.jpg",
+      "assets/Blogs/custom/custom3.jpg",
 
-         folderName: "custom", 
-     
-        
-       },
 
-        {
-         title: "From Code to Construction: How Parametric Facades Are Built",
-        metaTitle: "How Parametric Facade Design Becomes Reality",
-         date: "10-06-25",
-         category: "Facade Innovations",
-         metaDescription: "Learn how Metaguise turns parametric facade design into metal facade cladding using custom metal panels.",
-         Fulldescription: ` 
+    ],
+
+    folderName: "custom",
+
+
+  },
+
+  {
+    title: "From Code to Construction: How Parametric Facades Are Built",
+    metaTitle: "How Parametric Facade Design Becomes Reality",
+    date: "10-06-25",
+    category: "Facade Innovations",
+    metaDescription: "Learn how Metaguise turns parametric facade design into metal facade cladding using custom metal panels.",
+    Fulldescription: ` 
        Some buildings just make you look twice. Maybe it’s the way the facade curves. Or how the surface catches the light at different times of day. Often, what you’re seeing is more than just a design, it’s a parametric facade.
 These facades aren’t created panel by panel. They’re generated from patterns, logic, and intent. And at Metaguise, we take that abstract idea and bring it to life in metal,turning code into construction, and theory into something you can touch.
 Here’s how it all comes together.
@@ -724,30 +724,30 @@ Parametric facades aren’t futuristic anymore, they’re happening now. And the
 If you’re ready to build something bold, precise, and deeply expressive, our parametric facade technologies are ready for you. 
 
   `,
-         description: "Some buildings just make you look twice. Maybe it’s the way the facade curves. Or how the surface catches the light at different times of day. Often, what you’re seeing is more than just a design, it’s a parametric facade.",
-         images: [
-             "assets/Blogs/code/code1.jpg",
-             "assets/Blogs/code/code2.jpg",
-             "assets/Blogs/code/code3.jpg",
-              "assets/Blogs/code/code4.jpg",
-             "assets/Blogs/code/code5.jpg",
-             "assets/Blogs/code/code6.jpg",
-            
-             
-         ],
+    description: "Some buildings just make you look twice. Maybe it’s the way the facade curves. Or how the surface catches the light at different times of day. Often, what you’re seeing is more than just a design, it’s a parametric facade.",
+    images: [
+      "assets/Blogs/code/code1.jpg",
+      "assets/Blogs/code/code2.jpg",
+      "assets/Blogs/code/code3.jpg",
+      "assets/Blogs/code/code4.jpg",
+      "assets/Blogs/code/code5.jpg",
+      "assets/Blogs/code/code6.jpg",
 
-         folderName: "code", 
-     
-        
-       },
 
-      {
-         title: "Your Facade is Your Brand: How Businesses Use Facades to Tell Their Story",
-        metaTitle: "How Parametric Facade Design Becomes Reality",
-         date: "20-08-25",
-         category: "Behind the Design",
-         metaDescription: "Discover how a building’s facade can communicate brand identity and tell a business’s story through thoughtful architectural design and material choices.",
-         Fulldescription: ` 
+    ],
+
+    folderName: "code",
+
+
+  },
+
+  {
+    title: "Your Facade is Your Brand: How Businesses Use Facades to Tell Their Story",
+    metaTitle: "How Parametric Facade Design Becomes Reality",
+    date: "20-08-25",
+    category: "Behind the Design",
+    metaDescription: "Discover how a building’s facade can communicate brand identity and tell a business’s story through thoughtful architectural design and material choices.",
+    Fulldescription: ` 
       In architecture, a facade is more than a face - it’s a voice. A building's elevation speaks volumes
 about the brand it represents. At Metaguise, we don’t just clad buildings, we craft identities.
 Through metal, pattern, and parametric design, we help brands build a lasting first impression.
@@ -803,33 +803,33 @@ Browse our design systems:  <a href=" https://metaguise.com/metaparametric ">Met
 Explore all projects: <a href="https://metaguise.com/all-projects">All Projects</a>
 
   `,
-         description: "In architecture, a facade is more than a face - it’s a voice. A building's elevation speaks volumesabout the brand it represents. At Metaguise, we don’t just clad buildings, we craft identities. Through metal, pattern, and parametric design, we help brands build a lasting first impression.",
-         images: [
-             "assets/Blogs/story/1a.webp",
-              "assets/Blogs/story/1b.webp",
-              "assets/Blogs/story/2a.webp",
-              "assets/Blogs/story/2b.webp",
-              "assets/Blogs/story/3a.webp",
-              "assets/Blogs/story/3b.webp",
-              "assets/Blogs/story/4a.webp",
-              "assets/Blogs/story/4b.webp",
-          
-            
-             
-         ],
+    description: "In architecture, a facade is more than a face - it’s a voice. A building's elevation speaks volumesabout the brand it represents. At Metaguise, we don’t just clad buildings, we craft identities. Through metal, pattern, and parametric design, we help brands build a lasting first impression.",
+    images: [
+      "assets/Blogs/story/1a.webp",
+      "assets/Blogs/story/1b.webp",
+      "assets/Blogs/story/2a.webp",
+      "assets/Blogs/story/2b.webp",
+      "assets/Blogs/story/3a.webp",
+      "assets/Blogs/story/3b.webp",
+      "assets/Blogs/story/4a.webp",
+      "assets/Blogs/story/4b.webp",
 
-         folderName: "Story", 
-     
-        
-       },
 
-     {
-         title: "What Makes MetaFlutes the Most Elegant Choice for Vertical Design",
-        metaTitle: "How Parametric Facade Design Becomes Reality",
-         date: "27-08-25",
-         category: "Facade Innovations",
-         metaDescription: "Explore why MetaFlutes stands out as the most elegant vertical design solution — blending aesthetics, performance, and architectural innovation for modern facades.",
-         Fulldescription: ` 
+
+    ],
+
+    folderName: "Story",
+
+
+  },
+
+  {
+    title: "What Makes MetaFlutes the Most Elegant Choice for Vertical Design",
+    metaTitle: "How Parametric Facade Design Becomes Reality",
+    date: "27-08-25",
+    category: "Facade Innovations",
+    metaDescription: "Explore why MetaFlutes stands out as the most elegant vertical design solution — blending aesthetics, performance, and architectural innovation for modern facades.",
+    Fulldescription: ` 
      When it comes to vertical elevation, it’s the details that define the design. MetaFlutes by Metaguise offer just that - a clean, structured look that adds clarity to any facade, whether it's a home, a commercial space, or a public building.
      Their vertical lines don’t just elevate surfaces visually - they bring order, rhythm, and a strong design language that suits everything from minimal architecture to bolder parametric styles.
      
@@ -860,32 +860,32 @@ If you're designing with clarity, rhythm, and durability in mind - MetaFlutes ar
 <a href="https://metaguise.com/all-products/metaflute">Explore MetaFlute here</a>
 
   `,
-         description: "When it comes to vertical elevation, it’s the details that define the design. MetaFlutes by Metaguise offer just that - a clean, structured look that adds clarity to any facade, whether it's a home, a commercial space, or a public building.",
-         images: [
-             "assets/Blogs/metaflute blog/flute1.jpg",
-             "assets/Blogs/metaflute blog/flute2.jpg",
-             "assets/Blogs/metaflute blog/flute3.jpg",
-             "assets/Blogs/metaflute blog/flute4.jpg",
-             "assets/Blogs/metaflute blog/flute5.jpg",
-          
-            
-             
-         ],
+    description: "When it comes to vertical elevation, it’s the details that define the design. MetaFlutes by Metaguise offer just that - a clean, structured look that adds clarity to any facade, whether it's a home, a commercial space, or a public building.",
+    images: [
+      "assets/Blogs/metaflute blog/flute1.jpg",
+      "assets/Blogs/metaflute blog/flute2.jpg",
+      "assets/Blogs/metaflute blog/flute3.jpg",
+      "assets/Blogs/metaflute blog/flute4.jpg",
+      "assets/Blogs/metaflute blog/flute5.jpg",
 
-         folderName: "metaflute blog", 
-     
-        
-       },
-    
-//September blogs
 
-     {
-         title: "Coin Facade vs. Perforated Panels: Which Metal Cladding System Is Right for You",
-        metaTitle: "Coin Facade vs Perforated Panels | Metaguise Metal Cladding",
-         date: "05-09-25",
-         category: "Facade Innovations",
-         metaDescription: "Compare MetaCoin parametric facade design with MetaCassette perforated panels. Discover which metal cladding system suits your facade project best.",
-         Fulldescription: ` 
+
+    ],
+
+    folderName: "metaflute blog",
+
+
+  },
+
+  //September blogs
+
+  {
+    title: "Coin Facade vs. Perforated Panels: Which Metal Cladding System Is Right for You",
+    metaTitle: "Coin Facade vs Perforated Panels | Metaguise Metal Cladding",
+    date: "05-09-25",
+    category: "Facade Innovations",
+    metaDescription: "Compare MetaCoin parametric facade design with MetaCassette perforated panels. Discover which metal cladding system suits your facade project best.",
+    Fulldescription: ` 
   Metal cladding isn’t just about finishing a building - it’s about how the surface behaves, how it reflects light, and how it defines form. At Metaguise, two popular facade options offer very different design possibilities: <strong>MetaCoin</strong> and <strong>MetaCassette Perforated</strong>.
 If you're deciding between the two, it helps to understand not just how they look - but how they think.
 
@@ -929,30 +929,30 @@ In short:
 Now that you know the difference, which one does your facade need?
 
   `,
-         description: "Metal cladding isn’t just about finishing a building - it’s about how the surface behaves, how it reflects light, and how it defines form. At Metaguise, two popular facade options offer very different design possibilities: MetaCoin and MetaCassette Perforated.",
-         images: [
-             "assets/Blogs/coin perforated/coin1.jpg",
-             "assets/Blogs/coin perforated/coin2.jpg",
-             "assets/Blogs/coin perforated/coin3.jpg",
-             "assets/Blogs/coin perforated/coin4.jpg",
-             "assets/Blogs/coin perforated/coin5.jpg",
-            
-             
-         ],
-
-         folderName: "coin perforated", 
-     
-        
-       },
+    description: "Metal cladding isn’t just about finishing a building - it’s about how the surface behaves, how it reflects light, and how it defines form. At Metaguise, two popular facade options offer very different design possibilities: MetaCoin and MetaCassette Perforated.",
+    images: [
+      "assets/Blogs/coin perforated/coin1.jpg",
+      "assets/Blogs/coin perforated/coin2.jpg",
+      "assets/Blogs/coin perforated/coin3.jpg",
+      "assets/Blogs/coin perforated/coin4.jpg",
+      "assets/Blogs/coin perforated/coin5.jpg",
 
 
-         {
-         title: "How to Choose the Right Facade Cladding System for Your Project",
-        metaTitle: "How to Choose the Right Facade Cladding | Metaguise Guide",
-         date: "08-09-25",
-         category: "Facade Innovations",
-         metaDescription: "Learn how to choose the best facade cladding system for your project. Explore Metaguise’s metal facade designs, from parametric to perforated panels.",
-         Fulldescription: ` 
+    ],
+
+    folderName: "coin perforated",
+
+
+  },
+
+
+  {
+    title: "How to Choose the Right Facade Cladding System for Your Project",
+    metaTitle: "How to Choose the Right Facade Cladding | Metaguise Guide",
+    date: "08-09-25",
+    category: "Facade Innovations",
+    metaDescription: "Learn how to choose the best facade cladding system for your project. Explore Metaguise’s metal facade designs, from parametric to perforated panels.",
+    Fulldescription: ` 
  Your building’s facade is more than a skin. It’s the first impression, the shield against weather, and a design statement all in one. Choosing the right cladding system isn’t about picking the prettiest panel - it’s about matching design intent with material intelligence.
 At Metaguise, we design a wide range of facade systems that each serve different purposes. Here’s how to choose what’s right for your project.
 
@@ -1019,29 +1019,29 @@ Want help choosing? Our in-house design team can walk you through samples, secti
  <a href="https://metaguise.com/all-products">metaguise.com/all-products</a>
 
   `,
-         description: "Your building’s facade is more than a skin. It’s the first impression, the shield against weather, and a design statement all in one. Choosing the right cladding system isn’t about picking the prettiest panel - it’s about matching design intent with material intelligence.",
-         images: [
-             "assets/Blogs/choose facade/choose1.jpg",
-             "assets/Blogs/choose facade/choose2.jpg",
-             "assets/Blogs/choose facade/choose3.jpg",
-             "assets/Blogs/choose facade/choose4.jpg",
-             "assets/Blogs/choose facade/choose5.jpg",
-            
-             
-         ],
+    description: "Your building’s facade is more than a skin. It’s the first impression, the shield against weather, and a design statement all in one. Choosing the right cladding system isn’t about picking the prettiest panel - it’s about matching design intent with material intelligence.",
+    images: [
+      "assets/Blogs/choose facade/choose1.jpg",
+      "assets/Blogs/choose facade/choose2.jpg",
+      "assets/Blogs/choose facade/choose3.jpg",
+      "assets/Blogs/choose facade/choose4.jpg",
+      "assets/Blogs/choose facade/choose5.jpg",
 
-         folderName: "choose facade", 
-     
-        
-       },
 
-     {
-         title: "Why Aluminium Cladding Is the Future of Facade Design in Indian Architecture",
-        metaTitle: "Why Aluminium Cladding Leads Facade Design in Indian Architecture",
-         date: "12-09-25",
-         category: "Industry Trends",
-         metaDescription: "Discover why aluminium cladding is the future of facade design in India. Explore Metaguise’s durable, sustainable metal facade cladding systems for all projects.",
-         Fulldescription: ` 
+    ],
+
+    folderName: "choose facade",
+
+
+  },
+
+  {
+    title: "Why Aluminium Cladding Is the Future of Facade Design in Indian Architecture",
+    metaTitle: "Why Aluminium Cladding Leads Facade Design in Indian Architecture",
+    date: "12-09-25",
+    category: "Industry Trends",
+    metaDescription: "Discover why aluminium cladding is the future of facade design in India. Explore Metaguise’s durable, sustainable metal facade cladding systems for all projects.",
+    Fulldescription: ` 
 India’s architecture is evolving - faster, smarter, and more performance-driven than ever before. As cities grow and climates shift, the facade is no longer just an exterior skin. It’s a functional envelope that must adapt, protect, and express.
 In this landscape, aluminium cladding has emerged as a front-runner - and it’s easy to see why. At Metaguise, we’ve been working with high-grade aluminium across our facade systems, and the results speak for themselves.
 Here’s why aluminium is shaping the future of facade design in India.
@@ -1115,29 +1115,29 @@ At Metaguise, we’ve built our entire facade philosophy around this material - 
 
 
   `,
-         description: "India’s architecture is evolving - faster, smarter, and more performance-driven than ever before. As cities grow and climates shift, the facade is no longer just an exterior skin. It’s a functional envelope that must adapt, protect, and express.",
-         images: [
-             "assets/Blogs/aluminum cladding/aluminum1.jpg",
-             "assets/Blogs/aluminum cladding/aluminum2.jpg",
-             "assets/Blogs/aluminum cladding/aluminum3.jpg",
-             "assets/Blogs/aluminum cladding/aluminum4.jpg",
-             "assets/Blogs/aluminum cladding/aluminum5.jpg",
-             
-         ],
+    description: "India’s architecture is evolving - faster, smarter, and more performance-driven than ever before. As cities grow and climates shift, the facade is no longer just an exterior skin. It’s a functional envelope that must adapt, protect, and express.",
+    images: [
+      "assets/Blogs/aluminum cladding/aluminum1.jpg",
+      "assets/Blogs/aluminum cladding/aluminum2.jpg",
+      "assets/Blogs/aluminum cladding/aluminum3.jpg",
+      "assets/Blogs/aluminum cladding/aluminum4.jpg",
+      "assets/Blogs/aluminum cladding/aluminum5.jpg",
 
-         folderName: "aluminum cladding", 
-     
-        
-       },
+    ],
+
+    folderName: "aluminum cladding",
 
 
-         {
-         title: "A Showcase of Parametric Excellence in India’s Most Iconic Buildings",
-        metaTitle: "A Showcase of Parametric Excellence in India’s Most Iconic Buildings",
-         date: "15-09-25",
-         category: "Facade Innovations",
-         metaDescription: "Explore India’s most iconic buildings that exemplify parametric design excellence — where advanced geometry and luxury metal facades redefine architectural identity.",
-         Fulldescription: ` 
+  },
+
+
+  {
+    title: "A Showcase of Parametric Excellence in India’s Most Iconic Buildings",
+    metaTitle: "A Showcase of Parametric Excellence in India’s Most Iconic Buildings",
+    date: "15-09-25",
+    category: "Facade Innovations",
+    metaDescription: "Explore India’s most iconic buildings that exemplify parametric design excellence — where advanced geometry and luxury metal facades redefine architectural identity.",
+    Fulldescription: ` 
 
          A Showcase of Parametric Excellence in India’s Most Iconic Buildings
 Across India, certain buildings do more than serve a function - they leave a lasting impression. At Metaguise, we’ve had the privilege of partnering with some of the country’s top architects to create parametric facades that redefine skylines and reshape how we think about buildings.
@@ -1200,28 +1200,28 @@ If you're an architect, developer, or designer looking to bring your next projec
 
 
   `,
-         description: "Across India, certain buildings do more than serve a function - they leave a lasting impression. At Metaguise, we’ve had the privilege of partnering with some of the country’s top architects to create parametric facades that redefine skylines and reshape how we think about buildings.",
-         images: [
-             "assets/Blogs/top10/top10(1).webp",
-             "assets/Blogs/top10/top10(2).webp",
-             "assets/Blogs/top10/top10(3).webp",
-             "assets/Blogs/top10/top10(4).webp",
-             "assets/Blogs/top10/top10(5).webp",
-             
-         ],
+    description: "Across India, certain buildings do more than serve a function - they leave a lasting impression. At Metaguise, we’ve had the privilege of partnering with some of the country’s top architects to create parametric facades that redefine skylines and reshape how we think about buildings.",
+    images: [
+      "assets/Blogs/top10/top10(1).webp",
+      "assets/Blogs/top10/top10(2).webp",
+      "assets/Blogs/top10/top10(3).webp",
+      "assets/Blogs/top10/top10(4).webp",
+      "assets/Blogs/top10/top10(5).webp",
 
-         folderName: "top10", 
-     
-        
-       },
+    ],
 
-             {
-         title: "Why MetaCoin Is the Most Iconic Facade Innovation in Modern Architecture",
-        metaTitle: "Why MetaCoin Is the Most Iconic Facade Innovation in Modern Architecture ",
-         date: "22-09-25",
-         category: "Facade Innovations",
-         metaDescription: "Explore MetaCoin by Metaguise, our most sought after parametric facade technology",
-         Fulldescription: ` 
+    folderName: "top10",
+
+
+  },
+
+  {
+    title: "Why MetaCoin Is the Most Iconic Facade Innovation in Modern Architecture",
+    metaTitle: "Why MetaCoin Is the Most Iconic Facade Innovation in Modern Architecture ",
+    date: "22-09-25",
+    category: "Facade Innovations",
+    metaDescription: "Explore MetaCoin by Metaguise, our most sought after parametric facade technology",
+    Fulldescription: ` 
 At Metaguise, we’ve always believed that a building’s facade should do more than cover - it should communicate. It should carry the building’s identity, its rhythm, and its soul. That’s exactly why we created MetaCoin, and why it has quickly become our most sought-after parametric facade technology.
 
 MetaCoin isn’t just another metal facade system. It’s a design language - one that architects across India are using to create buildings that don’t just stand, but stand out. It’s a parametric facade system made up of thousands of circular panels - or “coins” - arranged in ways that create depth, flow, and movement across a surface.
@@ -1255,28 +1255,28 @@ MetaCoin shows us that a facade isn’t just a skin - it’s a story. At Tanishq
 Explore MetaCoin: https://metaguise.com/all-products/metacoin
 
   `,
-         description: "At Metaguise, we’ve always believed that a building’s facade should do more than cover - it should communicate. It should carry the building’s identity, its rhythm, and its soul. That’s exactly why we created MetaCoin, and why it has quickly become our most sought-after parametric facade technology.",
-         images: [
-             "assets/Blogs/metacoin-blog/coin1.webp",
-             "assets/Blogs/metacoin-blog/coin2.webp",
-             "assets/Blogs/metacoin-blog/coin3.webp",
-             "assets/Blogs/metacoin-blog/coin4.webp",
-             
-             
-         ],
+    description: "At Metaguise, we’ve always believed that a building’s facade should do more than cover - it should communicate. It should carry the building’s identity, its rhythm, and its soul. That’s exactly why we created MetaCoin, and why it has quickly become our most sought-after parametric facade technology.",
+    images: [
+      "assets/Blogs/metacoin-blog/coin1.webp",
+      "assets/Blogs/metacoin-blog/coin2.webp",
+      "assets/Blogs/metacoin-blog/coin3.webp",
+      "assets/Blogs/metacoin-blog/coin4.webp",
 
-         folderName: "metacoin-blog", 
-     
-        
-       },
 
-                 {
-         title: "Laser Cut Metal Facades: Where Design Meets Detail",
-        metaTitle: "Laser Cut Metal Facades: Where Design Meets Detail ",
-         date: "26-09-25",
-         category: "Facade Innovations",
-         metaDescription: " Discover Metaguise’s laser cut metal panels and facade cladding. Trusted PAN India for low-maintenance, long-lasting metal facades.",
-         Fulldescription: ` 
+    ],
+
+    folderName: "metacoin-blog",
+
+
+  },
+
+  {
+    title: "Laser Cut Metal Facades: Where Design Meets Detail",
+    metaTitle: "Laser Cut Metal Facades: Where Design Meets Detail ",
+    date: "26-09-25",
+    category: "Facade Innovations",
+    metaDescription: " Discover Metaguise’s laser cut metal panels and facade cladding. Trusted PAN India for low-maintenance, long-lasting metal facades.",
+    Fulldescription: ` 
 In architecture, it’s often the smallest details that leave the biggest impression. One such detail, quietly transforming skylines and entrances across India, is the laser cut metal panel. Clean, controlled, and endlessly creative, these designs bring life and movement to what would otherwise be flat, rigid surfaces.
 
 At Metaguise, we’ve turned laser cut metal facade cladding into a signature of contemporary Indian architecture. With a global presence, a PAN India footprint, and over 1800+ projects under our belt, we’ve partnered with architects across the country to bring their visions to life, down to the last millimetre.
@@ -1322,28 +1322,28 @@ Whether it’s a new build or a facelift for an existing one, laser cut metal pa
 Explore our range of customisable facades, view our <a href="https://metaguise.com/all-projects">live projects</a>, or browse our <a href="https://metaguise.com/all-products">full product</a> library. If it’s made of metal, we’ll make it unforgettable, because Metal is Metaguise!
 
   `,
-         description: "In architecture, it’s often the smallest details that leave the biggest impression. One such detail, quietly transforming skylines and entrances across India, is the laser cut metal panel. Clean, controlled, and endlessly creative, these designs bring life and movement to what would otherwise be flat, rigid surfaces.",
-         images: [
-             "assets/Blogs/lasercut/laser1.webp",
-             "assets/Blogs/lasercut/laser2.webp",
-             "assets/Blogs/lasercut/laser3.webp",
-             "assets/Blogs/lasercut/laser4.webp",
-             
-             
-         ],
+    description: "In architecture, it’s often the smallest details that leave the biggest impression. One such detail, quietly transforming skylines and entrances across India, is the laser cut metal panel. Clean, controlled, and endlessly creative, these designs bring life and movement to what would otherwise be flat, rigid surfaces.",
+    images: [
+      "assets/Blogs/lasercut/laser1.webp",
+      "assets/Blogs/lasercut/laser2.webp",
+      "assets/Blogs/lasercut/laser3.webp",
+      "assets/Blogs/lasercut/laser4.webp",
 
-         folderName: "lasercut", 
-     
-        
-       },
 
-                     {
-         title: "Before There Were Copies, There Was Metaguise: The Story of India’s Facade Pioneer",
-        metaTitle: "India’s Facade Pioneer | Parametric & Metal Facade Design by Metaguise  ",
-         date: "29-09-25",
-         category: "Project Highlights",
-         metaDescription: "Explore Metaguise, India's leading metal facade company revolutionizing architecture with parametric facade design, aluminium facades & elevation solutions.",
-         Fulldescription: ` 
+    ],
+
+    folderName: "lasercut",
+
+
+  },
+
+  {
+    title: "Before There Were Copies, There Was Metaguise: The Story of India’s Facade Pioneer",
+    metaTitle: "India’s Facade Pioneer | Parametric & Metal Facade Design by Metaguise  ",
+    date: "29-09-25",
+    category: "Project Highlights",
+    metaDescription: "Explore Metaguise, India's leading metal facade company revolutionizing architecture with parametric facade design, aluminium facades & elevation solutions.",
+    Fulldescription: ` 
 In the world of facade design, trends may come and go, but trailblazers are remembered forever. Metaguise stands as the original pioneer in India’s facade architecture landscape - long before metal facades became a mainstream aesthetic. With over 1800+ projects delivered, Metaguise has set the benchmark for what excellence in metal design truly means.
 
 <strong>Pioneering Parametric Facade Design Before It Was Cool</strong>
@@ -1374,30 +1374,30 @@ Metaguise didn’t follow trends - we started them. From <strong>parametric faca
 
 See our legacy in action at <a href="https://metaguise.com/all-projects">metaguise.com/all-projects</a>
   `,
-         description: "In the world of facade design, trends may come and go, but trailblazers are remembered forever. Metaguise stands as the original pioneer in India’s facade architecture landscape - long before metal facades became a mainstream aesthetic. With over 1800+ projects delivered, Metaguise has set the benchmark for what excellence in metal design truly means.",
-         images: [
-             "assets/Blogs/Copies/1.webp",
-             "assets/Blogs/Copies/2.webp",
-             "assets/Blogs/Copies/3.webp",
-             "assets/Blogs/Copies/4.webp",
-             "assets/Blogs/Copies/5.webp",
-             "assets/Blogs/Copies/6.webp",
-             
-             
-         ],
+    description: "In the world of facade design, trends may come and go, but trailblazers are remembered forever. Metaguise stands as the original pioneer in India’s facade architecture landscape - long before metal facades became a mainstream aesthetic. With over 1800+ projects delivered, Metaguise has set the benchmark for what excellence in metal design truly means.",
+    images: [
+      "assets/Blogs/Copies/1.webp",
+      "assets/Blogs/Copies/2.webp",
+      "assets/Blogs/Copies/3.webp",
+      "assets/Blogs/Copies/4.webp",
+      "assets/Blogs/Copies/5.webp",
+      "assets/Blogs/Copies/6.webp",
 
-         folderName: "Copies", 
-     
-        
-       },
 
-                     {
-         title: "The Problem with Cheaper Cladding: Engineering vs. Aesthetic Gimmicks",
-        metaTitle: "The Problem with Cheaper Cladding | Why Metaguise’s Metal Facades Outlast Aesthetic Gimmicks",
-         date: "01-10-25",
-         category: "Facade Innovations",
-         metaDescription: "Discover why cheaper cladding fails and how Metaguise’s engineered metal facades, aluminium cladding & parametric designs deliver beauty that lasts. Trusted by top architects pan India. ",
-         Fulldescription: ` 
+    ],
+
+    folderName: "Copies",
+
+
+  },
+
+  {
+    title: "The Problem with Cheaper Cladding: Engineering vs. Aesthetic Gimmicks",
+    metaTitle: "The Problem with Cheaper Cladding | Why Metaguise’s Metal Facades Outlast Aesthetic Gimmicks",
+    date: "01-10-25",
+    category: "Facade Innovations",
+    metaDescription: "Discover why cheaper cladding fails and how Metaguise’s engineered metal facades, aluminium cladding & parametric designs deliver beauty that lasts. Trusted by top architects pan India. ",
+    Fulldescription: ` 
          
 It’s easy to get swayed by looks. A glossy facade, a shiny new material, a few renders that make a building look magazine-ready - and suddenly, cheaper cladding starts to feel “good enough.”
 
@@ -1475,32 +1475,32 @@ And when the engineering is right, the beauty lasts a lifetime.
 👉 Explore our collection of performance-led facades at  <a href="https://metaguise.com/all-products">metaguise.com/all-products</a>
 
   `,
-         description: "It’s easy to get swayed by looks. A glossy facade, a shiny new material, a few renders that make a building look magazine-ready - and suddenly, cheaper cladding starts to feel “good enough.",
-         images: [
-             "assets/Blogs/cheaper cladding/cladding (1).jpg",
-             "assets/Blogs/cheaper cladding/cladding (2).jpg",
-             "assets/Blogs/cheaper cladding/cladding (3).webp",
-             "assets/Blogs/cheaper cladding/cladding (4).webp",
-             "assets/Blogs/cheaper cladding/cladding (5).webp",
-             "assets/Blogs/cheaper cladding/cladding (6).jpg",
-             "assets/Blogs/cheaper cladding/cladding (7).jpg",
-             
-             
-             
-         ],
+    description: "It’s easy to get swayed by looks. A glossy facade, a shiny new material, a few renders that make a building look magazine-ready - and suddenly, cheaper cladding starts to feel “good enough.",
+    images: [
+      "assets/Blogs/cheaper cladding/cladding (1).jpg",
+      "assets/Blogs/cheaper cladding/cladding (2).jpg",
+      "assets/Blogs/cheaper cladding/cladding (3).webp",
+      "assets/Blogs/cheaper cladding/cladding (4).webp",
+      "assets/Blogs/cheaper cladding/cladding (5).webp",
+      "assets/Blogs/cheaper cladding/cladding (6).jpg",
+      "assets/Blogs/cheaper cladding/cladding (7).jpg",
 
-         folderName: "cheaper cladding", 
-     
-        
-       },
 
-                         {
-         title: "Why Metaguise’s Facade Process Is the Benchmark for Architectural Excellence",
-        metaTitle: "Metaguise Facade Process | India’s Trusted Leader in Metal & Parametric Facade Design ",
-         date: "06-10-25",
-         category: "Project Highlights",
-         metaDescription: "Discover how Metaguise sets the gold standard in facade design with precision engineering, parametric facades, aluminium facades & metal cladding.",
-         Fulldescription: ` 
+
+    ],
+
+    folderName: "cheaper cladding",
+
+
+  },
+
+  {
+    title: "Why Metaguise’s Facade Process Is the Benchmark for Architectural Excellence",
+    metaTitle: "Metaguise Facade Process | India’s Trusted Leader in Metal & Parametric Facade Design ",
+    date: "06-10-25",
+    category: "Project Highlights",
+    metaDescription: "Discover how Metaguise sets the gold standard in facade design with precision engineering, parametric facades, aluminium facades & metal cladding.",
+    Fulldescription: ` 
 In a world of shortcuts and surface-level solutions, Metaguise stands alone with a commitment to excellence so precise, it’s been engineered into a <strong>47-step process</strong>. This isn’t just project management - it’s a performance ritual that transforms buildings into timeless expressions of <strong>facade architecture</strong>.
 
 Where other <strong>facade companies in India</strong> talk about quality, Metaguise delivers it - step by meticulous step.
@@ -1557,31 +1557,31 @@ At Metaguise, we don’t just build facades. We engineer trust. And our 47-step 
 So when you’re ready for a metal facade that will outlast trends, climates, and competitors - remember, <strong>no one matches the 47 steps of Metaguise</strong>.
 
   `,
-         description: "In a world of shortcuts and surface-level solutions, Metaguise stands alone with a commitment to excellence so precise, it’s been engineered into a 47-step process. This isn’t just project management - it’s a performance ritual that transforms buildings into timeless expressions of facade architecture.",
-         images: [
-             "assets/Blogs/facade process/process (1).webp",
-             "assets/Blogs/facade process/process (2).webp",
-             "assets/Blogs/facade process/process (3).webp",
-             "assets/Blogs/facade process/process (4).jpg",
-             "assets/Blogs/facade process/process (5).jpg",
-             
-             
-             
-         ],
-
-         folderName: "facade process", 
-     
-        
-       },
+    description: "In a world of shortcuts and surface-level solutions, Metaguise stands alone with a commitment to excellence so precise, it’s been engineered into a 47-step process. This isn’t just project management - it’s a performance ritual that transforms buildings into timeless expressions of facade architecture.",
+    images: [
+      "assets/Blogs/facade process/process (1).webp",
+      "assets/Blogs/facade process/process (2).webp",
+      "assets/Blogs/facade process/process (3).webp",
+      "assets/Blogs/facade process/process (4).jpg",
+      "assets/Blogs/facade process/process (5).jpg",
 
 
-                             {
-         title: "From Metal to Masterpiece: The Craft Behind Every Metaguise Facade",
-        metaTitle: "From Metal to Masterpiece | The Craft & Precision Behind Every Metaguise Facade  ",
-         date: "10-10-25",
-         category: "Facade Innovations",
-         metaDescription: "Explore how Metaguise transforms metal into architectural art through precision engineering, aluminium & parametric facades, and 1800+ projects crafted across India.",
-         Fulldescription: ` 
+
+    ],
+
+    folderName: "facade process",
+
+
+  },
+
+
+  {
+    title: "From Metal to Masterpiece: The Craft Behind Every Metaguise Facade",
+    metaTitle: "From Metal to Masterpiece | The Craft & Precision Behind Every Metaguise Facade  ",
+    date: "10-10-25",
+    category: "Facade Innovations",
+    metaDescription: "Explore how Metaguise transforms metal into architectural art through precision engineering, aluminium & parametric facades, and 1800+ projects crafted across India.",
+    Fulldescription: ` 
 Every building tells a story. But at Metaguise, we believe the story begins long before the first panel is installed - it begins in the hands of the people who shape it, polish it, test it, and bring it to life.
 
 Because between raw metal and a finished facade masterpiece lies something that can’t be automated: craftsmanship.
@@ -1660,29 +1660,29 @@ It’s what happens when art meets architecture, when design meets discipline, a
 Because at Metaguise, we don’t just create metal facades - we create masterpieces that endure.
 
   `,
-         description: "Every building tells a story. But at Metaguise, we believe the story begins long before the first panel is installed - it begins in the hands of the people who shape it, polish it, test it, and bring it to life.",
-         images: [
-             "assets/Blogs/masterpiece/masterpiece1.jpg",
-             "assets/Blogs/masterpiece/masterpiece2.jpg",
-             "assets/Blogs/masterpiece/masterpiece3.jpg",
-             "assets/Blogs/masterpiece/masterpiece4.jpg",
-             "assets/Blogs/masterpiece/masterpiece5.jpg",
-             "assets/Blogs/masterpiece/masterpiece6.jpg",
-                
-         ],
+    description: "Every building tells a story. But at Metaguise, we believe the story begins long before the first panel is installed - it begins in the hands of the people who shape it, polish it, test it, and bring it to life.",
+    images: [
+      "assets/Blogs/masterpiece/masterpiece1.jpg",
+      "assets/Blogs/masterpiece/masterpiece2.jpg",
+      "assets/Blogs/masterpiece/masterpiece3.jpg",
+      "assets/Blogs/masterpiece/masterpiece4.jpg",
+      "assets/Blogs/masterpiece/masterpiece5.jpg",
+      "assets/Blogs/masterpiece/masterpiece6.jpg",
 
-         folderName: "masterpiece", 
-     
-        
-       },
+    ],
 
-                             {
-         title: "The Science of Shadows: How Facade Design Shapes Light and Mood",
-        metaTitle: "The Science of Shadows | How Metaguise Facades Shape Light, Air & Emotion  ",
-         date: "13-10-25",
-         category: "Architectural Insights",
-         metaDescription: "Explore how Metaguise facades like MetaLouvers, MetaCassette & MetaFlute transform sunlight into design - shaping light, airflow & emotion in modern architecture pan India.",
-         Fulldescription: ` 
+    folderName: "masterpiece",
+
+
+  },
+
+  {
+    title: "The Science of Shadows: How Facade Design Shapes Light and Mood",
+    metaTitle: "The Science of Shadows | How Metaguise Facades Shape Light, Air & Emotion  ",
+    date: "13-10-25",
+    category: "Architectural Insights",
+    metaDescription: "Explore how Metaguise facades like MetaLouvers, MetaCassette & MetaFlute transform sunlight into design - shaping light, airflow & emotion in modern architecture pan India.",
+    Fulldescription: ` 
 Architecture has always been about more than structure - it’s about rhythm, reflection, and the way light interacts with space.
 
 At Metaguise, we see every <strong>innovative facade </strong> as a living canvas, one that transforms not just how a building looks, but how it feels. Light becomes our material, and shadow becomes our tool.
@@ -1776,29 +1776,29 @@ Our facades aren’t just designed to last - they’re designed to live with the
 Because when architecture learns to master light, it becomes more than construction - it becomes art.
 
   `,
-         description: "Architecture has always been about more than structure - it’s about rhythm, reflection, and the way light interacts with space.At Metaguise, we see every innovative facade as a living canvas, one that transforms not just how a building looks, but how it feels. Light becomes our material, and shadow becomes our tool.This is the art and the science behind MetaLouvers, MetaCassette, and the entire Metaguise facade family.",
-         images: [
-             "assets/Blogs/shadow/shadow1.jpg",
-              "assets/Blogs/shadow/shadow2.jpg",
-              "assets/Blogs/shadow/shadow3.jpg",
-              "assets/Blogs/shadow/shadow4.webp",
-              "assets/Blogs/shadow/shadow5.webp",
-                
-         ],
+    description: "Architecture has always been about more than structure - it’s about rhythm, reflection, and the way light interacts with space.At Metaguise, we see every innovative facade as a living canvas, one that transforms not just how a building looks, but how it feels. Light becomes our material, and shadow becomes our tool.This is the art and the science behind MetaLouvers, MetaCassette, and the entire Metaguise facade family.",
+    images: [
+      "assets/Blogs/shadow/shadow1.jpg",
+      "assets/Blogs/shadow/shadow2.jpg",
+      "assets/Blogs/shadow/shadow3.jpg",
+      "assets/Blogs/shadow/shadow4.webp",
+      "assets/Blogs/shadow/shadow5.webp",
 
-         folderName: "shadow", 
-     
-        
-       },
+    ],
+
+    folderName: "shadow",
 
 
-                                 {
-         title: "Beyond the Surface: The Emotional Intelligence of Architectural Materials",
-        metaTitle: "Beyond the Surface | The Emotional Intelligence of Metaguise’s Architectural Materials  ",
-         date: "17-10-25",
-         category: "Behind the Design",
-         metaDescription: "Discover how Metaguise materials like MetaPatina, MetaCorten & MetaWood connect architecture with human emotion - where metal facades evolve, breathe & tell stories across India.",
-         Fulldescription: ` 
+  },
+
+
+  {
+    title: "Beyond the Surface: The Emotional Intelligence of Architectural Materials",
+    metaTitle: "Beyond the Surface | The Emotional Intelligence of Metaguise’s Architectural Materials  ",
+    date: "17-10-25",
+    category: "Behind the Design",
+    metaDescription: "Discover how Metaguise materials like MetaPatina, MetaCorten & MetaWood connect architecture with human emotion - where metal facades evolve, breathe & tell stories across India.",
+    Fulldescription: ` 
          
 Architecture is often described as frozen music - a composition of form, proportion, and rhythm.
 
@@ -1893,29 +1893,29 @@ And when materials are chosen with emotion in mind, the facade stops being a sur
  It becomes a soul.
 
   `,
-         description: "A philosophical take on how material textures — from MetaPatina’s evolving hues to MetaWood’s organic warmth — connect architecture with human emotion.",
-         images: [
-             "assets/Blogs/beyond surface/surface1.webp",
-             "assets/Blogs/beyond surface/surface2.jpg",
-             "assets/Blogs/beyond surface/surface3.jpg",
-             "assets/Blogs/beyond surface/surface4.jpg",
-             "assets/Blogs/beyond surface/surface5.jpg",
-                
-         ],
+    description: "A philosophical take on how material textures — from MetaPatina’s evolving hues to MetaWood’s organic warmth — connect architecture with human emotion.",
+    images: [
+      "assets/Blogs/beyond surface/surface1.webp",
+      "assets/Blogs/beyond surface/surface2.jpg",
+      "assets/Blogs/beyond surface/surface3.jpg",
+      "assets/Blogs/beyond surface/surface4.jpg",
+      "assets/Blogs/beyond surface/surface5.jpg",
 
-         folderName: "beyond surface", 
-     
-        
-       },
+    ],
+
+    folderName: "beyond surface",
 
 
-                                     {
-         title: "Facades That Breathe: How Ventilated Metal Systems Are Changing Modern Architecture",
-        metaTitle: "Facades That Breathe | Metaguise’s Ventilated Metal Systems for Smarter Architecture ",
-         date: "20-10-25",
-         category: "Facade Innovations",
-         metaDescription: "Discover how Metaguise’s ventilated metal facades like MetaLouver, MetaFlute & MetaCassette improve airflow, insulation & building performance across India’s diverse climates.",
-         Fulldescription: ` 
+  },
+
+
+  {
+    title: "Facades That Breathe: How Ventilated Metal Systems Are Changing Modern Architecture",
+    metaTitle: "Facades That Breathe | Metaguise’s Ventilated Metal Systems for Smarter Architecture ",
+    date: "20-10-25",
+    category: "Facade Innovations",
+    metaDescription: "Discover how Metaguise’s ventilated metal facades like MetaLouver, MetaFlute & MetaCassette improve airflow, insulation & building performance across India’s diverse climates.",
+    Fulldescription: ` 
          
 In nature, everything that lives breathes.
 
@@ -2009,28 +2009,28 @@ Because true innovation isn’t about sealing buildings off from nature.
 
 
   `,
-         description: "A technical yet accessible explainer on ventilated metal facade cladding and how it improves air circulation, insulation, and building performance.",
-         images: [
-             "assets/Blogs/breathe/breathe1.jpg",
-             "assets/Blogs/breathe/breathe2.jpg",
-             "assets/Blogs/breathe/breathe3.jpg",
-             "assets/Blogs/breathe/breathe4.jpg",
-             
-                
-         ],
+    description: "A technical yet accessible explainer on ventilated metal facade cladding and how it improves air circulation, insulation, and building performance.",
+    images: [
+      "assets/Blogs/breathe/breathe1.jpg",
+      "assets/Blogs/breathe/breathe2.jpg",
+      "assets/Blogs/breathe/breathe3.jpg",
+      "assets/Blogs/breathe/breathe4.jpg",
 
-         folderName: "breathe", 
-     
-        
-       },
 
-                                         {
-         title: "Reimagining the Past: How Retrofit Facades Breathe New Life into Existing Structures",
-        metaTitle: "Reimagining the Past | How Metaguise’s Retrofit Facades Revive Existing Buildings",
-         date: "24-10-25",
-         category: "Facade Innovations",
-         metaDescription: "Discover how Metaguise retrofit facades transform old structures into modern icons with lightweight metal systems, ventilation, insulation & lasting performance pan India.",
-         Fulldescription: ` 
+    ],
+
+    folderName: "breathe",
+
+
+  },
+
+  {
+    title: "Reimagining the Past: How Retrofit Facades Breathe New Life into Existing Structures",
+    metaTitle: "Reimagining the Past | How Metaguise’s Retrofit Facades Revive Existing Buildings",
+    date: "24-10-25",
+    category: "Facade Innovations",
+    metaDescription: "Discover how Metaguise retrofit facades transform old structures into modern icons with lightweight metal systems, ventilation, insulation & lasting performance pan India.",
+    Fulldescription: ` 
          
 Not every masterpiece begins from scratch.
 Sometimes, the most inspiring architecture starts with what’s already standing.
@@ -2128,29 +2128,29 @@ Metaguise’s retrofit facades prove that progress isn’t always about starting
 Because when you breathe new life into the past, the future begins to shine.
 
   `,
-         description: "Not every masterpiece begins from scratch.Sometimes, the most inspiring architecture starts with what’s already standing.As cities grow denser and sustainability becomes essential, the future of design lies not just in building more..",
-         images: [
-             "assets/Blogs/reimagine/1.webp",
-             "assets/Blogs/reimagine/2.webp",
-             "assets/Blogs/reimagine/3.webp",
-             "assets/Blogs/reimagine/4.webp",
-             "assets/Blogs/reimagine/5.webp",
-             "assets/Blogs/reimagine/6.webp",
-                
-         ],
+    description: "Not every masterpiece begins from scratch.Sometimes, the most inspiring architecture starts with what’s already standing.As cities grow denser and sustainability becomes essential, the future of design lies not just in building more..",
+    images: [
+      "assets/Blogs/reimagine/1.webp",
+      "assets/Blogs/reimagine/2.webp",
+      "assets/Blogs/reimagine/3.webp",
+      "assets/Blogs/reimagine/4.webp",
+      "assets/Blogs/reimagine/5.webp",
+      "assets/Blogs/reimagine/6.webp",
 
-         folderName: "reimagine", 
-     
-        
-       },
+    ],
 
-                                             {
-         title: "Scaling Design: Why MetaCoin Is the Future of Large-Scale Parametric Facades",
-        metaTitle: "Reimagining the Past | How Metaguise’s Retrofit Facades Revive Existing Buildings",
-         date: "27-10-25",
-         category: "Facade Innovations",
-         metaDescription: "Discover why MetaCoin is shaping the future of large-scale parametric facades with cutting-edge design, scalability, and performance for contemporary architecture.",
-         Fulldescription: ` 
+    folderName: "reimagine",
+
+
+  },
+
+  {
+    title: "Scaling Design: Why MetaCoin Is the Future of Large-Scale Parametric Facades",
+    metaTitle: "Reimagining the Past | How Metaguise’s Retrofit Facades Revive Existing Buildings",
+    date: "27-10-25",
+    category: "Facade Innovations",
+    metaDescription: "Discover why MetaCoin is shaping the future of large-scale parametric facades with cutting-edge design, scalability, and performance for contemporary architecture.",
+    Fulldescription: ` 
 When you’re designing something monumental - a stadium, a convention centre, or a public landmark - you’re not just designing a structure; you’re shaping an experience that will stand for decades.
 
 At that scale, every choice matters. Every joint, every panel, every reflection of light needs to work in perfect harmony. Because in large-scale architecture, the facade isn’t just the building’s skin - it’s its character, its resilience, and its reputation.
@@ -2241,28 +2241,28 @@ And that’s the promise of MetaCoin.
 👉 Explore MetaCoin at <a href="https://metaguise.com/all-products/metacoin">metaguise.com/all-products/metacoin</a>
 
   `,
-         description: "When you’re designing something monumental - a stadium, a convention centre, or a public landmark - you’re not just designing a structure; you’re shaping an experience that will stand for decades.",
-         images: [
-             "assets/Blogs/scaling/scale1.webp",
-             "assets/Blogs/scaling/scale2.jpg",
-             "assets/Blogs/scaling/scale3.webp",
-             "assets/Blogs/scaling/scale4.webp",
-             "assets/Blogs/scaling/scale5.webp",
-                
-         ],
+    description: "When you’re designing something monumental - a stadium, a convention centre, or a public landmark - you’re not just designing a structure; you’re shaping an experience that will stand for decades.",
+    images: [
+      "assets/Blogs/scaling/scale1.webp",
+      "assets/Blogs/scaling/scale2.jpg",
+      "assets/Blogs/scaling/scale3.webp",
+      "assets/Blogs/scaling/scale4.webp",
+      "assets/Blogs/scaling/scale5.webp",
 
-         folderName: "scaling", 
-     
-        
-       },
+    ],
 
-             {
-         title: "Designing for India: How Metaguise Creates Facades That Withstand Every Climate",
-        metaTitle: "Designing for India | Metaguise’s Metal & Parametric Facades Built for Every Climate",
-         date: "31-10-25",
-         category: "Facade Innovations",
-         metaDescription: "Explore how Metaguise designs facades that withstand India’s diverse climates, from aluminium and metal facades to parametric systems engineered for lasting performance pan India.",
-         Fulldescription: ` 
+    folderName: "scaling",
+
+
+  },
+
+  {
+    title: "Designing for India: How Metaguise Creates Facades That Withstand Every Climate",
+    metaTitle: "Designing for India | Metaguise’s Metal & Parametric Facades Built for Every Climate",
+    date: "31-10-25",
+    category: "Facade Innovations",
+    metaDescription: "Explore how Metaguise designs facades that withstand India’s diverse climates, from aluminium and metal facades to parametric systems engineered for lasting performance pan India.",
+    Fulldescription: ` 
          
 India doesn’t have one climate - it has many.
 
@@ -2350,29 +2350,29 @@ That’s the Metaguise promise: <strong>facade architecture</strong> that’s en
 
  See how Metaguise designs perform pan India at <a href="https://metaguise.com/all-projects">metaguise.com/all-projects</a>
   `,
-         description: "An educational, SEO-rich article on the brand’s pan India adaptability — designing low-maintenance facades that perform from coastal humidity to desert heat.",
-         images: [
-             "assets/Blogs/scaling/climate1.jpg",
-             "assets/Blogs/scaling/climate2.jpg",
-             "assets/Blogs/scaling/climate3.jpg",
-             "assets/Blogs/scaling/climate4.webp",
-             "assets/Blogs/scaling/climate5.jpg",
-             "assets/Blogs/scaling/climate6.jpg",
-                
-         ],
+    description: "An educational, SEO-rich article on the brand’s pan India adaptability — designing low-maintenance facades that perform from coastal humidity to desert heat.",
+    images: [
+      "assets/Blogs/scaling/climate1.jpg",
+      "assets/Blogs/scaling/climate2.jpg",
+      "assets/Blogs/scaling/climate3.jpg",
+      "assets/Blogs/scaling/climate4.webp",
+      "assets/Blogs/scaling/climate5.jpg",
+      "assets/Blogs/scaling/climate6.jpg",
 
-         folderName: "climate", 
-     
-        
-       },
+    ],
 
-                 {
-         title: "Parametric Architecture in India: Why It’s Shaping the Future of Facade Design",
-        metaTitle: "Parametric Architecture in India: The Rise of Smart, Sculptural Facade Design | Metaguise",
-         date: "03-11-25",
-         category: "Industry Trends",
-         metaDescription: "Explore how parametric facade design is transforming Indian architecture. Discover Metaguise’s pioneering metal facades, aluminium systems, and elevation design trusted by top architects nationwide.",
-         Fulldescription: ` 
+    folderName: "climate",
+
+
+  },
+
+  {
+    title: "Parametric Architecture in India: Why It’s Shaping the Future of Facade Design",
+    metaTitle: "Parametric Architecture in India: The Rise of Smart, Sculptural Facade Design | Metaguise",
+    date: "03-11-25",
+    category: "Industry Trends",
+    metaDescription: "Explore how parametric facade design is transforming Indian architecture. Discover Metaguise’s pioneering metal facades, aluminium systems, and elevation design trusted by top architects nationwide.",
+    Fulldescription: ` 
          
        Architecture is evolving - and with it, the language of the façade. At the heart of this evolution lies a powerful design philosophy: <strong>parametric architecture</strong>. Once the domain of experimental studios and digital labs, it’s now becoming central to how buildings are imagined, shaped, and experienced - especially in India’s dynamic urban landscape.
        
@@ -2464,30 +2464,30 @@ Parametric design is not a distant dream - it’s happening now, across homes, s
 If you’re planning a project that deserves more than a surface, let's co-create an elevation that moves, breathes, and belongs.
 
   `,
-         description: "Architecture is evolving - and with it, the language of the façade. At the heart of this evolution lies a powerful design philosophy: parametric architecture.",
-         images: [
-             "assets/Blogs/parametric arch/1.jpg",
-             "assets/Blogs/parametric arch/2.webp",
-             "assets/Blogs/parametric arch/3.webp",
-             "assets/Blogs/parametric arch/4.webp",
-             "assets/Blogs/parametric arch/5.jpg",
-             "assets/Blogs/parametric arch/6.webp",
-             "assets/Blogs/parametric arch/7.jpg",
-                
-         ],
+    description: "Architecture is evolving - and with it, the language of the façade. At the heart of this evolution lies a powerful design philosophy: parametric architecture.",
+    images: [
+      "assets/Blogs/parametric arch/1.jpg",
+      "assets/Blogs/parametric arch/2.webp",
+      "assets/Blogs/parametric arch/3.webp",
+      "assets/Blogs/parametric arch/4.webp",
+      "assets/Blogs/parametric arch/5.jpg",
+      "assets/Blogs/parametric arch/6.webp",
+      "assets/Blogs/parametric arch/7.jpg",
 
-         folderName: "parametric arch", 
-     
-        
-       },
+    ],
 
-                     {
-         title: "5 Visionary Architects and the Facade Narratives We Brought to Life",
-        metaTitle: "5 Visionary Architects & the Facade Stories We Built | Metaguise ",
-         date: "07-11-25",
-         category: "Facade Innovations",
-         metaDescription: "Discover how Metaguise collaborated with top architects across India to craft iconic metal and parametric facades. From Mohali to Ahmedabad, explore innovative facade designs.",
-         Fulldescription: ` 
+    folderName: "parametric arch",
+
+
+  },
+
+  {
+    title: "5 Visionary Architects and the Facade Narratives We Brought to Life",
+    metaTitle: "5 Visionary Architects & the Facade Stories We Built | Metaguise ",
+    date: "07-11-25",
+    category: "Facade Innovations",
+    metaDescription: "Discover how Metaguise collaborated with top architects across India to craft iconic metal and parametric facades. From Mohali to Ahmedabad, explore innovative facade designs.",
+    Fulldescription: ` 
 
 At Metaguise, we believe every building should speak. And the facade is where that story begins. Across India, we’ve partnered with some of the country’s most forward-thinking architects to turn bold ideas into built realities - through expressive, high-performance metal facade systems that are beautiful, functional, and built to last.
 
@@ -2546,29 +2546,29 @@ We build <strong>low maintenance facades</strong>, metal facade cladding, and sm
 Metaguise isn’t just a name - it’s a movement in metal. From Ahmedabad to Mohali, Gurugram to residences across the country, we’ve helped reimagine architecture one facade at a time. If you’re ready to design something extraordinary, let’s build it - together.
 
   `,
-         description: " A look at the architectural philosophies of five top architects we’ve worked with",
-         images: [
-             "assets/Blogs/visionary/1.jpg",
-             "assets/Blogs/visionary/2.jpg",
-             "assets/Blogs/visionary/3.jpg",
-             "assets/Blogs/visionary/4.jpg",
-             "assets/Blogs/visionary/5.jpg",
-             "assets/Blogs/visionary/6.jpg",
-                
-         ],
+    description: " A look at the architectural philosophies of five top architects we’ve worked with",
+    images: [
+      "assets/Blogs/visionary/1.jpg",
+      "assets/Blogs/visionary/2.jpg",
+      "assets/Blogs/visionary/3.jpg",
+      "assets/Blogs/visionary/4.jpg",
+      "assets/Blogs/visionary/5.jpg",
+      "assets/Blogs/visionary/6.jpg",
 
-         folderName: "visionary", 
-     
-        
-       },
+    ],
 
-                         {
-         title: "5 Reasons to Choose MetaSequin for Your Facade",
-        metaTitle: " Reasons to Choose MetaSequin for Your Facade | Parametric Metal Design by Metaguise ",
-         date: "10-11-25",
-         category: "Material Spotlight",
-         metaDescription: "Discover why MetaSequin is our leading parametric metal facade system. From shape flexibility to long-lasting performance, explore how Metaguise is redefining elevation design with MetaSequin.",
-         Fulldescription: ` 
+    folderName: "visionary",
+
+
+  },
+
+  {
+    title: "5 Reasons to Choose MetaSequin for Your Facade",
+    metaTitle: " Reasons to Choose MetaSequin for Your Facade | Parametric Metal Design by Metaguise ",
+    date: "10-11-25",
+    category: "Material Spotlight",
+    metaDescription: "Discover why MetaSequin is our leading parametric metal facade system. From shape flexibility to long-lasting performance, explore how Metaguise is redefining elevation design with MetaSequin.",
+    Fulldescription: ` 
 At Metaguise, we believe the <strong>facade</strong> of a building isn’t just its outer layer - it’s its identity. And in today’s design landscape, more architects and brands across India are choosing MetaSequin - our signature <strong>parametric facade design system</strong> - for its unmatched fusion of artistry and performance.
 
 Whether it’s a luxury storefront, a landmark office, or a bold residence, MetaSequin offers a metal solution that adapts to your vision - and elevates it.
@@ -2602,29 +2602,29 @@ Explore MetaSequin
 
 
   `,
-         description: "At Metaguise, we believe the facade of a building isn’t just its outer layer - it’s its identity. And in today’s design landscape",
-         images: [
-             "assets/Blogs/5 reason metasequin/1.webp",
-             "assets/Blogs/5 reason metasequin/2.webp",
-             "assets/Blogs/5 reason metasequin/3.webp",
-             "assets/Blogs/5 reason metasequin/4.webp",
-             "assets/Blogs/5 reason metasequin/5.webp",
-             "assets/Blogs/5 reason metasequin/6.webp",
-                
-         ],
+    description: "At Metaguise, we believe the facade of a building isn’t just its outer layer - it’s its identity. And in today’s design landscape",
+    images: [
+      "assets/Blogs/5 reason metasequin/1.webp",
+      "assets/Blogs/5 reason metasequin/2.webp",
+      "assets/Blogs/5 reason metasequin/3.webp",
+      "assets/Blogs/5 reason metasequin/4.webp",
+      "assets/Blogs/5 reason metasequin/5.webp",
+      "assets/Blogs/5 reason metasequin/6.webp",
 
-         folderName: "5 reason metasequin", 
-     
-        
-       },
+    ],
 
-                             {
-         title: "Then and Now: How Metaguise Facades from Years Ago Still Stand Flawless Today",
-        metaTitle: "Then & Now: Why Metaguise Facades Still Look Flawless After Years | MetaCorten Finish ",
-         date: "14-11-25",
-         category: "Project Highlights",
-         metaDescription: "Discover how Metaguise’s first metal facade from 2018 - crafted with MetaCassette and MetaCorten finish - still stands flawless today. A low-maintenance, weatherproof aluminium facade designed to age beautifully across decades.",
-         Fulldescription: ` 
+    folderName: "5 reason metasequin",
+
+
+  },
+
+  {
+    title: "Then and Now: How Metaguise Facades from Years Ago Still Stand Flawless Today",
+    metaTitle: "Then & Now: Why Metaguise Facades Still Look Flawless After Years | MetaCorten Finish ",
+    date: "14-11-25",
+    category: "Project Highlights",
+    metaDescription: "Discover how Metaguise’s first metal facade from 2018 - crafted with MetaCassette and MetaCorten finish - still stands flawless today. A low-maintenance, weatherproof aluminium facade designed to age beautifully across decades.",
+    Fulldescription: ` 
 In 2018, we crafted our very first façade. It was more than an architectural envelope - it was our manifesto in metal. Fast forward to today, and that very project still stands tall and flawless, untouched by time, weather, or wear. It’s proof that at Metaguise, we don’t just build facades - we build legacies.
 
 
@@ -2684,30 +2684,30 @@ With Metaguise, the answer is clear: Just as flawless as it does today.
 
 
   `,
-         description: "At Metaguise, we believe the facade of a building isn’t just its outer layer - it’s its identity. And in today’s design landscape",
-         images: [
-             "assets/Blogs/then and now/1.jpg",
-             "assets/Blogs/then and now/2.webp",
-             "assets/Blogs/then and now/3.webp",
-             "assets/Blogs/then and now/4.jpg",
-             "assets/Blogs/then and now/5.webp",
-             "assets/Blogs/then and now/6.webp",
-     
-                
-         ],
+    description: "At Metaguise, we believe the facade of a building isn’t just its outer layer - it’s its identity. And in today’s design landscape",
+    images: [
+      "assets/Blogs/then and now/1.jpg",
+      "assets/Blogs/then and now/2.webp",
+      "assets/Blogs/then and now/3.webp",
+      "assets/Blogs/then and now/4.jpg",
+      "assets/Blogs/then and now/5.webp",
+      "assets/Blogs/then and now/6.webp",
 
-         folderName: "then and now", 
-     
-        
-       },
 
-                                 {
-         title: "The Power of Perforation: Breathing Life, Light & Luxury into Metal Facades",
-        metaTitle: "The Power of Perforation in Metal Facades | Metaguise Innovative Facade Desgin ",
-         date: "17-11-25",
-         category: "Material Spotlight",
-         metaDescription: "Discover how perforated aluminium facades by Metaguise bring life, light, and luxury to elevation design. Explore low maintenance metal facade cladding built for India's climate.",
-         Fulldescription: ` 
+    ],
+
+    folderName: "then and now",
+
+
+  },
+
+  {
+    title: "The Power of Perforation: Breathing Life, Light & Luxury into Metal Facades",
+    metaTitle: "The Power of Perforation in Metal Facades | Metaguise Innovative Facade Desgin ",
+    date: "17-11-25",
+    category: "Material Spotlight",
+    metaDescription: "Discover how perforated aluminium facades by Metaguise bring life, light, and luxury to elevation design. Explore low maintenance metal facade cladding built for India's climate.",
+    Fulldescription: ` 
 At Metaguise, we believe that a facade isn’t just a shield - it’s a storyteller. And in the world of <strong>metal facade cladding</strong>, few elements are as powerful and poetic as <strong>perforation</strong>.
 
 More than a pattern, perforation transforms the surface of a building into a living, breathing canvas. It plays with light. It responds to air. It elevates a structure from static to sculptural. And when applied through high-performance materials like our <strong>MetaCassette panels</strong>, it delivers not just beauty - but function, flexibility, and finesse.
@@ -2747,29 +2747,29 @@ Breathe light. Breathe life. Build something that lasts.
 Whether you’re crafting a facade for a retail brand or designing one for a high-rise, Metaguise gives you the tools, systems, and finishes to bring your ideas to life.
 
   `,
-         description: "At Metaguise, we believe the facade of a building isn’t just its outer layer - it’s its identity. And in today’s design landscape",
-         images: [
-             "assets/Blogs/perforation/1.jpg",
-             "assets/Blogs/perforation/2.webp",
-             "assets/Blogs/perforation/3.webp",
-             "assets/Blogs/perforation/4.jpg",
-             "assets/Blogs/perforation/5.webp",
-             "assets/Blogs/perforation/6.webp",
-             
-         ],
+    description: "At Metaguise, we believe the facade of a building isn’t just its outer layer - it’s its identity. And in today’s design landscape",
+    images: [
+      "assets/Blogs/perforation/1.jpg",
+      "assets/Blogs/perforation/2.webp",
+      "assets/Blogs/perforation/3.webp",
+      "assets/Blogs/perforation/4.jpg",
+      "assets/Blogs/perforation/5.webp",
+      "assets/Blogs/perforation/6.webp",
 
-         folderName: "perforation", 
-     
-        
-       },
+    ],
 
-                                     {
-         title: "The MetaEffect: How Our Façades Transform Not Just Buildings, But Brands ",
-        metaTitle: "The MetaEffect: How Metaguise Facades Elevate Brands & Buildings Across India ",
-         date: "21-11-25",
-         category: "Facade Innovations",
-         metaDescription: "Discover how Metaguise’s parametric facade design transforms commercial spaces into brand icons. Explore metal facades, aluminium cladding, and elevation design trusted by top architects across India.",
-         Fulldescription: ` 
+    folderName: "perforation",
+
+
+  },
+
+  {
+    title: "The MetaEffect: How Our Façades Transform Not Just Buildings, But Brands ",
+    metaTitle: "The MetaEffect: How Metaguise Facades Elevate Brands & Buildings Across India ",
+    date: "21-11-25",
+    category: "Facade Innovations",
+    metaDescription: "Discover how Metaguise’s parametric facade design transforms commercial spaces into brand icons. Explore metal facades, aluminium cladding, and elevation design trusted by top architects across India.",
+    Fulldescription: ` 
 In today’s competitive world, architecture plays a bigger role than ever in shaping perception. For commercial spaces, the facade isn’t just a surface - it’s the face of the brand.
 
 At Metaguise, we’ve seen how the right metal facade can amplify a brand’s presence, create memorable first impressions, and build a lasting identity. We call this transformation the MetaEffect - where architecture meets expression, and facades become powerful brand signatures.
@@ -2821,30 +2821,30 @@ The <strong>MetaEffect</strong> is what happens when thoughtful design, premium 
 At Metaguise, we don’t just design <strong>facades</strong> - we help brands express who they are, and where they’re headed. If you’re ready to transform your space into a landmark, let’s build it - together.
 
   `,
-         description: "Explore how commercial spaces are using Metaguise facades to express identity and elevate perception.",
-         images: [
-             "assets/Blogs/metaeffect/1.webp",
-             "assets/Blogs/metaeffect/2.webp",
-             "assets/Blogs/metaeffect/3.webp",
-             "assets/Blogs/metaeffect/4.webp",
-             "assets/Blogs/metaeffect/5.webp",
-             "assets/Blogs/metaeffect/6.webp",
+    description: "Explore how commercial spaces are using Metaguise facades to express identity and elevate perception.",
+    images: [
+      "assets/Blogs/metaeffect/1.webp",
+      "assets/Blogs/metaeffect/2.webp",
+      "assets/Blogs/metaeffect/3.webp",
+      "assets/Blogs/metaeffect/4.webp",
+      "assets/Blogs/metaeffect/5.webp",
+      "assets/Blogs/metaeffect/6.webp",
 
-             
-         ],
 
-         folderName: "metaeffect", 
-     
-        
-       },
+    ],
 
-       {
-         title: "Custom Metal Facade Cladding: What You Need to Know Before You Build",
-        metaTitle: "The MetaEffect: How Metaguise Facades Elevate Brands & Buildings Across India ",
-         date: "24-11-25",
-         category: "Architectural Insights",
-         metaDescription: "Learn everything you need to know about custom metal facade cladding - from parametric and non-parametric systems to material choices and performance.",
-         Fulldescription: ` 
+    folderName: "metaeffect",
+
+
+  },
+
+  {
+    title: "Custom Metal Facade Cladding: What You Need to Know Before You Build",
+    metaTitle: "The MetaEffect: How Metaguise Facades Elevate Brands & Buildings Across India ",
+    date: "24-11-25",
+    category: "Architectural Insights",
+    metaDescription: "Learn everything you need to know about custom metal facade cladding - from parametric and non-parametric systems to material choices and performance.",
+    Fulldescription: ` 
 Choosing the right facade is one of the most critical design decisions for any building. It defines first impressions, protects the structure, and shapes how your brand or home is perceived. And when it comes to modern, high-performance solutions, custom metal facade cladding is emerging as the preferred choice for architects and clients alike.
 
 At Metaguise, we specialise in designing aluminium facades and metal design systems that are not just functional - but deeply expressive. If you're planning a commercial elevation, a flagship store, or a private residence, here’s what you need to know before choosing custom cladding for your facade.
@@ -2954,30 +2954,30 @@ At Metaguise, we offer PAN India presence, global standards, and a team of exper
 
 
   `,
-         description: "Explore how commercial spaces are using Metaguise facades to express identity and elevate perception.",
-         images: [
-             "assets/Blogs/custom metal facade/1.webp",
-             "assets/Blogs/custom metal facade/2.webp",
-             "assets/Blogs/custom metal facade/3.webp",
-             "assets/Blogs/custom metal facade/4.webp",
-             "assets/Blogs/custom metal facade/5.webp",
-             "assets/Blogs/custom metal facade/6.webp",
+    description: "Explore how commercial spaces are using Metaguise facades to express identity and elevate perception.",
+    images: [
+      "assets/Blogs/custom metal facade/1.webp",
+      "assets/Blogs/custom metal facade/2.webp",
+      "assets/Blogs/custom metal facade/3.webp",
+      "assets/Blogs/custom metal facade/4.webp",
+      "assets/Blogs/custom metal facade/5.webp",
+      "assets/Blogs/custom metal facade/6.webp",
 
-             
-         ],
 
-         folderName: "custom metal facade", 
-     
-        
-       },
+    ],
 
-       {
-         title: "Sustainability Through Design: How Metal Facades Support Greener Architecture ",
-        metaTitle: "Sustainable Metal Facades: How Metaguise Supports Greener Architecture in India ",
-         date: "28-11-25",
-         category: "Sustainability",
-         metaDescription: "Discover how Metaguise’s aluminium and parametric facades promote sustainability through design. Explore low maintenance facades, energy efficiency, and eco-friendly cladding systems for greener architecture.",
-         Fulldescription: ` 
+    folderName: "custom metal facade",
+
+
+  },
+
+  {
+    title: "Sustainability Through Design: How Metal Facades Support Greener Architecture ",
+    metaTitle: "Sustainable Metal Facades: How Metaguise Supports Greener Architecture in India ",
+    date: "28-11-25",
+    category: "Sustainability",
+    metaDescription: "Discover how Metaguise’s aluminium and parametric facades promote sustainability through design. Explore low maintenance facades, energy efficiency, and eco-friendly cladding systems for greener architecture.",
+    Fulldescription: ` 
 Sustainability is no longer a design trend - it’s a responsibility. And when it comes to building smarter, more resilient structures, the façade plays a powerful role. At Metaguise, we design metal facades that don’t just look exceptional - they actively support greener architecture through intelligent materials, thoughtful engineering, and long-term performance.
 
 Here's how our facade systems, particularly aluminium facades and parametric designs, help architects and developers reduce environmental impact - without compromising beauty or identity.
@@ -3037,30 +3037,30 @@ Sustainable architecture doesn’t mean compromising on creativity. With Metagui
 Let’s design a greener future, one elevation at a time.
 
   `,
-         description: "A look at how aluminium and stainless steel contribute to low-waste, energy-efficient buildings.",
-         images: [
-             "assets/Blogs/sustainability/1.jpg",
-             "assets/Blogs/sustainability/2.webp",
-             "assets/Blogs/sustainability/3.webp",
-             "assets/Blogs/sustainability/4.jpg",
-             "assets/Blogs/sustainability/5.webp",
-             "assets/Blogs/sustainability/6.webp",
+    description: "A look at how aluminium and stainless steel contribute to low-waste, energy-efficient buildings.",
+    images: [
+      "assets/Blogs/sustainability/1.jpg",
+      "assets/Blogs/sustainability/2.webp",
+      "assets/Blogs/sustainability/3.webp",
+      "assets/Blogs/sustainability/4.jpg",
+      "assets/Blogs/sustainability/5.webp",
+      "assets/Blogs/sustainability/6.webp",
 
-             
-         ],
 
-         folderName: "sustainability", 
-     
-        
-       },
+    ],
 
-           {
-         title: "Building Pan India: How Metaguise Delivers Consistent Facade Excellence Nationwide",
-        metaTitle: "Building Pan India: How Metaguise Delivers Facade Excellence Across Regions  ",
-         date: "01-12-25",
-         category: "Project Highlights",
-         metaDescription: "Explore how Metaguise ensures consistent quality in metal facades and elevation design across India. From logistics to engineering, discover how our PAN India presence supports every facade project seamlessly.",
-         Fulldescription: ` 
+    folderName: "sustainability",
+
+
+  },
+
+  {
+    title: "Building Pan India: How Metaguise Delivers Consistent Facade Excellence Nationwide",
+    metaTitle: "Building Pan India: How Metaguise Delivers Facade Excellence Across Regions  ",
+    date: "01-12-25",
+    category: "Project Highlights",
+    metaDescription: "Explore how Metaguise ensures consistent quality in metal facades and elevation design across India. From logistics to engineering, discover how our PAN India presence supports every facade project seamlessly.",
+    Fulldescription: ` 
          
 India is a vast and varied canvas - each city bringing its own climate, culture, and construction challenges. At Metaguise, we see this diversity not as complexity, but as opportunity. With a robust network spanning every region, we deliver high-performance facade architecture and metal facade cladding solutions with precision, wherever your project may be.
 
@@ -3138,29 +3138,29 @@ Whether you’re designing a showroom in Surat, a residence in Hyderabad, or a l
 With a blend of parametric architecture, smart logistics, and product excellence, we help you build with confidence - everywhere.
 
   `,
-         description: "Highlighting our logistics, engineering, and service network across India’s diverse regions.",
-         images: [
-             "assets/Blogs/pan india/1.jpg", 
-             "assets/Blogs/pan india/2.webp",
-             "assets/Blogs/pan india/3.webp",
-             "assets/Blogs/pan india/4.webp",
-             "assets/Blogs/pan india/5.jpg",
-             "assets/Blogs/pan india/6.jpg",
-             "assets/Blogs/pan india/7.jpg",
-         ],
+    description: "Highlighting our logistics, engineering, and service network across India’s diverse regions.",
+    images: [
+      "assets/Blogs/pan india/1.jpg",
+      "assets/Blogs/pan india/2.webp",
+      "assets/Blogs/pan india/3.webp",
+      "assets/Blogs/pan india/4.webp",
+      "assets/Blogs/pan india/5.jpg",
+      "assets/Blogs/pan india/6.jpg",
+      "assets/Blogs/pan india/7.jpg",
+    ],
 
-         folderName: "pan india", 
-     
-        
-       },
+    folderName: "pan india",
 
-               {
-         title: "Why Metal Panels Make Buildings More Dynamic, Expressive & Future-Ready",
-        metaTitle: "Why Metal Panels Make Facades More Dynamic & Future-Ready | Metaguise India",
-         date: "05-12-25",
-         category: "Architectural Insights",
-         metaDescription: "Explore how metal facade cladding transforms buildings with light, motion, and flexibility. Discover Metaguise’s metal panels and low maintenance solutions for modern architecture.",
-         Fulldescription: ` 
+
+  },
+
+  {
+    title: "Why Metal Panels Make Buildings More Dynamic, Expressive & Future-Ready",
+    metaTitle: "Why Metal Panels Make Facades More Dynamic & Future-Ready | Metaguise India",
+    date: "05-12-25",
+    category: "Architectural Insights",
+    metaDescription: "Explore how metal facade cladding transforms buildings with light, motion, and flexibility. Discover Metaguise’s metal panels and low maintenance solutions for modern architecture.",
+    Fulldescription: ` 
  In architecture, the envelope isn’t just protection - it’s performance, perception, and presence. As materials evolve, <strong>metal panels</strong> are leading a quiet revolution in how buildings look, feel, and function.
 At Metaguise, we work with architects across India to push the boundaries of what metal facade cladding can do. Whether it’s shimmering sequins, perforated rhythms, or sculpted folds, metal design gives buildings a new kind of voice - one that’s bold, adaptable, and distinctly modern.
 Here’s why designing with aluminium and metal panels is shaping the future of façade architecture.
@@ -3225,27 +3225,27 @@ We’re proud to be among the few <strong>facade companies in India</strong> tha
 If you’re looking to design a building that doesn’t just stand - but speaks - metal panels are your medium. With Metaguise, you get the systems, support, and spirit to create facade architecture that inspires from every angle.
 
   `,
-         description: "In architecture, the envelope isn’t just protection - it’s performance, perception, and presence. As materials evolve, metal panels are leading a quiet revolution in how buildings look, feel, and function.",
-         images: [
-             "assets/Blogs/metal panel/1.webp", 
-             "assets/Blogs/metal panel/2.webp", 
-             "assets/Blogs/metal panel/3.webp", 
-             "assets/Blogs/metal panel/4.webp", 
-             "assets/Blogs/metal panel/5.webp", 
-             "assets/Blogs/metal panel/6.webp", 
-         ],
+    description: "In architecture, the envelope isn’t just protection - it’s performance, perception, and presence. As materials evolve, metal panels are leading a quiet revolution in how buildings look, feel, and function.",
+    images: [
+      "assets/Blogs/metal panel/1.webp",
+      "assets/Blogs/metal panel/2.webp",
+      "assets/Blogs/metal panel/3.webp",
+      "assets/Blogs/metal panel/4.webp",
+      "assets/Blogs/metal panel/5.webp",
+      "assets/Blogs/metal panel/6.webp",
+    ],
 
-         folderName: "metal panel", 
-     
-        
-       },
+    folderName: "metal panel",
 
-                                 {
+
+  },
+
+  {
     title: "Why Perforated Metal Panels Are the Smartest Architectural Investment",
     metaTitle:
       "Why Perforated Metal Panels Are the Smartest Architectural Investment",
     date: "09-12-25",
-   template: 'B',
+    template: 'B',
     category: "Material Spotlight",
 
     metaDescription:
@@ -3258,13 +3258,13 @@ If you’re looking to design a building that doesn’t just stand - but speaks 
 
     images: [
       "assets/Blogs/Perforated Metal Panels/banner.jpg",
-        "assets/Blogs/Perforated Metal Panels/Skin-Deep.jpg",
-        "assets/Blogs/Perforated Metal Panels/Aesthetic That Adapts.jpg",
-        "assets/Blogs/Perforated Metal Panels/Trusted by the Best.jpg",
+      "assets/Blogs/Perforated Metal Panels/Skin-Deep.jpg",
+      "assets/Blogs/Perforated Metal Panels/Aesthetic That Adapts.jpg",
+      "assets/Blogs/Perforated Metal Panels/Trusted by the Best.jpg",
     ],
 
-  contentSections: [
-    `<p>When it comes to facade design, every detail matters. A building’s surface isn't just about looks - it speaks of its performance, longevity, and intent. And in this conversation, perforated metal panels are becoming the loudest, most compelling voice.
+    contentSections: [
+      `<p>When it comes to facade design, every detail matters. A building’s surface isn't just about looks - it speaks of its performance, longevity, and intent. And in this conversation, perforated metal panels are becoming the loudest, most compelling voice.
 They’re not just another cladding option - they're an investment in smart, sustainable, and striking architecture.</p>`,
       `<p><strong>More Than Skin-Deep</strong>
       Perforated metal panels may seem simple on the surface, but what they offer is layered - literally and figuratively. They filter light, allow controlled ventilation, offer privacy, and reduce heat buildup - all while turning your elevation into a piece of art.
@@ -3275,7 +3275,7 @@ Perforated panels - especially in materials like aluminium - are some of the mos
 Whether you're installing them in coastal climates, dusty plains, or urban high-rises, these panels hold their ground - visually and structurally.
  </p>`,
 
-            `<p><strong>Aesthetic That Adapts</strong>
+      `<p><strong>Aesthetic That Adapts</strong>
      What sets perforated panels apart is their ability to adapt to any design language. Whether you're building a residential facade, a retail front, a coin building, or an institutional project, perforated panels can shift from subtle and sophisticated to bold and sculptural.
 Need something modern? Go with micro-perforations and sleek metal finishes.
 
@@ -3293,7 +3293,7 @@ This isn’t just design - it’s design that works harder.
 
  </p>`,
 
-            `<p><strong>Trusted by the Best</strong>
+      `<p><strong>Trusted by the Best</strong>
 
             With over 1800 projects delivered pan India, Metaguise is proud to be the metal facade partner for some of the country’s most discerning architects and developers. Our facades can be found across cities and climates, offering global-quality design with local expertise.
             
@@ -3307,16 +3307,16 @@ Because in a world of facades, it pays to think beyond the surface.
 
 
  </p>`,
-  ],
+    ],
 
   },
 
-      {
+  {
     title: "Why Architects Love MetaCoin: Parametric Texture Meets Durability",
     metaTitle:
       "Why Architects Love MetaCoin: Parametric Texture Meets Durability",
     date: "12-12-25",
-   template: 'B',
+    template: 'B',
     category: "Material Spotlight",
 
     metaDescription:
@@ -3329,13 +3329,13 @@ Because in a world of facades, it pays to think beyond the surface.
 
     images: [
       "assets/Blogs/Why Architects Love/banner.webp",
-        "assets/Blogs/Why Architects Love/Texture That Tells a Story.webp",
-        "assets/Blogs/Why Architects Love/Seamless Integration, Limitless Impact.webp",
-        "assets/Blogs/Why Architects Love/Built by India’s Trusted Facade Experts.webp",
+      "assets/Blogs/Why Architects Love/Texture That Tells a Story.webp",
+      "assets/Blogs/Why Architects Love/Seamless Integration, Limitless Impact.webp",
+      "assets/Blogs/Why Architects Love/Built by India’s Trusted Facade Experts.webp",
     ],
 
-  contentSections: [
-    `<p>
+    contentSections: [
+      `<p>
     In today’s design landscape, facades are no longer flat canvases - they’re dynamic, expressive, and deeply functional. For architects pushing the boundaries of surface design, MetaCoin by Metaguise has become a clear favorite.
 But what makes it stand out in the crowded world of facade cladding? Why is MetaCoin a go-to for those seeking both texture and toughness?
 Let’s explore why this standout product continues to win the hearts (and sketches) of India's top architects.
@@ -3368,7 +3368,7 @@ It’s not just 3D metal facade India has been waiting for - it’s a facade sys
 
  </p>`,
 
-            `<p><strong>Seamless Integration, Limitless Impact</strong>
+      `<p><strong>Seamless Integration, Limitless Impact</strong>
 
 One of MetaCoin’s biggest strengths is how easily it integrates with other facade systems. Whether used as a primary skin or an accent layer, it blends beautifully with fluted panels, perforated screens, or solid metal cladding.
 Designers often use MetaCoin to:
@@ -3392,7 +3392,7 @@ It’s the ideal intersection of form and function - something every architect v
 
  </p>`,
 
-            `<p><strong>Built by India’s Trusted Facade Experts</strong>
+      `<p><strong>Built by India’s Trusted Facade Experts</strong>
 
 With over <strong>1800 projects delivered pan India</strong>, Metaguise continues to lead the conversation in <strong>innovative facade design</strong>. Our <strong>parametric facade panels</strong> like MetaCoin are trusted by top studios, developers, and creatives looking to craft facades that don’t just stand - but stand out.
 
@@ -3400,16 +3400,16 @@ From concept to installation, we offer full-stack support: design consulting, pr
 
 
  </p>`,
-  ],
+    ],
 
   },
 
-          {
+  {
     title: "Are Metal Louvers Worth It Pros Designs and Use Cases in Indian Homes",
     metaTitle:
       "Are Metal Louvers Worth It Pros Designs and Use Cases in Indian Homes",
     date: "15-12-25",
-   template: 'B',
+    template: 'B',
     category: "Project Highlights",
 
     metaDescription:
@@ -3419,17 +3419,17 @@ From concept to installation, we offer full-stack support: design consulting, pr
       "When you're designing a home that needs to breathe, adapt, and still look effortlessly elegant, metal louvers are a serious contender",
 
     folderName: "Are Metal Louvers Worth It",
-     imageAltText: "Are Metal Louvers Worth It Pros Designs and Use Cases in Indian Homes",
+    imageAltText: "Are Metal Louvers Worth It Pros Designs and Use Cases in Indian Homes",
 
     images: [
       "assets/Blogs/Are Metal Louvers Worth It/banner.webp",
-        "assets/Blogs/Are Metal Louvers Worth It/What Are Metal Louvers.webp",
-        "assets/Blogs/Are Metal Louvers Worth It/Pros of Choosing Metal Louvers.webp",
-        "assets/Blogs/Are Metal Louvers Worth It/Why Choose Metaguise for Your Louvered Facade System.webp",
+      "assets/Blogs/Are Metal Louvers Worth It/What Are Metal Louvers.webp",
+      "assets/Blogs/Are Metal Louvers Worth It/Pros of Choosing Metal Louvers.webp",
+      "assets/Blogs/Are Metal Louvers Worth It/Why Choose Metaguise for Your Louvered Facade System.webp",
     ],
 
-  contentSections: [
-    `<p>
+    contentSections: [
+      `<p>
   When you're designing a home that needs to breathe, adapt, and still look effortlessly elegant, metal louvers are a serious contender. Whether as part of a balcony screen, a gate, or an entire elevation system, they offer more than just visual rhythm - they bring in airflow, light, and privacy in one simple, sleek form.
   
 But are metal louvers really worth it for Indian homes? Let’s explore their advantages, design options, and where they fit best - especially if you’re thinking long-term and low-maintenance.
@@ -3459,7 +3459,7 @@ Here’s why a louvered facade system in India makes perfect sense:
 
  </p>`,
 
-            `<p><strong>Pros of Choosing Metal Louvers</strong>
+      `<p><strong>Pros of Choosing Metal Louvers</strong>
 
 ✅ Low Maintenance, Long Life
  Especially when made from aluminium and treated with VOC-free, weather-proof coatings like those used by Metaguise, these systems resist rust, corrosion, and fading - lasting years with little upkeep.
@@ -3492,7 +3492,7 @@ Each installation is customised - because no two facades or clients are the same
 
  </p>`,
 
-            `<p><strong>Why Choose Metaguise for Your Louvered Facade System?</strong>
+      `<p><strong>Why Choose Metaguise for Your Louvered Facade System?</strong>
 
 With over <strong>1800 projects delivered pan India</strong>, Metaguise is trusted by some of the most respected architects in the country for <a href="https://metaguise.com/blog/custom-metal-facade-cladding:-what-you-need-to-know-before-you-build">delivering custom metal facade systems</a> that are as enduring as they are beautiful.
 
@@ -3507,16 +3507,16 @@ Explore the <a href="https://metaguise.com/all-products/metalouver">MetaLouver p
 They’re not just additions - they’re architectural upgrades. And when paired with expert craftsmanship and thoughtful design, <strong>metal louvers become one of the smartest investments you can make in your home’s exterior</strong>.
 
  </p>`,
-  ],
+    ],
 
   },
 
-            {
+  {
     title: "The Gold Standard: Why Metaguise is the 1 Choice of Top Architects in India",
     metaTitle:
       "The Gold Standard: Why Metaguise is the #1 Choice of Top Architects in India",
-    date: "2-01-26",
-   template: 'B',
+    date: "02-01-26",
+    template: 'B',
     category: "Project Highlights",
 
     metaDescription:
@@ -3526,7 +3526,7 @@ They’re not just additions - they’re architectural upgrades. And when paired
       "When you walk past a building that stops you in your tracks - perhaps because of its flowing curves, its shimmering metallic texture, or its futuristic look ",
 
     folderName: "The Gold Standard",
-     imageAltText: "The Gold Standard: Why Metaguise is the #1 Choice of Top Architects in India",
+    imageAltText: "The Gold Standard: Why Metaguise is the #1 Choice of Top Architects in India",
 
     images: [
       "assets/Blogs/The Gold Standard/banner.jpg",
@@ -3534,8 +3534,8 @@ They’re not just additions - they’re architectural upgrades. And when paired
       "assets/Blogs/The Gold Standard/The Metaguise Advantage.jpg",
     ],
 
-  contentSections: [
-    `<p>
+    contentSections: [
+      `<p>
   When you walk past a building that stops you in your tracks - perhaps because of its flowing curves, its shimmering metallic texture, or its futuristic look - there is a high chance that Metaguise played a role in creating it. In the world of premium construction, the exterior of a building, known as the facade, is its most important feature. It is the first thing people see and the last thing they remember. This is why <strong>Metaguise</strong> has become the <strong>#1 choice of top architects in India.</strong>
 With a massive portfolio of <strong>1800+ projects delivered</strong>, we have proven time and again that we can take the wildest dreams of an architect and turn them into a solid, metal reality. But why exactly do the best design minds in the country trust us over anyone else?
 
@@ -3546,7 +3546,7 @@ Architects are visionaries. They don’t just think about bricks and mortar; the
 Top architects love working with <strong>Metaguise</strong> because we speak their language. When a designer comes to us with a sketch of a building that looks like a moving wave or a complex geometric puzzle, our team of expert <strong>metal designers</strong> doesn't see a problem - we see a solution. We use a method called <a href="https://metaguise.com/">Metaguise</a>, which involves using advanced software to create shapes that were previously thought to be impossible to build.
  </p>`,
 
- `<p>
+      `<p>
             <strong><h2>Precision That Matters</h2></strong>
 
 <p>In architecture, even a few centimeters of error can ruin the look of a building. Most <strong>facade companies in India</strong> struggle with the high level of precision required for modern designs. At Metaguise, we have invested in technology that allows us to be accurate within millimeters. Whether we are working on a luxury villa or a massive corporate office, every panel is cut and fitted with extreme care.
@@ -3560,7 +3560,7 @@ By focusing on <strong>facade architecture</strong> as a specialized field, we t
 </p>
  </p>`,
 
-            `<p><strong><h2>The Metaguise Advantage</h2></strong>
+      `<p><strong><h2>The Metaguise Advantage</h2></strong>
 
 <p>
 Finally, our growing global footprint shows that our methods aren't just good for India; they are world-class. As we expand, we bring international trends and technologies back to our Indian clients. This keeps our architects at the cutting edge of global design.
@@ -3569,11 +3569,11 @@ When you choose Metaguise, you aren't just getting a beautiful building. You are
 </p>
  </p>`,
 
-             `<p><strong><h4> FAQ's:-</h4></strong>
+      `<p><strong><h4> FAQ's:-</h4></strong>
 
 </p>`,
 
-             `<p><strong><h3>1. Top metal facade manufacturers for architects</h3></strong>
+      `<p><strong><h3>1. Top metal facade manufacturers for architects</h3></strong>
 
              <p>
                           Leading architects choose manufacturers that blend engineering with artistry. Globally, names like Permasteelisa and Zahner set the standard, while in India, Metaguise leads the industry. With over 1,800 completed projects, we craft bespoke metal systems, offering a 15-30 year warranty on our products. We provide architects with parametric and value-driven facade technologies, ensuring every building becomes a durable, high-performance, and signature urban landmark.
@@ -3581,14 +3581,14 @@ When you choose Metaguise, you aren't just getting a beautiful building. You are
              </p>
 </p>`,
 
-             `<p><strong><h3>2. What is parametric facade design in architecture?</h3></strong>
+      `<p><strong><h3>2. What is parametric facade design in architecture?</h3></strong>
 <p>
              <a href="https://metaguise.com/blog/the-rise-of-parametric-facades:-designing-with-algorithmic-elegance">Parametric facade design</a> uses algorithmic processes to create complex, data-driven building envelopes. Unlike static designs, these "smart skins" adapt to environmental factors like sunlight and wind. At Metaguise, we use computational tools to craft fluid geometries and non-repetitive patterns. This allows architects to achieve intricate 3D forms and superior energy efficiency, turning visionary concepts into functional, high-performance architectural reality.
 
 </p>
 </p>`,
 
-             `<p><strong><h3>3. Best facade solutions for commercial buildings</h3></strong>
+      `<p><strong><h3>3. Best facade solutions for commercial buildings</h3></strong>
 
              <p>
                           Commercial projects demand brand identity and longevity. As pioneers of parametric facade technology, Metaguise offers value-driven systems like MetaCoin, specifically engineered for large-scale efficiency. Also, our MetaLouver, MetaCassette, and MetaFlute systems provide a sleek, modern aesthetic with superior fire safety. Backed by a 15–30 year warranty, these solutions ensure commercial landmarks maintain their premium look and thermal performance across diverse and demanding climates.
@@ -3596,25 +3596,125 @@ When you choose Metaguise, you aren't just getting a beautiful building. You are
              </p>
 </p>`,
 
-             `<p><strong><h3>4. How to choose a facade company in India</h3></strong>
+      `<p><strong><h3>4. How to choose a facade company in India</h3></strong>
 <p>
              When choosing a facade partner in India, prioritize technical engineering and climate resilience. Look for companies like Metaguise that offer end-to-end execution - from 3D simulation to turnkey installation. Ensure they use high-grade, corrosion-resistant metals and provide certified warranties. A top-tier facade brand should offer custom parametric capabilities and a proven track record of delivering seepage-free, sustainable elevations for luxury projects.
 
 </p>
 </p>`,
 
-             `<p><strong><h3>5. Metal facade benefits for modern buildings</h3></strong>
+      `<p><strong><h3>5. Metal facade benefits for modern buildings</h3></strong>
 <p>
              Metal facades offer unmatched durability, fire safety, and aesthetic versatility. High-grade materials like aluminium and zinc are lightweight, reducing structural loads while providing a recyclable, eco-friendly footprint. Modern systems, such as those by Metaguise, offer superior thermal insulation through ventilated rainscreens, significantly cutting energy consumption. With endless customization in texture and color, metal remains the most future-ready material for sustainable, iconic architecture.
 
 </p>
 </p>`,
 
-  ],
+    ],
+
+  },
+
+  {
+    title: "The Future of Parametric Architecture in India",
+    metaTitle:
+      "Future of Parametric Architecture in India | Parametric Metal Facade Design - Metaguise",
+    date: "05-01-26",
+    template: 'B',
+    category: "Project Highlights",
+
+    metaDescription:
+      "Metaguise is India's leading metal facade partner for top architects, delivering precision parametric design with 1,800+ successful projects nationwide",
+
+    description:
+      "When you walk past a building that stops you in your tracks - perhaps because of its flowing curves, its shimmering metallic texture, or its futuristic look ",
+
+    folderName: "The Future of Parametric",
+    imageAltText: "The Future of Parametric: Why Metaguise is the #1 Choice of Top Architects in India",
+
+    images: [
+      "assets/Blogs/The Future of Parametric/banner.jpg",
+      "assets/Blogs/The Future of Parametric/Why India is Embracing This Trend.jpg",
+      "assets/Blogs/The Future of Parametric/The Role of Metal Designers.jpg",
+    ],
+
+    contentSections: [
+      `<p>
+    
+Parametric architecture in India is transforming modern buildings through data-driven design and advanced metal facade systems. Metaguise is the pioneer company delivering high-performance parametric façades across India.  Architecture is currently going through a massive change. In the past, buildings were mostly made of straight lines and flat surfaces. But if you look at nature - like the curve of a leaf or the waves in the ocean - you rarely see a perfectly straight line. Today, thanks to a technology called <a href="https://metaguise.com/blog/the-rise-of-parametric-facades:-designing-with-algorithmic-elegance">parametric architecture</a>, buildings are starting to look much more natural and fluid. At Metaguise, we are leading this revolution with our specialized metal facade systems.
+
+<strong><h2>What is Parametric Design?</h2></strong>
+
+For most people, "parametric" sounds like a complicated math term. In simple words, it means using a computer to create shapes that are too complex to draw by hand. Instead of a building being a boring box, a parametric facade design allows the building to have "movement." It might look like it is twisting, folding, or rippling in the wind.
+
+
+As the #1 choice of top architects in India, we take these digital designs and turn them into real structures. We use high-quality metal to create these shapes because metal is flexible yet incredibly strong. It allows us to push the boundaries of what a building can look like.
+
+ </p>`,
+
+      `<p>
+            <strong><h2>Why India is Embracing This Trend </h2></strong>
+
+<p>
+India’s cities are becoming global hubs, and our buildings need to reflect that. Whether it is a luxury office in Mumbai or a high-end villa in Delhi, people want their property to stand out. This is why facade design has become so important. A parametric facade acts like a piece of sculpture on a giant scale.
+
+
+With our Pan India presence, we have seen a huge increase in demand for these designs. Developers and homeowners no longer want "just another building." They want<a href="https://metaguise.com/blog/5-landmark-projects-that-used-metacoin-to-transform-facades">landmark facade projects</a>  . Having delivered 1800+ projects, we have the experience to handle the complex engineering that these designs require.
+</p>
+ 
+
+ </p>`,
+
+      `<p><strong><h2>The Role of Metal Designers</h2></strong>
+
+<p>
+Creating a <a href="https://metaguise.com/blog/your-facade-is-your-identity:-crafting-signature-statements-with-our-customizable-parametrics">parametric facade design</a> isn’t just about having a good computer program; it’s about having skilled metal designers. At Metaguise, our designers understand how metal behaves. They know how to cut, bend, and join metal panels so that the final result looks seamless.
+
+
+When an architect comes to us with a complex vision, our team works to make sure the metal facade is not only beautiful but also safe and durable. This attention to detail is why we have a growing global footprint. International firms are noticing that Metaguise can handle the kind of facade architecture that was once only possible in cities like Dubai or London.
+</p>
+ </p>`,
+
+      `<p><strong><h4> FAQ's:-</h4></strong>
+
+</p>`,
+
+      `<p><strong><h3>1. How is parametric facade design changing architecture in India? </h3></strong>
+
+             <p>
+             Parametric design is shifting India’s skyline from static blocks to fluid, data-driven structures. As pioneers of parametric facade technology, Metaguise helps architects create smart skins that adapt to local sunlight and wind patterns. This computational approach allows for complex, non-repetitive geometries that were previously unbuildable. These algorithmic systems enable sustainable, iconic designs that respond intelligently to India's unique urban challenges, merging high-tech aesthetics with functional performance.
+             </p>
+</p>`,
+
+      `<p><strong><h3>2. Which company is leading parametric facade design in India?</h3></strong>
+<p>
+Metaguise is the undisputed leader and pioneer of parametric facade technology in India. With over 1,800 successfully delivered projects, we blend algorithmic precision with high-grade metal craftsmanship. Our parametric systems allow architects to push creative boundaries with confidence. Every installation is supported by a 15-30 year warranty, making us the trusted partner for luxury residences and large-scale commercial landmarks that require long-term durability and engineering excellence.
+</p>
+</p>`,
+
+      `<p><strong><h3>3. Are parametric facades suitable for Indian climate conditions?</h3></strong>
+
+             <p>
+             Absolutely. Parametric facades are ideal for India because they are specifically engineered to be climate-responsive. As pioneers of parametric facade technology, Metaguise designs innovative systems that optimize solar shading and natural ventilation, significantly reducing indoor cooling costs. Our metal panels are corrosion-resistant and fire-safe, built to thrive in extreme heat and monsoon humidity while ensuring the building remains energy-efficient and comfortable year-round.
+             </p>
+</p>`,
+
+      `<p><strong><h3>4. Why is metal the best material for parametric facade systems?</h3></strong>
+<p>
+Metal is the ultimate medium for parametric design due to its recyclability, lightweight strength, and CNC precision. Unlike traditional materials, metal can be laser-cut into intricate, algorithmic patterns without compromising structural integrity. Metaguise, pioneers of parametric facade technology, leverages these properties to create value-driven, seepage-free elevations. Backed by a 15-30 year warranty, metal provides a fire-safe, low-maintenance solution that perfectly captures the complex, fluid forms of modern architecture.
+</p>
+</p>`,
+
+      `<p><strong><h3>5. What is parametric architecture and why is it important in modern buildings?</h3></strong>
+<p>
+Parametric architecture is a design method using algorithms and data-driven parameters to define a building’s form. It is crucial for modern structures because it balances complex aesthetics with optimized functional performance. As pioneers of parametric facade technology, Metaguise provides high value systems that make these intricate designs buildable and cost-effective. This approach ensures buildings are not just visually stunning, but also environmentally adaptive, structurally superior, and future-ready for the next generation of urban living.
+</p>
+</p>`,
+
+    ],
 
   }
-    
-  ];
+
+];
 
 
 

@@ -909,5 +909,12 @@
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
+                                                           <url>
+    <loc>https://metaguise.com/blog/the-future-of-parametric-architecture-in-india</loc>
+    <lastmod>2026-01-05</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
 
