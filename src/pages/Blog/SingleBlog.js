@@ -274,7 +274,7 @@ const SingleBlogPage = () => {
     <div className="singleblog-container">
       {/* Meta Tags */}
       <Helmet>
-        <title> Metaguise Blogs | {metaTitle}</title>
+        <title> {metaTitle}</title>
         <meta name="description" content={metaDescription} />
         <link
           rel="canonical"

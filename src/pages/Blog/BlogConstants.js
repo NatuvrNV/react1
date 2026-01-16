@@ -3623,7 +3623,7 @@ When you choose Metaguise, you aren't just getting a beautiful building. You are
     category: "Project Highlights",
 
     metaDescription:
-      "Metaguise is India's leading metal facade partner for top architects, delivering precision parametric design with 1,800+ successful projects nationwide",
+      "Parametric architecture is reshaping India’s skylines. Discover how Metaguise transforms complex designs into iconic, climate-responsive metal facade systems nationwide. ",
 
     description:
       "When you walk past a building that stops you in your tracks - perhaps because of its flowing curves, its shimmering metallic texture, or its futuristic look ",
