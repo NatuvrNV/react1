@@ -3713,7 +3713,7 @@ Parametric architecture is a design method using algorithms and data-driven para
   ,
 
   {
-    title: "Low Maintenance Metal Facade in India: Beauty That Doesn’t Age",
+    title: "Low Maintenance Metal Facade in India Beauty That Doesn’t Age",
     metaTitle:
       "Low Maintenance Metal Facade in India | Long - Lasting Building Exteriors - Metaguise ",
     date: "09-01-26",
