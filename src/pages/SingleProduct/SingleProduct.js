@@ -1,39 +1,39 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Dropdown, ListGroup } from "react-bootstrap";
-import { FaYoutube, FaInstagram, } from "react-icons/fa";
+import { FaYoutube, FaInstagram } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import Footer from "../../components/Footer";
 import "./SingleProduct.css";
 import { SingleProductDetail } from "../../utils/constants";
-import { Helmet } from "react-helmet"; 
+import { Helmet } from "react-helmet";
 import { FaPlay } from "react-icons/fa";
 
 const SingleProduct = () => {
-
   const imageGridRef = useRef(null);
 
   const handleImageClick = (index) => {
     setClickedIndex(clickedIndex === index ? null : index);
-  
+
     // Scroll entire page to top
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: "smooth",
     });
-  
+
     // Optional: Also prevent #products-grid from overriding the scroll
     document.getElementById("product-grid")?.scrollTo({
       top: 0,
       left: 0,
       behavior: "smooth",
     });
-  }
+  };
+
   const navigate = useNavigate();
-  
+
   const { productName } = useParams();
-  const selectedProduct =  SingleProductDetail.find(
+  const selectedProduct = SingleProductDetail.find(
     (item) => item.name.toLowerCase() === productName
   );
 
@@ -48,7 +48,6 @@ const SingleProduct = () => {
 
   const handleButtonClick = (index) => {
     setActiveButton(activeButton === index ? null : index);
-    
   };
 
   const categories = Array.from(
@@ -63,8 +62,6 @@ const SingleProduct = () => {
     )
   );
 
-
-
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (gridRef.current && !gridRef.current.contains(event.target)) {
@@ -72,8 +69,6 @@ const SingleProduct = () => {
       }
       window.scrollTo(0, 0);
     };
-
-    
 
     document.addEventListener("click", handleOutsideClick);
     return () => {
@@ -94,11 +89,12 @@ const SingleProduct = () => {
   const toggleTheme = () => {
     setDarkMode(!darkMode);
   };
+
   useEffect(() => {
     const nightImages = selectedProduct.images.filter(
       (item) => item.split("/")[4] === "night"
     );
-  
+
     if (darkMode && nightImages.length === 0) {
       setContentToRender([]);
     } else {
@@ -124,43 +120,47 @@ const SingleProduct = () => {
   }, []);
 
   return (
- 
- 
-
     <div className="container main-container">
-           <Helmet>
-        <title>{selectedProduct.Productname} | {selectedProduct.metatittles}</title>
+      <Helmet>
+        <title>
+          {selectedProduct.Productname} | {selectedProduct.metatittles}
+        </title>
         <meta name="description" content={selectedProduct.metadescription} />
-        <meta property="og:title" content={selectedProduct.metatittles}  />
-        <meta property="og:description" content={selectedProduct.metadescription} />
-        <link rel="canonical" href={`https://metaguise.com/all-products/${productName}`} />
+        <meta property="og:title" content={selectedProduct.metatittles} />
+        <meta
+          property="og:description"
+          content={selectedProduct.metadescription}
+        />
+        <link
+          rel="canonical"
+          href={`https://metaguise.com/all-products/${productName}`}
+        />
 
-  
-  {/* ✅ PRODUCT SCHEMA FOR AI + GOOGLE */}
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": selectedProduct.Productname,
-      "description": selectedProduct.metadescription,
-      "url": `https://metaguise.com/all-products/${productName}`,
-      "image": selectedProduct.images?.map(
-        img => `${window.location.origin}/${img}`
-      ),
-      "brand": {
-        "@type": "Brand",
-        "name": "Metaguise"
-      },
-      "manufacturer": {
-        "@type": "Organization",
-        "name": "Metaguise",
-        "url": "https://metaguise.com"
-      },
-      "category": "Architectural Metal Products",
-      "material": selectedProduct.materials || "Metal",
-      "inLanguage": "en-IN"
-    })}
-  </script>
+        {/* ✅ PRODUCT SCHEMA FOR AI + GOOGLE */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: selectedProduct.Productname,
+            description: selectedProduct.metadescription,
+            url: `https://metaguise.com/all-products/${productName}`,
+            image: selectedProduct.images?.map(
+              (img) => `${window.location.origin}/${img}`
+            ),
+            brand: {
+              "@type": "Brand",
+              name: "Metaguise",
+            },
+            manufacturer: {
+              "@type": "Organization",
+              name: "Metaguise",
+              url: "https://metaguise.com",
+            },
+            category: "Architectural Metal Products",
+            material: selectedProduct.materials || "Metal",
+            inLanguage: "en-IN",
+          })}
+        </script>
       </Helmet>
       <div className="row">
         <div className="col-12">
@@ -178,15 +178,14 @@ const SingleProduct = () => {
           )}
         </div>
         <div className="col-9 xs-12">
-        <ImageGrid
-  filteredImages={filteredImages}
-  handleImageClick={handleImageClick}
-  isLastRow={isLastRow}
-  clickedIndex={clickedIndex}
-  ref={imageGridRef}
-  videoLink={selectedProduct.videoLink} // Add this line
- 
-/>
+          <ImageGrid
+            filteredImages={filteredImages}
+            handleImageClick={handleImageClick}
+            isLastRow={isLastRow}
+            clickedIndex={clickedIndex}
+            ref={imageGridRef}
+            videoLink={selectedProduct.videoLink} // Add this line
+          />
         </div>
         <Sidebar
           selectedProduct={selectedProduct}
@@ -216,78 +215,80 @@ const BackButton = ({ navigate }) => {
 };
 
 const MobileControls = ({
-    selectedProduct,
-    showElementsDropdown,
-    setShowElementsDropdown,
-    filterImagesByCategory,
-    categories,
-    selectedCategory,
-  }) => {
-    return (
-      <div className="mobile-controls">
-        <ProjectHeader selectedProduct={selectedProduct} />
-        <div className="Elements">
-          <ElementsDropdown
-            showElementsDropdown={showElementsDropdown}
-            setShowElementsDropdown={setShowElementsDropdown}
-            filterImagesByCategory={filterImagesByCategory}
-            categories={categories}
-            selectedCategory={selectedCategory}
-            selectedProduct={selectedProduct} // Pass selectedProduct as a prop
-          />
-  
-          <SocialIcons
-            youtubeLink={selectedProduct?.youtubeLink}
-            instagramLink={selectedProduct?.instagramLink}
-          />
+  selectedProduct,
+  showElementsDropdown,
+  setShowElementsDropdown,
+  filterImagesByCategory,
+  categories,
+  selectedCategory,
+}) => {
+  return (
+    <div className="mobile-controls">
+      <ProjectHeader selectedProduct={selectedProduct} />
+      <div className="Elements">
+        <ElementsDropdown
+          showElementsDropdown={showElementsDropdown}
+          setShowElementsDropdown={setShowElementsDropdown}
+          filterImagesByCategory={filterImagesByCategory}
+          categories={categories}
+          selectedCategory={selectedCategory}
+          selectedProduct={selectedProduct} // Pass selectedProduct as a prop
+        />
+
+        <SocialIcons
+          youtubeLink={selectedProduct?.youtubeLink}
+          instagramLink={selectedProduct?.instagramLink}
+        />
+      </div>
+    </div>
+  );
+};
+
+const ProjectHeader = ({ selectedProduct }) => {
+  return (
+    <div className="col-12 single-head mb-3 px-3">
+      <h3>
+        {selectedProduct?.Productname
+          ? selectedProduct.Productname.charAt(0).toUpperCase() +
+            selectedProduct.Productname.slice(1)
+          : "Product"}
+      </h3>
+    </div>
+  );
+};
+
+const ElementsDropdown = ({
+  showElementsDropdown,
+  setShowElementsDropdown,
+  selectedProduct,
+}) => {
+  return (
+    <Dropdown
+      show={showElementsDropdown}
+      onToggle={(isOpen) => setShowElementsDropdown(isOpen)}
+      className="description-dropdown"
+    >
+      <Dropdown.Toggle variant="dark" id="description-dropdown">
+        Description
+        <div id="arrow-icon" className="icon-overlay">
+          <MdArrowOutward size={20} />
         </div>
-      </div>
-    );
-  };
-  
-  const ProjectHeader = ({ selectedProduct }) => {
-    return (
-      <div className="col-12 single-head mb-3 px-3">
-        <h3>
-          {selectedProduct?.Productname
-            ? selectedProduct.Productname.charAt(0).toUpperCase() +
-              selectedProduct.Productname.slice(1)
-            : "Product"}
-        </h3>
-      </div>
-    );
-  };
-  
-  const ElementsDropdown = ({
-    showElementsDropdown,
-    setShowElementsDropdown,
-    selectedProduct,
-  }) => {
-    return (
-      <Dropdown
-        show={showElementsDropdown}
-        onToggle={(isOpen) => setShowElementsDropdown(isOpen)}
-        className="description-dropdown"
-      >
-        <Dropdown.Toggle variant="dark" id="description-dropdown">
-          Description
-          <div id="arrow-icon" className="icon-overlay">
-            <MdArrowOutward size={20} />
-          </div>
-        </Dropdown.Toggle>
-        <Dropdown.Menu>
-          <Dropdown.Item>
-            {selectedProduct?.description
-              ? selectedProduct.description.charAt(0).toUpperCase() +
-                selectedProduct.description.slice(1)
-              : "No description available"}
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-    );
-  };
-
-
+      </Dropdown.Toggle>
+      <Dropdown.Menu>
+        <Dropdown.Item>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: selectedProduct?.description
+                ? selectedProduct.description.charAt(0).toUpperCase() +
+                  selectedProduct.description.slice(1)
+                : "No description available",
+            }}
+          />
+        </Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  );
+};
 
 const SocialIcons = ({ youtubeLink, instagramLink }) => {
   return (
@@ -329,16 +330,26 @@ const Sidebar = ({
         {selectedProduct.Productname.charAt(0).toUpperCase() +
           selectedProduct.Productname.slice(1)}
       </h3>
-     <div id="single-text" className="sidebar p-4 bg-darkrounded tw-text-white">
-              <ListGroup variant="flush">
-                <h1 action variant="dark" style={{ fontSize: "15px" }}>
-                  {selectedProduct.description.charAt(0).toUpperCase() + selectedProduct.description.slice(1)}
-                </h1>
-              </ListGroup>
-            </div>
-    
+      <div
+        id="single-text"
+        className="sidebar p-4 bg-darkrounded tw-text-white"
+      >
+        <ListGroup variant="flush">
+          <h1
+            action
+            variant="dark"
+            style={{ fontSize: "15px" }}
+            dangerouslySetInnerHTML={{
+              __html:
+                selectedProduct.description.charAt(0).toUpperCase() +
+                selectedProduct.description.slice(1),
+            }}
+          />
+        </ListGroup>
+      </div>
+
       <div className="button-row" style={{ padding: "5px" }}>
-      <Button
+        <Button
           icon={<FaYoutube />}
           text="See on YouTube"
           onClick={() => window.open(youtubeLink, "_blank")}
@@ -350,7 +361,6 @@ const Sidebar = ({
           onClick={() => window.open(instagramLink, "_blank")}
           active={activeButton === 1}
         />
-   
       </div>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
         <button id="build-button" className="hover-button">
@@ -361,8 +371,6 @@ const Sidebar = ({
   );
 };
 
-
-
 const ImageGrid = ({
   filteredImages,
   handleImageClick,
@@ -372,7 +380,7 @@ const ImageGrid = ({
   videoLink,
 }) => {
   return (
-    <div id="product-grid"  className="image-grid" ref={ref}>
+    <div id="product-grid" className="image-grid" ref={ref}>
       {filteredImages.length === 0 && !videoLink ? (
         <div className="no-images-found">
           No images found.
@@ -421,7 +429,9 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
 
   return (
     <div
-      className={`grid-item video-thumbnail ${clickedIndex === index ? "active" : ""}`}
+      className={`grid-item video-thumbnail ${
+        clickedIndex === index ? "active" : ""
+      }`}
       onClick={() => handleImageClick(index)}
     >
       {clickedIndex === index ? (
@@ -439,7 +449,7 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
             alt="YouTube Video Thumbnail"
             className="grid-image"
-            loading="lazy" 
+            loading="lazy"
           />
           <div className="play-icon">
             <FaPlay size={40} color="white" />
@@ -462,7 +472,7 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
         src={`${process.env.PUBLIC_URL}/${image}`}
         className="grid-image"
         alt={`Project item ${index + 1}`}
-        loading="lazy" 
+        loading="lazy"
       />
     </div>
   );
