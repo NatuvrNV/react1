@@ -2663,7 +2663,7 @@ export const SingleProductDetail = [
       Productname:"MetaSlider",
       metatittles:"MetaSlider | Sliding Metal Facade System",
       metadescription:"MetaSlider is a metal facade system with sliding panels that enhance design flexibility, airflow, and natural light control.",
-      description:"MetaSlider is a smart sliding facade system designed for buildings, both commercial and residential. It allows flexible control over sunlight, ventilation, and privacy while enhancing exterior aesthetics. Ideal for architects seeking functional facade solutions, MetaSlider improves energy efficiency, adapts to weather conditions, and adds a premium architectural identity to contemporary architectural structures with smooth operation and durable performance.",
+      description:"MetaSlider is a smart sliding facade system designed for buildings, both commercial and residential. It allows flexible control over sunlight, ventilation, and privacy while enhancing exterior aesthetics. Ideal for architects seeking <a href='https://metaguise.com/all-products'>functional facade solutions</a>, MetaSlider improves energy efficiency, adapts to weather conditions, and adds a premium architectural identity to <a href='https://metaguise.com/all-projects'>contemporary architectural structures</a> with smooth operation and durable performance.",
       images: [
         "assets/Allproducts/MetaFunction/metaslider/metaslider1.webp",
         "assets/Allproducts/MetaFunction/metaslider/metaslider3.webp",
@@ -2768,7 +2768,7 @@ export const SingleProductDetail = [
       Productname:"MetaPatina",
       metatittles:"MetaPatina | Verdigris Metal Facade Surface Finish",
       metadescription:"MetaPatina is a metal facade surface in aged copper and brass giving a a timeless look with a natural verdigris finish.",
-      description:"Discover MetaPatina’s hand-crafted oxidized metal finish with rich verdigris hues on copper, brass, and alloys, perfect for premium <a href='https://metaguise.com/all-products'>architectural metal panels</a> and decorative metal cladding. This rustic patina finish creates timeless elegance with enhanced durability and weather-resistance for interior and exterior design projects. MetaPatina brings artistic depth and contemporary style to facades, feature walls, and bespoke metal installations with luxurious aged character.",
+      description:"Discover MetaPatina’s hand-crafted oxidized metal finish with rich verdigris hues on copper, brass, and alloys, perfect for premium <a href='https://metaguise.com/all-products'>architectural metal panels</a> and decorative metal cladding. This rustic patina finish creates timeless elegance with enhanced durability and weather-resistance for interior and exterior design projects. MetaPatina brings artistic depth and contemporary style to facades, feature walls, and bespoke metal installations with luxurious aged character across <a href='https://metaguise.com/all-projects'>modern architectural projects</a>",
       images: [
         "assets/Allproducts/MetaSurface/metapatina/metapatina1.webp",
         "assets/Allproducts/MetaSurface/metapatina/metapatina2.webp",
