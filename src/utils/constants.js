@@ -2088,8 +2088,7 @@ export const SingleProductDetail = [
       Productname:"MetaCoin",
       metatittles:"MetaCoin | Customizable Metal Coin Facade System ",
       metadescription:"Design a parametric coin facade that's truly yours. Customize shape, size, colour and pattern for standout architecture",
-      description:
-        "A revolutionary parametric facade system designed to elevate architectural aesthetics. Crafted with premium metals and enhanced with MetaSurface finishes, MetaCoin offers unparalleled customizability, from the shape and size of each element to its color and arrangement. Its dynamic design reacts to light and perspective, creating ever-changing visual effects. Ideal for contemporary and iconic structures, MetaCoin transforms facades into captivating works of art that are sustainable, durable, and visually stunning​​.",
+      description:"MetaCoin is a premium metal parametric facade system designed for modern architecture. Made with high-quality aluminum and advanced MetaSurface finishes, it offers complete design flexibility in pattern, size, color, and layout. Its dynamic geometry creates striking light and shadow effects, making it ideal for luxury commercial buildings, landmark facades, and contemporary architectural projects that demand durability, sustainability, and visual impact.",
       images: [
         "assets/Allprojects/commercial/Blossoms/metacoin/blossoms2.webp",
         "assets/Allprojects/commercial/Blossoms/metacoin/blossoms3.webp",
@@ -2178,8 +2177,7 @@ export const SingleProductDetail = [
       Productname:"MetaSequin",
       metatittles:"MetaSequin | Bespoke Parametric Metal Sequin Facades ",
       metadescription:"Create dynamic elevations with our metal sequin facade panels, customizable in shape, size, colour and patterns. ",
-      description:
-        "MetaSequin is a parametric facade technology that combines lightweight, modular panels with high visual impact. Each panel features a sequin-like surface that interacts with light, creating dynamic patterns and movement across the facade. Designed for commercial and luxury residential projects, MetaSequin is fully customizable in layout, colour, and finish, allowing architects to create intricate geometries and textures. Its parametric design ensures both aesthetic flexibility and practical performance, with easy installation, durability, and low maintenance.",
+      description:"MetaSequin metal sequin facade panels deliver a stunning parametric facade design combining lightweight, modular cladding with dynamic visual movement. Ideal for residential, commercial, luxury, and modern architectural projects, each customizable panel enhances exterior aesthetics while ensuring durability, easy installation, and weather resistance. Create eye-catching building facades with customizable patterns, colors, finishes, and performance-driven design for high-impact design results.",
       images: [
         "assets/Allproducts/MetaParametric/metasequin/metasequin2.webp",
         "assets/Allproducts/MetaParametric/metasequin/metasequin3.webp",
@@ -2218,8 +2216,7 @@ export const SingleProductDetail = [
       Productname:"MetaPyramids",
       metatittles:"MetaPyramids | 3D Metal Facade Panels for Elevations",
       metadescription:"MetaPyramids is a 3D metal facade system inspired by the Egyptian Pyramids, adding depth, shadow, and structure to elevations.",
-      description:
-        "A tribute to ancient architectural wonders, MetaPyramid captures the essence of the pyramids with its geometric precision. Featuring 3D perforations that play with light and shadow, these facades create dynamic visual patterns that change throughout the day. Ideal for bold and iconic designs, MetaPyramid adds a layer of intrigue and timeless sophistication to modern architecture​.",
+      description:"MetaPyramid metal facade panels are inspired by ancient pyramid geometry, designed for modern architectural elevations. The precise 3D metal pattern enhances light and shadow, creating a striking visual impact throughout the day. Ideal for commercial buildings, luxury exteriors, and feature facades, these architectural metal elevation panels offer durability, aesthetic depth, and a bold identity for contemporary projects.",
       images: [
            "assets/Allprojects/residential/The Haven/metapyramid/rochak_3.webp",
           "assets/Allprojects/residential/The Haven/metapyramid/rochak_4.webp",
@@ -2249,8 +2246,7 @@ export const SingleProductDetail = [
       Productname:"MetaShingles",
       metatittles:"MetaShingles | Overlapping Metal Facade System",
       metadescription:"MetaShingles is a metal facade system with interlocking, overlapping panels that add texture and create depth in elevations.",
-      description:
-        "Elevate your structure with MetaShingles, a system of overlapping metal panels designed to create dynamic textures and visual depth. These shingles bring a contemporary flair to facades while ensuring durability and weather resistance. Perfect for residential and commercial projects, MetaShingles strike a balance between aesthetic appeal and robust functionality​.",
+      description:"Enhance your building’s exterior with MetaShingle premium metal facade shingles, engineered for modern architectural aesthetics and superior weather resistance. These decorative metal shingle panels deliver a striking visual texture and long-lasting performance for residential and commercial facades. Ideal for creative cladding designs, MetaShingles offers a layered monochromatic look for architectural facades. ",
       images: [
            "assets/Allprojects/residential/Apex Residence/metashingle/manish_5.webp",
           "assets/Allprojects/residential/Apex Residence/metashingle/manish_6.webp",
@@ -2314,8 +2310,7 @@ export const SingleProductDetail = [
       Productname:"Cascading Keys",
       metatittles:"Cascading Keys | Parametric Facade Metarials with Fluid Design",
       metadescription:"A parametric metal facade product inspired by chimes, Cascading Keys features keys that flow with light, depth, and movement.",
-      description:
-        "An architectural ode to natural harmony, Cascading Keys incorporates aluminum and stainless steel in flowing forms that mimic the rhythm of nature. These facades resemble the gentle hum of wind chimes or the flutter of butterfly wings, captivating viewers with their elegance. Ideal for tranquil, design-forward spaces, Cascading Keys creates a seamless blend of beauty and function​.",
+      description:"Cascading Keys is a modern architectural façade system crafted from premium aluminum and stainless steel, designed to create fluid, rhythmic patterns on building exteriors. Ideal for luxury residences, hotels, and commercial spaces, this façade enhances airflow, daylight control, and visual depth. Its nature-inspired cascading design adds movement, elegance, and durability, making it a preferred choice for contemporary façade design solutions.",
       images: [
         "assets/Allproducts/MetaForm/CascadingKeys/caskey2.webp",
         "assets/Allproducts/MetaForm/CascadingKeys/caskey3.webp",
@@ -2352,8 +2347,7 @@ export const SingleProductDetail = [
       Productname:"MetaCassette",
       metatittles:"MetaCassette | Versatile Metal Facade Cladding Solutions",
       metadescription:"MetaCassette is a metal facade cladding system with solid, perforated, and grooved panels.",
-      description:
-        "A versatile facade solution, MetaCassette offers three distinct panel types—grooved, perforated, and solid—each designed to bring unique aesthetic and functional qualities to architectural projects. Together, these options empower architects and designers to craft facades that are not only visually captivating but also tailored to specific functional requirements​​.",
+      description:"As a versatile choice for architectural facade panels, MetaCassette provides comprehensive metal facade solutions through three distinct styles: perforated, solid and grooved metal panels. These durable exterior panels are engineered to serve as high-performance building exterior solutions, empowering architects to achieve a customizable facade design that is both visually captivating and perfectly tailored to the unique functional requirements of every project.",
       images: [
            "assets/Allprojects/residential/Apex Residence/metacassette/manish_8.webp",
           "assets/Allprojects/residential/Apex Residence/metacassette/manish_9.webp",
@@ -2405,8 +2399,7 @@ export const SingleProductDetail = [
       Productname:"MetaFlute",
       metatittles:"MetaFlute | Durable Metal Facade Cladding System",
       metadescription:"MetaFlute is a metal facade cladding system with bold lines and linear profiles adding depth and texture.",
-      description:
-        "A sleek solution for architectural facades, MetaFlute combines lightweight yet durable metals to create rhythmic, vertical lines that enhance any structure. These extrusions shield buildings from harsh weather while adding a touch of modern sophistication. MetaFlute is ideal for projects requiring elegance, resilience, and minimal maintenance​​.",
+      description:"MetaFlute architectural fluted metal facade systems deliver precision-engineered aluminium profiles that elevate modern building exteriors with striking vertical rhythm and enhanced sun-shade performance. Lightweight yet highly durable, these fluted metal panels resist corrosion, improve airflow and reduce maintenance costs while adding premium textured elegance to commercial and residential facades. Ideal for architects seeking value driven aluminium facade cladding solutions with sustainable long-lasting finish.",
       images: [
         "assets/Allproducts/MetaForm/metaflute/metaflute1.webp",
         "assets/Allproducts/MetaForm/metaflute/metaflute2.webp",
@@ -2475,8 +2468,7 @@ export const SingleProductDetail = [
       Productname:"MetaFold",
       metatittles:"MetaFold | Folding Metal Facade System ",
       metadescription:"MetaFold is a functional metal facade system with folding panels designed for flexibility, ventilation, and smooth indoor-outdoor transitions.",
-      description:
-        "MetaFold transforms spaces with its innovative folding panels, seamlessly connecting indoor and outdoor environments. Featuring multi-faceted panes crafted from premium metals, it creates dynamic openings that enhance airflow and natural light. Perfect for modern homes and commercial spaces, MetaFold embodies functional luxury and design flexibility​.",
+      description:"MetaFold folding metal panels are designed for modern homes and premium commercial spaces that demand flexibility and style. Crafted from high-grade metal, these folding panels create wide openings for better ventilation, natural light, and seamless indoor-outdoor flow. Ideal for villas, showrooms, and luxury projects, MetaFold offers smooth operation, durability, and contemporary architectural appeal trusted by designers and builders.",
       images: [
         "assets/Allprojects/residential/Apex Residence/metafold/manish_2.webp",
         "assets/Allprojects/residential/Apex Residence/metafold/manish_3.webp",
@@ -2511,8 +2503,7 @@ export const SingleProductDetail = [
       Productname:"MetaFin",
       metatittles:"MetaFin | Parametric Facade in Metal with Fluid Curves",
       metadescription:"MetaFin is a parametric facade system with fluid, curving forms - ideal for creating soft, sculptural surfaces in architecture.",
-      description:
-        "Showcasing the perfect blend of fluidity and structure, MetaFin features parametric designs crafted from lightweight metals. With its smooth, organic curves and ability to reflect and play with light, MetaFin creates a stunning visual narrative. This facade system is ideal for projects that demand sustainable, artistic, and high-performance solutions​​.",
+      description:"MetaFin is an advanced parametric metal facade panel system designed for modern architecture and commercial building exteriors. Crafted for custom architectural facades, its lightweight aluminium composition enhances daylight reflection and weather performance while delivering dynamic, sustainable building envelope solutions. Ideal for architects and designers seeking custom facade cladding, MetaFin seamlessly blends aesthetic curves with high-performance durability to elevate urban design and functional exterior finishes.",
       images: [
         "assets/Allproducts/MetaParametric/metafin/metafin2.webp",
         "assets/Allproducts/MetaParametric/metafin/metafin1.webp",
@@ -2547,8 +2538,7 @@ export const SingleProductDetail = [
       Productname:"MetaHydra",
       metatittles:"MetaHydra | Sculpted Copper Metal Facade Cladding",
       metadescription:"MetaHydra is a metal facade product made with copper that evolves over time, revealing rich tones and organic textures.",
-      description:
-        "MetaHydra brings together the beauty of copper and the resilience of parametric design. Its unique panels mimic the fluidity of water, transforming facades into living works of art. The pure copper material ages gracefully, developing a rich patina that adds character over time, making it a luxurious choice for iconic architectural projects​.",
+      description:"MetaHydra copper facade panels blend luxury copper cladding design with durable parametric architecture that elevates building exteriors for modern commercial, hospitality, and sustainable projects. Perfect for architects seeking custom facade solutions and architectural metal panels that age elegantly while resisting weathering and maintenance costs. With a fluid water-inspired pattern, MetaHydra adds rich texture, character, and timeless appeal to exterior walls, façades, and design installations.",
       images: [
         "assets/Allproducts/MetaParametric/metahydra/metahydra1.webp",
         "assets/Allproducts/MetaParametric/metahydra/metahydra2.webp",
@@ -2565,8 +2555,7 @@ export const SingleProductDetail = [
       Productname:"MetaLouver",
       metatittles:"MetaLouver | Metal Louver Facade System for Elevations",
       metadescription:"MetaLouver is a metal louver facade system designed for light, airflow, and shade - a durable, high-value solution for any project.",
-      description:
-        "MetaLouver offers a harmonious balance of form and functionality. Its adjustable, angular metal panels allow for optimal control of light and ventilation while shielding interiors from rain and harsh sunlight. Whether used for facades or shading systems, MetaLouver adds a distinctive architectural rhythm to buildings​​.",
+      description:"MetaLouver is a smart architectural metal louver system designed for modern facades and climate control. Its precision-angled metal fins regulate airflow, reduce heat gain, and enhance exterior aesthetics. Ideal for commercial and residential buildings, MetaLouver improves energy efficiency while protecting interiors from glare and heavy rain, making it a practical and visually striking facade solution.",
       images: [
         "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_2.webp",
         "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_3.webp",
@@ -2630,8 +2619,7 @@ export const SingleProductDetail = [
       Productname:"MetaPlank",
       metatittles:"MetaPlank | Sleek Metal Facade Cladding Material",
       metadescription:"MetaPlank is a metal facade cladding system with sleek extrusions - a low-maintenance material built for modern design.",
-      description:
-        "MetaPlank combines the natural appeal of wood with the resilience of metal, offering a durable, weather-resistant cladding solution. Its earthy tones and realistic textures bring warmth to any structure, while its maintenance-free properties make it a sustainable and cost-effective alternative to traditional wood​​.",
+      description:"MetaPlank premium wood-look metal cladding panels deliver a stunning architectural finish with realistic wood grain and long-lasting durability. Designed for modern exteriors, facade upgrades, and weather-resistant wall solutions, this sustainable aluminium plank resists rot, pests, and UV fading while requiring minimal upkeep. Perfect for contemporary homes, commercial structures, and designer facades, MetaPlank offers aesthetic warmth with engineered strength and low-maintenance performance.",
       images: [
         "assets/Allproducts/MetaForm/metaplank/metaplank1.webp",
         "assets/Allproducts/MetaForm/metaplank/metaplank3.webp",
@@ -2656,8 +2644,7 @@ export const SingleProductDetail = [
       Productname:"MetaGate",
       metatittles:"MetaGate | Architectural Metal Facade Gates by Metaguise",
       metadescription:"MetaGate is a premium metal gate system, designed with our facade cladding solutions for seamless architecture.",
-      description:
-        "A stylish and functional entry solution, MetaGate is crafted from lightweight aluminum and can be customized with manual or automated sliding, swinging, or folding mechanisms. Offering sleek aesthetics and robust performance, it’s the perfect addition to both contemporary and classic architectural designs​.",
+      description:"MetaGate premium aluminum entry gate system delivers sleek, custom automated sliding gate solutions for homes with optional manual or motorized operation. Designed for corrosion-resistant outdoor access control, this lightweight yet robust gate enhances security and modern aesthetics. Ideal for residential driveways, commercial entrances, and smart properties seeking smooth automation and low maintenance performance. Tailored sizes and finishes blend style with reliable garage access convenience.",
       images: [
         "assets/Allproducts/MetaFunction/metagate/metagate1.webp",
         "assets/Allproducts/MetaFunction/metagate/metagate2.webp",
@@ -2676,8 +2663,7 @@ export const SingleProductDetail = [
       Productname:"MetaSlider",
       metatittles:"MetaSlider | Sliding Metal Facade System",
       metadescription:"MetaSlider is a metal facade system with sliding panels that enhance design flexibility, airflow, and natural light control.",
-      description:
-        " MetaSlider integrates sliding facade technology to create dynamic architectural expressions. Whether open to embrace natural light or closed for privacy, it adapts seamlessly to climatic and aesthetic needs. MetaSlider’s versatility makes it a go-to solution for modern facades that balance functionality and design​.",
+      description:"MetaSlider is a smart sliding facade system designed for buildings, both commercial and residential. It allows flexible control over sunlight, ventilation, and privacy while enhancing exterior aesthetics. Ideal for architects seeking functional facade solutions, MetaSlider improves energy efficiency, adapts to weather conditions, and adds a premium architectural identity to contemporary structures with smooth operation and durable performance.",
       images: [
         "assets/Allproducts/MetaFunction/metaslider/metaslider1.webp",
         "assets/Allproducts/MetaFunction/metaslider/metaslider3.webp",
@@ -2693,8 +2679,7 @@ export const SingleProductDetail = [
       Productname:"MetaBlox",
       metatittles:"MetaBlox | Shape Changing Metal Facade Cladding System",
       metadescription:"MetaBlox is a modular metal facade cladding system with kinetic blocks that form bold, ever-evolving facades.",
-      description:
-        "The first-ever shape-changing facade system, MetaBlox combines cutting-edge parametric technology with visually mesmerizing designs. Made from pure aluminum, it offers a unique, customizable facade solution that adapts to light and perspective, making every project a masterpiece​.",
+      description:"MetaBlox is an advanced kinetic facade system designed for modern commercial and luxury architecture. Built with high-grade aluminum, it creates a dynamic exterior that visually transforms with sunlight, angles, and movement. Ideal for architects seeking innovative building facades in India, MetaBlox enhances elevation design, improves brand identity, and delivers a futuristic, performance-driven architectural solution.",
       images: [
         "assets/Allproducts/MetaParametric/metablox/metablox1.webp",
         "assets/Allproducts/MetaParametric/metablox/metablox2.webp",
@@ -2717,8 +2702,7 @@ export const SingleProductDetail = [
       Productname:"MetaCopper",
       metatittles:"MetaCopper | Pure Copper Finish for Facade Cladding",
       metadescription:"MetaCopper is a refined metal facade surface crafted in pure copper for a durable, timeless finish.",
-      description:
-        "A timeless material reimagined, MetaCopper integrates the warmth and character of copper into modern architectural designs. Its rustic ochre-red hues, combined with its durability and resistance to corrosion, make it a stunning choice for facades that exude both tradition and innovation​.",
+      description:"MetaCopper is a premium architectural copper finish panels designed for modern facades, elevations, and interior accents. Inspired by natural aged copper tones, it delivers a warm, luxurious appearance with long-lasting durability and corrosion resistance. Ideal for commercial buildings, villas, and designer projects, MetaCopper offers a low-maintenance copper cladding solution that blends contemporary design with timeless material elegance.",
       images: [
         "assets/Allproducts/MetaSurface/metacopper/metacopper2.webp",
         "assets/Allproducts/MetaSurface/metacopper/metacopper3.webp",
@@ -2742,8 +2726,7 @@ export const SingleProductDetail = [
       Productname:"MetaCorten",
       metatittles:"MetaCorten | Rustic Surface Finish for Facade Cladding",
       metadescription:"MetaCorten is a metal cladding surface with a weathered finish - ideal for durable, rustic-inspired facade cladding.",
-      description:
-        "Embracing the raw beauty of weathered steel, MetaCorten offers a rich reddish-brown facade that evolves aesthetically over time. Its advanced coating ensures maintenance-free performance, making it a sustainable, modern choice for architectural cladding​.",
+      description:"MetaCorten offers high-performance weathered steel facade panels and corten steel finish panels in India. Achieve a modern, sustainable look with our maintenance-free exterior cladding solutions.",
       images: [
         "assets/Allproducts/MetaSurface/metacorten/metacorten1.webp",
         "assets/Allproducts/MetaSurface/metacorten/metacorten2.webp",
@@ -2762,8 +2745,7 @@ export const SingleProductDetail = [
       Productname:"MetaGrey",
       metatittles:"MetaGrey | Grey Metal Facade Surface Finish",
       metadescription:"MetaGrey is a metal facade surface finish for a sleek, industrial look.",
-      description:
-        "A sophisticated grayscale facade system, MetaGrey blends seamlessly with contemporary architecture. Its subtle tones provide visual balance and versatility, making it ideal for projects that require understated elegance with a modern edge​.",
+      description:"MetaGrey is a premium grayscale architectural facade panel designed for elegant commercial and residential exteriors. This custom aluminium facade cladding blends seamlessly with modern building design while adding visual balance and understated sophistication. Ideal for architects and builders seeking contemporary exterior wall solutions, MetaGrey delivers durable performance, low-maintenance finishes, and clean aesthetic appeal that complements sustainable metal facade systems.",
       images: [
         "assets/Allproducts/MetaSurface/metagrey/metagrey1.webp",
         "assets/Allproducts/MetaSurface/metagrey/metagrey2.webp",
@@ -2786,8 +2768,7 @@ export const SingleProductDetail = [
       Productname:"MetaPatina",
       metatittles:"MetaPatina | Verdigris Metal Facade Surface Finish",
       metadescription:"MetaPatina is a metal facade surface in aged copper and brass giving a a timeless look with a natural verdigris finish.",
-      description:
-        " MetaPatina showcases the artistry of oxidized metals, featuring verdigris tints on copper and brass for a luxurious, aged look. With its antimicrobial properties and striking color contrasts, MetaPatina is perfect for interior and exterior applications that demand both beauty and functionality​.",
+      description:"Discover MetaPatina’s hand-crafted oxidized metal finish with rich verdigris hues on copper, brass, and alloys, perfect for premium architectural metal panels and decorative metal cladding. This rustic patina finish creates timeless elegance with enhanced durability and weather-resistance for interior and exterior design projects. MetaPatina brings artistic depth and contemporary style to facades, feature walls, and bespoke metal installations with luxurious aged character.",
       images: [
         "assets/Allproducts/MetaSurface/metapatina/metapatina1.webp",
         "assets/Allproducts/MetaSurface/metapatina/metapatina2.webp",
@@ -2808,8 +2789,7 @@ export const SingleProductDetail = [
       Productname:"MetaWood",
       metatittles:"MetaWood | Wood-Finish Metal Facade Surface ",
       metadescription:"MetaWood is a durable metal facade surface finish with a wooden texture for an organic look.",
-      description:
-        "A sustainable reimagining of natural wood, MetaWood combines the visual appeal of earthy textures with the strength of metal. Resistant to weather, fire, and termites, it is an environmentally friendly, durable solution for cladding and decorative applications​.",
+      description:"MetaWood is a premium metal-based wood finish designed for modern architectural exteriors and interiors. It delivers the natural warmth of wood with the durability of metal, making it ideal for facades, cladding, louvers, and feature walls. Weatherproof, fire-resistant, and termite-free, MetaWood is a sustainable choice for architects seeking long-lasting, low-maintenance wood-look solutions.",
       images: [
         "assets/Allproducts/MetaSurface/metawood/metawood1.webp",
         "assets/Allproducts/MetaSurface/metawood/metawood2.webp",
@@ -2833,8 +2813,7 @@ export const SingleProductDetail = [
       Productname:"Solid Panels",
       metatittles:"Solid Metal Panels | Durable Facade Panels for Architecture",
       metadescription:"Our solid metal facade panels offer strength and style for modern and industrial architecture.",
-      description:
-        "Durable and versatile, Solid Panels are crafted from premium metals for seamless, modern facades. With exceptional weather resistance and low maintenance, they suit both bold designs and intricate architectural projects. Fully customizable in size, finish, and color, Solid Panels blend strength with aesthetic appeal for a variety of applications.",
+      description:"Solid Panels by Metaguise are precision-engineered metal facade solutions designed for long-lasting performance and clean architectural appeal. Ideal for commercial buildings, industrial projects, and modern elevations, these panels offer high weather resistance, corrosion protection, and minimal maintenance. Available in custom sizes, finishes, and colors, Solid Panels provide architects and builders with a reliable, sleek, and cost-effective facade cladding option.",
       images: [
         "assets/Allproducts/MetaForm/SolidPanel/solidpanel1.webp",
         "assets/Allproducts/MetaForm/SolidPanel/solidpanel2.webp",
