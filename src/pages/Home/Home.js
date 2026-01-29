@@ -27,6 +27,9 @@ function Home() {
         <link rel="icon" type="image/png" href="https://metaguise.com/favicon.ico" />
         <link rel="canonical" href="https://metaguise.com/" /> 
         <meta name="robots" content="index, follow" />
+ 
+
+        
       </Helmet>
 
       {/* Above the fold: Loads instantly */}
