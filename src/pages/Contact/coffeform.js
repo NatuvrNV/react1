@@ -15,6 +15,9 @@ const CoffeeForm = ({ brochureName }) => {
 
   const location = useLocation();
   
+  // Get current page URL for source tracking
+  const pageSource = typeof window !== 'undefined' ? window.location.href : '';
+  
   const pageBrochureMap = {
     "/metasurface": "MetaSurface",
     "/metaparametric": "MetaParametric",
@@ -151,7 +154,7 @@ const CoffeeForm = ({ brochureName }) => {
     // Prepare lead assignments
     const leadAssignments = prepareLeadAssignments(matchedEmployees);
 
-    // Prepare final payload
+    // Prepare final payload with SOURCE URL
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -174,12 +177,18 @@ const CoffeeForm = ({ brochureName }) => {
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
+      // ADD SOURCE URL TO REMARKS
+      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}\n\nSource URL: ${pageSource}\nBrochure Type: ${detectedBrochure}`,
       callRegistration: true,
-      leadAssignments: leadAssignments
+      leadAssignments: leadAssignments,
+      // ADD SOURCE AS SEPARATE FIELDS
+      leadSource: "Website",
+      leadSourceUrl: pageSource,
+      brochureType: detectedBrochure
     };
 
     console.log("Creating lead with payload:", payload);
+    console.log("Lead source URL:", pageSource);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -214,6 +223,9 @@ const CoffeeForm = ({ brochureName }) => {
       from_email: formData.email,
       from_phone: formData.phone,
       message: formData.message,
+      source_url: pageSource, // ADD SOURCE TO EMAIL
+      brochure_type: detectedBrochure,
+      timestamp: new Date().toISOString(),
     };
 
     try {
@@ -251,6 +263,13 @@ const CoffeeForm = ({ brochureName }) => {
       return;
     }
 
+    // Validate phone number (basic validation)
+    if (formData.phone.replace(/\D/g, '').length < 10) {
+      setFeedbackMessage("❌ Please enter a valid phone number.");
+      setIsSending(false);
+      return;
+    }
+
     if (!captchaToken) {
       setFeedbackMessage("⚠️ Please verify the reCAPTCHA.");
       setIsSending(false);
@@ -261,10 +280,10 @@ const CoffeeForm = ({ brochureName }) => {
       // Step 1: Open PDF
       openPDF();
       
-      // Step 2: Create lead in backend
+      // Step 2: Create lead in backend with source URL
       const leadCreated = await createLead();
       
-      // Step 3: Send email notification
+      // Step 3: Send email notification with source URL
       const emailSent = await sendEmail();
       
       // Step 4: Show success message
@@ -280,6 +299,20 @@ const CoffeeForm = ({ brochureName }) => {
       if (typeof window !== "undefined" && window.gtag) {
         window.gtag("event", "conversion", {
           send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
+          page_location: pageSource,
+          page_title: `Download ${detectedBrochure} Brochure`,
+          brochure_type: detectedBrochure,
+        });
+      }
+
+      // Also send to Google Analytics if available
+      if (typeof window !== "undefined" && window.dataLayer) {
+        window.dataLayer.push({
+          event: 'brochure_download',
+          brochure_type: detectedBrochure,
+          page_url: pageSource,
+          user_name: formData.name,
+          user_email: formData.email
         });
       }
 
@@ -362,7 +395,7 @@ const CoffeeForm = ({ brochureName }) => {
                     <Form.Control
                       type="text"
                       name="name"
-                      placeholder="Name"
+                      placeholder="Name *"
                       className="bg-contact form-text border-0"
                       value={formData.name}
                       onChange={handleChange}
@@ -375,7 +408,7 @@ const CoffeeForm = ({ brochureName }) => {
                     <Form.Control
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder="Email *"
                       className="bg-contact form-text border-0"
                       value={formData.email}
                       onChange={handleChange}
@@ -394,7 +427,7 @@ const CoffeeForm = ({ brochureName }) => {
                       inputClass="bg-contact form-text border-0 w-100"
                       containerClass="w-100"
                       inputStyle={{ width: "100%" }}
-                      placeholder="Enter phone number with Country Code"
+                      placeholder="Phone Number *"
                       dropdownClass="bg-dark text-white"
                       value={formData.phone}
                       onChange={handlePhoneChange}
