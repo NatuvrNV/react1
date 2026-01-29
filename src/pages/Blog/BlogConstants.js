@@ -825,10 +825,10 @@ Explore all projects: <a href="https://metaguise.com/all-projects">All Projects<
 
   {
     title: "What Makes MetaFlutes the Most Elegant Choice for Vertical Design",
-    metaTitle: "How Parametric Facade Design Becomes Reality",
+    metaTitle: "Parametric Vertical Facade Design | MetaFlutes Solutions",
     date: "27-08-25",
     category: "Facade Innovations",
-    metaDescription: "Explore why MetaFlutes stands out as the most elegant vertical design solution — blending aesthetics, performance, and architectural innovation for modern facades.",
+    metaDescription: "Discover MetaFlutes parametric vertical facade design — elegant, sustainable architectural solutions optimized for performance, innovation, and modern building façades.",
     Fulldescription: ` 
      When it comes to vertical elevation, it’s the details that define the design. MetaFlutes by Metaguise offer just that - a clean, structured look that adds clarity to any facade, whether it's a home, a commercial space, or a public building.
      Their vertical lines don’t just elevate surfaces visually - they bring order, rhythm, and a strong design language that suits everything from minimal architecture to bolder parametric styles.
@@ -2840,10 +2840,10 @@ At Metaguise, we don’t just design <strong>facades</strong> - we help brands e
 
   {
     title: "Custom Metal Facade Cladding: What You Need to Know Before You Build",
-    metaTitle: "The MetaEffect: How Metaguise Facades Elevate Brands & Buildings Across India ",
+    metaTitle: "Architectural Metal Facade Cladding Guide 2026 ",
     date: "24-11-25",
     category: "Architectural Insights",
-    metaDescription: "Learn everything you need to know about custom metal facade cladding - from parametric and non-parametric systems to material choices and performance.",
+    metaDescription: "Explore top 2026 metal facade cladding trends in India — corten, laser-cut, fluted panels, energy-efficient systems & material tips for smart building exteriors.",
     Fulldescription: ` 
 Choosing the right facade is one of the most critical design decisions for any building. It defines first impressions, protects the structure, and shapes how your brand or home is perceived. And when it comes to modern, high-performance solutions, custom metal facade cladding is emerging as the preferred choice for architects and clients alike.
 
