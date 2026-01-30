@@ -27,16 +27,12 @@ const Contact = ({ brochureName }) => {
     name: "",
     email: "",
     phone: "",
-    squareFeet: "", // Added square feet field
     message: `The user has requested the ${detectedBrochure} brochure.`,
   });
 
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [isSending, setIsSending] = useState(false); // Added loading state
+  const [isSending, setIsSending] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
-  const [employees, setEmployees] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [showLeadSuccess, setShowLeadSuccess] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -61,39 +57,6 @@ const Contact = ({ brochureName }) => {
     }
   }, [formData.phone]);
 
-  // Fetch employees on component mount
-  useEffect(() => {
-    fetchEmployees();
-  }, []);
-
-  const fetchEmployees = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch('https://backend.cshare.in/api/genericEmployee/genericEmployeeFilter?roles=PRE_SALES&statuses=ACTIVE&page=0&size=1000', {
-        method: 'PUT',
-        headers: {
-          'companyId': '693f9759f956d25cedd37a6f',
-          'apiKey': '918ef419818745ef1f09f705a9642545',
-          'Content-Type': 'application/json'
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch employees');
-      }
-
-      const data = await response.json();
-      if (data.object && data.object.content) {
-        setEmployees(data.object.content);
-        console.log(`Fetched ${data.object.content.length} employees`);
-      }
-    } catch (err) {
-      console.error("Error fetching employees:", err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const openPDF = () => {
     const brochureMap = {
       MetaSurface: "/assets/brochure/METASURFACE.pdf",
@@ -107,41 +70,6 @@ const Contact = ({ brochureName }) => {
     if (filePath) {
       window.open(filePath, "_blank");
     }
-  };
-
-  const parseRange = (rangeString) => {
-    if (!rangeString) return { min: 0, max: 0 };
-    
-    const parts = rangeString.split('-').map(part => parseInt(part.trim()));
-    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
-      return { min: parts[0], max: parts[1] };
-    }
-    return { min: 0, max: 0 };
-  };
-
-  const findMatchingEmployees = (sqft) => {
-    const sqftNum = parseInt(sqft);
-    if (isNaN(sqftNum)) return [];
-
-    console.log(`Looking for employees matching SQFT: ${sqftNum}`);
-    
-    const matchingEmployees = employees.filter(emp => {
-      const range = parseRange(emp.employeeAssignmentRange);
-      const isMatch = sqftNum >= range.min && sqftNum <= range.max;
-      console.log(`Employee ${emp.fullName || emp.id}: range ${range.min}-${range.max}, SQFT ${sqftNum}, Match: ${isMatch}`);
-      return isMatch;
-    });
-
-    console.log(`Found ${matchingEmployees.length} matching employees`);
-    return matchingEmployees;
-  };
-
-  const prepareLeadAssignments = (matchedEmployees) => {
-    return matchedEmployees.map(emp => ({
-      role: "PRE_SALES",
-      employeeId: emp.id,
-      employeeName: emp.fullName || "Unknown Employee"
-    }));
   };
 
   // Function to get callSource based on URL path
@@ -164,44 +92,20 @@ const Contact = ({ brochureName }) => {
     // Get callSource value
     const callSource = getCallSource();
     
-    // Find matching employees based on square feet
-    const matchedEmployees = findMatchingEmployees(formData.squareFeet);
-    
-    // Prepare lead assignments (even if empty array)
-    const leadAssignments = prepareLeadAssignments(matchedEmployees);
-
-    // Prepare final payload with callSource and square feet
+    // Payload with only parameters that have corresponding form fields
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
       contact: formData.phone,
       email: formData.email,
-      address: "Gurugram, Haryana",
-      locality: "DLF QE",
-      city: "Gurgaon(HR)",
-      district: "Gurgaon",
-      state: "HARYANA",
-      pincode: "122002",
-      pincodeMappingId: "693f98b3f956d25cedd37dfc",
-      projectType: "RESIDENTIAL",
-      customerType: "END_USER",
-      engagementTimeline: "IMMEDIATE",
-      has3dOrSiteDrawings: true,
-      approximateFacadeCladdingSqFt: parseInt(formData.squareFeet) || 0,
-      projectBrief: formData.message,
-      productCategory: "COMMERCIAL",
-      productBrand: "Metaguise",
-      productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}\n\nSquare Feet: ${formData.squareFeet}\ncallSource: ${callSource}`,
+      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
-      leadAssignments: leadAssignments,
-      callSource: callSource // Added callSource parameter
+      callSource: "OTHER"
     };
 
     console.log("Creating lead with payload:", payload);
     console.log("callSource value:", callSource);
-    console.log("Square Feet:", formData.squareFeet);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -218,7 +122,6 @@ const Contact = ({ brochureName }) => {
       console.log("Lead creation response:", response.status, responseText);
 
       if (response.ok) {
-        setShowLeadSuccess(true);
         return true;
       } else {
         console.error("Failed to create lead:", responseText);
@@ -232,12 +135,11 @@ const Contact = ({ brochureName }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSending(true); // Start loading
+    setIsSending(true);
     setFeedbackMessage("");
-    setShowLeadSuccess(false);
 
-    // Validate all required fields including square feet
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.squareFeet.trim()) {
+    // Validate all required fields
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
       setFeedbackMessage("❌ All fields are required.");
       setIsSending(false);
       return;
@@ -247,14 +149,6 @@ const Contact = ({ brochureName }) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       setFeedbackMessage("❌ Please enter a valid email address.");
-      setIsSending(false);
-      return;
-    }
-
-    // Validate square feet
-    const sqftNum = parseInt(formData.squareFeet);
-    if (isNaN(sqftNum) || sqftNum <= 0) {
-      setFeedbackMessage("❌ Please enter a valid square feet area (minimum 1).");
       setIsSending(false);
       return;
     }
@@ -291,7 +185,6 @@ const Contact = ({ brochureName }) => {
         name: "",
         email: "",
         phone: "",
-        squareFeet: "",
         message: `The user has requested the ${detectedBrochure} brochure.`,
       });
 
@@ -301,7 +194,7 @@ const Contact = ({ brochureName }) => {
       console.error("Error in form submission:", error);
       setFeedbackMessage("❌ Something went wrong. Please try again.");
     } finally {
-      setIsSending(false); // Stop loading
+      setIsSending(false);
     }
   };
 
@@ -395,26 +288,6 @@ const Contact = ({ brochureName }) => {
                       value={formData.phone}
                       onChange={handlePhoneChange}
                       required
-                      disabled={isSending}
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
-
-              {/* Square Feet Area field - Added */}
-              <Row>
-                <Col md={12} className="mb-3 mb-md-4">
-                  <Form.Group controlId="formSquareFeet">
-                    <Form.Control
-                      type="number"
-                      name="squareFeet"
-                      placeholder="Approximate Square Feet Area *"
-                      className="bg-contact form-text border-0"
-                      value={formData.squareFeet}
-                      onChange={handleChange}
-                      required
-                      min="1"
-                      step="1"
                       disabled={isSending}
                     />
                   </Form.Group>
