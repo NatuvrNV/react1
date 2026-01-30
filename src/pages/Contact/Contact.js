@@ -400,25 +400,7 @@ const Contact = () => {
                     />
                   </Form.Group>
                 </Col>
-                <Col md={6} className="mb-3 mb-md-4">
-                  <Form.Group controlId="formSquareFeet">
-                    <Form.Control
-                      as="select"
-                      name="squareFeet"
-                      value={formData.squareFeet}
-                      className="bg-contact form-text border-0"
-                      onChange={handleChange}
-                      required
-                      disabled={isSending}
-                    >
-                      {squareFeetOptions.map((option) => (
-                        <option key={option.value} value={option.value}>
-                          {option.label}
-                        </option>
-                      ))}
-                    </Form.Control>
-                  </Form.Group>
-                </Col>
+              
               </Row>
 
               <Form.Group controlId="formMessage" className="mb-4">
