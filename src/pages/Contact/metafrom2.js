@@ -29,6 +29,7 @@ const Contact = ({ brochureName }) => {
     name: "",
     email: "",
     phone: "",
+    squareFeet: "", // Added square feet field
     message: `The user has requested the ${detectedBrochure} brochure.`,
   });
 
@@ -86,6 +87,7 @@ const Contact = ({ brochureName }) => {
       const data = await response.json();
       if (data.object && data.object.content) {
         setEmployees(data.object.content);
+        console.log(`Fetched ${data.object.content.length} employees`);
       }
     } catch (err) {
       console.error("Error fetching employees:", err);
@@ -96,7 +98,6 @@ const Contact = ({ brochureName }) => {
 
   const openPDF = () => {
     const brochureMap = {
-      MetaSurface2: "/assets/brochure/METASURFACE2.pdf",
       MetaSurface: "/assets/brochure/METASURFACE.pdf",
       MetaParametric: "/assets/brochure/METAPARAMETRIC.pdf",
       MetaForm: "/assets/brochure/METAFORM.pdf",
@@ -120,15 +121,20 @@ const Contact = ({ brochureName }) => {
     return { min: 0, max: 0 };
   };
 
-  const findMatchingEmployees = () => {
-    // Use default value of 5000 since square feet is removed
-    const sqftNum = 5000;
+  const findMatchingEmployees = (sqft) => {
+    const sqftNum = parseInt(sqft);
+    if (isNaN(sqftNum)) return [];
+
+    console.log(`Looking for employees matching SQFT: ${sqftNum}`);
     
     const matchingEmployees = employees.filter(emp => {
       const range = parseRange(emp.employeeAssignmentRange);
-      return sqftNum >= range.min && sqftNum <= range.max;
+      const isMatch = sqftNum >= range.min && sqftNum <= range.max;
+      console.log(`Employee ${emp.fullName || emp.id}: range ${range.min}-${range.max}, SQFT ${sqftNum}, Match: ${isMatch}`);
+      return isMatch;
     });
 
+    console.log(`Found ${matchingEmployees.length} matching employees`);
     return matchingEmployees;
   };
 
@@ -136,23 +142,38 @@ const Contact = ({ brochureName }) => {
     return matchedEmployees.map(emp => ({
       role: "PRE_SALES",
       employeeId: emp.id,
-      employeeName: emp.fullName
+      employeeName: emp.fullName || "Unknown Employee"
     }));
   };
 
-  const createLead = async () => {
-    // Find matching employees with default value
-    const matchedEmployees = findMatchingEmployees();
-    
-    if (matchedEmployees.length === 0) {
-      console.log("No matching employees found for default SQFT value");
-      return false;
-    }
+  // Function to get callSource based on URL path
+  const getCallSource = () => {
+    const pathToCallSource = {
+      "/metasurface": "METASURFACE",
+      "/metasurface2": "METASURFACE",
+      "/metaparametric": "METAPARAMETRIC",
+      "/metaform": "METAFORM",
+      "/metafunction": "METAFUNCTION",
+      "/ctb": "CONTACT",
+      "/contact": "CONTACT",
+      "/partner": "PARTNER",
+      "/build": "BUILD"
+    };
 
-    // Prepare lead assignments
+    return pathToCallSource[location.pathname] || "CONTACT";
+  };
+
+  const createLead = async () => {
+    // Get callSource value
+    const callSource = getCallSource();
+    
+    // Find matching employees based on square feet
+    const matchedEmployees = findMatchingEmployees(formData.squareFeet);
+    
+    // Prepare lead assignments (even if empty array)
     const leadAssignments = prepareLeadAssignments(matchedEmployees);
 
-    // Prepare final payload
+    // Prepare final payload with callSource and square feet
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -169,7 +190,7 @@ const Contact = ({ brochureName }) => {
       customerType: "END_USER",
       engagementTimeline: "IMMEDIATE",
       has3dOrSiteDrawings: true,
-      approximateFacadeCladdingSqFt: 5000, // Default value
+      approximateFacadeCladdingSqFt: parseInt(formData.squareFeet) || 0,
       projectBrief: formData.message,
       productCategory: "COMMERCIAL",
       productBrand: "Metaguise",
@@ -177,10 +198,14 @@ const Contact = ({ brochureName }) => {
       callStatus: "NEW_LEAD",
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
-      leadAssignments: leadAssignments
+      leadAssignments: leadAssignments,
+      callSource: callSource // Added callSource parameter
     };
 
     console.log("Creating lead with payload:", payload);
+    console.log("callSource value:", callSource);
+    console.log("Square Feet:", formData.squareFeet);
+    console.log("Matched Employees:", matchedEmployees.length);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -215,7 +240,8 @@ const Contact = ({ brochureName }) => {
     setFeedbackMessage("");
     setShowLeadSuccess(false);
 
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
+    // Validate all required fields including square feet
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.squareFeet.trim()) {
       setFeedbackMessage("❌ All fields are required.");
       setIsSending(false);
       return;
@@ -228,6 +254,20 @@ const Contact = ({ brochureName }) => {
       return;
     }
 
+    const sqftNum = parseInt(formData.squareFeet);
+    if (isNaN(sqftNum) || sqftNum <= 0) {
+      setFeedbackMessage("❌ Please enter a valid square feet area (minimum 1).");
+      setIsSending(false);
+      return;
+    }
+
+    // Validate phone number
+    if (formData.phone.replace(/\D/g, '').length < 10) {
+      setFeedbackMessage("❌ Please enter a valid phone number.");
+      setIsSending(false);
+      return;
+    }
+
     if (!captchaValue) {
       setFeedbackMessage("⚠️ Please verify the reCAPTCHA before submitting.");
       setIsSending(false);
@@ -235,20 +275,25 @@ const Contact = ({ brochureName }) => {
     }
 
     try {
+      // Open PDF first
       openPDF();
       
+      // Create lead in backend
       const leadCreated = await createLead();
       
+      // Show success message
       if (leadCreated) {
         setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and our team will connect with you shortly.");
       } else {
         setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
       }
 
+      // Reset form
       setFormData({
         name: "",
         email: "",
         phone: "",
+        squareFeet: "",
         message: `The user has requested the ${detectedBrochure} brochure.`,
       });
       
@@ -312,7 +357,7 @@ const Contact = ({ brochureName }) => {
                     <Form.Control
                       type="text"
                       name="name"
-                      placeholder="Name"
+                      placeholder="Name *"
                       className="bg-contact form-text border-0"
                       value={formData.name}
                       onChange={handleChange}
@@ -325,7 +370,7 @@ const Contact = ({ brochureName }) => {
                     <Form.Control
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder="Email *"
                       className="bg-contact form-text border-0"
                       value={formData.email}
                       onChange={handleChange}
@@ -335,7 +380,7 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
-              {/* Phone number field - full width */}
+              {/* Phone number field */}
               <Row>
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formPhone">
@@ -344,11 +389,30 @@ const Contact = ({ brochureName }) => {
                       inputClass="bg-contact form-text border-0 w-100"
                       containerClass="w-100"
                       inputStyle={{ width: "100%" }}
-                      placeholder="Enter phone number with Country Code"
+                      placeholder="Phone Number *"
                       dropdownClass="bg-dark text-white"
                       value={formData.phone}
                       onChange={handlePhoneChange}
                       required
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
+
+              {/* Square Feet Area field - Added */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formSquareFeet">
+                    <Form.Control
+                      type="number"
+                      name="squareFeet"
+                      placeholder="Approximate Square Feet Area *"
+                      className="bg-contact form-text border-0"
+                      value={formData.squareFeet}
+                      onChange={handleChange}
+                      required
+                      min="1"
+                      step="1"
                     />
                   </Form.Group>
                 </Col>
@@ -374,7 +438,9 @@ const Contact = ({ brochureName }) => {
 
               {feedbackMessage && (
                 <Alert 
-                  variant={feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") ? "danger" : "success"} 
+                  variant={
+                    feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") ? "danger" : "success"
+                  } 
                   className="mt-3 text-center"
                 >
                   {feedbackMessage}

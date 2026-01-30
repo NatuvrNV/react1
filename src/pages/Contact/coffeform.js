@@ -1,119 +1,109 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Form, Alert } from "react-bootstrap";
+import { Container, Row, Col, Form, Alert, Button } from "react-bootstrap";
 import Footer from "../../components/Footer";
 import "./Contact.css";
 import PhoneInput from "react-phone-input-2";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
-import emailjs from "@emailjs/browser";
 
-const CoffeeForm = ({ brochureName }) => {
+const LeadForm = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const location = useLocation();
   
-  // Get current page URL for source tracking
-  const pageSource = typeof window !== 'undefined' ? window.location.href : '';
-  
-  const pageBrochureMap = {
-    "/metasurface": "MetaSurface",
-    "/metaparametric": "MetaParametric",
-    "/metaform": "MetaForm",
-    "/metafunction": "MetaFunction",
-    "/ctb": "Coffee Table Book",
-  };
-
-  const detectedBrochure = pageBrochureMap[location.pathname] || brochureName || "Coffee Table Book";
-
+  // Form state
   const [formData, setFormData] = useState({
-    name: "",
+    fullName: "",
+    contact: "",
     email: "",
-    phone: "",
-    message: `The user has requested the ${detectedBrochure} brochure.`,
+    squareFeet: "",
+    remarks: "",
   });
 
+  // UI state
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [feedbackType, setFeedbackType] = useState(""); // "success", "error", "warning"
   const [captchaToken, setCaptchaToken] = useState(null);
+  
+  // Employees state
   const [employees, setEmployees] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [showLeadSuccess, setShowLeadSuccess] = useState(false);
+  const [loadingEmployees, setLoadingEmployees] = useState(false);
+  const [employeesError, setEmployeesError] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handlePhoneChange = (value) => {
-    setFormData({ ...formData, phone: value });
+    setFormData({ ...formData, contact: value });
   };
 
   const handleCaptchaChange = (token) => {
     setCaptchaToken(token);
   };
 
-  useEffect(() => {
-    const inputField = document.querySelector(".form-text input");
-    if (inputField) {
-      if (!formData.phone || formData.phone.length <= 3) {
-        inputField.setAttribute("placeholder", "Enter your mobile number");
-      } else {
-        inputField.setAttribute("placeholder", "");
-      }
-    }
-  }, [formData.phone]);
+  // Function to get callSource based on URL path
+  const getCallSource = () => {
+    const pathToCallSource = {
+      "/build": "BUILD",
+      "/metaform": "METAFORM",
+      "/metafunction": "METAFUNCTION",
+      "/metaparametric": "METAPARAMETRIC",
+      "/metasurface": "METASURFACE",
+      "/contact": "CONTACT",
+      "/partner": "PARTNER"
+    };
+
+    return pathToCallSource[location.pathname] || "CONTACT";
+  };
 
   // Fetch employees on component mount
   useEffect(() => {
+    const fetchEmployees = async () => {
+      setLoadingEmployees(true);
+      setEmployeesError("");
+      
+      try {
+        const response = await fetch('https://backend.cshare.in/api/genericEmployee/genericEmployeeFilter?roles=PRE_SALES&statuses=ACTIVE&page=0&size=1000', {
+          method: 'PUT',
+          headers: {
+            'companyId': '693f9759f956d25cedd37a6f',
+            'apiKey': '918ef419818745ef1f09f705a9642545',
+            'Content-Type': 'application/json'
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch employees');
+        }
+
+        const data = await response.json();
+        if (data.object && data.object.content) {
+          setEmployees(data.object.content);
+          console.log("Employees fetched:", data.object.content.length);
+        } else {
+          setEmployeesError("No employees found");
+        }
+      } catch (err) {
+        console.error("Error fetching employees:", err);
+        setEmployeesError("Failed to load employees. Please refresh the page.");
+      } finally {
+        setLoadingEmployees(false);
+      }
+    };
+
     fetchEmployees();
   }, []);
 
-  const fetchEmployees = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch('https://backend.cshare.in/api/genericEmployee/genericEmployeeFilter?roles=PRE_SALES&statuses=ACTIVE&page=0&size=1000', {
-        method: 'PUT',
-        headers: {
-          'companyId': '693f9759f956d25cedd37a6f',
-          'apiKey': '918ef419818745ef1f09f705a9642545',
-          'Content-Type': 'application/json'
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch employees');
-      }
-
-      const data = await response.json();
-      if (data.object && data.object.content) {
-        setEmployees(data.object.content);
-      }
-    } catch (err) {
-      console.error("Error fetching employees:", err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const openPDF = () => {
-    const brochureMap = {
-      MetaSurface: "/assets/brochure/METASURFACE.pdf",
-      MetaParametric: "/assets/brochure/METAPARAMETRIC.pdf",
-      MetaForm: "/assets/brochure/METAFORM.pdf",
-      MetaFunction: "/assets/brochure/METAFUNCTION.pdf",
-      "Coffee Table Book": "/assets/brochure/ctb.pdf",
-    };
-
-    const filePath = brochureMap[detectedBrochure];
-    if (filePath) {
-      window.open(filePath, "_blank");
-    }
-  };
-
+  // Parse range string like "30-40" to {min: 30, max: 40}
   const parseRange = (rangeString) => {
-    if (!rangeString) return { min: 0, max: 0 };
+    if (!rangeString || rangeString.trim() === "") {
+      return { min: 0, max: 0 };
+    }
     
     const parts = rangeString.split('-').map(part => parseInt(part.trim()));
     if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
@@ -122,18 +112,24 @@ const CoffeeForm = ({ brochureName }) => {
     return { min: 0, max: 0 };
   };
 
-  const findMatchingEmployees = () => {
-    // Use default value of 5000 since square feet is removed
-    const sqftNum = 5000;
+  // Find matching employees based on square feet
+  const findMatchingEmployees = (sqft) => {
+    const sqftNum = parseInt(sqft);
+    if (isNaN(sqftNum)) return [];
+
+    console.log("Looking for employees matching SQFT:", sqftNum);
     
     const matchingEmployees = employees.filter(emp => {
       const range = parseRange(emp.employeeAssignmentRange);
+      console.log(`Employee ${emp.fullName}: range ${range.min}-${range.max}, checking ${sqftNum}`);
       return sqftNum >= range.min && sqftNum <= range.max;
     });
 
+    console.log("Matching employees found:", matchingEmployees.length);
     return matchingEmployees;
   };
 
+  // Prepare lead assignments from matched employees
   const prepareLeadAssignments = (matchedEmployees) => {
     return matchedEmployees.map(emp => ({
       role: "PRE_SALES",
@@ -142,24 +138,26 @@ const CoffeeForm = ({ brochureName }) => {
     }));
   };
 
-  const createLead = async () => {
-    // Find matching employees with default value
-    const matchedEmployees = findMatchingEmployees();
+  const createLead = async (matchedEmployees, sqft) => {
+    // Get callSource value
+    const callSource = getCallSource();
     
-    if (matchedEmployees.length === 0) {
-      console.log("No matching employees found for default SQFT value");
-      return false;
-    }
-
     // Prepare lead assignments
     const leadAssignments = prepareLeadAssignments(matchedEmployees);
 
-    // Prepare final payload with SOURCE URL
+    // Prepare final payload
     const payload = {
-      firstName: formData.name.split(' ')[0] || formData.name,
-      fullName: formData.name,
-      contact: formData.phone,
+      // Dynamic fields from form
+      firstName: formData.fullName.split(' ')[0] || formData.fullName,
+      fullName: formData.fullName,
+      contact: formData.contact,
       email: formData.email,
+      approximateFacadeCladdingSqFt: parseInt(sqft) || 0,
+      remarks: formData.remarks || `User submitted form via ${location.pathname}`,
+      leadAssignments: leadAssignments,
+      callSource: callSource, // Added callSource parameter
+
+      // Static fields (always same)
       address: "Gurugram, Haryana",
       locality: "DLF QE",
       city: "Gurgaon(HR)",
@@ -171,24 +169,16 @@ const CoffeeForm = ({ brochureName }) => {
       customerType: "END_USER",
       engagementTimeline: "IMMEDIATE",
       has3dOrSiteDrawings: true,
-      approximateFacadeCladdingSqFt: 5000, // Default value
-      projectBrief: formData.message,
       productCategory: "COMMERCIAL",
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      // ADD SOURCE URL TO REMARKS
-      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}\n\nSource URL: ${pageSource}\nBrochure Type: ${detectedBrochure}`,
       callRegistration: true,
-      leadAssignments: leadAssignments,
-      // ADD SOURCE AS SEPARATE FIELDS
-      leadSource: "Website",
-      leadSourceUrl: pageSource,
-      brochureType: detectedBrochure
+      projectBrief: "User submitted lead form"
     };
 
     console.log("Creating lead with payload:", payload);
-    console.log("Lead source URL:", pageSource);
+    console.log("callSource value:", callSource);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -205,7 +195,6 @@ const CoffeeForm = ({ brochureName }) => {
       console.log("Lead creation response:", response.status, responseText);
 
       if (response.ok) {
-        setShowLeadSuccess(true);
         return true;
       } else {
         console.error("Failed to create lead:", responseText);
@@ -217,40 +206,16 @@ const CoffeeForm = ({ brochureName }) => {
     }
   };
 
-  const sendEmail = async () => {
-    const emailParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      from_phone: formData.phone,
-      message: formData.message,
-      source_url: pageSource, // ADD SOURCE TO EMAIL
-      brochure_type: detectedBrochure,
-      timestamp: new Date().toISOString(),
-    };
-
-    try {
-      await emailjs.send(
-        "service_hbh6e6a",
-        "template_sp4d06m",
-        emailParams,
-        "aEASMHR8n6Vmgtj3l"
-      );
-      return true;
-    } catch (error) {
-      console.error("Email send error:", error);
-      return false;
-    }
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
     setFeedbackMessage("");
-    setShowLeadSuccess(false);
+    setFeedbackType("");
 
-    // Validate form
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
-      setFeedbackMessage("❌ Name, Email and Phone are required.");
+    // Step 1: Validate form
+    if (!formData.fullName.trim() || !formData.email.trim() || !formData.contact.trim() || !formData.squareFeet.trim()) {
+      setFeedbackMessage("❌ All fields are required.");
+      setFeedbackType("error");
       setIsSending(false);
       return;
     }
@@ -259,76 +224,81 @@ const CoffeeForm = ({ brochureName }) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       setFeedbackMessage("❌ Please enter a valid email address.");
+      setFeedbackType("error");
       setIsSending(false);
       return;
     }
 
-    // Validate phone number (basic validation)
-    if (formData.phone.replace(/\D/g, '').length < 10) {
+    // Validate phone number
+    if (formData.contact.replace(/\D/g, '').length < 10) {
       setFeedbackMessage("❌ Please enter a valid phone number.");
+      setFeedbackType("error");
+      setIsSending(false);
+      return;
+    }
+
+    // Validate square feet
+    const sqftNum = parseInt(formData.squareFeet);
+    if (isNaN(sqftNum) || sqftNum <= 0) {
+      setFeedbackMessage("❌ Please enter a valid square feet area.");
+      setFeedbackType("error");
       setIsSending(false);
       return;
     }
 
     if (!captchaToken) {
       setFeedbackMessage("⚠️ Please verify the reCAPTCHA.");
+      setFeedbackType("warning");
       setIsSending(false);
       return;
     }
 
+    // Step 2: Fetch sqft and match employees
+    const matchedEmployees = findMatchingEmployees(formData.squareFeet);
+    
+    // Step 3: Check if employees matched
+    if (matchedEmployees.length === 0) {
+      setFeedbackMessage("❌ No suitable employee found for this SQFT range. Please try a different value.");
+      setFeedbackType("warning");
+      setIsSending(false);
+      return;
+    }
+
+    console.log("Matched employees:", matchedEmployees);
+    console.log("Lead assignments to be created:", prepareLeadAssignments(matchedEmployees));
+
     try {
-      // Step 1: Open PDF
-      openPDF();
+      // Step 4: Create lead
+      const leadCreated = await createLead(matchedEmployees, formData.squareFeet);
       
-      // Step 2: Create lead in backend with source URL
-      const leadCreated = await createLead();
-      
-      // Step 3: Send email notification with source URL
-      const emailSent = await sendEmail();
-      
-      // Step 4: Show success message
+      // Step 5: Show success message
       if (leadCreated) {
-        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and our team will connect with you shortly.");
-      } else if (emailSent) {
-        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent successfully.");
+        setFeedbackMessage("✅ Thanks for your interest in Metaguise, our team will connect with you shortly.");
+        setFeedbackType("success");
+        
+        // Reset form
+        setFormData({
+          fullName: "",
+          contact: "",
+          email: "",
+          squareFeet: "",
+          remarks: "",
+        });
+        
+        setCaptchaToken(null);
+        
+        // Refresh page after 3 seconds
+        setTimeout(() => {
+          window.location.reload();
+        }, 3000);
       } else {
-        setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
+        setFeedbackMessage("❌ Failed to create lead. Please try again.");
+        setFeedbackType("error");
       }
-
-      // ✅ Google Ads Conversion Tracking Trigger
-      if (typeof window !== "undefined" && window.gtag) {
-        window.gtag("event", "conversion", {
-          send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
-          page_location: pageSource,
-          page_title: `Download ${detectedBrochure} Brochure`,
-          brochure_type: detectedBrochure,
-        });
-      }
-
-      // Also send to Google Analytics if available
-      if (typeof window !== "undefined" && window.dataLayer) {
-        window.dataLayer.push({
-          event: 'brochure_download',
-          brochure_type: detectedBrochure,
-          page_url: pageSource,
-          user_name: formData.name,
-          user_email: formData.email
-        });
-      }
-
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        message: `The user has requested the ${detectedBrochure} brochure.`,
-      });
-
-      setCaptchaToken(null);
-
     } catch (error) {
       console.error("Error in form submission:", error);
       setFeedbackMessage("❌ Something went wrong. Please try again.");
+      setFeedbackType("error");
     } finally {
       setIsSending(false);
     }
@@ -337,154 +307,174 @@ const CoffeeForm = ({ brochureName }) => {
   return (
     <>
       <Helmet>
-        <title>
-          Download {detectedBrochure} | Luxury Metal Facades & Cladding
-        </title>
-        <link
-          rel="canonical"
-          href={`https://metaguise.com/${detectedBrochure.toLowerCase().replace(/\s+/g, '')}`}
-        />
+        <title>Contact Metaguise | Submit Your Project Details</title>
         <meta
           name="description"
-          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
+          content="Submit your project details to get connected with our team for premium metal facade solutions."
         />
-        <meta
-          property="og:title"
-          content={`Download ${detectedBrochure} | Luxury Metal Facades & Cladding`}
-        />
-        <meta
-          property="og:description"
-          content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}
-        />
-        {/* ✅ Google Ads Conversion Tracking */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-16992180594');
-          `}
-        </script>
       </Helmet>
 
-      <Container fluid className="bg-dark text-white contact-container">
-        <Row className="contact-row">
-          <Col
-            md={6}
-            className="contact-left d-flex flex-column justify-content-center gap-4"
-          >
-            <div className="contactus1-text">
-              <p>Thank you for</p>
-              <p>showing interest in</p>
-              <p>{detectedBrochure}!</p>
+      <Container fluid className="bg-dark text-white contact-container py-5">
+        <Row className="justify-content-center">
+          <Col lg={8}>
+            <div className="text-center mb-5">
+              <h1 className="display-5 fw-bold mb-3">Submit Your Project Details</h1>
+              <p className="lead">
+                Fill in your project details and our team will connect with you shortly.
+              </p>
             </div>
-            <div className="lead-contact">
-              <p>Please fill the form to download it.</p>
+
+            {loadingEmployees && (
+              <Alert variant="info" className="text-center">
+                <span className="spinner-border spinner-border-sm me-2"></span>
+                Loading available team members...
+              </Alert>
+            )}
+
+            {employeesError && (
+              <Alert variant="danger" className="text-center">
+                {employeesError}
+              </Alert>
+            )}
+
+            <div className="contact-form-card p-4 p-md-5 rounded-3 shadow-lg">
+              <Form onSubmit={handleSubmit}>
+                {/* Full Name */}
+                <Form.Group className="mb-4">
+                  <Form.Label className="text-white fw-medium">Full Name *</Form.Label>
+                  <Form.Control
+                    type="text"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    className="bg-dark text-white border-secondary form-control-lg"
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    required
+                    disabled={isSending}
+                  />
+                </Form.Group>
+
+                {/* Contact */}
+                <Form.Group className="mb-4">
+                  <Form.Label className="text-white fw-medium">Contact Number *</Form.Label>
+                  <PhoneInput
+                    country={"in"}
+                    value={formData.contact}
+                    onChange={handlePhoneChange}
+                    inputClass="bg-dark text-white border-secondary w-100"
+                    containerClass="w-100"
+                    inputStyle={{
+                      padding: "0.75rem",
+                      fontSize: "1rem",
+                      backgroundColor: "#212529",
+                      color: "white",
+                      borderColor: "#6c757d"
+                    }}
+                    placeholder="Enter your phone number"
+                    required
+                    disabled={isSending}
+                  />
+                </Form.Group>
+
+                {/* Email */}
+                <Form.Group className="mb-4">
+                  <Form.Label className="text-white fw-medium">Email Address *</Form.Label>
+                  <Form.Control
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    className="bg-dark text-white border-secondary form-control-lg"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    disabled={isSending}
+                  />
+                </Form.Group>
+
+                {/* Square Feet */}
+                <Form.Group className="mb-4">
+                  <Form.Label className="text-white fw-medium">Approximate Square Feet *</Form.Label>
+                  <Form.Control
+                    type="number"
+                    name="squareFeet"
+                    placeholder="Enter approximate square feet area"
+                    className="bg-dark text-white border-secondary form-control-lg"
+                    value={formData.squareFeet}
+                    onChange={handleChange}
+                    required
+                    min="1"
+                    disabled={isSending}
+                  />
+                  <Form.Text className="text-muted">
+                    This helps us assign the right team member for your project
+                  </Form.Text>
+                </Form.Group>
+
+                {/* Remarks */}
+                <Form.Group className="mb-4">
+                  <Form.Label className="text-white fw-medium">Remarks (Optional)</Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    rows={3}
+                    name="remarks"
+                    placeholder="Any additional details about your project..."
+                    className="bg-dark text-white border-secondary form-control-lg"
+                    value={formData.remarks}
+                    onChange={handleChange}
+                    disabled={isSending}
+                  />
+                </Form.Group>
+
+                {/* reCAPTCHA */}
+                <div className="mb-4 d-flex justify-content-center">
+                  <ReCAPTCHA
+                    sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
+                    onChange={handleCaptchaChange}
+                    theme="dark"
+                  />
+                </div>
+
+                {/* Submit Button */}
+                <div className="d-grid">
+                  <Button
+                    type="submit"
+                    variant="primary"
+                    size="lg"
+                    className="py-3 fw-bold"
+                    disabled={isSending || loadingEmployees}
+                  >
+                    {isSending ? (
+                      <>
+                        <span className="spinner-border spinner-border-sm me-2"></span>
+                        Processing...
+                      </>
+                    ) : (
+                      "Submit Project Details"
+                    )}
+                  </Button>
+                </div>
+
+                {/* Feedback Message */}
+                {feedbackMessage && (
+                  <Alert 
+                    variant={
+                      feedbackType === "success" ? "success" :
+                      feedbackType === "warning" ? "warning" : "danger"
+                    } 
+                    className="mt-4 text-center"
+                  >
+                    {feedbackMessage}
+                  </Alert>
+                )}
+              </Form>
             </div>
-          </Col>
 
-          <Col
-            md={6}
-            className="contact-right d-flex flex-column justify-content-center"
-          >
-            <Form className="w-100" onSubmit={handleSubmit}>
-              <Row>
-                <Col md={6} className="mb-3 mb-md-4">
-                  <Form.Group controlId="formName">
-                    <Form.Control
-                      type="text"
-                      name="name"
-                      placeholder="Name *"
-                      className="bg-contact form-text border-0"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
-                  </Form.Group>
-                </Col>
-                <Col md={6} className="mb-3 mb-md-4">
-                  <Form.Group controlId="formEmail">
-                    <Form.Control
-                      type="email"
-                      name="email"
-                      placeholder="Email *"
-                      className="bg-contact form-text border-0"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
-
-              {/* Phone number field - full width */}
-              <Row>
-                <Col md={12} className="mb-3 mb-md-4">
-                  <Form.Group controlId="formPhone">
-                    <PhoneInput
-                      enableSearch
-                      inputClass="bg-contact form-text border-0 w-100"
-                      containerClass="w-100"
-                      inputStyle={{ width: "100%" }}
-                      placeholder="Phone Number *"
-                      dropdownClass="bg-dark text-white"
-                      value={formData.phone}
-                      onChange={handlePhoneChange}
-                      required
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
-
-              <Form.Group controlId="formMessage" className="mb-4">
-                <Form.Control
-                  as="textarea"
-                  rows={4}
-                  name="message"
-                  placeholder="Tell us more about your Project (Optional)"
-                  className="bg-contact form-text border-0"
-                  value={formData.message}
-                  onChange={handleChange}
-                />
-              </Form.Group>
-
-              {/* ✅ Google reCAPTCHA */}
-              <div className="mb-3 text-center">
-                <ReCAPTCHA
-                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
-                  onChange={handleCaptchaChange}
-                  theme="dark"
-                />
-              </div>
-
-              <div className="button-wrapper">
-                <button
-                  type="submit"
-                  className="send-button"
-                  disabled={isSending}
-                >
-                  <span>
-                    {isSending
-                      ? "Processing..."
-                      : `Send & View ${detectedBrochure}`}
-                  </span>
-                </button>
-              </div>
-
-              {feedbackMessage && (
-                <Alert 
-                  variant={
-                    feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") || feedbackMessage.includes("Failed") 
-                      ? "danger" 
-                      : "success"
-                  } 
-                  className="mt-3 text-center"
-                >
-                  {feedbackMessage}
-                </Alert>
-              )}
-            </Form>
+            {/* Debug Info (for development) */}
+            <div className="mt-4 text-center text-muted small">
+              <p>Page Path: {location.pathname}</p>
+              <p>callSource: {getCallSource()}</p>
+              <p>Employees Loaded: {employees.length}</p>
+            </div>
           </Col>
         </Row>
       </Container>
@@ -494,4 +484,4 @@ const CoffeeForm = ({ brochureName }) => {
   );
 };
 
-export default CoffeeForm;
+export default LeadForm;

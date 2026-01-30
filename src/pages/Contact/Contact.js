@@ -4,7 +4,6 @@ import { Container, Row, Col, Form, Alert } from "react-bootstrap";
 import Footer from "../../components/Footer";
 import "./Contact.css";
 import { Helmet } from "react-helmet-async";
-import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
@@ -32,6 +31,8 @@ const Contact = () => {
   const [captchaToken, setCaptchaToken] = useState(null);
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [employees, setEmployees] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -57,32 +58,160 @@ const Contact = () => {
     }
   }, [formData.phone]);
 
-  const sendEmail = async () => {
-    // Get the display label for square feet
-    const squareFeetLabel = formData.squareFeet 
-      ? squareFeetOptions.find(opt => opt.value === formData.squareFeet)?.label 
-      : "Not specified";
+  // Fetch employees on component mount
+  useEffect(() => {
+    fetchEmployees();
+  }, []);
 
-    const emailParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      from_phone: formData.phone,
-      square_feet: squareFeetLabel,
-      message: formData.message || "Contact inquiry",
-      project_area: formData.squareFeet, // Add the raw value as well if needed
+  const fetchEmployees = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch('https://backend.cshare.in/api/genericEmployee/genericEmployeeFilter?roles=PRE_SALES&statuses=ACTIVE&page=0&size=1000', {
+        method: 'PUT',
+        headers: {
+          'companyId': '693f9759f956d25cedd37a6f',
+          'apiKey': '918ef419818745ef1f09f705a9642545',
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch employees');
+      }
+
+      const data = await response.json();
+      if (data.object && data.object.content) {
+        setEmployees(data.object.content);
+        console.log(`Fetched ${data.object.content.length} employees`);
+      }
+    } catch (err) {
+      console.error("Error fetching employees:", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const parseRange = (rangeString) => {
+    if (!rangeString) return { min: 0, max: 0 };
+    
+    const parts = rangeString.split('-').map(part => parseInt(part.trim()));
+    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+      return { min: parts[0], max: parts[1] };
+    }
+    return { min: 0, max: 0 };
+  };
+
+  // Convert square feet range to a number for matching
+  const getSqftNumber = (sqftRange) => {
+    if (!sqftRange) return 5000; // Default
+    
+    if (sqftRange === "10000+") return 15000; // For "Over 10,000"
+    
+    const parts = sqftRange.split('-').map(part => parseInt(part.trim()));
+    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+      return Math.floor((parts[0] + parts[1]) / 2); // Use middle value
+    }
+    
+    return 5000; // Default
+  };
+
+  const findMatchingEmployees = (sqftRange) => {
+    const sqftNum = getSqftNumber(sqftRange);
+    console.log(`Looking for employees matching SQFT: ${sqftNum} (from range: ${sqftRange})`);
+    
+    const matchingEmployees = employees.filter(emp => {
+      const range = parseRange(emp.employeeAssignmentRange);
+      const isMatch = sqftNum >= range.min && sqftNum <= range.max;
+      console.log(`Employee ${emp.fullName || emp.id}: range ${range.min}-${range.max}, SQFT ${sqftNum}, Match: ${isMatch}`);
+      return isMatch;
+    });
+
+    console.log(`Found ${matchingEmployees.length} matching employees`);
+    return matchingEmployees;
+  };
+
+  const prepareLeadAssignments = (matchedEmployees) => {
+    return matchedEmployees.map(emp => ({
+      role: "PRE_SALES",
+      employeeId: emp.id,
+      employeeName: emp.fullName || "Unknown Employee"
+    }));
+  };
+
+  // Function to get callSource for contact page
+  const getCallSource = () => {
+    return "CONTACT"; // Contact page always uses CONTACT
+  };
+
+  const createLead = async () => {
+    // Get callSource value
+    const callSource = getCallSource();
+    
+    // Find matching employees based on square feet
+    const matchedEmployees = findMatchingEmployees(formData.squareFeet);
+    
+    // Prepare lead assignments (even if empty array)
+    const leadAssignments = prepareLeadAssignments(matchedEmployees);
+
+    // Get approximate square feet value
+    const approximateSqft = getSqftNumber(formData.squareFeet);
+
+    // Prepare final payload with all parameters
+    const payload = {
+      firstName: formData.name.split(' ')[0] || formData.name,
+      fullName: formData.name,
+      contact: formData.phone,
+      email: formData.email,
+      address: "Gurugram, Haryana",
+      locality: "DLF QE",
+      city: "Gurgaon(HR)",
+      district: "Gurgaon",
+      state: "HARYANA",
+      pincode: "122002",
+      pincodeMappingId: "693f98b3f956d25cedd37dfc",
+      projectType: "RESIDENTIAL",
+      customerType: "END_USER",
+      engagementTimeline: "IMMEDIATE",
+      has3dOrSiteDrawings: true,
+      approximateFacadeCladdingSqFt: approximateSqft,
+      projectBrief: formData.message || "Contact inquiry",
+      productCategory: "COMMERCIAL",
+      productBrand: "Metaguise",
+      productId: "69412167f956d233e1261afc",
+      callStatus: "NEW_LEAD",
+      remarks: `Contact form submission.\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nProject Area: ${formData.squareFeet}\nMessage: ${formData.message || "No message provided"}`,
+      callRegistration: true,
+      leadAssignments: leadAssignments,
+      callSource: callSource // Added callSource parameter
     };
 
+    console.log("Creating lead with payload:", payload);
+    console.log("callSource value:", callSource);
+    console.log("Square Feet Range:", formData.squareFeet);
+    console.log("Approximate SQFT:", approximateSqft);
+
     try {
-      await emailjs.send(
-        "service_hbh6e6a",
-        "template_sp4d06m",
-        emailParams,
-        "aEASMHR8n6Vmgtj3l"
-      );
-      console.log("Email sent successfully via EmailJS");
-      return true;
-    } catch (error) {
-      console.error("Email send error:", error);
+      const response = await fetch('https://backend.cshare.in/api/customer/create', {
+        method: 'POST',
+        headers: {
+          'companyId': '693f9759f956d25cedd37a6f',
+          'apikey': '918ef419818745ef1f09f705a9642545',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const responseText = await response.text();
+      console.log("Lead creation response:", response.status, responseText);
+
+      if (response.ok) {
+        return true;
+      } else {
+        console.error("Failed to create lead:", responseText);
+        return false;
+      }
+    } catch (err) {
+      console.error("Error creating lead:", err);
       return false;
     }
   };
@@ -109,6 +238,13 @@ const Contact = () => {
       return;
     }
 
+    // Validate phone number
+    if (formData.phone.replace(/\D/g, '').length < 10) {
+      setFeedbackMessage("❌ Please enter a valid phone number.");
+      setIsSending(false);
+      return;
+    }
+
     if (!captchaToken) {
       setFeedbackMessage("⚠️ Please complete the CAPTCHA verification.");
       setIsSending(false);
@@ -116,40 +252,41 @@ const Contact = () => {
     }
 
     try {
-      // Send email via EmailJS
-      console.log("Sending email via EmailJS...");
-      const emailSent = await sendEmail();
+      // Create lead in backend
+      console.log("Creating lead via backend API...");
+      const leadCreated = await createLead();
       
-      if (emailSent) {
-        setFeedbackMessage("✅ Thank you for your inquiry! We will get in touch with you soon.");
+      if (leadCreated) {
+        setFeedbackMessage("✅ Thank you for your inquiry! Our team will connect with you shortly.");
         
         // ✅ Google Ads Conversion Tracking Trigger
         if (typeof window !== "undefined" && window.gtag) {
           console.log("Triggering Google Ads conversion tracking");
+          const callSource = getCallSource();
           window.gtag("event", "conversion", {
             send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
+            call_source: callSource,
           });
         }
-      } else {
-        setFeedbackMessage("❌ Failed to send email. Please try again.");
-        setIsSending(false);
-        return;
-      }
 
-      // Reset form
-      console.log("Resetting form...");
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        squareFeet: "",
-        message: "",
-      });
-      setCaptchaToken(null);
+        // Reset form
+        console.log("Resetting form...");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          squareFeet: "",
+          message: "",
+        });
+        setCaptchaToken(null);
+
+      } else {
+        setFeedbackMessage("❌ Failed to submit your inquiry. Please try again.");
+      }
 
     } catch (error) {
       console.error("Error in form submission:", error);
-      setFeedbackMessage("❌ Failed to submit form. Please try again.");
+      setFeedbackMessage("❌ Something went wrong. Please try again.");
     } finally {
       setIsSending(false);
     }
@@ -221,11 +358,12 @@ const Contact = () => {
                     <Form.Control
                       type="text"
                       name="name"
-                      placeholder="Name"
+                      placeholder="Name *"
                       className="bg-contact form-text border-0"
                       value={formData.name}
                       onChange={handleChange}
                       required
+                      disabled={isSending}
                     />
                   </Form.Group>
                 </Col>
@@ -234,11 +372,12 @@ const Contact = () => {
                     <Form.Control
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder="Email *"
                       className="bg-contact form-text border-0"
                       value={formData.email}
                       onChange={handleChange}
                       required
+                      disabled={isSending}
                     />
                   </Form.Group>
                 </Col>
@@ -252,11 +391,12 @@ const Contact = () => {
                       inputClass="bg-contact form-text border-0 w-100"
                       containerClass="w-100"
                       inputStyle={{ width: "100%" }}
-                      placeholder="Enter phone number with Country Code"
+                      placeholder="Phone Number *"
                       dropdownClass="bg-dark text-white"
                       value={formData.phone}
                       onChange={handlePhoneChange}
                       required
+                      disabled={isSending}
                     />
                   </Form.Group>
                 </Col>
@@ -268,6 +408,8 @@ const Contact = () => {
                       value={formData.squareFeet}
                       className="bg-contact form-text border-0"
                       onChange={handleChange}
+                      required
+                      disabled={isSending}
                     >
                       {squareFeetOptions.map((option) => (
                         <option key={option.value} value={option.value}>
@@ -288,6 +430,7 @@ const Contact = () => {
                   className="bg-contact form-text border-0"
                   value={formData.message}
                   onChange={handleChange}
+                  disabled={isSending}
                 />
               </Form.Group>
 
@@ -297,19 +440,24 @@ const Contact = () => {
                   sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
                   onChange={handleCaptchaChange}
                   theme="dark"
+                  disabled={isSending}
                 />
               </div>
 
               <div className="button-wrapper">
-                <button type="submit" className="send-button" disabled={isSending}>
-                  <span>{isSending ? "Sending..." : "Send"}</span>
+                <button 
+                  type="submit" 
+                  className="send-button" 
+                  disabled={isSending}
+                >
+                  <span>{isSending ? "Submitting..." : "Submit"}</span>
                 </button>
               </div>
 
               {feedbackMessage && (
                 <Alert 
                   variant={
-                    feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") || feedbackMessage.includes("Failed") 
+                    feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") 
                       ? "danger" 
                       : "success"
                   } 
