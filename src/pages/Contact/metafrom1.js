@@ -27,12 +27,11 @@ const Contact = ({ brochureName }) => {
     name: "",
     email: "",
     phone: "",
-    squareFeet: "", // Added square feet field
     message: `The user has requested the ${detectedBrochure} brochure.`,
   });
 
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [isSending, setIsSending] = useState(false); // Added loading state
+  const [isSending, setIsSending] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
   const [employees, setEmployees] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -109,41 +108,6 @@ const Contact = ({ brochureName }) => {
     }
   };
 
-  const parseRange = (rangeString) => {
-    if (!rangeString) return { min: 0, max: 0 };
-    
-    const parts = rangeString.split('-').map(part => parseInt(part.trim()));
-    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
-      return { min: parts[0], max: parts[1] };
-    }
-    return { min: 0, max: 0 };
-  };
-
-  const findMatchingEmployees = (sqft) => {
-    const sqftNum = parseInt(sqft);
-    if (isNaN(sqftNum)) return [];
-
-    console.log(`Looking for employees matching SQFT: ${sqftNum}`);
-    
-    const matchingEmployees = employees.filter(emp => {
-      const range = parseRange(emp.employeeAssignmentRange);
-      const isMatch = sqftNum >= range.min && sqftNum <= range.max;
-      console.log(`Employee ${emp.fullName || emp.id}: range ${range.min}-${range.max}, SQFT ${sqftNum}, Match: ${isMatch}`);
-      return isMatch;
-    });
-
-    console.log(`Found ${matchingEmployees.length} matching employees`);
-    return matchingEmployees;
-  };
-
-  const prepareLeadAssignments = (matchedEmployees) => {
-    return matchedEmployees.map(emp => ({
-      role: "PRE_SALES",
-      employeeId: emp.id,
-      employeeName: emp.fullName || "Unknown Employee"
-    }));
-  };
-
   // Function to get callSource based on URL path
   const getCallSource = () => {
     const pathToCallSource = {
@@ -164,13 +128,10 @@ const Contact = ({ brochureName }) => {
     // Get callSource value
     const callSource = getCallSource();
     
-    // Find matching employees based on square feet
-    const matchedEmployees = findMatchingEmployees(formData.squareFeet);
-    
-    // Prepare lead assignments (even if empty array)
-    const leadAssignments = prepareLeadAssignments(matchedEmployees);
+    // Prepare lead assignments (empty array since we don't have square feet to match)
+    const leadAssignments = [];
 
-    // Prepare final payload with callSource and square feet
+    // Prepare final payload with callSource
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -186,22 +147,21 @@ const Contact = ({ brochureName }) => {
       projectType: "null",
       customerType: "null",
       engagementTimeline: "null",
-      has3dOrSiteDrawings: true,
-      approximateFacadeCladdingSqFt: parseInt(formData.squareFeet) || 0,
+      has3dOrSiteDrawings: false,
+      approximateFacadeCladdingSqFt: 0,
       projectBrief: formData.message,
       productCategory: "null",
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}\n\nSquare Feet: ${formData.squareFeet}\ncallSource: ${callSource}`,
+      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}\ncallSource: ${callSource}`,
       callRegistration: true,
       leadAssignments: leadAssignments,
-      callSource: "OTHER" // Added callSource parameter
+      callSource: "OTHER"
     };
 
     console.log("Creating lead with payload:", payload);
     console.log("callSource value:", callSource);
-    console.log("Square Feet:", formData.squareFeet);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -232,12 +192,12 @@ const Contact = ({ brochureName }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSending(true); // Start loading
+    setIsSending(true);
     setFeedbackMessage("");
     setShowLeadSuccess(false);
 
-    // Validate all required fields including square feet
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.squareFeet.trim()) {
+    // Validate all required fields
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
       setFeedbackMessage("❌ All fields are required.");
       setIsSending(false);
       return;
@@ -247,14 +207,6 @@ const Contact = ({ brochureName }) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       setFeedbackMessage("❌ Please enter a valid email address.");
-      setIsSending(false);
-      return;
-    }
-
-    // Validate square feet
-    const sqftNum = parseInt(formData.squareFeet);
-    if (isNaN(sqftNum) || sqftNum <= 0) {
-      setFeedbackMessage("❌ Please enter a valid square feet area (minimum 1).");
       setIsSending(false);
       return;
     }
@@ -291,7 +243,6 @@ const Contact = ({ brochureName }) => {
         name: "",
         email: "",
         phone: "",
-        squareFeet: "",
         message: `The user has requested the ${detectedBrochure} brochure.`,
       });
 
@@ -301,7 +252,7 @@ const Contact = ({ brochureName }) => {
       console.error("Error in form submission:", error);
       setFeedbackMessage("❌ Something went wrong. Please try again.");
     } finally {
-      setIsSending(false); // Stop loading
+      setIsSending(false);
     }
   };
 
@@ -400,8 +351,6 @@ const Contact = ({ brochureName }) => {
                   </Form.Group>
                 </Col>
               </Row>
-
-            
 
               {/* reCAPTCHA */}
               <div className="mb-3 d-flex justify-content-center">
