@@ -7,6 +7,9 @@ import { Helmet } from "react-helmet-async";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from '@emailjs/browser';
 
+// Initialize EmailJS with your public key
+emailjs.init("aEASMHR8n6Vmgtj3l"); // Using your actual public key
+
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -46,24 +49,28 @@ const Contact = () => {
     }
   }, [formData.phone]);
 
-  // Function to send email using EmailJS
+  // Function to send email using EmailJS - UPDATED with from_phone
   const sendEmail = async () => {
-    // Initialize EmailJS (use your public key)
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
-
     const templateParams = {
+      to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
-      phone: formData.phone,
-      message: formData.message,
-      to_name: "Metaguise Team",
-      reply_to: formData.email,
+      from_phone: formData.phone, // ADDED: This is what your template uses
+      phone: formData.phone, // Keep for backward compatibility
+      phone_number: formData.phone, // Keep for backward compatibility
+      mobile: formData.phone, // Keep for backward compatibility
+      message: formData.message || "No message provided",
+      timestamp: new Date().toLocaleString(),
+      subject: `New Contact Form Inquiry from ${formData.name}`,
+      reply_to: formData.email
     };
+
+    console.log("Sending email with params:", templateParams);
 
     try {
       const response = await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "service_hbh6e6a", // Using your service ID
+        "template_sp4d06m", // Using your template ID
         templateParams
       );
       console.log("Email sent successfully:", response);
@@ -101,7 +108,7 @@ const Contact = () => {
       remarks: `Contact form submission.\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message || "No message provided"}`,
       callRegistration: true,
       leadAssignments: [], // Empty array
-      callSource: "CONTACT" // Hardcoded as CONTACT
+      callSource: "CONTACT" // Hardcoded as CONTACT for contact page
     };
 
     console.log("Creating lead with payload:", payload);
