@@ -15,7 +15,7 @@ const Contact = () => {
     city: "",
     phone: "",
     role: "",
-    projectType: [],
+    projectType: "", // Single selection - string instead of array
     timeline: "",
     otherProject: "",
     otherTimeline: "",
@@ -27,17 +27,18 @@ const Contact = () => {
   const [isSending, setIsSending] = useState(false);
   const [message, setMessage] = useState("");
   const [employees, setEmployees] = useState([]);
+  const [errors, setErrors] = useState({});
 
   // Handle input change
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    if (type === "checkbox") {
-      setFormData((prev) =>
-        checked
-          ? { ...prev, projectType: [...prev.projectType, value] }
-          : { ...prev, projectType: prev.projectType.filter((item) => item !== value) }
-      );
-    } else if (type === "radio") {
+    const { name, value, type } = e.target;
+    
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({...prev, [name]: ""}));
+    }
+    
+    if (type === "radio") {
       setFormData((prev) => ({ ...prev, [name]: value }));
     } else {
       setFormData((prev) => ({ ...prev, [name]: value }));
@@ -47,6 +48,9 @@ const Contact = () => {
   // Handle phone input
   const handlePhoneChange = (value) => {
     setFormData((prev) => ({ ...prev, phone: value }));
+    if (errors.phone) {
+      setErrors(prev => ({...prev, phone: ""}));
+    }
   };
 
   // Fetch employees on component mount
@@ -130,7 +134,23 @@ const Contact = () => {
 
   // Determine callSource - For build page
   const getCallSource = () => {
-    return "BUILD"; // Build page uses BUILD as per requirements
+    return "BUILD";
+  };
+
+  // Validate form
+  const validateForm = () => {
+    const newErrors = {};
+    
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.city.trim()) newErrors.city = "City is required";
+    if (!formData.phone.trim() || formData.phone.replace(/\D/g, '').length < 10) newErrors.phone = "Valid phone number is required";
+    if (!formData.role) newErrors.role = "Please select your role";
+    if (!formData.projectType && !formData.otherProject) newErrors.projectType = "Please select a project type";
+    if (!formData.squareFeet) newErrors.squareFeet = "Square feet area is required";
+    if (!formData.timeline && !formData.otherTimeline) newErrors.timeline = "Timeline is required";
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   // Create lead in backend
@@ -144,54 +164,66 @@ const Contact = () => {
     const leadAssignments = prepareLeadAssignments(matchedEmployees);
 
     // Map form values to backend fields
-    const projectType = formData.projectType.join(", ") + (formData.otherProject ? `, ${formData.otherProject}` : "");
+    const projectType = formData.projectType + (formData.otherProject ? `, ${formData.otherProject}` : "");
     const timeline = formData.timeline + (formData.otherTimeline ? `, ${formData.otherTimeline}` : "");
     
     // Map 3D drawings to boolean
     const has3dOrSiteDrawings = formData.has3DDrawings === "Yes";
+
+    // Map role to backend format
+    const getCustomerType = () => {
+      switch(formData.role) {
+        case "Architect": return "ARCHITECT";
+        case "Real Estate Developer": return "DEVELOPER";
+        case "End User": return "END_USER";
+        default: return "";
+      }
+    };
+
+    // Map project type to backend format
+    const getProjectType = () => {
+      switch(formData.projectType) {
+        case "Residential": return "RESIDENTIAL";
+        case "Commercial": return "COMMERCIAL";
+        case "Retail": return "RETAIL";
+        case "Hospitality": return "HOSPITALITY";
+        default: return "COMMERCIAL"; // Default
+      }
+    };
 
     // Prepare payload for backend API
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
       contact: formData.phone,
-      email: "", // Build form doesn't have email, so empty
+      email: "",
       address: formData.city ? `${formData.city}, India` : "India",
       locality: formData.city || "",
       city: formData.city || "",
       district: formData.city || "",
       state: formData.city ? "INDIA" : "",
-      pincode: "000000", // Default since not collected
-      pincodeMappingId: "693f98b3f956d25cedd37dfc", // Default mapping ID
-      projectType:formData.projectType.join(", "), 
-      customerType: formData.role === "End User" ? "END_USER" : formData.role === "Architect" ? "ARCHITECT" : "DEVELOPER",
+      pincode: "000000",
+      pincodeMappingId: "693f98b3f956d25cedd37dfc",
+      projectType: getProjectType(),
+      customerType: getCustomerType(),
       engagementTimeline: formData.timeline === "Immediate" ? "IMMEDIATE" : formData.timeline === "Next Month" ? "NEXT_MONTH" : "FUTURE",
       has3dOrSiteDrawings: has3dOrSiteDrawings,
       approximateFacadeCladdingSqFt: sqftNum,
-      projectBrief: formData.projectBrief || `Project type: ${projectType}. Timeline: ${timeline}. Role: ${formData.role}.`,
+      projectBrief: formData.projectBrief || `Project type: ${projectType}. Timeline: ${timeline}. Role: ${formData.role}. Square feet: ${sqftSelection}.`,
       productCategory: "COMMERCIAL",
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      remarks: `BUILD FORM SUBMISSION
-      ======================
-      Name: ${formData.name}
-      Phone: ${formData.phone}
-      City: ${formData.city}
-      Role: ${formData.role}
-      Project Type: ${projectType}
-      Timeline: ${timeline}
-      Square Feet: ${sqftSelection}
-      3D Drawings: ${formData.has3DDrawings}
-      Project Brief: ${formData.projectBrief}
-      callSource: ${callSource}`,
+      remarks: formData.projectBrief || "",
       callRegistration: true,
       leadAssignments: leadAssignments,
-      callSource: "BUILD"// Added callSource parameter
+      callSource: "BUILD"
     };
 
     console.log("Creating lead with payload:", payload);
-    console.log("callSource value:", callSource);
+    console.log("Selected project type:", formData.projectType);
+    console.log("Mapped projectType:", getProjectType());
+    console.log("Mapped customerType:", getCustomerType());
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -217,23 +249,15 @@ const Contact = () => {
   // Submit form
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Validate form
+    if (!validateForm()) {
+      setMessage("❌ Please fill all required fields correctly.");
+      return;
+    }
+
     setIsSending(true);
     setMessage("");
-
-    // REQUIRED FIELD VALIDATION
-    if (!formData.name.trim() || !formData.city.trim() || !formData.phone.trim() || 
-        !formData.squareFeet || formData.projectType.length === 0 || !formData.timeline) {
-      setMessage("❌ Please fill all required fields.");
-      setIsSending(false);
-      return;
-    }
-
-    // Validate phone number
-    if (formData.phone.replace(/\D/g, '').length < 10) {
-      setMessage("❌ Please enter a valid phone number.");
-      setIsSending(false);
-      return;
-    }
 
     try {
       // Send to Make.com webhook (original functionality)
@@ -242,7 +266,7 @@ const Contact = () => {
         city: formData.city,
         phone: formData.phone,
         role: formData.role,
-        projectType: formData.projectType.join(", "),
+        projectType: formData.projectType + (formData.otherProject ? `, ${formData.otherProject}` : ""),
         otherProject: formData.otherProject,
         timeline: formData.timeline,
         otherTimeline: formData.otherTimeline,
@@ -270,7 +294,7 @@ const Contact = () => {
           city: "",
           phone: "",
           role: "",
-          projectType: [],
+          projectType: "",
           timeline: "",
           otherProject: "",
           otherTimeline: "",
@@ -278,6 +302,7 @@ const Contact = () => {
           has3DDrawings: "",
           projectBrief: "",
         });
+        setErrors({});
       } else if (webhookResponse.ok) {
         setMessage("✅ Form submitted! (Backend sync may be delayed)");
       } else if (backendResponse) {
@@ -311,7 +336,7 @@ const Contact = () => {
 
           <Col md={6} className="contact-right d-flex flex-column justify-content-center">
             <Form className="w-100" onSubmit={handleSubmit}>
-              {/* Name + Phone - REQUIRED */}
+              {/* Name - REQUIRED */}
               <Row>
                 <Col md={6}>
                   <Form.Group className="mb-3">
@@ -323,12 +348,16 @@ const Contact = () => {
                       className="bg-contact form-text border-0"
                       value={formData.name}
                       onChange={handleChange}
-                      required
+                      isInvalid={!!errors.name}
                       disabled={isSending}
                     />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.name}
+                    </Form.Control.Feedback>
                   </Form.Group>
                 </Col>
 
+                {/* Phone - REQUIRED */}
                 <Col md={6}>
                   <Form.Group className="mb-3">
                     <Form.Label>Phone Number *</Form.Label>
@@ -336,11 +365,15 @@ const Contact = () => {
                       country={"in"}
                       value={formData.phone}
                       onChange={handlePhoneChange}
-                      inputClass="bg-contact form-text border-0 w-100"
+                      inputClass={`bg-contact form-text border-0 w-100 ${errors.phone ? 'is-invalid' : ''}`}
                       placeholder="Enter phone number"
-                      required
                       disabled={isSending}
                     />
+                    {errors.phone && (
+                      <div className="invalid-feedback d-block">
+                        {errors.phone}
+                      </div>
+                    )}
                   </Form.Group>
                 </Col>
               </Row>
@@ -357,27 +390,36 @@ const Contact = () => {
                       value={formData.city}
                       className="bg-contact form-text border-0"
                       onChange={handleChange}
-                      required
+                      isInvalid={!!errors.city}
                       disabled={isSending}
                     />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.city}
+                    </Form.Control.Feedback>
                   </Form.Group>
                 </Col>
 
+                {/* Role - REQUIRED */}
                 <Col md={6}>
                   <Form.Group>
-                    <Form.Label>Are You</Form.Label>
+                    <Form.Label>Are You *</Form.Label>
                     <Form.Select
                       name="role"
                       value={formData.role}
                       className="bg-contact form-text border-0"
                       onChange={handleChange}
+                      isInvalid={!!errors.role}
                       disabled={isSending}
+                      required
                     >
-                      <option value="">Select...</option>
+                      <option value="">Select your role *</option>
                       <option value="Architect">An Architect</option>
                       <option value="Real Estate Developer">A Real Estate Developer</option>
                       <option value="End User">An End User</option>
                     </Form.Select>
+                    <Form.Control.Feedback type="invalid">
+                      {errors.role}
+                    </Form.Control.Feedback>
                   </Form.Group>
                 </Col>
               </Row>
@@ -392,8 +434,9 @@ const Contact = () => {
                       value={formData.squareFeet}
                       className="bg-contact form-text border-0"
                       onChange={handleChange}
-                      required
+                      isInvalid={!!errors.squareFeet}
                       disabled={isSending}
+                      required
                     >
                       <option value="">Select area range *</option>
                       <option value="Under 1000 sq ft">Under 1,000 sq ft</option>
@@ -401,24 +444,30 @@ const Contact = () => {
                       <option value="3001-10000 sq ft">3,001 - 10,000 sq ft</option>
                       <option value="10001+ sq ft">10,001+ sq ft</option>
                     </Form.Select>
+                    <Form.Control.Feedback type="invalid">
+                      {errors.squareFeet}
+                    </Form.Control.Feedback>
                   </Form.Group>
                 </Col>
               </Row>
 
-              {/* Project Type - REQUIRED */}
+              {/* Project Type - REQUIRED - Now as radio buttons for single selection */}
               <Form.Group className="mt-3 form-project">
                 <Form.Label>Type of Project *</Form.Label>
-                <div className="d-md-flex my-3 project-fields">
+                <div className="d-md-flex flex-wrap gap-3 my-3 project-fields">
                   {["Residential", "Commercial", "Retail", "Hospitality"].map((type) => (
                     <Form.Check
                       key={type}
-                      type="checkbox"
+                      type="radio"
+                      name="projectType"
+                      id={`project-${type}`}
                       label={type}
                       value={type}
                       onChange={handleChange}
-                      checked={formData.projectType.includes(type)}
-                      required={formData.projectType.length === 0}
+                      checked={formData.projectType === type}
                       disabled={isSending}
+                      inline
+                      className="me-4"
                     />
                   ))}
                 </div>
@@ -431,8 +480,10 @@ const Contact = () => {
                   onChange={handleChange}
                   disabled={isSending}
                 />
-                {formData.projectType.length === 0 && !formData.otherProject && (
-                  <div className="text-danger small mt-1">Please select at least one project type</div>
+                {errors.projectType && !formData.otherProject && (
+                  <div className="text-danger small mt-1">
+                    {errors.projectType}
+                  </div>
                 )}
               </Form.Group>
 
@@ -444,8 +495,9 @@ const Contact = () => {
                   value={formData.timeline}
                   className="bg-contact form-text border-0"
                   onChange={handleChange}
-                  required
+                  isInvalid={!!errors.timeline && !formData.otherTimeline}
                   disabled={isSending}
+                  required
                 >
                   <option value="">Select timeline *</option>
                   <option value="Immediate">Immediate</option>
@@ -454,6 +506,11 @@ const Contact = () => {
                     Would like to engage on design though civil not ready yet
                   </option>
                 </Form.Select>
+                {errors.timeline && !formData.otherTimeline && (
+                  <div className="invalid-feedback d-block">
+                    {errors.timeline}
+                  </div>
+                )}
                 <Form.Control
                   type="text"
                   placeholder="Other timeline (if not listed above)"
@@ -478,6 +535,7 @@ const Contact = () => {
                     checked={formData.has3DDrawings === "Yes"}
                     onChange={handleChange}
                     disabled={isSending}
+                    inline
                   />
                   <Form.Check
                     type="radio"
@@ -488,6 +546,7 @@ const Contact = () => {
                     checked={formData.has3DDrawings === "No"}
                     onChange={handleChange}
                     disabled={isSending}
+                    inline
                   />
                 </div>
               </Form.Group>
