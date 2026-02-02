@@ -163,7 +163,7 @@ const Contact = () => {
       state: formData.city ? "INDIA" : "",
       pincode: "000000", // Default since not collected
       pincodeMappingId: "693f98b3f956d25cedd37dfc", // Default mapping ID
-      projectType: "RESIDENTIAL", // Default to residential
+      projectType:formData.projectType.join(", "), 
       customerType: formData.role === "End User" ? "END_USER" : formData.role === "Architect" ? "ARCHITECT" : "DEVELOPER",
       engagementTimeline: formData.timeline === "Immediate" ? "IMMEDIATE" : formData.timeline === "Next Month" ? "NEXT_MONTH" : "FUTURE",
       has3dOrSiteDrawings: has3dOrSiteDrawings,
@@ -187,7 +187,7 @@ const Contact = () => {
       callSource: ${callSource}`,
       callRegistration: true,
       leadAssignments: leadAssignments,
-      callSource: callSource // Added callSource parameter
+      callSource: "BUILD"// Added callSource parameter
     };
 
     console.log("Creating lead with payload:", payload);

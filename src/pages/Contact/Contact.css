@@ -26,6 +26,12 @@
   display: none;
 }
 
+.alert{
+  background: transparent;
+    border: none;
+    color: #fff;
+}
+
 /* Contact Text Styles */
 .contactus-text p {
   font-size: clamp(36px, 6vw, 84px);
