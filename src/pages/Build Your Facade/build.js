@@ -170,13 +170,13 @@ const Contact = () => {
     // Map 3D drawings to boolean
     const has3dOrSiteDrawings = formData.has3DDrawings === "Yes";
 
-    // Map role to backend format
+    // Map role to backend format - Using exact enum values from backend
     const getCustomerType = () => {
       switch(formData.role) {
         case "Architect": return "ARCHITECT";
-        case "Real Estate Developer": return "DEVELOPER";
+        case "Real Estate Developer": return "REAL_ESTATE_DEVELOPER"; // Changed from DEVELOPER to REAL_ESTATE_DEVELOPER
         case "End User": return "END_USER";
-        default: return "";
+        default: return "END_USER"; // Default to END_USER if nothing selected
       }
     };
 
@@ -205,7 +205,7 @@ const Contact = () => {
       pincode: "000000",
       pincodeMappingId: "693f98b3f956d25cedd37dfc",
       projectType: getProjectType(),
-      customerType: getCustomerType(),
+      customerType: getCustomerType(), // Using exact enum values
       engagementTimeline: formData.timeline === "Immediate" ? "IMMEDIATE" : formData.timeline === "Next Month" ? "NEXT_MONTH" : "FUTURE",
       has3dOrSiteDrawings: has3dOrSiteDrawings,
       approximateFacadeCladdingSqFt: sqftNum,
@@ -221,9 +221,9 @@ const Contact = () => {
     };
 
     console.log("Creating lead with payload:", payload);
-    console.log("Selected project type:", formData.projectType);
-    console.log("Mapped projectType:", getProjectType());
+    console.log("Selected role:", formData.role);
     console.log("Mapped customerType:", getCustomerType());
+    console.log("Mapped projectType:", getProjectType());
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -451,7 +451,7 @@ const Contact = () => {
                 </Col>
               </Row>
 
-              {/* Project Type - REQUIRED - Now as radio buttons for single selection */}
+              {/* Project Type - REQUIRED - Radio buttons for single selection */}
               <Form.Group className="mt-3 form-project">
                 <Form.Label>Type of Project *</Form.Label>
                 <div className="d-md-flex flex-wrap gap-3 my-3 project-fields">
