@@ -5,34 +5,23 @@ import Footer from "../../components/Footer";
 import "./Contact.css";
 import { Helmet } from "react-helmet-async";
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Square feet options for dropdown
-  const squareFeetOptions = [
-    { value: "", label: "Select Area Range" },
-    { value: "0-1000", label: "Under 1,000 Sq ft" },
-    { value: "1000-3000", label: "1,000-3,000 Sq ft" },
-    { value: "3000-10000", label: "3,000-10,000 Sq ft" },
-    { value: "10000+", label: "Over 10,000 Sq ft" },
-  ];
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    squareFeet: "",
     message: "",
   });
 
   const [captchaToken, setCaptchaToken] = useState(null);
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [employees, setEmployees] = useState([]);
-  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -46,7 +35,6 @@ const Contact = () => {
     setCaptchaToken(token);
   };
 
-  // Update phone input placeholder
   useEffect(() => {
     const inputField = document.querySelector(".form-text input");
     if (inputField) {
@@ -58,137 +46,65 @@ const Contact = () => {
     }
   }, [formData.phone]);
 
-  // Fetch employees on component mount
-  useEffect(() => {
-    fetchEmployees();
-  }, []);
+  // Function to send email using EmailJS
+  const sendEmail = async () => {
+    // Initialize EmailJS (use your public key)
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
 
-  const fetchEmployees = async () => {
-    setLoading(true);
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      to_name: "Metaguise Team",
+      reply_to: formData.email,
+    };
+
     try {
-      const response = await fetch('https://backend.cshare.in/api/genericEmployee/genericEmployeeFilter?roles=PRE_SALES&statuses=ACTIVE&page=0&size=1000', {
-        method: 'PUT',
-        headers: {
-          'companyId': '693f9759f956d25cedd37a6f',
-          'apiKey': '918ef419818745ef1f09f705a9642545',
-          'Content-Type': 'application/json'
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch employees');
-      }
-
-      const data = await response.json();
-      if (data.object && data.object.content) {
-        setEmployees(data.object.content);
-        console.log(`Fetched ${data.object.content.length} employees`);
-      }
-    } catch (err) {
-      console.error("Error fetching employees:", err);
-    } finally {
-      setLoading(false);
+      const response = await emailjs.send(
+        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
+        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        templateParams
+      );
+      console.log("Email sent successfully:", response);
+      return true;
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      return false;
     }
-  };
-
-  const parseRange = (rangeString) => {
-    if (!rangeString) return { min: 0, max: 0 };
-    
-    const parts = rangeString.split('-').map(part => parseInt(part.trim()));
-    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
-      return { min: parts[0], max: parts[1] };
-    }
-    return { min: 0, max: 0 };
-  };
-
-  // Convert square feet range to a number for matching
-  const getSqftNumber = (sqftRange) => {
-    if (!sqftRange) return 5000; // Default
-    
-    if (sqftRange === "10000+") return 15000; // For "Over 10,000"
-    
-    const parts = sqftRange.split('-').map(part => parseInt(part.trim()));
-    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
-      return Math.floor((parts[0] + parts[1]) / 2); // Use middle value
-    }
-    
-    return 5000; // Default
-  };
-
-  const findMatchingEmployees = (sqftRange) => {
-    const sqftNum = getSqftNumber(sqftRange);
-    console.log(`Looking for employees matching SQFT: ${sqftNum} (from range: ${sqftRange})`);
-    
-    const matchingEmployees = employees.filter(emp => {
-      const range = parseRange(emp.employeeAssignmentRange);
-      const isMatch = sqftNum >= range.min && sqftNum <= range.max;
-      console.log(`Employee ${emp.fullName || emp.id}: range ${range.min}-${range.max}, SQFT ${sqftNum}, Match: ${isMatch}`);
-      return isMatch;
-    });
-
-    console.log(`Found ${matchingEmployees.length} matching employees`);
-    return matchingEmployees;
-  };
-
-  const prepareLeadAssignments = (matchedEmployees) => {
-    return matchedEmployees.map(emp => ({
-      role: "PRE_SALES",
-      employeeId: emp.id,
-      employeeName: emp.fullName || "Unknown Employee"
-    }));
-  };
-
-  // Function to get callSource for contact page
-  const getCallSource = () => {
-    return "CONTACT"; // Contact page always uses CONTACT
   };
 
   const createLead = async () => {
-    // Get callSource value
-    const callSource = getCallSource();
-    
-    // Find matching employees based on square feet
-    const matchedEmployees = findMatchingEmployees(formData.squareFeet);
-    
-    // Prepare lead assignments (even if empty array)
-    const leadAssignments = prepareLeadAssignments(matchedEmployees);
-
-    // Get approximate square feet value
-    const approximateSqft = getSqftNumber(formData.squareFeet);
-
-    // Prepare final payload with all parameters
+    // Prepare final payload - all fields null except name, email, phone, message
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
       contact: formData.phone,
       email: formData.email,
-      address: "Gurugram, Haryana",
-      locality: "DLF QE",
-      city: "Gurgaon(HR)",
-      district: "Gurgaon",
-      state: "HARYANA",
-      pincode: "122002",
+      address: "null",
+      locality: "null",
+      city: "null",
+      district: "null",
+      state: "null",
+      pincode: "000000",
       pincodeMappingId: "693f98b3f956d25cedd37dfc",
-      projectType: "RESIDENTIAL",
-      customerType: "END_USER",
-      engagementTimeline: "IMMEDIATE",
-      has3dOrSiteDrawings: true,
-      approximateFacadeCladdingSqFt: approximateSqft,
+      projectType: "null",
+      customerType: "null",
+      engagementTimeline: "null",
+      has3dOrSiteDrawings: false,
+      approximateFacadeCladdingSqFt: 0,
       projectBrief: formData.message || "Contact inquiry",
-      productCategory: "COMMERCIAL",
+      productCategory: "null",
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      remarks: `Contact form submission.\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nProject Area: ${formData.squareFeet}\nMessage: ${formData.message || "No message provided"}`,
+      remarks: `Contact form submission.\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message || "No message provided"}`,
       callRegistration: true,
-      leadAssignments: leadAssignments,
-      callSource: callSource // Added callSource parameter
+      leadAssignments: [], // Empty array
+      callSource: "CONTACT" // Hardcoded as CONTACT
     };
 
     console.log("Creating lead with payload:", payload);
-    console.log("callSource value:", callSource);
-    console.log("Square Feet Range:", formData.squareFeet);
-    console.log("Approximate SQFT:", approximateSqft);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -252,20 +168,23 @@ const Contact = () => {
     }
 
     try {
-      // Create lead in backend
+      // Step 1: Create lead in backend
       console.log("Creating lead via backend API...");
       const leadCreated = await createLead();
       
-      if (leadCreated) {
+      // Step 2: Send email via EmailJS
+      console.log("Sending email via EmailJS...");
+      const emailSent = await sendEmail();
+      
+      if (leadCreated && emailSent) {
         setFeedbackMessage("✅ Thank you for your inquiry! Our team will connect with you shortly.");
         
         // ✅ Google Ads Conversion Tracking Trigger
         if (typeof window !== "undefined" && window.gtag) {
           console.log("Triggering Google Ads conversion tracking");
-          const callSource = getCallSource();
           window.gtag("event", "conversion", {
             send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
-            call_source: callSource,
+            call_source: "CONTACT",
           });
         }
 
@@ -275,11 +194,21 @@ const Contact = () => {
           name: "",
           email: "",
           phone: "",
-          squareFeet: "",
           message: "",
         });
         setCaptchaToken(null);
 
+      } else if (leadCreated && !emailSent) {
+        setFeedbackMessage("✅ Thank you for your inquiry! Lead created but email notification failed. Our team will still connect with you.");
+        
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+        setCaptchaToken(null);
       } else {
         setFeedbackMessage("❌ Failed to submit your inquiry. Please try again.");
       }
@@ -384,7 +313,7 @@ const Contact = () => {
               </Row>
 
               <Row>
-                <Col md={6} className="mb-3 mb-md-4">
+                <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formPhone">
                     <PhoneInput
                       enableSearch
@@ -400,7 +329,6 @@ const Contact = () => {
                     />
                   </Form.Group>
                 </Col>
-              
               </Row>
 
               <Form.Group controlId="formMessage" className="mb-4">

@@ -6,6 +6,10 @@ import PhoneInput from "react-phone-input-2";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from '@emailjs/browser';
+
+// Initialize EmailJS with your public key
+emailjs.init("aEASMHR8n6Vmgtj3l");
 
 const Contact = ({ brochureName }) => {
   useEffect(() => {
@@ -79,13 +83,44 @@ const Contact = ({ brochureName }) => {
       "/metaparametric": "METAPARAMETRIC",
       "/metaform": "METAFORM",
       "/metafunction": "METAFUNCTION",
-      "/ctb": "CONTACT",
+      "/ctb": "COFFEE TABLE BOOK",
       "/contact": "CONTACT",
       "/partner": "PARTNER",
       "/build": "BUILD"
     };
 
-    return pathToCallSource[location.pathname] || "CONTACT";
+    return pathToCallSource[location.pathname] || "COFFEE TABLE BOOK";
+  };
+
+  // Function to send email using EmailJS
+  const sendEmail = async () => {
+    const templateParams = {
+      to_name: "Metaguise Team",
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      brochure_name: detectedBrochure,
+      message: formData.message,
+      timestamp: new Date().toLocaleString(),
+      subject: `New ${detectedBrochure} Brochure Download Request`,
+      reply_to: formData.email
+    };
+
+    console.log("Sending email with params:", templateParams);
+
+    try {
+      const response = await emailjs.send(
+        "service_hbh6e6a",
+        "template_sp4d06m",
+        templateParams
+      );
+      
+      console.log("EmailJS response success:", response);
+      return { success: true, message: "Email sent successfully" };
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      return { success: false, message: "Failed to send email notification" };
+    }
   };
 
   const createLead = async () => {
@@ -118,7 +153,7 @@ const Contact = ({ brochureName }) => {
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
       leadAssignments: [], // Empty array
-      callSource: "COFFEE TABLE BOOK" // Hardcoded to OTHER
+      callSource: "COFFEE TABLE BOOK" // Hardcoded to COFFEE TABLE BOOK
     };
 
     console.log("Creating lead with payload:", payload);
@@ -138,14 +173,14 @@ const Contact = ({ brochureName }) => {
       console.log("Lead creation response:", response.status, responseText);
 
       if (response.ok) {
-        return true;
+        return { success: true, message: "Lead created successfully" };
       } else {
         console.error("Failed to create lead:", responseText);
-        return false;
+        return { success: false, message: "Failed to create lead in backend" };
       }
     } catch (err) {
       console.error("Error creating lead:", err);
-      return false;
+      return { success: false, message: "Network error creating lead" };
     }
   };
 
@@ -183,17 +218,24 @@ const Contact = ({ brochureName }) => {
     }
 
     try {
-      // Open PDF first
+      // Step 1: Open PDF
       openPDF();
       
-      // Create lead in backend
-      const leadCreated = await createLead();
+      // Step 2: Create lead in backend
+      const leadResult = await createLead();
       
-      // Show success message
-      if (leadCreated) {
-        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and our team will connect with you shortly.");
+      // Step 3: Send email notification via EmailJS
+      const emailResult = await sendEmail();
+      
+      // Step 4: Show success message
+      if (leadResult.success && emailResult.success) {
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded, lead created, and email sent to our team. We'll connect with you shortly.");
+      } else if (leadResult.success && !emailResult.success) {
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and lead created. Email notification failed but we have your details.");
+      } else if (!leadResult.success && emailResult.success) {
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent. Lead creation failed but our team will still contact you.");
       } else {
-        setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded. There were issues with backend systems but we have your request.");
       }
 
       // Reset form

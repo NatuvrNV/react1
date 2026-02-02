@@ -7,6 +7,9 @@ import { Helmet } from "react-helmet-async";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 
+// Initialize EmailJS
+emailjs.init("aEASMHR8n6Vmgtj3l");
+
 const Partner = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -18,9 +21,6 @@ const Partner = () => {
   const [captchaToken, setCaptchaToken] = useState(null);
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [employees, setEmployees] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [showLeadSuccess, setShowLeadSuccess] = useState(false);
 
   useEffect(() => {
     const phoneInputField = document.querySelector(".phone-input input");
@@ -28,11 +28,6 @@ const Partner = () => {
       phoneInputField.setAttribute("placeholder", "Enter your Mobile number");
     }
   }, [formData.phone]);
-
-  // Fetch employees on component mount
-  useEffect(() => {
-    fetchEmployees();
-  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -46,101 +41,64 @@ const Partner = () => {
     setCaptchaToken(token);
   };
 
-  const fetchEmployees = async () => {
-    setLoading(true);
+  // Function to send email using EmailJS
+  const sendEmail = async () => {
+    const templateParams = {
+      to_name: "Metaguise Team",
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      timestamp: new Date().toLocaleString(),
+      subject: "New Partner Inquiry",
+      reply_to: formData.email
+    };
+
+    console.log("Sending partner email with params:", templateParams);
+
     try {
-      const response = await fetch('https://backend.cshare.in/api/genericEmployee/genericEmployeeFilter?roles=PRE_SALES&statuses=ACTIVE&page=0&size=1000', {
-        method: 'PUT',
-        headers: {
-          'companyId': '693f9759f956d25cedd37a6f',
-          'apiKey': '918ef419818745ef1f09f705a9642545',
-          'Content-Type': 'application/json'
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch employees');
-      }
-
-      const data = await response.json();
-      if (data.object && data.object.content) {
-        setEmployees(data.object.content);
-      }
-    } catch (err) {
-      console.error("Error fetching employees:", err);
-    } finally {
-      setLoading(false);
+      const response = await emailjs.send(
+        "service_hbh6e6a",
+        "template_sp4d06m",
+        templateParams
+      );
+      
+      console.log("EmailJS response success:", response);
+      return { success: true, message: "Email sent successfully" };
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      return { success: false, message: "Failed to send email notification" };
     }
-  };
-
-  const parseRange = (rangeString) => {
-    if (!rangeString) return { min: 0, max: 0 };
-    
-    const parts = rangeString.split('-').map(part => parseInt(part.trim()));
-    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
-      return { min: parts[0], max: parts[1] };
-    }
-    return { min: 0, max: 0 };
-  };
-
-  const findMatchingEmployees = () => {
-    // Use default value of 5000 since square feet is removed
-    const sqftNum = 5000;
-    
-    const matchingEmployees = employees.filter(emp => {
-      const range = parseRange(emp.employeeAssignmentRange);
-      return sqftNum >= range.min && sqftNum <= range.max;
-    });
-
-    return matchingEmployees;
-  };
-
-  const prepareLeadAssignments = (matchedEmployees) => {
-    return matchedEmployees.map(emp => ({
-      role: "PRE_SALES",
-      employeeId: emp.id,
-      employeeName: emp.fullName
-    }));
   };
 
   const createLead = async () => {
-    // Find matching employees with default value
-    const matchedEmployees = findMatchingEmployees();
-    
-    if (matchedEmployees.length === 0) {
-      console.log("No matching employees found for default SQFT value");
-      return false;
-    }
-
-    // Prepare lead assignments
-    const leadAssignments = prepareLeadAssignments(matchedEmployees);
-
-    // Prepare final payload for Partner
+    // Prepare final payload for Partner with callSource: "PARTNER"
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
       contact: formData.phone,
       email: formData.email,
-      address: "Gurugram, Haryana",
-      locality: "DLF QE",
-      city: "Gurgaon(HR)",
-      district: "Gurgaon",
-      state: "HARYANA",
-      pincode: "122002",
+      address: "null",
+      locality: "null",
+      city: "null",
+      district: "null",
+      state: "null",
+      pincode: "000000",
       pincodeMappingId: "693f98b3f956d25cedd37dfc",
-      projectType: "RESIDENTIAL",
-      customerType: "END_USER",
-      engagementTimeline: "IMMEDIATE",
-      has3dOrSiteDrawings: true,
-      approximateFacadeCladdingSqFt: 5000, // Default value
+      projectType: "null",
+      customerType: "null",
+      engagementTimeline: "null",
+      has3dOrSiteDrawings: false,
+      approximateFacadeCladdingSqFt: 0,
       projectBrief: formData.message || "Partner inquiry form submission",
-      productCategory: "COMMERCIAL",
+      productCategory: "null",
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
       remarks: `Partner inquiry. ${formData.message}`,
       callRegistration: true,
-      leadAssignments: leadAssignments
+      leadAssignments: [], // Empty array
+      callSource: "PARTNER" // Added callSource parameter
     };
 
     console.log("Creating partner lead with payload:", payload);
@@ -160,37 +118,14 @@ const Partner = () => {
       console.log("Lead creation response:", response.status, responseText);
 
       if (response.ok) {
-        setShowLeadSuccess(true);
-        return true;
+        return { success: true, message: "Lead created successfully" };
       } else {
         console.error("Failed to create lead:", responseText);
-        return false;
+        return { success: false, message: "Failed to create lead in backend" };
       }
     } catch (err) {
       console.error("Error creating lead:", err);
-      return false;
-    }
-  };
-
-  const sendEmail = async () => {
-    const emailParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      from_phone: formData.phone,
-      message: formData.message || "Partner inquiry",
-    };
-
-    try {
-      await emailjs.send(
-        "service_hbh6e6a",
-        "template_sp4d06m",
-        emailParams,
-        "aEASMHR8n6Vmgtj3l"
-      );
-      return true;
-    } catch (error) {
-      console.error("Email send error:", error);
-      return false;
+      return { success: false, message: "Network error creating lead" };
     }
   };
 
@@ -198,7 +133,6 @@ const Partner = () => {
     e.preventDefault();
     setIsSending(true);
     setFeedbackMessage("");
-    setShowLeadSuccess(false);
 
     // Validate form
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
@@ -215,6 +149,13 @@ const Partner = () => {
       return;
     }
 
+    // Validate phone number
+    if (formData.phone.replace(/\D/g, '').length < 10) {
+      setFeedbackMessage("❌ Please enter a valid phone number.");
+      setIsSending(false);
+      return;
+    }
+
     if (!captchaToken) {
       setFeedbackMessage("⚠️ Please complete the CAPTCHA verification.");
       setIsSending(false);
@@ -222,25 +163,28 @@ const Partner = () => {
     }
 
     try {
-      // Send email
-      const emailSent = await sendEmail();
+      // Step 1: Send email via EmailJS
+      const emailResult = await sendEmail();
       
-      // Create lead in backend
-      const leadCreated = await createLead();
+      // Step 2: Create lead in backend
+      const leadResult = await createLead();
       
-      // Show appropriate success message
-      if (leadCreated && showLeadSuccess) {
-        setFeedbackMessage("✅ Thank you for your partner inquiry! Our team will connect with you shortly.");
-      } else if (emailSent) {
-        setFeedbackMessage("✅ Thank you for your partner inquiry! We will get in touch with you soon.");
+      // Step 3: Show success message based on results
+      if (leadResult.success && emailResult.success) {
+        setFeedbackMessage("✅ Thank you for your partner inquiry! Lead created and email sent to our team. We'll connect with you shortly.");
+      } else if (leadResult.success && !emailResult.success) {
+        setFeedbackMessage("✅ Thank you for your partner inquiry! Lead created. Email notification failed but we have your details.");
+      } else if (!leadResult.success && emailResult.success) {
+        setFeedbackMessage("✅ Thank you for your partner inquiry! Email sent. Lead creation failed but our team will still contact you.");
       } else {
-        setFeedbackMessage("✅ Thank you for your inquiry!");
+        setFeedbackMessage("✅ Thank you for your partner inquiry! There were issues with backend systems but we received your request.");
       }
 
       // ✅ Google Ads Conversion Tracking Trigger
       if (typeof window !== "undefined" && window.gtag) {
         window.gtag("event", "conversion", {
           send_to: "AW-16992180594/XQxMCJvBnLkaEPKywKY_",
+          call_source: "PARTNER",
         });
       }
 
@@ -322,6 +266,7 @@ const Partner = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
+                      disabled={isSending}
                     />
                   </Form.Group>
                 </Col>
@@ -335,6 +280,7 @@ const Partner = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
+                      disabled={isSending}
                     />
                   </Form.Group>
                 </Col>
@@ -354,6 +300,7 @@ const Partner = () => {
                       onChange={handlePhoneChange}
                       placeholder="Enter phone number with Country Code"
                       required
+                      disabled={isSending}
                     />
                   </Form.Group>
                 </Col>
@@ -369,6 +316,7 @@ const Partner = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
+                  disabled={isSending}
                 />
               </Form.Group>
 
@@ -378,6 +326,7 @@ const Partner = () => {
                   sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
                   onChange={handleCaptchaChange}
                   theme="dark"
+                  disabled={isSending}
                 />
               </div>
 

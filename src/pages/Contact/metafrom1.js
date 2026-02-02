@@ -6,6 +6,10 @@ import PhoneInput from "react-phone-input-2";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from '@emailjs/browser';
+
+// Initialize EmailJS with your public key
+emailjs.init("aEASMHR8n6Vmgtj3l");
 
 const Contact = ({ brochureName }) => {
   useEffect(() => {
@@ -33,9 +37,6 @@ const Contact = ({ brochureName }) => {
   const [feedbackMessage, setFeedbackMessage] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
-  const [employees, setEmployees] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [showLeadSuccess, setShowLeadSuccess] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -60,39 +61,6 @@ const Contact = ({ brochureName }) => {
     }
   }, [formData.phone]);
 
-  // Fetch employees on component mount
-  useEffect(() => {
-    fetchEmployees();
-  }, []);
-
-  const fetchEmployees = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch('https://backend.cshare.in/api/genericEmployee/genericEmployeeFilter?roles=PRE_SALES&statuses=ACTIVE&page=0&size=1000', {
-        method: 'PUT',
-        headers: {
-          'companyId': '693f9759f956d25cedd37a6f',
-          'apiKey': '918ef419818745ef1f09f705a9642545',
-          'Content-Type': 'application/json'
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch employees');
-      }
-
-      const data = await response.json();
-      if (data.object && data.object.content) {
-        setEmployees(data.object.content);
-        console.log(`Fetched ${data.object.content.length} employees`);
-      }
-    } catch (err) {
-      console.error("Error fetching employees:", err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const openPDF = () => {
     const brochureMap = {
       MetaSurface: "/assets/brochure/METASURFACE.pdf",
@@ -115,7 +83,7 @@ const Contact = ({ brochureName }) => {
       "/metaparametric": "METAPARAMETRIC",
       "/metaform": "METAFORM",
       "/metafunction": "METAFUNCTION",
-      "/ctb": "CONTACT",
+      "/ctb": "COFFEE TABLE BOOK",
       "/contact": "CONTACT",
       "/partner": "PARTNER",
       "/build": "BUILD"
@@ -124,14 +92,42 @@ const Contact = ({ brochureName }) => {
     return pathToCallSource[location.pathname] || "CONTACT";
   };
 
+  // Function to send email using EmailJS
+  const sendEmail = async () => {
+    const templateParams = {
+      to_name: "Metaguise Team",
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      brochure_name: detectedBrochure,
+      message: formData.message,
+      timestamp: new Date().toLocaleString(),
+      subject: `New ${detectedBrochure} Brochure Download Request`,
+      reply_to: formData.email
+    };
+
+    console.log("Sending email with params:", templateParams);
+
+    try {
+      const response = await emailjs.send(
+        "service_hbh6e6a",
+        "template_sp4d06m",
+        templateParams
+      );
+      
+      console.log("EmailJS response success:", response);
+      return { success: true, message: "Email sent successfully" };
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      return { success: false, message: "Failed to send email notification" };
+    }
+  };
+
   const createLead = async () => {
-    // Get callSource value
+    // Get callSource value - KEEPING IT AS BEFORE
     const callSource = getCallSource();
     
-    // Prepare lead assignments (empty array since we don't have square feet to match)
-    const leadAssignments = [];
-
-    // Prepare final payload with callSource
+    // Prepare final payload with callSource - KEEPING ALL PARAMETERS AS BEFORE
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -156,12 +152,12 @@ const Contact = ({ brochureName }) => {
       callStatus: "NEW_LEAD",
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}\ncallSource: ${callSource}`,
       callRegistration: true,
-      leadAssignments: leadAssignments,
-      callSource: "METAFORM" // Hardcoded callSource for testing
+      leadAssignments: [],
+      callSource: "METAFORM" // KEEPING HARDCODED AS BEFORE
     };
 
     console.log("Creating lead with payload:", payload);
-    console.log("callSource value:", callSource);
+    console.log("callSource value (hardcoded): METAFORM");
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -178,15 +174,14 @@ const Contact = ({ brochureName }) => {
       console.log("Lead creation response:", response.status, responseText);
 
       if (response.ok) {
-        setShowLeadSuccess(true);
-        return true;
+        return { success: true, message: "Lead created successfully" };
       } else {
         console.error("Failed to create lead:", responseText);
-        return false;
+        return { success: false, message: "Failed to create lead in backend" };
       }
     } catch (err) {
       console.error("Error creating lead:", err);
-      return false;
+      return { success: false, message: "Network error creating lead" };
     }
   };
 
@@ -194,7 +189,6 @@ const Contact = ({ brochureName }) => {
     e.preventDefault();
     setIsSending(true);
     setFeedbackMessage("");
-    setShowLeadSuccess(false);
 
     // Validate all required fields
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
@@ -229,16 +223,23 @@ const Contact = ({ brochureName }) => {
       openPDF();
       
       // Step 2: Create lead in backend
-      const leadCreated = await createLead();
+      const leadResult = await createLead();
       
-      // Step 3: Show success message
-      if (leadCreated) {
-        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and our team will connect with you shortly.");
+      // Step 3: Send email notification via EmailJS
+      const emailResult = await sendEmail();
+      
+      // Step 4: Show success/error message
+      if (leadResult.success && emailResult.success) {
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded, lead created, and email sent to our team. We'll connect with you shortly.");
+      } else if (leadResult.success && !emailResult.success) {
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and lead created. Email notification failed but we have your details.");
+      } else if (!leadResult.success && emailResult.success) {
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent. Lead creation failed but our team will still contact you.");
       } else {
-        setFeedbackMessage("✅ Thanks for your query! Your download will begin shortly.");
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded. There were issues with backend systems but we have your request.");
       }
 
-      // Step 4: Reset form
+      // Step 5: Reset form
       setFormData({
         name: "",
         email: "",
