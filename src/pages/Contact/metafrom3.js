@@ -27,7 +27,6 @@ const Contact = ({ brochureName }) => {
     name: "",
     email: "",
     phone: "",
-    squareFeet: "", // Added square feet field
     message: `The user has requested the ${detectedBrochure} brochure.`,
   });
 
@@ -105,41 +104,6 @@ const Contact = ({ brochureName }) => {
     }
   };
 
-  const parseRange = (rangeString) => {
-    if (!rangeString) return { min: 0, max: 0 };
-    
-    const parts = rangeString.split('-').map(part => parseInt(part.trim()));
-    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
-      return { min: parts[0], max: parts[1] };
-    }
-    return { min: 0, max: 0 };
-  };
-
-  const findMatchingEmployees = (sqft) => {
-    const sqftNum = parseInt(sqft);
-    if (isNaN(sqftNum)) return [];
-
-    console.log(`Looking for employees matching SQFT: ${sqftNum}`);
-    
-    const matchingEmployees = employees.filter(emp => {
-      const range = parseRange(emp.employeeAssignmentRange);
-      const isMatch = sqftNum >= range.min && sqftNum <= range.max;
-      console.log(`Employee ${emp.fullName}: range ${range.min}-${range.max}, SQFT ${sqftNum}, Match: ${isMatch}`);
-      return isMatch;
-    });
-
-    console.log(`Found ${matchingEmployees.length} matching employees`);
-    return matchingEmployees;
-  };
-
-  const prepareLeadAssignments = (matchedEmployees) => {
-    return matchedEmployees.map(emp => ({
-      role: "PRE_SALES",
-      employeeId: emp.id,
-      employeeName: emp.fullName
-    }));
-  };
-
   // Function to get callSource based on URL path
   const getCallSource = () => {
     const pathToCallSource = {
@@ -160,44 +124,36 @@ const Contact = ({ brochureName }) => {
     // Get callSource value
     const callSource = getCallSource();
     
-    // Find matching employees based on square feet
-    const matchedEmployees = findMatchingEmployees(formData.squareFeet);
-    
-    if (matchedEmployees.length === 0) {
-      console.log(`No matching employees found for SQFT: ${formData.squareFeet}`);
-      // Still proceed with lead creation but with empty assignments
-    }
+    // Prepare lead assignments (empty array)
+    const leadAssignments = [];
 
-    // Prepare lead assignments (empty array if no matches)
-    const leadAssignments = prepareLeadAssignments(matchedEmployees);
-
-    // Prepare final payload with callSource
+    // Prepare final payload - all fields null except name, email, phone
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
       contact: formData.phone,
       email: formData.email,
-      address: "Gurugram, Haryana",
-      locality: "DLF QE",
-      city: "Gurgaon(HR)",
-      district: "Gurgaon",
-      state: "HARYANA",
-      pincode: "122002",
+      address: "null",
+      locality: "null",
+      city: "null",
+      district: "null",
+      state: "null",
+      pincode: "000000",
       pincodeMappingId: "693f98b3f956d25cedd37dfc",
-      projectType: "RESIDENTIAL",
-      customerType: "END_USER",
-      engagementTimeline: "IMMEDIATE",
-      has3dOrSiteDrawings: true,
-      approximateFacadeCladdingSqFt: parseInt(formData.squareFeet) || 0,
+      projectType: "null",
+      customerType: "null",
+      engagementTimeline: "null",
+      has3dOrSiteDrawings: false,
+      approximateFacadeCladdingSqFt: 0,
       projectBrief: formData.message,
-      productCategory: "COMMERCIAL",
+      productCategory: "null",
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
       leadAssignments: leadAssignments,
-      callSource: callSource // Added callSource parameter
+      callSource: "METAPARAMETRIC" // Hardcoded callSource for testing
     };
 
     console.log("Creating lead with payload:", payload);
@@ -240,23 +196,17 @@ const Contact = ({ brochureName }) => {
     setFeedbackMessage("");
     setShowLeadSuccess(false);
 
-    // Validate all fields including square feet
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.squareFeet.trim()) {
+    // Validate all required fields
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
       setFeedbackMessage("❌ All fields are required.");
       setIsSending(false);
       return;
     }
 
+    // Validate email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       setFeedbackMessage("❌ Please enter a valid email address.");
-      setIsSending(false);
-      return;
-    }
-
-    const sqftNum = parseInt(formData.squareFeet);
-    if (isNaN(sqftNum) || sqftNum <= 0) {
-      setFeedbackMessage("❌ Please enter a valid square feet area.");
       setIsSending(false);
       return;
     }
@@ -293,7 +243,6 @@ const Contact = ({ brochureName }) => {
         name: "",
         email: "",
         phone: "",
-        squareFeet: "",
         message: `The user has requested the ${detectedBrochure} brochure.`,
       });
       
@@ -351,6 +300,7 @@ const Contact = ({ brochureName }) => {
                       value={formData.name}
                       onChange={handleChange}
                       required
+                      disabled={isSending}
                     />
                   </Form.Group>
                 </Col>
@@ -364,6 +314,7 @@ const Contact = ({ brochureName }) => {
                       value={formData.email}
                       onChange={handleChange}
                       required
+                      disabled={isSending}
                     />
                   </Form.Group>
                 </Col>
@@ -383,34 +334,19 @@ const Contact = ({ brochureName }) => {
                       value={formData.phone}
                       onChange={handlePhoneChange}
                       required
+                      disabled={isSending}
                     />
                   </Form.Group>
                 </Col>
               </Row>
 
-              {/* Square Feet Area field - Added back with same design */}
-              <Row>
-                <Col md={12} className="mb-3 mb-md-4">
-                  <Form.Group controlId="formSquareFeet">
-                    <Form.Control
-                      type="number"
-                      name="squareFeet"
-                      placeholder="Approximate Square Feet Area *"
-                      className="bg-contact form-text border-0"
-                      value={formData.squareFeet}
-                      onChange={handleChange}
-                      required
-                      min="1"
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
-
+              {/* reCAPTCHA */}
               <div className="mb-3 d-flex justify-content-center">
                 <ReCAPTCHA
                   sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
                   onChange={handleCaptchaChange}
                   theme="dark"
+                  disabled={isSending}
                 />
               </div>
 

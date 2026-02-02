@@ -147,7 +147,7 @@ const Contact = ({ brochureName }) => {
       projectType: "null",
       customerType: "null",
       engagementTimeline: "null",
-      has3dOrSiteDrawings: false,
+      has3dOrSiteDrawings: "null",
       approximateFacadeCladdingSqFt: 0,
       projectBrief: formData.message,
       productCategory: "null",
@@ -157,7 +157,7 @@ const Contact = ({ brochureName }) => {
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}\ncallSource: ${callSource}`,
       callRegistration: true,
       leadAssignments: leadAssignments,
-      callSource: "OTHER"
+      callSource: "METAFORM" // Hardcoded callSource for testing
     };
 
     console.log("Creating lead with payload:", payload);
