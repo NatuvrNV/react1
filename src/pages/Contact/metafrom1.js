@@ -92,13 +92,26 @@ const Contact = ({ brochureName }) => {
     return pathToCallSource[location.pathname] || "CONTACT";
   };
 
-  // Function to send email using EmailJS
+  // Improved phone validation function
+  const validatePhoneNumber = (phone) => {
+    // Remove all non-digit characters
+    const digitsOnly = phone.replace(/\D/g, '');
+    
+    // Check if it's a valid length (including country code)
+    // For react-phone-input-2, the phone includes country code
+    return digitsOnly.length >= 10;
+  };
+
+  // Function to send email using EmailJS - UPDATED with from_phone
   const sendEmail = async () => {
     const templateParams = {
       to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
-      phone: formData.phone,
+      from_phone: formData.phone, // Added from_phone for your template
+      phone: formData.phone, // Keep for backward compatibility
+      phone_number: formData.phone, // Keep for backward compatibility
+      mobile: formData.phone, // Keep for backward compatibility
       brochure_name: detectedBrochure,
       message: formData.message,
       timestamp: new Date().toLocaleString(),
@@ -124,10 +137,10 @@ const Contact = ({ brochureName }) => {
   };
 
   const createLead = async () => {
-    // Get callSource value - KEEPING IT AS BEFORE
+    // Get callSource value - NOW USING DYNAMIC VALUE
     const callSource = getCallSource();
     
-    // Prepare final payload with callSource - KEEPING ALL PARAMETERS AS BEFORE
+    // Prepare final payload with dynamic callSource
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -153,11 +166,11 @@ const Contact = ({ brochureName }) => {
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}\ncallSource: ${callSource}`,
       callRegistration: true,
       leadAssignments: [],
-      callSource: "METAFORM" // KEEPING HARDCODED AS BEFORE
+      callSource: callSource // Now using dynamic value instead of hardcoded "METAFORM"
     };
 
     console.log("Creating lead with payload:", payload);
-    console.log("callSource value (hardcoded): METAFORM");
+    console.log("callSource value:", callSource);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -205,9 +218,9 @@ const Contact = ({ brochureName }) => {
       return;
     }
 
-    // Validate phone number
-    if (formData.phone.replace(/\D/g, '').length < 10) {
-      setFeedbackMessage("❌ Please enter a valid phone number.");
+    // Validate phone number using improved validation
+    if (!validatePhoneNumber(formData.phone)) {
+      setFeedbackMessage("❌ Please enter a valid phone number with country code.");
       setIsSending(false);
       return;
     }

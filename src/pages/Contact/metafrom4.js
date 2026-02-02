@@ -107,13 +107,16 @@ const Contact = ({ brochureName }) => {
     }
   };
 
-  // Function to send email using EmailJS
+  // Function to send email using EmailJS - UPDATED with from_phone
   const sendEmail = async () => {
     const templateParams = {
       to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
-      phone: formData.phone,
+      from_phone: formData.phone, // ADDED for your EmailJS template
+      phone: formData.phone, // Keep for backward compatibility
+      phone_number: formData.phone, // Keep for backward compatibility
+      mobile: formData.phone, // Keep for backward compatibility
       brochure_name: detectedBrochure,
       message: formData.message,
       timestamp: new Date().toLocaleString(),
@@ -148,7 +151,7 @@ const Contact = ({ brochureName }) => {
         "MetaParametric": "METAPARAMETRIC",
         "MetaForm": "METAFORM",
         "MetaFunction": "METAFUNCTION",
-        "Coffee Table Book": "CONTACT"
+        "Coffee Table Book": "COFFEE TABLE BOOK"
       };
       
       callSource = brochureToCallSource[detectedBrochure] || "CONTACT";
@@ -180,11 +183,11 @@ const Contact = ({ brochureName }) => {
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
       leadAssignments: [], // Empty array - no employee matching without square feet
-      callSource: "METASURFACE" // Set to METASURFACE (hardcoded as before)
+      callSource: callSource // CHANGED: Now using dynamic callSource instead of hardcoded "METASURFACE"
     };
 
     console.log("Creating lead with payload:", payload);
-    console.log("callSource set to: METASURFACE");
+    console.log("callSource value:", callSource);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {

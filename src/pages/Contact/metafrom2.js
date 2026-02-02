@@ -102,6 +102,7 @@ const Contact = ({ brochureName }) => {
   const openPDF = () => {
     const brochureMap = {
       MetaSurface: "/assets/brochure/METASURFACE.pdf",
+      MetaSurface2: "/assets/brochure/METASURFACE.pdf", // Added MetaSurface2 mapping
       MetaParametric: "/assets/brochure/METAPARAMETRIC.pdf",
       MetaForm: "/assets/brochure/METAFORM.pdf",
       MetaFunction: "/assets/brochure/METAFUNCTION.pdf",
@@ -118,7 +119,7 @@ const Contact = ({ brochureName }) => {
   const getCallSource = () => {
     const pathToCallSource = {
       "/metasurface": "METASURFACE",
-      "/metasurface2": "METASURFACE",
+      "/metasurface2": "METASURFACE", // Added for MetaSurface2
       "/metaparametric": "METAPARAMETRIC",
       "/metaform": "METAFORM",
       "/metafunction": "METAFUNCTION",
@@ -131,13 +132,16 @@ const Contact = ({ brochureName }) => {
     return pathToCallSource[location.pathname] || "CONTACT";
   };
 
-  // Function to send email using EmailJS
+  // Function to send email using EmailJS - UPDATED with from_phone
   const sendEmail = async () => {
     const templateParams = {
       to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
-      phone: formData.phone,
+      from_phone: formData.phone, // Added this for your template
+      phone: formData.phone, // Keep for backward compatibility
+      phone_number: formData.phone, // Keep for backward compatibility
+      mobile: formData.phone, // Keep for backward compatibility
       brochure_name: detectedBrochure,
       message: formData.message,
       timestamp: new Date().toLocaleString(),
@@ -163,7 +167,7 @@ const Contact = ({ brochureName }) => {
   };
 
   const createLead = async () => {
-    // Get callSource value
+    // Get callSource value - USING DYNAMIC VALUE
     const callSource = getCallSource();
     
     // Prepare lead assignments (empty array)
@@ -195,7 +199,7 @@ const Contact = ({ brochureName }) => {
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
       leadAssignments: leadAssignments,
-      callSource: "METAFUNCTION" // Hardcoded callSource for testing
+      callSource: callSource // CHANGED: Now using dynamic value instead of hardcoded "METAFUNCTION"
     };
 
     console.log("Creating lead with payload:", payload);

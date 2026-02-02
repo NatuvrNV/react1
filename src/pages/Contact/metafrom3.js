@@ -124,13 +124,16 @@ const Contact = ({ brochureName }) => {
     return pathToCallSource[location.pathname] || "CONTACT";
   };
 
-  // Function to send email using EmailJS
+  // Function to send email using EmailJS - UPDATED with from_phone
   const sendEmail = async () => {
     const templateParams = {
       to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
-      phone: formData.phone,
+      from_phone: formData.phone, // ADDED: This is what your template uses
+      phone: formData.phone, // Keep for backward compatibility
+      phone_number: formData.phone, // Keep for backward compatibility
+      mobile: formData.phone, // Keep for backward compatibility
       brochure_name: detectedBrochure,
       message: formData.message,
       timestamp: new Date().toLocaleString(),
@@ -188,7 +191,7 @@ const Contact = ({ brochureName }) => {
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
       leadAssignments: leadAssignments,
-      callSource: "METAPARAMETRIC" // Hardcoded callSource for testing
+      callSource: callSource // CHANGED: Using dynamic value instead of hardcoded "METAPARAMETRIC"
     };
 
     console.log("Creating lead with payload:", payload);
