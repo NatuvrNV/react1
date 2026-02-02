@@ -15,7 +15,7 @@ const Contact = () => {
     city: "",
     phone: "",
     role: "",
-    projectType: "", // Single selection - string instead of array
+    projectType: [], // Array for multiple selection (checkboxes)
     timeline: "",
     otherProject: "",
     otherTimeline: "",
@@ -31,14 +31,20 @@ const Contact = () => {
 
   // Handle input change
   const handleChange = (e) => {
-    const { name, value, type } = e.target;
+    const { name, value, type, checked } = e.target;
     
     // Clear error when user starts typing
     if (errors[name]) {
       setErrors(prev => ({...prev, [name]: ""}));
     }
     
-    if (type === "radio") {
+    if (type === "checkbox") {
+      setFormData((prev) =>
+        checked
+          ? { ...prev, projectType: [...prev.projectType, value] }
+          : { ...prev, projectType: prev.projectType.filter((item) => item !== value) }
+      );
+    } else if (type === "radio") {
       setFormData((prev) => ({ ...prev, [name]: value }));
     } else {
       setFormData((prev) => ({ ...prev, [name]: value }));
@@ -145,7 +151,7 @@ const Contact = () => {
     if (!formData.city.trim()) newErrors.city = "City is required";
     if (!formData.phone.trim() || formData.phone.replace(/\D/g, '').length < 10) newErrors.phone = "Valid phone number is required";
     if (!formData.role) newErrors.role = "Please select your role";
-    if (!formData.projectType && !formData.otherProject) newErrors.projectType = "Please select a project type";
+    if (!formData.projectType.length && !formData.otherProject) newErrors.projectType = "Please select at least one project type";
     if (!formData.squareFeet) newErrors.squareFeet = "Square feet area is required";
     if (!formData.timeline && !formData.otherTimeline) newErrors.timeline = "Timeline is required";
     
@@ -164,17 +170,17 @@ const Contact = () => {
     const leadAssignments = prepareLeadAssignments(matchedEmployees);
 
     // Map form values to backend fields
-    const projectType = formData.projectType + (formData.otherProject ? `, ${formData.otherProject}` : "");
+    const projectType = formData.projectType.join(", ") + (formData.otherProject ? `, ${formData.otherProject}` : "");
     const timeline = formData.timeline + (formData.otherTimeline ? `, ${formData.otherTimeline}` : "");
     
     // Map 3D drawings to boolean
     const has3dOrSiteDrawings = formData.has3DDrawings === "Yes";
 
-    // Map role to backend format
+    // Map role to backend format - Using exact enum values from backend
     const getCustomerType = () => {
       switch(formData.role) {
         case "Architect": return "ARCHITECT";
-        case "Real Estate Developer": return "DEVELOPER";
+        case "Real Estate Developer": return "REAL_ESTATE_DEVELOPER"; // Changed to match enum
         case "End User": return "END_USER";
         default: return "";
       }
@@ -182,13 +188,11 @@ const Contact = () => {
 
     // Map project type to backend format
     const getProjectType = () => {
-      switch(formData.projectType) {
-        case "Residential": return "RESIDENTIAL";
-        case "Commercial": return "COMMERCIAL";
-        case "Retail": return "RETAIL";
-        case "Hospitality": return "HOSPITALITY";
-        default: return "COMMERCIAL"; // Default
-      }
+      if (formData.projectType.includes("Residential")) return "RESIDENTIAL";
+      if (formData.projectType.includes("Commercial")) return "COMMERCIAL";
+      if (formData.projectType.includes("Retail")) return "RETAIL";
+      if (formData.projectType.includes("Hospitality")) return "HOSPITALITY";
+      return "COMMERCIAL"; // Default
     };
 
     // Prepare payload for backend API
@@ -196,16 +200,16 @@ const Contact = () => {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
       contact: formData.phone,
-      email: "",
+      email: "", // Build form doesn't have email, so empty
       address: formData.city ? `${formData.city}, India` : "India",
       locality: formData.city || "",
       city: formData.city || "",
       district: formData.city || "",
       state: formData.city ? "INDIA" : "",
-      pincode: "000000",
-      pincodeMappingId: "693f98b3f956d25cedd37dfc",
+      pincode: "000000", // Default since not collected
+      pincodeMappingId: "693f98b3f956d25cedd37dfc", // Default mapping ID
       projectType: getProjectType(),
-      customerType: getCustomerType(),
+      customerType: getCustomerType(), // Using exact enum values
       engagementTimeline: formData.timeline === "Immediate" ? "IMMEDIATE" : formData.timeline === "Next Month" ? "NEXT_MONTH" : "FUTURE",
       has3dOrSiteDrawings: has3dOrSiteDrawings,
       approximateFacadeCladdingSqFt: sqftNum,
@@ -221,8 +225,6 @@ const Contact = () => {
     };
 
     console.log("Creating lead with payload:", payload);
-    console.log("Selected project type:", formData.projectType);
-    console.log("Mapped projectType:", getProjectType());
     console.log("Mapped customerType:", getCustomerType());
 
     try {
@@ -266,7 +268,7 @@ const Contact = () => {
         city: formData.city,
         phone: formData.phone,
         role: formData.role,
-        projectType: formData.projectType + (formData.otherProject ? `, ${formData.otherProject}` : ""),
+        projectType: formData.projectType.join(", "),
         otherProject: formData.otherProject,
         timeline: formData.timeline,
         otherTimeline: formData.otherTimeline,
@@ -294,7 +296,7 @@ const Contact = () => {
           city: "",
           phone: "",
           role: "",
-          projectType: "",
+          projectType: [],
           timeline: "",
           otherProject: "",
           otherTimeline: "",
@@ -451,23 +453,21 @@ const Contact = () => {
                 </Col>
               </Row>
 
-              {/* Project Type - REQUIRED - Now as radio buttons for single selection */}
+              {/* Project Type - REQUIRED - Multiple selection (checkboxes) */}
               <Form.Group className="mt-3 form-project">
                 <Form.Label>Type of Project *</Form.Label>
-                <div className="d-md-flex flex-wrap gap-3 my-3 project-fields">
+                <div className="d-md-flex my-3 project-fields">
                   {["Residential", "Commercial", "Retail", "Hospitality"].map((type) => (
                     <Form.Check
                       key={type}
-                      type="radio"
-                      name="projectType"
-                      id={`project-${type}`}
+                      type="checkbox"
                       label={type}
                       value={type}
                       onChange={handleChange}
-                      checked={formData.projectType === type}
+                      checked={formData.projectType.includes(type)}
+                      required={formData.projectType.length === 0}
                       disabled={isSending}
-                      inline
-                      className="me-4"
+                      className="me-3"
                     />
                   ))}
                 </div>
@@ -535,7 +535,6 @@ const Contact = () => {
                     checked={formData.has3DDrawings === "Yes"}
                     onChange={handleChange}
                     disabled={isSending}
-                    inline
                   />
                   <Form.Check
                     type="radio"
@@ -546,7 +545,6 @@ const Contact = () => {
                     checked={formData.has3DDrawings === "No"}
                     onChange={handleChange}
                     disabled={isSending}
-                    inline
                   />
                 </div>
               </Form.Group>
