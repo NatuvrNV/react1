@@ -205,7 +205,7 @@ const Contact = () => {
       pincode: "000000",
       pincodeMappingId: "693f98b3f956d25cedd37dfc",
       projectType: getProjectType(),
-      customerType: getCustomerType(),  // Updated to use new enum values
+      type: getCustomerType(),  // Updated to use new enum values
       engagementTimeline: formData.timeline === "Immediate" ? "IMMEDIATE" : formData.timeline === "Next Month" ? "NEXT_MONTH" : "FUTURE",
       has3dOrSiteDrawings: has3dOrSiteDrawings,
       approximateFacadeCladdingSqFt: sqftNum,
