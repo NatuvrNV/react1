@@ -171,13 +171,13 @@ const Partner = () => {
       
       // Step 3: Show success message based on results
       if (leadResult.success && emailResult.success) {
-        setFeedbackMessage("✅ Thank you for your partner inquiry! Lead created and email sent to our team. We'll connect with you shortly.");
+        setFeedbackMessage("✅ Thank you for your partner inquiry!  We'll connect with you shortly.");
       } else if (leadResult.success && !emailResult.success) {
-        setFeedbackMessage("✅ Thank you for your partner inquiry! Lead created. Email notification failed but we have your details.");
+        setFeedbackMessage("✅ Thank you for your partner inquiry! Email notification failed .");
       } else if (!leadResult.success && emailResult.success) {
-        setFeedbackMessage("✅ Thank you for your partner inquiry! Email sent. Lead creation failed but our team will still contact you.");
+        setFeedbackMessage("✅ Thank you for your partner inquiry! The request failed.");
       } else {
-        setFeedbackMessage("✅ Thank you for your partner inquiry! There were issues with backend systems but we received your request.");
+        setFeedbackMessage("✅ Thank you for your partner inquiry! The request failed.");
       }
 
       // ✅ Google Ads Conversion Tracking Trigger

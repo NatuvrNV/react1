@@ -263,15 +263,15 @@ const Contact = ({ brochureName }) => {
       // Step 3: Send email notification via EmailJS
       const emailResult = await sendEmail();
       
-      // Step 4: Show success message
+           // Step 4: Show success/error message
       if (leadResult.success && emailResult.success) {
-        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded, lead created, and email sent to our team. We'll connect with you shortly.");
+        setFeedbackMessage("✅ Thanks for your query! Your Metaguise Brochure Download is ready!");
       } else if (leadResult.success && !emailResult.success) {
-        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and lead created. Email notification failed but we have your details.");
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and lead created. Email notification failed.");
       } else if (!leadResult.success && emailResult.success) {
-        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent. Lead creation failed but our team will still contact you.");
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent. The request failed.");
       } else {
-        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded. There were issues with backend systems but we have your request.");
+        setFeedbackMessage("✅ Thanks for your query! Your Metaguise Brochure downloaded. The request failed.");
       }
 
       // Reset form

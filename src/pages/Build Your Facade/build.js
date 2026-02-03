@@ -286,7 +286,7 @@ const Contact = () => {
       const backendResponse = await createLeadInBackend();
 
       if (webhookResponse.ok && backendResponse) {
-        setMessage("✅ Lead sent successfully!");
+        setMessage("✅ Thank you! Our team is reviewing your details and will reach out shortly to discuss your project.");
 
         // Reset form fields
         setFormData({

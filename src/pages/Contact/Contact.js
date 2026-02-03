@@ -211,7 +211,7 @@ const Contact = () => {
         setCaptchaToken(null);
 
       } else if (leadCreated && !emailSent) {
-        setFeedbackMessage("✅ Thank you for your inquiry! Lead created but email notification failed. Our team will still connect with you.");
+        setFeedbackMessage("✅ Thank you for your inquiry! Our team will still connect with you.");
         
         // Reset form
         setFormData({
