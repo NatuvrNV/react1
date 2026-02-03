@@ -83,7 +83,7 @@ const Contact = ({ brochureName }) => {
       "/metaparametric": "METAPARAMETRIC",
       "/metaform": "METAFORM",
       "/metafunction": "METAFUNCTION",
-      "/ctb": "COFFEE TABLE BOOK",
+      "/ctb": "COFFEE_TABLE_BOOK",
       "/contact": "CONTACT",
       "/partner": "PARTNER",
       "/build": "BUILD"

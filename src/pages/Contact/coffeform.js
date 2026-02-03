@@ -83,13 +83,13 @@ const Contact = ({ brochureName }) => {
       "/metaparametric": "METAPARAMETRIC",
       "/metaform": "METAFORM",
       "/metafunction": "METAFUNCTION",
-      "/ctb": "COFFEE TABLE BOOK",
+      "/ctb": "COFFEE_TABLE_BOOK",
       "/contact": "CONTACT",
       "/partner": "PARTNER",
       "/build": "BUILD"
     };
 
-    return pathToCallSource[location.pathname] || "COFFEE TABLE BOOK";
+    return pathToCallSource[location.pathname] || "COFFEE_TABLE_BOOK";
   };
 
   // Function to send email using EmailJS
@@ -153,7 +153,7 @@ const Contact = ({ brochureName }) => {
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
       leadAssignments: [], // Empty array
-      callSource: "COFFEE TABLE BOOK" // Hardcoded to COFFEE TABLE BOOK
+      callSource: "COFFEE_TABLE_BOOK" // Hardcoded to COFFEE TABLE BOOK
     };
 
     console.log("Creating lead with payload:", payload);
