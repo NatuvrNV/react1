@@ -95,7 +95,7 @@ const Partner = () => {
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      remarks: `Partner inquiry. ${formData.message}`,
+      remarks: `${formData.message}`,
       callRegistration: true,
       leadAssignments: [], // Empty array
       callSource: "PARTNER" // Added callSource parameter

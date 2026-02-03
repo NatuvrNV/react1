@@ -82,6 +82,9 @@ const Contact = () => {
   };
 
   const createLead = async () => {
+    // Get the message from textarea
+    const userMessage = formData.message || "No message provided";
+    
     // Prepare final payload - all fields null except name, email, phone, message
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
@@ -100,18 +103,19 @@ const Contact = () => {
       engagementTimeline: "null",
       has3dOrSiteDrawings: false,
       approximateFacadeCladdingSqFt: 0,
-      projectBrief: formData.message || "Contact inquiry",
+      projectBrief: userMessage, // Store message in projectBrief field
       productCategory: "null",
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      remarks: `Contact form submission.\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message || "No message provided"}`,
+      remarks: userMessage, // Store only the user message
       callRegistration: true,
       leadAssignments: [], // Empty array
       callSource: "CONTACT" // Hardcoded as CONTACT for contact page
     };
 
     console.log("Creating lead with payload:", payload);
+    console.log("User message for backend:", userMessage);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -145,6 +149,7 @@ const Contact = () => {
     setFeedbackMessage("");
 
     console.log("Form submission started");
+    console.log("Form data:", formData);
 
     // Validate form
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {

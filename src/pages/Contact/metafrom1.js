@@ -163,7 +163,7 @@ const Contact = ({ brochureName }) => {
       productBrand: "Metaguise",
       productId: "69412167f956d233e1261afc",
       callStatus: "NEW_LEAD",
-      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}\ncallSource: ${callSource}`,
+      remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
       leadAssignments: [],
       callSource: callSource // Now using dynamic value instead of hardcoded "METAFORM"
