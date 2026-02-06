@@ -557,72 +557,21 @@ As buildings evolve into intelligent entities, facades will play an increasingly
 
   //  June Blogs
 
-  {
-    title: "How Kinetic Facades Improve Building Performance and User Experience",
-    metaTitle: "Kinetic Facades: Boost Building Performance & User Experience",
-    date: "25-05-25",
-    category: "Facade Innovations",
-    metaDescription: "Explore how kinetic facades enhance building performance, energy efficiency, and user experience using smart aluminium facade systems.",
-    Fulldescription: ` 
-         Most people think of a building’s facade as just its face,what you see from the outside. But more and more, that face is starting to move. Literally.
-Kinetic facades are changing the way buildings behave. Instead of being fixed and static, these facades respond. To sunlight. To wind. Even to how people use the space. They’re not just eye-catching, they’re smart. And when done right, they make buildings more comfortable, more energy-efficient, and honestly, a lot more interesting to be around.
-So, what exactly is a kinetic facade?
-Think of panels that open and close depending on how hot it is outside. Or louvers that shift to let in just the right amount of sunlight. Some rotate, others slide or fold. Some even shimmer and ripple in the breeze like a metal curtain. These facades are designed to move,and that movement isn’t just for show.
-At Metaguise, we see kinetic facades as a natural step forward. Our designs bring together smart technology, environmental awareness, and a love for beautiful materials,especially metal. With systems like MetaFold, MetaSlide, and MetaScreen, we’ve helped buildings breathe, shade themselves, and create privacy on demand.
-But not all movement has to be mechanical. Some of our most stunning projects use parametric design,that’s where the shapes and patterns themselves create the illusion of movement. Products like MetaCoin and MetaSequin fall into this category. They're shaped and layered in ways that catch light and cast shadows differently as the day goes on.
-Why make a facade kinetic?
-The biggest reason? Performance.
-Energy savings: Buildings lose a ton of energy just by overheating. A kinetic facade that responds to the sun,closing up at noon and opening in the evening,can keep temperatures comfortable without blasting the AC all day.
-
-
-Better airflow: Opening panels or sliding screens allow for natural ventilation, which can reduce stuffiness and improve indoor air quality.
-
-
-Comfort and control: When you can adjust your environment, it just feels better. Whether it's keeping glare off your laptop or getting a breeze without inviting a dust storm in, a moving facade can help.
-
-
-Visual impact: And yes, they look amazing. A kinetic facade turns a plain surface into something alive and ever-changing. That’s not just a design win,it’s something people remember.
-
-
-And what about materials?
-This is where metal really shines. Lightweight aluminium wall panels, tough facade cladding, and intricate metal louvers all lend themselves perfectly to movement. They’re durable, corrosion-resistant, and can be finished in hundreds of textures,from raw industrial to rich patina.
-Plus, they’re recyclable. Which means your facade doesn’t just work better, it’s more sustainable too.
-Not every project needs to be high-tech
-It’s easy to assume kinetic facades are just for fancy museums or high-budget buildings. But with the right design, even a simple folding panel or sliding screen can make a big difference. That’s the idea behind our MetaFunction systems, making performance-based design accessible for everyday architecture.
-Whether it's a privacy screen in a residential courtyard or a sliding wall that opens a retail store to the street, these systems bring the benefits of kinetic architecture to real life.
-Buildings don’t have to just sit there. They can move. They can respond. And when they do, they’re better for the people inside, and the planet too.
-At Metaguise, we believe facades should be more than beautiful, they should be useful, smart, and a little bit magical. If you’re thinking about how your next project can breathe, shade, and shift like it’s alive, a kinetic facade design might be the answer.
-
-  `,
-    description: "Kinetic facades are changing the way buildings behave. Instead of being fixed and static, these facades respond. To sunlight. To wind. Even to how people use the space. They’re not just eye-catching, they’re smart. And when done right, they make buildings more comfortable, more energy-efficient, and honestly, a lot more interesting to be around.",
-    images: [
-      "assets/Blogs/kinetic/kinetic1.jpg",
-      "assets/Blogs/kinetic/kinetic2.jpg",
-      "assets/Blogs/kinetic/kinetic3.jpg",
-
-
-    ],
-
-    folderName: "kinetic",
-
-
-  },
+ 
 
     {
     title: "How Kinetic Facades Improve Building Performance and User Experience",
     metaTitle:
-      "Low Maintenance Metal Facade in India | Long - Lasting Building Exteriors - Metaguise ",
+      "Kinetic Facades: Boost Building Performance & User Experience ",
     date: "25-05-25",
     template: 'B',
     category: "Project Highlights",
 
-    metaDescription:
-      " Discover why metal facades are India’s most low maintenance exterior solution. UV-resistant, non-porous, and engineered for Indian weather. Designed by Metaguise for homes & commercial buildings. ",
+    metaDescription:"Explore how kinetic facades enhance building performance, energy efficiency, and user experience using smart aluminium facade systems",
 
-    description:
-      "One of the biggest fears homeowners and building owners have is maintenance. We’ve all seen it: a beautiful new building that looks great for two years ",
+    description:"Kinetic facades are changing the way buildings behave. Instead of being fixed and static, these facades respond. To sunlight. To wind. Even to how people use the space. They’re not just eye-catching, they’re smart. And when done right, they make buildings more comfortable, more energy-efficient, and honestly, a lot more interesting to be around.",
 
-    folderName: "The Low Maintenance",
+    folderName: "kinetic",
     imageAltText: "The Low Maintenance: Why Metaguise is the #1 Choice of Top Architects in India",
 
     images: [
