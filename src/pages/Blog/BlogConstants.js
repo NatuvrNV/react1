@@ -586,7 +586,6 @@ As buildings evolve into intelligent entities, facades will play an increasingly
     
 Did you know kinetic facade systems can significantly reduce heat gain, improve indoor comfort, and enhance building sustainability in real time?
 
-
 Kinetic facades are redefining high-performance architecture by creating smart, responsive building envelopes that adapt to climate conditions and human needs.
 
  </p>`,
@@ -597,9 +596,7 @@ Kinetic facades are redefining high-performance architecture by creating smart, 
 <p>
 Most people think of a building’s facade as just its face,what you see from the outside. But more and more, that face is starting to move. Literally.
 
-
 Kinetic facades are changing the way buildings behave. Instead of being fixed and static, these facades respond. To sunlight. To wind. Even to how people use the space. They’re not just eye-catching, they’re smart. And when done right, they make buildings more comfortable, more energy-efficient, and honestly, a lot more interesting to be around.
-
 
 <strong>So, what exactly is a kinetic facade?</strong>
 
@@ -615,7 +612,6 @@ Think of panels that open and close depending on how hot it is outside. Or louve
 <p>
 At Metaguise, we see kinetic facades as a natural step forward. Our designs bring together smart technology, environmental awareness, and a love for beautiful materials,especially metal. With systems like MetaFold, MetaSlide, and MetaScreen, we’ve helped buildings breathe, shade themselves, and create privacy on demand.
 
-
 But not all movement has to be mechanical. Some of our most stunning projects use <a href="https://metaguise.com/blog/the-rise-of-parametric-facades:-designing-with-algorithmic-elegance">parametric design</a>,that’s where the shapes and patterns themselves create the illusion of movement. Products like <a href="https://metaguise.com/products/metacoin">MetaCoin</a> and MetaSequin fall into this category. They're shaped and layered in ways that catch light and cast shadows differently as the day goes on.
 </p>
  </p>`,
@@ -625,7 +621,6 @@ But not all movement has to be mechanical. Some of our most stunning projects us
 <p>
 Why make a facade kinetic?
 The biggest reason? Performance.
-
 
 Energy savings: Buildings lose a ton of energy just by overheating. A kinetic facade that responds to the sun,closing up at noon and opening in the evening,can keep temperatures comfortable without blasting the AC all day.
 
@@ -639,9 +634,7 @@ Visual impact: And yes, they look amazing. A kinetic facade turns a plain surfac
 
 And what about materials?
 
-
 This is where metal really shines. Lightweight aluminium wall panels, tough facade cladding, and intricate <a href="https://metaguise.com/blog/how-our-metafunction-products-revolutionize-everyday-architecture">metal louvers>metal louvers</a> all lend themselves perfectly to movement. They’re durable, corrosion-resistant, and can be finished in hundreds of textures,from raw industrial to rich patina.
-
 
 Plus, they’re recyclable. Which means your facade doesn’t just work better, it’s more <a href="https://metaguise.com/blog/sustainability-through-design:-how-metal-facades-support-greener-architecture-">sustainable</a> too.
 
@@ -653,17 +646,13 @@ Plus, they’re recyclable. Which means your facade doesn’t just work better, 
 <p>
 Not every project needs to be high-tech.
 
-
 It’s easy to assume kinetic facades are just for fancy museums or high-budget buildings. But with the right design, even a simple folding panel or sliding screen can make a big difference. That’s the idea behind our <a href="https://metaguise.com/blog/how-our-metafunction-products-revolutionize-everyday-architecture">MetaFunction</a> systems, making performance-based design accessible for everyday architecture.
 
-
 Whether it's a privacy screen in a residential courtyard or a sliding wall that opens a retail store to the street, these systems bring the benefits of kinetic architecture to real life.
-
 
 <strong>The Future of Smart Facades in Sustainable Architecture  </strong>
 
 Buildings don’t have to just sit there. They can move. They can respond. And when they do, they’re better for the people inside, and the planet too.
-
 
 At Metaguise, we believe facades should be more than beautiful, they should be useful, smart, and a little bit magical. If you’re thinking about how your next project can breathe, shade, and shift like it’s alive, a kinetic facade design might be the answer.
 
