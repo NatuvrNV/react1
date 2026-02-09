@@ -21,6 +21,7 @@ const Partner = () => {
   const [captchaToken, setCaptchaToken] = useState(null);
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [agreeTerms, setAgreeTerms] = useState(false); // NEW: Terms agreement state
 
   useEffect(() => {
     const phoneInputField = document.querySelector(".phone-input input");
@@ -37,17 +38,24 @@ const Partner = () => {
     setFormData({ ...formData, phone: value });
   };
 
+  const handleTermsChange = (e) => {
+    setAgreeTerms(e.target.checked);
+  };
+
   const handleCaptchaChange = (token) => {
     setCaptchaToken(token);
   };
 
-  // Function to send email using EmailJS
+  // Function to send email using EmailJS - UPDATED with from_phone
   const sendEmail = async () => {
     const templateParams = {
       to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
+      from_phone: formData.phone, // ADDED: This is needed for your EmailJS template
       phone: formData.phone,
+      phone_number: formData.phone,
+      mobile: formData.phone,
       message: formData.message,
       timestamp: new Date().toLocaleString(),
       subject: "New Partner Inquiry",
@@ -134,9 +142,16 @@ const Partner = () => {
     setIsSending(true);
     setFeedbackMessage("");
 
-    // Validate form
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
-      setFeedbackMessage("❌ Name, Email and Phone are required.");
+    // Validate all required fields (name, email, phone, message, terms)
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.message.trim()) {
+      setFeedbackMessage("❌ All fields are required.");
+      setIsSending(false);
+      return;
+    }
+
+    // Validate terms agreement
+    if (!agreeTerms) {
+      setFeedbackMessage("❌ Please agree to the Terms & Conditions and Privacy Policy.");
       setIsSending(false);
       return;
     }
@@ -171,9 +186,9 @@ const Partner = () => {
       
       // Step 3: Show success message based on results
       if (leadResult.success && emailResult.success) {
-        setFeedbackMessage("✅ Thank you for your partner inquiry!  We'll connect with you shortly.");
+        setFeedbackMessage("✅ Thank you for your partner inquiry! We'll connect with you shortly.");
       } else if (leadResult.success && !emailResult.success) {
-        setFeedbackMessage("✅ Thank you for your partner inquiry! Email notification failed .");
+        setFeedbackMessage("✅ Thank you for your partner inquiry! Email notification failed.");
       } else if (!leadResult.success && emailResult.success) {
         setFeedbackMessage("✅ Thank you for your partner inquiry! The request failed.");
       } else {
@@ -196,6 +211,7 @@ const Partner = () => {
         message: "" 
       });
       setCaptchaToken(null);
+      setAgreeTerms(false); // Reset terms agreement
 
     } catch (error) {
       console.error("Error in form submission:", error);
@@ -261,7 +277,7 @@ const Partner = () => {
                     <Form.Control
                       type="text"
                       name="name"
-                      placeholder="Name"
+                      placeholder="Name *"
                       className="bg-contact form-text border-0"
                       value={formData.name}
                       onChange={handleChange}
@@ -275,7 +291,7 @@ const Partner = () => {
                     <Form.Control
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder="Email *"
                       className="bg-contact form-text border-0"
                       value={formData.email}
                       onChange={handleChange}
@@ -298,7 +314,7 @@ const Partner = () => {
                       dropdownClass="bg-dark text-white"
                       value={formData.phone}
                       onChange={handlePhoneChange}
-                      placeholder="Enter phone number with Country Code"
+                      placeholder="Phone Number *"
                       required
                       disabled={isSending}
                     />
@@ -306,29 +322,62 @@ const Partner = () => {
                 </Col>
               </Row>
 
-              <Form.Group controlId="formMessage" className="mb-4">
-                <Form.Control
-                  as="textarea"
-                  rows={4}
-                  name="message"
-                  placeholder="Add a Message"
-                  className="bg-contact form-text border-0"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  disabled={isSending}
-                />
-              </Form.Group>
+              {/* Message field - ADDED: Made required */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formMessage">
+                    <Form.Control
+                      as="textarea"
+                      rows={4}
+                      name="message"
+                      placeholder="Add a Message *"
+                      className="bg-contact form-text border-0"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      disabled={isSending}
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
 
               {/* ✅ Google reCAPTCHA Section */}
-              <div className="mb-4 d-flex justify-content-center">
-                <ReCAPTCHA
-                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
-                  onChange={handleCaptchaChange}
-                  theme="dark"
-                  disabled={isSending}
-                />
-              </div>
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <div className="d-flex justify-content-center">
+                    <ReCAPTCHA
+                      sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
+                      onChange={handleCaptchaChange}
+                      theme="dark"
+                      disabled={isSending}
+                    />
+                  </div>
+                  <Form.Text className="text-muted text-center d-block">
+                    * Please verify that you are not a robot
+                  </Form.Text>
+                </Col>
+              </Row>
+
+              {/* Terms and Conditions - ADDED: Required field */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formTerms">
+                    <Form.Check
+                      type="checkbox"
+                      required
+                      checked={agreeTerms}
+                      onChange={handleTermsChange}
+                      disabled={isSending}
+                      label={
+                        <span>
+                          I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-white">Terms & Conditions</a> and <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-white">Privacy Policy</a> *
+                        </span>
+                      }
+                      className="text-white"
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
 
               <div className="button-wrapper">
                 <button type="submit" className="send-button" disabled={isSending}>

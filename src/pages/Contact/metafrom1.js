@@ -354,7 +354,7 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
-              {/* Phone number field */}
+              {/* Phone number field - REQUIRED */}
               <Row>
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formPhone">
@@ -374,15 +374,61 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
-              {/* reCAPTCHA */}
-              <div className="mb-3 d-flex justify-content-center">
-                <ReCAPTCHA
-                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
-                  onChange={handleCaptchaChange}
-                  theme="dark"
-                  disabled={isSending}
-                />
-              </div>
+              {/* reCAPTCHA - REQUIRED */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <div className="d-flex justify-content-center">
+                    <ReCAPTCHA
+                      sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
+                      onChange={handleCaptchaChange}
+                      theme="dark"
+                      disabled={isSending}
+                      required
+                    />
+                  </div>
+                  <Form.Text className="text-muted text-center d-block">
+                    * Please verify that you are not a robot
+                  </Form.Text>
+                </Col>
+              </Row>
+
+              {/* Message field - REQUIRED */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formMessage">
+                    <Form.Control
+                      as="textarea"
+                      rows={3}
+                      name="message"
+                      placeholder="Message *"
+                      className="bg-contact form-text border-0"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      disabled={isSending}
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
+
+              {/* Terms and Conditions - REQUIRED */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formTerms">
+                    <Form.Check
+                      type="checkbox"
+                      required
+                      disabled={isSending}
+                      label={
+                        <span>
+                          I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-white">Terms & Conditions</a> and <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-white">Privacy Policy</a> *
+                        </span>
+                      }
+                      className="text-white"
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
 
               <div className="button-wrapper">
                 <button 

@@ -40,6 +40,7 @@ const Contact = ({ brochureName }) => {
   const [employees, setEmployees] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showLeadSuccess, setShowLeadSuccess] = useState(false);
+  const [agreeTerms, setAgreeTerms] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -228,6 +229,10 @@ const Contact = ({ brochureName }) => {
     setCaptchaValue(value);
   };
 
+  const handleTermsChange = (e) => {
+    setAgreeTerms(e.target.checked);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
@@ -235,7 +240,7 @@ const Contact = ({ brochureName }) => {
     setShowLeadSuccess(false);
 
     // Validate all required fields
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.message.trim()) {
       setFeedbackMessage("❌ All fields are required.");
       setIsSending(false);
       return;
@@ -258,6 +263,12 @@ const Contact = ({ brochureName }) => {
 
     if (!captchaValue) {
       setFeedbackMessage("⚠️ Please verify the reCAPTCHA before submitting.");
+      setIsSending(false);
+      return;
+    }
+
+    if (!agreeTerms) {
+      setFeedbackMessage("⚠️ Please agree to the Terms & Conditions and Privacy Policy.");
       setIsSending(false);
       return;
     }
@@ -292,6 +303,7 @@ const Contact = ({ brochureName }) => {
       });
       
       setCaptchaValue(null);
+      setAgreeTerms(false);
     } catch (error) {
       console.error("Error in form submission:", error);
       setFeedbackMessage("❌ Something went wrong. Please try again.");
@@ -385,15 +397,62 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
+              {/* Message field - REQUIRED */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formMessage">
+                    <Form.Control
+                      as="textarea"
+                      rows={3}
+                      name="message"
+                      placeholder="Message *"
+                      className="bg-contact form-text border-0"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      disabled={isSending}
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
+
               {/* reCAPTCHA */}
-              <div className="mb-3 d-flex justify-content-center">
-                <ReCAPTCHA
-                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
-                  onChange={handleCaptchaChange}
-                  theme="dark"
-                  disabled={isSending}
-                />
-              </div>
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <div className="d-flex justify-content-center">
+                    <ReCAPTCHA
+                      sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
+                      onChange={handleCaptchaChange}
+                      theme="dark"
+                      disabled={isSending}
+                    />
+                  </div>
+                  <Form.Text className="text-muted text-center d-block">
+                    * Please verify the reCAPTCHA
+                  </Form.Text>
+                </Col>
+              </Row>
+
+              {/* Terms and Conditions - REQUIRED */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formTerms">
+                    <Form.Check
+                      type="checkbox"
+                      checked={agreeTerms}
+                      onChange={handleTermsChange}
+                      required
+                      disabled={isSending}
+                      label={
+                        <span>
+                          I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-white">Terms & Conditions</a> and <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-white">Privacy Policy</a> *
+                        </span>
+                      }
+                      className="text-white"
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
 
               <div className="button-wrapper">
                 <button type="submit" className="send-button" disabled={isSending}>

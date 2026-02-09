@@ -40,6 +40,7 @@ const Contact = ({ brochureName }) => {
   const [employees, setEmployees] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showLeadSuccess, setShowLeadSuccess] = useState(false);
+  const [agreeTerms, setAgreeTerms] = useState(false); // NEW: Terms agreement state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -47,6 +48,10 @@ const Contact = ({ brochureName }) => {
 
   const handlePhoneChange = (value) => {
     setFormData({ ...formData, phone: value });
+  };
+
+  const handleTermsChange = (e) => {
+    setAgreeTerms(e.target.checked);
   };
 
   useEffect(() => {
@@ -226,9 +231,16 @@ const Contact = ({ brochureName }) => {
     setFeedbackMessage("");
     setShowLeadSuccess(false);
 
-    // Validate all required fields (only name, email, phone)
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
+    // Validate all required fields (name, email, phone, message, terms)
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.message.trim()) {
       setFeedbackMessage("❌ All fields are required.");
+      setIsSending(false);
+      return;
+    }
+
+    // Validate terms agreement
+    if (!agreeTerms) {
+      setFeedbackMessage("❌ Please agree to the Terms & Conditions and Privacy Policy.");
       setIsSending(false);
       return;
     }
@@ -263,7 +275,7 @@ const Contact = ({ brochureName }) => {
       // Step 3: Send email notification via EmailJS
       const emailResult = await sendEmail();
       
-           // Step 4: Show success/error message
+      // Step 4: Show success/error message
       if (leadResult.success && emailResult.success) {
         setFeedbackMessage("✅ Thanks for your query! Your Metaguise Brochure Download is ready!");
       } else if (leadResult.success && !emailResult.success) {
@@ -283,6 +295,7 @@ const Contact = ({ brochureName }) => {
       });
       
       setCaptchaValue(null);
+      setAgreeTerms(false); // Reset terms agreement
     } catch (error) {
       console.error("Error in form submission:", error);
       setFeedbackMessage("❌ Something went wrong. Please try again.");
@@ -342,7 +355,7 @@ const Contact = ({ brochureName }) => {
                     <Form.Control
                       type="text"
                       name="name"
-                      placeholder="Name"
+                      placeholder="Name *"
                       className="bg-contact form-text border-0"
                       value={formData.name}
                       onChange={handleChange}
@@ -356,7 +369,7 @@ const Contact = ({ brochureName }) => {
                     <Form.Control
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder="Email *"
                       className="bg-contact form-text border-0"
                       value={formData.email}
                       onChange={handleChange}
@@ -376,7 +389,7 @@ const Contact = ({ brochureName }) => {
                       inputClass="bg-contact form-text border-0 w-100"
                       containerClass="w-100"
                       inputStyle={{ width: "100%" }}
-                      placeholder="Enter phone number with Country Code"
+                      placeholder="Phone Number *"
                       dropdownClass="bg-dark text-white"
                       value={formData.phone}
                       onChange={handlePhoneChange}
@@ -387,15 +400,62 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
+              {/* Message field - NEW: Added as required */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formMessage">
+                    <Form.Control
+                      as="textarea"
+                      rows={3}
+                      name="message"
+                      placeholder="Message *"
+                      className="bg-contact form-text border-0"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      disabled={isSending}
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
+
               {/* reCAPTCHA */}
-              <div className="mb-3 d-flex justify-content-center">
-                <ReCAPTCHA
-                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
-                  onChange={handleCaptchaChange}
-                  theme="dark"
-                  disabled={isSending}
-                />
-              </div>
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <div className="d-flex justify-content-center">
+                    <ReCAPTCHA
+                      sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
+                      onChange={handleCaptchaChange}
+                      theme="dark"
+                      disabled={isSending}
+                    />
+                  </div>
+                  <Form.Text className="text-muted text-center d-block">
+                    * Please verify that you are not a robot
+                  </Form.Text>
+                </Col>
+              </Row>
+
+              {/* Terms and Conditions - NEW: Added as required */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formTerms">
+                    <Form.Check
+                      type="checkbox"
+                      required
+                      checked={agreeTerms}
+                      onChange={handleTermsChange}
+                      disabled={isSending}
+                      label={
+                        <span>
+                          I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-white">Terms & Conditions</a> and <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-white">Privacy Policy</a> *
+                        </span>
+                      }
+                      className="text-white"
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
 
               <div className="button-wrapper">
                 <button
