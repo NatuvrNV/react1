@@ -102,16 +102,19 @@ const Contact = ({ brochureName }) => {
     return digitsOnly.length >= 10;
   };
 
-  // Function to send email using EmailJS - UPDATED with from_phone
+  // Function to send email using EmailJS - FIXED for phone number
   const sendEmail = async () => {
+    // Use the phone number exactly as it is from the form
+    const phoneNumber = formData.phone || '';
+    
     const templateParams = {
       to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
-      from_phone: formData.phone, // Added from_phone for your template
-      phone: formData.phone, // Keep for backward compatibility
-      phone_number: formData.phone, // Keep for backward compatibility
-      mobile: formData.phone, // Keep for backward compatibility
+      from_phone: phoneNumber, // This will include country code like +91 34434-34343
+      phone: phoneNumber,
+      phone_number: phoneNumber,
+      mobile: phoneNumber,
       brochure_name: detectedBrochure,
       message: formData.message,
       timestamp: new Date().toLocaleString(),
@@ -120,6 +123,7 @@ const Contact = ({ brochureName }) => {
     };
 
     console.log("Sending email with params:", templateParams);
+    console.log("Phone number being sent:", phoneNumber);
 
     try {
       const response = await emailjs.send(
@@ -137,14 +141,17 @@ const Contact = ({ brochureName }) => {
   };
 
   const createLead = async () => {
-    // Get callSource value - NOW USING DYNAMIC VALUE
+    // Get callSource value
     const callSource = getCallSource();
+    
+    // Clean phone number for backend - remove spaces and special characters
+    const cleanPhone = formData.phone ? formData.phone.replace(/\s+/g, '').replace(/-/g, '') : '';
     
     // Prepare final payload with dynamic callSource
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
-      contact: formData.phone,
+      contact: cleanPhone, // Use cleaned phone number for backend
       email: formData.email,
       address: "null",
       locality: "null",
@@ -166,11 +173,12 @@ const Contact = ({ brochureName }) => {
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
       leadAssignments: [],
-      callSource: callSource // Now using dynamic value instead of hardcoded "METAFORM"
+      callSource: callSource
     };
 
     console.log("Creating lead with payload:", payload);
     console.log("callSource value:", callSource);
+    console.log("Phone sent to backend:", cleanPhone);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
