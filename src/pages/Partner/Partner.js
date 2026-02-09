@@ -339,9 +339,7 @@ const Partner = () => {
                       disabled={isSending}
                     />
                   </div>
-                  <Form.Text className="text-muted text-center d-block">
-                    * Please verify that you are not a robot
-                  </Form.Text>
+                  
                 </Col>
               </Row>
 
