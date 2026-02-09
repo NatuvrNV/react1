@@ -21,7 +21,6 @@ const Partner = () => {
   const [captchaToken, setCaptchaToken] = useState(null);
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [agreeTerms, setAgreeTerms] = useState(false); // NEW: Terms agreement state
 
   useEffect(() => {
     const phoneInputField = document.querySelector(".phone-input input");
@@ -36,10 +35,6 @@ const Partner = () => {
 
   const handlePhoneChange = (value) => {
     setFormData({ ...formData, phone: value });
-  };
-
-  const handleTermsChange = (e) => {
-    setAgreeTerms(e.target.checked);
   };
 
   const handleCaptchaChange = (token) => {
@@ -142,16 +137,9 @@ const Partner = () => {
     setIsSending(true);
     setFeedbackMessage("");
 
-    // Validate all required fields (name, email, phone, message, terms)
+    // Validate all required fields (name, email, phone, message)
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.message.trim()) {
       setFeedbackMessage("❌ All fields are required.");
-      setIsSending(false);
-      return;
-    }
-
-    // Validate terms agreement
-    if (!agreeTerms) {
-      setFeedbackMessage("❌ Please agree to the Terms & Conditions and Privacy Policy.");
       setIsSending(false);
       return;
     }
@@ -211,7 +199,6 @@ const Partner = () => {
         message: "" 
       });
       setCaptchaToken(null);
-      setAgreeTerms(false); // Reset terms agreement
 
     } catch (error) {
       console.error("Error in form submission:", error);
@@ -322,7 +309,7 @@ const Partner = () => {
                 </Col>
               </Row>
 
-              {/* Message field - ADDED: Made required */}
+              {/* Message field */}
               <Row>
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formMessage">
@@ -355,27 +342,6 @@ const Partner = () => {
                   <Form.Text className="text-muted text-center d-block">
                     * Please verify that you are not a robot
                   </Form.Text>
-                </Col>
-              </Row>
-
-              {/* Terms and Conditions - ADDED: Required field */}
-              <Row>
-                <Col md={12} className="mb-3 mb-md-4">
-                  <Form.Group controlId="formTerms">
-                    <Form.Check
-                      type="checkbox"
-                      required
-                      checked={agreeTerms}
-                      onChange={handleTermsChange}
-                      disabled={isSending}
-                      label={
-                        <span>
-                          I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-white">Terms & Conditions</a> and <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-white">Privacy Policy</a> *
-                        </span>
-                      }
-                      className="text-white"
-                    />
-                  </Form.Group>
                 </Col>
               </Row>
 

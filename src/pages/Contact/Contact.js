@@ -25,7 +25,6 @@ const Contact = () => {
   const [captchaToken, setCaptchaToken] = useState(null);
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [agreeTerms, setAgreeTerms] = useState(false); // NEW: Terms agreement state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -33,10 +32,6 @@ const Contact = () => {
 
   const handlePhoneChange = (value) => {
     setFormData({ ...formData, phone: value });
-  };
-
-  const handleTermsChange = (e) => {
-    setAgreeTerms(e.target.checked);
   };
 
   const handleCaptchaChange = (token) => {
@@ -156,16 +151,9 @@ const Contact = () => {
     console.log("Form submission started");
     console.log("Form data:", formData);
 
-    // Validate all required fields (name, email, phone, message, terms)
+    // Validate all required fields (name, email, phone, message)
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.message.trim()) {
       setFeedbackMessage("❌ All fields are required.");
-      setIsSending(false);
-      return;
-    }
-
-    // Validate terms agreement
-    if (!agreeTerms) {
-      setFeedbackMessage("❌ Please agree to the Terms & Conditions and Privacy Policy.");
       setIsSending(false);
       return;
     }
@@ -221,7 +209,6 @@ const Contact = () => {
           message: "",
         });
         setCaptchaToken(null);
-        setAgreeTerms(false); // Reset terms agreement
 
       } else if (leadCreated && !emailSent) {
         setFeedbackMessage("✅ Thank you for your inquiry! Our team will still connect with you.");
@@ -234,7 +221,6 @@ const Contact = () => {
           message: "",
         });
         setCaptchaToken(null);
-        setAgreeTerms(false); // Reset terms agreement
       } else {
         setFeedbackMessage("❌ Failed to submit your inquiry. Please try again.");
       }
@@ -357,7 +343,7 @@ const Contact = () => {
                 </Col>
               </Row>
 
-              {/* Message field - ADDED: Made required */}
+              {/* Message field */}
               <Row>
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formMessage">
@@ -390,27 +376,6 @@ const Contact = () => {
                   <Form.Text className="text-muted d-block">
                     * Please verify that you are not a robot
                   </Form.Text>
-                </Col>
-              </Row>
-
-              {/* Terms and Conditions - ADDED: Required field */}
-              <Row>
-                <Col md={12} className="mb-3 mb-md-4">
-                  <Form.Group controlId="formTerms">
-                    <Form.Check
-                      type="checkbox"
-                      required
-                      checked={agreeTerms}
-                      onChange={handleTermsChange}
-                      disabled={isSending}
-                      label={
-                        <span>
-                          I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-white">Terms & Conditions</a> and <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-white">Privacy Policy</a> *
-                        </span>
-                      }
-                      className="text-white"
-                    />
-                  </Form.Group>
                 </Col>
               </Row>
 
