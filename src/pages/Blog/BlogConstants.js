@@ -3879,7 +3879,7 @@ While the <strong>metal facade cost vs paint</strong> cost comparison shows a hi
   },
 
    {
-    title: "Facade Design Trends 2026 Smart Sustainable Metal",
+    title: "Facade Design Trends 2026 Smart Sustainable  High-Performance Building Exteriors",
     metaTitle:
       "Facade Design Trends 2026 | Smart, Sustainable & Parametric Facades India ",
     date: "12-02-26",
