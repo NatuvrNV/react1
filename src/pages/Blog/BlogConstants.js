@@ -3778,6 +3778,54 @@ Parametric architecture is a design method using algorithms and data-driven para
     date: "09-01-26",
     template: 'B',
     category: "Project Highlights",
+       // Fixed: Schema as a string (not a JSX element)
+    schema: `{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://metaguise.com/blog/low-maintenance-metal-facade-in-india-beauty-that-does-not-age#article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://metaguise.com/blog/low-maintenance-metal-facade-in-india-beauty-that-does-not-age"
+  },
+  "headline": "Low Maintenance Metal Facade in India: Beauty That Does Not Age",
+  "description": "Discover why metal facades are India's most low maintenance exterior solution. UV-resistant, non-porous, and engineered for Indian weather. Designed by Metaguise for homes & commercial buildings.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://metaguise.com/assets/Blogs/The%20Low%20Maintenance/banner.jpg"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Metaguise Design & Engineering Team",
+    "url": "https://metaguise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://res.cloudinary.com/dptxcqnnw/image/upload/v1768208408/download_qarmcu.png"
+    }
+  },
+  "datePublished": "2026-02-10",
+  "dateModified": "2026-02-10",
+  "keywords": [
+    "metal facade India",
+    "low maintenance metal facade",
+    "sustainable facade design India",
+    "architectural cladding India",
+    "modern building facade materials"
+  ],
+  "articleSection": [
+    "Design Benefits",
+    "Performance Advantages",
+    "Aesthetic Longevity",
+    "Sustainability",
+    "Maintenance"
+  ],
+  "inLanguage": "en-IN",
+  "isAccessibleForFree": true
+}`,
 
     metaDescription:
       " Discover why metal facades are India’s most low maintenance exterior solution. UV-resistant, non-porous, and engineered for Indian weather. Designed by Metaguise for homes & commercial buildings. ",

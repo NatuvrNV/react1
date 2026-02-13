@@ -280,6 +280,13 @@ const SingleBlogPage = () => {
           rel="canonical"
           href={`https://metaguise.com/blog/${urlFriendlyTitle}`}
         />
+        
+        {/* Schema from BlogConstants - if it exists */}
+        {blog.schema && (
+          <script type="application/ld+json">
+            {blog.schema}
+          </script>
+        )}
       </Helmet>
 
       <Container className='mt-4'>
@@ -302,7 +309,7 @@ const SingleBlogPage = () => {
 
           <Row>
             <div className="grid grid-cols-2 gap-8 blog-grid mt-xl-5 px-xl-5 mt-4">
-              {relatedBlogs.map((relatedBlog) => (
+              {relatedBlogs.slice(0, 4).map((relatedBlog) => (
                 <div
                   key={relatedBlog.title}
                   className="flex cursor-pointer blog-card"
