@@ -6,44 +6,51 @@ import Arrow from "../assets/arrow.png";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
 
+import MetaCoinImg from "../assets/products/coin.webp";
+import MetaSequinImg from "../assets/products/sequin.webp";
+import CascadingKeysImg from "../assets/products/caskey.webp";
+import MetaShinglesImg from "../assets/products/shingle.webp";
+
+
 const Product = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const navigate = useNavigate();
   const sliderRef = useRef(null);
 
-  const products = useMemo(
-    () => [
-      { 
-        id: 1, 
-        name: "MetaCoin", 
-        image: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_600/v1758101793/coin.84d7f865000c91bb4085_z1jfij.webp", 
-        slug: "metacoin", 
-        alt: "MetaCoin panels with round golden discs forming a coin matrix that creates a rippling surface illusion." 
-      },
-      { 
-        id: 2, 
-        name: "MetaSequin", 
-        image: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_600/v1758101793/sequin.e782c6698d6d95429a7f_d3hpuv.webp", 
-        slug: "metasequin", 
-        alt: "Custom-shaped golden MetaSequins catching fiery red light, forming a shimmering, parametric facade." 
-      },
-      { 
-        id: 3, 
-        name: "Cascading Keys", 
-        image: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_600/v1758101791/caskey.f9ff9a69d92783380eee_u1efqo.webp", 
-        slug: "cascadingkeys", 
-        alt: "Reflective Cascading Keys arranged vertically on the facade of a building creating a kinetic facade." 
-      },
-      { 
-        id: 4, 
-        name: "MetaShingles", 
-        image: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_600/v1758101791/shingle.daa844f162c869c1adae_yf52o6.webp", 
-        slug: "metashingle", 
-        alt: "Curved balcony facade clad in monochromatic grey MetaShingles with a fish scale-like texture." 
-      }
-    ],
-    []
-  );
+const products = useMemo(
+  () => [
+    {
+      id: 1,
+      name: "MetaCoin",
+      image: MetaCoinImg,
+      slug: "metacoin",
+      alt: "MetaCoin panels with round golden discs forming a coin matrix creating a rippling surface illusion."
+    },
+    {
+      id: 2,
+      name: "MetaSequin",
+      image: MetaSequinImg,
+      slug: "metasequin",
+      alt: "Custom-shaped golden MetaSequins forming a shimmering parametric facade."
+    },
+    {
+      id: 3,
+      name: "Cascading Keys",
+      image: CascadingKeysImg,
+      slug: "cascadingkeys",
+      alt: "Reflective Cascading Keys arranged vertically creating a kinetic facade system."
+    },
+    {
+      id: 4,
+      name: "MetaShingles",
+      image: MetaShinglesImg,
+      slug: "metashingle",
+      alt: "Curved facade clad in monochromatic MetaShingles with fish scale-like texture."
+    }
+  ],
+  []
+);
+
 
   // Mouse Enter animation
   const handleMouseEnter = useCallback((e) => {

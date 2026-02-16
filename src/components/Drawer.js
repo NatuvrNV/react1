@@ -5,6 +5,7 @@ import "./Drawer.css";
 import logo1 from "../assets/metaguiseblk.png";
 import MailchimpForm from "./MailchimpForm";
 import { MdArrowOutward } from "react-icons/md";
+import adProLogo from "../assets/ADproblack.png";
 
 function Drawer({ isOpen, toggleDrawer }) {
   return (
@@ -73,7 +74,7 @@ function Drawer({ isOpen, toggleDrawer }) {
 
  <a href="https://www.architecturaldigest.in/adpro/directory/profile/metaguise/" style={{ display: "inline-block" }}>
   <img
-    src="https://res.cloudinary.com/dptxcqnnw/image/upload/v1768215076/ADproblack.39e6d34bff0ba8eea8f9_fsaome.png"
+    src={adProLogo}
     alt="Metaguise Logo"
     style={{
       width: "150px",

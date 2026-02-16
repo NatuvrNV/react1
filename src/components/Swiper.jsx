@@ -5,13 +5,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Swipper.css";
 import { useEffect, useState } from "react";
+import Banner1 from "../assets/banner/1.webp";
+import Banner2 from "../assets/banner/2.webp";
+import Banner3 from "../assets/banner/3.webp";
+
 
 // ✅ Lazy load images & preload for better LCP
 const banners = [
-  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1765181940/1_lmlaxu.webp",
-  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1765181941/3_sicqip.webp",
-  "https://res.cloudinary.com/dptxcqnnw/image/upload/v1765181940/2_vzrerp.webp",
+  Banner1,
+  Banner2,
+  Banner3,
 ];
+
 
 export const Swipper = () => {
   const [loadedImages, setLoadedImages] = useState([banners[0]]); // Preload first image

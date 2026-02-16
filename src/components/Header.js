@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Phone } from "lucide-react";
+import Logo from "../assets/logo.png"; // ✅ Import your logo properly
 import {
   faFacebook,
   faInstagram,
@@ -9,6 +10,8 @@ import {
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
 import Archello_icon from "../assets/Archello_icon.png";
+import AdProIcon from "../assets/ADprowhite.png";
+
 
 import Drawer from "./Drawer";
 
@@ -109,7 +112,7 @@ function Header() {
                 aria-label="View Metaguise on Archello"
               >
             <img
-  src="https://res.cloudinary.com/dptxcqnnw/image/upload/v1768215076/ADprowhite.278186518a1f17ca65b7_qrx1xb.png"
+  src={AdProIcon}
   alt="Archello icon - Visit Metaguise on Archello, the global architecture and design network."
   className="archello-icon"
 />
@@ -131,7 +134,7 @@ function Header() {
 
         <div className="header-center">
           <a href="/">
-            <img src="https://res.cloudinary.com/dptxcqnnw/image/upload/v1768208408/download_qarmcu.png" alt="Stylized Metaguise logo featuring interlocking geometric blocks in grayscale. Symbol of India’s premier metal façade design house with 1800+ projects, PAN India presence, and global reach; trusted by architects nationwide." className="logo" />
+            <img src={Logo} alt="Stylized Metaguise logo featuring interlocking geometric blocks in grayscale. Symbol of India’s premier metal façade design house with 1800+ projects, PAN India presence, and global reach; trusted by architects nationwide." className="logo" />
           </a>
         </div>
 

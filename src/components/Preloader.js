@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import './Preloader.css';
-
+import Logo from "../assets/logo.png";
 const Preloader = () => {
   const liquidRef = useRef(null);
   const percentageRef = useRef(null);
@@ -88,7 +88,7 @@ const Preloader = () => {
           style={{
             width: '50%',
             height: '50%',
-            background: `url("https://res.cloudinary.com/dptxcqnnw/image/upload/v1768215886/metaguiseblk.94b32fcaeeab938e555c_pujoak.png") no-repeat center center`,
+            background: `url(${Logo}) no-repeat center center`,
             backgroundSize: 'contain',
             position: 'absolute',
             top: '50%',

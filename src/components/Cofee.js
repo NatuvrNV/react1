@@ -1,6 +1,7 @@
 import React from "react";
 import "./Cofee.css";
 import { useNavigate } from "react-router-dom";
+import CoffeeBookCover from "../assets/Metaguise Coffee Table Book.webp";
 
 const Cofee = () => {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ const Cofee = () => {
 
         <div className="image-section">
           <img
-            src="https://res.cloudinary.com/dptxcqnnw/image/upload/v1767864594/Metaguise_Coffee_Table_Book_-_2026_cover_lckv8p.webp"
+            src={CoffeeBookCover}
             alt="Cover of Metaguise Odyssey book featuring a sculpted metallic wing motif in bronze tones."
             loading="lazy"
           />

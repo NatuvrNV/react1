@@ -5,6 +5,13 @@ import LazyLoad from "react-lazy-load"; // Lazy Load Import
 import "./Brochure.css";
 import { MdArrowOutward } from "react-icons/md";
 
+
+// ✅ Import local brochure images
+import MetaFormImg from "../assets/Brochures/formopen.jpg";
+import MetaFunctionImg from "../assets/Brochures/functionopen.jpg";
+import MetaParametricImg from "../assets/Brochures/parametricopen.jpg";
+import MetaSurfaceImg from "../assets/Brochures/patinaopen.jpg";
+
 const Brochure = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const navigate = useNavigate();
@@ -12,28 +19,28 @@ const Brochure = () => {
   // ✅ Use Cloudinary URLs directly (optimized with f_auto,q_auto,w_auto,dpr_auto)
   const gallery = [
     {
-      src: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_auto,dpr_auto/v1758100922/formopen.e10d81d1844910268f40_pfptyn.jpg",
+      src: MetaFormImg,
       name: "MetaForm",
       path: "/metaform",
-      alt: "Close-up of horizontal MetaLouvers with a green houseplant peeking out and an underceiling with solid panels."
+      alt: "MetaForm architectural facade system brochure cover"
     },
     {
-      src: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_auto,dpr_auto/v1758100922/functionopen.d63b1c920c02ee1672a2_txs7mt.jpg",
+      src: MetaFunctionImg,
       name: "MetaFunction",
       path: "/metafunction",
-      alt: "Tall vertical MetaLouvers in a MetaFold Syetem on a residential facade providing shading and privacy."
+      alt: "MetaFunction facade system brochure cover"
     },
     {
-      src: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_auto,dpr_auto/v1758100922/parametricopen.91060c3bc34ba929e9c5_cejsrf.jpg",
+      src: MetaParametricImg,
       name: "MetaParametric",
       path: "/metaparametric",
-      alt: "Sharp-edged corner view of the Tanishq facade clad in custom MetaCoin panels with the blue sky and a plan flying above."
+      alt: "MetaParametric facade system brochure cover"
     },
     {
-      src: "https://res.cloudinary.com/dptxcqnnw/image/upload/f_auto,q_auto,w_auto,dpr_auto/v1758100921/patinaopen.91c7361f12b6726d1b87_ggd9fy.jpg",
+      src: MetaSurfaceImg,
       name: "MetaSurface",
       path: "/metasurface",
-      alt: "Circular MetaPatina panels with a hand-finished copper oxide texture in green and bronze tones."
+      alt: "MetaSurface brochure showing patina metal textures"
     }
   ];
 
