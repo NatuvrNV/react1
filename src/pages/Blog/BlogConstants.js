@@ -3807,8 +3807,8 @@ Parametric architecture is a design method using algorithms and data-driven para
       "url": "https://res.cloudinary.com/dptxcqnnw/image/upload/v1768208408/download_qarmcu.png"
     }
   },
-  "datePublished": "2026-02-10",
-  "dateModified": "2026-02-10",
+  "datePublished": "2026-01-09",
+  "dateModified": "2026-01-09",
   "keywords": [
     "metal facade India",
     "low maintenance metal facade",
