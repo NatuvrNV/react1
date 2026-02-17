@@ -3948,19 +3948,19 @@ While the <strong>metal facade cost vs paint</strong> cost comparison shows a hi
     images: [
       {
         path: "assets/Blogs/Facade Design 2026/2.jpeg",
-        alt: "Modern building facade featuring parametric geometric patterns with textured metal panels creating dynamic light and shadow effects"
+        alt: "Parametric metal facade design showing adaptive building skin architecture trend 2026"
       },
       {
         path: "assets/Blogs/Facade Design 2026/banner.jpeg",
-        alt: "Sustainable high-performance building envelope with integrated smart glass and mixed material cladding systems"
+        alt: "Perforated metal facade cladding used in modern commercial building exterior"
       },
       {
         path: "assets/Blogs/Facade Design 2026/1.jpeg",
-        alt: "Warm minimalist facade design combining ultra-matte aluminum panels with natural stone and organic textured surfaces"
+        alt: "Sustainable metal facade design used in modern residential building exterior"
       },
       {
         path: "assets/Blogs/Facade Design 2026/3.jpeg",
-        alt: "Parametric facade with 3D geometric patterns and self-shading metal panels optimized for solar heat reduction"
+        alt: "Modern metal facade architecture showing facade design trends 2026"
       }
     ],
 
