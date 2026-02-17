@@ -316,10 +316,10 @@ const SingleBlogPage = () => {
           <Row>
             <Col xl={12}>
               <div className="desktop-title mb-3 single-title">
-                <h1 className="text-5xl text-center mb-10">Related Articles</h1>
+                <h2 className="text-5xl text-center mb-10">Related Articles</h2>
               </div>
               <div className="mobile-title mb-3 single-title">
-                <h1 className="text-5xl text-center mb-10">Related Articles</h1>
+                <h2 className="text-5xl text-center mb-10">Related Articles</h2>
               </div>
             </Col>
           </Row>
