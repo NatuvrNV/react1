@@ -8,14 +8,7 @@ import "swiper/css/pagination";
 import "./Features.css";
 import { useEffect, useState } from "react";
 
-import ArdeteImg from "../assets/Featured/f1.webp";
-import CaskeyImg from "../assets/Featured/f2.webp";
-import VivekImg from "../assets/Featured/f3.webp";
-import RJJewellersImg from "../assets/Featured/f4.webp";
-import LuxeImg from "../assets/Featured/f5.webp";
-import ScaledSymphonyImg from "../assets/Featured/f6.webp";
-import ZenithImg from "../assets/Featured/f7.webp";
-import WhitelandImg from "../assets/Featured/f8.webp";
+
 
 
 const Features = () => {
@@ -23,47 +16,47 @@ const Features = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
 const featuredImages = [
-  {
-    image: ArdeteImg,
-    displayName: "Studio Ardete HQ",
-    urlSlug: "ardete"
-  },
-  {
-    image: CaskeyImg,
-    displayName: "Kinetic Grid",
-    urlSlug: "caskey"
-  },
-  {
-    image: VivekImg,
-    displayName: "Obsidian",
-    urlSlug: "vivek"
-  },
-  {
-    image: RJJewellersImg,
-    displayName: "RJ Jewellers",
-    urlSlug: "rjjewellers"
-  },
-  {
-    image: LuxeImg,
-    displayName: "Luxe Manor",
-    urlSlug: "luxe"
-  },
-  {
-    image: ScaledSymphonyImg,
-    displayName: "Scaled Symphony",
-    urlSlug: "3939a"
-  },
-  {
-    image: ZenithImg,
-    displayName: "Zenith",
-    urlSlug: "zenith"
-  },
-  {
-    image: WhitelandImg,
-    displayName: "Whiteland",
-    urlSlug: "whiteland"
-  }
-];
+    {
+      image: "https://ik.imagekit.io/ylx9qggcp/f1.webp",
+      displayName: "Studio Ardete HQ",
+      urlSlug: "ardete",
+    },
+    {
+      image: "https://ik.imagekit.io/ylx9qggcp/f2.webp",
+      displayName: "Kinetic Grid",
+      urlSlug: "caskey",
+    },
+    {
+      image: "https://ik.imagekit.io/ylx9qggcp/f3.webp",
+      displayName: "Obsidian",
+      urlSlug: "vivek",
+    },
+    {
+      image: "https://ik.imagekit.io/ylx9qggcp/f4.webp",
+      displayName: "RJ Jewellers",
+      urlSlug: "rjjewellers",
+    },
+    {
+      image: "https://ik.imagekit.io/ylx9qggcp/f5.webp",
+      displayName: "Luxe Manor",
+      urlSlug: "luxe",
+    },
+    {
+      image: "https://ik.imagekit.io/ylx9qggcp/f6.webp",
+      displayName: "Scaled Symphony",
+      urlSlug: "3939a",
+    },
+    {
+      image: "https://ik.imagekit.io/ylx9qggcp/f7.webp",
+      displayName: "Zenith",
+      urlSlug: "zenith",
+    },
+    {
+      image: "https://ik.imagekit.io/ylx9qggcp/f8.webp",
+      displayName: "Whiteland",
+      urlSlug: "whiteland",
+    },
+  ];
 
 
   useEffect(() => {

@@ -5,16 +5,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Swipper.css";
 import { useEffect, useState } from "react";
-import Banner1 from "../assets/banner/1.webp";
-import Banner2 from "../assets/banner/2.webp";
-import Banner3 from "../assets/banner/3.webp";
+
 
 
 // ✅ Lazy load images & preload for better LCP
+
 const banners = [
-  Banner1,
-  Banner2,
-  Banner3,
+  "https://ik.imagekit.io/ylx9qggcp/1.webp",
+  "https://ik.imagekit.io/ylx9qggcp/2.webp",
+  "https://ik.imagekit.io/ylx9qggcp/3.webp",
 ];
 
 
