@@ -55,49 +55,48 @@ const SingleBlogPage = () => {
   // Added urlFriendlyTitle variable for canonical URL
   const urlFriendlyTitle = blog.title.toLowerCase().replace(/\s+/g, '-');
   
-  // Define the same alt tag for all images in this specific blog
-  // You can customize this for each blog
-  const getImageAltText = (blog) => {
-    // Return alt text based on blog title/category
-    if (blog.title.includes("Metal Louvers")) {
-      return "Metal Louvers Design for Indian Homes - Metaguise";
-    } else if (blog.title.includes("Parametric")) {
-      return "Parametric Facade Design - Metaguise Architecture";
-    } else if (blog.title.includes("MetaSequin")) {
-      return "MetaSequin Parametric Metal Facade System - Metaguise";
-    } else {
-      return `${blog.title} - Metaguise Architecture Design`;
+  // Function to get alt text for an image
+  const getImageAltText = (blog, imageIndex = 0) => {
+    // Check if the blog has the new images array format with alt tags
+    if (blog.images && blog.images.length > 0 && typeof blog.images[0] === 'object' && blog.images[0].alt) {
+      return blog.images[imageIndex]?.alt || blog.imageAltText || blog.title;
     }
+    // Fallback to old format
+    return blog.imageAltText || blog.title;
   };
-  
-  const imageAltText = getImageAltText(blog);
 
-  // Function to render Template A (current layout)
-  const renderTemplateA = () => {
-    // Function to render images in rows of 2
-    const renderImageRows = () => {
-      const rows = [];
-      for (let i = 0; i < blog.images.length; i += 2) {
-        const imagePair = blog.images.slice(i, i + 2);
-        rows.push(
-          <Row key={i} className="mb-4">
-            {imagePair.map((image, index) => (
+  // Function to render images in rows of 2 (Template A)
+  const renderImageRows = () => {
+    const rows = [];
+    for (let i = 0; i < blog.images.length; i += 2) {
+      const imagePair = blog.images.slice(i, i + 2);
+      rows.push(
+        <Row key={i} className="mb-4">
+          {imagePair.map((image, index) => {
+            // Handle both old and new image formats
+            const imagePath = typeof image === 'object' ? image.path : image;
+            const imageAlt = typeof image === 'object' ? image.alt : getImageAltText(blog, i + index);
+            
+            return (
               <Col key={i + index} xs={6}>
                 <img
-                  src={`/assets/Blogs/${blog.folderName}/${image.split('/').pop()}`}
-                  alt={blog.title}  // Same alt tag for all images in this blog
+                  src={`/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`}
+                  alt={imageAlt}
                   className="object-cover rounded-lg w-100"
                   loading="lazy"
                   style={{objectFit: 'cover', height: '300px'}}
                 />
               </Col>
-            ))}
-          </Row>
-        );
-      }
-      return rows;
-    };
+            );
+          })}
+        </Row>
+      );
+    }
+    return rows;
+  };
 
+  // Function to render Template A (current layout)
+  const renderTemplateA = () => {
     return (
       <>
         {/* Mobile Layout */}
@@ -146,13 +145,10 @@ const SingleBlogPage = () => {
   // Function to render Template B (vertical stacked layout)
   const renderTemplateB = () => {
     // Split the description into sections if provided in blog.contentSections
-    // Otherwise, split by paragraphs for demo purposes
     const descriptionSections = blog.contentSections || 
       blog.Fulldescription.split('</p>').filter(section => section.trim()).map(section => section + '</p>');
 
     // Calculate how many content sections we have per image
-    // If we have 3 images and 3 content sections, it's 1:1
-    // If we have more sections than images, distribute them
     const sectionsPerImage = Math.ceil(descriptionSections.length / blog.images.length);
     
     return (
@@ -167,37 +163,42 @@ const SingleBlogPage = () => {
           </p>
           
           {/* Mobile: Vertical stacked layout for Template B */}
-          {blog.images.map((image, index) => (
-            <div key={index} className="mt-2">
-              {/* Image */}
-              <img
-                src={`/assets/Blogs/${blog.folderName}/${image.split('/').pop()}`}
-                alt={blog.title}  // Same alt tag for all images in this blog
-                className="object-cover rounded-lg w-100 mb-4"
-                loading="lazy"
-                style={{objectFit: 'cover', height: '200px',borderRadius:'20px'}}
-              />
-              
-              {/* Text section(s) for this image */}
-              {descriptionSections.length > 0 && (
-                <div className="text-sm blog-fulldescription template2 mb-5">
-                  {(() => {
-                    // Get the sections for this specific image
-                    const startIndex = index * sectionsPerImage;
-                    const endIndex = startIndex + sectionsPerImage;
-                    const sectionsForThisImage = descriptionSections.slice(startIndex, endIndex);
-                    
-                    return sectionsForThisImage.map((section, sectionIndex) => (
-                      <div 
-                        key={`${index}-${sectionIndex}`}
-                        dangerouslySetInnerHTML={{ __html: section }}
-                      />
-                    ));
-                  })()}
-                </div>
-              )}
-            </div>
-          ))}
+          {blog.images.map((image, index) => {
+            // Handle both old and new image formats
+            const imagePath = typeof image === 'object' ? image.path : image;
+            const imageAlt = typeof image === 'object' ? image.alt : getImageAltText(blog, index);
+            
+            return (
+              <div key={index} className="mt-2">
+                {/* Image */}
+                <img
+                  src={`/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`}
+                  alt={imageAlt}
+                  className="object-cover rounded-lg w-100 mb-4"
+                  loading="lazy"
+                  style={{objectFit: 'cover', height: '200px', borderRadius: '20px'}}
+                />
+                
+                {/* Text section(s) for this image */}
+                {descriptionSections.length > 0 && (
+                  <div className="text-sm blog-fulldescription template2 mb-5">
+                    {(() => {
+                      const startIndex = index * sectionsPerImage;
+                      const endIndex = startIndex + sectionsPerImage;
+                      const sectionsForThisImage = descriptionSections.slice(startIndex, endIndex);
+                      
+                      return sectionsForThisImage.map((section, sectionIndex) => (
+                        <div 
+                          key={`${index}-${sectionIndex}`}
+                          dangerouslySetInnerHTML={{ __html: section }}
+                        />
+                      ));
+                    })()}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
 
         {/* Desktop Layout for Template B */}
@@ -213,50 +214,66 @@ const SingleBlogPage = () => {
 
           {/* Desktop: Vertical stacked layout for Template B */}
           <div className="mt-2">
-            {blog.images.map((image, index) => (
-              <div key={index} className="mb-2 pb-2">
-                {/* Image - Full width */}
-                <Row className="my-4">
-                  <Col xl={8}>
-                    <img
-                      src={`/assets/Blogs/${blog.folderName}/${image.split('/').pop()}`}
-                      alt={blog.title}  // Same alt tag for all images in this blog
-                      className="object-cover rounded-lg w-100"
-                      loading="lazy"
-                      style={{objectFit: 'cover', height: '400px',borderRadius:'20px'}}
-                    />
-                  </Col>
-                </Row>
-                
-                {/* Text section(s) for this image - Full width */}
-                {descriptionSections.length > 0 && (
-                  <Row>
+            {blog.images.map((image, index) => {
+              // Handle both old and new image formats
+              const imagePath = typeof image === 'object' ? image.path : image;
+              const imageAlt = typeof image === 'object' ? image.alt : getImageAltText(blog, index);
+              
+              return (
+                <div key={index} className="mb-2 pb-2">
+                  {/* Image - Full width */}
+                  <Row className="my-4">
                     <Col xl={8}>
-                      <div className="text-sm blog-fulldescription template2 px-3">
-                        {(() => {
-                          // Get the sections for this specific image
-                          const startIndex = index * sectionsPerImage;
-                          const endIndex = startIndex + sectionsPerImage;
-                          const sectionsForThisImage = descriptionSections.slice(startIndex, endIndex);
-                          
-                          return sectionsForThisImage.map((section, sectionIndex) => (
-                            <div 
-                              key={`${index}-${sectionIndex}`}
-                              dangerouslySetInnerHTML={{ __html: section }}
-                              className="my-3"
-                            />
-                          ));
-                        })()}
-                      </div>
+                      <img
+                        src={`/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`}
+                        alt={imageAlt}
+                        className="object-cover rounded-lg w-100"
+                        loading="lazy"
+                        style={{objectFit: 'cover', height: '400px', borderRadius: '20px'}}
+                      />
                     </Col>
                   </Row>
-                )}
-              </div>
-            ))}
+                  
+                  {/* Text section(s) for this image - Full width */}
+                  {descriptionSections.length > 0 && (
+                    <Row>
+                      <Col xl={8}>
+                        <div className="text-sm blog-fulldescription template2 px-3">
+                          {(() => {
+                            const startIndex = index * sectionsPerImage;
+                            const endIndex = startIndex + sectionsPerImage;
+                            const sectionsForThisImage = descriptionSections.slice(startIndex, endIndex);
+                            
+                            return sectionsForThisImage.map((section, sectionIndex) => (
+                              <div 
+                                key={`${index}-${sectionIndex}`}
+                                dangerouslySetInnerHTML={{ __html: section }}
+                                className="my-3"
+                              />
+                            ));
+                          })()}
+                        </div>
+                      </Col>
+                    </Row>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </>
     );
+  };
+
+  // Function to get alt text for related blog images
+  const getRelatedBlogImageAlt = (relatedBlog, imageIndex = 0) => {
+    if (relatedBlog.images && relatedBlog.images.length > 0) {
+      const firstImage = relatedBlog.images[0];
+      if (typeof firstImage === 'object' && firstImage.alt) {
+        return firstImage.alt;
+      }
+    }
+    return relatedBlog.imageAltText || relatedBlog.title;
   };
 
   // Select template based on blog.template property
@@ -309,26 +326,37 @@ const SingleBlogPage = () => {
 
           <Row>
             <div className="grid grid-cols-2 gap-8 blog-grid mt-xl-5 px-xl-5 mt-4">
-              {relatedBlogs.slice(0, 4).map((relatedBlog) => (
-                <div
-                  key={relatedBlog.title}
-                  className="flex cursor-pointer blog-card"
-                  onClick={() => handleBlogClick(relatedBlog.title)}
-                >
-                  <img 
-                    src={`/assets/Blogs/${relatedBlog.folderName}/${relatedBlog.images[0]?.split('/').pop()}`} 
-                    alt={getImageAltText(relatedBlog)}  // Using same pattern for related blogs
-                    className="object-cover rounded-lg" 
-                  />
-                  <div className="mx-xl-4 blog-text">
-                    <h2 className="text-xl blog-title-head">{relatedBlog.title}</h2>
-                    <p className="text-sm mt-xl-2 blog-description">{relatedBlog.description}</p>
-                    <p className="text-xs text-gray-400 text-start date-text">
-                      {relatedBlog.date} | {relatedBlog.category}
-                    </p>
+              {relatedBlogs.slice(0, 4).map((relatedBlog) => {
+                // Get the first image path and alt for the related blog
+                const firstImage = relatedBlog.images && relatedBlog.images.length > 0 
+                  ? (typeof relatedBlog.images[0] === 'object' 
+                      ? relatedBlog.images[0].path 
+                      : relatedBlog.images[0])
+                  : '';
+                
+                const imageAlt = getRelatedBlogImageAlt(relatedBlog);
+                
+                return (
+                  <div
+                    key={relatedBlog.title}
+                    className="flex cursor-pointer blog-card"
+                    onClick={() => handleBlogClick(relatedBlog.title)}
+                  >
+                    <img 
+                      src={`/assets/Blogs/${relatedBlog.folderName}/${firstImage.split('/').pop()}`} 
+                      alt={imageAlt}
+                      className="object-cover rounded-lg" 
+                    />
+                    <div className="mx-xl-4 blog-text">
+                      <h2 className="text-xl blog-title-head">{relatedBlog.title}</h2>
+                      <p className="text-sm mt-xl-2 blog-description">{relatedBlog.description}</p>
+                      <p className="text-xs text-gray-400 text-start date-text">
+                        {relatedBlog.date} | {relatedBlog.category}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </Row>
         </Container>

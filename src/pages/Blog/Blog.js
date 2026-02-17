@@ -33,6 +33,40 @@ const Blog = () => {
     setSearchInput(e.target.value.toLowerCase());
   };
 
+  // Helper function to get image path (handles both old and new formats)
+  const getImagePath = (blog) => {
+    if (!blog.images || blog.images.length === 0) {
+      return '';
+    }
+    
+    const firstImage = blog.images[0];
+    
+    // Check if it's the new format (object with path property)
+    if (typeof firstImage === 'object' && firstImage !== null) {
+      return firstImage.path;
+    }
+    
+    // Old format (string)
+    return firstImage;
+  };
+
+  // Helper function to get image alt text for blog card
+  const getImageAlt = (blog) => {
+    if (!blog.images || blog.images.length === 0) {
+      return blog.title;
+    }
+    
+    const firstImage = blog.images[0];
+    
+    // Check if it's the new format (object with alt property)
+    if (typeof firstImage === 'object' && firstImage !== null && firstImage.alt) {
+      return firstImage.alt;
+    }
+    
+    // Fallback to blog.imageAltText or blog.title
+    return blog.imageAltText || blog.title;
+  };
+
   // Filter blogs based on selected category and search query
   const filteredBlogs = SingleBlogDetail.filter(blog => {
     const matchesCategory = selectedCategory === "All" || blog.category === selectedCategory;
@@ -113,26 +147,31 @@ const Blog = () => {
             </div>
           ) : (
             <div className="grid grid-cols-2 gap-8 blog-grid mt-xl-5 px-xl-5 mt-4">
-              {filteredBlogs.slice().reverse().map((blog) => (
-                <div
-                  key={blog.title} // Using title as key
-                  className="flex cursor-pointer blog-card"
-                  onClick={() => handleBlogClick(blog.title)}
-                >
-                  <img 
-                    src={`/assets/Blogs/${blog.folderName}/${blog.images[0]?.split('/').pop()}`} 
-                    alt={blog.title}  
-                    className="object-cover rounded-lg" 
-                  />
-                  <div className="mx-xl-4 blog-text">
-                    <h2 className="text-xl blog-title-head">{blog.title}</h2>
-                    <p className="text-sm mt-xl-2 blog-description">{blog.description}</p>
-                    <p className="text-xs text-gray-400 text-start date-text">
-                      {blog.date} | {blog.category}
-                    </p>
+              {filteredBlogs.slice().reverse().map((blog) => {
+                const imagePath = getImagePath(blog);
+                const imageAlt = getImageAlt(blog);
+                
+                return (
+                  <div
+                    key={blog.title}
+                    className="flex cursor-pointer blog-card"
+                    onClick={() => handleBlogClick(blog.title)}
+                  >
+                    <img 
+                      src={`/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`}
+                      alt={imageAlt}
+                      className="object-cover rounded-lg" 
+                    />
+                    <div className="mx-xl-4 blog-text">
+                      <h2 className="text-xl blog-title-head">{blog.title}</h2>
+                      <p className="text-sm mt-xl-2 blog-description">{blog.description}</p>
+                      <p className="text-xs text-gray-400 text-start date-text">
+                        {blog.date} | {blog.category}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </Row>
