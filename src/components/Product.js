@@ -6,10 +6,7 @@ import Arrow from "../assets/arrow.png";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
 
-import MetaCoinImg from "../assets/products/coin.webp";
-import MetaSequinImg from "../assets/products/sequin.webp";
-import CascadingKeysImg from "../assets/products/caskey.webp";
-import MetaShinglesImg from "../assets/products/shingle.webp";
+
 
 
 const Product = () => {
@@ -17,39 +14,39 @@ const Product = () => {
   const navigate = useNavigate();
   const sliderRef = useRef(null);
 
-const products = useMemo(
-  () => [
-    {
-      id: 1,
-      name: "MetaCoin",
-      image: MetaCoinImg,
-      slug: "metacoin",
-      alt: "MetaCoin panels with round golden discs forming a coin matrix creating a rippling surface illusion."
-    },
-    {
-      id: 2,
-      name: "MetaSequin",
-      image: MetaSequinImg,
-      slug: "metasequin",
-      alt: "Custom-shaped golden MetaSequins forming a shimmering parametric facade."
-    },
-    {
-      id: 3,
-      name: "Cascading Keys",
-      image: CascadingKeysImg,
-      slug: "cascadingkeys",
-      alt: "Reflective Cascading Keys arranged vertically creating a kinetic facade system."
-    },
-    {
-      id: 4,
-      name: "MetaShingles",
-      image: MetaShinglesImg,
-      slug: "metashingle",
-      alt: "Curved facade clad in monochromatic MetaShingles with fish scale-like texture."
-    }
-  ],
-  []
-);
+  const products = useMemo(
+    () => [
+      {
+        id: 1,
+        name: "MetaCoin",
+        image: "https://ik.imagekit.io/ylx9qggcp/coin.webp",
+        slug: "metacoin",
+        alt: "MetaCoin panels with round golden discs forming a coin matrix creating a rippling surface illusion.",
+      },
+      {
+        id: 2,
+        name: "MetaSequin",
+        image: "https://ik.imagekit.io/ylx9qggcp/sequin.webp",
+        slug: "metasequin",
+        alt: "Custom-shaped golden MetaSequins forming a shimmering parametric facade.",
+      },
+      {
+        id: 3,
+        name: "Cascading Keys",
+        image: "https://ik.imagekit.io/ylx9qggcp/caskey.webp",
+        slug: "cascadingkeys",
+        alt: "Reflective Cascading Keys arranged vertically creating a kinetic facade system.",
+      },
+      {
+        id: 4,
+        name: "MetaShingles",
+        image: "https://ik.imagekit.io/ylx9qggcp/shingle.webp",
+        slug: "metashingle",
+        alt: "Curved facade clad in monochromatic MetaShingles with fish scale-like texture.",
+      },
+    ],
+    []
+  );
 
 
   // Mouse Enter animation
