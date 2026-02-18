@@ -17,6 +17,10 @@
   z-index: 1000;
 }
 
+.phone-icon{
+  transform: rotate(90deg);
+}
+
 .header-left-mob{
   display: none;
 }

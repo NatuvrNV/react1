@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Phone } from "lucide-react";
+import { FaPhone } from "react-icons/fa";
 import Logo from "../assets/logo.png"; // ✅ Import your logo properly
 import {
   faFacebook,
@@ -127,7 +127,8 @@ function Header() {
               href="https://metaguise.com/contact"
               className="flex items-center text-white-600"
             >
-              <Phone size={20} className="mr-2" />
+              <FaPhone size={20} className="mr-2 phone-icon" />
+
             </a>
           </div>
         </div>

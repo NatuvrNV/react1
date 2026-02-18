@@ -5,9 +5,6 @@ import LazyLoad from "react-lazy-load"; // Lazy Load Import
 import "./Brochure.css";
 import { MdArrowOutward } from "react-icons/md";
 
-
-
-
 const Brochure = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const navigate = useNavigate();
