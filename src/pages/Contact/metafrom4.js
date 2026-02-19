@@ -430,32 +430,11 @@ const Contact = ({ brochureName }) => {
                       disabled={isSending}
                     />
                   </div>
-                  <Form.Text className="text-muted text-center d-block">
-                    * Please verify that you are not a robot
-                  </Form.Text>
+                
                 </Col>
               </Row>
 
-              {/* Terms and Conditions - NEW: Added as required */}
-              <Row>
-                <Col md={12} className="mb-3 mb-md-4">
-                  <Form.Group controlId="formTerms">
-                    <Form.Check
-                      type="checkbox"
-                      required
-                      checked={agreeTerms}
-                      onChange={handleTermsChange}
-                      disabled={isSending}
-                      label={
-                        <span>
-                          I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-white">Terms & Conditions</a> and <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-white">Privacy Policy</a> *
-                        </span>
-                      }
-                      className="text-white"
-                    />
-                  </Form.Group>
-                </Col>
-              </Row>
+             
 
               <div className="button-wrapper">
                 <button
