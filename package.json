@@ -14,7 +14,6 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "compression": "^1.8.0",
-    "emailjs-com": "^3.2.0",
     "framer-motion": "^11.15.0",
     "gh-pages": "^6.2.0",
     "glob": "^11.0.1",
