@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet'; // Import Helmet
+import { Helmet } from 'react-helmet-async'; // Import Helmet
 import "./Blog.css";
 import { useNavigate } from 'react-router-dom';
 import { Container, Row } from "react-bootstrap";
