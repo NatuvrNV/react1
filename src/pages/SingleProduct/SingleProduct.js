@@ -6,7 +6,7 @@ import { MdArrowOutward } from "react-icons/md";
 import Footer from "../../components/Footer";
 import "./SingleProduct.css";
 import { SingleProductDetail } from "../../utils/constants";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { FaPlay } from "react-icons/fa";
 
 const SingleProduct = () => {

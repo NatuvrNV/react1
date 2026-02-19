@@ -7,7 +7,7 @@ import { MdArrowOutward } from "react-icons/md";
 import Footer from "../../components/Footer";
 import "./SingleProject.css";
 import { SingleprojectDetail } from "../../utils/constants";
-import { Helmet } from "react-helmet"; 
+import { Helmet } from "react-helmet-async"; 
 import { FaPlay } from "react-icons/fa";
 import { ProjectImages } from "../../utils/constants";
 
