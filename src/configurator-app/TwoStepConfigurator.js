@@ -1,8 +1,6 @@
 // TwoStepConfigurator.js
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { jsPDF } from 'jspdf';
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProductConfigurator.css";
 
@@ -592,6 +590,8 @@ const TwoStepConfigurator = () => {
     // NEW SIMPLIFIED PDF GENERATION - Shows all products
     const generateAndDownloadPDF = async (leadData, productsList) => {
         try {
+               // 👇 ADD THIS LINE
+        const { default: jsPDF } = await import("jspdf");
             const doc = new jsPDF({ unit: 'pt', format: 'a4' });
             const pageW = doc.internal.pageSize.getWidth();
             const margin = 40;
