@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
-import LazyLoad from "react-lazy-load"; // Lazy Load Import
+import LazyLoad from "react-lazy-load";
 import "./Brochure.css";
 import { MdArrowOutward } from "react-icons/md";
 
@@ -9,7 +9,7 @@ const Brochure = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const navigate = useNavigate();
 
-  // ✅ Use Cloudinary URLs directly (optimized with f_auto,q_auto,w_auto,dpr_auto)
+  // Cloudinary URLs with ImageKit optimization
   const gallery = [
     {
       src: "https://ik.imagekit.io/ylx9qggcp/formopen.jpg",
@@ -48,7 +48,7 @@ const Brochure = () => {
               key={index}
               className={`brochure-grid-item ${
                 hoveredIndex === index ? "col-md-6" : "col-md-2"
-              } `}
+              }`}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               onClick={() => {

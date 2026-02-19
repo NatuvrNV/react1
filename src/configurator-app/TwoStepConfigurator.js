@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { jsPDF } from 'jspdf';
-import html2canvas from 'html2canvas';
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProductConfigurator.css";
 

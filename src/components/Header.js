@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaPhone } from "react-icons/fa";
-import Logo from "../assets/logo.png"; // ✅ Import your logo properly
+
 import {
   faFacebook,
   faInstagram,
@@ -135,7 +135,7 @@ function Header() {
 
         <div className="header-center">
           <a href="/">
-            <img src={Logo} alt="Stylized Metaguise logo featuring interlocking geometric blocks in grayscale. Symbol of India’s premier metal façade design house with 1800+ projects, PAN India presence, and global reach; trusted by architects nationwide." className="logo" />
+            <img src="https://ik.imagekit.io/ylx9qggcp/download%20(1).png" alt="Stylized Metaguise logo featuring interlocking geometric blocks in grayscale. Symbol of India’s premier metal façade design house with 1800+ projects, PAN India presence, and global reach; trusted by architects nationwide." className="logo" />
           </a>
         </div>
 
