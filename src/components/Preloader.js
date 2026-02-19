@@ -87,7 +87,7 @@ const Preloader = () => {
           style={{
             width: '50%',
             height: '50%',
-            background: `url(https://ik.imagekit.io/ylx9qggcp/download%20(1).png) no-repeat center center`,
+            background: `url("https://ik.imagekit.io/ylx9qggcp/download%20(1).png") no-repeat center center`,
             backgroundSize: 'contain',
             position: 'absolute',
             top: '50%',
