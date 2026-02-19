@@ -229,9 +229,7 @@ const Contact = ({ brochureName }) => {
     setCaptchaValue(value);
   };
 
-  const handleTermsChange = (e) => {
-    setAgreeTerms(e.target.checked);
-  };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();

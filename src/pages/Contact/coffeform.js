@@ -47,9 +47,7 @@ const Contact = ({ brochureName }) => {
     setFormData({ ...formData, phone: value });
   };
 
-  const handleTermsChange = (e) => {
-    setAgreeTerms(e.target.checked);
-  };
+
 
   const handleCaptchaChange = (value) => {
     setCaptchaValue(value);

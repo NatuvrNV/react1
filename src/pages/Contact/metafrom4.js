@@ -50,9 +50,7 @@ const Contact = ({ brochureName }) => {
     setFormData({ ...formData, phone: value });
   };
 
-  const handleTermsChange = (e) => {
-    setAgreeTerms(e.target.checked);
-  };
+ 
 
   useEffect(() => {
     const inputField = document.querySelector(".form-text input");
