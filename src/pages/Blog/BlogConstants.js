@@ -4124,7 +4124,7 @@ Is your next project ready for the future? Don't settle for a standard building 
     title: "Architectural Resilience: Designing for the Indian Climate Extremes",
     metaTitle:
       "Architectural Resilience India | Metaguise Facade Systems ",
-    date: "24-02-26",
+    date: "25-02-26",
     template: 'B',
     category: "Sustainability",
 
