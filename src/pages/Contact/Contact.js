@@ -85,7 +85,20 @@ const Contact = () => {
     // Get the message from textarea
     const userMessage = formData.message || "No message provided";
     
-    // Prepare final payload - all fields null except name, email, phone, message
+    // Create current date/time in ISO format
+    const currentDateTime = new Date().toISOString();
+    
+    // Prepare lead assignments with static data
+    const leadAssignments = [
+      {
+        role: "PRE_SALES",
+        employeeId: "694bbefcf956d21d2f8f2f90",
+        employeeName: "Kajal Arya",
+        assignAt: currentDateTime // Using current date and time
+      }
+    ];
+    
+    // Prepare final payload
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -110,11 +123,12 @@ const Contact = () => {
       callStatus: "NEW_LEAD",
       remarks: userMessage, // Store only the user message
       callRegistration: true,
-      leadAssignments: [], // Empty array
+      leadAssignments: leadAssignments, // Updated with static data + current date
       callSource: "CONTACT" // Hardcoded as CONTACT for contact page
     };
 
     console.log("Creating lead with payload:", payload);
+    console.log("Lead assignments:", leadAssignments);
     console.log("User message for backend:", userMessage);
 
     try {
