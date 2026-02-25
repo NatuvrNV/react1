@@ -924,11 +924,20 @@
     <changefreq>monthly</changefreq>
   </url>
 
-                                                           <url>
-    <loc>https://metaguise.com/blog/top-facade-architecture-trends-2026-tech-sustainability-and-aesthetic-breakthroughs</loc>
-    <lastmod>2026-02-12</lastmod>
+                                                              <url>
+    <loc>https://metaguise.com/blog/facade-design-trends-2026-smart-sustainable-and-high-performance-building-exteriors</loc>
+    <lastmod>2026-02-23</lastmod>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+
+                                                           <url>
+    <loc>https://metaguise.com/blog/architectural-resilience:-designing-for-the-indian-climate-extremes</loc>
+    <lastmod>2026-02-25</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+
 </urlset>
 

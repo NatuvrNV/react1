@@ -3576,7 +3576,7 @@ They’re not just additions - they’re architectural upgrades. And when paired
       "The Gold Standard: Why Metaguise is the #1 Choice of Top Architects in India",
     date: "02-01-26",
     template: 'B',
-    category: "Project Highlights",
+    category: "Company News & Updates",
 
     metaDescription:
       "Metaguise is India's leading metal facade partner for top architects, delivering precision parametric design with 1,800+ successful projects nationwide",
@@ -3679,7 +3679,7 @@ When you choose Metaguise, you aren't just getting a beautiful building. You are
       "Future of Parametric Architecture in India | Parametric Metal Facade Design - Metaguise",
     date: "05-01-26",
     template: 'B',
-    category: "Project Highlights",
+    category: "Architectural Insights",
 
     metaDescription:
       "Parametric architecture is reshaping India’s skylines. Discover how Metaguise transforms complex designs into iconic, climate-responsive metal facade systems nationwide. ",
@@ -3777,7 +3777,7 @@ Parametric architecture is a design method using algorithms and data-driven para
       "Low Maintenance Metal Facade in India | Long - Lasting Building Exteriors - Metaguise ",
     date: "09-01-26",
     template: 'B',
-    category: "Project Highlights",
+    category: "Material Spotlight",
        // Fixed: Schema as a string (not a JSX element)
     schema: `{
   "@context": "https://schema.org",
@@ -3932,7 +3932,7 @@ While the <strong>metal facade cost vs paint</strong> cost comparison shows a hi
       "Facade Architecture Trends 2026: Smart & Sustainable Design",
     date: "12-02-26",
     template: 'B',
-    category: "Project Highlights",
+    category: "Industry Trends",
 
  
 
@@ -4038,7 +4038,7 @@ We’ve moved past just bolting solar panels onto roofs. Today, we use Building-
       "Facade Design Trends 2026 | Smart, Sustainable & Parametric Facades India ",
     date: "23-02-26",
     template: 'B',
-    category: "Project Highlights",
+    category: "Industry Trends",
 
     metaDescription:
       "Discover the top facade design trends 2026 including smart facades, sustainable materials, parametric design, and high performance metal systems, led by Metaguise India. ",
@@ -4126,7 +4126,7 @@ Is your next project ready for the future? Don't settle for a standard building 
       "Architectural Resilience India | Metaguise Facade Systems ",
     date: "24-02-26",
     template: 'B',
-    category: "Project Highlights",
+    category: "Sustainability",
 
     metaDescription:
       "Learn how ventilated aluminium facade systems protect buildings from India heat, UV, monsoon, and pollution. Discover durable Metaguise exterior solutions fast ",
