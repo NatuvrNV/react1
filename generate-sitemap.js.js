@@ -24,3 +24,4 @@ const { SitemapStream, streamToPromise } = require('sitemap');
     fs.writeFileSync(path.join(__dirname, 'public', 'sitemap.xml'), data);
     console.log('✅ Sitemap generated correctly!');
 })();
+

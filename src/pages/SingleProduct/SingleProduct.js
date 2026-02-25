@@ -123,7 +123,7 @@ const SingleProduct = () => {
     <div className="container main-container">
       <Helmet>
         <title>
-          {selectedProduct.Productname} | {selectedProduct.metatittles}
+           {selectedProduct.metatittles}
         </title>
         <meta name="description" content={selectedProduct.metadescription} />
         <meta property="og:title" content={selectedProduct.metatittles} />
