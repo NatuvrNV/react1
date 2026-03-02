@@ -3,7 +3,7 @@ import WhatsAppIcon from "../assets/footer/Whatsapp.svg"; // ✅ Make sure this 
 
 const FloatingButton = () => {
   const handleClick = () => {
-    window.open("https://wa.me/message/KEUH3LADTELUP1", "_blank");
+    window.open("https://wa.me/9355314449", "_blank");
   };
 
   return (
