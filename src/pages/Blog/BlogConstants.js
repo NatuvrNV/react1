@@ -4127,6 +4127,56 @@ Is your next project ready for the future? Don't settle for a standard building 
     date: "25-02-26",
     template: 'B',
     category: "Sustainability",
+       schema: `{
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best facade material for Indian climate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Engineered aluminium facade systems are among the most durable materials for Indian climate conditions. They resist extreme heat, UV exposure, monsoon moisture, and pollution. Ventilated aluminium facades offer over 40 years of lifespan, high heat reflectivity, moisture resistance, and minimal maintenance compared to traditional paint, plaster, or stone surfaces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do building exteriors crack so fast in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Building exteriors crack primarily due to extreme temperature fluctuations and monsoon moisture. Surfaces can heat up to 60°C during summer and cool rapidly at night, causing expansion and contraction. When rainwater enters micro-cracks, it leads to structural damage, dampness, and reduced lifespan. Ventilated metal facade systems protect structural walls from direct weather exposure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does a ventilated facade reduce building heat in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A ventilated facade creates an air cavity between the external cladding and structural wall. This air gap allows hot air to escape naturally, reducing heat transfer into the building. It lowers indoor temperature, reduces air conditioning usage, improves energy efficiency, and enhances occupant comfort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does aluminium facade last in Indian climate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "High-quality aluminium facade systems can last more than 40 years in Indian climate conditions with minimal maintenance. Unlike paint or plaster, aluminium does not crack, absorb moisture, or fade quickly, making it a long-term exterior solution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How to choose the best facade company in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best facade company should have proven project experience, strong design expertise, high-grade materials, and climate-engineered systems suited for Indian weather conditions. Reviewing completed projects and technical capabilities is essential before selection."
+      }
+    }
+  ]
+}
+</script>
+}`,
 
     metaDescription:
       "Learn how ventilated aluminium facade systems protect buildings from India heat, UV, monsoon, and pollution. Discover durable Metaguise exterior solutions fast ",

@@ -34,28 +34,52 @@ const SingleprojectDetail = [
       ],
     },
 
-        {
-      name: "sculpted silence",
-        alt: "",
-      youtubeLink: "",
-      videoLink: "",
-      instagramLink: "",
-      Projectname:"Sculpted Silence",
-      metatittles:"",
-      metadescription:"",
-      
-      images: [
+{
+  name: "sculpted silence",
+  alt: "",
+  youtubeLink: "https://youtube.com/your-video-link",
+  videoLink: "https://youtube.com/your-video-link",
+  instagramLink: "https://instagram.com/your-post-link",
+  Projectname: "Sculpted Silence",
+  metatittles: "Sculptural Metal Facade Project | Metaguise",
+  metadescription: "Explore Sculpted Silence by Metaguise, a sculptural metal facade project showcasing precision engineering, innovative design, and sustainable architecture expertise.",
   
-        "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_2.webp",
-          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_3.webp",
-          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_4.webp",
-          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_5.webp",
-          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_6.webp",
-          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_7.webp",
-          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_8.webp",
-          "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_9.webp",
-      ],
+  images: [
+    {
+      src: "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_2.webp",
+      alt: "Sculptural metal facade design by Metaguise – Sculpted Silence project"
     },
+    {
+      src: "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_3.webp",
+      alt: "Custom metal facade panels installation – Sculpted Silence"
+    },
+    {
+      src: "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_4.webp",
+      alt: "Precision engineered sculptural facade structure by Metaguise"
+    },
+    {
+      src: "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_5.webp",
+      alt: "Contemporary architectural metal facade detailing project"
+    },
+    {
+      src: "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_6.webp",
+      alt: "Parametric inspired sculptural metal facade exterior"
+    },
+    {
+      src: "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_7.webp",
+      alt: "Modern building exterior with custom metal facade panels"
+    },
+    {
+      src: "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_8.webp",
+      alt: "Advanced metal facade fabrication by Metaguise"
+    },
+    {
+      src: "assets/Allprojects/residential/Sculpted Silence/metashingle/A2_9.webp",
+      alt: "Sculpted Silence architectural facade close-up detailing"
+    }
+  ],
+  
+},
 
          {
       name: "the haven",

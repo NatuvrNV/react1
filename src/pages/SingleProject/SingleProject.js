@@ -53,14 +53,17 @@ const SingleProject = () => {
     setActiveButton(activeButton === index ? null : index);
   };
 
+  // Extract categories from image paths
   const categories = Array.from(
     new Set(
       selectedProject.images
-        .map((item) =>
-          item.split("/")[4] !== "night"
-            ? item.split("/")[4].toLowerCase()
-            : null
-        )
+        .map((item) => {
+          // Check if item is an object or string
+          const path = typeof item === 'string' ? item : item.src;
+          return path.split("/")[4] !== "night"
+            ? path.split("/")[4].toLowerCase()
+            : null;
+        })
         .filter((item) => item)
     )
   );
@@ -82,10 +85,10 @@ const SingleProject = () => {
   const isLastRow = (index) => {
     return (
       index >=
-      selectedProject.images.length -
-        (selectedProject.images.length % 3 === 0
+      contentToRender.length -
+        (contentToRender.length % 3 === 0
           ? 3
-          : selectedProject.images.length % 3)
+          : contentToRender.length % 3)
     );
   };
 
@@ -95,9 +98,10 @@ const SingleProject = () => {
   };
 
   useEffect(() => {
-    const nightImages = selectedProject.images.filter(
-      (item) => item.split("/")[4] === "night"
-    );
+    const nightImages = selectedProject.images.filter((item) => {
+      const path = typeof item === 'string' ? item : item.src;
+      return path.split("/")[4] === "night";
+    });
   
     if (darkMode && nightImages.length === 0) {
       setContentToRender([]);
@@ -111,7 +115,10 @@ const SingleProject = () => {
   };
 
   const filteredImages = selectedCategory
-    ? contentToRender.filter((img) => img.includes(selectedCategory))
+    ? contentToRender.filter((img) => {
+        const path = typeof img === 'string' ? img : img.src;
+        return path.includes(selectedCategory);
+      })
     : contentToRender;
 
   useEffect(() => {
@@ -123,49 +130,56 @@ const SingleProject = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  if (!selectedProject) {
+    return <div>Project not found</div>;
+  }
+
   return (
     <div className="container main-container">
       <Helmet>
-        <title>{selectedProject.Projectname} | {selectedProject.metatittles}</title>
+        <title>{selectedProject.metatittles}</title>
         <meta name="description" content={selectedProject.metadescription} />
         <meta property="og:title" content={selectedProject.metatittles}  />
         <meta property="og:description" content={selectedProject.metadescription} />
 
-  
-  {/* ✅ PROJECT SCHEMA FOR AI & SEARCH */}
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "name": selectedProject.Projectname,
-      "url": `https://metaguise.com/all-projects/${projectName}`,
-      "description": selectedProject.metadescription,
-      "image": selectedProject.images?.map(
-        img => `https://metaguise.com/${img}`
-      ),
-      "creator": {
-        "@type": "Organization",
-        "name": "Metaguise",
-        "url": "https://metaguise.com"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Metaguise",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://metaguise.com/logo.png"
-        }
-      },
-      "keywords": selectedProject.tags || [
-        "metal facade",
-        "parametric architecture",
-        "architectural cladding",
-        "custom metal design"
-      ],
-      "inLanguage": "en-IN"
-    })}
-  </script>
+        {/* PROJECT SCHEMA FOR AI & SEARCH */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "name": selectedProject.Projectname,
+            "url": `https://metaguise.com/all-projects/${projectName}`,
+            "description": selectedProject.metadescription,
+            "image": selectedProject.images?.map(
+              img => {
+                const src = typeof img === 'string' ? img : img.src;
+                return `https://metaguise.com/${src}`;
+              }
+            ),
+            "creator": {
+              "@type": "Organization",
+              "name": "Metaguise",
+              "url": "https://metaguise.com"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Metaguise",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://metaguise.com/logo.png"
+              }
+            },
+            "keywords": selectedProject.tags || [
+              "metal facade",
+              "parametric architecture",
+              "architectural cladding",
+              "custom metal design"
+            ],
+            "inLanguage": "en-IN"
+          })}
+        </script>
       </Helmet>
+      
       <div className="row">
         <div className="col-12">
           <BackButton navigate={navigate} />
@@ -184,6 +198,7 @@ const SingleProject = () => {
             />
           )}
         </div>
+        
         <div className="col-9 xs-12">
           <ImageGrid
             filteredImages={filteredImages}
@@ -193,10 +208,11 @@ const SingleProject = () => {
             ref={imageGridRef}
             videoLink={selectedProject.videoLink}
             darkMode={darkMode}
-            selectedProject={projectName}
+            selectedProject={selectedProject}
             setDarkMode={setDarkMode}
           />
         </div>
+        
         <Sidebar
           selectedProject={selectedProject}
           categories={categories}
@@ -209,6 +225,7 @@ const SingleProject = () => {
           youtubeLink={selectedProject.youtubeLink}
           instagramLink={selectedProject.instagramLink}
         />
+        
         {isMobile && <BuildButton />}
       </div>
       <Footer />
@@ -396,7 +413,7 @@ const Sidebar = ({
         className="sidebar p-4 bg-darkrounded "
         style={{ marginBottom: "10px" }}
       >
-        <h4 className="mb-3"> Filter by Products</h4>
+        <h4 className="mb-3">Filter by Products</h4>
         
         <ListGroup variant="flush">
           <ListGroup.Item
@@ -425,6 +442,7 @@ const Sidebar = ({
           ))}
         </ListGroup>
       </div>
+      
       <div className={darkMode ? "dark-mode" : "light-mode"}>
         <div className="header-container">
           <p className="time-text">Time</p>
@@ -444,6 +462,7 @@ const Sidebar = ({
           </div>
         </div>
       </div>
+      
       <div className="button-row" style={{ padding: "5px" }}>
         <Button
           icon={<FaYoutube />}
@@ -458,6 +477,7 @@ const Sidebar = ({
           active={activeButton === 1}
         />
       </div>
+      
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
         <button id="build-button" className="hover-button">
           <span>Build Your Dream</span>
@@ -481,11 +501,19 @@ const ImageGrid = ({
   const normalizeName = (name) => name.toLowerCase().replace(/[^a-z0-9]/gi, '');
 
   const coverImage = ProjectImages.find(
-    (img) => normalizeName(img.imgPath).includes(normalizeName(selectedProject))
+    (img) => normalizeName(img.imgPath).includes(normalizeName(selectedProject.name))
   );
 
   const handleGoBackToDay = () => {
     setDarkMode(false);
+  };
+
+  // Calculate the starting index for filtered images
+  const getStartingIndex = () => {
+    let index = 0;
+    if (!darkMode && videoLink) index += 1;
+    if (coverImage) index += 1;
+    return index;
   };
 
   return (
@@ -493,7 +521,7 @@ const ImageGrid = ({
       {filteredImages.length === 0 ? (
         <div className="no-images-found">
           No images found.
-          <span onClick={handleGoBackToDay} style={{ cursor: 'pointer' }}>
+          <span onClick={handleGoBackToDay} style={{ cursor: 'pointer', marginLeft: '5px', color: 'blue', textDecoration: 'underline' }}>
             Go Back to Day
           </span>
         </div>
@@ -505,32 +533,45 @@ const ImageGrid = ({
               index={0}
               handleImageClick={handleImageClick}
               clickedIndex={clickedIndex}
-             
             />
           )}
 
           {coverImage && (
             <Image
-              key={`cover-${selectedProject}`}
+              key={`cover-${selectedProject.name}`}
               image={coverImage.imgPath}
+              index={!darkMode && videoLink ? 1 : 0}
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
               clickedIndex={clickedIndex}
-              altText={selectedProject.alt} 
+              altText={`${selectedProject.Projectname} - Cover image showing the main facade`}
+              projectName={selectedProject.Projectname}
             />
           )}
 
-          {filteredImages.map((image, index) => (
-            <Image
-              key={index + 1}
-              image={image}
-              index={index + 1}
-              handleImageClick={handleImageClick}
-              isLastRow={isLastRow}
-              clickedIndex={clickedIndex}
-              altText={selectedProject.alt}
-            />
-          ))}
+          {filteredImages.map((imageObj, index) => {
+            // Calculate the actual index in the grid
+            const gridIndex = getStartingIndex() + index;
+            
+            // Handle both string and object image types
+            const imageSrc = typeof imageObj === 'string' ? imageObj : imageObj.src;
+            const imageAlt = typeof imageObj === 'object' && imageObj.alt 
+              ? imageObj.alt 
+              : `${selectedProject.Projectname} - Architectural view ${index + 1}`;
+
+            return (
+              <Image
+                key={`image-${index}-${gridIndex}`}
+                image={imageSrc}
+                index={gridIndex}
+                handleImageClick={handleImageClick}
+                isLastRow={isLastRow}
+                clickedIndex={clickedIndex}
+                altText={imageAlt}
+                projectName={selectedProject.Projectname}
+              />
+            );
+          })}
         </>
       )}
     </div>
@@ -570,7 +611,6 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
             alt="YouTube Video Thumbnail"
             className="grid-image"
-             
             loading="lazy" 
           />
           <div className="play-icon">
@@ -582,7 +622,10 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
   );
 };
 
-const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, altText  }) => {
+const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, altText, projectName }) => {
+  // Ensure the image path is correct
+  const imagePath = image.startsWith('/') ? image : `/${image}`;
+  
   return (
     <div
       className={`grid-item ${isLastRow(index) ? "last-row" : ""} ${
@@ -591,9 +634,9 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, altTex
       onClick={() => handleImageClick(index)}
     >
       <img
-        src={`${process.env.PUBLIC_URL}/${image}`}
+        src={`${process.env.PUBLIC_URL}${imagePath}`}
         className="grid-image"
-        alt={altText || `Project image ${index}`} // Added fallback
+        alt={altText || `${projectName} - Architectural detail view`}
         loading="lazy" 
       />
     </div>
