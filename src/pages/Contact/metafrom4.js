@@ -160,6 +160,19 @@ const Contact = ({ brochureName }) => {
       callSource = brochureToCallSource[detectedBrochure] || "CONTACT";
     }
 
+    // Create current date/time in ISO format for lead assignment
+    const currentDateTime = new Date().toISOString();
+    
+    // Prepare lead assignments with Kajal Arya's static data
+    const leadAssignments = [
+      {
+        role: "PRE_SALES",
+        employeeId: "694bbefcf956d21d2f8f2f90",
+        employeeName: "Kajal Arya",
+        assignAt: currentDateTime // Using current date and time
+      }
+    ];
+
     // Prepare final payload - all fields null except name, email, phone
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
@@ -185,11 +198,12 @@ const Contact = ({ brochureName }) => {
       callStatus: "NEW_LEAD",
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
-      leadAssignments: [], // Empty array - no employee matching without square feet
-      callSource: callSource // CHANGED: Now using dynamic callSource instead of hardcoded "METASURFACE"
+      leadAssignments: leadAssignments, // Added lead assignments for Kajal Arya
+      callSource: callSource // Now using dynamic callSource
     };
 
     console.log("Creating lead with payload:", payload);
+    console.log("Lead assignments:", leadAssignments);
     console.log("callSource value:", callSource);
 
     try {
@@ -267,7 +281,7 @@ const Contact = ({ brochureName }) => {
       // Step 1: Open PDF
       openPDF();
       
-      // Step 2: Create lead in backend
+      // Step 2: Create lead in backend with Kajal Arya assignment
       const leadResult = await createLead();
       
       // Step 3: Send email notification via EmailJS

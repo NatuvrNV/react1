@@ -37,7 +37,7 @@ const Contact = ({ brochureName }) => {
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
   const [captchaValue, setCaptchaValue] = useState(null);
-  const [agreeTerms, setAgreeTerms] = useState(false); // NEW: Terms agreement state
+  const [agreeTerms, setAgreeTerms] = useState(false); // Terms agreement state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -131,6 +131,19 @@ const Contact = ({ brochureName }) => {
     // Get callSource value
     const callSource = getCallSource();
     
+    // Create current date/time in ISO format for lead assignment
+    const currentDateTime = new Date().toISOString();
+    
+    // Prepare lead assignments with Kajal Arya's static data
+    const leadAssignments = [
+      {
+        role: "PRE_SALES",
+        employeeId: "694bbefcf956d21d2f8f2f90",
+        employeeName: "Kajal Arya",
+        assignAt: currentDateTime // Using current date and time
+      }
+    ];
+    
     // Prepare final payload - all fields null except name, email, phone
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
@@ -156,11 +169,13 @@ const Contact = ({ brochureName }) => {
       callStatus: "NEW_LEAD",
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
-      leadAssignments: [], // Empty array
-      callSource: "COFFEE_TABLE_BOOK" // Hardcoded to COFFEE TABLE BOOK
+      leadAssignments: leadAssignments, // Added lead assignments for Kajal Arya
+      callSource: callSource // Using dynamic callSource
     };
 
     console.log("Creating lead with payload:", payload);
+    console.log("Lead assignments:", leadAssignments);
+    console.log("callSource value:", callSource);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -232,7 +247,7 @@ const Contact = ({ brochureName }) => {
       // Step 1: Open PDF
       openPDF();
       
-      // Step 2: Create lead in backend
+      // Step 2: Create lead in backend with Kajal Arya assignment
       const leadResult = await createLead();
       
       // Step 3: Send email notification via EmailJS

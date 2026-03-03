@@ -147,7 +147,20 @@ const Contact = ({ brochureName }) => {
     // Clean phone number for backend - remove spaces and special characters
     const cleanPhone = formData.phone ? formData.phone.replace(/\s+/g, '').replace(/-/g, '') : '';
     
-    // Prepare final payload with dynamic callSource
+    // Create current date/time in ISO format for lead assignment
+    const currentDateTime = new Date().toISOString();
+    
+    // Prepare lead assignments with Kajal Arya's static data
+    const leadAssignments = [
+      {
+        role: "PRE_SALES",
+        employeeId: "694bbefcf956d21d2f8f2f90",
+        employeeName: "Kajal Arya",
+        assignAt: currentDateTime // Using current date and time
+      }
+    ];
+    
+    // Prepare final payload with lead assignments
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -172,11 +185,12 @@ const Contact = ({ brochureName }) => {
       callStatus: "NEW_LEAD",
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
-      leadAssignments: [],
+      leadAssignments: leadAssignments, // Added lead assignments for Kajal Arya
       callSource: callSource
     };
 
     console.log("Creating lead with payload:", payload);
+    console.log("Lead assignments:", leadAssignments);
     console.log("callSource value:", callSource);
     console.log("Phone sent to backend:", cleanPhone);
 
@@ -243,7 +257,7 @@ const Contact = ({ brochureName }) => {
       // Step 1: Open PDF
       openPDF();
       
-      // Step 2: Create lead in backend
+      // Step 2: Create lead in backend with Kajal Arya assignment
       const leadResult = await createLead();
       
       // Step 3: Send email notification via EmailJS

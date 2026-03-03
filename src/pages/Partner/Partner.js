@@ -75,6 +75,19 @@ const Partner = () => {
   };
 
   const createLead = async () => {
+    // Create current date/time in ISO format for lead assignment
+    const currentDateTime = new Date().toISOString();
+    
+    // Prepare lead assignments with Kajal Arya's static data
+    const leadAssignments = [
+      {
+        role: "PRE_SALES",
+        employeeId: "694bbefcf956d21d2f8f2f90",
+        employeeName: "Kajal Arya",
+        assignAt: currentDateTime // Using current date and time
+      }
+    ];
+    
     // Prepare final payload for Partner with callSource: "PARTNER"
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
@@ -100,11 +113,12 @@ const Partner = () => {
       callStatus: "NEW_LEAD",
       remarks: `${formData.message}`,
       callRegistration: true,
-      leadAssignments: [], // Empty array
+      leadAssignments: leadAssignments, // Added lead assignments for Kajal Arya
       callSource: "PARTNER" // Added callSource parameter
     };
 
     console.log("Creating partner lead with payload:", payload);
+    console.log("Lead assignments:", leadAssignments);
 
     try {
       const response = await fetch('https://backend.cshare.in/api/customer/create', {
@@ -169,7 +183,7 @@ const Partner = () => {
       // Step 1: Send email via EmailJS
       const emailResult = await sendEmail();
       
-      // Step 2: Create lead in backend
+      // Step 2: Create lead in backend with Kajal Arya assignment
       const leadResult = await createLead();
       
       // Step 3: Show success message based on results
