@@ -39,8 +39,6 @@ const Contact = ({ brochureName }) => {
   const [feedbackMessage, setFeedbackMessage] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
-  const [employees, setEmployees] = useState([]);
-  const [loading, setLoading] = useState(false);
   const [showLeadSuccess, setShowLeadSuccess] = useState(false);
 
   const handleChange = (e) => {
@@ -66,43 +64,10 @@ const Contact = ({ brochureName }) => {
     }
   }, [formData.phone]);
 
-  // Fetch employees on component mount
-  useEffect(() => {
-    fetchEmployees();
-  }, []);
-
-  const fetchEmployees = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch('https://backend.cshare.in/api/genericEmployee/genericEmployeeFilter?roles=PRE_SALES&statuses=ACTIVE&page=0&size=1000', {
-        method: 'PUT',
-        headers: {
-          'companyId': '693f9759f956d25cedd37a6f',
-          'apiKey': '918ef419818745ef1f09f705a9642545',
-          'Content-Type': 'application/json'
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch employees');
-      }
-
-      const data = await response.json();
-      if (data.object && data.object.content) {
-        setEmployees(data.object.content);
-        console.log(`Fetched ${data.object.content.length} employees`);
-      }
-    } catch (err) {
-      console.error("Error fetching employees:", err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const openPDF = () => {
     const brochureMap = {
       MetaSurface: "/assets/brochure/METASURFACE.pdf",
-      MetaSurface2: "/assets/brochure/METASURFACE.pdf", // Added MetaSurface2 mapping
+      MetaSurface2: "/assets/brochure/METASURFACE.pdf",
       MetaParametric: "/assets/brochure/METAPARAMETRIC.pdf",
       MetaForm: "/assets/brochure/METAFORM.pdf",
       MetaFunction: "/assets/brochure/METAFUNCTION.pdf",
@@ -119,7 +84,7 @@ const Contact = ({ brochureName }) => {
   const getCallSource = () => {
     const pathToCallSource = {
       "/metasurface": "METASURFACE",
-      "/metasurface2": "METASURFACE", // Added for MetaSurface2
+      "/metasurface2": "METASURFACE",
       "/metaparametric": "METAPARAMETRIC",
       "/metaform": "METAFORM",
       "/metafunction": "METAFUNCTION",
@@ -132,16 +97,16 @@ const Contact = ({ brochureName }) => {
     return pathToCallSource[location.pathname] || "CONTACT";
   };
 
-  // Function to send email using EmailJS - UPDATED with from_phone
+  // Function to send email using EmailJS
   const sendEmail = async () => {
     const templateParams = {
       to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
-      from_phone: formData.phone, // Added this for your template
-      phone: formData.phone, // Keep for backward compatibility
-      phone_number: formData.phone, // Keep for backward compatibility
-      mobile: formData.phone, // Keep for backward compatibility
+      from_phone: formData.phone,
+      phone: formData.phone,
+      phone_number: formData.phone,
+      mobile: formData.phone,
       brochure_name: detectedBrochure,
       message: formData.message,
       timestamp: new Date().toLocaleString(),
@@ -167,7 +132,7 @@ const Contact = ({ brochureName }) => {
   };
 
   const createLead = async () => {
-    // Get callSource value - USING DYNAMIC VALUE
+    // Get callSource value
     const callSource = getCallSource();
     
     // Create current date/time in ISO format for lead assignment
@@ -179,11 +144,11 @@ const Contact = ({ brochureName }) => {
         role: "PRE_SALES",
         employeeId: "694bbefcf956d21d2f8f2f90",
         employeeName: "Kajal Arya",
-        assignAt: currentDateTime // Using current date and time
+        assignAt: currentDateTime
       }
     ];
 
-    // Prepare final payload - all fields null except name, email, phone
+    // Prepare final payload
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -208,8 +173,8 @@ const Contact = ({ brochureName }) => {
       callStatus: "NEW_LEAD",
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
-      leadAssignments: leadAssignments, // Added lead assignments for Kajal Arya
-      callSource: callSource // Now using dynamic value
+      leadAssignments: leadAssignments,
+      callSource: callSource
     };
 
     console.log("Creating lead with payload:", payload);
@@ -272,7 +237,7 @@ const Contact = ({ brochureName }) => {
     }
 
     if (!captchaValue) {
-      setFeedbackMessage("⚠️ Please verify the reCAPTCHA before submitting.");
+      setFeedbackMessage("⚠️ Please verify the reCAPTCHA.");
       setIsSending(false);
       return;
     }
@@ -287,15 +252,15 @@ const Contact = ({ brochureName }) => {
       // Step 3: Send email notification via EmailJS
       const emailResult = await sendEmail();
       
-       // Step 4: Show success/error message
+      // Step 4: Show success/error message
       if (leadResult.success && emailResult.success) {
         setFeedbackMessage("✅ Thanks for your query! Your Metaguise Brochure Download is ready!");
       } else if (leadResult.success && !emailResult.success) {
         setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and lead created. Email notification failed.");
       } else if (!leadResult.success && emailResult.success) {
-        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent. The request failed.");
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent. Lead creation failed.");
       } else {
-        setFeedbackMessage("✅ Thanks for your query! Your Metaguise Brochure downloaded. The request failed.");
+        setFeedbackMessage("✅ Thanks for your query! Your Metaguise Brochure downloaded. Request processing had issues.");
       }
 
       // Step 5: Reset form
@@ -411,26 +376,56 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
-              {/* reCAPTCHA */}
-              <div className="mb-3 d-flex justify-content-center">
-                <ReCAPTCHA
-                  sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
-                  onChange={handleCaptchaChange}
-                  theme="dark"
-                  disabled={isSending}
-                />
-              </div>
+              {/* Message field (textarea) */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <Form.Group controlId="formMessage">
+                    <Form.Control
+                      as="textarea"
+                      rows={3}
+                      name="message"
+                      placeholder="Message *"
+                      className="bg-contact form-text border-0"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      disabled={isSending}
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
 
+              {/* reCAPTCHA */}
+              <Row>
+                <Col md={12} className="mb-3 mb-md-4">
+                  <div className="d-flex justify-content-center">
+                    <ReCAPTCHA
+                      sitekey="6Lf5GwksAAAAAILPCzd0RMkNRtjFLPyph-uV56Ev"
+                      onChange={handleCaptchaChange}
+                      theme="dark"
+                      disabled={isSending}
+                    />
+                  </div>
+                </Col>
+              </Row>
+
+              {/* Submit Button */}
               <div className="button-wrapper">
-                <button type="submit" className="send-button" disabled={isSending}>
+                <button 
+                  type="submit" 
+                  className="send-button"
+                  disabled={isSending}
+                >
                   <span>
-                    {isSending
-                      ? "Processing..."
-                      : `Send & View ${detectedBrochure} Brochure`}
+                    {isSending 
+                      ? "Processing..." 
+                      : `Send & View ${detectedBrochure} Brochure`
+                    }
                   </span>
                 </button>
               </div>
 
+              {/* Feedback Message */}
               {feedbackMessage && (
                 <Alert 
                   variant={

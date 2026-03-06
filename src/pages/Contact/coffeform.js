@@ -37,7 +37,6 @@ const Contact = ({ brochureName }) => {
   const [isSending, setIsSending] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
   const [captchaValue, setCaptchaValue] = useState(null);
-  const [agreeTerms, setAgreeTerms] = useState(false); // Terms agreement state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -46,8 +45,6 @@ const Contact = ({ brochureName }) => {
   const handlePhoneChange = (value) => {
     setFormData({ ...formData, phone: value });
   };
-
-
 
   const handleCaptchaChange = (value) => {
     setCaptchaValue(value);
@@ -95,13 +92,13 @@ const Contact = ({ brochureName }) => {
     return pathToCallSource[location.pathname] || "COFFEE_TABLE_BOOK";
   };
 
-  // Function to send email using EmailJS - ADDED from_phone field
+  // Function to send email using EmailJS
   const sendEmail = async () => {
     const templateParams = {
       to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
-      from_phone: formData.phone, // ADDED: This is needed for your EmailJS template
+      from_phone: formData.phone,
       phone: formData.phone,
       brochure_name: detectedBrochure,
       message: formData.message,
@@ -140,11 +137,11 @@ const Contact = ({ brochureName }) => {
         role: "PRE_SALES",
         employeeId: "694bbefcf956d21d2f8f2f90",
         employeeName: "Kajal Arya",
-        assignAt: currentDateTime // Using current date and time
+        assignAt: currentDateTime
       }
     ];
     
-    // Prepare final payload - all fields null except name, email, phone
+    // Prepare final payload
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -169,8 +166,8 @@ const Contact = ({ brochureName }) => {
       callStatus: "NEW_LEAD",
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
-      leadAssignments: leadAssignments, // Added lead assignments for Kajal Arya
-      callSource: callSource // Using dynamic callSource
+      leadAssignments: leadAssignments,
+      callSource: callSource
     };
 
     console.log("Creating lead with payload:", payload);
@@ -208,16 +205,9 @@ const Contact = ({ brochureName }) => {
     setIsSending(true);
     setFeedbackMessage("");
 
-    // Validate all required fields (name, email, phone, message, terms)
+    // Validate all required fields (name, email, phone, message)
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.message.trim()) {
       setFeedbackMessage("❌ All fields are required.");
-      setIsSending(false);
-      return;
-    }
-
-    // Validate terms agreement
-    if (!agreeTerms) {
-      setFeedbackMessage("❌ Please agree to the Terms & Conditions and Privacy Policy.");
       setIsSending(false);
       return;
     }
@@ -238,7 +228,7 @@ const Contact = ({ brochureName }) => {
     }
 
     if (!captchaValue) {
-      setFeedbackMessage("⚠️ Please verify the reCAPTCHA before submitting.");
+      setFeedbackMessage("⚠️ Please verify the reCAPTCHA.");
       setIsSending(false);
       return;
     }
@@ -273,7 +263,6 @@ const Contact = ({ brochureName }) => {
       });
       
       setCaptchaValue(null);
-      setAgreeTerms(false); // Reset terms agreement
     } catch (error) {
       console.error("Error in form submission:", error);
       setFeedbackMessage("❌ Something went wrong. Please try again.");
@@ -378,7 +367,7 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
-              {/* Message field - ADDED: Made it visible and required */}
+              {/* Message field - Textarea */}
               <Row>
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formMessage">
@@ -408,12 +397,10 @@ const Contact = ({ brochureName }) => {
                       disabled={isSending}
                     />
                   </div>
-                 
                 </Col>
               </Row>
 
-            
-
+              {/* Submit Button */}
               <div className="button-wrapper">
                 <button type="submit" className="send-button" disabled={isSending}>
                   <span>
@@ -424,6 +411,7 @@ const Contact = ({ brochureName }) => {
                 </button>
               </div>
 
+              {/* Feedback Message */}
               {feedbackMessage && (
                 <Alert 
                   variant={

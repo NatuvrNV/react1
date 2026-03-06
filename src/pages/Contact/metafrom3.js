@@ -40,7 +40,6 @@ const Contact = ({ brochureName }) => {
   const [employees, setEmployees] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showLeadSuccess, setShowLeadSuccess] = useState(false);
-  const [agreeTerms, setAgreeTerms] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -125,16 +124,16 @@ const Contact = ({ brochureName }) => {
     return pathToCallSource[location.pathname] || "CONTACT";
   };
 
-  // Function to send email using EmailJS - UPDATED with from_phone
+  // Function to send email using EmailJS
   const sendEmail = async () => {
     const templateParams = {
       to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
-      from_phone: formData.phone, // ADDED: This is what your template uses
-      phone: formData.phone, // Keep for backward compatibility
-      phone_number: formData.phone, // Keep for backward compatibility
-      mobile: formData.phone, // Keep for backward compatibility
+      from_phone: formData.phone,
+      phone: formData.phone,
+      phone_number: formData.phone,
+      mobile: formData.phone,
       brochure_name: detectedBrochure,
       message: formData.message,
       timestamp: new Date().toLocaleString(),
@@ -172,11 +171,11 @@ const Contact = ({ brochureName }) => {
         role: "PRE_SALES",
         employeeId: "694bbefcf956d21d2f8f2f90",
         employeeName: "Kajal Arya",
-        assignAt: currentDateTime // Using current date and time
+        assignAt: currentDateTime
       }
     ];
 
-    // Prepare final payload - all fields null except name, email, phone
+    // Prepare final payload
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -201,8 +200,8 @@ const Contact = ({ brochureName }) => {
       callStatus: "NEW_LEAD",
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
-      leadAssignments: leadAssignments, // Added lead assignments for Kajal Arya
-      callSource: callSource // Using dynamic value
+      leadAssignments: leadAssignments,
+      callSource: callSource
     };
 
     console.log("Creating lead with payload:", payload);
@@ -240,8 +239,6 @@ const Contact = ({ brochureName }) => {
     setCaptchaValue(value);
   };
 
-
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
@@ -271,13 +268,7 @@ const Contact = ({ brochureName }) => {
     }
 
     if (!captchaValue) {
-      setFeedbackMessage("⚠️ Please verify the reCAPTCHA before submitting.");
-      setIsSending(false);
-      return;
-    }
-
-    if (!agreeTerms) {
-      setFeedbackMessage("⚠️ Please agree to the Terms & Conditions and Privacy Policy.");
+      setFeedbackMessage("⚠️ Please verify the reCAPTCHA.");
       setIsSending(false);
       return;
     }
@@ -286,21 +277,21 @@ const Contact = ({ brochureName }) => {
       // Step 1: Open PDF
       openPDF();
       
-      // Step 2: Create lead in backend with Kajal Arya assignment
+      // Step 2: Create lead in backend
       const leadResult = await createLead();
       
-      // Step 3: Send email notification via EmailJS
+      // Step 3: Send email notification
       const emailResult = await sendEmail();
       
-         // Step 4: Show success/error message
+      // Step 4: Show success/error message
       if (leadResult.success && emailResult.success) {
         setFeedbackMessage("✅ Thanks for your query! Your Metaguise Brochure Download is ready!");
       } else if (leadResult.success && !emailResult.success) {
         setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and lead created. Email notification failed.");
       } else if (!leadResult.success && emailResult.success) {
-        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent. The request failed.");
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent. Lead creation failed.");
       } else {
-        setFeedbackMessage("✅ Thanks for your query! Your Metaguise Brochure downloaded. The request failed.");
+        setFeedbackMessage("✅ Thanks for your query! Your Metaguise Brochure downloaded. Request processing had issues.");
       }
 
       // Reset form
@@ -312,7 +303,6 @@ const Contact = ({ brochureName }) => {
       });
       
       setCaptchaValue(null);
-      setAgreeTerms(false);
     } catch (error) {
       console.error("Error in form submission:", error);
       setFeedbackMessage("❌ Something went wrong. Please try again.");
@@ -406,7 +396,7 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
-              {/* Message field - REQUIRED */}
+              {/* Message field - Textarea */}
               <Row>
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formMessage">
@@ -436,12 +426,10 @@ const Contact = ({ brochureName }) => {
                       disabled={isSending}
                     />
                   </div>
-            
                 </Col>
               </Row>
 
-            
-
+              {/* Submit Button */}
               <div className="button-wrapper">
                 <button type="submit" className="send-button" disabled={isSending}>
                   <span>
@@ -452,6 +440,7 @@ const Contact = ({ brochureName }) => {
                 </button>
               </div>
 
+              {/* Feedback Message */}
               {feedbackMessage && (
                 <Alert 
                   variant={

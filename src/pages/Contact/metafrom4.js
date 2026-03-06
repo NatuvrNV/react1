@@ -40,7 +40,6 @@ const Contact = ({ brochureName }) => {
   const [employees, setEmployees] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showLeadSuccess, setShowLeadSuccess] = useState(false);
-  const [agreeTerms, setAgreeTerms] = useState(false); // NEW: Terms agreement state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -49,8 +48,6 @@ const Contact = ({ brochureName }) => {
   const handlePhoneChange = (value) => {
     setFormData({ ...formData, phone: value });
   };
-
- 
 
   useEffect(() => {
     const inputField = document.querySelector(".form-text input");
@@ -63,7 +60,7 @@ const Contact = ({ brochureName }) => {
     }
   }, [formData.phone]);
 
-  // Fetch employees on component mount (simplified - no longer needed for matching)
+  // Fetch employees on component mount
   useEffect(() => {
     fetchEmployees();
   }, []);
@@ -110,16 +107,16 @@ const Contact = ({ brochureName }) => {
     }
   };
 
-  // Function to send email using EmailJS - UPDATED with from_phone
+  // Function to send email using EmailJS
   const sendEmail = async () => {
     const templateParams = {
       to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
-      from_phone: formData.phone, // ADDED for your EmailJS template
-      phone: formData.phone, // Keep for backward compatibility
-      phone_number: formData.phone, // Keep for backward compatibility
-      mobile: formData.phone, // Keep for backward compatibility
+      from_phone: formData.phone,
+      phone: formData.phone,
+      phone_number: formData.phone,
+      mobile: formData.phone,
       brochure_name: detectedBrochure,
       message: formData.message,
       timestamp: new Date().toLocaleString(),
@@ -169,11 +166,11 @@ const Contact = ({ brochureName }) => {
         role: "PRE_SALES",
         employeeId: "694bbefcf956d21d2f8f2f90",
         employeeName: "Kajal Arya",
-        assignAt: currentDateTime // Using current date and time
+        assignAt: currentDateTime
       }
     ];
 
-    // Prepare final payload - all fields null except name, email, phone
+    // Prepare final payload
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -198,8 +195,8 @@ const Contact = ({ brochureName }) => {
       callStatus: "NEW_LEAD",
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
-      leadAssignments: leadAssignments, // Added lead assignments for Kajal Arya
-      callSource: callSource // Now using dynamic callSource
+      leadAssignments: leadAssignments,
+      callSource: callSource
     };
 
     console.log("Creating lead with payload:", payload);
@@ -243,16 +240,9 @@ const Contact = ({ brochureName }) => {
     setFeedbackMessage("");
     setShowLeadSuccess(false);
 
-    // Validate all required fields (name, email, phone, message, terms)
+    // Validate all required fields (name, email, phone, message)
     if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.message.trim()) {
       setFeedbackMessage("❌ All fields are required.");
-      setIsSending(false);
-      return;
-    }
-
-    // Validate terms agreement
-    if (!agreeTerms) {
-      setFeedbackMessage("❌ Please agree to the Terms & Conditions and Privacy Policy.");
       setIsSending(false);
       return;
     }
@@ -272,7 +262,7 @@ const Contact = ({ brochureName }) => {
     }
 
     if (!captchaValue) {
-      setFeedbackMessage("⚠️ Please verify the reCAPTCHA before submitting.");
+      setFeedbackMessage("⚠️ Please verify the reCAPTCHA.");
       setIsSending(false);
       return;
     }
@@ -293,9 +283,9 @@ const Contact = ({ brochureName }) => {
       } else if (leadResult.success && !emailResult.success) {
         setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and lead created. Email notification failed.");
       } else if (!leadResult.success && emailResult.success) {
-        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent. The request failed.");
+        setFeedbackMessage("✅ Thanks for your query! Brochure downloaded and email sent. Lead creation failed.");
       } else {
-        setFeedbackMessage("✅ Thanks for your query! Your Metaguise Brochure downloaded. The request failed.");
+        setFeedbackMessage("✅ Thanks for your query! Your Metaguise Brochure downloaded. Request processing had issues.");
       }
 
       // Reset form
@@ -307,7 +297,6 @@ const Contact = ({ brochureName }) => {
       });
       
       setCaptchaValue(null);
-      setAgreeTerms(false); // Reset terms agreement
     } catch (error) {
       console.error("Error in form submission:", error);
       setFeedbackMessage("❌ Something went wrong. Please try again.");
@@ -412,7 +401,7 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
-              {/* Message field - NEW: Added as required */}
+              {/* Message field - Textarea */}
               <Row>
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formMessage">
@@ -442,12 +431,10 @@ const Contact = ({ brochureName }) => {
                       disabled={isSending}
                     />
                   </div>
-                
                 </Col>
               </Row>
 
-             
-
+              {/* Submit Button */}
               <div className="button-wrapper">
                 <button
                   type="submit"
@@ -462,6 +449,7 @@ const Contact = ({ brochureName }) => {
                 </button>
               </div>
 
+              {/* Feedback Message */}
               {feedbackMessage && (
                 <Alert 
                   variant={feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") ? "danger" : "success"} 
