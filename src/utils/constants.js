@@ -2,6 +2,7 @@ export
 const SingleprojectDetail = [
     {
       name: "ardete",
+      url:"studio-ardete-hq,
         alt: "Studio Ardete HQ facade in Mohali featuring rose gold MetaSequin panels, curvilinear MetaFin forms, and resilient MetaCassette backing - trusted by leading architects for merging parametric artistry with enduring design.",
       youtubeLink: "https://www.youtube.com/shorts/Z_o_1Y3Cnpc?feature=share",
       videoLink: "https://www.youtube.com/shorts/IQTRbf0rZCk",
@@ -189,6 +190,7 @@ const SingleprojectDetail = [
     
     {
       name: "tanishq",
+        url:"tanishq-jewellery",
         alt:"Tanishq South Extension facade featuring custom gold MetaCoin panels with diamond perforations, copper-toned MetaLouvers, and solid MetaCassette frames.",
       videoLink: "https://www.youtube.com/watch?v=nJSmApEceRE",
       youtubeLink: "https://www.youtube.com/watch?v=nJSmApEceRE",
@@ -219,6 +221,7 @@ const SingleprojectDetail = [
     //Luxe
     {
       name: "Luxe",
+      url:"luxe-manor",
         alt:"Dual-sided luxury facade featuring fluid MetaGrey MetaFin panels, bold bronze MetaSequin patterns, and ECG MetaFlutes.",
       videoLink: "https://www.youtube.com/shorts/rMUBnzQeJps",
       youtubeLink: "https://www.youtube.com/shorts/6Wk0hLXPGPo?feature=share",
@@ -246,6 +249,7 @@ const SingleprojectDetail = [
     },
     {
       name: "A13-43",
+      url:"a13-43",
         alt:"Contemporary residence facade featuring MetaPyramids, MetaPlanks in MetaWood finish, MetaFlute-clad MetaGate, and MetaLouvers in MetaGrey and MetaWood.",
       videoLink: "https://www.youtube.com/watch?v=bsZgLDDyA3A",
       youtubeLink: "https://www.youtube.com/watch?v=bsZgLDDyA3A",
@@ -276,6 +280,7 @@ const SingleprojectDetail = [
     },
     {
       name: "D5-3",
+      url:"d5-3",
         alt:"Modern residence facade featuring MetaCassette perforated panels with MetaSlide integration, Pigmento Blue grooved panels, MetaLouvers in MetaGrey and MetaWood, and wood-finish MetaFlutes.",
       videoLink: "https://www.youtube.com/watch?v=hFQKyKcM1G8",
       youtubeLink: "https://www.youtube.com/shorts/gE5wc_E-6Jg?feature=share",
@@ -304,6 +309,7 @@ const SingleprojectDetail = [
     },
     {
       name: "gowri",
+      url:"gowri-jewellery",
         alt:"Gowri’s Jewellery facade in Hyderabad featuring golden MetaSequin panels - crafted with bespoke parametric design to echo the city’s regal heritage and redefine luxury retail architecture.",
       videoLink: "https://www.youtube.com/shorts/KzYLNPaMkB8",
       youtubeLink: "https://www.youtube.com/shorts/KzYLNPaMkB8?feature=share",
@@ -324,6 +330,7 @@ const SingleprojectDetail = [
     },
     {
       name: "E10",
+      url:"the-ripple-effect",
         alt:"Metafin facade in South Delhi showcasing Metaguise’s parametric technology. Trusted by architects PAN India, blending art and engineering with global design excellence.",
       videoLink: "https://www.youtube.com/shorts/L1BRTrBobAI",
       youtubeLink: "https://www.youtube.com/shorts/L1BRTrBobAI",
@@ -409,6 +416,7 @@ const SingleprojectDetail = [
     },
     {
       name: "A18",
+      url:"a18",
         alt:"Modern residence clad in MetaCassette perforated panels, Micawhite MetaLouvers, and MetaWood surfaces. ",
       videoLink: "https://www.youtube.com/watch?v=-K2JTghXJTw",
       youtubeLink: "https://www.youtube.com/watch?v=-K2JTghXJTw",
@@ -438,6 +446,7 @@ const SingleprojectDetail = [
     },
     {
       name: "MVA-DL1",
+      url:"mva-dl1",
         alt:"A refined residential facade featuring crisp white MetaCassette panels and sleek grey MetaFlutes on the compound wall and gate, with embedded lighting recessed into grooved panels for a minimalist, illuminated design.",
       videoLink: "https://www.youtube.com/watch?v=N5lCQ8fSvgA",
       youtubeLink: "https://www.youtube.com/watch?v=N5lCQ8fSvgA",
@@ -465,6 +474,7 @@ const SingleprojectDetail = [
     },
     {
       name: "metaland",
+      url:"metaland",
         alt:"Entrance of METALAND™️ featuring a stunning MetaSequin facade with a Tree of Knowledge pattern, symbolizing growth and innovation.",
       videoLink: "https://www.youtube.com/watch?v=mwmFELxs14E",
       youtubeLink: "https://www.youtube.com/watch?v=mwmFELxs14E",
@@ -490,6 +500,7 @@ const SingleprojectDetail = [
     },
     {
       name: "micasa",
+      url:"micasa",
         alt:"MiCasa building in Delhi featuring a stunning rose gold MetaCoin facade inspired by the Tree of Life, with circular parametric panels that shimmer dynamically with light.",
       videoLink: "https://www.youtube.com/watch?v=d_0Ie4xGsKQ&feature=youtu.be",
       youtubeLink: "https://www.youtube.com/watch?v=d_0Ie4xGsKQ&feature=youtu.be",
@@ -510,6 +521,7 @@ const SingleprojectDetail = [
     },
     {
       name: "Yashika",
+      url:"yashika",
         alt:"A commercial facade brought to life with MetaCoin, Metaguise’s cutting-edge parametric technology, shimmering like jewels in sunlight; dynamic and imaginative, it redefines architectural expression and sparkles across the city skyline.",
       videoLink: "https://www.youtube.com/shorts/PjSB1brakw0?feature=share",
       youtubeLink: "https://www.youtube.com/shorts/PjSB1brakw0?feature=share",
@@ -531,6 +543,7 @@ const SingleprojectDetail = [
     },
     {
       name: "C76",
+      url:"c76",
         alt:"Residential facade clad in MetaCassette solid and perforated panels, paired with MetaLouvers for futuristic elegance and MetaFlutes for warmth.",
       videoLink: "https://www.youtube.com/watch?v=r6kNjqo6PgQ",
       youtubeLink: "https://www.youtube.com/watch?v=r6kNjqo6PgQ",
@@ -558,6 +571,7 @@ const SingleprojectDetail = [
     },
     {
       name: "5107",
+      url:"5107",
         alt:"An elegant facade featuring perforated MetaCassette panels in Mica White with a luminous backlit glow, paired with a fluted MetaGate in MetaGrey for a bold, refined finish.",
       videoLink: "https://www.youtube.com/shorts/oOiyN07PwQE?feature=share",
       youtubeLink: "https://www.youtube.com/shorts/oOiyN07PwQE?feature=share",
@@ -583,6 +597,7 @@ const SingleprojectDetail = [
     },
     {
       name: "A297",
+      url:"a297",
         alt:"A graceful residential facade featuring monochrome MetaShingles, MetaWood-finished MetaFlutes on the under-ceiling and balcony, and MetaGrey MetaFlutes on the gate and railing.",
       videoLink: "https://www.youtube.com/watch?v=_ei1jkRmp_Q",
       youtubeLink: "https://www.youtube.com/watch?v=_ei1jkRmp_Q",
@@ -624,6 +639,7 @@ const SingleprojectDetail = [
     // },
     {
       name: "C34-573",
+      url:"c34-573",
         alt:"Striking residential facade featuring diamond MetaShingles at the entry, Solid Panels with MetaCoin on the boundary and door, cherry red MetaFlutes, MetaLouvers for airflow, and a bold grey fluted gate.",
       videoLink: "https://www.youtube.com/watch?v=O99SARUeRa0",
       youtubeLink: "https://www.youtube.com/watch?v=O99SARUeRa0",
@@ -647,6 +663,7 @@ const SingleprojectDetail = [
     },
     {
       name: "DLF4",
+      url:"dlf4",
         alt:"Architectural facade featuring MetaCassette solid panels with a snake-leather finish, complemented by sleek MetaFlutes and accent lighting.",
       videoLink: "https://www.youtube.com/watch?v=gi0qDnaOmfI",
       youtubeLink: "https://www.youtube.com/watch?v=gi0qDnaOmfI",
@@ -674,6 +691,7 @@ const SingleprojectDetail = [
     },
     {
       name: "CS5-MA",
+      url:"cs5-ma",
         alt:"A refined facade combining MetaLouver elements, MetaCassette perforated panels, and wood-grain MetaFlutes to create depth, shade, privacy, and sculptural warmth in perfect harmony with the natural surroundings.",
       videoLink: "https://www.youtube.com/watch?v=6RoELQ5I-1g",
       youtubeLink: "https://www.youtube.com/watch?v=6RoELQ5I-1g",
@@ -704,6 +722,7 @@ const SingleprojectDetail = [
     },
     {
       name: "espace",
+      url:"espace-nirvana",
         alt:"Modern residential facade featuring MetaLouver, MetaPlank, MetaCassette, and perforated panels in MetaWood and MetaGrey.",
       videoLink: "https://www.youtube.com/watch?v=0Or6FQP59x4",
       youtubeLink: "https://www.youtube.com/watch?v=0Or6FQP59x4",
@@ -732,6 +751,7 @@ const SingleprojectDetail = [
     },
     {
       name: "MA-543",
+      url:"ma-543",
           alt:"Modern residence featuring Patina-finish MetaCoin with a tiger-stripe effect, MetaWood MetaPlanks on ceilings and walls, vertical MetaLouvers, and a MetaGrey C Channel.",
       videoLink: "https://www.youtube.com/watch?v=Urze-UjHcLU",
       youtubeLink: "https://www.youtube.com/watch?v=Urze-UjHcLU",
@@ -756,6 +776,7 @@ const SingleprojectDetail = [
     },
     {
       name: "Q62-RA",
+      url:"Q62-RA",
         alt:"Striking residential facade with trapezoidal geometry featuring grey curved Solid Panels, grey MetaLouvers, wood-finish and grey MetaFlutes, and a signature MetaGate.",
       videoLink: "https://www.youtube.com/watch?v=oEKOjT0tAWk",
       youtubeLink:"https://www.youtube.com/watch?v=oEKOjT0tAWk",
@@ -781,6 +802,7 @@ const SingleprojectDetail = [
     },
     {
       name: "z1012",
+      url:"z1012",
            alt:"Residential facade featuring dual-tone black and grey MetaShingles with fluid geometry, paired with MetaWood and MetaGrey MetaFlutes across balconies and under-ceilings.",
       videoLink: "https://www.youtube.com/watch?v=AwvlRroIAKA",
       youtubeLink: "https://www.youtube.com/watch?v=AwvlRroIAKA",
@@ -831,6 +853,7 @@ const SingleprojectDetail = [
 
     {
       name: "premhospital",
+      url:"prem-hospital",
         alt:"Healthcare facility in Meerut featuring MetaCassette Grooved and Perforated Panels, combining rhythm, light-play, and ventilation in a sophisticated, low-maintenance facade designed for care-focused architecture.",
       videoLink: "https://www.youtube.com/shorts/UV4ZyH_EFDc",
       youtubeLink: "https://www.youtube.com/watch?v=P4JgguI1nVg",
@@ -1233,6 +1256,7 @@ const SingleprojectDetail = [
     //11 item 
     {
       name: "theresonance",
+      url:"the-resonance",
         alt:"Modern residence featuring perforated MetaCassette panels, MetaWood MetaFlutes, and MetaGrey MetaLouvers.",
       videoLink: "https://youtu.be/XAKwEOasMSE",
       youtubeLink: "https://youtu.be/XAKwEOasMSE",
@@ -1258,6 +1282,7 @@ const SingleprojectDetail = [
 
     {
       name: "theelevato",
+      url:"the-elevato",
          alt:"Three-sided residential facade featuring MetaWood MetaLouvers, solid white panels, and a sculptural MetaFlute gate.",
       videoLink: "https://www.youtube.com/shorts/GMLmGxfBO1E?feature=share",
       youtubeLink: "https://www.youtube.com/shorts/GMLmGxfBO1E?feature=share",
@@ -1286,6 +1311,7 @@ const SingleprojectDetail = [
 
     {
       name: "thecurtain",
+      url:"the-curtain",
         alt:"Tall dual-elevation facade clad in MetaGrey MetaLouvers, offering rhythmic verticality, ventilation, and rain protection.",
       videoLink: "https://youtube.com/shorts/Hl_P526YgY0?feature=share",
       youtubeLink: "https://youtube.com/shorts/Hl_P526YgY0?feature=share",
@@ -1316,6 +1342,7 @@ const SingleprojectDetail = [
 
     {
       name: "TheCrystal",
+      url:"the-crystal",
         alt:"Angular residential facade featuring sculptural geometry with Solid Panels in Corten and White finishes.",
       videoLink: "https://youtu.be/BQyDoZNDi90",
       youtubeLink: "https://youtu.be/BQyDoZNDi90",
@@ -1344,6 +1371,7 @@ const SingleprojectDetail = [
 
     {
       name: "rjjewellers",
+      url:"rj-jewellers",
         alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
       videoLink: "https://youtube.com/shorts/N7gs1DPJmdY?feature=share",
       youtubeLink: "https://youtube.com/shorts/N7gs1DPJmdY?feature=share",
@@ -1376,6 +1404,7 @@ const SingleprojectDetail = [
 
     {
       name: "farm15",
+      url:"farm15",
         alt:"Farmhouse facade featuring MetaLouver panels in MetaWood and MetaGrey across three elevations, paired with a dual-tone MetaGate.",
       videoLink: "",
       youtubeLink: "https://youtu.be/UA4mT5K3oBA",
@@ -1413,6 +1442,7 @@ const SingleprojectDetail = [
 
     {
       name: "e81",
+      url:"e81",
         alt:"Two-sided residential facade featuring MetaCassette Perforated Panels and wood-finish MetaFlutes across walls and underceilings.",
       videoLink: "https://youtu.be/aOam-UJ-k9A",
       youtubeLink: "https://youtu.be/aOam-UJ-k9A",
@@ -1442,6 +1472,7 @@ const SingleprojectDetail = [
 
     {
       name: "B38",
+      url:"b38",
         alt:"Metaguise’s first-ever facade from 2018, clad in MetaCassette perforated panels with a MetaCorten finish - aging gracefully with evolving texture, timeless color, and enduring architectural appeal.",
       videoLink: "",
       youtubeLink: "https://www.youtube.com/shorts/a_SobJmIYv4?feature=share",
@@ -1475,6 +1506,7 @@ const SingleprojectDetail = [
 
     {
       name: "a56",
+      url:"a56",
         alt:"Contemporary facade featuring 3D MetaPyramid panels in MetaGrey, MetaWood MetaLouvers and MetaFlutes for warmth and function, and a MetaFlute MetaGrey gate.",
       videoLink: "",
       youtubeLink: "https://youtu.be/N5lCQ8fSvgA",
@@ -1976,6 +2008,7 @@ const SingleprojectDetail = [
 
     {
       name: "thewaveform",
+      url:"the-waveform",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "https://youtu.be/fI3GdK5MMuA",
