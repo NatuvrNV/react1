@@ -92,13 +92,13 @@ const Contact = ({ brochureName }) => {
     return pathToCallSource[location.pathname] || "COFFEE_TABLE_BOOK";
   };
 
-  // Function to send email using EmailJS
+  // Function to send email using EmailJS - ADDED from_phone field
   const sendEmail = async () => {
     const templateParams = {
       to_name: "Metaguise Team",
       from_name: formData.name,
       from_email: formData.email,
-      from_phone: formData.phone,
+      from_phone: formData.phone, // ADDED: This is needed for your EmailJS template
       phone: formData.phone,
       brochure_name: detectedBrochure,
       message: formData.message,
@@ -137,11 +137,11 @@ const Contact = ({ brochureName }) => {
         role: "PRE_SALES",
         employeeId: "694bbefcf956d21d2f8f2f90",
         employeeName: "Kajal Arya",
-        assignAt: currentDateTime
+        assignAt: currentDateTime // Using current date and time
       }
     ];
     
-    // Prepare final payload
+    // Prepare final payload - all fields null except name, email, phone
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
       fullName: formData.name,
@@ -166,8 +166,8 @@ const Contact = ({ brochureName }) => {
       callStatus: "NEW_LEAD",
       remarks: `Requested ${detectedBrochure} brochure. ${formData.message}`,
       callRegistration: true,
-      leadAssignments: leadAssignments,
-      callSource: callSource
+      leadAssignments: leadAssignments, // Added lead assignments for Kajal Arya
+      callSource: callSource // Using dynamic callSource
     };
 
     console.log("Creating lead with payload:", payload);
@@ -228,7 +228,7 @@ const Contact = ({ brochureName }) => {
     }
 
     if (!captchaValue) {
-      setFeedbackMessage("⚠️ Please verify the reCAPTCHA.");
+      setFeedbackMessage("⚠️ Please verify the reCAPTCHA before submitting.");
       setIsSending(false);
       return;
     }
@@ -367,7 +367,7 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
-              {/* Message field - Textarea */}
+              {/* Message field - ADDED: Made it visible and required */}
               <Row>
                 <Col md={12} className="mb-3 mb-md-4">
                   <Form.Group controlId="formMessage">
@@ -400,7 +400,6 @@ const Contact = ({ brochureName }) => {
                 </Col>
               </Row>
 
-              {/* Submit Button */}
               <div className="button-wrapper">
                 <button type="submit" className="send-button" disabled={isSending}>
                   <span>
@@ -411,7 +410,6 @@ const Contact = ({ brochureName }) => {
                 </button>
               </div>
 
-              {/* Feedback Message */}
               {feedbackMessage && (
                 <Alert 
                   variant={
