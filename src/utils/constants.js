@@ -354,6 +354,7 @@ const SingleprojectDetail = [
     },
     {
       name: "deepak",
+      url:"deepak-sweets",
         alt:"Deepak Sweets in Bareilly featuring a dazzling facade with champagne gold MetaSequin, patina-finished MetaPyramids, and perforated MetaCassette panels.",
       videoLink: "https://www.youtube.com/watch?v=dAarntEa15o",
       youtubeLink: "https://www.youtube.com/watch?v=dAarntEa15o",
@@ -826,6 +827,7 @@ const SingleprojectDetail = [
 
     {
       name: "painflame",
+      url:"pain-flame",
         alt:"The PainFlame Clinic facade featuring a sculptural MetaCoin emblem in gold above rhythmic monochromatic MetaShingles.",
       videoLink: "",
       youtubeLink: "https://www.youtube.com/watch?v=s6evsnaSFms",
