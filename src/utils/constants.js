@@ -2,7 +2,7 @@ export
 const SingleprojectDetail = [
     {
       name: "ardete",
-      url:"studio-ardete-hq,
+      url:"studio-ardete-hq",
         alt: "Studio Ardete HQ facade in Mohali featuring rose gold MetaSequin panels, curvilinear MetaFin forms, and resilient MetaCassette backing - trusted by leading architects for merging parametric artistry with enduring design.",
       youtubeLink: "https://www.youtube.com/shorts/Z_o_1Y3Cnpc?feature=share",
       videoLink: "https://www.youtube.com/shorts/IQTRbf0rZCk",
