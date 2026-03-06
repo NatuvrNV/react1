@@ -12,7 +12,40 @@ import { FaPlay } from "react-icons/fa";
 import { ProjectImages } from "../../utils/constants";
 
 const SingleProject = () => {
+  const navigate = useNavigate();
+  const { projectName } = useParams();
+  
+  const [clickedIndex, setClickedIndex] = useState(null);
+  const [contentToRender, setContentToRender] = useState([]);
+  const gridRef = useRef(null);
   const imageGridRef = useRef(null);
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [darkMode, setDarkMode] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [showElementsDropdown, setShowElementsDropdown] = useState(false);
+  const [showTimeDropdown, setShowTimeDropdown] = useState(false);
+  const [activeButton, setActiveButton] = useState(null);
+
+  // Find project by URL slug
+  const selectedProject = SingleprojectDetail.find(
+    (item) => item.url?.toLowerCase() === projectName?.toLowerCase()
+  );
+
+  // If project not found by URL, try to find by name (for backward compatibility)
+  const fallbackProject = !selectedProject && SingleprojectDetail.find(
+    (item) => item.name?.toLowerCase().replace(/\s+/g, '-') === projectName?.toLowerCase()
+  );
+
+  // Use the found project (either by URL or fallback)
+  const project = selectedProject || fallbackProject;
+
+  // Redirect to correct URL if using old format
+  useEffect(() => {
+    if (project && !selectedProject && fallbackProject) {
+      // Redirect to the correct URL format using the url field
+      navigate(`/all-projects/${project.url}`, { replace: true });
+    }
+  }, [project, selectedProject, fallbackProject, navigate]);
 
   const handleImageClick = (index) => {
     setClickedIndex(clickedIndex === index ? null : index);
@@ -32,23 +65,6 @@ const SingleProject = () => {
     });
   };
   
-  const navigate = useNavigate();
-  
-  const { projectName } = useParams();
-  const selectedProject = SingleprojectDetail.find(
-    (item) => item.name.toLowerCase() === projectName
-  );
-
-  const [clickedIndex, setClickedIndex] = useState(null);
-  const [contentToRender, setContentToRender] = useState([]);
-  const gridRef = useRef(null);
-  const [selectedCategory, setSelectedCategory] = useState("");
-  const [darkMode, setDarkMode] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const [showElementsDropdown, setShowElementsDropdown] = useState(false);
-  const [showTimeDropdown, setShowTimeDropdown] = useState(false);
-  const [activeButton, setActiveButton] = useState(null);
-
   const handleButtonClick = (index) => {
     setActiveButton(activeButton === index ? null : index);
   };
@@ -56,15 +72,15 @@ const SingleProject = () => {
   // Extract categories from image paths
   const categories = Array.from(
     new Set(
-      selectedProject.images
-        .map((item) => {
+      project?.images
+        ?.map((item) => {
           // Check if item is an object or string
           const path = typeof item === 'string' ? item : item.src;
           return path.split("/")[4] !== "night"
-            ? path.split("/")[4].toLowerCase()
+            ? path.split("/")[4]?.toLowerCase()
             : null;
         })
-        .filter((item) => item)
+        .filter((item) => item) || []
     )
   );
 
@@ -80,7 +96,7 @@ const SingleProject = () => {
     return () => {
       document.removeEventListener("click", handleOutsideClick);
     };
-  }, [gridRef]);
+  }, []);
 
   const isLastRow = (index) => {
     return (
@@ -98,17 +114,19 @@ const SingleProject = () => {
   };
 
   useEffect(() => {
-    const nightImages = selectedProject.images.filter((item) => {
+    if (!project) return;
+    
+    const nightImages = project.images?.filter((item) => {
       const path = typeof item === 'string' ? item : item.src;
       return path.split("/")[4] === "night";
-    });
+    }) || [];
   
     if (darkMode && nightImages.length === 0) {
       setContentToRender([]);
     } else {
-      setContentToRender(darkMode ? nightImages : selectedProject.images);
+      setContentToRender(darkMode ? nightImages : project.images || []);
     }
-  }, [darkMode, selectedProject.images]);
+  }, [darkMode, project?.images]);
 
   const filterImagesByCategory = (category) => {
     setSelectedCategory(category);
@@ -130,27 +148,30 @@ const SingleProject = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  if (!selectedProject) {
+  if (!project) {
     return <div>Project not found</div>;
   }
 
   return (
     <div className="container main-container">
       <Helmet>
-        <title>{selectedProject.metatittles}</title>
-        <meta name="description" content={selectedProject.metadescription} />
-        <meta property="og:title" content={selectedProject.metatittles}  />
-        <meta property="og:description" content={selectedProject.metadescription} />
+        <title>{project.metatittles}</title>
+        <meta name="description" content={project.metadescription} />
+        <meta property="og:title" content={project.metatittles}  />
+        <meta property="og:description" content={project.metadescription} />
+
+        {/* Canonical URL using the url field */}
+        <link rel="canonical" href={`https://metaguise.com/all-projects/${project.url}`} />
 
         {/* PROJECT SCHEMA FOR AI & SEARCH */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "CreativeWork",
-            "name": selectedProject.Projectname,
-            "url": `https://metaguise.com/all-projects/${projectName}`,
-            "description": selectedProject.metadescription,
-            "image": selectedProject.images?.map(
+            "name": project.Projectname,
+            "url": `https://metaguise.com/all-projects/${project.url}`,
+            "description": project.metadescription,
+            "image": project.images?.map(
               img => {
                 const src = typeof img === 'string' ? img : img.src;
                 return `https://metaguise.com/${src}`;
@@ -169,7 +190,7 @@ const SingleProject = () => {
                 "url": "https://metaguise.com/logo.png"
               }
             },
-            "keywords": selectedProject.tags || [
+            "keywords": project.tags || [
               "metal facade",
               "parametric architecture",
               "architectural cladding",
@@ -185,7 +206,7 @@ const SingleProject = () => {
           <BackButton navigate={navigate} />
           {isMobile && (
             <MobileControls
-              selectedProject={selectedProject}
+              selectedProject={project}
               showElementsDropdown={showElementsDropdown}
               setShowElementsDropdown={setShowElementsDropdown}
               filterImagesByCategory={filterImagesByCategory}
@@ -206,15 +227,15 @@ const SingleProject = () => {
             isLastRow={isLastRow}
             clickedIndex={clickedIndex}
             ref={imageGridRef}
-            videoLink={selectedProject.videoLink}
+            videoLink={project.videoLink}
             darkMode={darkMode}
-            selectedProject={selectedProject}
+            selectedProject={project}
             setDarkMode={setDarkMode}
           />
         </div>
         
         <Sidebar
-          selectedProject={selectedProject}
+          selectedProject={project}
           categories={categories}
           selectedCategory={selectedCategory}
           filterImagesByCategory={filterImagesByCategory}
@@ -222,8 +243,8 @@ const SingleProject = () => {
           toggleTheme={toggleTheme}
           activeButton={activeButton}
           handleButtonClick={handleButtonClick}
-          youtubeLink={selectedProject.youtubeLink}
-          instagramLink={selectedProject.instagramLink}
+          youtubeLink={project.youtubeLink}
+          instagramLink={project.instagramLink}
         />
         
         {isMobile && <BuildButton />}
@@ -498,10 +519,10 @@ const ImageGrid = ({
   selectedProject,
   setDarkMode,
 }) => {
-  const normalizeName = (name) => name.toLowerCase().replace(/[^a-z0-9]/gi, '');
+  const normalizeName = (name) => name?.toLowerCase().replace(/[^a-z0-9]/gi, '') || '';
 
-  const coverImage = ProjectImages.find(
-    (img) => normalizeName(img.imgPath).includes(normalizeName(selectedProject.name))
+  const coverImage = ProjectImages?.find(
+    (img) => normalizeName(img.imgPath).includes(normalizeName(selectedProject?.name))
   );
 
   const handleGoBackToDay = () => {
@@ -538,14 +559,14 @@ const ImageGrid = ({
 
           {coverImage && (
             <Image
-              key={`cover-${selectedProject.name}`}
+              key={`cover-${selectedProject?.name}`}
               image={coverImage.imgPath}
               index={!darkMode && videoLink ? 1 : 0}
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
               clickedIndex={clickedIndex}
-              altText={`${selectedProject.Projectname} - Cover image showing the main facade`}
-              projectName={selectedProject.Projectname}
+              altText={coverImage.alt || `${selectedProject?.Projectname} - Cover image`}
+              projectName={selectedProject?.Projectname}
             />
           )}
 
@@ -557,7 +578,7 @@ const ImageGrid = ({
             const imageSrc = typeof imageObj === 'string' ? imageObj : imageObj.src;
             const imageAlt = typeof imageObj === 'object' && imageObj.alt 
               ? imageObj.alt 
-              : `${selectedProject.Projectname} - Architectural view ${index + 1}`;
+              : `${selectedProject?.Projectname} - Architectural view ${index + 1}`;
 
             return (
               <Image
@@ -568,7 +589,7 @@ const ImageGrid = ({
                 isLastRow={isLastRow}
                 clickedIndex={clickedIndex}
                 altText={imageAlt}
-                projectName={selectedProject.Projectname}
+                projectName={selectedProject?.Projectname}
               />
             );
           })}
@@ -580,6 +601,7 @@ const ImageGrid = ({
 
 const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
   const getVideoId = (url) => {
+    if (!url) return null;
     if (url.includes("shorts/")) {
       return url.split("/shorts/")[1]?.split("?")[0];
     } else if (url.includes("v=")) {
@@ -624,7 +646,7 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
 
 const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, altText, projectName }) => {
   // Ensure the image path is correct
-  const imagePath = image.startsWith('/') ? image : `/${image}`;
+  const imagePath = image?.startsWith('/') ? image : `/${image}`;
   
   return (
     <div

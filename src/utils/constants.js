@@ -1,5 +1,4 @@
 export 
-
 const SingleprojectDetail = [
     {
       name: "ardete",
@@ -36,6 +35,7 @@ const SingleprojectDetail = [
 
 {
   name: "sculpted silence",
+  url: "sculpted-silence",
   alt: "",
   youtubeLink: "https://youtube.com/your-video-link",
   videoLink: "https://youtube.com/your-video-link",
@@ -83,101 +83,105 @@ const SingleprojectDetail = [
 
          {
       name: "the haven",
+      url:"the-haven",
         alt: "",
       youtubeLink: "",
       videoLink: "",
       instagramLink: "",
       Projectname:"The Haven",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"The Haven – Contemporary Facade Project | Metaguise",
+      metadescription:"Discover The Haven by Metaguise, a contemporary facade project showcasing precision metal craftsmanship, architectural innovation, and sustainable design expertise.",
       
       images: [
   
-        "assets/Allprojects/residential/The Haven/metaflute/rochak_6.webp",
-          "assets/Allprojects/residential/The Haven/metaflute/rochak_9.webp",
-          "assets/Allprojects/residential/The Haven/metaflute/rochak_11.webp",
-          "assets/Allprojects/residential/The Haven/metafold/rochak_2.webp",
-          "assets/Allprojects/residential/The Haven/metafold/rochak_7.webp",
-          "assets/Allprojects/residential/The Haven/metafold/rochak_8.webp",
-          "assets/Allprojects/residential/The Haven/metafold/rochak_10.webp",
-          "assets/Allprojects/residential/The Haven/metapyramid/rochak_3.webp",
-          "assets/Allprojects/residential/The Haven/metapyramid/rochak_4.webp",
-          "assets/Allprojects/residential/The Haven/metapyramid/rochak_5.webp",
+        { src: "assets/Allprojects/residential/The Haven/metaflute/rochak_6.webp", alt: "Modern architectural facade design at The Haven by Metaguise" },
+          { src: "assets/Allprojects/residential/The Haven/metaflute/rochak_9.webp", alt: "Precision metal facade detailing in The Haven project" },
+          { src: "assets/Allprojects/residential/The Haven/metaflute/rochak_11.webp", alt: "Custom exterior facade panels at The Haven" },
+          { src: "assets/Allprojects/residential/The Haven/metafold/rochak_2.webp", alt: "Sustainable facade design concept by Metaguise – The Haven" },
+          { src: "assets/Allprojects/residential/The Haven/metafold/rochak_7.webp", alt: "Architectural elevation of The Haven project" },
+          { src: "assets/Allprojects/residential/The Haven/metafold/rochak_8.webp", alt: "Engineered metal facade system by Metaguise" },
+          { src: "assets/Allprojects/residential/The Haven/metafold/rochak_10.webp", alt: "Exterior building facade structure – The Haven" },
+          { src: "assets/Allprojects/residential/The Haven/metapyramid/rochak_3.webp", alt: "Contemporary commercial facade installation by Metaguise" },
+          { src: "assets/Allprojects/residential/The Haven/metapyramid/rochak_4.webp", alt: "Facade fabrication detailing at The Haven project" },
+          { src: "assets/Allprojects/residential/The Haven/metapyramid/rochak_5.webp", alt: "Modern metal facade craftsmanship by Metaguise" },
       ],
     },
 
           {
       name: "apex residence",
+      url:"apex-residence",
         alt: "",
       youtubeLink: "",
       videoLink: "",
       instagramLink: "",
       Projectname:"Apex Residence",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Apex Residence Facade Project | Metaguise",
+      metadescription:"Apex Residence by Metaguise showcases a premium residential facade project featuring precision metal detailing, modern architectural design, and sustainable engineering expertise.",
       
       images: [
   
-        "assets/Allprojects/residential/Apex Residence/metacassette/manish_8.webp",
-          "assets/Allprojects/residential/Apex Residence/metacassette/manish_9.webp",
-          "assets/Allprojects/residential/Apex Residence/metacassette/manish_11.webp",
-          "assets/Allprojects/residential/Apex Residence/metafold/manish_2.webp",
-          "assets/Allprojects/residential/Apex Residence/metafold/manish_3.webp",
-          "assets/Allprojects/residential/Apex Residence/metafold/manish_4.webp",
-          "assets/Allprojects/residential/Apex Residence/metafold/manish_12.webp",
-          "assets/Allprojects/residential/Apex Residence/metafold/manish_13.webp",
-          "assets/Allprojects/residential/Apex Residence/metashingle/manish_5.webp",
-          "assets/Allprojects/residential/Apex Residence/metashingle/manish_6.webp",
-          "assets/Allprojects/residential/Apex Residence/metashingle/manish_7.webp",
+         { src: "assets/Allprojects/residential/Apex Residence/metacassette/manish_8.webp", alt: "Modern metal facade detailing at Apex Residence project" },
+          { src: "assets/Allprojects/residential/Apex Residence/metacassette/manish_9.webp", alt: "Premium residential facade system by Metaguise" },
+          { src: "assets/Allprojects/residential/Apex Residence/metacassette/manish_11.webp", alt: "Apex Residence exterior architectural design" },
+          { src: "assets/Allprojects/residential/Apex Residence/metafold/manish_2.webp", alt: "Custom metal facade panels at Apex Residence" },
+          { src: "assets/Allprojects/residential/Apex Residence/metafold/manish_3.webp", alt: "Contemporary residential facade engineering by Metaguise" },
+          { src: "assets/Allprojects/residential/Apex Residence/metafold/manish_4.webp", alt: "Sustainable facade design for Apex Residence" },
+          { src: "assets/Allprojects/residential/Apex Residence/metafold/manish_12.webp", alt: "Exterior elevation detailing of Apex Residence" },
+          { src: "assets/Allprojects/residential/Apex Residence/metafold/manish_13.webp", alt: "Precision metal fabrication for Apex Residence by Metaguise" },
+          { src: "assets/Allprojects/residential/Apex Residence/metashingle/manish_5.webp", alt: "Modern residential building facade by Metaguise" },
+          { src: "assets/Allprojects/residential/Apex Residence/metashingle/manish_6.webp", alt: "Apex Residence facade installation process" },
+          { src: "assets/Allprojects/residential/Apex Residence/metashingle/manish_7.webp", alt: "Architectural metal facade project – Apex Residence by Metaguise" },
       ],
     },
 
                 {
       name: "blossoms",
+      url:"blossoms",
         alt: "",
       youtubeLink: "",
       videoLink: "",
       instagramLink: "",
       Projectname:"Blossoms",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Blossoms Facade Project | Metal Design by Metaguise",
+      metadescription:"Discover Blossoms by Metaguise, a modern metal facade project combining architectural creativity, precision engineering, and sustainable design excellence.",
       
       images: [
   
-        "assets/Allprojects/commercial/Blossoms/metacoin/blossoms2.webp",
-          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms3.webp",
-          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms4.webp",
-          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms5.webp",
-          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms6.webp",
-          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms7.webp",
-          "assets/Allprojects/commercial/Blossoms/metacoin/blossoms8.webp",
+        { src: "assets/Allprojects/commercial/Blossoms/metacoin/blossoms2.webp", alt: "Modern architectural metal facade – Blossoms by Metaguise" },
+          { src: "assets/Allprojects/commercial/Blossoms/metacoin/blossoms3.webp", alt: "Custom metal facade panels in Blossoms project" },
+          { src: "assets/Allprojects/commercial/Blossoms/metacoin/blossoms4.webp", alt: "Precision engineered facade detailing by Metaguise" },
+          { src: "assets/Allprojects/commercial/Blossoms/metacoin/blossoms5.webp", alt: "Contemporary exterior metal facade design – Blossoms" },
+          { src: "assets/Allprojects/commercial/Blossoms/metacoin/blossoms6.webp", alt: "Sustainable metal facade installation by Metaguise" },
+          { src: "assets/Allprojects/commercial/Blossoms/metacoin/blossoms7.webp", alt: "Sculptural metal facade structure in Blossoms project" },
+          { src: "assets/Allprojects/commercial/Blossoms/metacoin/blossoms8.webp", alt: "Exterior facade fabrication work by Metaguise" },
       ],
     },
 
               {
       name: "cityspace82",
+      url:"cityspace",
         alt: "",
       youtubeLink: "",
       videoLink: "",
       instagramLink: "",
       Projectname:"Cityspace82",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Cityspace Facade Project by Metaguise | Modern Architecture",
+      metadescription:"Cityspace by Metaguise is a modern facade project showcasing precision metal engineering, innovative architectural design, and sustainable building expertise.",
       
       images: [
   
-       "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_2.webp",
-          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_3.webp",
-          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_4.webp",
-          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_5.webp",
-          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_9.webp",
-          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_10.webp",
-          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_11.webp",
-          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_12.webp",
-          "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_13.webp",
-           "assets/Allprojects/commercial/Cityspace82/night/cityspace82_6.webp",
-           "assets/Allprojects/commercial/Cityspace82/night/cityspace82_7.webp",
-           "assets/Allprojects/commercial/Cityspace82/night/cityspace82_8.webp",
+        { src: "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_2.webp", alt: " Modern architectural facade design – Cityspace by Metaguise" },
+          { src: "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_3.webp", alt: "Precision metal facade installation at Cityspace" },
+          { src: "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_4.webp", alt: " Contemporary building exterior by Metaguise – Cityspace" },
+          { src: "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_5.webp", alt: "Custom metal facade panels in Cityspace project" },
+          { src: "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_9.webp", alt: "Engineered facade system by Metaguise for Cityspace" },
+          { src: "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_10.webp", alt: "Urban commercial facade design – Cityspace" },
+          { src: "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_11.webp", alt: "Sustainable metal facade solution by Metaguise" },
+          { src: "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_12.webp", alt: "Exterior elevation detailing at Cityspace project" },
+          { src: "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_13.webp", alt: " Modern architectural cladding system – Cityspace" },
+           { src: "assets/Allprojects/commercial/Cityspace82/night/cityspace82_6.webp", alt: "Facade fabrication and installation by Metaguise" },
+           { src: "assets/Allprojects/commercial/Cityspace82/night/cityspace82_7.webp", alt: "Structural metal facade elements in Cityspace" },
+           { src: "assets/Allprojects/commercial/Cityspace82/night/cityspace82_8.webp", alt: "Premium commercial facade project – Cityspace by Metaguise" },
       
       ],
     },
@@ -857,72 +861,75 @@ const SingleprojectDetail = [
 
     {
       name: "coppercanvas",
+      url:"copper-canvas",
         alt:"Residential facade featuring abstract-perforated MetaCassette panels in copper-gold, MetaFold for adaptive movement, and MetaFlutes in wood and copper finishes.",
       videoLink: "https://www.youtube.com/shorts/-70rvppz8fU",
       youtubeLink: "https://www.youtube.com/watch?v=azbJqoT5Wy8",
       instagramLink: "https://www.instagram.com/p/DGSqyO1IT63/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Copper Canvas",
-      metatittles:"Copper-Gold Facade with MetaCassette & MetaFold in Gurugram",
-      metadescription:"Metaguise blends MetaCassette perforated panels and MetaFold’s adaptive system for a dynamic residence facade in Gurugram, finished with wood-textured and copper-toned MetaFlutes.",
+      metatittles:"Copper Facade Design Project – Copper Canvas | Metaguise",
+      metadescription:"Copper Canvas by Metaguise showcases a premium architectural copper facade project highlighting innovative design, precision fabrication, and modern facade expertise.",
       images: [
-        "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas6.webp",
-        "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas7.webp",
-        "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas8.webp",
-        "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas9.webp",
-        "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas10.webp",
-        "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas2.webp",
-        "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas3.webp",
-        "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas4.webp",
-        "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas5.webp",
+        {"src": "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas6.webp", "alt": "Architectural copper facade panels designed by Metaguise"},
+        {"src": "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas7.webp", "alt": "Modern copper metal facade installation by Metaguise"},
+        {"src": "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas8.webp", "alt": " Premium copper facade detailing in Copper Canvas project"},
+        {"src": "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas9.webp", "alt": "Custom copper architectural facade system by Metaguise"},
+        {"src": "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas10.webp", "alt": "Exterior copper metal cladding design by Metaguise"},
+        {"src": "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas2.webp", "alt": "Contemporary copper facade architecture by Metaguise"},
+        {"src": "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas3.webp", "alt": "Copper facade fabrication and installation by Metaguise"},
+        {"src": "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas4.webp", "alt": "Innovative copper metal facade design project by Metaguise"},
+        {"src": "assets/Allprojects/residential/CopperCanvas/metafold/coppercanvas5.webp", "alt": "Sustainable copper facade architecture by Metaguise"},
       ],
     },
 
     {
       name: "peachstreet",
+      url:"peach-street",
         alt:"Residential facade featuring abstract-perforated MetaCassette panels in copper-gold, MetaFold for adaptive movement, and MetaFlutes in wood and copper finishes.",
       videoLink: "https://www.youtube.com/shorts/rfSF_661G8U",
       youtubeLink: "https://www.youtube.com/watch?v=dsuhIROYiyc",
       instagramLink: "https://www.instagram.com/reel/DC3_Qu0yfbM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Peach Street",
-      metatittles:"First Triangular MetaCoin Facade in Rose Gold by Metaguise",
-      metadescription:"Metaguise debuts its first triangular MetaCoin panels in radiant rose gold, paired with MetaGrey MetaFlutes and solid accents—creating a bold, light-responsive facade for a Gurugram residence by Studio Mathema.",
+      metatittles:"Peach Street Facade Project | Metaguise Architecture",
+      metadescription:"Discover the Peach Street facade project by Metaguise, showcasing innovative architectural facade design, precision metal engineering, and modern building aesthetics.",
       images: [
-        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet2.webp",
-        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet3.webp",
-        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet4.webp",
-        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet7.webp",
-        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet9.webp",
-        "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet10.webp",
-        "assets/Allprojects/residential/PeachStreet/metalouver/peachstreet5.webp",
-        "assets/Allprojects/residential/PeachStreet/metalouver/peachstreet6.webp",
-        "assets/Allprojects/residential/PeachStreet/metalouver/peachstreet8.webp",
+       {"src": "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet2.webp", "alt": "Modern building facade design at Peach Street by Metaguise"},
+        {"src": "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet3.webp", "alt": "Exterior facade detailing for Peach Street project by Metaguise"},
+        {"src": "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet4.webp", "alt": "Contemporary architectural facade installation at Peach Street"},
+        {"src": "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet7.webp", "alt": "Custom facade engineering for Peach Street building by Metaguise"},
+        {"src": "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet9.webp", "alt": " Precision facade fabrication for Peach Street architecture project"},
+        {"src": "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet10.webp", "alt": " Innovative building facade system at Peach Street by Metaguise"},
+        {"src": "assets/Allprojects/residential/PeachStreet/metalouver/peachstreet5.webp", "alt": "Modern commercial facade design at Peach Street project"},
+        {"src": "assets/Allprojects/residential/PeachStreet/metalouver/peachstreet6.webp", "alt": "Architectural metal facade work at Peach Street by Metaguise"},
+        {"src": "assets/Allprojects/residential/PeachStreet/metalouver/peachstreet8.webp", "alt": "Exterior building facade structure at Peach Street project"},
        
       ],
     },
 
     {
       name: "linearretreat",
+      url:"linear-retreat",
         alt:"Contemporary residence clad in MetaWood-finish MetaLouvers, with a sleek MetaGrey MetaFlute gate and textured MetaPlank underceilings.",
       videoLink: "https://www.youtube.com/shorts/L6R_17NCRcY",
       youtubeLink: "https://www.youtube.com/watch?v=rXSQRmGuXnw",
       instagramLink: "https://www.instagram.com/p/C-nDsgvyP1z/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Linear Retreat",
-      metatittles:"Sustainable Facade with MetaLouvers & MetaPlank in MetaWood Finish",
-      metadescription:"Designed by Cityspace’82 Architects, this cinematic facade features MetaWood-finish MetaLouvers and MetaPlank underceilings—merging sustainability with modern elegance in a bold architectural statement by Metaguise.",
+      metatittles:"Linear Retreat Facade Project | Metaguise Architecture",
+      metadescription:"Linear Retreat by Metaguise showcases modern architectural facade design, precision metal detailing, and innovative engineering by the Metaguise facade experts.",
       images: [
       
-        "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat2.webp",
-        "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat3.webp",
-        "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat4.webp",
-        "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat5.webp",
-        "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat6.webp",
-        "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat7.webp",
-        "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat8.webp",
-        "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat9.webp",
-        "assets/Allprojects/residential/LinearRetreat/metalouver/linearretreat8.webp",
-        "assets/Allprojects/residential/LinearRetreat/metalouver/linearretreat10.webp",
-        "assets/Allprojects/residential/LinearRetreat/metalouver/linearretreat11.webp",
-        "assets/Allprojects/residential/LinearRetreat/metalouver/linearretreat12.webp",
+        {"src": "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat2.webp", "alt": "Modern facade design at Linear Retreat by Metaguise"},
+        {"src": "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat3.webp", "alt": "Exterior architectural detailing of Linear Retreat by Metaguise"},
+        {"src": "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat4.webp", "alt": "Contemporary building facade project Linear Retreat Metaguise"},
+        {"src": "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat5.webp", "alt": "Precision metal facade installation at Linear Retreat Metaguise"},
+        {"src": "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat6.webp", "alt": "Innovative facade engineering by Metaguise for Linear Retreat project"},
+        {"src": "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat7.webp", "alt": "Architectural facade structure of Linear Retreat by Metaguise"},
+        {"src": "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat8.webp", "alt": " Custom metal facade panels at Linear Retreat project by Metaguise"},
+        {"src": "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat9.webp", "alt": "Contemporary architectural facade at Linear Retreat by Metaguise"},
+        {"src": "assets/Allprojects/residential/LinearRetreat/metalouver/linearretreat8.webp", "alt": "Modern exterior facade design Linear Retreat Metaguise"},
+        {"src": "assets/Allprojects/residential/LinearRetreat/metalouver/linearretreat10.webp", "alt": "Architectural metal facade project Linear Retreat by Metaguise"},
+        {"src": "assets/Allprojects/residential/LinearRetreat/metalouver/linearretreat11.webp", "alt": "Sustainable facade design by Metaguise at Linear Retreat project"},
+        {"src": "assets/Allprojects/residential/LinearRetreat/metalouver/linearretreat12.webp", "alt": "Custom metal facade design for Linear Retreat project"},
       ],
     },
 
@@ -955,24 +962,25 @@ const SingleprojectDetail = [
 
       {
       name: "dev622",
+      url:"monolith-garden",
           alt:"Elegant residential facade featuring MetaWood aluminium profiles, MetaCassette Perforated Slidefold, Solid Panels, and MetaFlutes in MetaGrey and MetaWood.",
       videoLink: "https://www.youtube.com/watch?v=a1LPuUgutZc",
       youtubeLink: "https://www.youtube.com/watch?v=a1LPuUgutZc",
       instagramLink: "https://www.instagram.com/p/CzvmxaBtF_V/?utm_source=ig_web_copy_link&igsh=dDB5ZnFpODc2ZDhw",
       Projectname:"Monolith Garden",
-      metatittles:" Modern Home Facade | MetaWood, MetaCassette & MetaFlute Design",
-      metadescription:"A sleek residential elevation featuring MetaWood profiles, MetaCassette panels, and MetaFlute textures—merging minimalism with function and warm materiality.",
+      metatittles:"Monolith Garden Facade Project | Metaguise Architecture",
+      metadescription:"Discover the Monolith Garden facade project by Metaguise, showcasing innovative architectural design, precision metal engineering, and sustainable facade expertise.",
       images: [
       
-        "assets/Allprojects/residential/dev622/metaflute/dev2.webp",
-        "assets/Allprojects/residential/dev622/metaflute/dev3.webp",
-        "assets/Allprojects/residential/dev622/metaflute/dev4.webp",
-        "assets/Allprojects/residential/dev622/metaflute/dev6.webp",
-        "assets/Allprojects/residential/dev622/metafold/dev7.webp",
-        "assets/Allprojects/residential/dev622/metafold/dev8.webp",
-        "assets/Allprojects/residential/dev622/metafold/dev10.webp",
-        "assets/Allprojects/residential/dev622/solidpanel/dev5.webp",
-        "assets/Allprojects/residential/dev622/solidpanel/dev9.webp",
+       {"src": "assets/Allprojects/residential/dev622/metaflute/dev2.webp", "alt": "Modern metal facade design at Monolith Garden by Metaguise"},
+        {"src": "assets/Allprojects/residential/dev622/metaflute/dev3.webp", "alt": "Exterior facade detailing for Monolith Garden project by Metaguise"},
+        {"src": "assets/Allprojects/residential/dev622/metaflute/dev4.webp", "alt": "Custom architectural facade panels at Monolith Garden"},
+        {"src": "assets/Allprojects/residential/dev622/metaflute/dev6.webp", "alt": "Contemporary building facade installation by Metaguise"},
+        {"src": "assets/Allprojects/residential/dev622/metafold/dev7.webp", "alt": "Precision engineered facade structure at Monolith Garden"},
+        {"src": "assets/Allprojects/residential/dev622/metafold/dev8.webp", "alt": "Sustainable architectural facade project by Metaguise"},
+        {"src": "assets/Allprojects/residential/dev622/metafold/dev10.webp", "alt": "Modern building exterior facade design Monolith Garden"},
+        {"src": "assets/Allprojects/residential/dev622/solidpanel/dev5.webp", "alt": " Innovative facade engineering by Metaguise at Monolith Garden"},
+        {"src": "assets/Allprojects/residential/dev622/solidpanel/dev9.webp", "alt": "Solid Panel design by Metaguise"},
         
       ],
     },
@@ -980,44 +988,46 @@ const SingleprojectDetail = [
 
          {
       name: "ishaan",
+      url:"peacock-mesh",
              alt:"Retrofitted residential facade featuring rose gold MetaCoin panels arranged in a peacock feather pattern, capturing light and movement to transform the elevation with parametric elegance and fluidity.",
       videoLink: "https://www.youtube.com/watch?v=SJT31qFO1x4",
       youtubeLink: "https://www.youtube.com/watch?v=SJT31qFO1x4",
       instagramLink: "https://www.instagram.com/p/DHGN0Ptyiy2/?utm_source=ig_web_copy_link&igsh=YW9rb2Ywc2RmbHV5",
       Projectname:"Peacock Mesh",
-      metatittles:" Retrofit Facade Design | MetaCoin Peacock Motif in Copper Finish ",
-      metadescription:"A transformative retrofit featuring MetaCoin panels in a copper peacock motif—breathing new life into a dated facade through parametric design and light-responsive detail.",
+      metatittles:" Peacock Mesh Facade Project | Architectural Metal Mesh | Metaguise",
+      metadescription:"Discover the Peacock Mesh facade project by Metaguise, showcasing innovative architectural metal mesh design, precision fabrication, and modern facade engineering expertise.",
       images: [
       
-        "assets/Allprojects/residential/ishaan/metacoin/ishaan2.webp",
-        "assets/Allprojects/residential/ishaan/metacoin/ishaan3.webp",
-        "assets/Allprojects/residential/ishaan/metacoin/ishaan4.webp",
-        "assets/Allprojects/residential/ishaan/metacoin/ishaan5.webp",
-        "assets/Allprojects/residential/ishaan/metacoin/ishaan6.webp",
-        "assets/Allprojects/residential/ishaan/metacoin/ishaan7.webp",
+       {"src": "assets/Allprojects/residential/ishaan/metacoin/ishaan2.webp", "alt": "Architectural metal mesh facade installation – Peacock "},
+        {"src": "assets/Allprojects/residential/ishaan/metacoin/ishaan3.webp", "alt": "Mesh project by MetaguiseCustom metal mesh facade panels engineered by Metaguise"},
+        {"src": "assets/Allprojects/residential/ishaan/metacoin/ishaan4.webp", "alt": "Contemporary architectural facade with peacock mesh design by Metaguise"},
+        {"src": "assets/Allprojects/residential/ishaan/metacoin/ishaan5.webp", "alt": " Precision fabricated metal mesh facade system by Metaguise"},
+        {"src": "assets/Allprojects/residential/ishaan/metacoin/ishaan6.webp", "alt": "Modern building facade with decorative metal mesh by Metaguise"},
+        {"src": "assets/Allprojects/residential/ishaan/metacoin/ishaan7.webp", "alt": "Exterior architectural metal mesh cladding project by Metaguise"},
         
       ],
     },
 
             {
       name: "pritesh",
+      url:"sacred-geometry",
         alt:"Modern residential facade featuring warm MetaWood-toned MetaPlank on balconies and ceiling, paired with a sleek MetaGrey MetaLouver gate.",
       videoLink: "https://www.youtube.com/watch?v=HK6Zzr5T-6I",
       youtubeLink: "https://www.youtube.com/watch?v=HK6Zzr5T-6I",
       instagramLink: "https://www.instagram.com/p/DJ3tFbySPzx/?utm_source=ig_web_copy_link&igsh=MTc0cWNndTJqMmJ6Ng==",
       Projectname:"Sacred Geometry",
-      metatittles:"Minimal Home Facade | MetaWood Planks & MetaGrey Louvers",
-      metadescription:"A refined residential elevation with MetaPlank in warm MetaWood and MetaLouver in cool MetaGrey—bringing softness, structure, and modern simplicity to the facade.",
+      metatittles:"Sacred Geometry Facade Design Project | Metaguise",
+      metadescription:"Discover the Sacred Geometry facade project by Metaguise, showcasing advanced metal facade design, precision engineering, and innovative architectural solutions.",
       images: [
       
-        "assets/Allprojects/residential/pritesh/metalouver/pritesh2.webp",
-        "assets/Allprojects/residential/pritesh/metalouver/pritesh7.webp",
-        "assets/Allprojects/residential/pritesh/metalouver/pritesh8.webp",
-        "assets/Allprojects/residential/pritesh/metaplank/pritesh3.webp",
-        "assets/Allprojects/residential/pritesh/metaplank/pritesh4.webp",
-        "assets/Allprojects/residential/pritesh/metaplank/pritesh5.webp",
-        "assets/Allprojects/residential/pritesh/metaplank/pritesh6.webp",
-        "assets/Allprojects/residential/pritesh/metaplank/pritesh9.webp",
+        {"src": "assets/Allprojects/residential/pritesh/metalouver/pritesh2.webp", "alt": "Sacred Geometry architectural facade project by Metaguise"},
+        {"src": "assets/Allprojects/residential/pritesh/metalouver/pritesh7.webp", "alt": "Precision metal facade installation for Sacred Geometry project"},
+        {"src": "assets/Allprojects/residential/pritesh/metalouver/pritesh8.webp", "alt": "Sacred Geometry parametric facade detailing by Metaguise"},
+        {"src": "assets/Allprojects/residential/pritesh/metaplank/pritesh3.webp", "alt": " Contemporary metal facade structure – Sacred Geometry project"},
+        {"src": "assets/Allprojects/residential/pritesh/metaplank/pritesh4.webp", "alt": "Sacred Geometry facade engineering and fabrication by Metaguise"},
+        {"src": "assets/Allprojects/residential/pritesh/metaplank/pritesh5.webp", "alt": "Custom architectural metal facade panels – Sacred Geometry"},
+        {"src": "assets/Allprojects/residential/pritesh/metaplank/pritesh6.webp", "alt": "Innovative facade design inspired by sacred geometry patterns"},
+        {"src": "assets/Allprojects/residential/pritesh/metaplank/pritesh9.webp", "alt": "Modern sculptural metal facade by Metaguise – Sacred Geometry"},
         
       ],
     },
@@ -1025,21 +1035,22 @@ const SingleprojectDetail = [
 
               {
       name: "sachi",
+      url:"sachi",
          alt:"Elevated facade crowned with shimmering copper and gold MetaCoin panels forming dynamic striped patterns that shift with light.",
       videoLink: "https://www.youtube.com/watch?v=HnIuN8fa0u0",
       youtubeLink: "https://www.youtube.com/watch?v=HnIuN8fa0u0",
       instagramLink: "https://www.instagram.com/p/DIbY-m4yttN/?utm_source=ig_web_copy_link&igsh=dGlidzMyMGNlOWMx",
       Projectname:"Sachi",
-      metatittles:" Commercial Facade Design | MetaCoin in Copper & Gold Tones ",
-      metadescription:" A bold commercial elevation crowned with MetaCoin panels in copper and gold—blending warm metallic hues with texture and light-responsive movement. ",
+      metatittles:"Sachi Facade Project | Architectural Design by Metaguise",
+      metadescription:"Explore the Sachi architectural facade project by Metaguise, showcasing innovative design, precision metal fabrication, and modern facade engineering expertise.",
       images: [
       
-        "assets/Allprojects/residential/sachi/metacoin/sachi2.webp",
-         "assets/Allprojects/residential/sachi/metacoin/sachi3.webp",
-          "assets/Allprojects/residential/sachi/metacoin/sachi4.webp",
-           "assets/Allprojects/residential/sachi/metacoin/sachi5.webp",
-            "assets/Allprojects/residential/sachi/metacoin/sachi6.webp",
-             "assets/Allprojects/residential/sachi/metacoin/sachi7.webp",
+       {"src": "assets/Allprojects/residential/sachi/metacoin/sachi2.webp", "alt": "Modern facade design details from Sachi project by Metaguise"},
+         {"src": "assets/Allprojects/residential/sachi/metacoin/sachi3.webp", "alt": " Precision engineered facade installation at Sachi project"},
+          {"src": "assets/Allprojects/residential/sachi/metacoin/sachi4.webp", "alt": "Contemporary building facade system designed by Metaguise"},
+           {"src": "assets/Allprojects/residential/sachi/metacoin/sachi5.webp", "alt": "Exterior architectural facade design – Sachi project"},
+            {"src": "assets/Allprojects/residential/sachi/metacoin/sachi6.webp", "alt": "Custom facade panels used in Sachi building project by Metaguise"},
+             {"src": "assets/Allprojects/residential/sachi/metacoin/sachi7.webp", "alt": "Structural facade engineering work by Metaguise – Sachi project"},
         
       ],
     },
@@ -1047,22 +1058,23 @@ const SingleprojectDetail = [
     
               {
       name: "vivek",
+      url:"obsidian",
                   alt:"Modern home facade featuring sculptural oval-shaped MetaShingles in balcony niches, grooved MetaCassette panels between floors, and Solid Panels on the third level.",
       videoLink: "https://youtube.com/shorts/YIqhJ3ii33s?feature=share",
       youtubeLink: "https://youtube.com/shorts/YIqhJ3ii33s?feature=share",
       instagramLink: "https://www.instagram.com/p/DJoyqwrzrNP/?utm_source=ig_web_copy_link&igsh=ZTY0OHhlcHdzNm45",
       Projectname:"Obsidian",
-      metatittles:" Bold Residential Facade | MetaShingles, MetaCassette & Solid Panels ",
-      metadescription:" A sculptural home featuring oval MetaShingles, grooved MetaCassette panels, and clean Solid Panels—minimal in colour, bold in architectural expression. ",
+      metatittles:" Obsidian Facade Project | Architectural Design by Metaguise ",
+      metadescription:" Discover the Obsidian project by Metaguise, showcasing innovative facade design, precision engineering, and modern architectural expertise in advanced metal facade systems. ",
       images: [
       
-        "assets/Allprojects/residential/vivek/metacassettegrooved/vivek9.webp",
-        "assets/Allprojects/residential/vivek/metashingles/vivek3.webp",
-        "assets/Allprojects/residential/vivek/metashingles/vivek4.webp",
-        "assets/Allprojects/residential/vivek/metashingles/vivek5.webp",
-        "assets/Allprojects/residential/vivek/metashingles/vivek6.webp",
-        "assets/Allprojects/residential/vivek/metashingles/vivek7.webp",
-        "assets/Allprojects/residential/vivek/metashingles/vivek8.webp",
+       { src: "assets/Allprojects/residential/vivek/metacassettegrooved/vivek9.webp", alt: " Modern metal facade design in Obsidian project by Metaguise" },
+        { src: "assets/Allprojects/residential/vivek/metashingles/vivek3.webp", alt: "Precision engineered facade panels for Obsidian by Metaguise" },
+        { src: "assets/Allprojects/residential/vivek/metashingles/vivek4.webp", alt: "Contemporary building facade design – Obsidian project Metaguise" },
+        { src: "assets/Allprojects/residential/vivek/metashingles/vivek5.webp", alt: "Advanced metal facade system installation by Metaguise – Obsidian" },
+        { src: "assets/Allprojects/residential/vivek/metashingles/vivek6.webp", alt: "Exterior architectural facade detailing in Obsidian project" },
+        { src: "assets/Allprojects/residential/vivek/metashingles/vivek7.webp", alt: "Custom metal facade panels designed by Metaguise – Obsidian" },
+        { src: "assets/Allprojects/residential/vivek/metashingles/vivek8.webp", alt: "Innovative facade architecture project by Metaguise – Obsidian" },
         
         
       ],
@@ -1070,78 +1082,81 @@ const SingleprojectDetail = [
 
               {
       name: "hlp",
+      url:"hlp-facade-project",
                   alt:"Facade in Mohali featuring thousands of copper and gold-toned round MetaCoin panels, creating a bold, dynamic, and light-reactive parametric surface across a sweeping horizontal screen.",
       videoLink: "https://www.youtube.com/watch?v=XtQhLEm19OI",
       youtubeLink: "https://www.youtube.com/watch?v=XtQhLEm19OI",
       instagramLink: "https://www.instagram.com/p/DJEh3Mfy8CM/?utm_source=ig_web_copy_link&igsh=MXA2ODRiYTNpaDFhYw==",
       Projectname:"HLP",
-      metatittles:" Parametric Facade | Large-Scale MetaCoin Elevation in Copper & Gold ",
-      metadescription:"A dynamic commercial facade clad in MetaCoin—thousands of copper and gold-toned coin panels flowing across a wide elevation for a bold, kinetic effect",
+      metatittles:" HLP Facade Project | Metal Facade Design by Metaguise ",
+      metadescription:"Discover the HLP facade project by Metaguise showcasing innovative metal facade design, precision engineering, and modern architectural solutions.",
       images: [
       
-        "assets/Allprojects/commercial/hlp/metacoin/hlp2.webp",
-        "assets/Allprojects/commercial/hlp/metacoin/hlp3.webp",
-        "assets/Allprojects/commercial/hlp/metacoin/hlp4.webp",
-        "assets/Allprojects/commercial/hlp/metacoin/hlp5.webp",
-        "assets/Allprojects/commercial/hlp/metacoin/hlp6.webp",
-        "assets/Allprojects/commercial/hlp/metacoin/hlp7.webp",
+       { src: "assets/Allprojects/commercial/hlp/metacoin/hlp2.webp", alt: "Modern architectural facade design at HLP project by Metaguise" },
+        { src: "assets/Allprojects/commercial/hlp/metacoin/hlp3.webp", alt: "Custom metal facade panels installation – HLP project Metaguise" },
+        { src: "assets/Allprojects/commercial/hlp/metacoin/hlp4.webp", alt: " Contemporary building facade engineered by Metaguise for HLP" },
+        { src: "assets/Allprojects/commercial/hlp/metacoin/hlp5.webp", alt: "Precision metal facade detailing in HLP architectural project" },
+        { src: "assets/Allprojects/commercial/hlp/metacoin/hlp6.webp", alt: "Exterior metal facade structure by Metaguise – HLP building" },
+        { src: "assets/Allprojects/commercial/hlp/metacoin/hlp7.webp", alt: "Advanced facade fabrication for HLP project by Metaguise" },
         
       ],
     },
 
                  {
       name: "sbi",
+      url:"sbi-facade-project",
              alt:"Commercial facade by Metaguise featuring a cascading waveform of MetaCoin panels, paired with MetaGrey MetaLouvers for ventilation and MetaWood-toned MetaFlutes on the ceiling - blending parametric fluidity with everyday functionality.",
       videoLink: "https://www.youtube.com/watch?v=9WmdkuNl2io",
       youtubeLink: "https://www.youtube.com/watch?v=9WmdkuNl2io",
       instagramLink: "https://www.instagram.com/reel/DJZIDW3SWtc/?utm_source=ig_web_copy_link&igsh=MXhxZThtejB3d3Ntcg==",
       Projectname:"SBI",
-      metatittles:" Commercial Facade | MetaCoin, MetaLouver & MetaFlute Design ",
-      metadescription:" A parametric facade with cascading MetaCoin panels, MetaGrey louvers, and warm MetaWood flutes—blending precision, movement, and material harmony. ",
+      metatittles:"SBI Building Facade Project by Metaguise | Commercial Architecture",
+      metadescription:"Explore the SBI commercial facade project by Metaguise showcasing precision metal facade engineering, modern architectural design, and innovative building solutions. ",
       images: [
       
-        "assets/Allprojects/commercial/sbi/metacoin/sbi2.webp",
-        "assets/Allprojects/commercial/sbi/metacoin/sbi6.webp",
-        "assets/Allprojects/commercial/sbi/metacoin/sbi8.webp",
-        "assets/Allprojects/commercial/sbi/metacoin/sbi10.webp",
-        "assets/Allprojects/commercial/sbi/metaflute/sbi3.webp",
-        "assets/Allprojects/commercial/sbi/metaflute/sbi5.webp",
-        "assets/Allprojects/commercial/sbi/metalouver/sbi7.webp",
-        "assets/Allprojects/commercial/sbi/metalouver/sbi9.webp",
+       { src: "assets/Allprojects/commercial/sbi/metacoin/sbi2.webp", alt: "Modern SBI Bank building facade architecture by Metaguise" },
+        { src: "assets/Allprojects/commercial/sbi/metacoin/sbi6.webp", alt: "Commercial bank facade design with metal panels by Metaguise" },
+        { src: "assets/Allprojects/commercial/sbi/metacoin/sbi8.webp", alt: "Exterior facade detailing of SBI Bank project by Metaguise" },
+        { src: "assets/Allprojects/commercial/sbi/metacoin/sbi10.webp", alt: "Architectural facade installation for SBI Bank building by Metaguise" },
+        { src: "assets/Allprojects/commercial/sbi/metaflute/sbi3.webp", alt: "Contemporary commercial facade design by Metaguise – SBI project" },
+        { src: "assets/Allprojects/commercial/sbi/metaflute/sbi5.webp", alt: "Precision engineered metal facade system for SBI Bank by Metaguise" },
+        { src: "assets/Allprojects/commercial/sbi/metalouver/sbi7.webp", alt: "Modern bank building exterior design by Metaguise" },
+        { src: "assets/Allprojects/commercial/sbi/metalouver/sbi9.webp", alt: "SBI Bank architectural facade project completed by Metaguise" },
         
       ],
     },
 
                    {
       name: "zenith",
+      url:"zenith",
              alt:"Glass commercial facade wrapped in champagne-gold MetaCoin panels forming ripple-like patterns, framed by solid panels and exposed brick arches.",
       videoLink: "https://youtube.com/shorts/8BpsryeWzMM?feature=share",
       youtubeLink: "https://youtube.com/shorts/8BpsryeWzMM?feature=share",
       instagramLink: "https://www.instagram.com/reel/DKg9lYsyODS/?utm_source=ig_web_copy_link&igsh=Nmo5aHpxcTI0Znlz",
       Projectname:"Zenith",
-      metatittles:" MetaCoin Facade | Two-Sided Parametric Design in Champagne Gold ",
-      metadescription:" A sculptural MetaCoin facade crafted with thousands of champagne-gold coins flowing across a glass building—shimmering by day, glowing by night ",
+      metatittles:" Zenith Facade Project by Metaguise | Modern Architectural Design",
+      metadescription:" Explore Zenith, a modern architectural facade project by Metaguise showcasing innovative metal facade design, precision engineering, and sustainable building expertise. ",
       images: [
       
-        "assets/Allprojects/commercial/zenith/metacoin/zen2.webp",
-        "assets/Allprojects/commercial/zenith/metacoin/zen3.webp",
-        "assets/Allprojects/commercial/zenith/metacoin/zen4.webp",
-        "assets/Allprojects/commercial/zenith/metacoin/zen5.webp",
-        "assets/Allprojects/commercial/zenith/metacoin/zen6.webp",
-        "assets/Allprojects/commercial/zenith/metacoin/zen7.webp",
-        "assets/Allprojects/commercial/zenith/metacoin/zen8.webp",
-        "assets/Allprojects/commercial/zenith/metacoin/zen9.webp",
-        "assets/Allprojects/commercial/zenith/metacoin/zen10.webp",
-        "assets/Allprojects/commercial/zenith/night/zen11.webp",
-        "assets/Allprojects/commercial/zenith/night/zen12.webp",
-        "assets/Allprojects/commercial/zenith/night/zen13.webp",
-        "assets/Allprojects/commercial/zenith/night/zen14.webp",
-        "assets/Allprojects/commercial/zenith/night/zen15.webp",
-          "assets/Allprojects/commercial/zenith/night/zen16.webp",
-          "assets/Allprojects/commercial/zenith/night/zen17.webp",
-          "assets/Allprojects/commercial/zenith/night/zen18.webp",
-          "assets/Allprojects/commercial/zenith/night/zen19.webp",
-          "assets/Allprojects/commercial/zenith/night/zen20.webp",
+       { src: "assets/Allprojects/commercial/zenith/metacoin/zen2.webp", alt: "Modern building facade design Zenith project by Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/metacoin/zen3.webp", alt: "Custom architectural metal facade Zenith by Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/metacoin/zen4.webp", alt: " Exterior facade detailing of Zenith project Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/metacoin/zen5.webp", alt: "Contemporary building facade installation Zenith Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/metacoin/zen6.webp", alt: "Precision engineered facade design Zenith project Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/metacoin/zen7.webp", alt: "Modern architectural facade panels Zenith by Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/metacoin/zen8.webp", alt: "Sustainable facade architecture Zenith project Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/metacoin/zen9.webp", alt: "Advanced facade engineering Zenith by Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/metacoin/zen10.webp", alt: "Architectural facade structure Zenith building Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/night/zen11.webp", alt: " Innovative facade design Zenith project by Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/night/zen12.webp", alt: " Modern commercial facade design Zenith Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/night/zen13.webp", alt: "Custom facade fabrication Zenith project Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/night/zen14.webp", alt: "Architectural exterior facade Zenith building Metaguise" },
+        { src: "assets/Allprojects/commercial/zenith/night/zen15.webp", alt: "Contemporary metal facade system Zenith Metaguise" },
+          { src: "assets/Allprojects/commercial/zenith/night/zen16.webp", alt: "Modern facade architecture Zenith project Metaguise" },
+          { src: "assets/Allprojects/commercial/zenith/night/zen17.webp", alt: "Exterior building facade detail Zenith Metaguise" },
+          { src: "assets/Allprojects/commercial/zenith/night/zen18.webp", alt: "Precision metal facade installation Zenith project Metaguise" },
+          { src: "assets/Allprojects/commercial/zenith/night/zen19.webp", alt: "Modern architectural envelope Zenith building Metaguise" },
+          { src: "assets/Allprojects/commercial/zenith/night/zen20.webp", alt: "Facade engineering and design Zenith project Metaguise" },
         
       ],
     },
@@ -1149,30 +1164,31 @@ const SingleprojectDetail = [
 
                    {
       name: "wvcity",
+      url:"wavecity-facade-project",
         alt:"Ceiling installation in a Ghaziabad commercial space featuring shimmering gold and bronze MetaSequin panels that ripple with light by day and transform with custom lighting by night - bringing parametric movement and texture to life.",
       videoLink: "https://youtube.com/shorts/OS9Aa7kpJic?feature=shared",
       youtubeLink: "https://youtube.com/shorts/OS9Aa7kpJic?feature=shared",
       instagramLink: "https://www.instagram.com/p/DKwr6UnyzVB/?utm_source=ig_web_copy_link&igsh=MWI2djFwcDc5Y3E1dg==",
       Projectname:"Wavecity",
-      metatittles:" Parametric Ceiling Design | MetaSequin in Gold & Bronze ",
-      metadescription:"A dynamic commercial ceiling crafted with MetaSequin panels in rich gold and bronze tones—designed to shimmer, ripple, and transform with light and motion.",
+      metatittles:"Wave City Facade Project | Metal Facade Design by Metaguise",
+      metadescription:"Explore the Wave City facade project by Metaguise featuring advanced metal facade design, precision engineering, and modern architectural solutions for contemporary buildings.",
       images: [
       
-        "assets/Allprojects/commercial/wvcity/metasequin/wv3.webp",
-        "assets/Allprojects/commercial/wvcity/metasequin/wv4.webp",
-        "assets/Allprojects/commercial/wvcity/metasequin/wv6.webp",
-        "assets/Allprojects/commercial/wvcity/metasequin/wv12.webp",
-        "assets/Allprojects/commercial/wvcity/metasequin/wv13.webp",
-        "assets/Allprojects/commercial/wvcity/metasequin/wv14.webp",
-        "assets/Allprojects/commercial/wvcity/metasequin/wv15.webp",
-        "assets/Allprojects/commercial/wvcity/metasequin/wv16.webp",
-        "assets/Allprojects/commercial/wvcity/night/wv5.webp",
-        "assets/Allprojects/commercial/wvcity/night/wv7.webp",
-        "assets/Allprojects/commercial/wvcity/night/wv9.webp",
-        "assets/Allprojects/commercial/wvcity/night/wv10.webp",
-        "assets/Allprojects/commercial/wvcity/night/wv11.webp",
-         "assets/Allprojects/commercial/wvcity/night/wv2.webp",
-        
+       { src: "assets/Allprojects/commercial/wvcity/metasequin/wv3.webp", alt: "Wave City facade project by Metaguise with modern metal facade design" },
+        { src: "assets/Allprojects/commercial/wvcity/metasequin/wv4.webp", alt: "Architectural metal facade installation at Wave City by Metaguise" },
+        { src: "assets/Allprojects/commercial/wvcity/metasequin/wv6.webp", alt: "Custom metal facade panels used in Wave City project by Metaguise" },
+        { src: "assets/Allprojects/commercial/wvcity/metasequin/wv12.webp", alt: "Exterior facade design for Wave City building by Metaguise" },
+        { src: "assets/Allprojects/commercial/wvcity/metasequin/wv13.webp", alt: "Contemporary metal facade system installed by Metaguise at Wave City" },
+        { src: "assets/Allprojects/commercial/wvcity/metasequin/wv14.webp", alt: "Precision engineered facade panels at Wave City project by Metaguise" },
+        { src: "assets/Allprojects/commercial/wvcity/metasequin/wv15.webp", alt: "Large scale architectural facade installation at Wave City by Metaguise" },
+        { src: "assets/Allprojects/commercial/wvcity/metasequin/wv16.webp", alt: "Modern building facade design at Wave City by Metaguise" },
+        { src: "assets/Allprojects/commercial/wvcity/night/wv5.webp", alt: "Structural metal facade detailing in Wave City project by Metaguise" },
+        { src: "assets/Allprojects/commercial/wvcity/night/wv7.webp", alt: "Innovative metal facade architecture by Metaguise at Wave City" },
+        { src: "assets/Allprojects/commercial/wvcity/night/wv9.webp", alt: "High performance facade design system at Wave City by Metaguise" },
+        { src: "assets/Allprojects/commercial/wvcity/night/wv10.webp", alt: "Contemporary architectural facade solution by Metaguise at Wave City" },
+        { src: "assets/Allprojects/commercial/wvcity/night/wv11.webp", alt: "Exterior metal facade engineering at Wave City project by Metaguise" },
+        { src: "assets/Allprojects/commercial/wvcity/night/wv2.webp", alt: "Sustainable facade design by Metaguise for Wave City building" },
+
       ],
     },
 
@@ -1181,33 +1197,34 @@ const SingleprojectDetail = [
 
       {
       name: "whiteland",
+      url:"whiteland",
           alt:"The facade of the Westin Residences Experience Center features a striking all-white parametric cladding system, with each panel intricately sculpted into a six-petaled floral motif. Trusted by India’s top builders for luxury projects.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DNfBdU7ySbT/?utm_source=ig_web_copy_link&igsh=MWUzcGpzemZzeG45eQ==",
       Projectname:"WhiteLand",
-      metatittles:"  ",
-      metadescription:"",
+      metatittles:"White Land Facade Project by Metaguise | Modern Metal Architecture",
+      metadescription:"White Land by Metaguise is a modern metal facade project showcasing precision engineering, sustainable architecture, and innovative exterior design solutions.",
       images: [
       
-        "assets/Allprojects/commercial/whiteland/parametric panels/wl2.webp",
-          "assets/Allprojects/commercial/whiteland/parametric panels/wl3.webp",
-          "assets/Allprojects/commercial/whiteland/parametric panels/wl4.webp",
-          "assets/Allprojects/commercial/whiteland/parametric panels/wl6.webp",
-          "assets/Allprojects/commercial/whiteland/parametric panels/wl7.webp",
-          "assets/Allprojects/commercial/whiteland/parametric panels/wl12.webp",
-          "assets/Allprojects/commercial/whiteland/parametric panels/wl13.webp",
-          "assets/Allprojects/commercial/whiteland/parametric panels/wl14.webp",
-          "assets/Allprojects/commercial/whiteland/parametric panels/wl15.webp",
-          "assets/Allprojects/commercial/whiteland/parametric panels/wl16.webp",
-          "assets/Allprojects/commercial/whiteland/parametric panels/wl18.webp",
-          "assets/Allprojects/commercial/whiteland/night/wl5.webp",
-          "assets/Allprojects/commercial/whiteland/night/wl8.webp",
-          "assets/Allprojects/commercial/whiteland/night/wl9.webp",
-          "assets/Allprojects/commercial/whiteland/night/wl10.webp",
-          "assets/Allprojects/commercial/whiteland/night/wl11.webp",
-          "assets/Allprojects/commercial/whiteland/night/wl17.webp",
-          "assets/Allprojects/commercial/whiteland/night/wl19.webp",
+        {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl2.webp", "alt": "Modern architectural facade design at White Land by Metaguise"},
+          {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl3.webp", "alt": "Custom metal facade panels for White Land project"},
+          {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl4.webp", "alt": "Precision-engineered facade installation by Metaguise at White Land"},
+          {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl6.webp", "alt": "Contemporary exterior metal design – White Land project"},
+          {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl7.webp", "alt": "Sustainable metal facade architecture by Metaguise"},
+          {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl12.webp", "alt": "White Land building facade detailing by Metaguise"},
+          {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl13.webp", "alt": "Advanced metal cladding system at White Land"},
+          {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl14.webp", "alt": "Commercial facade project White Land by Metaguise"},
+          {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl15.webp", "alt": "Structural metal facade engineering at White Land"},
+          {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl16.webp", "alt": "Exterior elevation design White Land project"},
+          {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl18.webp", "alt": "High-performance metal facade system by Metaguise"},
+          {"src": "assets/Allprojects/commercial/whiteland/night/wl5.webp", "alt": "White Land architectural metal installation"},
+          {"src": "assets/Allprojects/commercial/whiteland/night/wl8.webp", "alt": "Modern commercial facade by Metaguise – White Land"},
+          {"src": "assets/Allprojects/commercial/whiteland/night/wl9.webp", "alt": "Custom facade fabrication White Land"},
+          {"src": "assets/Allprojects/commercial/whiteland/night/wl10.webp", "alt": "Durable metal exterior panels by Metaguise"},
+          {"src": "assets/Allprojects/commercial/whiteland/night/wl11.webp", "alt": "Innovative facade design solution at White Land"},
+          {"src": "assets/Allprojects/commercial/whiteland/night/wl17.webp", "alt": "White Land project exterior by Metaguise"},
+          {"src": "assets/Allprojects/commercial/whiteland/night/wl19.webp", "alt": "White Land project exterior by Metaguise"},
         
       ],
     },
@@ -1491,26 +1508,27 @@ const SingleprojectDetail = [
 
     {
       name: "3dlf1",
+      url:"3dlf1-facade-design",
         alt:"Striking residential facade featuring floral-pattern MetaPerforated panels in MetaCopper, paired with warm wooden MetaFlutes and a sleek MetaGrey MetaFlute gate.",
       videoLink: "",
       youtubeLink: "https://youtu.be/-pLr2ZVXycY",
       instagramLink: "https://www.instagram.com/reel/C39pYFwyFKK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"3DLF1",
-      metatittles:"3 DLF 1 Facade | Artistic Facade with MetaCopper & MetaFlute Accents",
-      metadescription:"A stunning home facade by ASRO Arcade, featuring intricate MetaCopper panels from MetaLab, paired with warm MetaFlute in MetaWood and sleek MetaGrey finishes for a harmonious, modern aesthetic.",
+      metatittles:"3DLF Architectural Facade Project | Metaguise",
+      metadescription:"Discover the 3DLF architectural facade project by Metaguise, showcasing innovative metal facade design, precision engineering, and modern architectural expertise.",
       images: [
       
      
-        "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_2.webp",
-        "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_3.webp",
-        "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_4.webp",
-        "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_11.webp",
-        "assets/Allprojects/residential/3DLF1/metaflute/3dlf1_8.webp",
-        "assets/Allprojects/residential/3DLF1/metaflute/3dlf1_9.webp",
-        "assets/Allprojects/residential/3DLF1/metaflute/3dlf1_10.webp",
-        "assets/Allprojects/residential/3DLF1/metacassette-perforated/3dlf1_5.webp",
-        "assets/Allprojects/residential/3DLF1/metacassette-perforated/3dlf1_6.webp",
-        "assets/Allprojects/residential/3DLF1/metacassette-perforated/3dlf1_7.webp",
+       { src: "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_2.webp", alt: " Modern metal facade design at 3DLF project by Metaguise" },
+        { src: "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_3.webp", alt: "Custom facade panels installation for 3DLF building" },
+        { src: "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_4.webp", alt: "Contemporary architectural facade designed by Metaguise" },
+        { src: "assets/Allprojects/residential/3DLF1/metalouver/3dlf1_11.webp", alt: "Precision engineered facade system at 3DLF project" },
+        { src: "assets/Allprojects/residential/3DLF1/metaflute/3dlf1_8.webp", alt: "Exterior metal facade structure by Metaguise architects" },
+        { src: "assets/Allprojects/residential/3DLF1/metaflute/3dlf1_9.webp", alt: "Innovative building facade design at 3DLF project" },
+        { src: "assets/Allprojects/residential/3DLF1/metaflute/3dlf1_10.webp", alt: " Modern commercial facade architecture by Metaguise" },
+        { src: "assets/Allprojects/residential/3DLF1/metacassette-perforated/3dlf1_5.webp", alt: "Custom metal facade detailing for 3DLF project" },
+        { src: "assets/Allprojects/residential/3DLF1/metacassette-perforated/3dlf1_6.webp", alt: "Architectural facade engineering by Metaguise experts" },
+        { src: "assets/Allprojects/residential/3DLF1/metacassette-perforated/3dlf1_7.webp", alt: "Advanced facade design project by Metaguise" },
         
         
        
@@ -1522,37 +1540,38 @@ const SingleprojectDetail = [
 
     {
       name: "caskey",
+      url:"kinetic-grid",
         alt:"Dynamic residential facade featuring Cascading Keys, MetaSlider with MetaLouvers, and an automatic MetaGate clad in grey MetaFlutes - showcasing Metaguise’s kinetic facade expertise and engineering innovation.",
       videoLink: "https://www.youtube.com/shorts/WG15QuBFn94",
       youtubeLink: "https://www.youtube.com/shorts/WG15QuBFn94",
       instagramLink: "https://www.instagram.com/reel/DKSpNL6zgPm/?utm_source=ig_web_copy_link&igsh=MmJ4bHJkaXNndmU1",
       Projectname:"Kinetic Grid",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Kinetic Grid Facade Project by Metaguise",
+      metadescription:"Kinetic Grid by Metaguise is an advanced metal facade project showcasing dynamic architectural design, precision engineering, and innovative facade solutions.",
       images: [
       
      
-        "assets/Allprojects/residential/caskey/cascading keys/caskey2.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey3.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey4.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey5.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey6.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey7.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey8.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey9.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey10.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey11.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey12.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey13.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey15.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey16.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey17.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey18.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey19.webp", 
-          "assets/Allprojects/residential/caskey/cascading keys/caskey20.webp", 
-          "assets/Allprojects/residential/caskey/metalouver/caskey14.webp", 
-          "assets/Allprojects/residential/caskey/metalouver/caskey21.webp", 
-          "assets/Allprojects/residential/caskey/metalouver/caskey22.webp", 
+       { src: "assets/Allprojects/residential/caskey/cascading keys/caskey2.webp", alt: "Dynamic metal facade design – Kinetic Grid" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey3.webp", alt: "Precision-engineered facade panels by Metaguise" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey4.webp", alt: "Contemporary architectural facade – Kinetic Grid project" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey5.webp", alt: "Custom metal facade system by Metaguise" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey6.webp", alt: "Exterior facade detailing of Kinetic Grid" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey7.webp", alt: "Innovative metal facade installation by Metaguise" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey8.webp", alt: "Modern facade structure – Kinetic Grid" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey9.webp", alt: "Architectural metal grid facade design" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey10.webp", alt: "High-performance metal facade by Metaguise" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey11.webp", alt: "Parametric-inspired facade system – Kinetic Grid" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey12.webp", alt: "Commercial facade project by Metaguise" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey13.webp", alt: "Structural metal facade framework – Kinetic Grid" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey15.webp", alt: "Advanced facade fabrication by Metaguise" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey16.webp", alt: "Building exterior metal facade – Kinetic Grid" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey17.webp", alt: "Sustainable facade design by Metaguise" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey18.webp", alt: "Custom engineered facade panels" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey19.webp", alt: "Modern commercial facade – Kinetic Grid" },
+          { src: "assets/Allprojects/residential/caskey/cascading keys/caskey20.webp", alt: "Facade installation process by Metaguise" },
+          { src: "assets/Allprojects/residential/caskey/metalouver/caskey14.webp", alt: "Architectural metal grid structure" },
+          { src: "assets/Allprojects/residential/caskey/metalouver/caskey21.webp", alt: "Innovative facade engineering – Kinetic Grid" },
+          { src: "assets/Allprojects/residential/caskey/metalouver/caskey22.webp", alt: "Exterior building facade by Metaguise" },
         
       ],
     },
@@ -1561,62 +1580,64 @@ const SingleprojectDetail = [
 
         {
       name: "3939a",
+      url:"scaled-symphony",
             alt:"Striking residential facade clad in MetaShingles, forming sculptural canopy-like arches with dynamic texture - showcasing Metaguise’s PAN India design excellence.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/reel/DLxZ-y_B2_f/?utm_source=ig_web_copy_link&igsh=MTBnMTJtaWNvNng5bQ==",
       Projectname:"Scaled Symphony",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Scaled Symphony Facade Project | Metaguise",
+      metadescription:"Scaled Symphony by Metaguise is a precision-engineered metal facade project blending parametric design, architectural innovation, and sustainable building expertise.",
       images: [
       
      
-        "assets/Allprojects/residential/3939A/metashingles/3939A.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_2.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_3.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_4.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_5.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_6.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_8.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_9.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_10.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_11.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_12.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_13.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_14.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_15.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_16.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_17.webp",
-          "assets/Allprojects/residential/3939A/metashingles/3939A_18.webp",
-          "assets/Allprojects/residential/3939A/night/3939A_19.webp",
+       { src: "assets/Allprojects/residential/3939A/metashingles/3939A.webp", alt: "Sculptural metal facade design – Scaled Symphony" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_2.webp", alt: "Parametric metal facade detailing by Metaguise" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_3.webp", alt: "Custom metal facade panels installation project" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_4.webp", alt: "Contemporary architectural facade by Metaguise" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_5.webp", alt: "Precision engineered facade system – Scaled Symphony" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_6.webp", alt: "Modern commercial metal facade structure" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_8.webp", alt: "Advanced facade fabrication by Metaguise" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_9.webp", alt: "Exterior metal cladding system – Scaled Symphony" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_10.webp", alt: "Architectural metal facade geometry detail" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_11.webp", alt: "Custom facade panel fabrication process" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_12.webp", alt: "Sustainable metal facade solution by Metaguise" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_13.webp", alt: "Large-scale metal facade installation project" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_14.webp", alt: "Parametric facade concept development" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_15.webp", alt: "High-performance metal facade design" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_16.webp", alt: "Innovative building facade by Metaguise" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_17.webp", alt: "Exterior architectural metal skin system" },
+          { src: "assets/Allprojects/residential/3939A/metashingles/3939A_18.webp", alt: "Detailed facade engineering – Scaled Symphony" },
+          { src: "assets/Allprojects/residential/3939A/night/3939A_19.webp", alt: "Modern metal facade architecture by Metaguise" },
       ],
     },
 
 
       {
       name: "88arjun",
+      url:"parametric-crown",
           alt:"Residential facade featuring monochromatic MetaShingles paired with vertically flowing MetaFin panels, adding layered texture across the upper levels and fluidity and depth on the lower facade.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Parametric Crown",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Parametric Crown Facade Project | Metaguise",
+      metadescription:"Discover Parametric Crown, an advanced metal facade project by Metaguise showcasing parametric design innovation, precision engineering, and modern architectural excellence.",
       images: [
       
      
         
-        "assets/Allprojects/residential/88Arjun/metashingles/88_8.webp",
-          "assets/Allprojects/residential/88Arjun/metashingles/88_10.webp",
-          "assets/Allprojects/residential/88Arjun/metashingles/88_11.webp",
-          "assets/Allprojects/residential/88Arjun/metashingles/88_13.webp",
-           "assets/Allprojects/residential/88Arjun/metaflute/88_7.webp",
-           "assets/Allprojects/residential/88Arjun/metaflute/88_15.webp",
-           "assets/Allprojects/residential/88Arjun/metaflute/88_16.webp",
-          "assets/Allprojects/residential/88Arjun/metafin/88_6.webp",
-          "assets/Allprojects/residential/88Arjun/metafin/88_9.webp",
-          "assets/Allprojects/residential/88Arjun/metafin/88_12.webp",
-          "assets/Allprojects/residential/88Arjun/metafin/88_14.webp",
+       { src: "assets/Allprojects/residential/88Arjun/metashingles/88_8.webp", alt: "Advanced parametric facade structure – Parametric Crown project" },
+         { src: "assets/Allprojects/residential/88Arjun/metashingles/88_10.webp", alt: "Custom metal facade panels engineered by Metaguise" },
+          { src: "assets/Allprojects/residential/88Arjun/metashingles/88_11.webp", alt: "Parametric architectural facade detailing – Parametric Crown" },
+          { src: "assets/Allprojects/residential/88Arjun/metashingles/88_13.webp", alt: "Modern commercial metal facade by Metaguise" },
+           { src: "assets/Allprojects/residential/88Arjun/metaflute/88_7.webp", alt: "Precision-fabricated parametric metal panels" },
+           { src: "assets/Allprojects/residential/88Arjun/metaflute/88_15.webp", alt: "Exterior facade installation – Parametric Crown by Metaguise" },
+           { src: "assets/Allprojects/residential/88Arjun/metaflute/88_16.webp", alt: "Contemporary parametric facade geometry design" },
+          { src: "assets/Allprojects/residential/88Arjun/metafin/88_6.webp", alt: "Architectural metal facade innovation by Metaguise" },
+          { src: "assets/Allprojects/residential/88Arjun/metafin/88_9.webp", alt: "Sculpted parametric crown facade system" },
+          { src: "assets/Allprojects/residential/88Arjun/metafin/88_12.webp", alt: "Sustainable metal facade project – Parametric Crown" },
+          { src: "assets/Allprojects/residential/88Arjun/metafin/88_14.webp", alt: "High-performance architectural facade by Metaguise" },
       ],
     },
     
@@ -1624,85 +1645,87 @@ const SingleprojectDetail = [
 
      {
       name: "Verdigris Veil",
+      url:"verdigris-veil",
       videoLink: "https://www.instagram.com/p/DPJVPxaAVG9/?utm_source=ig_web_copy_link",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DPJVPxaAVG9/?utm_source=ig_web_copy_link",
       Projectname:"Verdigris Veil",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Verdigris Veil Architectural Facade Project | Metaguise",
+      metadescription:"Verdigris Veil by Metaguise is a distinctive architectural facade project crafted with precision metal detailing, innovative engineering, and contemporary design expertise.",
       images: [
 
-          "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_5.webp",
-          "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_6.webp",
-          "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_14.webp",
-          "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_15.webp",
-          "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_16.webp",
-           "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_2.webp",
-           "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_3.webp",
-           "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_4.webp",
-           "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_7.webp",
-           "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_8.webp",
-          "assets/Allprojects/residential/Verdigris Veil/night/K3_9.webp",
-          "assets/Allprojects/residential/Verdigris Veil/night/K3_10.webp",
-          
-          
+          { src: "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_5.webp", alt: " Metal facade detailing in Verdigris Veil project" },
+          { src: "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_6.webp", alt: "Contemporary exterior facade design by Metaguise" },
+          { src: "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_14.webp", alt: "Precision engineered metal facade – Verdigris Veil" },
+          { src: "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_15.webp", alt: "Custom architectural facade panels by Metaguise" },
+          { src: "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_16.webp", alt: "Modern building facade system in Verdigris Veil" },
+           { src: "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_2.webp", alt: " Structural metal facade installation by Metaguise" },
+           { src: "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_3.webp", alt: "Facade craftsmanship detail – Verdigris Veil project" },
+           { src: "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_4.webp", alt: "Sustainable metal facade design by Metaguise" },
+           { src: "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_7.webp", alt: "Exterior architectural metal panels – Verdigris Veil" },
+           { src: "assets/Allprojects/residential/Verdigris Veil/metapatina/K3_8.webp", alt: "Innovative facade engineering by Metaguise" },
+          { src: "assets/Allprojects/residential/Verdigris Veil/night/K3_9.webp", alt: "Custom metal facade structure – Verdigris Veil" },
+          { src: "assets/Allprojects/residential/Verdigris Veil/night/K3_10.webp", alt: "Architectural facade project Verdigris Veil by Metaguise" },
+
       ],
     },
 
      {
       name: "Casa Stilgrove",
+      url:"casa-stilgrove",
       videoLink: "https://www.instagram.com/p/DLHNdyWSHEK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DLHNdyWSHEK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Casa Stilgrove",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Casa Stilgrove Facade Project | Metaguise",
+      metadescription:"Discover Casa Stilgrove by Metaguise, a premium architectural facade project showcasing modern metal craftsmanship, precision engineering, and sustainable design excellence.",
       images: [
 
-          "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_2.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_3.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_5.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_15.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_16.webp",
-           "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_4.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_6.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_7.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_9.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_10.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_11.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_13.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metaLouver/casa_8.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metaLouver/casa_12.webp",
-          "assets/Allprojects/residential/Casa Stilgrove/metaLouver/casa_14.webp",
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_2.webp", alt: "Modern architectural facade at Casa Stilgrove by Metaguise"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_3.webp", alt: "Custom metal facade detailing – Casa Stilgrove"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_5.webp", alt: "Precision facade installation by Metaguise at Casa Stilgrove"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_15.webp", alt: "Contemporary exterior facade design – Casa Stilgrove"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_16.webp", alt: "Premium residential facade project by Metaguise"},
+           {src: "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_4.webp", alt: "Metal facade craftsmanship at Casa Stilgrove"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_6.webp", alt: "Exterior architectural detailing by Metaguise"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_7.webp", alt: "Casa Stilgrove modern building facade design"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_9.webp", alt: "Sustainable facade solution by Metaguise"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_10.webp", alt: "High-end metal facade project – Casa Stilgrove"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_11.webp", alt: "Custom engineered facade panels by Metaguise"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metaflute/casa_13.webp", alt: "Architectural metal facade system at Casa Stilgrove"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metaLouver/casa_8.webp", alt: "Modern luxury facade design by Metaguise"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metaLouver/casa_12.webp", alt: "Facade engineering expertise by Metaguise – Casa Stilgrove"},
+          {src: "assets/Allprojects/residential/Casa Stilgrove/metaLouver/casa_14.webp", alt: "Exterior metal facade finish at Casa Stilgrove"},
       ],
     },
 
      {
       name: "The Cornerstone",
+      url:"the-cornerstone",
       videoLink: "https://www.instagram.com/p/DJWxORdSkKR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DJWxORdSkKR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Cornerstone",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"The Cornerstone Facade Project | Metaguise",
+      metadescription:"Discover The Cornerstone by Metaguise, a modern facade project crafted with precision engineering, innovative metal systems, and architectural excellence.",
       images: [
 
-          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_2.webp",
-          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_3.webp",
-          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_4.webp",
-          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_7.webp",
-          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_8.webp",
-          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_12.webp",
-          "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_13.webp",
-          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_5.webp",
-          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_6.webp",
-          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_9.webp",
-          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_10.webp",
-          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_11.webp",
-          "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_14.webp",
+          {src: "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_2.webp", alt: "Modern architectural facade detailing at The Cornerstone"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_3.webp", alt: "Precision-engineered metal facade by Metaguise"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_4.webp", alt: "Contemporary exterior facade design – The Cornerstone"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_7.webp", alt: "Custom metal facade panels by Metaguise"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_8.webp", alt: "Architectural facade structure at The Cornerstone project"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_12.webp", alt: "Exterior metal facade installation by Metaguise"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_13.webp", alt: "Sustainable facade system – The Cornerstone"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_5.webp", alt: "Advanced facade engineering by Metaguise"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_6.webp", alt: "Modern building facade design at The Cornerstone"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_9.webp", alt: "Commercial facade project by Metaguise"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_10.webp", alt: "Detailed metal facade craftsmanship – The Cornerstone"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_11.webp", alt: "Innovative facade architecture by Metaguise"},
+          {src: "assets/Allprojects/residential/The Cornerstone/metaflute/nitiKa_14.webp", alt: "The Cornerstone building exterior by Metaguise"},
       ],
     },
 
@@ -1710,127 +1733,207 @@ const SingleprojectDetail = [
 
      {
       name: "The Golden Bloom",
+      url:"the-golden-bloom",
       videoLink: "https://www.youtube.com/shorts/hi-nBldGue0",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "https://www.youtube.com/shorts/hi-nBldGue0?feature=share",
       instagramLink: "https://www.instagram.com/p/DPnl6qagXk0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Golden Bloom",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"The Golden Bloom Facade Project | Metaguise",
+      metadescription:"The Golden Bloom by Metaguise showcases an innovative metal facade project combining precision engineering, contemporary design, and architectural excellence.",
       images: [
 
-          "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_3.webp",
-          "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_4.webp",
-          "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_5.webp",
-          "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_6.webp",
-          "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_11.webp",
-          "assets/Allprojects/residential/The Golden Bloom/metaflute/coin_2.webp",
-          "assets/Allprojects/residential/The Golden Bloom/metaflute/coin_7.webp",
-          "assets/Allprojects/residential/The Golden Bloom/metaflute/coin_10.webp",
-          "assets/Allprojects/residential/The Golden Bloom/solid panel/coin_8.webp",
-          "assets/Allprojects/residential/The Golden Bloom/solid panel/coin_9.webp",
+         { src: "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_3.webp", alt: "Custom metal facade detailing in The Golden Bloom project" },
+          { src: "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_4.webp", alt: "Architectural facade design by Metaguise – The Golden Bloom" },
+          { src: "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_5.webp", alt: "Contemporary metal facade panels at The Golden Bloom" },
+          { src: "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_6.webp", alt: "Precision-engineered facade system by Metaguise" },
+          { src: "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_11.webp", alt: " Exterior metal facade installation – The Golden Bloom" },
+          { src: "assets/Allprojects/residential/The Golden Bloom/metaflute/coin_2.webp", alt: "Modern architectural metal facade design by Metaguise" },
+          { src: "assets/Allprojects/residential/The Golden Bloom/metaflute/coin_7.webp", alt: "Sculptural metal facade structure at The Golden Bloom" },
+          { src: "assets/Allprojects/residential/The Golden Bloom/metaflute/coin_10.webp", alt: " Commercial facade project by Metaguise – The Golden Bloom" },
+          { src: "assets/Allprojects/residential/The Golden Bloom/solid panel/coin_8.webp", alt: " Sustainable metal facade solution by Metaguise" },
+          { src: "assets/Allprojects/residential/The Golden Bloom/solid panel/coin_9.webp", alt: "Advanced facade engineering in The Golden Bloom project" },
       ],
     },
 
         {
       name: "Miraj Stadium",
+      url:"miraj-stadium",
       videoLink: "https://www.youtube.com/watch?v=XDySYVbYrQg",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "https://www.youtube.com/watch?v=XDySYVbYrQg",
       instagramLink: "https://www.instagram.com/reels/DULhVHUDAtW/",
       Projectname:"Miraj Stadium",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Miraj Stadium Facade Project | Metaguise",
+      metadescription:"Discover the Miraj Stadium facade project by Metaguise, featuring advanced metal engineering, durable architectural systems, and precision facade execution.",
       images: [
 
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (2).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (3).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (4).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (5).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (6).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (7).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (22).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (24).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (25).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (29).webp",
-           "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (31).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (32).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (33).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacryst/miraj (23).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacryst/miraj (26).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacryst/miraj (27).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacryst/miraj (28).webp",
-          "assets/Allprojects/commercial/Miraj Stadium/metacryst/miraj (30).webp",
+         {
+           src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (2).webp", 
+          alt: "Metal facade installation at Miraj Stadium" 
+        },
+
+          {
+             src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (3).webp", 
+            alt: "Stadium architectural facade by Metaguise" 
+          },
+
+          { 
+            src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (4).webp", 
+            alt: "Stadium architectural facade by Metaguise" 
+          },
+
+          {
+             src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (5).webp", 
+            alt: "Modern stadium facade detailing"
+           },
+
+          {
+             src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (6).webp", 
+            alt: "Engineered facade panels at Miraj Stadium" 
+          },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (7).webp", 
+            alt: "Large-scale stadium metal cladding system" },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (22).webp", 
+            alt: "Precision facade fabrication by Metaguise" },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (24).webp", 
+            alt: "Contemporary sports stadium exterior design" },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (25).webp", 
+            alt: "Miraj Stadium metal architectural panels" },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (29).webp", 
+            alt: "Stadium facade structural framework" },
+           { src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (31).webp",
+             alt: " Exterior metal cladding at Miraj Stadium" },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (32).webp", 
+            alt: "Durable stadium facade engineering" },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacoin/miraj (33).webp", 
+            alt: "Custom metal facade system by Metaguise" },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacryst/miraj (23).webp", 
+             alt: "Miraj Stadium architectural elevation" },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacryst/miraj (26).webp",
+             alt: "Stadium facade installation process" },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacryst/miraj (27).webp", 
+            alt: "Sports infrastructure metal facade design" },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacryst/miraj (28).webp", 
+            alt: "High-performance metal facade for stadium" },
+          { src: "assets/Allprojects/commercial/Miraj Stadium/metacryst/miraj (30).webp", 
+            alt: "Large span facade structure at Miraj Stadium" },
       ],
     },
      {
       name: "The Stillwave",
+      url:"the-stillwave",
       videoLink: "",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DOdyKVBgZfy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Stillwave",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"The Stillwave Metal Facade Project | Metaguise",
+      metadescription:"The Stillwave by Metaguise is a custom metal facade project combining sculptural design, precision engineering, and sustainable architectural innovation.",
       images: [
 
-          "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_4.webp",
-          "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_5.webp",
-          "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_6.webp",
-          "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_7.webp",
-          "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_3.webp",
-          "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_10.webp",
-          "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_11.webp",
-          "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_13.webp",
+          { src: "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_4.webp", alt: "Custom metal facade panels in The Stillwave by Metaguise" },
+          { src: "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_5.webp", alt: "Sculptural metal facade design – The Stillwave project" },
+          { src: "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_6.webp", alt: "Precision-engineered facade system by Metaguise" },
+          { src: "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_7.webp", alt: "Contemporary metal facade detailing in The Stillwave" },
+          { src: "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_3.webp", alt: "Architectural metal facade installation by Metaguise" },
+          { src: "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_10.webp", alt: "Modern exterior metal facade – The Stillwave" },
+          { src: "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_11.webp", alt: "Sustainable metal facade design by Metaguise" },
+          { src: "assets/Allprojects/residential/The Stillwave/Metashingle/Kunal_13.webp", alt: "The Stillwave project showcasing advanced metal facade craftsmanship" },
       ],
     },
 
 
         {
       name: "Achintya",
+      url:"achintya",
         alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DLmAChpS7oL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Achintya",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Achintya Architectural Facade Project | Metaguise",
+      metadescription:"Discover Achintya, an architectural facade project by Metaguise showcasing precision metal engineering, contemporary design innovation, and sustainable building expertise.",
       images: [
       
-        "assets/Allprojects/commercial/Achintya/metacoin/achintya_2.webp",
-          "assets/Allprojects/commercial/Achintya/metacoin/achintya_3.webp",
-          "assets/Allprojects/commercial/Achintya/metacoin/achintya_4.webp",
-          "assets/Allprojects/commercial/Achintya/metacoin/achintya_5.webp",
-          "assets/Allprojects/commercial/Achintya/metacoin/achintya_6.webp",
+       {src: "assets/Allprojects/commercial/Achintya/metacoin/achintya_2.webp", alt: "Contemporary metal facade design – Achintya by Metaguise"},
+          {src: "assets/Allprojects/commercial/Achintya/metacoin/achintya_3.webp", alt: "Precision-engineered facade panels for Achintya project"},
+          {src: "assets/Allprojects/commercial/Achintya/metacoin/achintya_4.webp", alt: "Modern building exterior detailing in Achintya project"},
+          {src: "assets/Allprojects/commercial/Achintya/metacoin/achintya_5.webp", alt: "Custom metal facade installation by Metaguise – Achintya"},
+          {src: "assets/Allprojects/commercial/Achintya/metacoin/achintya_6.webp", alt: "Sustainable architectural facade system – Achintya"},
         
       ],
     },
 
         {
       name: "AB Jewels",
+      url:"ab-jewels",
         alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DP8DOfnAeKW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"AB Jewels",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"AB Jewels Facade Project | Metaguise",
+      metadescription:"Discover the AB Jewels facade project by Metaguise, showcasing precision metal craftsmanship, modern architectural detailing, and premium commercial design expertise.",
       images: [
-      
-        "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_2.webp",
-          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_6.webp",
-          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_9.webp",
-          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_10.webp",
-          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_11.webp",
-          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_12.webp",
-          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_13.webp",
-          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_14.webp",
-          "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_15.webp",
-          "assets/Allprojects/commercial/AB Jewels/night/ab_3.webp",
-          "assets/Allprojects/commercial/AB Jewels/night/ab_4.webp",
-          "assets/Allprojects/commercial/AB Jewels/night/ab_5.webp",
-          "assets/Allprojects/commercial/AB Jewels/night/ab_7.webp",
-          "assets/Allprojects/commercial/AB Jewels/night/ab_8.webp",
+        { 
+          src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_2.webp",
+          alt: "Commercial facade project AB Jewels by Metaguise" 
+          },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_3.webp",
+            alt: "Metal facade detailing at AB Jewels project" 
+          },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_4.webp",
+            alt: " Exterior architectural facade – AB Jewels by Metaguise" 
+          },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_5.webp",
+            alt: "Precision metal fabrication for AB Jewels" 
+          },
+
+          { src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_6.webp", 
+            alt: "Contemporary facade installation at AB Jewels" 
+          },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_9.webp", 
+            alt: "Custom metal panels used in AB Jewels project"
+           },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_10.webp", 
+            alt: "Modern commercial building facade – AB Jewels" 
+          },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_11.webp", 
+            alt: "Architectural metal cladding at AB Jewels" },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_12.webp", 
+            alt: "Facade engineering expertise by Metaguise – AB Jewels" },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_13.webp", 
+            alt: "Premium retail facade design AB Jewels" },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_14.webp", 
+            alt: "Exterior elevation detailing – AB Jewels project" },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_15.webp", 
+               alt: "Sustainable metal facade solution at AB Jewels" },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/night/ab_3.webp", 
+            alt: "Custom facade system by Metaguise for AB Jewels" },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/night/ab_4.webp", 
+            alt: "High-end commercial facade project AB Jewels" },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/night/ab_5.webp", 
+            alt: "AB Jewels nighttime facade" },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/night/ab_7.webp", 
+            alt: "AB Jewels nighttime facade" },
+          { 
+            src: "assets/Allprojects/commercial/AB Jewels/night/ab_8.webp", 
+            alt: "AB Jewels nighttime facade" },
           
        
        
@@ -1844,27 +1947,28 @@ const SingleprojectDetail = [
 
       {
       name: "w12",
+      url:"undercurrent",
       videoLink: "",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Undercurrent",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"The Undercurrent Facade Project | Metaguise",
+      metadescription:"Discover The Undercurrent by Metaguise, a precision-engineered metal facade project blending contemporary architecture, sustainable materials, and expert craftsmanship.",
       images: [
 
-          "assets/Allprojects/residential/W12/metafin/w12_2.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_3.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_4.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_5.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_6.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_7.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_8.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_9.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_10.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_11.webp",
-           "assets/Allprojects/residential/W12/metafin/w12_12.webp",
-          "assets/Allprojects/residential/W12/metafin/w12_13.webp",
+          { src: "assets/Allprojects/residential/W12/metafin/w12_2.webp", alt: "Contemporary architectural facade design – The Undercurrent" },
+          { src: "assets/Allprojects/residential/W12/metafin/w12_3.webp", alt: "Custom metal facade panels engineered by Metaguise" },
+          { src: "assets/Allprojects/residential/W12/metafin/w12_4.webp", alt: "Precision metal facade detailing in The Undercurrent project" },
+          { src: "assets/Allprojects/residential/W12/metafin/w12_5.webp", alt: "Exterior metal facade installation by Metaguise" },
+          { src: "assets/Allprojects/residential/W12/metafin/w12_6.webp", alt: "Modern commercial facade system – The Undercurrent" },
+          { src: "assets/Allprojects/residential/W12/metafin/w12_7.webp", alt: "Sustainable metal facade architecture by Metaguise" },
+          { src: "assets/Allprojects/residential/W12/metafin/w12_8.webp", alt: "Advanced facade engineering in The Undercurrent" },
+          { src: "assets/Allprojects/residential/W12/metafin/w12_9.webp", alt: "Parametric-inspired metal facade structure by Metaguise" },
+          { src: "assets/Allprojects/residential/W12/metafin/w12_10.webp", alt: "Architectural metal cladding project by Metaguise" },
+          { src: "assets/Allprojects/residential/W12/metafin/w12_11.webp", alt: "High-performance metal facade design – The Undercurrent" },
+          { src: "assets/Allprojects/residential/W12/metafin/w12_12.webp", alt: "Custom fabricated facade panels by Metaguise" },
+          { src: "assets/Allprojects/residential/W12/metafin/w12_13.webp", alt: "Contemporary building exterior by Metaguise – The Undercurrent" },
       ],
     },
 
@@ -1908,96 +2012,193 @@ const SingleprojectDetail = [
 
          {
       name: "the panorama",
+      url: "the-panorama",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Panorama",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"The Panorama Facade Project | Metaguise",
+      metadescription:"The Panorama by Metaguise showcases a modern architectural facade project combining precision engineering, innovative metal systems, and sustainable design excellence.",
       images: [
-          "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (1).webp",
-           "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (2).webp",
-           "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (3).webp",
-           "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (4).webp",
-           "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (5).webp",
-           "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (6).webp",
-           "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (7).webp",
-          
+          { 
+            src: "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (1).webp", 
+            alt: "Modern architectural facade design – The Panorama by Metaguise" 
+          },
+           { 
+            src: "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (2).webp", 
+            alt: "Metal facade detailing at The Panorama project" 
+          },
+           { 
+            src: "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (3).webp", 
+            alt: "Precision-engineered facade system by Metaguise – The Panorama" 
+          },
+           { 
+            src: "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (4).webp", 
+            alt: " Contemporary exterior facade installation – The Panorama" 
+          },
+           { 
+            src: "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (5).webp", 
+            alt: "Custom metal facade panels by Metaguise" 
+          },
+           { 
+            src: "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (6).webp", 
+            alt: "Sustainable facade design at The Panorama project" 
+          },
+           { 
+            src: "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (7).webp", 
+            alt: "Architectural metal facade structure – The Panorama by Metaguise" 
+          },
         
       ],
     },
 
        {
       name: "the frame",
+      url: "the-frame",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Frame",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"The Frame Metal Facade Project | Metaguise",
+      metadescription:"Discover The Frame by Metaguise, a modern metal facade project combining precision engineering, architectural innovation, and sustainable design excellence.",
       images: [
       
      
-        "assets/Allprojects/residential/The Frame/metaflute/The Frame (1).webp", 
-          "assets/Allprojects/residential/The Frame/metaflute/The Frame (2).webp", 
-          "assets/Allprojects/residential/The Frame/metaflute/The Frame (3).webp", 
-          "assets/Allprojects/residential/The Frame/metaflute/The Frame (4).webp",
-          "assets/Allprojects/residential/The Frame/metapyramid/The Frame (1).webp", 
-          "assets/Allprojects/residential/The Frame/metapyramid/The Frame (2).webp",
-          "assets/Allprojects/residential/The Frame/metapyramid/The Frame (3).webp",
-          "assets/Allprojects/residential/The Frame/metapyramid/The Frame (4).webp",
-          "assets/Allprojects/residential/The Frame/metapyramid/The Frame (5).webp",
-          "assets/Allprojects/residential/The Frame/metapyramid/The Frame (6).webp",
-        
+        { 
+          src: "assets/Allprojects/residential/The Frame/metaflute/The Frame (1).webp", 
+          alt: "Modern metal facade design for The Frame by Metaguise" 
+        },
+          { 
+            src: "assets/Allprojects/residential/The Frame/metaflute/The Frame (2).webp", 
+            alt: "Custom metal facade detailing in The Frame project" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Frame/metaflute/The Frame (3).webp", 
+            alt: "Architectural metal facade installation by Metaguise" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Frame/metaflute/The Frame (4).webp", 
+            alt: "Contemporary facade system – The Frame project" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Frame/metapyramid/The Frame (1).webp",
+            alt: "Precision engineered metal panels by Metaguise" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Frame/metapyramid/The Frame (2).webp",
+            alt: "Exterior metal facade structure – The Frame" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Frame/metapyramid/The Frame (3).webp",
+            alt: "Sustainable metal facade design by Metaguise" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Frame/metapyramid/The Frame (4).webp",
+            alt: "The Frame architectural facade project by Metaguise" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Frame/metapyramid/The Frame (5).webp",
+            alt: "Innovative metal facade technology by Metaguise" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Frame/metapyramid/The Frame (6).webp",
+            alt: "Architectural excellence in metal facade design – The Frame" 
+          }
+
       ],
     },
 
          {
       name: "the crest",
+      url: "the-crest",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Crest",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"The Crest Metal Facade Project | Metaguise",
+      metadescription:"Discover The Crest by Metaguise, a premium metal facade project showcasing advanced engineering, modern architectural design, and sustainable facade expertise.",
       images: [
       
      
-        "assets/Allprojects/residential/The Crest/metacassette grooved/The Crest (1).webp", 
-          "assets/Allprojects/residential/The Crest/metacassette grooved/The Crest (2).webp", 
-          "assets/Allprojects/residential/The Crest/metacassette grooved/The Crest (3).webp", 
-          "assets/Allprojects/residential/The Crest/metacassette grooved/The Crest (4).webp", 
-          "assets/Allprojects/residential/The Crest/metafold/The Crest (1).webp",
-          "assets/Allprojects/residential/The Crest/metafold/The Crest (2).webp",
-            "assets/Allprojects/residential/The Crest/metalouver/The Crest (1).webp",
-          "assets/Allprojects/residential/The Crest/metalouver/The Crest (2).webp",
-          
-        
+        { 
+          src: "assets/Allprojects/residential/The Crest/metacassette grooved/The Crest (1).webp", 
+          alt: "Modern architectural metal facade at The Crest by Metaguise" 
+        },
+          { 
+            src: "assets/Allprojects/residential/The Crest/metacassette grooved/The Crest (2).webp", 
+            alt: "Custom engineered metal facade panels – The Crest project" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Crest/metacassette grooved/The Crest (3).webp", 
+            alt: "Contemporary commercial facade design by Metaguise – The Crest" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Crest/metacassette grooved/The Crest (4).webp", 
+            alt: "Precision metal facade installation at The Crest" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Crest/metafold/The Crest (1).webp",
+            alt: "Sustainable metal facade system by Metaguise – The Crest" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Crest/metafold/The Crest (2).webp",
+            alt: "Exterior architectural facade detailing – The Crest project" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Crest/metalouver/The Crest (1).webp",
+            alt: "Advanced metal facade structure by Metaguise" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Crest/metalouver/The Crest (2).webp",
+            alt: "Premium building facade design – The Crest by Metaguise" 
+          }
+
       ],
     },
 
            {
       name: "the cantilever",
+      url: "the-cantilever",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Cantilever",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"The Cantilever Metal Facade Project | Metaguise",
+      metadescription:"Discover The Cantilever by Metaguise, a precision-engineered metal facade project showcasing structural innovation, modern architecture, and sustainable design expertise.",
       images: [
       
-     
-        "assets/Allprojects/residential/The Cantilever/metacassette solid panel/The Cantilever (1).webp", 
-          "assets/Allprojects/residential/The Cantilever/metacassette solid panel/The Cantilever (2).webp",
-          "assets/Allprojects/residential/The Cantilever/metacassette solid panel/The Cantilever (3).webp",
-          "assets/Allprojects/residential/The Cantilever/metacassette solid panel/The Cantilever (4).webp",
-          "assets/Allprojects/residential/The Cantilever/metacassette solid panel/The Cantilever (5).webp",
-          "assets/Allprojects/residential/The Cantilever/night/The Cantilever (1).webp",
-          "assets/Allprojects/residential/The Cantilever/night/The Cantilever (2).webp",
+        { 
+          src: "assets/Allprojects/residential/The Cantilever/metacassette solid panel/The Cantilever (1).webp",
+           alt: "Cantilevered architectural metal facade by Metaguise" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Cantilever/metacassette solid panel/The Cantilever (2).webp", 
+            alt: "Precision engineered cantilever facade structure" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Cantilever/metacassette solid panel/The Cantilever (3).webp", 
+            alt: "Modern metal facade detailing in The Cantilever project" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Cantilever/metacassette solid panel/The Cantilever (4).webp", 
+            alt: "Structural cantilever facade design by Metaguise" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Cantilever/metacassette solid panel/The Cantilever (5).webp", 
+            alt: "Contemporary commercial metal facade system" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Cantilever/night/The Cantilever (1).webp", 
+            alt: "Exterior cantilever metal installation by Metaguise" 
+          },
+          { 
+            src: "assets/Allprojects/residential/The Cantilever/night/The Cantilever (2).webp", 
+            alt: "Sustainable metal facade architecture – The Cantilever" 
+          },
           
         
       ],
@@ -2005,26 +2206,56 @@ const SingleprojectDetail = [
 
            {
       name: "the spine",
+      url: "the-spine",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Spine",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"The Spine Metal Facade Project | Metaguise",
+      metadescription:"The Spine by Metaguise is a precision-engineered metal facade project showcasing innovative design, structural expertise, and contemporary architectural excellence.",
       images: [
-      
-     
-        "assets/Allprojects/residential/The Spine/metalouver/The Spine (1).webp", 
-          "assets/Allprojects/residential/The Spine/metalouver/The Spine (2).webp", 
-          "assets/Allprojects/residential/The Spine/metashingle/The Spine (1).webp", 
-          "assets/Allprojects/residential/The Spine/metashingle/The Spine (2).webp",
-          "assets/Allprojects/residential/The Spine/metashingle/The Spine (3).webp",
-          "assets/Allprojects/residential/The Spine/metaflute/The Spine (1).webp", 
-          "assets/Allprojects/residential/The Spine/metaflute/The Spine (2).webp", 
-          "assets/Allprojects/residential/The Spine/metaflute/The Spine (3).webp", 
-          "assets/Allprojects/residential/The Spine/metaflute/The Spine (4).webp", 
-          "assets/Allprojects/residential/The Spine/metaflute/The Spine (5).webp", 
+
+        { 
+          src: "assets/Allprojects/residential/The Spine/metalouver/The Spine (1).webp", 
+          alt: "Contemporary metal facade design – The Spine by Metaguise"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Spine/metalouver/The Spine (2).webp", 
+          alt: "Architectural metal facade structure at The Spine"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Spine/metashingle/The Spine (1).webp", 
+          alt: "Precision-engineered metal panels by Metaguise – The Spine"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Spine/metashingle/The Spine (2).webp", 
+          alt: "Modern commercial facade design by Metaguise"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Spine/metashingle/The Spine (3).webp", 
+          alt: "Exterior metal facade detailing in The Spine project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Spine/metaflute/The Spine (1).webp", 
+          alt: "Structural metal facade installation by Metaguise"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Spine/metaflute/The Spine (2).webp", 
+          alt: "Innovative building facade system – The Spine"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Spine/metaflute/The Spine (3).webp", 
+          alt: "Custom metal facade fabrication by Metaguise"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Spine/metaflute/The Spine (4).webp", 
+          alt: "Sustainable architectural facade project – The Spine"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Spine/metaflute/The Spine (5).webp", 
+          alt: "Advanced metal facade engineering by Metaguise"
+         },
           
         
       ],
@@ -2032,25 +2263,53 @@ const SingleprojectDetail = [
 
             {
       name: "the solace",
+      url: "the-solace",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Solace",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"The Solace Facade Project by Metaguise",
+      metadescription:"The Solace by Metaguise is a modern architectural facade project showcasing precision metal engineering, innovative design execution, and sustainable building expertise.",
       images: [
       
      
-        "assets/Allprojects/residential/The Solace/metacassette grooved/The Solace (1).webp", 
-          "assets/Allprojects/residential/The Solace/metacassette grooved/The Solace (2).webp", 
-          "assets/Allprojects/residential/The Solace/metacassette grooved/The Solace (3).webp", 
-          "assets/Allprojects/residential/The Solace/metaflute/The Solace (1).webp", 
-          "assets/Allprojects/residential/The Solace/metaflute/The Solace (2).webp", 
-          "assets/Allprojects/residential/The Solace/metaflute/The Solace (3).webp", 
-          "assets/Allprojects/residential/The Solace/metaflute/The Solace (4).webp", 
-          "assets/Allprojects/residential/The Solace/metaflute/The Solace (5).webp", 
-          "assets/Allprojects/residential/The Solace/metaflute/The Solace (6).webp", 
+        { 
+          src: "assets/Allprojects/residential/The Solace/metacassette grooved/The Solace (1).webp", 
+          alt: "Modern architectural facade design – The Solace by Metaguise"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Solace/metacassette grooved/The Solace (2).webp", 
+          alt: "Custom metal facade detailing at The Solace project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Solace/metacassette grooved/The Solace (3).webp", 
+          alt: " Precision metal facade installation by Metaguise – The Solace"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Solace/metaflute/The Solace (1).webp", 
+          alt: "Contemporary exterior facade system – The Solace"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Solace/metaflute/The Solace (2).webp", 
+          alt: "Engineered metal panels used in The Solace project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Solace/metaflute/The Solace (3).webp", 
+          alt: "Sustainable facade design by Metaguise – The Solace"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Solace/metaflute/The Solace (4).webp", 
+          alt: "High-performance architectural facade at The Solace"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Solace/metaflute/The Solace (5).webp", 
+          alt: "Exterior metal fabrication work by Metaguise for The Solace"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Solace/metaflute/The Solace (6).webp", 
+          alt: "Innovative building facade project – The Solace by Metaguise"
+         },
           
         
       ],
@@ -2058,74 +2317,124 @@ const SingleprojectDetail = [
 
               {
       name: "the pavilion",
+      url: "the-pavilion",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Pavilion",
-      metatittles:"",
-      metadescription:"",
-      images: [
-      
-     
-        "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (1).webp", 
-          "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (2).webp", 
-          "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (3).webp", 
-          "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (4).webp", 
-          "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (5).webp", 
-          "assets/Allprojects/residential/The Pavilion/metaflute/The Pavilion (1).webp", 
-          "assets/Allprojects/residential/The Pavilion/metaflute/The Pavilion (2).webp", 
-          "assets/Allprojects/residential/The Pavilion/metaflute/The Pavilion (3).webp", 
-          "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (1).webp",
-          "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (2).webp",
-          "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (3).webp",
-        
-      ],
+      metatittles:"The Pavilion Facade Project | Metaguise",
+      metadescription:"Discover The Pavilion by Metaguise, a modern facade project showcasing innovative metal design, precision engineering, and sustainable architectural excellence.",
+     images: [
+  {
+    src: "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (1).webp",
+    alt: "Modern metal facade design at The Pavilion by Metaguise"
+  },
+  {
+    src: "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (2).webp",
+    alt: "Architectural facade detailing for The Pavilion project"
+  },
+  {
+    src: "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (3).webp",
+    alt: "Custom metal facade panels at The Pavilion"
+  },
+  {
+    src: "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (4).webp",
+    alt: "Precision facade installation by Metaguise – The Pavilion"
+  },
+  {
+    src: "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (5).webp",
+    alt: "Contemporary exterior facade system at The Pavilion"
+  },
+  {
+    src: "assets/Allprojects/residential/The Pavilion/metaflute/The Pavilion (1).webp",
+    alt: "Engineered metal facade structure by Metaguise"
+  },
+  {
+    src: "assets/Allprojects/residential/The Pavilion/metaflute/The Pavilion (2).webp",
+    alt: "Sustainable facade design at The Pavilion project"
+  },
+  {
+    src: "assets/Allprojects/residential/The Pavilion/metaflute/The Pavilion (3).webp",
+    alt: "Commercial building facade by Metaguise – The Pavilion"
+  },
+  {
+    src: "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (1).webp",
+    alt: "Innovative metal facade concept at The Pavilion"
+  },
+  {
+    src: "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (2).webp",
+    alt: "Exterior architectural metal work by Metaguise"
+  },
+  {
+    src: "assets/Allprojects/residential/The Pavilion/metalouver/The Pavilion (3).webp",
+    alt: "The Pavilion modern facade project completed by Metaguise"
+  }
+]
     },
 
               {
       name: "rahul sweets",
+      url: "rahul-sweets",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Rahul Sweets",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Rahul Sweets Commercial Facade Project | Metaguise",
+      metadescription:"Rahul Sweets commercial facade project by Metaguise showcases modern metal facade design, precision detailing, and innovative architectural execution.",
       images: [
       
      
-    "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (2).webp",
-          "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (3).webp",
-          "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (4).webp",
-          "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (6).webp",
-          "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (10).webp",
-          "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (5).webp",
-          "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (7).webp",
-          "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (8).webp",
-          "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (9).webp",
-          
+     {src: "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (2).webp", alt: "Modern metal facade installation at Rahul Sweets project"},
+          {src: "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (3).webp", alt: "Exterior facade detailing for Rahul Sweets by Metaguise"},
+          {src: "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (4).webp", alt: "Custom architectural metal facade at Rahul Sweets"},
+          {src: "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (6).webp", alt: "Contemporary commercial facade system – Rahul Sweets"},
+          {src: "assets/Allprojects/commercial/Rahul Sweets/metacoin/Rahul Sweets (10).webp", alt: "Precision facade fabrication by Metaguise for Rahul Sweets"},
+          {src: "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (5).webp", alt: "Front elevation metal facade – Rahul Sweets project"},
+          { src: "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (7).webp", alt: "Retail store facade design by Metaguise"},
+          { src: "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (8).webp", alt: "Commercial building exterior with metal panels – Rahul Sweets"},
+          { src: "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (9).webp", alt: "Innovative facade solution by Metaguise at Rahul Sweets"}
         
       ],
     },
 
               {
       name: "fortis",
+      url: "fortis",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Fortis",
-      metatittles:"",
-      metadescription:"",
+      metatittles:"Fortis Facade Project by Metaguise | Modern Metal Design",
+      metadescription:"Fortis facade project by Metaguise showcases modern metal design, precision engineering, and sustainable architectural expertise for contemporary buildings.",
       images: [
 
-          "assets/Allprojects/commercial/Fortis/metacoin/Fortis (4).webp",
-          "assets/Allprojects/commercial/Fortis/metacoin/Fortis (5).webp",
-          "assets/Allprojects/commercial/Fortis/metacoin/Fortis (6).webp",
-          "assets/Allprojects/commercial/Fortis/metacoin/Fortis (7).webp",
-          "assets/Allprojects/commercial/Fortis/night/Fortis (2).webp",
-          "assets/Allprojects/commercial/Fortis/night/Fortis (3).webp",
+          {
+            src: "assets/Allprojects/commercial/Fortis/metacoin/Fortis (4).webp",
+            alt: "Custom metal facade installation at Fortis by Metaguise"
+          },
+          {
+            src: "assets/Allprojects/commercial/Fortis/metacoin/Fortis (5).webp",
+            alt: "Precision engineered facade system for Fortis project"
+          },
+          {
+            src: "assets/Allprojects/commercial/Fortis/metacoin/Fortis (6).webp",
+            alt: "Contemporary architectural facade design – Fortis by Metaguise"
+          },
+          {
+            src: "assets/Allprojects/commercial/Fortis/metacoin/Fortis (7).webp",
+            alt: "Exterior metal cladding detail at Fortis project"
+          },
+          {
+            src: "assets/Allprojects/commercial/Fortis/night/Fortis (2).webp",
+            alt: "Sustainable metal facade solution by Metaguise for Fortis"
+          },
+          {
+            src: "assets/Allprojects/commercial/Fortis/night/Fortis (3).webp",
+            alt: "Modern building facade fabrication – Fortis project"
+          },
         
       ],
     },
@@ -3012,86 +3321,390 @@ export const ProductImages = [
   ];
 
 export const ProjectImages = [
-    { imgPath: "assets/Allprojects/residential/Sculpted Silence/cover/A2_1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/The Pavilion/cover/The Pavilion (1).webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/The Solace/cover/The Solace (1).webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/The Spine/cover/The Spine (1).webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/The Cantilever/cover/The Cantilever (1).webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/The Crest/cover/The Crest (1).webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/The Frame/cover/The Frame (1).webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/The Panorama/cover/The Panorama (1).webp",  order: 1},
-     { imgPath: "assets/Allprojects/commercial/Miraj Stadium/cover/miraj (1).webp",order: 1 },
-     { imgPath: "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",order: 1 },
-    { imgPath: "assets/Allprojects/commercial/Fortis/cover/Fortis (1).webp",order: 1 },
-    { imgPath: "assets/Allprojects/commercial/Rahul Sweets/cover/Rahul Sweets (1).webp",order: 1 },
-          { imgPath: "assets/Allprojects/commercial/Achintya/cover/achintya_1.webp",order: 1 },
-          { imgPath: "assets/Allprojects/residential/Casa Stilgrove/cover/casa_1.webp",  order: 1},
-          { imgPath: "assets/Allprojects/residential/The Cornerstone/cover/nitiKa_1.webp",  order: 1},
-          { imgPath: "assets/Allprojects/residential/The Golden Bloom/cover/coin_1.webp",  order: 1},
-          { imgPath: "assets/Allprojects/residential/The Stillwave/cover/Kunal_1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/The Haven/cover/rochak_1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/Apex Residence/cover/manish_1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/commercial/Blossoms/cover/blossoms1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/commercial/Cityspace82/cover/cityspace82_1.webp",  order: 1},
-     { imgPath: "assets/Allprojects/residential/88Arjun/cover/88_5.webp",  order: 1},
-        { imgPath: "assets/Allprojects/residential/Verdigris Veil/cover/K3_1.webp",  order: 1},
-     { imgPath: "assets/Allprojects/residential/W12/cover/w12_1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/commercial/whiteland/cover/wl1.webp",order: 1 },
-    { imgPath: "assets/Allprojects/residential/3939A/cover/3939A_7.webp",  order: 1},
-      { imgPath: "assets/Allprojects/residential/caskey/cover/caskey1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/commercial/hlp/cover/hlp1.webp",order: 1 },
-    { imgPath: "assets/Allprojects/commercial/sbi/cover/sbi1.webp",order: 1 },
-    { imgPath: "assets/Allprojects/commercial/wvcity/cover/wv1.webp",order: 1 },
-    { imgPath: "assets/Allprojects/commercial/zenith/cover/zen1.webp",order: 1 },
-   { imgPath: "assets/Allprojects/residential/3DLF1/cover/3dlf1_1.webp", order: 1},
-    { imgPath: "assets/Allprojects/residential/anj/cover/anj1.webp", order: 1},
-     { imgPath: "assets/Allprojects/residential/pritesh/cover/pritesh1.webp",  order: 1},
-      { imgPath: "assets/Allprojects/residential/ishaan/cover/ishaan1.webp",  order: 1},
-       { imgPath: "assets/Allprojects/residential/sachi/cover/sachi1.webp",  order: 1},
-       { imgPath: "assets/Allprojects/residential/vivek/cover/vivek1.webp",  order: 1},
-         { imgPath: "assets/Allprojects/residential/dev622/cover/dev1.webp",  order: 1},
-      { imgPath: "assets/Allprojects/residential/PeachStreet/cover/peachstreet1.webp", order: 1},
-    { imgPath: "assets/Allprojects/residential/CopperCanvas/cover/coppercanvas1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/LinearRetreat/cover/linearretreat1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/TheResonance/cover/karan1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/TheElevato/cover/neeraj1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/commercial/TheCurtain/cover/vega1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/TheCrystal/cover/bikaner1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/commercial/RJJewellers/cover/rj1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/Farm15/cover/farm1.webp", order: 1},
-    { imgPath: "assets/Allprojects/residential/E81/cover/e81_1.webp", order: 1},
-    { imgPath: "assets/Allprojects/residential/B38/cover/b38_1.webp", order: 1},
-    { imgPath: "assets/Allprojects/residential/A56/cover/a56_1.webp", order: 1},
-    { imgPath: "assets/Allprojects/commercial/Ardete/cover/ardete5.webp",order: 1 },
-    { imgPath: "assets/Allprojects/commercial/Tanishq/cover/tanishq11.webp",order: 2 },
-    { imgPath: "assets/Allprojects/residential/A13-43/cover/a13-431.webp",order: 7 },
-    { imgPath: "assets/Allprojects/residential/D5-3/cover/ankit1.webp",order: 4 },
-    { imgPath: "assets/Allprojects/commercial/Gowri/cover/gowri2.webp",order: 5 },
-    { imgPath: "assets/Allprojects/commercial/Deepak/cover/deepak1.webp",order: 14 },
-    { imgPath: "assets/Allprojects/residential/A19/cover/a192.webp",order: 18 },
-    { imgPath: "assets/Allprojects/residential/A18/cover/a181.webp", order: 11 },
-    { imgPath: "assets/Allprojects/residential/MVA-DL1/cover/varun5.webp" },
-    { imgPath: "assets/Allprojects/commercial/Metaland/cover/metaland6.webp",order: 20 },
-    { imgPath: "assets/Allprojects/commercial/Micasa/cover/micasa1.webp",order: 21 },
-    { imgPath: "assets/Allprojects/commercial/yashika/cover/yashika1.webp" },
-    { imgPath: "assets/Allprojects/residential/C76/cover/c7615.webp",order: 22 },
-    { imgPath: "assets/Allprojects/residential/5107/cover/51071.webp",order: 13 },
-    { imgPath: "assets/Allprojects/residential/A297/cover/a2971.webp",order: 16 },
-    // { imgPath: "assets/Allprojects/residential/linearretreat/cover/linearretreat1.webp" },
-    { imgPath: "assets/Allprojects/residential/C34-573/cover/kapil1.webp",order: 23  },
-    { imgPath: "assets/Allprojects/residential/DLF4/cover/dlf44.webp",order: 24 },
-    { imgPath: "assets/Allprojects/residential/CS5-MA/cover/vishal1.webp",order: 15 },
-    { imgPath: "assets/Allprojects/residential/Espace/cover/espace1.webp",order: 6 },
-    { imgPath: "assets/Allprojects/residential/MA-543/cover/manoj1.webp", order: 25 },
-    { imgPath: "assets/Allprojects/residential/TheWaveform/cover/khandelwal1.webp",  order: 1},
-    { imgPath: "assets/Allprojects/residential/Q62-RA/cover/tejbir1.webp",order: 8 },
-    { imgPath: "assets/Allprojects/residential/z1012/cover/z10121.webp",order: 26 },
-    { imgPath: "assets/Allprojects/residential/Luxe/cover/luxe16.webp",order: 3 },
-    { imgPath: "assets/Allprojects/commercial/E10/cover/e105.webp",order: 17 },
-    { imgPath: "assets/Allprojects/commercial/Painflame/cover/15.webp", order: 12 },
-    { imgPath: "assets/Allprojects/commercial/PremHospital/cover/prem1.webp",order: 10 },
-         ,
-  ];
+    { 
+        imgPath: "assets/Allprojects/residential/Sculpted Silence/cover/A2_1.webp",  
+        order: 1,
+        alt: "Sculpted Silence residential project cover - Parametric metal shingle facade front view"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/The Pavilion/cover/The Pavilion (1).webp",  
+        order: 1,
+        alt: "The Pavilion facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/The Solace/cover/The Solace (1).webp",  
+        order: 1,
+        alt: "The Solace facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/The Spine/cover/The Spine (1).webp",  
+        order: 1,
+        alt: "The Spine metal facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/The Cantilever/cover/The Cantilever (1).webp",  
+        order: 1,
+        alt: "The Cantilever metal facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/The Crest/cover/The Crest (1).webp",  
+        order: 1,
+        alt: "The Crest metal facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/The Frame/cover/The Frame (1).webp",  
+        order: 1,
+        alt: "The Frame metal facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/The Panorama/cover/The Panorama (1).webp",  
+        order: 1,
+        alt: "The Panorama facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Miraj Stadium/cover/miraj (1).webp",
+        order: 1,
+        alt: "Miraj Stadium exterior facade design"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",
+        order: 1,
+        alt: "AB Jewels facade design by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Fortis/cover/Fortis (1).webp",
+        order: 1,
+        alt: "facade project by Metaguise featuring modern metal architecture"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Rahul Sweets/cover/Rahul Sweets (1).webp",
+        order: 1,
+        alt: "Rahul Sweets commercial facade design by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Achintya/cover/achintya_1.webp",
+        order: 1,
+        alt: "Achintya architectural facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/Casa Stilgrove/cover/casa_1.webp",  
+        order: 1,
+        alt: "Casa Stilgrove facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/The Cornerstone/cover/nitiKa_1.webp",  
+        order: 1,
+        alt: "The Cornerstone facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/The Golden Bloom/cover/coin_1.webp",  
+        order: 1,
+        alt: "The Golden Bloom metal facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/The Stillwave/cover/Kunal_1.webp",  
+        order: 1,
+        alt: "The Stillwave metal facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/The Haven/cover/rochak_1.webp",  
+        order: 1,
+        alt: " The Haven contemporary facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/Apex Residence/cover/manish_1.webp",  
+        order: 1,
+        alt: " Apex Residence residential facade design by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Blossoms/cover/blossoms1.webp",  
+        order: 1,
+        alt: "Blossoms commercial project cover - Commercial space with blossoming architectural design"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Cityspace82/cover/cityspace82_1.webp",  
+        order: 1,
+        alt: "Cityspace82 commercial project cover - Urban commercial development with metal facade"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/88Arjun/cover/88_5.webp",  
+        order: 1,
+        alt: "Parametric Crown metal facade design by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/Verdigris Veil/cover/K3_1.webp",  
+        order: 1,
+        alt: "Verdigris Veil architectural facade by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/W12/cover/w12_1.webp",  
+        order: 1,
+        alt: "W12 residential project cover - Contemporary villa with metal cladding system"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/whiteland/cover/wl1.webp",
+        order: 1,
+        alt: "White Land metal facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/3939A/cover/3939A_7.webp",  
+        order: 1,
+        alt: "Scaled Symphony metal facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/caskey/cover/caskey1.webp",  
+        order: 1,
+        alt: "Kinetic Grid facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/hlp/cover/hlp1.webp",
+        order: 1,
+        alt: "HLP metal facade project designed by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/sbi/cover/sbi1.webp",
+        order: 1,
+        alt: "SBI Bank facade design project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/wvcity/cover/wv1.webp",
+        order: 1,
+        alt: "Wave City facade project by Metaguise with modern metal facade design"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/zenith/cover/zen1.webp",
+        order: 1,
+        alt: "Zenith architectural facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/3DLF1/cover/3dlf1_1.webp", 
+        order: 1,
+        alt: "3DLF architectural facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/anj/cover/anj1.webp", 
+        order: 1,
+        alt: "ANJ residential project cover - Modern home with custom metal shingle design"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/pritesh/cover/pritesh1.webp",  
+        order: 1,
+        alt: "Sacred Geometry metal facade design by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/ishaan/cover/ishaan1.webp",  
+        order: 1,
+        alt: "Peacock mesh metal facade design by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/sachi/cover/sachi1.webp",  
+        order: 1,
+        alt: "Sachi architectural facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/vivek/cover/vivek1.webp",  
+        order: 1,
+        alt: "Obsidian architectural facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/dev622/cover/dev1.webp",  
+        order: 1,
+        alt: "Monolith Garden architectural facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/PeachStreet/cover/peachstreet1.webp", 
+        order: 1,
+        alt: "Peach Street architectural facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/CopperCanvas/cover/coppercanvas1.webp",  
+        order: 1,
+        alt: "Copper facade design project Copper Canvas by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/LinearRetreat/cover/linearretreat1.webp",  
+        order: 1,
+        alt: "Linear Retreat architectural facade project by Metaguise"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/TheResonance/cover/karan1.webp",  
+        order: 1,
+        alt: "The Resonance residential project cover - Home with resonant metal architectural elements"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/TheElevato/cover/neeraj1.webp",  
+        order: 1,
+        alt: "The Elevato residential project cover - Elevated design with modern metal facade"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/TheCurtain/cover/vega1.webp",  
+        order: 1,
+        alt: "The Curtain commercial project cover - Curtain-inspired metal facade for commercial space"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/TheCrystal/cover/bikaner1.webp",  
+        order: 1,
+        alt: "The Crystal residential project cover - Crystal-inspired architecture with metal cladding"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/RJJewellers/cover/rj1.webp",  
+        order: 1,
+        alt: "RJ Jewellers commercial project cover - Jewelry store with elegant metal facade design"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/Farm15/cover/farm1.webp", 
+        order: 1,
+        alt: "Farm15 residential project cover - Farmhouse with contemporary metal architecture"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/E81/cover/e81_1.webp", 
+        order: 1,
+        alt: "E81 residential project cover - Modern residence with parametric metal facade"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/B38/cover/b38_1.webp", 
+        order: 1,
+        alt: "B38 residential project cover - Contemporary home with custom metal cladding"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/A56/cover/a56_1.webp", 
+        order: 1,
+        alt: "A56 residential project cover - Modern villa with architectural metal design"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Ardete/cover/ardete5.webp",
+        order: 1,
+        alt: "Ardete commercial project cover - Commercial building with innovative metal facade"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Tanishq/cover/tanishq11.webp",
+        order: 2,
+        alt: "Tanishq commercial project cover - Jewelry showroom with premium metal architecture"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/A13-43/cover/a13-431.webp",
+        order: 7,
+        alt: "A13-43 residential project cover - Modern residence with geometric metal patterns"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/D5-3/cover/ankit1.webp",
+        order: 4,
+        alt: "D5-3 residential project cover - Contemporary home with metal shingle facade"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Gowri/cover/gowri2.webp",
+        order: 5,
+        alt: "Gowri commercial project cover - Commercial space with elegant metal cladding"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Deepak/cover/deepak1.webp",
+        order: 14,
+        alt: "Deepak commercial project cover - Modern commercial building with metal accents"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/A19/cover/a192.webp",
+        order: 18,
+        alt: "A19 residential project cover - Luxury residence with parametric metal design"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/A18/cover/a181.webp", 
+        order: 11,
+        alt: "A18 residential project cover - Contemporary villa with metal facade system"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/MVA-DL1/cover/varun5.webp",
+        alt: "MVA-DL1 residential project cover - Modern home with custom metal shingle design"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Metaland/cover/metaland6.webp",
+        order: 20,
+        alt: "Metaland commercial project cover - Commercial development with extensive metal architecture"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Micasa/cover/micasa1.webp",
+        order: 21,
+        alt: "Micasa commercial project cover - Modern commercial space with metal cladding"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/yashika/cover/yashika1.webp",
+        alt: "Yashika commercial project cover - Commercial building with contemporary metal facade"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/C76/cover/c7615.webp",
+        order: 22,
+        alt: "C76 residential project cover - Modern residence with textured metal design"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/5107/cover/51071.webp",
+        order: 13,
+        alt: "5107 residential project cover - Contemporary home with parametric metal shingles"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/A297/cover/a2971.webp",
+        order: 16,
+        alt: "A297 residential project cover - Luxury villa with architectural metal facade"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/C34-573/cover/kapil1.webp",
+        order: 23,
+        alt: "C34-573 residential project cover - Modern home with custom metal cladding system"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/DLF4/cover/dlf44.webp",
+        order: 24,
+        alt: "DLF4 residential project cover - Premium residence with elegant metal facade"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/CS5-MA/cover/vishal1.webp",
+        order: 15,
+        alt: "CS5-MA residential project cover - Contemporary home with metal shingle architecture"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/Espace/cover/espace1.webp",
+        order: 6,
+        alt: "Espace residential project cover - Spacious residence with modern metal design"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/MA-543/cover/manoj1.webp", 
+        order: 25,
+        alt: "MA-543 residential project cover - Modern villa with parametric metal facade"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/TheWaveform/cover/khandelwal1.webp",  
+        order: 1,
+        alt: "The Waveform residential project cover - Wave-inspired metal architecture for modern home"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/Q62-RA/cover/tejbir1.webp",
+        order: 8,
+        alt: "Q62-RA residential project cover - Contemporary residence with metal cladding design"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/z1012/cover/z10121.webp",
+        order: 26,
+        alt: "Z1012 residential project cover - Modern home with geometric metal patterns"
+    },
+    { 
+        imgPath: "assets/Allprojects/residential/Luxe/cover/luxe16.webp",
+        order: 3,
+        alt: "Luxe residential project cover - Luxury residence with premium metal facade"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/E10/cover/e105.webp",
+        order: 17,
+        alt: "E10 commercial project cover - Modern commercial building with metal architecture"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/Painflame/cover/15.webp", 
+        order: 12,
+        alt: "Painflame commercial project cover - Commercial space with innovative metal design"
+    },
+    { 
+        imgPath: "assets/Allprojects/commercial/PremHospital/cover/prem1.webp",
+        order: 10,
+        alt: "Prem Hospital commercial project cover - Healthcare facility with contemporary metal facade"
+    },
+];
 
   // In your constants.js (or directly in the component)
 export const products = [

@@ -20,7 +20,14 @@ const Allprojects = () => {
     const selectedProject = SingleprojectDetail.find(
       (item) => item.name.toLowerCase() === selectedSubProjectCat
     );
-    navigate(`/all-projects/${selectedSubProjectCat}`, { state: { selectedProject } });
+    
+    // Use the url field from the project for navigation
+    if (selectedProject && selectedProject.url) {
+      navigate(`/all-projects/${selectedProject.url}`, { state: { selectedProject } });
+    } else {
+      // Fallback to the old method if url doesn't exist
+      navigate(`/all-projects/${selectedSubProjectCat}`, { state: { selectedProject } });
+    }
   };
 
   const filterImagesByCategory = (category) => {
@@ -33,13 +40,16 @@ const Allprojects = () => {
       )
     : images;
 
-  // Function to get project name from SingleprojectDetail
-  const getProjectname = (imgPath) => {
+  // Function to get project name and url from SingleprojectDetail
+  const getProjectInfo = (imgPath) => {
     const imgName = imgPath.split("/")[3].toLowerCase();
     const project = SingleprojectDetail.find(
       (item) => item.name.toLowerCase() === imgName
     );
-    return project ? project.Projectname : "Project";
+    return {
+      name: project ? project.Projectname : "Project",
+      url: project?.url || imgName // Use url if available, fallback to imgName
+    };
   };
 
   const location = useLocation();
@@ -82,7 +92,7 @@ const Allprojects = () => {
         <meta property="og:title" content="Metaguise Projects | Metal Facades & Parametric Architecture" />
         <meta property="og:description" content="Explore iconic projects featuring our parametric architecture and custom facade designs across India." />
         <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
-        <meta property="og:url" content="https://metaguise.com/" />
+        <meta property="og:url" content="https://metaguise.com/all-projects" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://metaguise.com/all-projects" />
       </Helmet>
@@ -138,22 +148,26 @@ const Allprojects = () => {
                 </div>
               )}
               <div className="gallery">
-                {filteredImages.map((img, index) => (
-                  <div
-                    key={index}
-                    className="gallery-item"
-                    onClick={() => projectClickHandler(img)}
-                  >
-                    <div className="hover-effect">
-                      <img
-                        src={`${process.env.PUBLIC_URL}/${img.imgPath}`}
-                        alt={`Gallery ${index}`}
-                      />
+                {filteredImages.map((img, index) => {
+                  const projectInfo = getProjectInfo(img.imgPath);
+                  return (
+                    <div
+                      key={index}
+                      className="gallery-item"
+                      onClick={() => projectClickHandler(img)}
+                    >
+                      <div className="hover-effect">
+                        <img
+                          src={`${process.env.PUBLIC_URL}/${img.imgPath}`}
+                          alt={`${projectInfo.name} - Project thumbnail`}
+                          loading="lazy"
+                        />
+                      </div>
+                      {/* Add the image text that shows on hover */}
+                      <div className="image-text">{projectInfo.name}</div>
                     </div>
-                    {/* Add the image text that shows on hover */}
-                    <div className="image-text">{getProjectname(img.imgPath)}</div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </Col>
             <Col lg={2} md={4} className="mb-4">
