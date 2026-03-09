@@ -963,6 +963,7 @@ const SingleprojectDetail = [
 
      {
       name: "anj",
+      url:"skyport-house",
          alt:"Bold residential facade featuring a glowing MetaPlank under-ceiling with lighting cut-out, grooved MetaCassette and copper Solid Panels around windows, and MetaGrey MetaFlutes anchoring the balconies.",
       videoLink: "https://youtube.com/shorts/Uda7k0yxwu4?feature=share",
       youtubeLink: "https://youtube.com/shorts/Uda7k0yxwu4?feature=share",
