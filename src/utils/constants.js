@@ -389,6 +389,7 @@ const SingleprojectDetail = [
     },
     {
       name: "A19",
+      url:"a19",
         alt:"A futuristic residence showcasing Metaguise's MetaCassette panels in solid Ocean Black, perforated, and grooved MetaGrey finishes, framed by warm MetaWood MetaFlutes and gate.",
       videoLink: "https://www.youtube.com/shorts/EerdVK4Ax9M?feature=share",
       youtubeLink: "https://www.youtube.com/shorts/EerdVK4Ax9M?feature=share",
@@ -1093,7 +1094,6 @@ const SingleprojectDetail = [
       metadescription:" Discover the Obsidian project by Metaguise, showcasing innovative facade design, precision engineering, and modern architectural expertise in advanced metal facade systems. ",
       images: [
       
-       { src: "assets/Allprojects/residential/vivek/metacassettegrooved/vivek9.webp", alt: " Modern metal facade design in Obsidian project by Metaguise" },
         { src: "assets/Allprojects/residential/vivek/metashingles/vivek3.webp", alt: "Precision engineered facade panels for Obsidian by Metaguise" },
         { src: "assets/Allprojects/residential/vivek/metashingles/vivek4.webp", alt: "Contemporary building facade design – Obsidian project Metaguise" },
         { src: "assets/Allprojects/residential/vivek/metashingles/vivek5.webp", alt: "Advanced metal facade system installation by Metaguise – Obsidian" },
