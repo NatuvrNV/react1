@@ -10,9 +10,16 @@ const SingleBlogPage = () => {
   const { title } = useParams();
   const navigate = useNavigate();
 
-  const blog = SingleBlogDetail.find(blog =>
-    blog.title.toLowerCase().replace(/\s+/g, '-') === title.toLowerCase()
-  );
+  // Helper function to get URL-friendly string
+  const getUrlFriendlyString = (str) => {
+    return str.toLowerCase().replace(/\s+/g, '-');
+  };
+
+  // Find blog by comparing with either custom URL or title
+  const blog = SingleBlogDetail.find(blog => {
+    const blogUrl = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
+    return blogUrl === title.toLowerCase();
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,9 +28,9 @@ const SingleBlogPage = () => {
     }
   }, [title, blog, navigate]);
 
-  const handleBlogClick = (blogTitle) => {
-    const urlFriendlyTitle = blogTitle.toLowerCase().replace(/\s+/g, '-');
-    navigate(`/blog/${urlFriendlyTitle}`);
+  const handleBlogClick = (blog) => {
+    const urlFriendlyPath = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
+    navigate(`/blog/${urlFriendlyPath}`);
   };
 
   const BlogButton = ({ navigate }) => {
@@ -52,8 +59,8 @@ const SingleBlogPage = () => {
   const metaTitle = blog.metaTitle || blog.title;
   const metaDescription = blog.metaDescription || blog.description;
   
-  // Added urlFriendlyTitle variable for canonical URL
-  const urlFriendlyTitle = blog.title.toLowerCase().replace(/\s+/g, '-');
+  // Use custom URL if available, otherwise use title for canonical URL
+  const urlFriendlyTitle = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
   
   // Function to get alt text for an image
   const getImageAltText = (blog, imageIndex = 0) => {
@@ -340,7 +347,7 @@ const SingleBlogPage = () => {
                   <div
                     key={relatedBlog.title}
                     className="flex cursor-pointer blog-card"
-                    onClick={() => handleBlogClick(relatedBlog.title)}
+                    onClick={() => handleBlogClick(relatedBlog)}
                   >
                     <img 
                       src={`/assets/Blogs/${relatedBlog.folderName}/${firstImage.split('/').pop()}`} 

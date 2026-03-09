@@ -2899,6 +2899,7 @@ At Metaguise, we don’t just design <strong>facades</strong> - we help brands e
 
   {
     title: "Custom Metal Facade Cladding in 2026: Design, Cost, Materials & Architect Guide ",
+    url: "custom-metal-facade-cladding:-what-you-need-to-know-before-you-build",
     metaTitle: "Custom Metal Facade Cladding: Design, Materials & Architect Guide (2026) ",
     date: "24-11-25",
     category: "Architectural Insights",

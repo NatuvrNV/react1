@@ -15,11 +15,16 @@ const Blog = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [searchInput, setSearchInput] = useState("");
 
-  // Function to handle blog click navigation with title-based URL
-  const handleBlogClick = (blogTitle) => {
-    // Convert title to URL-friendly format (replace spaces with hyphens)
-    const urlFriendlyTitle = blogTitle.toLowerCase().replace(/\s+/g, '-');
-    navigate(`/blog/${urlFriendlyTitle}`);
+  // Helper function to get URL-friendly string
+  const getUrlFriendlyString = (str) => {
+    return str.toLowerCase().replace(/\s+/g, '-');
+  };
+
+  // Function to handle blog click navigation with custom URL or title-based URL
+  const handleBlogClick = (blog) => {
+    // Use custom URL if available, otherwise use title
+    const urlFriendlyPath = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
+    navigate(`/blog/${urlFriendlyPath}`);
   };
 
   // Function to handle category selection
@@ -155,7 +160,7 @@ const Blog = () => {
                   <div
                     key={blog.title}
                     className="flex cursor-pointer blog-card"
-                    onClick={() => handleBlogClick(blog.title)}
+                    onClick={() => handleBlogClick(blog)}
                   >
                     <img 
                       src={`/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`}
