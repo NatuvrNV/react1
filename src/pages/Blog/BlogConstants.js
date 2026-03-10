@@ -4342,7 +4342,7 @@ Design Expertise
   },
 
       {
-    title: "Architecture as Branding: Why Commercial Elevation Design Matters for Business ",
+    title: "Architecture as Branding: Why Commercial Elevation Design Matters for Business",
     metaTitle:
       "Commercial Elevation Design for Retail and Offices | Metaguise ",
     date: "10-03-26",
