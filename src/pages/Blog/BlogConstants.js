@@ -4360,11 +4360,11 @@ Design Expertise
 
     images: [
       {
-        path: "assets/Blogs/Arthitecture Branding/Architecture1.jpg",
+        path: "assets/Blogs/Arthitecture Branding/Architecture2.jpg",
         alt: "Metaguise parametric metal facade design Gowri Jewellery showcasing facade design trends 2026 India"
       },
       {
-        path: "assets/Blogs/Arthitecture Branding/Architecture2.jpg",
+        path: "assets/Blogs/Arthitecture Branding/Architecture1.jpg",
         alt: "Metaguise 3D textured parametric metal facade panel detail for high performance buildings"
       },
       {
@@ -4380,13 +4380,13 @@ Design Expertise
  </p>`,
       `<p>
             <strong><h2>How Parametric Facades Turn Commercial Buildings into Landmarks </h2></strong>
-<p>The goal of a retail showroom is to attract footfall. In a crowded city, how do you make someone stop their car and walk into your store? The answer is a parametric facade. By using fluid shapes and light-catching materials, we can create a building that looks different from every angle.
+<p>The goal of a retail showroom is to attract footfall. In a crowded city, how do you make someone stop their car and walk into your store? The answer is a <a href="https://metaguise.com/blog/the-rise-of-parametric-facades:-designing-with-algorithmic-elegance">parametric facade</a>. By using fluid shapes and light-catching materials, we can create a building that looks different from every angle.
 
 Take our work for luxury brands like <strong>Tanishq or AB Jewels</strong>. These brands deal in beauty and precision, so their buildings need to reflect those same values. Our <strong>metal designers</strong> use <strong>parametric architecture</strong> to create "moving" patterns on the walls that catch the sunlight during the day and can be beautifully backlit at night. This turns the store into a local landmark, making it easy for customers to find and impossible for them to ignore.
  </p>`,
 
 `<p><strong><h2>Choosing the Right Facade Material for Commercial Buildings  </h2></strong>
-Commercial buildings need to project strength and stability. A metal facade does exactly that. Whether it's the sleek, silver look of an <strong>aluminium facade</strong> for a tech company or a warm, "MetaPatina" copper finish for a luxury hotel, the material tells a story.
+Commercial buildings need to project strength and stability. A <a href="https://metaguise.com/blog/metal-is-metaguise:-why-metal-is-the-future-of-sustainable-architecture">metal facade</a> does exactly that. Whether it's the sleek, silver look of an <strong>aluminium facade</strong> for a tech company or a warm, "MetaPatina" copper finish for a luxury hotel, the material tells a story.
 
 At Metaguise, we have completed <strong>1800+ projects</strong>, many of which are high-traffic commercial spaces. We understand that these buildings need to be tough. Our <strong>metal facade cladding</strong> is resistant to dents, scratches, and the general wear-and-tear of a busy urban environment. Because we have a Pan India presence, we can ensure that a brand has the same high-quality look across all its locations, from Delhi to Chennai.
 </p>`,
@@ -4403,7 +4403,7 @@ Metaguise solves this by integrating functional elements into the <strong>facade
 
 Whether it’s a parametric metal facade for a luxury retail showroom or a high-performance aluminium facade for modern corporate offices, Metaguise ensures every project delivers durability, aesthetics, and strong brand impact.
 
-Our advanced fabrication process, deep expertise in metal facade cladding, and Pan-India presence allow architects to execute complex commercial elevation designs with confidence and speed. When businesses choose Metaguise, they are not just installing a facade — they are investing in a building identity that attracts customers and strengthens their brand presence.
+Our advanced fabrication process, deep expertise in <a href="https://metaguise.com/all-products">metal facade cladding</a>, and Pan-India presence allow architects to execute complex commercial elevation designs with confidence and speed. When businesses choose Metaguise, they are not just installing a facade — they are investing in a building identity that attracts customers and strengthens their brand presence.
 
 Metaguise is a leading facade design and metal cladding company in India specializing in commercial elevation design, parametric facades, and modern architectural exteriors. 
 </p>
