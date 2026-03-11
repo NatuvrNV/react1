@@ -4417,7 +4417,7 @@ Metaguise is a leading facade design and metal cladding company in India special
  </p>`,
 
           `<p><strong><h2>2. Which facade material is best for commercial buildings? </h2></strong>
-<p>The best facade materials for commercial buildings include aluminium panels, metal cladding, glass facades, and perforated metal screens. Aluminium and metal facades are especially popular because they are durable, lightweight, weather-resistant, and low maintenance, making them ideal for high-traffic commercial spaces such as retail showrooms and office buildings. You can explore different metal facade cladding systems.
+<p>The best facade materials for commercial buildings include aluminium panels, metal cladding, glass facades, and perforated metal screens. Aluminium and metal facades are especially popular because they are durable, lightweight, weather-resistant, and low maintenance, making them ideal for high-traffic commercial spaces such as retail showrooms and office buildings. You can explore different <a href="https://metaguise.com/all-products">metal facade cladding systems</a>.
 </p>
  </p>`,
 
