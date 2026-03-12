@@ -1915,18 +1915,7 @@ const SingleprojectDetail = [
           src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_2.webp",
           alt: "Commercial facade project AB Jewels by Metaguise" 
           },
-          { 
-            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_3.webp",
-            alt: "Metal facade detailing at AB Jewels project" 
-          },
-          { 
-            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_4.webp",
-            alt: " Exterior architectural facade – AB Jewels by Metaguise" 
-          },
-          { 
-            src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_5.webp",
-            alt: "Precision metal fabrication for AB Jewels" 
-          },
+    
 
           { src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_6.webp", 
             alt: "Contemporary facade installation at AB Jewels" 
