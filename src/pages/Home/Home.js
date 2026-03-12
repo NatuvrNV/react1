@@ -26,62 +26,28 @@ function Home() {
           name="description"
           content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India."
         />
-
         <meta name="robots" content="index, follow" />
-
         <link rel="canonical" href="https://metaguise.com/" />
-
         <link rel="icon" href="https://metaguise.com/favicon.ico" />
+         <meta property="og:image" content="https://metaguise.com/favicon.ico" />
+         <meta property="og:title" content="Metaguise | India’s Leading Experts in Luxury Metal Facades"/>
+<meta property="og:description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://metaguise.com/"/>
+<meta property="og:site_name" content="Metaguise"/>
+<meta property="og:image" content="https://ik.imagekit.io/ylx9qggcp/1.webp"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Luxury Parametric Metal Facade Design by Metaguise"/>
+<meta property="og:locale" content="en_IN"/>
 
-        {/* Open Graph (Social Sharing) */}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Metaguise | India’s Leading Experts in Luxury Metal Facades"/>
+<meta name="twitter:description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India."/>
+<meta name="twitter:image" content="https://ik.imagekit.io/ylx9qggcp/1.webp"/>
+<meta name="twitter:url" content="https://metaguise.com/"/>
 
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Metaguise | India’s Leading Experts in Luxury Metal Facades" />
-        <meta
-          property="og:description"
-          content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India."
-        />
-
-        <meta property="og:url" content="https://metaguise.com/" />
-
-        <meta property="og:site_name" content="Metaguise" />
-
-        <meta
-          property="og:image"
-          content="https://ik.imagekit.io/ylx9qggcp/1.webp"
-        />
-
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-
-        <meta
-          property="og:image:alt"
-          content="Luxury Parametric Metal Facade Design by Metaguise"
-        />
-
-        <meta property="og:locale" content="en_IN" />
-
-        {/* Twitter Card */}
-
-        <meta name="twitter:card" content="summary_large_image" />
-
-        <meta
-          name="twitter:title"
-          content="Metaguise | India’s Leading Experts in Luxury Metal Facades"
-        />
-
-        <meta
-          name="twitter:description"
-          content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India."
-        />
-
-        <meta
-          name="twitter:image"
-          content="https://ik.imagekit.io/ylx9qggcp/1.webp"
-        />
-
-        <meta name="twitter:url" content="https://metaguise.com/" />
-
+      
       </Helmet>
 
       {/* Above the fold: Loads instantly */}
