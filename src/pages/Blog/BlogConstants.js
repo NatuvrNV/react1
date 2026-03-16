@@ -3299,63 +3299,64 @@ If you’re looking to design a building that doesn’t just stand - but speaks 
     template: 'B',
     category: "Material Spotlight",
 
-      schema: `{
-      <script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "BlogPosting",
-"mainEntityOfPage": {
-"@type": "WebPage",
-"@id": "https://metaguise.com/blog/why-perforated-metal-panels-are-the-smartest-architectural-investment"
-},
-"headline": "Perforated Metal Facade Panels: Benefits, Design Ideas & Architect Guide 2026",
-"description": "Discover the benefits of perforated metal facade panels in modern architecture. Learn how they improve ventilation, shading, and building design flexibility.",
-"image": "https://metaguise.com/assets/Blogs/Perforated%20Metal%20Panels/banner.jpg",
-"author": {
-"@type": "Organization",
-"name": "Metaguise Design Team"
-},
-"publisher": {
-"@type": "Organization",
-"name": "Metaguise",
-"logo": {
-"@type": "ImageObject",
-"url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
-}
-},
-"datePublished": "2025-12-09",
-"dateModified": "2026-03-13"
-}
-</script>
-
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "FAQPage",
-"mainEntity": [{
-"@type": "Question",
-"name": "What are perforated metal facade panels used for in architecture?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Perforated metal panels are used in building facades to improve ventilation, provide solar shading, reduce heat gain, and create visually distinctive architectural surfaces."
-}
-},{
-"@type": "Question",
-"name": "Are perforated metal panels suitable for commercial buildings?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Yes, perforated metal panels are widely used in commercial buildings, offices, shopping complexes, and institutional buildings because they combine durability, low maintenance, and design flexibility."
-}
-},{
-"@type": "Question",
-"name": "Why do architects prefer perforated metal facades?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Architects prefer perforated metal facades because they allow custom patterns, control sunlight and airflow, enhance building aesthetics, and support sustainable architectural design."
-}
-}]
-}
-</script>
+      schema: `
+      {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/why-perforated-metal-panels-are-the-smartest-architectural-investment"
+      },
+      "headline": "Perforated Metal Facade Panels: Benefits, Design Ideas & Architect Guide 2026",
+      "description": "Discover the benefits of perforated metal facade panels in modern architecture. Learn how they improve ventilation, shading, and building design flexibility.",
+      "image": "https://metaguise.com/assets/Blogs/Perforated-Metal-Panels/banner.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "Metaguise Design Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+        }
+      },
+      "datePublished": "2025-12-09",
+      "dateModified": "2026-03-13"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are perforated metal facade panels used for in architecture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Perforated metal panels are used in building facades to improve ventilation, provide solar shading, reduce heat gain, and create visually distinctive architectural surfaces."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are perforated metal panels suitable for commercial buildings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, perforated metal panels are widely used in commercial buildings, offices, shopping complexes, and institutional buildings because they combine durability, low maintenance, and design flexibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do architects prefer perforated metal facades?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Architects prefer perforated metal facades because they allow custom patterns, control sunlight and airflow, enhance building aesthetics, and support sustainable architectural design."
+          }
+        }
+      ]
+    }
+  ]
 }`,
 
     metaDescription:
@@ -4204,9 +4205,7 @@ Is your next project ready for the future? Don't settle for a standard building 
     date: "25-02-26",
     template: 'B',
     category: "Sustainability",
-       schema: `{
-<script type="application/ld+json">
-{
+schema: `{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -4251,8 +4250,6 @@ Is your next project ready for the future? Don't settle for a standard building 
       }
     }
   ]
-}
-</script>
 }`,
 
     metaDescription:
@@ -4435,81 +4432,74 @@ Design Expertise
     template: 'B',
     category: "Industry Trends",
 
-        schema: `{
- <script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "BlogPosting",
-"mainEntityOfPage": {
-"@type": "WebPage",
-"@id": "https://metaguise.com/blog/architecture-as-branding:-why-commercial-elevation-design-matters-for-business"
-},
-"headline": "Commercial Elevation Design for Retail and Offices | Metaguise",
-"description": "Discover commercial elevation design ideas for retail showrooms and offices. Explore modern facade architecture and metal cladding solutions by Metaguise.",
-"image": "https://metaguise.com/assets/Blogs/Arthitecture%20Branding/Architecture2.jpg",
-"author": {
-"@type": "Organization",
-"name": "Metaguise"
-},
-"publisher": {
-"@type": "Organization",
-"name": "Metaguise",
-"logo": {
-"@type": "ImageObject",
-"url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
-}
-},
-"datePublished": "2026-03-10",
-"dateModified": "2026-03-10",
-"keywords": [
-"commercial elevation design",
-"retail showroom facade design",
-"parametric facade architecture",
-"metal facade cladding",
-"commercial building facade design",
-"modern facade architecture"
-],
-"articleSection": "Architecture",
-"wordCount": "900"
-}
-</script>
-
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "FAQPage",
-"mainEntity": [
-{
-"@type": "Question",
-"name": "Why is elevation design important for commercial buildings?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Elevation design is important for commercial buildings because it creates the first impression of a brand. A modern facade design attracts customers, increases footfall, and makes the building visually recognizable. Well-designed commercial elevations also improve natural lighting, ventilation, and energy efficiency, making the building both functional and attractive."
-}
-},
-{
-"@type": "Question",
-"name": "Which facade material is best for commercial buildings?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "The best facade materials for commercial buildings include aluminium panels, metal cladding, glass facades, and perforated metal screens. Aluminium and metal facades are especially popular because they are durable, lightweight, weather-resistant, and low maintenance, making them ideal for high-traffic commercial spaces such as retail showrooms and office buildings."
-}
-},
-{
-"@type": "Question",
-"name": "Does facade design help reduce heat inside buildings?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Yes, smart facade design can significantly reduce heat inside buildings. Elements like louvers, perforated panels, and shading systems block direct sunlight while allowing natural light and airflow. This reduces indoor temperature, improves occupant comfort, and lowers air-conditioning energy costs in commercial buildings."
-}
-}
-]
-}
-</script>
+schema: `{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/architecture-as-branding:-why-commercial-elevation-design-matters-for-business"
+      },
+      "headline": "Commercial Elevation Design for Retail and Offices | Metaguise",
+      "description": "Discover commercial elevation design ideas for retail showrooms and offices. Explore modern facade architecture and metal cladding solutions by Metaguise.",
+      "image": "https://metaguise.com/assets/Blogs/Arthitecture%20Branding/Architecture2.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "Metaguise"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+        }
+      },
+      "datePublished": "2026-03-10",
+      "dateModified": "2026-03-10",
+      "keywords": [
+        "commercial elevation design",
+        "retail showroom facade design",
+        "parametric facade architecture",
+        "metal facade cladding",
+        "commercial building facade design",
+        "modern facade architecture"
+      ],
+      "articleSection": "Architecture",
+      "wordCount": "900"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is elevation design important for commercial buildings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elevation design is important for commercial buildings because it creates the first impression of a brand. A modern facade design attracts customers, increases footfall, and makes the building visually recognizable. Well-designed commercial elevations also improve natural lighting, ventilation, and energy efficiency, making the building both functional and attractive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade material is best for commercial buildings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best facade materials for commercial buildings include aluminium panels, metal cladding, glass facades, and perforated metal screens. Aluminium and metal facades are especially popular because they are durable, lightweight, weather-resistant, and low maintenance, making them ideal for high-traffic commercial spaces such as retail showrooms and office buildings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does facade design help reduce heat inside buildings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, smart facade design can significantly reduce heat inside buildings. Elements like louvers, perforated panels, and shading systems block direct sunlight while allowing natural light and airflow. This reduces indoor temperature, improves occupant comfort, and lowers air-conditioning energy costs in commercial buildings."
+          }
+        }
+      ]
+    }
+  ]
 }`,
-
-
-
 
     metaDescription:
       "Discover Commercial elevation design ideas for retail showrooms and offices. Explore modern facade architecture and metal cladding solutions by metaguise  ",
