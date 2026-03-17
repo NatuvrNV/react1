@@ -9,6 +9,25 @@ font-size: 6rem;
     font-weight: 500;
       }
 
+      .material-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #444; /* Outer border */
+
+}
+
+.material-table th,
+.material-table td {
+  border: 1px solid #444; /* Inner borders (rows + columns) */
+  padding: 12px 14px;
+  text-align: left;
+  color: #fff;
+
+}
+
+.material-table th {
+  font-weight: 600;
+}
   
   /* Header */
   .blog-header {
