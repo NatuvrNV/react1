@@ -2,6 +2,12 @@
 User-agent: *
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 # Allow ChatGPT (OpenAI GPTBot)
 User-agent: GPTBot
 Allow: /
