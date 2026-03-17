@@ -59,22 +59,8 @@ const SingleBlogPage = () => {
   const metaTitle = blog.metaTitle || blog.title;
   const metaDescription = blog.metaDescription || blog.description;
   
-  // Get banner/first image for OG image
-  const getOgImage = () => {
-    if (blog.images && blog.images.length > 0) {
-      const firstImage = blog.images[0];
-      const imagePath = typeof firstImage === 'object' ? firstImage.path : firstImage;
-      return `https://metaguise.com/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`;
-    }
-    // Fallback to default image if no blog images
-    return 'https://metaguise.com/assets/default-og-image.jpg';
-  };
-
-  const ogImage = getOgImage();
-  
   // Use custom URL if available, otherwise use title for canonical URL
   const urlFriendlyTitle = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
-  const canonicalUrl = `https://metaguise.com/blog/${urlFriendlyTitle}`;
   
   // Function to get alt text for an image
   const getImageAltText = (blog, imageIndex = 0) => {
@@ -312,41 +298,17 @@ const SingleBlogPage = () => {
     <div className="singleblog-container">
       {/* Meta Tags */}
       <Helmet>
-        {/* Basic Meta Tags */}
-        <title>{metaTitle}</title>
+        <title> {metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={canonicalUrl} />
-        
-        {/* Open Graph / Facebook Meta Tags */}
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:title" content={metaTitle} />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:image" content={ogImage} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content={metaTitle} />
-        <meta property="og:site_name" content="MetaGuise" />
-        
-        {/* Article Specific OG Tags */}
-        <meta property="article:published_time" content={blog.date ? new Date(blog.date).toISOString() : new Date().toISOString()} />
-        <meta property="article:author" content="MetaGuise" />
-        <meta property="article:section" content={blog.category} />
-        
-        {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content={canonicalUrl} />
-        <meta name="twitter:title" content={metaTitle} />
-        <meta name="twitter:description" content={metaDescription} />
-        <meta name="twitter:image" content={ogImage} />
-        <meta name="twitter:image:alt" content={metaTitle} />
-        <meta name="twitter:site" content="@metaguise" />
-        <meta name="twitter:creator" content="@metaguise" />
+        <link
+          rel="canonical"
+          href={`https://metaguise.com/blog/${urlFriendlyTitle}`}
+        />
         
         {/* Schema from BlogConstants - if it exists */}
         {blog.schema && (
           <script type="application/ld+json">
-            {JSON.stringify(blog.schema)}
+            {blog.schema}
           </script>
         )}
       </Helmet>
