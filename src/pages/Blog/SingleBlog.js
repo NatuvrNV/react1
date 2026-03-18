@@ -46,6 +46,27 @@ const SingleBlogPage = () => {
     return null;
   }
 
+  // Helper function to get the first image URL
+  const getFirstImageUrl = () => {
+    if (blog.images && blog.images.length > 0) {
+      const firstImage = blog.images[0];
+      const imagePath = typeof firstImage === 'object' ? firstImage.path : firstImage;
+      return `https://metaguise.com/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`;
+    }
+    return ''; // Return empty if no image found
+  };
+
+  // Helper function to get alt text for the first image
+  const getFirstImageAlt = () => {
+    if (blog.images && blog.images.length > 0) {
+      const firstImage = blog.images[0];
+      if (typeof firstImage === 'object' && firstImage.alt) {
+        return firstImage.alt;
+      }
+    }
+    return blog.imageAltText || blog.title;
+  };
+
   // Get related blogs from the same category (excluding current blog)
   let relatedBlogs = SingleBlogDetail.filter(b =>
     b.category === blog.category && b.title !== blog.title
@@ -58,9 +79,12 @@ const SingleBlogPage = () => {
 
   const metaTitle = blog.metaTitle || blog.title;
   const metaDescription = blog.metaDescription || blog.description;
+  const firstImageUrl = getFirstImageUrl();
+  const firstImageAlt = getFirstImageAlt();
   
   // Use custom URL if available, otherwise use title for canonical URL
   const urlFriendlyTitle = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
+  const canonicalUrl = `https://metaguise.com/blog/${urlFriendlyTitle}`;
   
   // Function to get alt text for an image
   const getImageAltText = (blog, imageIndex = 0) => {
@@ -296,19 +320,46 @@ const SingleBlogPage = () => {
 
   return (
     <div className="singleblog-container">
-      {/* Meta Tags */}
+      {/* Meta Tags with OG tags */}
       <Helmet>
-        <title> {metaTitle}</title>
+        {/* Basic Meta Tags */}
+        <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <link
-          rel="canonical"
-          href={`https://metaguise.com/blog/${urlFriendlyTitle}`}
-        />
+        <link rel="canonical" href={canonicalUrl} />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={firstImageUrl} />
+        <meta property="og:image:alt" content={firstImageAlt} />
+        <meta property="og:site_name" content="MetaGuise" />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* Optional: Add image dimensions if you have them */}
+        {/* <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" /> */}
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={canonicalUrl} />
+        <meta name="twitter:title" content={metaTitle} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={firstImageUrl} />
+        <meta name="twitter:image:alt" content={firstImageAlt} />
+        <meta name="twitter:site" content="@metaguise" /> {/* Update with your Twitter handle */}
+        <meta name="twitter:creator" content="@metaguise" /> {/* Update with your Twitter handle */}
+        
+        {/* Article specific meta tags */}
+        <meta property="article:published_time" content={blog.date} />
+        <meta property="article:section" content={blog.category} />
+        <meta property="article:author" content="MetaGuise" /> {/* Update with your author name */}
         
         {/* Schema from BlogConstants - if it exists */}
         {blog.schema && (
           <script type="application/ld+json">
-            {blog.schema}
+            {JSON.stringify(blog.schema)}
           </script>
         )}
       </Helmet>
