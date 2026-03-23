@@ -63,33 +63,54 @@
 <meta name="twitter:image" content="https://ik.imagekit.io/ylx9qggcp/1.webp">
 <meta name="twitter:url" content="https://metaguise.com/">
 
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "LocalBusiness"],
   "name": "Metaguise",
   "legalName": "Metaguise",
   "url": "https://metaguise.com/",
-  "description": "Metaguise is a leading metal façade specialist offering advanced parametric cladding systems and turnkey architectural metal solutions across sectors in India.",
-  "logo": "../assets/logo.png",
+  "description": "Metaguise is India's leading metal facade specialist. 1800+ projects delivered pan-India. Specializing in parametric facade design, architectural metal cladding, and custom metal elevations.",
+  "logo": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png",
+  "image": "https://ik.imagekit.io/ylx9qggcp/1.webp",
   "foundingDate": "2019",
-  "contactPoint": [
-    {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "telephone": "+91-9811604449",
-      "email": "contactus@metaguise.com",
-      "areaServed": "IN",
-      "availableLanguage": ["English", "Hindi"]
-    }
-  ],
+  "priceRange": "₹₹₹",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "telephone": "+91-9811604449",
+    "email": "contactus@metaguise.com",
+    "areaServed": "IN",
+    "availableLanguage": ["English", "Hindi"]
+  }],
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Metaland - Basement F17, 4, Near Golf Course Road, DLF Phase 1, Sector 42",
+    "streetAddress": "Basement Floor, K9/46, DLF Phase 2",
     "addressLocality": "Gurugram",
     "addressRegion": "Haryana",
-    "postalCode": "122009",
+    "postalCode": "122002",
     "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 28.4595,
+    "longitude": 77.0266
+  },
+  "areaServed": ["Gurugram","Delhi NCR","Mumbai","Bangalore","Chennai","Hyderabad","Pune","Jaipur","India"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Metal Facade Products and Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Metal Facade Design and Installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Parametric Facade Design"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Architectural Metal Cladding"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "MetaCoin"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "MetaSequin"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "MetaShingles"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "MetaFlute"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "MetaLouver"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Cascading Keys"}}
+    ]
   },
   "sameAs": [
     "https://www.instagram.com/metaguise/",
@@ -102,9 +123,59 @@
 }
 </script>
 
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is the best metal facade company in India?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Metaguise is India's leading metal facade company based in Gurugram with 1800+ completed projects pan-India. They specialize in parametric facade design, architectural metal cladding, and custom metal elevations."}
+    },
+    {
+      "@type": "Question",
+      "name": "Which is the best metal facade company in Gurugram?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Metaguise, headquartered in Gurugram DLF Phase 2, is the top metal facade company in Gurugram and Delhi NCR. Visit their Metaland experience center to see live facade samples."}
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cost of metal facade in India?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Metal facade cost in India ranges from Rs. 800 to Rs. 3500+ per sq ft depending on design complexity, material type, and finish. Contact Metaguise for a custom quote."}
+    },
+    {
+      "@type": "Question",
+      "name": "What metal facade products does Metaguise offer?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Metaguise offers MetaCoin, MetaSequin, Cascading Keys, MetaShingles, MetaFlute, MetaLouver, MetaCassette, MetaWood, MetaPatina, MetaCorten, MetaPyramid and more — all custom parametric metal facade systems."}
+    },
+    {
+      "@type": "Question",
+      "name": "Does Metaguise serve clients outside Gurugram?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes, Metaguise serves clients pan-India including Delhi NCR, Mumbai, Bangalore, Chennai, Hyderabad, Pune, Jaipur, Chandigarh and more. 1800+ projects completed across India."}
+    }
+  ]
+}
+</script>
+
+<!-- Speakable Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2", ".slide-content"]
+  },
+  "url": "https://metaguise.com/"
+}
+</script>
+
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="https://metaguise.com/favicon.ico" />
+
+  <meta name="p:domain_verify" content="f3176ca2d1793f6481f27a2f5fd7ddb1"/>
 
   <!-- Preload React -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js" as="script">
