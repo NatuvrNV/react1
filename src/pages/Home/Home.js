@@ -47,6 +47,36 @@ function Home() {
 <meta name="twitter:image" content="https://ik.imagekit.io/ylx9qggcp/1.webp"/>
 <meta name="twitter:url" content="https://metaguise.com/"/>
 
+  <noscript>
+    {`
+  
+  <div>
+  <h1>Metaguise — India's Leading Metal Facade Company</h1>
+  <p>Metaguise is India's premier metal facade specialist based in Gurugram, Haryana. We design and install luxury parametric metal facades, architectural cladding, and custom metal elevations for residential and commercial buildings across India. 1800+ projects delivered pan-India since 2019.</p>
+
+  <h2>Our Services</h2>
+  <ul>
+    <li>Metal Facade Design and Installation</li>
+    <li>Parametric Facade Design</li>
+    <li>Architectural Metal Cladding</li>
+    <li>Metal Elevation for Buildings</li>
+    <li>Retrofit Metal Facades</li>
+  </ul>
+
+  <h2>Our Products</h2>
+  <p>MetaCoin, MetaSequin, Cascading Keys, MetaShingles, MetaFlute, MetaLouver, MetaCassette, MetaWood, MetaPatina, MetaCorten, MetaPyramid, MetaFold, MetaFin, MetaHydra, MetaPlank, MetaGate, MetaSlider, MetaBlox, MetaCopper, MetaGrey, Solid Panel</p>
+
+  <h2>Featured Projects</h2>
+  <p>Studio Ardete HQ, Kinetic Grid, Obsidian, RJ Jewellers, Luxe Manor, Scaled Symphony, Zenith, Whiteland, Tanishq Jewellery, Fortis Hospital, Miraj Stadium, Sacred Geometry, Peacock Mesh — and 100+ more projects pan-India.</p>
+
+  <h2>Location</h2>
+  <p>Headquartered in Gurugram, Haryana. Metaland Experience Center: Basement Floor, K9/46, DLF Phase 2, Gurugram. Serving Delhi NCR, Mumbai, Bangalore, Chennai, Hyderabad, Pune, Jaipur, Kolkata, Chandigarh and all major cities across India.</p>
+
+  <h2>Contact</h2>
+  <p>Phone: +91-9811604449 | Email: contactus@metaguise.com | Website: https://metaguise.com</p>
+</div>
+    `}
+  </noscript>
       
       </Helmet>
 
