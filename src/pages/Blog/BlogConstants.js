@@ -2427,6 +2427,7 @@ That’s the Metaguise promise: <strong>facade architecture</strong> that’s en
 
   {
     title: "Parametric Architecture in India: Why It’s Shaping the Future of Facade Design",
+    url: "parametric-architecture-in-india-why-its-shaping-the-future-of-facade-design",
     metaTitle: "Parametric Architecture in India: The Rise of Smart, Sculptural Facade Design | Metaguise",
     date: "03-11-25",
     category: "Industry Trends",

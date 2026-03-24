@@ -47,6 +47,10 @@ function Home() {
 <meta name="twitter:image" content="https://ik.imagekit.io/ylx9qggcp/1.webp"/>
 <meta name="twitter:url" content="https://metaguise.com/"/>
 
+
+      
+      </Helmet>
+
   <noscript>
     {`
   
@@ -77,9 +81,6 @@ function Home() {
 </div>
     `}
   </noscript>
-      
-      </Helmet>
-
       {/* Above the fold: Loads instantly */}
       <Swipper />
       <Featured />
