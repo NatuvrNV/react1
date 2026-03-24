@@ -136,31 +136,43 @@ const SingleProduct = () => {
           href={`https://metaguise.com/all-products/${productName}`}
         />
 
-        {/* ✅ PRODUCT SCHEMA FOR AI + GOOGLE */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            name: selectedProduct.Productname,
-            description: selectedProduct.metadescription,
-            url: `https://metaguise.com/all-products/${productName}`,
-            image: selectedProduct.images?.map(
-              (img) => `${window.location.origin}/${img}`
-            ),
-            brand: {
-              "@type": "Brand",
-              name: "Metaguise",
-            },
-            manufacturer: {
-              "@type": "Organization",
-              name: "Metaguise",
-              url: "https://metaguise.com",
-            },
-            category: "Architectural Metal Products",
-            material: selectedProduct.materials || "Metal",
-            inLanguage: "en-IN",
-          })}
-        </script>
+       {/* ✅ PRODUCT SCHEMA FOR AI + GOOGLE */}
+<script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: selectedProduct.Productname,
+    description: selectedProduct.metadescription,
+    url: `https://metaguise.com/all-products/${productName}`,
+    image: selectedProduct.images?.map(
+      (img) => `https://metaguise.com/${img}`  // ✅ window.location.origin remove kiya
+    ),
+    brand: {
+      "@type": "Brand",
+      name: "Metaguise",
+    },
+    manufacturer: {
+      "@type": "Organization",
+      name: "Metaguise",
+      url: "https://metaguise.com",
+    },
+    // ✅ Yeh add karo
+    offers: {
+      "@type": "Offer",
+      url: `https://metaguise.com/all-products/${productName}`,
+      priceCurrency: "INR",
+      price: "0",
+      availability: "https://schema.org/InStock",
+      seller: {
+        "@type": "Organization",
+        name: "Metaguise",
+      },
+    },
+    category: "Architectural Metal Products",
+    material: selectedProduct.materials || "Metal",
+    inLanguage: "en-IN",
+  })}
+</script>
       </Helmet>
       <div className="row">
         <div className="col-12">
