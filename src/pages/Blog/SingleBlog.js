@@ -337,31 +337,7 @@ const SingleBlogPage = () => {
         <meta property="og:site_name" content="MetaGuise" />
         <meta property="og:locale" content="en_US" />
 
-        <noscript>
-  {`
-    <div>
-      <h1>${blog.title}</h1>
 
-      <p>
-        ${blog.description}
-      </p>
-
-      <p>
-        ${blog.contentSections
-          ?.map(section => section.replace(/<[^>]+>/g, '')) // remove HTML
-          .join(' ')
-          .split('. ')
-          .slice(0, 4)
-          .join('. ')}.
-      </p>
-
-      <p>
-        For more information about metal facades in India, visit 
-        <a href="https://metaguise.com">Metaguise</a> — India's leading metal facade company based in Gurugram.
-      </p>
-    </div>
-  `}
-</noscript>
         
         {/* Optional: Add image dimensions if you have them */}
         {/* <meta property="og:image:width" content="1200" />
@@ -389,6 +365,31 @@ const SingleBlogPage = () => {
           </script>
         )}
       </Helmet>
+
+       <noscript>
+      <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
+        <h1>{blog.title}</h1>
+        <p>{blog.date} | {blog.category}</p>
+        <p>{blog.description}</p>
+
+        {/* Render plain text from contentSections (strips HTML tags) */}
+        {blog.contentSections ? (
+          blog.contentSections.map((section, i) => (
+            <p key={i}>
+              {section.replace(/<[^>]+>/g, '')}
+            </p>
+          ))
+        ) : (
+          <p>{blog.Fulldescription?.replace(/<[^>]+>/g, '')}</p>
+        )}
+
+        <p>
+          For more information about metal facades in India, visit{' '}
+          <a href="https://metaguise.com">Metaguise</a> — India's leading
+          metal facade company based in Gurugram.
+        </p>
+      </div>
+    </noscript>
 
       <Container className='mt-4'>
         {renderTemplate()}
