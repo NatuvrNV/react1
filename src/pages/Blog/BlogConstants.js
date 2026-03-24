@@ -2,7 +2,7 @@ export const SingleBlogDetail = [
   {
     title: "The Rise of Parametric facades: Designing with Algorithmic Elegance",
     metaTitle: "Parametric Facade Design in Modern Architecture | Metaguise ",
-
+    url: "the-rise-of-parametric-facades-designing-with-algorithmic-elegance",
     date: "01-04-25",
     category: "Facade Innovations",
     metaDescription: "Explore how parametric facade design uses algorithmic and computational tools to shape future-ready architecture. Insights by Metaguise.",
