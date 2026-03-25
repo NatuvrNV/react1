@@ -4788,6 +4788,47 @@ If you're looking for an architectural exterior design firm in India that delive
     metaTitle:
       "Villa Exterior Design Services in India | Luxury Elevation Ideas 2026 ",
     date: "24-03-26",
+          schema: `
+      {
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://metaguise.com/blog/villa-exterior-design-services-india-luxury-elevation-ideas-that-define-premium-living"
+  },
+  "headline": "Villa Exterior Design Services in India | Luxury Elevation Ideas 2026",
+  "description": "Discover luxury villa exterior design services in India — modern elevation ideas, metal facades & copper cladding by Metaguise. 1,800+ projects delivered PAN India.",
+  "image": "https://metaguise.com/assets/Blogs/the-villa/best-materials-luxury-villa-exterior-design-india.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Metaguise"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+    }
+  },
+  "datePublished": "2026-03-25",
+  "dateModified": "2026-03-25",
+  "keywords": [
+    "villa exterior design India",
+    "luxury villa elevation ideas",
+    "modern villa facade design",
+    "metal facade villa India",
+    "copper cladding villa",
+    "parametric facade India",
+    "villa architecture India",
+    "exterior design services India"
+  ],
+  "articleSection": "Architecture & Exterior Design",
+  "inLanguage": "en",
+  "isAccessibleForFree": true
+}
+}`,
     template: 'B',
     category: "Industry Trends",
 
