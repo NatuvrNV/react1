@@ -66,6 +66,54 @@ const speakableSchema = JSON.stringify({
   "url": "https://metaguise.com/"
 });
 
+// ✅ FAQ Schema — JS object mein correctly define kiya
+const faqSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is the best metal facade company in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Metaguise is India's leading metal facade company based in Gurugram with 1800+ completed projects pan-India. They specialize in parametric facade design, architectural metal cladding, and custom metal elevations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which is the best metal facade company in Gurugram?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Metaguise, headquartered in Gurugram DLF Phase 2, is the top metal facade company in Gurugram and Delhi NCR. Visit their Metaland experience center to see live facade samples."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cost of metal facade in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Metal facade cost in India ranges from Rs. 800 to Rs. 3500+ per sq ft depending on design complexity, material type, and finish. Contact Metaguise for a custom quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What metal facade products does Metaguise offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Metaguise offers MetaCoin, MetaSequin, Cascading Keys, MetaShingles, MetaFlute, MetaLouver, MetaCassette, MetaWood, MetaPatina, MetaCorten, MetaPyramid and more — all custom parametric metal facade systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Metaguise serve clients outside Gurugram?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Metaguise serves clients pan-India including Delhi NCR, Mumbai, Bangalore, Chennai, Hyderabad, Pune, Jaipur, Chandigarh and more. 1800+ projects completed across India."
+      }
+    }
+  ]
+});
+
 const noscriptContent = `
 <div>
   <h1>Metaguise — India's Leading Metal Facade Company</h1>
@@ -106,7 +154,7 @@ function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://metaguise.com/" />
         <meta property="og:site_name" content="Metaguise" />
-        <meta property="og:image" content="https://ik.imagekit.io/ylx9qggcp/1.webp" />  {/* ✅ Single og:image */}
+        <meta property="og:image" content="https://ik.imagekit.io/ylx9qggcp/1.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Luxury Parametric Metal Facade Design by Metaguise" />
@@ -122,11 +170,14 @@ function Home() {
         {/* JSON-LD: Organization + LocalBusiness */}
         <script type="application/ld+json">{organizationSchema}</script>
 
+        {/* JSON-LD: FAQ */}
+        <script type="application/ld+json">{faqSchema}</script>
+
         {/* JSON-LD: Speakable WebPage */}
         <script type="application/ld+json">{speakableSchema}</script>
       </Helmet>
 
-      {/* ✅ Fixed noscript: uses dangerouslySetInnerHTML */}
+      {/* ✅ Fixed noscript */}
       <noscript dangerouslySetInnerHTML={{ __html: noscriptContent }} />
 
       <Swipper />

@@ -1,3 +1,9 @@
+require('@babel/register')({
+  presets: ['@babel/preset-env', '@babel/preset-react'],
+  plugins: ['@babel/plugin-transform-modules-commonjs'],
+  ignore: [/node_modules/],
+});
+
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
@@ -6,16 +12,14 @@ const http = require('http');
 const { SingleBlogDetail } = require('./src/pages/Blog/BlogConstants');
 const { SingleprojectDetail, SingleProductDetail } = require('./src/utils/constants');
 
-// ── URL helpers ───────────────────────────────────────────────────────────────
 const getUrlFriendlyString = (str) =>
   str
     .toLowerCase()
-    .replace(/[:'&,?''\u2018\u2019]/g, '')  // remove special/Windows-invalid chars
+    .replace(/[:'&,?''\u2018\u2019]/g, '')
     .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')                     // collapse multiple dashes
+    .replace(/-+/g, '-')
     .trim();
 
-// ── Pages ─────────────────────────────────────────────────────────────────────
 const staticPages = [
   '/',
   '/about',
@@ -35,6 +39,7 @@ const blogPages = SingleBlogDetail.map((blog) => {
   return `/blog/${slug}`;
 });
 
+// ✅ Projects — item.url directly use karo
 const projectPages = SingleprojectDetail.map((project) => {
   const slug = project.url
     ? getUrlFriendlyString(project.url)
@@ -42,16 +47,14 @@ const projectPages = SingleprojectDetail.map((project) => {
   return `/all-projects/${slug}`;
 });
 
+// ✅ Products — item.name.toLowerCase() use karo (SingleProduct.js: item.name.toLowerCase() === productName)
 const productPages = SingleProductDetail.map((product) => {
-  const slug = product.url
-    ? getUrlFriendlyString(product.url)
-    : getUrlFriendlyString(product.name);
+  const slug = product.name.toLowerCase();
   return `/all-products/${slug}`;
 });
 
 const allPages = [...staticPages, ...blogPages, ...projectPages, ...productPages];
 
-// ── Pure Node.js static file server ──────────────────────────────────────────
 function startServer() {
   return new Promise((resolve) => {
     const buildDir = path.join(__dirname, 'build');
@@ -114,7 +117,6 @@ function startServer() {
   });
 }
 
-// ── Main ──────────────────────────────────────────────────────────────────────
 async function prerender() {
   console.log(`\n📋 Pages breakdown:`);
   console.log(`   Static  : ${staticPages.length}`);
@@ -128,7 +130,7 @@ async function prerender() {
 
   const browser = await puppeteer.launch({
     headless: 'new',
-    executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+    executablePath: '/usr/bin/chromium-browser',
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
@@ -160,7 +162,6 @@ async function prerender() {
 
       const html = await tab.content();
 
-      // Sanitize path for Windows filesystem
       const safePage = page
         .replace(/[:'&,?''\u2018\u2019]/g, '')
         .replace(/\s+/g, '-')
