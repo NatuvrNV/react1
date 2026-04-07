@@ -3347,6 +3347,48 @@ export const ProductImages = [
 
 export const ProjectImages = [
     { 
+        imgPath: "assets/Allprojects/commercial/Miraj Stadium/cover/miraj (1).webp",
+        order: 1,
+        alt: "Miraj Stadium exterior facade design"
+    },
+
+      { 
+        imgPath: "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",
+        order: 1,
+        alt: "AB Jewels facade design by Metaguise"
+    },
+
+      { 
+        imgPath: "assets/Allprojects/commercial/whiteland/cover/wl1.webp",
+        order: 1,
+        alt: "White Land metal facade project by Metaguise"
+    },
+
+      { 
+        imgPath: "assets/Allprojects/commercial/wvcity/cover/wv1.webp",
+        order: 1,
+        alt: "Wave City facade project by Metaguise with modern metal facade design"
+    },
+
+      { 
+        imgPath: "assets/Allprojects/residential/3939A/cover/3939A_7.webp",  
+        order: 1,
+        alt: "Scaled Symphony metal facade project by Metaguise"
+    },
+
+        { 
+        imgPath: "assets/Allprojects/commercial/Fortis/cover/Fortis (1).webp",
+        order: 1,
+        alt: "facade project by Metaguise featuring modern metal architecture"
+    },
+
+       { 
+        imgPath: "assets/Allprojects/commercial/RJJewellers/cover/rj1.webp",  
+        order: 1,
+        alt: "RJ Jewellers commercial project cover - Jewelry store with elegant metal facade design"
+    },
+
+    { 
         imgPath: "assets/Allprojects/residential/Sculpted Silence/cover/A2_1.webp",  
         order: 1,
         alt: "Sculpted Silence residential project cover - Parametric metal shingle facade front view"
@@ -3386,21 +3428,7 @@ export const ProjectImages = [
         order: 1,
         alt: "The Panorama facade project by Metaguise"
     },
-    { 
-        imgPath: "assets/Allprojects/commercial/Miraj Stadium/cover/miraj (1).webp",
-        order: 1,
-        alt: "Miraj Stadium exterior facade design"
-    },
-    { 
-        imgPath: "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",
-        order: 1,
-        alt: "AB Jewels facade design by Metaguise"
-    },
-    { 
-        imgPath: "assets/Allprojects/commercial/Fortis/cover/Fortis (1).webp",
-        order: 1,
-        alt: "facade project by Metaguise featuring modern metal architecture"
-    },
+  
     { 
         imgPath: "assets/Allprojects/commercial/Rahul Sweets/cover/Rahul Sweets (1).webp",
         order: 1,
@@ -3466,16 +3494,8 @@ export const ProjectImages = [
         order: 1,
         alt: "W12 residential project cover - Contemporary villa with metal cladding system"
     },
-    { 
-        imgPath: "assets/Allprojects/commercial/whiteland/cover/wl1.webp",
-        order: 1,
-        alt: "White Land metal facade project by Metaguise"
-    },
-    { 
-        imgPath: "assets/Allprojects/residential/3939A/cover/3939A_7.webp",  
-        order: 1,
-        alt: "Scaled Symphony metal facade project by Metaguise"
-    },
+  
+  
     { 
         imgPath: "assets/Allprojects/residential/caskey/cover/caskey1.webp",  
         order: 1,
@@ -3491,11 +3511,7 @@ export const ProjectImages = [
         order: 1,
         alt: "SBI Bank facade design project by Metaguise"
     },
-    { 
-        imgPath: "assets/Allprojects/commercial/wvcity/cover/wv1.webp",
-        order: 1,
-        alt: "Wave City facade project by Metaguise with modern metal facade design"
-    },
+  
     { 
         imgPath: "assets/Allprojects/commercial/zenith/cover/zen1.webp",
         order: 1,
@@ -3571,11 +3587,7 @@ export const ProjectImages = [
         order: 1,
         alt: "The Crystal residential project cover - Crystal-inspired architecture with metal cladding"
     },
-    { 
-        imgPath: "assets/Allprojects/commercial/RJJewellers/cover/rj1.webp",  
-        order: 1,
-        alt: "RJ Jewellers commercial project cover - Jewelry store with elegant metal facade design"
-    },
+ 
     { 
         imgPath: "assets/Allprojects/residential/Farm15/cover/farm1.webp", 
         order: 1,
