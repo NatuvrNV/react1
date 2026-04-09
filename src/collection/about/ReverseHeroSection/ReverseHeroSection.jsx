@@ -24,26 +24,23 @@ export const ReverseHeroSection = () => {
 
             <div id="Design" className="tw-space-y-6">
               <p className="tw-text-base tw-leading-relaxed tw-text-left">
-                At Metaguise, we pride ourselves on our ability to seamlessly
-                merge design creativity with engineering excellence. Our team is
-                dedicated to crafting architectural solutions that are not only
-                visually striking but also built for longevity and
-                sustainability.
+               At Metaguise, design and engineering are not separate—they are one integrated process.
               </p>
 
               <p className="tw-text-base tw-leading-relaxed tw-text-left">
-                Using advanced materials paired with state-of-the-art surface
-                treatments such as anodization and polyester coatings, we ensure
-                our products stand the test of time while requiring minimal
-                maintenance.
+                Every facade is developed through a combination of design thinking and engineering expertise, ensuring that what is envisioned can be built efficiently and perform reliably. From straightforward cladding systems to complex parametric facades, each solution is tailored to respond to real-world conditions such as wind loads, thermal expansion, and building orientation - and is executed on-site by our teams with precision and consistency.
               </p>
 
               <p className="tw-text-base tw-leading-relaxed tw-text-left">
-                We embrace the natural interplay of light, air, and texture,
-                creating designs that breathe life into spaces and resonate with
-                elegance and functionality. Whether through our facades,
-                louvers, or custom elements, we transform imagination into
-                tangible excellence that inspires.
+               We work with high-grade materials including aluminium, corten steel, stainless steel, zinc and copper - finished with European grade advanced coatings such as PVDF, anodization, and powder coating for long-term resistance to UV exposure and harsh Indian climates.
+              </p>
+
+                 <p className="tw-text-base tw-leading-relaxed tw-text-left">
+                  At our Metalab facility, new systems are developed, tested and quality-checked before installation, ensuring consistency, durability, and performance.
+              </p>
+
+                 <p className="tw-text-base tw-leading-relaxed tw-text-left">
+                  The result is simple: facades that look exactly as designed, perform reliably over time, and require minimal maintenance - and no two facades look the same. Because at Metaguise, your facade is your identity!
               </p>
             </div>
 

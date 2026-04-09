@@ -1,28 +1,41 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import './Preloader.css';
+
 const Preloader = () => {
   const liquidRef = useRef(null);
   const percentageRef = useRef(null);
   const preloaderRef = useRef(null);
   const circleRef = useRef(null);
+  const tweenRef = useRef(null);        // ✅ store tween reference
+  const percentageObj = useRef({ value: 0 }); // ✅ stable ref, not recreated
 
   useEffect(() => {
-    let percentage = { value: 0 };
-    const circumference = 2 * Math.PI * 90; // For a radius of 90 in the SVG circle
+    const circumference = 2 * Math.PI * 90;
 
-    gsap.to(percentage, {
+    // ✅ Kill any existing tween before starting
+    if (tweenRef.current) {
+      tweenRef.current.kill();
+    }
+
+    // ✅ Reset to 0 before animating
+    percentageObj.current.value = 0;
+
+    tweenRef.current = gsap.to(percentageObj.current, {
       value: 100,
       duration: 2.5,
+      ease: 'power1.inOut',             // ✅ smooth easing
       onUpdate: () => {
+        const val = percentageObj.current.value;
+
         if (percentageRef.current) {
-          percentageRef.current.textContent = `${Math.floor(percentage.value)}%`;
+          percentageRef.current.textContent = `${Math.floor(val)}%`;
         }
         if (liquidRef.current) {
-          liquidRef.current.style.clipPath = `inset(${100 - percentage.value}% 0 0 0)`;
+          liquidRef.current.style.clipPath = `inset(${100 - val}% 0 0 0)`;
         }
         if (circleRef.current) {
-          const progress = (100 - percentage.value) / 100 * circumference;
+          const progress = ((100 - val) / 100) * circumference;
           circleRef.current.style.strokeDashoffset = progress;
         }
       },
@@ -30,11 +43,22 @@ const Preloader = () => {
         gsap.to(preloaderRef.current, {
           opacity: 0,
           duration: 0.5,
-          onComplete: () => preloaderRef.current.style.display = 'none',
+          onComplete: () => {
+            if (preloaderRef.current) {
+              preloaderRef.current.style.display = 'none';
+            }
+          },
         });
       },
     });
-  }, []);
+
+    // ✅ Cleanup on unmount
+    return () => {
+      if (tweenRef.current) {
+        tweenRef.current.kill();
+      }
+    };
+  }, []); // ✅ empty deps — runs once only
 
   return (
     <div
@@ -56,7 +80,7 @@ const Preloader = () => {
       }}
     >
       <div
-        className="container preloader-container "
+        className="container preloader-container"
         style={{
           width: '50vw',
           height: '50vw',
@@ -79,6 +103,7 @@ const Preloader = () => {
             stroke="#fff"
             strokeWidth="4"
             strokeDasharray={2 * Math.PI * 90}
+            strokeDashoffset={2 * Math.PI * 90} // ✅ start at 0% visually
             ref={circleRef}
           />
         </svg>
@@ -95,7 +120,7 @@ const Preloader = () => {
             transform: 'translate(-50%, -50%)',
             clipPath: 'inset(100% 0 0 0)',
           }}
-        ></div>
+        />
       </div>
       <div
         ref={percentageRef}

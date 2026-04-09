@@ -14,16 +14,17 @@ export const VisionAndMission = () => {
       icon: VisionIcon,
       title: "Vision",
        alt: "Target icon symbolizing Metaguise’s design vision, focus, and aspirational goals.",   // ✅ Added descriptive alt
-      description1: ` Inspired by Shri Deepak Raheja’s vision(DRV) and pioneering spirit, our vision is to embrace the limitless potential of design, innovation and technology. Guided by the belief that "Anything is Possible.", we uphold unwavering standards, boundless creativity, and incorruptible values.`,
-      description2: `We strive to reshape the architectural landscape, creating a legacy where resilience meets artistry, and ambition transforms into timeless excellence.`,
+      description1: `Our vision is to lead the evolution of facade architecture through cutting edge design, engineering, and material innovation, setting new standards for how buildings are imagined and built.`,
+      description2: `We envision a future where every building in India — from a luxury residence in Delhi to a commercial tower in Mumbai — has an exterior designed with the same precision as its interior. Where metal facade systems become the intelligent standard for architecture that is built to last, not just built to stand. At Metaguise, we are turning that vision into reality — through parametric design, advanced aluminium cladding, and end-to-end in-house execution.`,
+
     },
     {
       id: 2,
       icon: MissionIcon,
       title: "Mission",
        alt: "Compass icon representing Metaguise’s mission to guide architectural innovation. ",   // ✅ Added descriptive alt
-      description1: `At Metaguise, our mission is to transform architecture with innovation, precision, and craftsmanship. We challenge conventions to create visionary façades that endure, inspire, and redefine urban landscapes.`,
-      description2: `With a steadfast commitment to sustainability and customization, we empower architects, designers, and developers to turn bold ideas into iconic landmarks that stand the test of time.
+      description1: `Our mission is to design and deliver metal facade systems that enhance the performance, identity, and longevity of buildings - protecting them from harsh climates, reducing long-term maintenance costs, and creating exteriors that are visually unique and structurally sound. `,
+      description2: `We are committed to being the most trusted facade partner for architects, developers, and homeowners across India by always delivering facades that are thoughtfully designed, engineered for performance, and executed to the highest standards. From the first design conversation to final installation, Metaguise owns and delivers every step of the process..
  `,
     },
   ];

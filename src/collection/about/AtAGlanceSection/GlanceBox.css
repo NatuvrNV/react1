@@ -60,7 +60,7 @@
   position: relative;
   z-index: 1;
   font-family: 'Degular Display';
-  /* font-size: 1.25rem; */
+  font-size: 1.25rem !important;
   font-weight: 100;
   line-height: 1.1;
   margin: 0;

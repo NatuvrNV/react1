@@ -4,10 +4,11 @@ import styles from "./AboutHeroSection.module.css";
 
 export const AboutHeroSection = () => {
   const paragraphss = [
-    "Metaguise is a story of resilience, renewal, and limitless ambition. Like a phoenix rising from adversity, our journey has been one of transformation: overcoming challenges to become a symbol of architectural innovation.",
-    'Founded by visionary chairman Shri Deepak Raheja, Metaguise operates on the belief that "Anything is Possible." This philosophy drives every initiative, not only building structures but also crafting spaces that blend speed, strength, and creativity—leaving lasting legacies in infrastructure.',
-    "At the heart of our innovation is parametric facade technology, which merges complex geometries with advanced materials to produce visually striking and dynamic exteriors. This cutting-edge approach allows us to break creative boundaries, setting new standards in architecture.",
-    "As we continue our journey, Metaguise rises to every challenge—our spirit as unyielding as the phoenix, always reaching new heights.",
+    "Metaguise is India’s leading metal facade design and execution company, delivering precision and high-performance engineered building exteriors across residential, commercial, and institutional projects. As pioneers of parametric architecture in the country, we transform advanced computational design into bespoke, state-of-the-art metal facade systems.",
+    "With over 1800+ completed projects across India and a growing global presence, we work closely with architects, developers, and homeowners to design, develop, and install facade systems that enhance both the appearance and performance of a building.",
+    "Founded on Shri Deepak Raheja’s vision, Metaguise was built on the principle that a building’s identity is judged, defined, and remembered by its facade, and that it must be designed and executed with rigour and intent. What began as a focused facade studio has grown into a full-scale, in-house operation, supported by a team of 70+ specialists - bringing together design, parametrics, engineering, fabrication, and installation under one roof. Our team has now successfully delivered high end residences, commercial projects, high rise podiums and institutional projects like Cricket Stadiums, Universities and Public Infrastructure.",
+    "Our work spans a wide range of metal facade solutions - from solid aluminium panels, perforated screens and kinetic facade systems to performance-driven technologies, advanced parametric and custom built facade systems - where each project is developed with attention to detail, climate responsiveness, and long-term durability, ensuring it performs reliably for years to come.",
+    "At Metaguise, we don’t approach facades as surface elements - we design them as an integral part of the architecture. The first and last impression of your building!"
   ];
 
   return (
