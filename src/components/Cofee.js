@@ -25,7 +25,7 @@ const Cofee = () => {
 
         <div className="image-section">
           <img
-            src="https://ik.imagekit.io/ylx9qggcp/Metaguise%20Coffee%20Table%20Book.69ea91556b2aef149f01.webp"
+            src="https://ik.imagekit.io/ylx9qggcp/coffeetablebook.webp"
             alt="Cover of Metaguise Odyssey book featuring a sculpted metallic wing motif in bronze tones."
             loading="lazy"
           />

@@ -10,7 +10,7 @@
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 2% 8%;
+  padding: 5% 8%;
   box-sizing: border-box;
   gap: 4%;
 }
@@ -58,6 +58,7 @@
   width: 100%;
   height: auto;
   object-fit: contain;
+
 }
 
 @media (min-width: 1200px) and (max-width:1919px) {
@@ -145,4 +146,11 @@
   #download-button{
     padding: 1rem 7rem;
   }
+
+  .image-section img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transform: scale(1.25);
+}
 }

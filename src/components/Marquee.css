@@ -1,0 +1,45 @@
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+  background: linear-gradient(180deg, #252525 100%, #000000 100%);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  animation: marquee-scroll 12s linear infinite;
+  will-change: transform;
+}
+
+.marquee-item {
+  flex: 0 0 calc(100% / 5); /* shows 4 logos at a time */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee-item img {
+  width: 100%;
+  max-width: 250px;
+  height: 70px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.marquee-item img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* moves exactly half since logos are duplicated */
+  }
+}

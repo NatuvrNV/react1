@@ -1343,6 +1343,58 @@ const SingleprojectDetail = [
       ],
     },
 
+      {
+      name: "GLSU",
+      url:"glsu",
+        alt:"Tall dual-elevation facade clad in MetaGrey MetaLouvers, offering rhythmic verticality, ventilation, and rain protection.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"GLSU University",
+      metatittles:"GLSU | MetaLouver in MetaGrey by Metaguise",
+      metadescription:"Metaguise’s first tall-format facade features MetaLouvers in MetaGrey, wrapping two elevations with rhythm and refinement. This lightweight, functional system blends lightness, airflow, and elegance—transforming the structure into a bold architectural statement.",
+      images: [
+      
+        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (1).webp",
+        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (2).webp",
+        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (3).webp",
+        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (6).webp",
+        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (7).webp",
+        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (8).webp",
+        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (13).webp",
+        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (4).webp",
+        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (5).webp",
+        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (9).webp",
+        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (10).webp",
+        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (11).webp",
+        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (14).webp",
+      ],
+    },
+
+        {
+      name: "Sohana",
+      url:"sohana",
+        alt:"Tall dual-elevation facade clad in MetaGrey MetaLouvers, offering rhythmic verticality, ventilation, and rain protection.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"Sohana Hospital",
+      metatittles:"Sohana | MetaLouver in MetaGrey by Metaguise",
+      metadescription:"Metaguise’s first tall-format facade features MetaLouvers in MetaGrey, wrapping two elevations with rhythm and refinement. This lightweight, functional system blends lightness, airflow, and elegance—transforming the structure into a bold architectural statement.",
+      images: [
+      
+        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (1).webp",
+        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (2).webp",
+        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (3).webp",
+        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (4).webp",
+        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (5).webp",
+        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (6).webp",
+        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (7).webp",
+        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (8).webp",
+        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (10).webp",
+      ],
+    },
+
     {
       name: "TheCrystal",
       url:"the-crystal",
@@ -1371,6 +1423,8 @@ const SingleprojectDetail = [
         
       ],
     },
+
+
 
     {
       name: "rjjewellers",
@@ -2340,6 +2394,78 @@ const SingleprojectDetail = [
       ],
     },
 
+                {
+      name: "The Canopy",
+      url: "the-canopy",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Overhang",
+      metatittles:"The Canopy Facade Project by Metaguise",
+      metadescription:"The Canopy by Metaguise is a modern architectural facade project showcasing precision metal engineering, innovative design execution, and sustainable building expertise.",
+      images: [
+      
+     
+        { 
+          src: "assets/Allprojects/residential/The Canopy/metacassette perforated/canopy (3).webp", 
+          alt: ""
+         },
+
+           { 
+          src: "assets/Allprojects/residential/The Canopy/metacassette perforated/canopy (6).webp", 
+          alt: ""
+         },
+
+           { 
+          src: "assets/Allprojects/residential/The Canopy/metacassette perforated/canopy (11).webp", 
+          alt: ""
+         },
+
+           { 
+          src: "assets/Allprojects/residential/The Canopy/metacassette perforated/canopy (12).webp", 
+          alt: ""
+         },
+
+          { 
+          src: "assets/Allprojects/residential/The Canopy/metalouvers/canopy (2).webp", 
+          alt: ""
+         },
+
+           { 
+          src: "assets/Allprojects/residential/The Canopy/metalouvers/canopy (4).webp", 
+          alt: ""
+         },
+
+           { 
+          src: "assets/Allprojects/residential/The Canopy/metalouvers/canopy (5).webp", 
+          alt: ""
+         },
+
+           { 
+          src: "assets/Allprojects/residential/The Canopy/metalouvers/canopy (7).webp", 
+          alt: ""
+         },
+
+            { 
+          src: "assets/Allprojects/residential/The Canopy/metalouvers/canopy (8).webp", 
+          alt: ""
+         },
+
+            { 
+          src: "assets/Allprojects/residential/The Canopy/metalouvers/canopy (9).webp", 
+          alt: ""
+         },
+
+            { 
+          src: "assets/Allprojects/residential/The Canopy/metalouvers/canopy (10).webp", 
+          alt: ""
+         },
+          
+        
+      ],
+    },
+
               {
       name: "the pavilion",
       url: "the-pavilion",
@@ -2421,6 +2547,35 @@ const SingleprojectDetail = [
           { src: "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (8).webp", alt: "Commercial building exterior with metal panels – Rahul Sweets"},
           { src: "assets/Allprojects/commercial/Rahul Sweets/night/Rahul Sweets (9).webp", alt: "Innovative facade solution by Metaguise at Rahul Sweets"}
         
+      ],
+    },
+
+                  {
+      name: "ahir",
+      url: "ahir",
+         alt:"",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"Ahir",
+      metatittles:"Ahir Commercial Facade Project | Metaguise",
+      metadescription:"Ahir commercial facade project by Metaguise showcases modern metal facade design, precision detailing, and innovative architectural execution.",
+      images: [
+      
+     
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (1).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (2).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (3).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (4).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (5).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (6).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (7).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (8).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (10).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (13).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (14).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/night/x (11).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/night/x (12).webp", alt: ""},
       ],
     },
 
@@ -3362,6 +3517,30 @@ export const ProjectImages = [
         imgPath: "assets/Allprojects/commercial/whiteland/cover/wl1.webp",
         order: 1,
         alt: "White Land metal facade project by Metaguise"
+    },
+
+       { 
+        imgPath: "assets/Allprojects/commercial/ahir/cover/x (9).webp",
+        order: 1,
+        alt: ""
+    },
+
+          { 
+        imgPath: "assets/Allprojects/commercial/Sohana/cover/Sohana Hospital (9).webp",
+        order: 1,
+        alt: ""
+    },
+
+        { 
+        imgPath: "assets/Allprojects/commercial/GLSU/cover/GLS University (12).webp",
+        order: 1,
+        alt: ""
+    },
+
+       { 
+        imgPath: "assets/Allprojects/residential/The Canopy/cover/canopy (1).webp",
+        order: 1,
+        alt: ""
     },
 
       { 
