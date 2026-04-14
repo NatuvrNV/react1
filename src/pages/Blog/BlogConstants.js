@@ -5731,7 +5731,7 @@ When architects bring us in at the concept stage, we can use parametric logic to
     template: 'B',
     category: "Industry Trends",
 
-    url: "beyond-the-brochure-how-to-evaluate-facade-partners-for-₹10-crore-residential-projects",
+    url: "beyond-the-brochure-how-to-evaluate-facade-partners-for-10crore-residential-projects",
 
     metaDescription:
       "Evaluating facade partners for ₹10-Crore+ Homes? Discover what truly matter parametric design, climate engineering & delivery. Metaguise ",
