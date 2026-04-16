@@ -7,6 +7,11 @@
   background: linear-gradient(180deg, #252525 100%, #000000 100%);
 }
 
+.client-heading {
+
+  background: linear-gradient(180deg, #252525 100%, #000000 100%);
+}
+
 .marquee-track {
   display: flex;
   align-items: center;
@@ -21,6 +26,49 @@
   justify-content: center;
   align-items: center;
 }
+
+.client-text {
+  font-family: "Degular Display", sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+  /* margin-bottom: 20px; */
+}
+
+.client-text-mob{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .client-text {
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+  }
+
+  .client-text {
+  display: none;
+  }
+
+    .client-text-mob{
+    display: block;
+        font-size: 45px;
+        line-height: 1.2;
+        margin-bottom: 0px;
+        text-align: center;
+  }
+}
+
+@media (min-width: 1200px) and (max-width:1919px) {
+  .client-text{
+    font-size: 5em !important;
+  }
+
+
+
+
+ }
 
 .marquee-item img {
   width: 100%;

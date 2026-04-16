@@ -1351,23 +1351,23 @@ const SingleprojectDetail = [
       youtubeLink: "",
       instagramLink: "",
       Projectname:"GLSU University",
-      metatittles:"GLSU | MetaLouver in MetaGrey by Metaguise",
-      metadescription:"Metaguise’s first tall-format facade features MetaLouvers in MetaGrey, wrapping two elevations with rhythm and refinement. This lightweight, functional system blends lightness, airflow, and elegance—transforming the structure into a bold architectural statement.",
+      metatittles:"GLS University Metal Facade Project | Metaguise India",
+      metadescription:"GLS University facade by Metaguise combines MetaCassette perforated cladding and MetaCoin. Modern institutional metal facade design by India's premier facade company.",
       images: [
       
-        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (1).webp",
-        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (2).webp",
-        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (3).webp",
-        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (6).webp",
-        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (7).webp",
-        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (8).webp",
-        "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (13).webp",
-        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (4).webp",
-        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (5).webp",
-        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (9).webp",
-        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (10).webp",
-        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (11).webp",
-        "assets/Allprojects/commercial/GLSU/metacoin/GLS University (14).webp",
+        { src: "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (1).webp", alt: "Perforated MetaCassette aluminium panels on GLS University exterior elevation — Metaguise" },
+        { src: "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (2).webp", alt: "GLSU institutional facade — MetaCassette cladding system with MetaGrey finish by Metaguise" },
+        { src: "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (3).webp", alt: "Close-up view of MetaCassette perforated facade panels — GLS University project" },
+        { src: "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (6).webp", alt: "GLS University facade side angle showing MetaCassette panel depth and light interaction" },
+        { src: "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (7).webp", alt: "GLSU building exterior with perforated metal cladding — modern educational architecture India" },
+        { src: "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (8).webp", alt: "GLS University metal facade detail — Metaguise premium institutional cladding project" },
+        { src: "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (13).webp", alt: "Wide view of GLS University campus facade with Metaguise MetaCassette cladding system" },
+        { src: "assets/Allprojects/commercial/GLSU/metacoin/GLS University (4).webp", alt: "MetaCoin parametric facade element on GLSU — combining coin cladding with cassette panels" },
+        { src: "assets/Allprojects/commercial/GLSU/metacoin/GLS University (5).webp", alt: "GLS University detail with MetaCoin cladding by Metaguise India" },
+        { src: "assets/Allprojects/commercial/GLSU/metacoin/GLS University (9).webp", alt: "GLS University atrium with MetaCoin cladding by Metaguise India" },
+        { src: "assets/Allprojects/commercial/GLSU/metacoin/GLS University (10).webp", alt: "GLS University interior with MetaCoin cladding by Metaguise India" },
+        { src: "assets/Allprojects/commercial/GLSU/metacoin/GLS University (11).webp", alt: "GLS University courtyard with MetaCoin cladding by Metaguise India" },
+        { src: "assets/Allprojects/commercial/GLSU/metacoin/GLS University (14).webp", alt: "GLS University detail with MetaCoin cladding by Metaguise India" },
       ],
     },
 
@@ -1379,19 +1379,19 @@ const SingleprojectDetail = [
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Sohana Hospital",
-      metatittles:"Sohana | MetaLouver in MetaGrey by Metaguise",
-      metadescription:"Metaguise’s first tall-format facade features MetaLouvers in MetaGrey, wrapping two elevations with rhythm and refinement. This lightweight, functional system blends lightness, airflow, and elegance—transforming the structure into a bold architectural statement.",
+      metatittles:"Sohana Hospital Metal Facade | MetaCassette by Metaguise",
+      metadescription:"Sohana Hospital facade by Metaguise uses perforated MetaCassette cladding in MetaGrey finish. Premium metal facade design for healthcare buildings across India.",
       images: [
       
-        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (1).webp",
-        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (2).webp",
-        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (3).webp",
-        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (4).webp",
-        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (5).webp",
-        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (6).webp",
-        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (7).webp",
-        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (8).webp",
-        "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (10).webp",
+       { src: "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (1).webp", alt: "Perforated MetaCassette metal panels on Sohana Hospital facade — Metaguise India" },
+        { src: "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (2).webp", alt: "Sohana Hospital building elevation with MetaCassette perforated facade system, Metaguise" },
+        { src: "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (3).webp", alt: " Close-up of MetaCassette perforated aluminium panels — Sohana Hospital facade project" },
+        { src: "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (4).webp", alt: "Sohana Hospital metal cladding — perforated panel detail in MetaGrey finish by Metaguise" },
+        { src: "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (5).webp", alt: " Sohana Hospital facade mid-section showing MetaCassette system and shadow pattern" },
+        { src: "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (6).webp", alt: "Hospital building exterior cladding with MetaCassette panels — Metaguise facade project" },
+        { src: "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (7).webp", alt: "Sohana Hospital full elevation — premium healthcare facade design by Metaguise India" },
+        { src: "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (8).webp", alt: "Wide view of Sohana Hospital with perforated metal facade — modern hospital architecture" },
+        { src: "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (10).webp", alt: "Sohana Hospital courtyard with MetaCassette cladding — Metaguise India" },
       ],
     },
 
@@ -2402,49 +2402,49 @@ const SingleprojectDetail = [
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Overhang",
-      metatittles:"The Canopy Facade Project by Metaguise",
-      metadescription:"The Canopy by Metaguise is a modern architectural facade project showcasing precision metal engineering, innovative design execution, and sustainable building expertise.",
+      metatittles:"The Canopy Residential Facade Project | Metaguise",
+      metadescription:"The Canopy by Metaguise is a luxury residential facade featuring MetaCassette perforated panels and MetaLouver system. Premium home elevation design in India.",
       images: [
       
      
         { 
           src: "assets/Allprojects/residential/The Canopy/metacassette perforated/canopy (3).webp", 
-          alt: ""
+          alt: "Perforated MetaCassette panels on The Canopy home facade — premium residential design India"
          },
 
            { 
           src: "assets/Allprojects/residential/The Canopy/metacassette perforated/canopy (6).webp", 
-          alt: ""
+          alt: "The Canopy bungalow exterior — MetaCassette perforated aluminium facade by Metaguise"
          },
 
            { 
           src: "assets/Allprojects/residential/The Canopy/metacassette perforated/canopy (11).webp", 
-          alt: ""
+          alt: "Close-up of perforated metal cladding on The Canopy residential project — Metaguise India"
          },
 
            { 
           src: "assets/Allprojects/residential/The Canopy/metacassette perforated/canopy (12).webp", 
-          alt: ""
+          alt: "The Canopy house facade showing MetaCassette panel arrangement and depth — Metaguise"
          },
 
           { 
           src: "assets/Allprojects/residential/The Canopy/metalouvers/canopy (2).webp", 
-          alt: ""
+          alt: "MetaLouver aluminium louver system on The Canopy residential facade — Metaguise project"
          },
 
            { 
           src: "assets/Allprojects/residential/The Canopy/metalouvers/canopy (4).webp", 
-          alt: ""
+          alt: "Horizontal MetaLouver fins on The Canopy home exterior — modern residential elevation design"
          },
 
            { 
           src: "assets/Allprojects/residential/The Canopy/metalouvers/canopy (5).webp", 
-          alt: ""
+          alt: "The Canopy facade — MetaLouver system providing privacy, light control and aesthetic depth"
          },
 
            { 
           src: "assets/Allprojects/residential/The Canopy/metalouvers/canopy (7).webp", 
-          alt: ""
+          alt: "Wide view of The Canopy residence with combined MetaLouver and MetaCassette facade — Metaguise"
          },
 
             { 
@@ -2558,24 +2558,24 @@ const SingleprojectDetail = [
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Ahir",
-      metatittles:"Ahir Commercial Facade Project | Metaguise",
-      metadescription:"Ahir commercial facade project by Metaguise showcases modern metal facade design, precision detailing, and innovative architectural execution.",
+      metatittles:"Ahir Commercial MetaCoin Facade Project | Metaguise",
+      metadescription:"Ahir commercial facade by Metaguise features MetaCoin parametric cladding. India's top metal facade company. 1800+ projects. Explore design, day & night views.",
       images: [
       
      
-     {src: "assets/Allprojects/commercial/ahir/metacoin/x (1).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/metacoin/x (2).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/metacoin/x (3).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/metacoin/x (4).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/metacoin/x (5).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/metacoin/x (6).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/metacoin/x (7).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/metacoin/x (8).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/metacoin/x (10).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/metacoin/x (13).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/metacoin/x (14).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/night/x (11).webp", alt: ""},
-     {src: "assets/Allprojects/commercial/ahir/night/x (12).webp", alt: ""},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (1).webp", alt: "Close-up of MetaCoin parametric facade panels on Ahir commercial project — Metaguise"},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (2).webp", alt: "MetaCoin aluminium coin facade system on Ahir commercial building exterior elevation"},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (3).webp", alt: "Dynamic light and shadow effect on Ahir's MetaCoin metal facade designed by Metaguise"},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (4).webp", alt: "Ahir project — parametric metal facade with circular coin elements reflecting daylight"},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (5).webp", alt: "Architectural detail of MetaCoin facade cladding — Ahir commercial project by Metaguise"},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (6).webp", alt: "Ahir commercial facade side view showing MetaCoin system depth and surface texture"},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (7).webp", alt: "Wide-angle view of Ahir building elevation with full MetaCoin parametric facade coverage"},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (8).webp", alt: "Ahir commercial project exterior — premium metal facade design by Metaguise India"},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (10).webp", alt: "Ground-level perspective of Ahir MetaCoin facade — modern commercial architecture India"},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (13).webp", alt: "Ahir project facade upper section — MetaCoin cladding by India's leading facade company"},
+     {src: "assets/Allprojects/commercial/ahir/metacoin/x (14).webp", alt: " Full-height Ahir commercial building with MetaCoin parametric metal facade — Metaguise"},
+     {src: "assets/Allprojects/commercial/ahir/night/x (11).webp", alt: "Ahir commercial facade at night — MetaCoin aluminium panels illuminated, Metaguise project"},
+     {src: "assets/Allprojects/commercial/ahir/night/x (12).webp", alt: "Nighttime view of Ahir building — MetaCoin facade with ambient lighting by Metaguise"},
       ],
     },
 
@@ -3522,25 +3522,25 @@ export const ProjectImages = [
        { 
         imgPath: "assets/Allprojects/commercial/ahir/cover/x (9).webp",
         order: 1,
-        alt: ""
+        alt: "Ahir commercial building facade with MetaCoin parametric metal cladding by Metaguise, India"
     },
 
           { 
         imgPath: "assets/Allprojects/commercial/Sohana/cover/Sohana Hospital (9).webp",
         order: 1,
-        alt: ""
+        alt: "Sohana Hospital exterior facade with perforated MetaCassette cladding in MetaGrey by Metaguise"
     },
 
         { 
         imgPath: "assets/Allprojects/commercial/GLSU/cover/GLS University (12).webp",
         order: 1,
-        alt: ""
+        alt: "GLS University building facade with MetaCassette perforated cladding by Metaguise India"
     },
 
        { 
         imgPath: "assets/Allprojects/residential/The Canopy/cover/canopy (1).webp",
         order: 1,
-        alt: ""
+        alt: "The Canopy luxury residential facade with MetaCassette and MetaLouver cladding by Metaguise"
     },
 
       { 

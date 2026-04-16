@@ -10,7 +10,6 @@ const logos = [
   { id: 6, src: "https://ik.imagekit.io/ylx9qggcp/cityspace.png", alt: "Cityspace" },
 ];
 
-// Duplicate logos for seamless infinite loop
 const duplicatedLogos = [...logos, ...logos];
 
 const Marquee = () => {
@@ -25,20 +24,30 @@ const Marquee = () => {
   };
 
   return (
-    <div className="marquee-wrapper">
-      <div
-        className="marquee-track"
-        ref={marqueeRef}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        {duplicatedLogos.map((logo, index) => (
-          <div className="marquee-item" key={index}>
-            <img src={logo.src} alt={logo.alt} loading="lazy" />
-          </div>
-        ))}
+    <section className="clients-section">
+      
+      {/* Heading ABOVE slider */}
+   <div className="client-heading">
+       <div className="client-text">Our Clients</div>
+      <div className="client-text-mob">Our Clients</div>
+   </div>
+
+      <div className="marquee-wrapper">
+        <div
+          className="marquee-track"
+          ref={marqueeRef}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          {duplicatedLogos.map((logo, index) => (
+            <div className="marquee-item" key={index}>
+              <img src={logo.src} alt={logo.alt} loading="lazy" />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+
+    </section>
   );
 };
 
