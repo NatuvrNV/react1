@@ -1216,5 +1216,21 @@
     <changefreq>monthly</changefreq>
   </url>
 
+       <url>
+
+      <loc>https://metaguise.com/blog/why-every-luxury-bungalow-photo-on-instagram-now-has-the-same-golden-metal-shimmer</loc>
+    <lastmod>2026-04-18</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+       <url>
+
+      <loc>https://metaguise.com/blog/when-your-building-turns-one-why-facade-ageing-is-now-a-luxury-home-anniversary-conversation</loc>
+    <lastmod>2026-04-18</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
 
