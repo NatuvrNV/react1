@@ -7052,6 +7052,41 @@ With 15–35 year coating warranties, they offer long-term durability with minim
     folderName: "Best-Exterior",
 
 
+              schema: `
+      {
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Global Facade Design in India: From Louis Vuitton to Ludhiana Bungalows | Metaguise",
+  "description": "Parametric facades from Paris flagships now built for Indian bungalows. Metaguise engineers global design for India's heat, monsoon & luxury homes.",
+  "image": "https://metaguise.com/assets/Blogs/Best-Exterior/The-Design-Journey.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+    }
+  },
+  "datePublished": "2026-04-18",
+  "dateModified": "2026-04-18",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://metaguise.com/blog/from-louis-vuitton-flagships-to-ludhiana-bungalows-how-global-facade-language-became-hyperlocal-in-india"
+  },
+  "keywords": "global facade design India, parametric facade India, luxury bungalow facade, hyperlocal architecture India, metal cladding India, Metaguise, Louis Vuitton facade India",
+  "articleSection": "Industry Trends",
+  "inLanguage": "en-IN"
+}
+</script>
+}`,
     
 
     images: [
@@ -7230,7 +7265,62 @@ What emerged from this adaptation wasn't Indian-ised luxury - a term that often 
 
     folderName: "Best-Exterior",
 
-
+          schema: `
+      {
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "From Sketch to Shimmer: How We Build 4,000 Unique Metal Panels | Metaguise",
+  "description": "An architect's impossible curve became 4,247 unique metal panels in 18 months. See how Metaguise turns parametric sketches into installed facades across India.",
+  "image": "https://metaguise.com/assets/Blogs/Best-Exterior/banner.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+    }
+  },
+  "datePublished": "2026-04-18",
+  "dateModified": "2026-04-18",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://metaguise.com/blog/from-sketch-to-shimmer-the-18-month-journey-of-turning-an-architects-impossible-curve-into-4000-unique-metal-panels"
+  },
+  "keywords": [
+    "parametric facade design India",
+    "unique metal panels facade",
+    "custom metal cladding India",
+    "luxury residential facade India",
+    "luxury bungalow facade design",
+    "residential facade design Delhi",
+    "residential facade design Mumbai",
+    "residential facade design Pune",
+    "residential facade design Bangalore",
+    "residential facade design Gurgaon",
+    "residential facade design Ahmedabad",
+    "residential facade design Ludhiana",
+    "parametric metal facade residential",
+    "facade design for luxury homes India",
+    "Metaguise residential facade",
+    "custom facade fabrication India",
+    "high-end home exterior design India",
+    "metal cladding residential bungalow",
+    "facade company India",
+    "parametric architecture India"
+  ],
+  "articleSection": "Industry Trends",
+  "inLanguage": "en-IN"
+}
+</script>
+}`,
     
 
     images: [
@@ -7391,6 +7481,62 @@ What emerged from this adaptation wasn't Indian-ised luxury - a term that often 
 
 folderName: "Custom-Facade",
 
+      schema: `
+      {
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why Iconic Facades Don't Cost What You Think | Metaguise",
+  "description": "A ₹2 crore parametric facade sold a Delhi bungalow for ₹31 crore more in 42 days. See how Metaguise turns facade costs into measurable returns across India.",
+  "image": "https://metaguise.com/assets/Blogs/Custom-Facade/What-Premium-Pricing.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+    }
+  },
+  "datePublished": "2026-04-19",
+  "dateModified": "2026-04-19",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://metaguise.com/blog/the-hidden-cost-of-that-wow-factor-why-iconic-facades-dont-actually-cost-what-you-think"
+  },
+  "keywords": [
+    "iconic facade cost India",
+    "parametric facade ROI",
+    "facade investment return India",
+    "luxury facade design cost India",
+    "premium facade vs cheap cladding India",
+    "facade property value India",
+    "luxury residential facade Delhi",
+    "luxury bungalow facade Mumbai",
+    "luxury home facade Bangalore",
+    "luxury facade Gurgaon",
+    "luxury facade Ahmedabad",
+    "luxury facade Pune",
+    "luxury facade Jaipur",
+    "residential facade design India",
+    "metal facade cost per sq ft India",
+    "parametric metal facade India",
+    "facade design for luxury homes India",
+    "Metaguise facade cost",
+    "facade company India",
+    "iconic building facade India"
+  ],
+  "articleSection": "Industry Trends",
+  "inLanguage": "en-IN"
+}
+</script>
+}`,
 
     
 
@@ -7583,6 +7729,65 @@ folderName: "Custom-Facade",
 
 folderName: "Custom-Facade",
 
+      schema: `
+      {
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "₹2 Crore Facade for Griha Pravesh? Here's Why It's Worth It | Metaguise",
+  "description": "₹2 crore on a facade before griha pravesh — is it worth it? See how Metaguise designs parametric metal elevations that stop traffic across India.",
+  "image": "https://metaguise.com/assets/Blogs/Custom-Facade/Making-the-Decision.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+    }
+  },
+  "datePublished": "2026-04-19",
+  "dateModified": "2026-04-19",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://metaguise.com/blog/griha-pravesh-in-the-age-of-parametric-design-when-your-bungalow-first-impression-costs-2crore"
+  },
+  "keywords": [
+    "griha pravesh facade design India",
+    "bungalow facade design India",
+    "luxury bungalow exterior design",
+    "parametric facade for housewarming",
+    "luxury home facade India",
+    "residential facade design India",
+    "luxury bungalow facade Delhi",
+    "luxury bungalow facade Mumbai",
+    "luxury bungalow facade Bangalore",
+    "luxury bungalow facade Hyderabad",
+    "luxury bungalow facade Pune",
+    "luxury bungalow facade Gurgaon",
+    "luxury bungalow facade Ahmedabad",
+    "luxury bungalow facade Surat",
+    "luxury home exterior design India",
+    "metal facade for residential bungalow",
+    "custom facade design India",
+    "parametric metal facade India",
+    "facade company India",
+    "Metaguise bungalow facade",
+    "housewarming home exterior India",
+    "best facade for luxury home India"
+  ],
+  "articleSection": "Industry Trends",
+  "inLanguage": "en-IN"
+}
+</script>
+}`,
+
 
     
 
@@ -7745,7 +7950,64 @@ folderName: "Custom-Facade",
 
     folderName: "The-Homeowner-Who",
 
-
+      schema: `
+      {
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Rejected Italian Marble for Parametric Facade | Metaguise",
+  "description": "How one homeowner chose a ₹10Cr parametric metal facade over Italian marble — and why India's HNI class is rewriting luxury architecture, one algorithm at a time.",
+  "image": "https://metaguise.com/assets/Blogs/The-Homeowner-Who/banner.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+    }
+  },
+  "datePublished": "2026-04-20",
+  "dateModified": "2026-04-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://metaguise.com/blog/the-homeowner-who-rejected-italian-marble-for-indian-algorithms-a-10crore-decision-told-through-whatsapp-screenshots"
+  },
+  "keywords": [
+    "Italian marble vs parametric facade India",
+    "metal facade vs marble facade India",
+    "luxury home facade India",
+    "HNI home design India",
+    "parametric facade luxury residence India",
+    "custom metal facade India",
+    "luxury bungalow facade design India",
+    "residential facade design Delhi",
+    "residential facade design Mumbai",
+    "residential facade design Bangalore",
+    "residential facade design Hyderabad",
+    "residential facade design Pune",
+    "residential facade design Gurgaon",
+    "residential facade design Ahmedabad",
+    "luxury home exterior India",
+    "parametric metal facade India",
+    "algorithmic facade design India",
+    "Metaguise luxury facade",
+    "facade company India",
+    "best facade for luxury bungalow India",
+    "Indian luxury architecture 2026",
+    "premium home facade design India"
+  ],
+  "articleSection": "Industry Trends",
+  "inLanguage": "en-IN"
+}
+</script>
+}`,
     
 
     images: [
@@ -7925,7 +8187,64 @@ folderName: "Custom-Facade",
 
     folderName: "The-Wedding-Season",
 
-
+      schema: `
+      {
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Wedding Season Home Reveals & Luxury Facades | Metaguise",
+  "description": "South Delhi's elite are timing luxury bungalow reveals to wedding season. See why parametric metal facades by Metaguise are the ultimate social statement.",
+  "image": "https://metaguise.com/assets/Blogs/The-Wedding-Season/banner.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Metaguise",
+    "url": "https://metaguise.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+    }
+  },
+  "datePublished": "2026-04-20",
+  "dateModified": "2026-04-20",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://metaguise.com/blog/the-wedding-season-inauguration-how-south-delhi-elite-are-timing-luxury-home-reveals-to-match-shaadi-calendar"
+  },
+  "keywords": [
+    "luxury bungalow facade wedding season India",
+    "South Delhi luxury bungalow facade",
+    "luxury home reveal India wedding",
+    "parametric facade for luxury residence India",
+    "wedding season home inauguration India",
+    "luxury bungalow exterior design Delhi",
+    "luxury home facade South Delhi",
+    "luxury residential facade Gurgaon",
+    "luxury bungalow facade Mumbai",
+    "luxury bungalow facade Ahmedabad",
+    "luxury bungalow facade Jaipur",
+    "luxury home facade design India",
+    "residential facade design India",
+    "metal facade luxury bungalow India",
+    "parametric metal facade India",
+    "custom facade design luxury home India",
+    "Metaguise luxury residential facade",
+    "facade company India",
+    "HNI home design India",
+    "luxury architecture India 2026",
+    "bungalow facade for shaadi season",
+    "luxury home exterior design India"
+  ],
+  "articleSection": "Industry Trends",
+  "inLanguage": "en-IN"
+}
+</script>
+}`,
     
 
     images: [
