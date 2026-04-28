@@ -8418,7 +8418,7 @@ folderName: "Custom-Facade",
       },
 
         {
-        path: "assets/Blogs/When-Your-Building/The-Anniversary-Ritual.jpg",
+        path: "assets/Blogs/When-Your-Building/The-Anniversary-Ritual-Documenting-Transformation.jpg",
         alt: ""
       },
      
@@ -8609,7 +8609,7 @@ folderName: "Custom-Facade",
       },
 
         {
-        path: "assets/Blogs/Why-Every-Luxury/The-Algorithm-Behind.jpg",
+        path: "assets/Blogs/Why-Every-Luxury/The-Algorithm-Behind-the-Shimmer.jpg",
         alt: ""
       },
      
@@ -8747,14 +8747,14 @@ folderName: "Custom-Facade",
       },
 
         {
-        path: "assets/Blogs/From-Concept-Skyline/The-Integration-Question.jpg",
+        path: "assets/Blogs/From-Concept-Skyline/The-Integration-Question-Why-Fragmentation-Kills-Fidelity.jpg",
         alt: ""
       },
      
   
         {
        
-        path: "assets/Blogs/From-Concept-Skyline/The-Metaguise-Approach.jpg",
+        path: "assets/Blogs/From-Concept-Skyline/The-Metaguise-Approach-Where-Capability-Meets-Craft.jpg",
         alt: ""
       },
       
@@ -8960,14 +8960,14 @@ folderName: "Custom-Facade",
       },
 
         {
-        path: "assets/Blogs/From-Stadium-Storefront/Case-Studies.jpg",
+        path: "assets/Blogs/From-Stadium-Storefront/Case-Studies-in-Narrative-Transformation.jpg",
         alt: ""
       },
      
   
         {
        
-        path: "assets/Blogs/From-Stadium-Storefront/Making-the-Leap.jpg",
+        path: "assets/Blogs/From-Stadium-Storefront/Making-the-Leap-Implementation-Realities.jpg",
         alt: ""
       },
       
@@ -9180,14 +9180,14 @@ folderName: "Custom-Facade",
       },
 
         {
-        path: "assets/Blogs/India-Parametric/Choosing-Parametric.jpg",
+        path: "assets/Blogs/India-Parametric/Choosing-Parametric-Systems-What-to-Actually-Look-For.jpg",
         alt: ""
       },
      
   
         {
        
-        path: "assets/Blogs/India-Parametric/Looking-Forward.jpg",
+        path: "assets/Blogs/India-Parametric/Looking-Forward-Where-India-Parametric-Journey-Leads.jpg",
         alt: ""
       },
       
@@ -9385,14 +9385,14 @@ folderName: "Custom-Facade",
       },
 
         {
-        path: "assets/Blogs/MetaSurface-Standard/MetaSurface-Technology.jpg",
+        path: "assets/Blogs/MetaSurface-Standard/The-Metaguise-Difference-Integration-Intelligence-and-Integrity.jpg",
         alt: ""
       },
      
   
         {
        
-        path: "assets/Blogs/MetaSurface-Standard/The-Metaguise-Difference.jpg",
+        path: "assets/Blogs/MetaSurface-Standard/MetaSurface-Technology-Engineering-Beyond-Aesthetics.jpg",
         alt: ""
       },
       
@@ -9588,7 +9588,7 @@ folderName: "Custom-Facade",
             {
     title: "The Science of Light and Shadow in Metal Facade Design",
     metaTitle:
-      "MetaSurface vs Standard Finishes for Facades | Metaguise",
+      "The Science of Light and Shadow  | Metaguise",
     date: "24-04-26",
 
     template: 'B',
@@ -9616,14 +9616,14 @@ folderName: "Custom-Facade",
       },
 
         {
-        path: "assets/Blogs/Why-Buildings-Need/How-India-Light.jpg",
+        path: "assets/Blogs/Why-Buildings-Need/How-India-Light-Conditions-Amplify-Metal-Facade-Depth.jpg",
         alt: ""
       },
      
   
         {
        
-        path: "assets/Blogs/Why-Buildings-Need/The-Brand-Philosophy.jpg",
+        path: "assets/Blogs/Why-Buildings-Need/The-Brand-Philosophy-Behind-Dimensional-Facades.jpg",
         alt: ""
       },
       
@@ -9811,14 +9811,14 @@ folderName: "Custom-Facade",
       },
 
         {
-        path: "assets/Blogs/Parametric-Facades-Demystified/The-Indian-Context.jpg",
+        path: "assets/Blogs/Parametric-Facades-Demystified/The-Indian-Context-Climate-Craft-and-Computational-Design.jpg",
         alt: ""
       },
      
   
         {
        
-        path: "assets/Blogs/Parametric-Facades-Demystified/The-Metaguise-Perspective.jpg",
+        path: "assets/Blogs/Parametric-Facades-Demystified/The-Metaguise-Perspective-Algorithms-with-Soul.jpg",
         alt: ""
       },
       
