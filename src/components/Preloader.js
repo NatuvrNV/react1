@@ -7,24 +7,27 @@ const Preloader = () => {
   const percentageRef = useRef(null);
   const preloaderRef = useRef(null);
   const circleRef = useRef(null);
-  const tweenRef = useRef(null);        // ✅ store tween reference
-  const percentageObj = useRef({ value: 0 }); // ✅ stable ref, not recreated
+  const tweenRef = useRef(null);
+  const percentageObj = useRef({ value: 0 });
 
   useEffect(() => {
     const circumference = 2 * Math.PI * 90;
 
-    // ✅ Kill any existing tween before starting
-    if (tweenRef.current) {
-      tweenRef.current.kill();
-    }
+    // Kill any existing tween
+    if (tweenRef.current) tweenRef.current.kill();
 
-    // ✅ Reset to 0 before animating
-    percentageObj.current.value = 0;
+    // Reinitialize object so GSAP always starts fresh
+    percentageObj.current = { value: 0 };
+
+    // Hard reset all visuals
+    if (percentageRef.current) percentageRef.current.textContent = '0%';
+    if (liquidRef.current) liquidRef.current.style.clipPath = 'inset(100% 0 0 0)';
+    if (circleRef.current) circleRef.current.style.strokeDashoffset = circumference;
 
     tweenRef.current = gsap.to(percentageObj.current, {
       value: 100,
       duration: 2.5,
-      ease: 'power1.inOut',             // ✅ smooth easing
+      ease: 'power1.inOut',
       onUpdate: () => {
         const val = percentageObj.current.value;
 
@@ -52,13 +55,10 @@ const Preloader = () => {
       },
     });
 
-    // ✅ Cleanup on unmount
     return () => {
-      if (tweenRef.current) {
-        tweenRef.current.kill();
-      }
+      if (tweenRef.current) tweenRef.current.kill();
     };
-  }, []); // ✅ empty deps — runs once only
+  }, []);
 
   return (
     <div
@@ -103,7 +103,7 @@ const Preloader = () => {
             stroke="#fff"
             strokeWidth="4"
             strokeDasharray={2 * Math.PI * 90}
-            strokeDashoffset={2 * Math.PI * 90} // ✅ start at 0% visually
+            strokeDashoffset={2 * Math.PI * 90}
             ref={circleRef}
           />
         </svg>
