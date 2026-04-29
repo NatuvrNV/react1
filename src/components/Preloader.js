@@ -13,16 +13,15 @@ const Preloader = () => {
   useEffect(() => {
     const circumference = 2 * Math.PI * 90;
 
-    // Kill any existing tween
     if (tweenRef.current) tweenRef.current.kill();
 
-    // Reinitialize object so GSAP always starts fresh
     percentageObj.current = { value: 0 };
 
-    // Hard reset all visuals
     if (percentageRef.current) percentageRef.current.textContent = '0%';
     if (liquidRef.current) liquidRef.current.style.clipPath = 'inset(100% 0 0 0)';
     if (circleRef.current) circleRef.current.style.strokeDashoffset = circumference;
+
+    gsap.ticker.lagSmoothing(0);
 
     tweenRef.current = gsap.to(percentageObj.current, {
       value: 100,
@@ -30,16 +29,10 @@ const Preloader = () => {
       ease: 'power1.inOut',
       onUpdate: () => {
         const val = percentageObj.current.value;
-
-        if (percentageRef.current) {
-          percentageRef.current.textContent = `${Math.floor(val)}%`;
-        }
-        if (liquidRef.current) {
-          liquidRef.current.style.clipPath = `inset(${100 - val}% 0 0 0)`;
-        }
+        if (percentageRef.current) percentageRef.current.textContent = `${Math.floor(val)}%`;
+        if (liquidRef.current) liquidRef.current.style.clipPath = `inset(${100 - val}% 0 0 0)`;
         if (circleRef.current) {
-          const progress = ((100 - val) / 100) * circumference;
-          circleRef.current.style.strokeDashoffset = progress;
+          circleRef.current.style.strokeDashoffset = ((100 - val) / 100) * circumference;
         }
       },
       onComplete: () => {
@@ -47,15 +40,21 @@ const Preloader = () => {
           opacity: 0,
           duration: 0.5,
           onComplete: () => {
-            if (preloaderRef.current) {
-              preloaderRef.current.style.display = 'none';
-            }
+            if (preloaderRef.current) preloaderRef.current.style.display = 'none';
           },
         });
       },
     });
 
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        gsap.globalTimeline.resume();
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
     return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
       if (tweenRef.current) tweenRef.current.kill();
     };
   }, []);

@@ -8,19 +8,13 @@ import { HelmetProvider } from "react-helmet-async";
 const rootElement = document.getElementById("root");
 
 const AppWrapper = (
-  <React.StrictMode>
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
-  </React.StrictMode>
+  // ✅ StrictMode hatao
+  <HelmetProvider>
+    <App />
+  </HelmetProvider>
 );
 
-// ✅ If React Snap pre-rendered HTML exists → hydrate it
-// ✅ If not (normal browser visit) → render fresh
-if (rootElement.hasChildNodes()) {
-  ReactDOM.hydrateRoot(rootElement, AppWrapper);
-} else {
-  ReactDOM.createRoot(rootElement).render(AppWrapper);
-}
+// ✅ Hamesha fresh render karo — hydrate mat karo
+ReactDOM.createRoot(rootElement).render(AppWrapper);
 
 reportWebVitals();
