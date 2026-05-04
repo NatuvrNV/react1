@@ -45,13 +45,13 @@ export const About = () => {
               paddingTop: "56.25%", // 16:9 Aspect Ratio
             }}
           >
-            <iframe
-              className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full"
-              src="https://www.youtube.com/watch?v=t1SRYiLeQGg"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <iframe
+  className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full"
+  src="https://www.youtube.com/embed/t1SRYiLeQGg"
+  title="YouTube video player"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
           </div>
         </div>
 
