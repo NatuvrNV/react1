@@ -62,10 +62,10 @@
 }
 
 .heroImage {
-  width: 100%;
-  max-width: 557px;
-  height: auto;
-  object-fit: cover;
+   width: 90%;
+        height: 750px;
+        object-fit: cover;
+        border-radius: 20px 0px 0px 20px;
 }
 
 .aboutHeroContainer h1{
@@ -99,10 +99,10 @@
 
 
   .heroImage {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    object-fit: cover;
+        width: 90%;
+        height: 700px;
+        object-fit: cover;
+        border-radius: 20px 0px 0px 20px;
   }
 
   .vision-mission-card .description p{
@@ -147,6 +147,14 @@
     text-align: left;
     max-width: 100%;
     font-size: 0.875rem;
+  }
+
+  .heroImage{
+    height: auto;
+    max-width: 557px;
+    object-fit: cover;
+    width: 100%;
+     border-radius: 20px 0px 0px 20px;
   }
 }
 
