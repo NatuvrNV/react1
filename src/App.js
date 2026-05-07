@@ -40,8 +40,7 @@ function App() {
   return (
 
     <HelmetProvider>
-          <Preloader >
-  </Preloader>
+
     <Router>
       <Layout>
         <Routes>
