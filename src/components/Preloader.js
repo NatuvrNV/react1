@@ -22,7 +22,7 @@ import './Preloader.css';
  *   onComplete    {function} called when exit finishes
  */
 const Preloader = ({
-  imageUrl      = 'https://ik.imagekit.io/ylx9qggcp/download%20(1).png',
+  imageUrl      = 'https://ik.imagekit.io/ylx9qggcp/metaguise%20logo%20old%20(2).png',
   blackDuration = 1.2,
   duration      = 2.6,
   onComplete,
