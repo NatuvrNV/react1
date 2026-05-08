@@ -2,134 +2,119 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import './Preloader.css';
 
-const Preloader = () => {
-  const liquidRef = useRef(null);
-  const percentageRef = useRef(null);
-  const preloaderRef = useRef(null);
-  const circleRef = useRef(null);
-  const tweenRef = useRef(null);
-  const percentageObj = useRef({ value: 0 });
+/**
+ * Preloader
+ * ─────────
+ * Phase 1 — Image reveals bottom→top, percentage counts 0→100
+ * Phase 2 — Brief hold so the full image is visible
+ * Phase 3 — Image zooms out (scale → 0) with expo.in easing
+ * Phase 4 — Preloader fades away, page content fades in
+ *
+ * Props
+ *   imageUrl   {string}   logo/image to reveal
+ *   duration   {number}   reveal duration in seconds (default 2.6)
+ *   onComplete {function} called when the exit finishes
+ */
+const Preloader = ({
+  imageUrl   = 'https://ik.imagekit.io/ylx9qggcp/download%20(1).png',
+  duration   = 2.6,
+  onComplete,
+}) => {
+  const rootRef   = useRef(null);
+  const wrapRef   = useRef(null);
+  const maskRef   = useRef(null);
+  const pctRef    = useRef(null);
+  const tlRef     = useRef(null);
 
   useEffect(() => {
-    const circumference = 2 * Math.PI * 90;
+    const root = rootRef.current;
+    const wrap = wrapRef.current;
+    const mask = maskRef.current;
+    const pctEl = pctRef.current;
 
-    if (tweenRef.current) tweenRef.current.kill();
-
-    percentageObj.current = { value: 0 };
-
-    if (percentageRef.current) percentageRef.current.textContent = '0%';
-    if (liquidRef.current) liquidRef.current.style.clipPath = 'inset(100% 0 0 0)';
-    if (circleRef.current) circleRef.current.style.strokeDashoffset = circumference;
+    /* ── reset ── */
+    gsap.set(root, { display: 'flex', opacity: 1 });
+    gsap.set(wrap, { scale: 1, opacity: 1 });
+    gsap.set(mask, { clipPath: 'inset(100% 0 0 0)' });
+    gsap.set(pctEl, { opacity: 1, y: 0 });
+    pctEl.textContent = '000%';
 
     gsap.ticker.lagSmoothing(0);
 
-    tweenRef.current = gsap.to(percentageObj.current, {
-      value: 100,
-      duration: 2.5,
-      ease: 'power1.inOut',
-      onUpdate: () => {
-        const val = percentageObj.current.value;
-        if (percentageRef.current) percentageRef.current.textContent = `${Math.floor(val)}%`;
-        if (liquidRef.current) liquidRef.current.style.clipPath = `inset(${100 - val}% 0 0 0)`;
-        if (circleRef.current) {
-          circleRef.current.style.strokeDashoffset = ((100 - val) / 100) * circumference;
-        }
+    const obj = { v: 0 };
+    const tl  = gsap.timeline();
+    tlRef.current = tl;
+
+    /* ── Phase 1: reveal + counter ── */
+    tl.to(obj, {
+      v: 100,
+      duration,
+      ease: 'power2.inOut',
+      onUpdate() {
+        const val = obj.v;
+        mask.style.clipPath = `inset(${100 - val}% 0 0 0)`;
+        pctEl.textContent   = `${String(Math.floor(val)).padStart(3, '0')}%`;
       },
-      onComplete: () => {
-        gsap.to(preloaderRef.current, {
-          opacity: 0,
-          duration: 0.5,
-          onComplete: () => {
-            if (preloaderRef.current) preloaderRef.current.style.display = 'none';
-          },
-        });
+    })
+
+    /* ── Phase 2: hold ── */
+    .to({}, { duration: 0.35 })
+
+    /* ── Phase 3a: fade percentage ── */
+    .to(pctEl, {
+      opacity: 0,
+      y: 6,
+      duration: 0.3,
+      ease: 'power2.in',
+    }, '-=0.1')
+
+    /* ── Phase 3b: zoom out ── */
+    .to(wrap, {
+      scale: 0,
+      duration: 0.85,
+      ease: 'expo.in',
+    }, '-=0.05')
+
+    /* ── Phase 4: exit ── */
+    .to(root, {
+      opacity: 0,
+      duration: 0.5,
+      ease: 'power2.inOut',
+      onComplete() {
+        root.style.display = 'none';
+        if (onComplete) onComplete();
       },
     });
 
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        gsap.globalTimeline.resume();
-      }
+    /* tab visibility guard */
+    const onVisibility = () => {
+      if (document.visibilityState === 'visible') gsap.globalTimeline.resume();
     };
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+    document.addEventListener('visibilitychange', onVisibility);
 
     return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-      if (tweenRef.current) tweenRef.current.kill();
+      document.removeEventListener('visibilitychange', onVisibility);
+      if (tlRef.current) tlRef.current.kill();
     };
   }, []);
 
   return (
-    <div
-      id="preloader"
-      ref={preloaderRef}
-      style={{
-        height: '100vh',
-        width: '100vw',
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        zIndex: 99999999,
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        background: '#000',
-        padding: '0 10px',
-      }}
-    >
-      <div
-        className="container preloader-container"
-        style={{
-          width: '50vw',
-          height: '50vw',
-          maxWidth: '200px',
-          maxHeight: '200px',
-          position: 'relative',
-        }}
-      >
-        <svg
-          width="100%"
-          height="100%"
-          viewBox="0 0 200 200"
-          style={{ position: 'absolute', top: 0, left: 0 }}
-        >
-          <circle
-            cx="100"
-            cy="100"
-            r="90"
-            fill="none"
-            stroke="#fff"
-            strokeWidth="4"
-            strokeDasharray={2 * Math.PI * 90}
-            strokeDashoffset={2 * Math.PI * 90}
-            ref={circleRef}
+    <div className="preloader" ref={rootRef}>
+      {/* image + zoom wrapper */}
+      <div className="preloader__wrap" ref={wrapRef}>
+
+        {/* clip mask — driven by GSAP clipPath */}
+        <div className="preloader__mask" ref={maskRef}>
+          <img
+            className="preloader__logo"
+            src={imageUrl}
+            alt=""
+            draggable={false}
           />
-        </svg>
-        <div
-          ref={liquidRef}
-          style={{
-            width: '50%',
-            height: '50%',
-            background: `url("https://ik.imagekit.io/ylx9qggcp/download%20(1).png") no-repeat center center`,
-            backgroundSize: 'contain',
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            clipPath: 'inset(100% 0 0 0)',
-          }}
-        />
-      </div>
-      <div
-        ref={percentageRef}
-        style={{
-          marginTop: '20px',
-          color: '#fff',
-          fontSize: '2rem',
-        }}
-      >
-        0%
+        </div>
+
+        {/* percentage */}
+        <span className="preloader__pct" ref={pctRef}>000%</span>
       </div>
     </div>
   );
