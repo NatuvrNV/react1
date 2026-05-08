@@ -10,6 +10,10 @@ import './Preloader.css';
  * Phase 3 — Image zooms out (scale → 0) with expo.in easing
  * Phase 4 — Preloader fades away, page content fades in
  *
+ * Puppeteer / SSR:
+ *   Set  window.__SKIP_PRELOADER__ = true  before React mounts
+ *   and the component instantly calls onComplete without rendering.
+ *
  * Props
  *   imageUrl   {string}   logo/image to reveal
  *   duration   {number}   reveal duration in seconds (default 2.6)
@@ -20,29 +24,41 @@ const Preloader = ({
   duration   = 2.6,
   onComplete,
 }) => {
-  const rootRef   = useRef(null);
-  const wrapRef   = useRef(null);
-  const maskRef   = useRef(null);
-  const pctRef    = useRef(null);
-  const tlRef     = useRef(null);
+  const rootRef = useRef(null);
+  const wrapRef = useRef(null);
+  const maskRef = useRef(null);
+  const pctRef  = useRef(null);
+  const tlRef   = useRef(null);
 
   useEffect(() => {
-    const root = rootRef.current;
-    const wrap = wrapRef.current;
-    const mask = maskRef.current;
+    /* ── Skip entirely during Puppeteer prerender ── */
+    if (typeof window !== 'undefined' && window.__SKIP_PRELOADER__) {
+      if (rootRef.current) rootRef.current.style.display = 'none';
+      if (onComplete) onComplete();
+      return;
+    }
+
+    const root  = rootRef.current;
+    const wrap  = wrapRef.current;
+    const mask  = maskRef.current;
     const pctEl = pctRef.current;
 
     /* ── reset ── */
-    gsap.set(root, { display: 'flex', opacity: 1 });
-    gsap.set(wrap, { scale: 1, opacity: 1 });
-    gsap.set(mask, { clipPath: 'inset(100% 0 0 0)' });
+    gsap.set(root,  { display: 'flex', opacity: 1 });
+    gsap.set(wrap,  { scale: 1, opacity: 1 });
+    gsap.set(mask,  { clipPath: 'inset(100% 0 0 0)' });
     gsap.set(pctEl, { opacity: 1, y: 0 });
     pctEl.textContent = '000%';
 
+    /* ── Smooth start: GSAP won't lag-jump if tab was in background ── */
     gsap.ticker.lagSmoothing(0);
 
     const obj = { v: 0 };
-    const tl  = gsap.timeline();
+    const tl  = gsap.timeline({
+      /* If the document was hidden on mount (e.g. background tab),
+         pause until it becomes visible so the counter starts cleanly */
+      paused: document.visibilityState !== 'visible',
+    });
     tlRef.current = tl;
 
     /* ── Phase 1: reveal + counter ── */
@@ -86,11 +102,18 @@ const Preloader = ({
       },
     });
 
-    /* tab visibility guard */
+    /* Resume timeline when tab becomes visible */
     const onVisibility = () => {
-      if (document.visibilityState === 'visible') gsap.globalTimeline.resume();
+      if (document.visibilityState === 'visible') {
+        tl.resume();
+      } else {
+        tl.pause();
+      }
     };
     document.addEventListener('visibilitychange', onVisibility);
+
+    /* If tab is already visible, play immediately */
+    if (document.visibilityState === 'visible') tl.resume();
 
     return () => {
       document.removeEventListener('visibilitychange', onVisibility);
@@ -98,12 +121,14 @@ const Preloader = ({
     };
   }, []);
 
+  /* Don't render DOM at all during Puppeteer prerender */
+  if (typeof window !== 'undefined' && window.__SKIP_PRELOADER__) {
+    return null;
+  }
+
   return (
     <div className="preloader" ref={rootRef}>
-      {/* image + zoom wrapper */}
       <div className="preloader__wrap" ref={wrapRef}>
-
-        {/* clip mask — driven by GSAP clipPath */}
         <div className="preloader__mask" ref={maskRef}>
           <img
             className="preloader__logo"
@@ -112,8 +137,6 @@ const Preloader = ({
             draggable={false}
           />
         </div>
-
-        {/* percentage */}
         <span className="preloader__pct" ref={pctRef}>000%</span>
       </div>
     </div>

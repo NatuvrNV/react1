@@ -5,13 +5,14 @@ require('@babel/register')({
 });
 
 const puppeteer = require('puppeteer');
-const fs = require('fs');
-const path = require('path');
-const http = require('http');
+const fs        = require('fs');
+const path      = require('path');
+const http      = require('http');
 
-const { SingleBlogDetail } = require('./src/pages/Blog/BlogConstants');
-const { SingleprojectDetail, SingleProductDetail } = require('./src/utils/constants');
+const { SingleBlogDetail }                          = require('./src/pages/Blog/BlogConstants');
+const { SingleprojectDetail, SingleProductDetail }  = require('./src/utils/constants');
 
+/* ─── slug helpers ─────────────────────────────────────────── */
 const getUrlFriendlyString = (str) =>
   str
     .toLowerCase()
@@ -20,6 +21,7 @@ const getUrlFriendlyString = (str) =>
     .replace(/-+/g, '-')
     .trim();
 
+/* ─── page lists ───────────────────────────────────────────── */
 const staticPages = [
   '/',
   '/about',
@@ -39,7 +41,6 @@ const blogPages = SingleBlogDetail.map((blog) => {
   return `/blog/${slug}`;
 });
 
-// ✅ Projects — item.url directly use karo
 const projectPages = SingleprojectDetail.map((project) => {
   const slug = project.url
     ? getUrlFriendlyString(project.url)
@@ -47,7 +48,6 @@ const projectPages = SingleprojectDetail.map((project) => {
   return `/all-projects/${slug}`;
 });
 
-// ✅ Products — item.name.toLowerCase() use karo (SingleProduct.js: item.name.toLowerCase() === productName)
 const productPages = SingleProductDetail.map((product) => {
   const slug = product.name.toLowerCase();
   return `/all-products/${slug}`;
@@ -55,16 +55,14 @@ const productPages = SingleProductDetail.map((product) => {
 
 const allPages = [...staticPages, ...blogPages, ...projectPages, ...productPages];
 
+/* ─── static file server ───────────────────────────────────── */
 function startServer() {
   return new Promise((resolve) => {
     const buildDir = path.join(__dirname, 'build');
 
     const server = http.createServer((req, res) => {
       let urlPath = decodeURIComponent(req.url.split('?')[0]);
-
-      if (urlPath !== '/' && urlPath.endsWith('/')) {
-        urlPath = urlPath.slice(0, -1);
-      }
+      if (urlPath !== '/' && urlPath.endsWith('/')) urlPath = urlPath.slice(0, -1);
 
       const candidates = [
         path.join(buildDir, urlPath),
@@ -74,31 +72,30 @@ function startServer() {
       ];
 
       const mimeTypes = {
-        '.html': 'text/html',
-        '.js':   'application/javascript',
-        '.css':  'text/css',
-        '.json': 'application/json',
-        '.png':  'image/png',
-        '.jpg':  'image/jpeg',
-        '.webp': 'image/webp',
-        '.svg':  'image/svg+xml',
-        '.ico':  'image/x-icon',
-        '.woff2':'font/woff2',
-        '.woff': 'font/woff',
-        '.ttf':  'font/ttf',
+        '.html' : 'text/html',
+        '.js'   : 'application/javascript',
+        '.css'  : 'text/css',
+        '.json' : 'application/json',
+        '.png'  : 'image/png',
+        '.jpg'  : 'image/jpeg',
+        '.webp' : 'image/webp',
+        '.svg'  : 'image/svg+xml',
+        '.ico'  : 'image/x-icon',
+        '.woff2': 'font/woff2',
+        '.woff' : 'font/woff',
+        '.ttf'  : 'font/ttf',
       };
 
       for (const filePath of candidates) {
         try {
           const stat = fs.statSync(filePath);
           if (stat.isFile()) {
-            const ext = path.extname(filePath);
-            const mime = mimeTypes[ext] || 'application/octet-stream';
+            const mime = mimeTypes[path.extname(filePath)] || 'application/octet-stream';
             res.writeHead(200, { 'Content-Type': mime });
             fs.createReadStream(filePath).pipe(res);
             return;
           }
-        } catch (e) {}
+        } catch (_) {}
       }
 
       res.writeHead(404);
@@ -117,6 +114,7 @@ function startServer() {
   });
 }
 
+/* ─── prerender ────────────────────────────────────────────── */
 async function prerender() {
   console.log(`\n📋 Pages breakdown:`);
   console.log(`   Static  : ${staticPages.length}`);
@@ -140,23 +138,36 @@ async function prerender() {
   });
 
   let success = 0;
-  let failed = 0;
+  let failed  = 0;
 
   for (const page of allPages) {
     try {
       const tab = await browser.newPage();
 
-      tab.on('console', () => {});
+      tab.on('console',   () => {});
       tab.on('pageerror', () => {});
+
+      /* ── KEY FIX ──────────────────────────────────────────────────
+         Inject window.__SKIP_PRELOADER__ = true BEFORE any script
+         runs. Puppeteer evaluateOnNewDocument fires before the page
+         JS executes, so React sees the flag on first render and the
+         Preloader component immediately hides itself / calls
+         onComplete — no animation delay, no stuck percentage.
+      ─────────────────────────────────────────────────────────────── */
+      await tab.evaluateOnNewDocument(() => {
+        window.__SKIP_PRELOADER__ = true;
+      });
 
       await tab.goto(`http://127.0.0.1:45678${page}`, {
         waitUntil: 'networkidle0',
         timeout: 30000,
       });
 
+      /* Wait for root to have actual content */
       await tab.waitForFunction(
-        () => document.getElementById('root') &&
-              document.getElementById('root').children.length > 0,
+        () =>
+          document.getElementById('root') &&
+          document.getElementById('root').children.length > 0,
         { timeout: 10000 }
       );
 
