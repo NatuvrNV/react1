@@ -9,10 +9,10 @@ const fs        = require('fs');
 const path      = require('path');
 const http      = require('http');
 
-const { SingleBlogDetail }                          = require('./src/pages/Blog/BlogConstants');
-const { SingleprojectDetail, SingleProductDetail }  = require('./src/utils/constants');
+const { SingleBlogDetail }                         = require('./src/pages/Blog/BlogConstants');
+const { SingleprojectDetail, SingleProductDetail } = require('./src/utils/constants');
 
-/* ─── slug helpers ─────────────────────────────────────────── */
+/* ─── slug helpers ───────────────────────────────────────── */
 const getUrlFriendlyString = (str) =>
   str
     .toLowerCase()
@@ -21,7 +21,7 @@ const getUrlFriendlyString = (str) =>
     .replace(/-+/g, '-')
     .trim();
 
-/* ─── page lists ───────────────────────────────────────────── */
+/* ─── page lists ─────────────────────────────────────────── */
 const staticPages = [
   '/',
   '/about',
@@ -55,7 +55,7 @@ const productPages = SingleProductDetail.map((product) => {
 
 const allPages = [...staticPages, ...blogPages, ...projectPages, ...productPages];
 
-/* ─── static file server ───────────────────────────────────── */
+/* ─── static file server ─────────────────────────────────── */
 function startServer() {
   return new Promise((resolve) => {
     const buildDir = path.join(__dirname, 'build');
@@ -114,7 +114,7 @@ function startServer() {
   });
 }
 
-/* ─── prerender ────────────────────────────────────────────── */
+/* ─── prerender ──────────────────────────────────────────── */
 async function prerender() {
   console.log(`\n📋 Pages breakdown:`);
   console.log(`   Static  : ${staticPages.length}`);
@@ -147,12 +147,10 @@ async function prerender() {
       tab.on('console',   () => {});
       tab.on('pageerror', () => {});
 
-      /* ── KEY FIX ──────────────────────────────────────────────────
-         Inject window.__SKIP_PRELOADER__ = true BEFORE any script
-         runs. Puppeteer evaluateOnNewDocument fires before the page
-         JS executes, so React sees the flag on first render and the
-         Preloader component immediately hides itself / calls
-         onComplete — no animation delay, no stuck percentage.
+      /* ── KEY: inject BEFORE any script runs ──────────────────────
+         window.__SKIP_PRELOADER__ = true  →  Preloader returns null
+         immediately, so no black-screen hold, no animation, no delay.
+         Puppeteer gets a clean snapshot of the actual page content.
       ─────────────────────────────────────────────────────────────── */
       await tab.evaluateOnNewDocument(() => {
         window.__SKIP_PRELOADER__ = true;
@@ -163,7 +161,7 @@ async function prerender() {
         timeout: 30000,
       });
 
-      /* Wait for root to have actual content */
+      /* Wait for #root to have actual children (page rendered) */
       await tab.waitForFunction(
         () =>
           document.getElementById('root') &&

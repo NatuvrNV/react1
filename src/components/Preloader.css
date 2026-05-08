@@ -25,6 +25,16 @@
   font-family: 'Degular Display', Georgia, serif;
 }
 
+/* ── Stage — fades in after black hold ───────
+   GSAP animates opacity on this element      */
+.preloader__stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;          /* starts invisible — GSAP fades it in */
+  will-change: opacity;
+}
+
 /* ── Image + zoom wrapper ─────────────────── */
 /*   GSAP animates scale on this element      */
 .preloader__wrap {
@@ -54,6 +64,7 @@
   user-select: none;
   pointer-events: none;
 
+  /* white-on-dark default — remove if your image has its own colour */
 
 }
 
@@ -64,7 +75,7 @@
   left: 50%;
   transform: translateX(-50%);
 
-  font-family: "Degular Display", sans-serif;
+  font-family: 'Degular Display', Georgia, serif;
   font-size: clamp(0.85rem, 1.8vw, 1.05rem);
   font-weight: 400;
   letter-spacing: 0.28em;
