@@ -6936,19 +6936,19 @@ With 15–35 year coating warranties, they offer long-term durability with minim
 
     images: [
 
-        {
-        path: "assets/Blogs/Best-Exterior/In-House-Fabrication.jpg",
-        alt: ""
-      },
-     
-       {
+         {
         
         path: "assets/Blogs/Best-Exterior/banner.jpg",
         alt: " "
       },
+
+        {
+        path: "assets/Blogs/Best-Exterior/What-Happens-After-the-Handover.jpg",
+        alt: ""
+      },
         {
        
-        path: "assets/Blogs/Best-Exterior/The-Design-Journey.jpg",
+        path: "assets/Blogs/Best-Exterior/Why-Timing-the-Unveiling-Matters.jpg",
         alt: ""
       },
       
@@ -7049,7 +7049,7 @@ With 15–35 year coating warranties, they offer long-term durability with minim
     description:
       "When the creative director of a French luxury maison walks past their new Mumbai flagship and sees the facade catching ",
 
-    folderName: "Best-Exterior",
+    folderName: "From-Louis-Vuitton",
 
 
               schema: `
@@ -7091,22 +7091,24 @@ With 15–35 year coating warranties, they offer long-term durability with minim
 
     images: [
 
+        {
+        
+        path: "assets/Blogs/From-Louis-Vuitton/banner.jpg",
+        alt: " "
+      },
+
        {
        
-        path: "assets/Blogs/Best-Exterior/The-Design-Journey.jpg",
+        path: "assets/Blogs/From-Louis-Vuitton/When-Your-Neighbour-Bungalow.jpg",
         alt: ""
       },
 
         {
-        path: "assets/Blogs/Best-Exterior/In-House-Fabrication.jpg",
+        path: "assets/Blogs/From-Louis-Vuitton/The-Jaipur-Moment.jpg",
         alt: ""
       },
      
-       {
-        
-        path: "assets/Blogs/Best-Exterior/banner.jpg",
-        alt: " "
-      },
+     
        
       
   
@@ -7263,7 +7265,7 @@ What emerged from this adaptation wasn't Indian-ised luxury - a term that often 
     description:
       "The architect's hand moved across the trace paper in one fluid gesture - a sweeping curve that seemed to defy gravity, a building elevation ",
 
-    folderName: "Best-Exterior",
+    folderName: "From-Sketch-to-Shimmer",
 
           schema: `
       {
@@ -7327,19 +7329,19 @@ What emerged from this adaptation wasn't Indian-ised luxury - a term that often 
 
            {
         
-        path: "assets/Blogs/Best-Exterior/banner.jpg",
+        path: "assets/Blogs/From-Sketch-to-Shimmer/banner.jpg",
         alt: " "
       },
 
         {
-        path: "assets/Blogs/Best-Exterior/In-House-Fabrication.jpg",
+        path: "assets/Blogs/From-Sketch-to-Shimmer/Month-4-8-Engineering-the-Poetry.jpg",
         alt: ""
       },
      
   
         {
        
-        path: "assets/Blogs/Best-Exterior/The-Design-Journey.jpg",
+        path: "assets/Blogs/From-Sketch-to-Shimmer/What-Makes-This-Journey-Different.jpg",
         alt: ""
       },
       
@@ -7479,7 +7481,7 @@ What emerged from this adaptation wasn't Indian-ised luxury - a term that often 
     description:
       "The sticker price of a parametric metal facade rarely tells the full financial story",
 
-folderName: "Custom-Facade",
+folderName: "The-Hidden-Cost",
 
       schema: `
       {
@@ -7542,19 +7544,20 @@ folderName: "Custom-Facade",
 
     images: [
       
-     
-         {
-        path: "assets/Blogs/Custom-Facade/What-Premium-Pricing.jpg",
-        alt: ""
-      },
-       {
+        {
         
-        path: "assets/Blogs/Custom-Facade/banner.jpg",
+        path: "assets/Blogs/The-Hidden-Cost/banner.jpg",
         alt: " "
       },
-      
+     
+         {
+        path: "assets/Blogs/The-Hidden-Cost/What-the-2-Crore-Number.jpg",
+        alt: ""
+      },
+     
+    
         {
-        path: "assets/Blogs/Custom-Facade/In-House-Parametric.jpg",
+        path: "assets/Blogs/The-Hidden-Cost/The-Invisible-Return-What.jpg",
         alt: ""
       },
 
@@ -7727,7 +7730,7 @@ folderName: "Custom-Facade",
     description:
       "The WhatsApp message arrives at 11:47 PM. It's a photograph - shot on an iPhone 15 Pro Max,",
 
-folderName: "Custom-Facade",
+folderName: "Griha-Parvesh",
 
       schema: `
       {
@@ -7792,20 +7795,21 @@ folderName: "Custom-Facade",
     
 
     images: [
+
+         {
+        
+        path: "assets/Blogs/Griha-Parvesh/banner.jpg",
+        alt: " "
+      },
         {
        
-        path: "assets/Blogs/Custom-Facade/Making-the-Decision.jpg",
+        path: "assets/Blogs/Griha-Parvesh/The-Unrepeatable-First-Impression.jpg",
         alt: ""
       },
      
-       {
-        
-        path: "assets/Blogs/Custom-Facade/banner.jpg",
-        alt: " "
-      },
-      
-        {
-        path: "assets/Blogs/Custom-Facade/What-₹10-Crore.jpg",
+    
+          {
+        path: "assets/Blogs/Griha-Parvesh/What-2-Crore-Actually-Buys-You.jpg",
         alt: ""
       },
   
@@ -8019,14 +8023,14 @@ folderName: "Custom-Facade",
       },
 
         {
-        path: "assets/Blogs/The-Homeowner-Who/At-a-Time.jpg",
+        path: "assets/Blogs/The-Homeowner-Who/The-10-Crore-Conversation.jpg",
         alt: ""
       },
      
   
         {
        
-        path: "assets/Blogs/The-Homeowner-Who/Why-This-Matters.jpg",
+        path: "assets/Blogs/The-Homeowner-Who/What-Rajiv-Decision-Reveals-About-India.jpg",
         alt: ""
       },
       
@@ -8256,14 +8260,14 @@ folderName: "Custom-Facade",
       },
 
         {
-        path: "assets/Blogs/The-Wedding-Season/Social-Proof.jpg",
+        path: "assets/Blogs/The-Wedding-Season/Social-Proof-Rendered-in-Metal.jpg",
         alt: ""
       },
      
   
         {
        
-        path: "assets/Blogs/The-Wedding-Season/The-Parametric-Advantage.jpg",
+        path: "assets/Blogs/The-Wedding-Season/The-Parametric-Advantage-Why-Metal-Facades.jpg",
         alt: ""
       },
       
