@@ -1,0 +1,107 @@
+
+
+/* Section */
+.logo-slider {
+  width: 100%;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #252525 0%, #000000 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Heading */
+.client-heading {
+  font-family: 'Degular Display', sans-serif;
+  font-size: 64px;
+  color: #fff;
+  margin-bottom: 60px;
+  
+}
+
+/* Logo container (FIXED HEIGHT) */
+.logo-item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo image */
+.logo-item img {
+  max-height: 80px;
+  max-width: 180px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.logo-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Gradient fade (left/right) */
+.logo-slider::before,
+.logo-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logo-slider::before {
+  left: 0;
+  background: linear-gradient(180deg, #252525 0%, #000000 100%);
+  
+}
+
+.logo-slider::after {
+  right: 0;
+  background: linear-gradient(180deg, #252525 0%, #000000 100%);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .client-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .client-heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .logo-item {
+    height: 60px;
+  }
+
+  .logo-item img {
+    max-height: 40px;
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-heading {
+            display: block;
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+  }
+
+  .logo-slider {
+    padding: 40px 10px;
+  }
+}
