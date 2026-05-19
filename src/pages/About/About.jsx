@@ -18,14 +18,14 @@ export const About = () => {
   return (
     <>
          <Helmet>
-              <title>About Metaguise | Experts in Metal Facade Design </title>
-              <meta name="description" content="Metaguise creates custom metal facade designs and claddings that bring modern structures to life." />
+              <title>About Metaguise | India's Metal Facade Pioneers </title>
+              <meta name="description" content="Metaguise is India's premier parametric metal facade company with 1800+ completed projects. Trusted by architects nationwide for innovative, durable cladding." />
               <meta name="keywords" content="home, react, SEO, web development" />
               <meta name="author" content="Your Name" />
-              <meta property="og:title" content="About Metaguise | Experts in Metal Facade Design " />
-              <meta property="og:description" content="Metaguise creates custom metal facade designs and claddings that bring modern structures to life." />
+              <meta property="og:title" content="About Metaguise | Pioneers in Metal Facade Design " />
+              <meta property="og:description" content="India's first parametric facade company. 1800+ projects, PAN India presence, and a growing global footprint. Know the team behind the facades." />
               <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
-              <meta property="og:url" content="https://metaguise.com/" />
+              <meta property="og:url" content="https://metaguise.com/about" />
               <meta name="robots" content="index, follow" />
               <link rel="canonical" href="https://metaguise.com/about" />
             </Helmet>

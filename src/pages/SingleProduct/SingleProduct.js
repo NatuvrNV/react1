@@ -10,33 +10,10 @@ import { Helmet } from "react-helmet-async";
 import { FaPlay } from "react-icons/fa";
 
 const SingleProduct = () => {
-  const imageGridRef = useRef(null);
-
-  const handleImageClick = (index) => {
-    setClickedIndex(clickedIndex === index ? null : index);
-
-    // Scroll entire page to top
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-
-    // Optional: Also prevent #products-grid from overriding the scroll
-    document.getElementById("product-grid")?.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
   const navigate = useNavigate();
-
   const { productName } = useParams();
-  const selectedProduct = SingleProductDetail.find(
-    (item) => item.name.toLowerCase() === productName
-  );
-
+  
+  // ✅ ALL HOOKS MUST BE CALLED BEFORE ANY CONDITIONAL RETURN
   const [clickedIndex, setClickedIndex] = useState(null);
   const [contentToRender, setContentToRender] = useState([]);
   const gridRef = useRef(null);
@@ -45,23 +22,68 @@ const SingleProduct = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [showElementsDropdown, setShowElementsDropdown] = useState(false);
   const [activeButton, setActiveButton] = useState(null);
+  const imageGridRef = useRef(null);
+
+  // Find selected product
+  const selectedProduct = SingleProductDetail.find(
+    (item) => item.name.toLowerCase() === productName
+  );
+
+  // Generate product-specific meta keywords
+  const generateMetaKeywords = () => {
+    const baseKeywords = [
+      "metal facade",
+      "metal cladding",
+      "architectural metal",
+      "parametric facade",
+      "Metaguise",
+    ];
+    
+    const productSpecificKeywords = selectedProduct?.metaKeywords || [
+      selectedProduct?.Productname,
+      `${selectedProduct?.Productname} metal facade`,
+      `${selectedProduct?.Productname} cladding`,
+      `${selectedProduct?.Productname} design`,
+      "custom metal facade",
+      "premium metal facade",
+      "modern building facade",
+      "architectural metal products",
+      "facade design India",
+      "metal facade manufacturer",
+    ];
+    
+    return [...baseKeywords, ...productSpecificKeywords].join(", ");
+  };
+
+  // Get product image for OG tag (first image from product images)
+  const getProductOgImage = () => {
+    if (selectedProduct?.images && selectedProduct.images.length > 0) {
+      return `https://metaguise.com/${selectedProduct.images[0]}`;
+    }
+    return "https://metaguise.com/default-product-image.jpg";
+  };
+
+  const handleImageClick = (index) => {
+    setClickedIndex(clickedIndex === index ? null : index);
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+
+    document.getElementById("product-grid")?.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   const handleButtonClick = (index) => {
     setActiveButton(activeButton === index ? null : index);
   };
 
-  const categories = Array.from(
-    new Set(
-      selectedProduct.images
-        .map((item) =>
-          item.split("/")[4] !== "night"
-            ? item.split("/")[4].toLowerCase()
-            : null
-        )
-        .filter((item) => item)
-    )
-  );
-
+  // ✅ Move ALL useEffect hooks before conditional return
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (gridRef.current && !gridRef.current.contains(event.target)) {
@@ -75,6 +97,59 @@ const SingleProduct = () => {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [gridRef]);
+
+  useEffect(() => {
+    const nightImages = selectedProduct?.images?.filter(
+      (item) => item.split("/")[4] === "night"
+    ) || [];
+
+    if (darkMode && nightImages.length === 0) {
+      setContentToRender([]);
+    } else {
+      setContentToRender(darkMode ? nightImages : selectedProduct?.images || []);
+    }
+  }, [darkMode, selectedProduct]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // ✅ Now the conditional return (after all hooks)
+  if (!selectedProduct) {
+    return (
+      <div className="container main-container">
+        <div className="row">
+          <div className="col-12 text-center py-5">
+            <h2>Product not found</h2>
+            <button 
+              onClick={() => navigate("/all-products")} 
+              className="back-button mt-3"
+            >
+              <span className="arrow">&larr; Back to Products</span>
+            </button>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  const categories = Array.from(
+    new Set(
+      selectedProduct.images
+        .map((item) =>
+          item.split("/")[4] !== "night"
+            ? item.split("/")[4].toLowerCase()
+            : null
+        )
+        .filter((item) => item)
+    )
+  );
 
   const isLastRow = (index) => {
     return (
@@ -90,18 +165,6 @@ const SingleProduct = () => {
     setDarkMode(!darkMode);
   };
 
-  useEffect(() => {
-    const nightImages = selectedProduct.images.filter(
-      (item) => item.split("/")[4] === "night"
-    );
-
-    if (darkMode && nightImages.length === 0) {
-      setContentToRender([]);
-    } else {
-      setContentToRender(darkMode ? nightImages : selectedProduct.images);
-    }
-  }, [darkMode, selectedProduct.images]);
-
   const filterImagesByCategory = (category) => {
     setSelectedCategory(category);
   };
@@ -110,42 +173,15 @@ const SingleProduct = () => {
     ? contentToRender.filter((img) => img.includes(selectedCategory))
     : contentToRender;
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return (
-    <div className="container main-container">
-      <Helmet>
-        <title>
-           {selectedProduct.metatittles}
-        </title>
-        <meta name="description" content={selectedProduct.metadescription} />
-        <meta property="og:title" content={selectedProduct.metatittles} />
-        <meta
-          property="og:description"
-          content={selectedProduct.metadescription}
-        />
-        <link
-          rel="canonical"
-          href={`https://metaguise.com/all-products/${productName}`}
-        />
-
-       {/* ✅ PRODUCT SCHEMA FOR AI + GOOGLE */}
-<script type="application/ld+json">
-  {JSON.stringify({
+  // Product-specific Schema
+  const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: selectedProduct.Productname,
-    description: selectedProduct.metadescription,
+    description: selectedProduct.metadescription || selectedProduct.description,
     url: `https://metaguise.com/all-products/${productName}`,
     image: selectedProduct.images?.map(
-      (img) => `https://metaguise.com/${img}`  // ✅ window.location.origin remove kiya
+      (img) => `https://metaguise.com/${img}`
     ),
     brand: {
       "@type": "Brand",
@@ -156,7 +192,6 @@ const SingleProduct = () => {
       name: "Metaguise",
       url: "https://metaguise.com",
     },
-    // ✅ Yeh add karo
     offers: {
       "@type": "Offer",
       url: `https://metaguise.com/all-products/${productName}`,
@@ -171,9 +206,46 @@ const SingleProduct = () => {
     category: "Architectural Metal Products",
     material: selectedProduct.materials || "Metal",
     inLanguage: "en-IN",
-  })}
-</script>
+  };
+
+  return (
+    <div className="container main-container">
+      <Helmet>
+        {/* Basic Meta Tags */}
+        <title>{selectedProduct.metatittles || `${selectedProduct.Productname} | Metaguise`}</title>
+        <meta name="description" content={selectedProduct.metadescription || selectedProduct.description} />
+        <meta name="keywords" content={generateMetaKeywords()} />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={`https://metaguise.com/all-products/${productName}`} />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content={selectedProduct.ogTitle || selectedProduct.metatittles || `${selectedProduct.Productname} | Premium Metal Facade Solution`} />
+        <meta property="og:description" content={selectedProduct.ogDescription || selectedProduct.metadescription || selectedProduct.description} />
+        <meta property="og:image" content={selectedProduct.ogImage || getProductOgImage()} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`${selectedProduct.Productname} metal facade design by Metaguise`} />
+        <meta property="og:url" content={`https://metaguise.com/all-products/${productName}`} />
+        <meta property="og:site_name" content="Metaguise" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="product:brand" content="Metaguise" />
+        <meta property="product:category" content="Architectural Metal Facade" />
+        <meta property="product:availability" content="in stock" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={selectedProduct.twitterTitle || selectedProduct.metatittles || `${selectedProduct.Productname} | Metaguise`} />
+        <meta name="twitter:description" content={selectedProduct.twitterDescription || selectedProduct.metadescription || selectedProduct.description} />
+        <meta name="twitter:image" content={selectedProduct.twitterImage || selectedProduct.ogImage || getProductOgImage()} />
+        <meta name="twitter:url" content={`https://metaguise.com/all-products/${productName}`} />
+
+        {/* Product Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(productSchema)}
+        </script>
       </Helmet>
+      
       <div className="row">
         <div className="col-12">
           <BackButton navigate={navigate} />
@@ -185,7 +257,7 @@ const SingleProduct = () => {
               filterImagesByCategory={filterImagesByCategory}
               categories={categories}
               setDarkMode={setDarkMode}
-              selectedCategory={selectedCategory} // Pass this prop
+              selectedCategory={selectedCategory}
             />
           )}
         </div>
@@ -196,7 +268,7 @@ const SingleProduct = () => {
             isLastRow={isLastRow}
             clickedIndex={clickedIndex}
             ref={imageGridRef}
-            videoLink={selectedProduct.videoLink} // Add this line
+            videoLink={selectedProduct.videoLink}
           />
         </div>
         <Sidebar
@@ -218,6 +290,7 @@ const SingleProduct = () => {
   );
 };
 
+// Rest of your components remain exactly the same...
 const BackButton = ({ navigate }) => {
   return (
     <button onClick={() => navigate("/all-products")} className="back-button">
@@ -244,7 +317,7 @@ const MobileControls = ({
           filterImagesByCategory={filterImagesByCategory}
           categories={categories}
           selectedCategory={selectedCategory}
-          selectedProduct={selectedProduct} // Pass selectedProduct as a prop
+          selectedProduct={selectedProduct}
         />
 
         <SocialIcons
@@ -403,7 +476,7 @@ const ImageGrid = ({
           {videoLink && (
             <VideoItem
               videoUrl={videoLink}
-              index={0} // Position before first image
+              index={0}
               handleImageClick={handleImageClick}
               clickedIndex={clickedIndex}
             />
@@ -411,9 +484,9 @@ const ImageGrid = ({
 
           {filteredImages.map((image, index) => (
             <Image
-              key={index + 1} // Avoid duplicate keys
+              key={index + 1}
               image={image}
-              index={index + 1} // Shift index forward
+              index={index + 1}
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
               clickedIndex={clickedIndex}
@@ -426,7 +499,6 @@ const ImageGrid = ({
 };
 
 const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
-  // Extract Video ID from YouTube Link
   const getVideoId = (url) => {
     if (url.includes("shorts/")) {
       return url.split("/shorts/")[1]?.split("?")[0];

@@ -142,16 +142,17 @@ function Home() {
   return (
     <div className='Home'>
       <Helmet>
-        <title>Metaguise | India's Leading Experts in Luxury Metal Facades</title>
+        <title>Metaguise | India's Leading Metal Facade Experts </title>
 
-        <meta name="description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India." />
+        <meta name="description" content="India's leading metal facade company. 1800+ projects delivered PAN India. Parametric, aluminium & custom facade cladding for architects and builders." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://metaguise.com/" />
         <link rel="icon" href="https://metaguise.com/favicon.ico" />
+                <meta name="keywords" content="metal facade India, aluminium cladding, parametric facade, facade cladding company India, Metaguise" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Metaguise | India's Leading Experts in Luxury Metal Facades" />
-        <meta property="og:description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India." />
+        <meta property="og:title" content="Metaguise | Metal Facade & Cladding Solutions India " />
+        <meta property="og:description" content="India's most trusted metal facade company. Explore 21+ innovative cladding systems — from parametric to solid panels. 1800+ projects PAN India." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://metaguise.com/" />
         <meta property="og:site_name" content="Metaguise" />
