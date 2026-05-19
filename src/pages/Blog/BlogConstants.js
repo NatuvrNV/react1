@@ -12599,7 +12599,7 @@ Metaguise's design consultation process helps every homeowner and architect make
     description:
       "Noida has completed its transformation from an affordable NCR satellite into a serious luxury residential destination ",
 
-    folderName: "Noida-Luxury-Home-Facade",
+    folderName: "Farmhouse-Exterior-Design",
 
 
     
@@ -12608,17 +12608,17 @@ Metaguise's design consultation process helps every homeowner and architect make
 
            {
         
-        path: "assets/Blogs/Noida-Luxury-Home-Facade/banner.jpg",
+        path: "assets/Blogs/Farmhouse-Exterior-Design/banner.jpg",
         alt: " "
       },
 
         {
-        path: "assets/Blogs/Noida-Luxury-Home-Facade/Best-Facade-Materials-for-Noida.jpg",
+        path: "assets/Blogs/Farmhouse-Exterior-Design/Metaguise-Farmhouse-Projects-Across.jpg",
         alt: ""
       },
 
         {
-        path: "assets/Blogs/Noida-Luxury-Home-Facade/Pricing-Timeline-and-How-to-Book-Your-Free-Noida-Site-Visit.jpg",
+        path: "assets/Blogs/Farmhouse-Exterior-Design/Weathering-Steel-Corten-for-Farmhouses.jpg",
         alt: ""
       },
      
