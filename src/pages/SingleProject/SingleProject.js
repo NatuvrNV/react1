@@ -15,6 +15,7 @@ const SingleProject = () => {
   const navigate = useNavigate();
   const { projectName } = useParams();
   
+  // ✅ ALL HOOKS MUST BE CALLED BEFORE ANY CONDITIONAL RETURN
   const [clickedIndex, setClickedIndex] = useState(null);
   const [contentToRender, setContentToRender] = useState([]);
   const gridRef = useRef(null);
@@ -38,6 +39,54 @@ const SingleProject = () => {
 
   // Use the found project (either by URL or fallback)
   const project = selectedProject || fallbackProject;
+
+  // Generate project-specific meta keywords
+  const generateMetaKeywords = () => {
+    const baseKeywords = [
+      "metal facade",
+      "metal cladding",
+      "architectural metal",
+      "parametric facade",
+      "Metaguise",
+      "facade project",
+      "architectural project"
+    ];
+    
+    const projectSpecificKeywords = project?.metaKeywords || [
+      project?.Projectname,
+      `${project?.Projectname} metal facade`,
+      `${project?.Projectname} architectural project`,
+      `${project?.Projectname} cladding design`,
+      "premium metal facade project",
+      "luxury facade design",
+      "architectural metal installation",
+      "facade project India",
+      "custom metal facade project",
+      "parametric architecture project"
+    ];
+    
+    return [...baseKeywords, ...projectSpecificKeywords].join(", ");
+  };
+
+  // Get project image for OG tag (first image from project images or cover image)
+  const getProjectOgImage = () => {
+    if (project?.images && project.images.length > 0) {
+      const firstImage = typeof project.images[0] === 'string' ? project.images[0] : project.images[0].src;
+      return `https://metaguise.com/${firstImage}`;
+    }
+    
+    // Try to find cover image
+    const normalizeName = (name) => name?.toLowerCase().replace(/[^a-z0-9]/gi, '') || '';
+    const coverImage = ProjectImages?.find(
+      (img) => normalizeName(img.imgPath).includes(normalizeName(project?.name))
+    );
+    
+    if (coverImage) {
+      return `https://metaguise.com/${coverImage.imgPath}`;
+    }
+    
+    return "https://metaguise.com/default-project-image.jpg";
+  };
 
   // Redirect to correct URL if using old format
   useEffect(() => {
@@ -148,56 +197,98 @@ const SingleProject = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // ✅ Now the conditional return (after all hooks)
   if (!project) {
-    return <div>Project not found</div>;
+    return (
+      <div className="container main-container">
+        <div className="row">
+          <div className="col-12 text-center py-5">
+            <h2>Project not found</h2>
+            <button 
+              onClick={() => navigate("/all-projects")} 
+              className="back-button mt-3"
+            >
+              <span className="arrow">&larr; Back to Projects</span>
+            </button>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
   }
+
+  // Project-specific Schema
+  const projectSchema = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": project.Projectname,
+    "url": `https://metaguise.com/all-projects/${project.url}`,
+    "description": project.metadescription || project.description || `Explore ${project.Projectname} - a stunning metal facade project by Metaguise`,
+    "image": project.images?.map(img => {
+      const src = typeof img === 'string' ? img : img.src;
+      return `https://metaguise.com/${src}`;
+    }),
+    "creator": {
+      "@type": "Organization",
+      "name": "Metaguise",
+      "url": "https://metaguise.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Metaguise",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/logo.png"
+      }
+    },
+    "keywords": project.tags || [
+      "metal facade",
+      "parametric architecture",
+      "architectural cladding",
+      "custom metal design"
+    ],
+    "inLanguage": "en-IN"
+  };
 
   return (
     <div className="container main-container">
       <Helmet>
-        <title>{project.metatittles}</title>
-        <meta name="description" content={project.metadescription} />
-        <meta property="og:title" content={project.metatittles}  />
-        <meta property="og:description" content={project.metadescription} />
-
+        {/* Basic Meta Tags */}
+        <title>{project.metatittles || `${project.Projectname} | Premium Metal Facade Project | Metaguise`}</title>
+        <meta name="description" content={project.metadescription || project.description || `Explore ${project.Projectname} - a stunning architectural metal facade project by Metaguise, India's leading facade specialist.`} />
+        <meta name="keywords" content={generateMetaKeywords()} />
+        <meta name="robots" content="index, follow" />
+        
         {/* Canonical URL using the url field */}
         <link rel="canonical" href={`https://metaguise.com/all-projects/${project.url}`} />
 
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={project.ogTitle || project.metatittles || `${project.Projectname} | Architectural Metal Facade Project | Metaguise`} />
+        <meta property="og:description" content={project.ogDescription || project.metadescription || project.description || `Discover ${project.Projectname} - a masterpiece of parametric metal facade design by Metaguise.`} />
+        <meta property="og:image" content={project.ogImage || getProjectOgImage()} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`${project.Projectname} - Metal facade architectural project by Metaguise`} />
+        <meta property="og:url" content={`https://metaguise.com/all-projects/${project.url}`} />
+        <meta property="og:site_name" content="Metaguise" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="article:published_time" content={project.date || "2024"} />
+        <meta property="article:author" content="Metaguise" />
+        <meta property="article:section" content="Architectural Projects" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={project.twitterTitle || project.metatittles || `${project.Projectname} | Metaguise Metal Facade Project`} />
+        <meta name="twitter:description" content={project.twitterDescription || project.metadescription || project.description || `Explore ${project.Projectname} - an exceptional metal facade project by Metaguise.`} />
+        <meta name="twitter:image" content={project.twitterImage || project.ogImage || getProjectOgImage()} />
+        <meta name="twitter:url" content={`https://metaguise.com/all-projects/${project.url}`} />
+        <meta name="twitter:site" content="@metaguise" />
+        <meta name="twitter:creator" content="@metaguise" />
+
         {/* PROJECT SCHEMA FOR AI & SEARCH */}
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "CreativeWork",
-            "name": project.Projectname,
-            "url": `https://metaguise.com/all-projects/${project.url}`,
-            "description": project.metadescription,
-            "image": project.images?.map(
-              img => {
-                const src = typeof img === 'string' ? img : img.src;
-                return `https://metaguise.com/${src}`;
-              }
-            ),
-            "creator": {
-              "@type": "Organization",
-              "name": "Metaguise",
-              "url": "https://metaguise.com"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Metaguise",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://metaguise.com/logo.png"
-              }
-            },
-            "keywords": project.tags || [
-              "metal facade",
-              "parametric architecture",
-              "architectural cladding",
-              "custom metal design"
-            ],
-            "inLanguage": "en-IN"
-          })}
+          {JSON.stringify(projectSchema)}
         </script>
       </Helmet>
       

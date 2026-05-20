@@ -2,14 +2,18 @@ export
 const SingleprojectDetail = [
     {
       name: "ardete",
+          ogTitle: "Studio Ardete HQ Facade | Architect Studio Cladding India",
+    ogDescription: "Metaguise designed Studio Ardete HQ's facade with signature metal cladding – a creative architectural statement for one of India's leading design studios in Chandigarh.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Ardete/cover/ardete5.webp",
+    metaKeywords: ["Studio Ardete HQ facade, architect studio exterior India, Chandigarh building cladding, Metaguise Chandigarh project, creative office facade India, architectural design firm exterior, metal cladding Chandigarh"],
       url:"studio-ardete-hq",
         alt: "Studio Ardete HQ facade in Mohali featuring rose gold MetaSequin panels, curvilinear MetaFin forms, and resilient MetaCassette backing - trusted by leading architects for merging parametric artistry with enduring design.",
       youtubeLink: "https://www.youtube.com/shorts/Z_o_1Y3Cnpc?feature=share",
       videoLink: "https://www.youtube.com/shorts/IQTRbf0rZCk",
       instagramLink: "https://www.instagram.com/reel/C6x6Q5lSON8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Studio Ardete HQ",
-      metatittles:"Studio Ardete | Parametric Facade with MetaFin & MetaSequin",
-      metadescription:"A dynamic parametric facade in Mohali, featuring MetaFin and shimmering MetaSequin panels by Metaguise.",
+      metatittles:"Studio Ardete HQ Facade | Architect Studio Cladding India",
+      metadescription:"Metaguise designed Studio Ardete HQ's facade with signature metal cladding – a creative architectural statement for one of India's leading design studios in Chandigarh.",
       
       images: [
   
@@ -37,13 +41,17 @@ const SingleprojectDetail = [
 {
   name: "sculpted silence",
   url: "sculpted-silence",
+            ogTitle: "Sculpted Silence | Minimalist Metal Facade Residence India",
+    ogDescription: "Sculpted Silence by Metaguise is a minimalist residential metal facade – precision aluminium cladding panels that speak through quiet, refined architectural detailing.",
+    ogImage: "",
+    metaKeywords: ["minimalist home exterior design India clean elevation design house NCR ,aluminium cladding minimalist home India ,minimalist metal facade residential NCR India ,quiet architecture home exterior aluminium India ,simple modern elevation home India"],
   alt: "",
   youtubeLink: "https://youtube.com/your-video-link",
   videoLink: "https://youtube.com/your-video-link",
   instagramLink: "https://instagram.com/your-post-link",
   Projectname: "Sculpted Silence",
-  metatittles: "Sculptural Metal Facade Project | Metaguise",
-  metadescription: "Explore Sculpted Silence by Metaguise, a sculptural metal facade project showcasing precision engineering, innovative design, and sustainable architecture expertise.",
+  metatittles: "Sculpted Silence | Minimalist Metal Facade Residence India",
+  metadescription: "Sculpted Silence by Metaguise is a minimalist residential metal facade – precision aluminium cladding panels that speak through quiet, refined architectural detailing.",
   
   images: [
     {
@@ -84,14 +92,18 @@ const SingleprojectDetail = [
 
          {
       name: "the haven",
+                ogTitle: "The Haven Residence | Warm Metal Facade Design Gurgaon",
+    ogDescription: "The Haven by Metaguise is a warm, welcoming residential facade – custom metal cladding crafted for homes that balance architectural elegance with a sense of refuge in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Haven/cover/rochak_1.webp",
+    metaKeywords: ["The Haven residential facade Gurgaon, warm home exterior India, welcoming house cladding NCR, luxury residential facade Haryana, Metaguise home project Gurgaon, modern bungalow facade India, metal cladding home NCR"],
       url:"the-haven",
         alt: "",
       youtubeLink: "",
       videoLink: "",
       instagramLink: "",
       Projectname:"The Haven",
-      metatittles:"The Haven – Contemporary Facade Project | Metaguise",
-      metadescription:"Discover The Haven by Metaguise, a contemporary facade project showcasing precision metal craftsmanship, architectural innovation, and sustainable design expertise.",
+      metatittles:"The Haven Residence | Warm Metal Facade Design Gurgaon",
+      metadescription:"The Haven by Metaguise is a warm, welcoming residential facade – custom metal cladding crafted for homes that balance architectural elegance with a sense of refuge in Gurgaon.",
       
       images: [
   
@@ -110,14 +122,18 @@ const SingleprojectDetail = [
 
           {
       name: "apex residence",
+                ogTitle: "Apex Residence Facade | Premium Metal Cladding NCR India",
+    ogDescription: "Apex Residence by Metaguise features a peak-of-craft metal facade – precision aluminium cladding that delivers architectural excellence for high-end homes in the NCR.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/Apex%20Residence/cover/manish_1.webp",
+    metaKeywords: ["Apex Residence facade NCR, premium home metal cladding India, high-end house exterior Delhi NCR, luxury residential facade India, Metaguise residential NCR, aluminium facade home India, top residential cladding NCR"],
       url:"apex-residence",
         alt: "",
       youtubeLink: "",
       videoLink: "",
       instagramLink: "",
       Projectname:"Apex Residence",
-      metatittles:"Apex Residence Facade Project | Metaguise",
-      metadescription:"Apex Residence by Metaguise showcases a premium residential facade project featuring precision metal detailing, modern architectural design, and sustainable engineering expertise.",
+      metatittles:"Apex Residence Facade | Premium Metal Cladding NCR India",
+      metadescription:"Apex Residence by Metaguise features a peak-of-craft metal facade – precision aluminium cladding that delivers architectural excellence for high-end homes in the NCR.",
       
       images: [
   
@@ -137,14 +153,18 @@ const SingleprojectDetail = [
 
                 {
       name: "blossoms",
+                ogTitle: "Blossoms Facade Project | Decorative Metal Cladding India",
+    ogDescription: "Metaguise designed the Blossoms facade using ornamental metal cladding that adds texture, depth, and a bold design language to the commercial exterior in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Blossoms/cover/blossoms1.webp",
+    metaKeywords: ["Blossoms facade Gurgaon, decorative metal cladding India, ornamental building facade, architectural metal design India, Metaguise Gurgaon commercial, textured facade panels India, commercial exterior cladding"],
       url:"blossoms",
         alt: "",
       youtubeLink: "",
       videoLink: "",
       instagramLink: "",
       Projectname:"Blossoms",
-      metatittles:"Blossoms Facade Project | Metal Design by Metaguise",
-      metadescription:"Discover Blossoms by Metaguise, a modern metal facade project combining architectural creativity, precision engineering, and sustainable design excellence.",
+      metatittles:"Blossoms Facade Project | Decorative Metal Cladding India",
+      metadescription:"Metaguise designed the Blossoms facade using ornamental metal cladding that adds texture, depth, and a bold design language to the commercial exterior in Gurgaon.",
       
       images: [
   
@@ -160,14 +180,18 @@ const SingleprojectDetail = [
 
               {
       name: "cityspace82",
+                ogTitle: "Cityspace82 Facade | Modern Commercial Cladding Gurgaon",
+    ogDescription: "Cityspace82's facade by Metaguise delivers a sharp commercial elevation using precision metal cladding – engineered for modern office and retail spaces in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Cityspace82/cover/cityspace82_1.webp",
+    metaKeywords: ["Cityspace82 Gurgaon facade, commercial cladding Haryana, office building facade design, metal panel cladding Gurgaon, Metaguise office project, modern commercial facade India, aluminium cladding India"],
       url:"cityspace",
         alt: "",
       youtubeLink: "",
       videoLink: "",
       instagramLink: "",
       Projectname:"Cityspace82",
-      metatittles:"Cityspace Facade Project by Metaguise | Modern Architecture",
-      metadescription:"Cityspace by Metaguise is a modern facade project showcasing precision metal engineering, innovative architectural design, and sustainable building expertise.",
+      metatittles:"Cityspace82 Facade | Modern Commercial Cladding Gurgaon",
+      metadescription:"Cityspace82's facade by Metaguise delivers a sharp commercial elevation using precision metal cladding – engineered for modern office and retail spaces in Gurgaon.",
       
       images: [
   
@@ -190,14 +214,18 @@ const SingleprojectDetail = [
     
     {
       name: "tanishq",
+                ogTitle: "Tanishq Jewellery Store Facade | MetaCoin Cladding India",
+    ogDescription: "Metaguise designed multiple Tanishq jewellery store facades using MetaCoin parametric panels – each one a premium retail exterior reflecting the brand's trusted national identity.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Tanishq/cover/tanishq11.webp",
+    metaKeywords: ["Tanishq store facade India, MetaCoin retail cladding, jewellery store exterior multiple cities, Tanishq showroom facade design, Metaguise Tanishq project, parametric retail facade India, premium jewellery shop exterior India"],
         url:"tanishq-jewellery",
         alt:"Tanishq South Extension facade featuring custom gold MetaCoin panels with diamond perforations, copper-toned MetaLouvers, and solid MetaCassette frames.",
       videoLink: "https://www.youtube.com/watch?v=nJSmApEceRE",
       youtubeLink: "https://www.youtube.com/watch?v=nJSmApEceRE",
       instagramLink: "https://www.instagram.com/p/C7yTAU0y66T/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Tanishq Jewellery",
-      metatittles:"Tanishq Delhi | Parametric Coin Facade with MetaFlutes & MetaCassette",
-      metadescription:"A signature parametric coin facade in gold tones complemneted by MetaCoin and MetaFlute for Tanishq Jewellers.",
+      metatittles:"Tanishq Jewellery Store Facade | MetaCoin Cladding India",
+      metadescription:"Metaguise designed multiple Tanishq jewellery store facades using MetaCoin parametric panels – each one a premium retail exterior reflecting the brand's trusted national identity.",
       images: [
         "assets/Allprojects/commercial/Tanishq/metacoin/tanishq1.webp",
         "assets/Allprojects/commercial/Tanishq/metacoin/tanishq5.webp",
@@ -221,14 +249,18 @@ const SingleprojectDetail = [
     //Luxe
     {
       name: "Luxe",
+                ogTitle: "Luxe Manor Facade | Ultra-Luxury Metal Facade Gurgaon",
+    ogDescription: "Luxe Manor by Metaguise is an ultra-luxury residential facade – premium metal cladding crafted for manor-style homes where every detail signals architectural sophistication in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/Luxe/cover/luxe16.webp",
+    metaKeywords: ["Luxe Manor facade Gurgaon, ultra luxury home exterior India, manor house metal cladding, premium residential facade Haryana, Metaguise luxury villa project, high-end home facade NCR, luxury bungalow exterior Gurgaon India"],
       url:"luxe-manor",
         alt:"Dual-sided luxury facade featuring fluid MetaGrey MetaFin panels, bold bronze MetaSequin patterns, and ECG MetaFlutes.",
       videoLink: "https://www.youtube.com/shorts/rMUBnzQeJps",
       youtubeLink: "https://www.youtube.com/shorts/6Wk0hLXPGPo?feature=share",
       instagramLink: "https://www.instagram.com/reel/DDeZaTDyLPS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Luxe Manor",
-      metatittles:"Luxe Mansor, New Delhi | Iconic Parametric Facade with MetaCoin & MetaFlute",
-      metadescription:"Metaguise designed a striking facade for Tanishq, featuring uniquely shaped parametric MetaCoin and wooden MetaFlute panels, creating a shimmering, jewel-like effect.",
+      metatittles:"Luxe Manor Facade | Ultra-Luxury Metal Facade Gurgaon",
+      metadescription:"Luxe Manor by Metaguise is an ultra-luxury residential facade – premium metal cladding crafted for manor-style homes where every detail signals architectural sophistication in Gurgaon.",
       images: [
         "assets/Allprojects/residential/Luxe/night/luxe1.webp",
         "assets/Allprojects/residential/Luxe/night/luxe2.webp",
@@ -249,14 +281,18 @@ const SingleprojectDetail = [
     },
     {
       name: "A13-43",
+                ogTitle: "A13-43 Residence | Metal Facade Design Gurgaon India",
+    ogDescription: "A13-43 by Metaguise is a residential metal facade project in Gurgaon – precision-engineered aluminium cladding that defines the exterior of a premium private home in NCR.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/A13-43/cover/a13-431.webp",
+    metaKeywords: ["A13-43 residential facade Gurgaon, private home metal facade NCR, aluminium cladding home India, residential exterior design Haryana, Metaguise Gurgaon private home, bespoke home cladding NCR, home exterior cladding India"],
       url:"a13-43",
         alt:"Contemporary residence facade featuring MetaPyramids, MetaPlanks in MetaWood finish, MetaFlute-clad MetaGate, and MetaLouvers in MetaGrey and MetaWood.",
       videoLink: "https://www.youtube.com/watch?v=bsZgLDDyA3A",
       youtubeLink: "https://www.youtube.com/watch?v=bsZgLDDyA3A",
       instagramLink: "https://www.instagram.com/p/CyTO-QXyZGj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A13-43",
-      metatittles:"Modern Home | Metal Facade with MetaPyramid & MetaLouver",
-      metadescription:"This residence features metal facade detailing with MetaPyramids, MetaLouvers, and linear MetaPlank panels.",
+      metatittles:"A13-43 Residence | Metal Facade Design Gurgaon India",
+      metadescription:"A13-43 by Metaguise is a residential metal facade project in Gurgaon – precision-engineered aluminium cladding that defines the exterior of a premium private home in NCR.",
       images: [
         "assets/Allprojects/residential/A13-43/metalouver/a13-433.webp",
         "assets/Allprojects/residential/A13-43/metalouver/a13-437.webp",
@@ -280,14 +316,18 @@ const SingleprojectDetail = [
     },
     {
       name: "D5-3",
+                ogTitle: "D5-3 Residence | Metal Facade Cladding NCR Gurgaon",
+    ogDescription: "D5-3 by Metaguise is a private residential metal facade in Gurgaon – bespoke aluminium cladding that delivers a clean, architecturally considered exterior for an elite NCR home.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/D5-3/cover/ankit1.webp",
+    metaKeywords: ["D5-3 residential facade Gurgaon, private home metal cladding NCR, bespoke aluminium facade Haryana, residential cladding Gurgaon, Metaguise residential Gurgaon, home exterior design NCR, elite home facade Haryana"],
       url:"d5-3",
         alt:"Modern residence facade featuring MetaCassette perforated panels with MetaSlide integration, Pigmento Blue grooved panels, MetaLouvers in MetaGrey and MetaWood, and wood-finish MetaFlutes.",
       videoLink: "https://www.youtube.com/watch?v=hFQKyKcM1G8",
       youtubeLink: "https://www.youtube.com/shorts/gE5wc_E-6Jg?feature=share",
       instagramLink: "https://www.instagram.com/p/DADNgGVyMxC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"D5-3",
-      metatittles:"Contemporary Home | Facade Cladding with MetaFold & MetaLouvers",
-      metadescription:"A seamless facade cladding mix of MetaFold, MetaCassette, and MetaLouver for layered elevation design.",
+      metatittles:"D5-3 Residence | Metal Facade Cladding NCR Gurgaon",
+      metadescription:"D5-3 by Metaguise is a private residential metal facade in Gurgaon – bespoke aluminium cladding that delivers a clean, architecturally considered exterior for an elite NCR home.",
       images: [
         "assets/Allprojects/residential/D5-3/metacassette-grooved/ankit10.webp",
         "assets/Allprojects/residential/D5-3/metacassette-grooved/ankit11.webp",
@@ -309,14 +349,18 @@ const SingleprojectDetail = [
     },
     {
       name: "gowri",
+                ogTitle: "Gowri's Jewellery Facade | Luxury Retail Cladding India",
+    ogDescription: "Metaguise designed Gowri's Jewellery store facade with custom metal cladding – a premium exterior that captures the brand's elegance and craftsmanship in South India.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Gowri/cover/gowri2.webp",
+    metaKeywords: ["Gowri's Jewellery facade, luxury jewellery shop exterior India, retail facade South India, metal cladding jewellery store, custom shopfront India, Metaguise jewellery project, premium retail facade India"],
       url:"gowri-jewellery",
         alt:"Gowri’s Jewellery facade in Hyderabad featuring golden MetaSequin panels - crafted with bespoke parametric design to echo the city’s regal heritage and redefine luxury retail architecture.",
       videoLink: "https://www.youtube.com/shorts/KzYLNPaMkB8",
       youtubeLink: "https://www.youtube.com/shorts/KzYLNPaMkB8?feature=share",
       instagramLink: "https://www.instagram.com/reel/C5VhWpTyXzx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Gowri's Jewellery",
-      metatittles:"Gowri’s Jewellery | Metal Sequin Facade Crafted by Metaguise",
-      metadescription:"A bespoke metal sequin facade designed for visual movement and light interaction.",
+      metatittles:"Gowri's Jewellery Facade | Luxury Retail Cladding India",
+      metadescription:"Metaguise designed Gowri's Jewellery store facade with custom metal cladding – a premium exterior that captures the brand's elegance and craftsmanship in South India.",
       images: [
         "assets/Allprojects/commercial/Gowri/metasequin/gowri1.webp",
         "assets/Allprojects/commercial/Gowri/metasequin/gowri3.webp",
@@ -330,14 +374,18 @@ const SingleprojectDetail = [
     },
     {
       name: "E10",
+                ogTitle: "The Ripple Effect Facade | MetaFin Parametric Cladding",
+    ogDescription: "The Ripple Effect by Metaguise uses MetaFin's fluid parametric geometry to create a bold, wave-like commercial exterior – organic, modern, and architecturally expressive.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/E10/cover/e105.webp",
+    metaKeywords: ["parametric building facade India ,wave facade commercial building India ,organic architecture facade India ,MetaFin wave parametric facade NCR India ,fluid metal cladding commercial building India ,wave design building exterior Gurgaon India "],
       url:"the-ripple-effect",
         alt:"Metafin facade in South Delhi showcasing Metaguise’s parametric technology. Trusted by architects PAN India, blending art and engineering with global design excellence.",
       videoLink: "https://www.youtube.com/shorts/L1BRTrBobAI",
       youtubeLink: "https://www.youtube.com/shorts/L1BRTrBobAI",
       instagramLink: "https://www.instagram.com/p/C0oeC5NSFp0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Ripple Effect",
-      metatittles:"Commercial Architecture | Parametric Facade with MetaFin",
-      metadescription:"A fluid parametric facade using MetaFin’s seamless curves for a bold and organic commercial presence.",
+      metatittles:"The Ripple Effect Facade | MetaFin Parametric Cladding",
+      metadescription:"The Ripple Effect by Metaguise uses MetaFin's fluid parametric geometry to create a bold, wave-like commercial exterior – organic, modern, and architecturally expressive.",
       images: [
         "assets/Allprojects/commercial/E10/metafin/e101.webp",
         "assets/Allprojects/commercial/E10/metafin/e103.webp",
@@ -354,14 +402,18 @@ const SingleprojectDetail = [
     },
     {
       name: "deepak",
+                ogTitle: "Deepak Sweets Facade | Retail Metal Cladding Delhi",
+    ogDescription: "Metaguise gave Deepak Sweets a fresh retail identity with a custom metal facade – an impactful shopfront design built for footfall, brand recall, and durability in Delhi.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Deepak/cover/deepak1.webp",
+    metaKeywords: ["Deepak Sweets facade Delhi, retail shopfront cladding India, sweet shop facade design, metal facade retail Delhi NCR, Metaguise retail project Delhi, commercial front design India, aluminium cladding shopfront"],
       url:"deepak-sweets",
         alt:"Deepak Sweets in Bareilly featuring a dazzling facade with champagne gold MetaSequin, patina-finished MetaPyramids, and perforated MetaCassette panels.",
       videoLink: "https://www.youtube.com/watch?v=dAarntEa15o",
       youtubeLink: "https://www.youtube.com/watch?v=dAarntEa15o",
       instagramLink: "https://www.instagram.com/p/C8bd64HyWOX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Deepak Sweets",
-      metatittles:"Deepak Sweets | Metal Facade with MetaSequin & MetaCassette ",
-      metadescription:"This vibrant store front in Bareilly showcases a metal facade cladding with MetaSequin and MetaCassette.",
+      metatittles:"Deepak Sweets Facade | Retail Metal Cladding Delhi ",
+      metadescription:"Metaguise gave Deepak Sweets a fresh retail identity with a custom metal facade – an impactful shopfront design built for footfall, brand recall, and durability in Delhi.",
       images: [
         "assets/Allprojects/commercial/Deepak/metacassette-perforated/deepak6.webp",
         "assets/Allprojects/commercial/Deepak/metacassette-perforated/deepak13.webp",
@@ -389,14 +441,18 @@ const SingleprojectDetail = [
     },
     {
       name: "A19",
+                ogTitle: "A19-DL1 Residence | Metal Facade DLF Gurgaon Haryana",
+    ogDescription: "A19-DL1 by Metaguise is a premium residential metal facade in DLF Gurgaon – precision aluminium cladding delivering architectural clarity and lasting material quality.",
+    ogImage: "",
+    metaKeywords: ["A19-DL1 facade DLF Gurgaon, residential metal cladding DLF, aluminium facade DLF Phase Haryana, Metaguise DLF residential project, home exterior DLF Gurgaon India, private home cladding DLF, luxury home facade DLF Haryana"],
       url:"a19",
         alt:"A futuristic residence showcasing Metaguise's MetaCassette panels in solid Ocean Black, perforated, and grooved MetaGrey finishes, framed by warm MetaWood MetaFlutes and gate.",
       videoLink: "https://www.youtube.com/shorts/EerdVK4Ax9M?feature=share",
       youtubeLink: "https://www.youtube.com/shorts/EerdVK4Ax9M?feature=share",
       instagramLink: "https://www.instagram.com/p/DBQQFHRyB7-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A19-DL1",
-      metatittles:"Modern Home | Facade Panels with MetaCassette & MetaLouver",
-      metadescription:"A fresh residential elevation using MetaLouvers and MetaCassette facade panels for modern rhythm and ventilation.",
+      metatittles:"A19-DL1 Residence | Metal Facade DLF Gurgaon Haryana",
+      metadescription:"A19-DL1 by Metaguise is a premium residential metal facade in DLF Gurgaon – precision aluminium cladding delivering architectural clarity and lasting material quality.",
       images: [
         "assets/Allprojects/residential/A19/metacassette-grooved/a1910.webp",
         "assets/Allprojects/residential/A19/metacassette-grooved/a1911.webp",
@@ -418,14 +474,18 @@ const SingleprojectDetail = [
     },
     {
       name: "A18",
+                ogTitle: "A18-DL1 Residence | Metal Facade DLF Gurgaon India",
+    ogDescription: "A18-DL1 by Metaguise is a residential metal facade project in DLF Gurgaon – premium aluminium cladding for a private home in one of Haryana's most sought-after localities.A18-DL1 by Metaguise is a residential metal facade project in DLF Gurgaon – premium aluminium cladding for a private home in one of Haryana's most sought-after localities.",
+    ogImage: "",
+    metaKeywords: [""],
       url:"a18",
         alt:"Modern residence clad in MetaCassette perforated panels, Micawhite MetaLouvers, and MetaWood surfaces. ",
       videoLink: "https://www.youtube.com/watch?v=-K2JTghXJTw",
       youtubeLink: "https://www.youtube.com/watch?v=-K2JTghXJTw",
       instagramLink: "https://www.instagram.com/reel/Cy6EXmmSizr/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A18-DL1",
-      metatittles:"Elegant Elevation | Metal Facade with MetaFlute & MetaLouvers",
-      metadescription:"This refined home uses our high value metal facade materials with fluted and louvered profiles for contrast and depth.",
+      metatittles:"A18-DL1 Residence | Metal Facade DLF Gurgaon India",
+      metadescription:"A18-DL1 by Metaguise is a residential metal facade project in DLF Gurgaon – premium aluminium cladding for a private home in one of Haryana's most sought-after localities.",
       images: [
         "assets/Allprojects/residential/A18/metacassette-perforated/a182.webp",
         "assets/Allprojects/residential/A18/metacassette-perforated/a184.webp",
@@ -448,14 +508,18 @@ const SingleprojectDetail = [
     },
     {
       name: "MVA-DL1",
+                ogTitle: "MVA-DL1 Residence | Metal Facade DLF Gurgaon India",
+    ogDescription: "MVA-DL1 by Metaguise is a residential metal facade in DLF Gurgaon – custom aluminium cladding that delivers an elevated, architectural exterior in Haryana's premium enclave.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/MVA-DL1/cover/varun5.webp",
+    metaKeywords: ["MVA-DL1 facade DLF Gurgaon, DLF home metal cladding India, residential facade DLF Haryana, premium home exterior DLF Gurgaon, Metaguise DLF project, aluminium cladding DLF residential, architectural home facade DLF"],
       url:"mva-dl1",
         alt:"A refined residential facade featuring crisp white MetaCassette panels and sleek grey MetaFlutes on the compound wall and gate, with embedded lighting recessed into grooved panels for a minimalist, illuminated design.",
       videoLink: "https://www.youtube.com/watch?v=N5lCQ8fSvgA",
       youtubeLink: "https://www.youtube.com/watch?v=N5lCQ8fSvgA",
       instagramLink: "https://www.instagram.com/p/C92IFsGSdqx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"MVA-DL1",
-      metatittles:"Modern Home | Metal Facade Gate with MetaCassette",
-      metadescription:"A strong architectural expression with metal facade cladding using MetaCassette grooved panels and integrated MetaGate entrance.",
+      metatittles:"MVA-DL1 Residence | Metal Facade DLF Gurgaon India",
+      metadescription:"MVA-DL1 by Metaguise is a residential metal facade in DLF Gurgaon – custom aluminium cladding that delivers an elevated, architectural exterior in Haryana's premium enclave.",
       images: [
         "assets/Allprojects/residential/MVA-DL1/metacassette-grooved/varun2.webp",
         "assets/Allprojects/residential/MVA-DL1/metacassette-grooved/varun3.webp",
@@ -476,14 +540,18 @@ const SingleprojectDetail = [
     },
     {
       name: "metaland",
+                ogTitle: "Metaland Facade | MetaSequin Experience Centre Gurgaon",
+    ogDescription: "Metaland by Metaguise is a flagship experience centre in Gurgaon clad in MetaSequin – a kinetic parametric facade that merges architecture with immersive brand experience.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Metaland/cover/metaland6.webp",
+    metaKeywords: ["Metaland Gurgaon, MetaSequin facade, experience centre cladding India, parametric sequin facade, Metaguise flagship Gurgaon, architectural experience centre facade, metal facade showroom Gurgaon Haryana"],
       url:"metaland",
         alt:"Entrance of METALAND™️ featuring a stunning MetaSequin facade with a Tree of Knowledge pattern, symbolizing growth and innovation.",
       videoLink: "https://www.youtube.com/watch?v=mwmFELxs14E",
       youtubeLink: "https://www.youtube.com/watch?v=mwmFELxs14E",
       instagramLink: "https://www.instagram.com/reel/C6f5mGtSajX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Metaland",
-      metatittles:" METALAND™ | Parametric Sequin Facade by Metaguise",
-      metadescription:"Our flagship experience center with bespoke shimmering parametric metal sequin panels.",
+      metatittles:"Metaland Facade | MetaSequin Experience Centre Gurgaon",
+      metadescription:"Metaland by Metaguise is a flagship experience centre in Gurgaon clad in MetaSequin – a kinetic parametric facade that merges architecture with immersive brand experience.",
       images: [
         "assets/Allprojects/commercial/Metaland/metasequin/metaland14.webp",
         "assets/Allprojects/commercial/Metaland/metasequin/metaland8.webp",
@@ -502,14 +570,18 @@ const SingleprojectDetail = [
     },
     {
       name: "micasa",
+                ogTitle: "Micasa Commercial Facade | Metal Cladding Gurgaon India",
+    ogDescription: "Metaguise designed the Micasa commercial facade with custom metal cladding – a refined and modern exterior that creates a strong architectural identity in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Micasa/cover/micasa1.webp",
+    metaKeywords: ["Micasa facade Gurgaon, commercial cladding NCR, metal exterior design India, building facade Haryana, Metaguise commercial Gurgaon, aluminium cladding project India, modern commercial facade NCRaca"],
       url:"micasa",
         alt:"MiCasa building in Delhi featuring a stunning rose gold MetaCoin facade inspired by the Tree of Life, with circular parametric panels that shimmer dynamically with light.",
       videoLink: "https://www.youtube.com/watch?v=d_0Ie4xGsKQ&feature=youtu.be",
       youtubeLink: "https://www.youtube.com/watch?v=d_0Ie4xGsKQ&feature=youtu.be",
       instagramLink: "https://www.instagram.com/p/DAhz8F2S2Sf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Micasa",
-      metatittles:"Micasa Delhi | A Bold Parametric Coin Facade ",
-      metadescription:"Commercial building with a striking gold parametric coin matrix facade featuring a wave like pattern.",
+      metatittles:"Micasa Commercial Facade | Metal Cladding Gurgaon India ",
+      metadescription:"Metaguise designed the Micasa commercial facade with custom metal cladding – a refined and modern exterior that creates a strong architectural identity in Gurgaon.",
       images: [
         "assets/Allprojects/commercial/Micasa/metacoin/micasa2.webp",
         "assets/Allprojects/commercial/Micasa/metacoin/micasa3.webp",
@@ -523,14 +595,18 @@ const SingleprojectDetail = [
     },
     {
       name: "Yashika",
+                ogTitle: "Yashika Commercial Facade | Metal Cladding Project India",
+    ogDescription: "The Yashika project by Metaguise features precision metal cladding on a commercial facade – delivering a clean and contemporary architectural exterior in NCR.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/yashika/cover/yashika1.webp",
+    metaKeywords: ["Yashika facade NCR, commercial cladding India, metal exterior design NCR, building facade Delhi, Metaguise commercial NCR, aluminium cladding project India, modern commercial facade NCRaca"],
       url:"yashika",
         alt:"A commercial facade brought to life with MetaCoin, Metaguise’s cutting-edge parametric technology, shimmering like jewels in sunlight; dynamic and imaginative, it redefines architectural expression and sparkles across the city skyline.",
       videoLink: "https://www.youtube.com/shorts/PjSB1brakw0?feature=share",
       youtubeLink: "https://www.youtube.com/shorts/PjSB1brakw0?feature=share",
       instagramLink: "https://www.instagram.com/p/C3Uxk3VSyQO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Yashika",
-      metatittles:"Bold Commercial | Parametric Facade with MetaCoin",
-      metadescription:"A bold statement in commercial architecture using parametric facade technology with MetaCoin.",
+      metatittles:"Yashika Commercial Facade | Metal Cladding Project India",
+      metadescription:"The Yashika project by Metaguise features precision metal cladding on a commercial facade – delivering a clean and contemporary architectural exterior in NCR.",
       images: [
         "assets/Allprojects/commercial/yashika/metacoin/yashika2.webp",
         "assets/Allprojects/commercial/yashika/metacoin/yashika3.webp",
@@ -545,15 +621,20 @@ const SingleprojectDetail = [
     },
     {
       name: "C76",
+      ogTitle: "C76 Residence | Metal Facade Cladding NCR India",
+      ogDescription: "C76 by Metaguise is a residential metal facade project in NCR – precision aluminium cladding for a private home that prioritises clean design and enduring material quality.",
+      ogImage: "https://metaguise.com/assets/Allprojects/residential/C76/cover/c7615.webp",
+      metaKeywords: ["C76 residential facade NCR, private home cladding India, aluminium facade residential Delhi NCR, Metaguise residential NCR, home metal facade India, architectural house exterior NCR, custom aluminium facade house"],
       url:"c76",
         alt:"Residential facade clad in MetaCassette solid and perforated panels, paired with MetaLouvers for futuristic elegance and MetaFlutes for warmth.",
       videoLink: "https://www.youtube.com/watch?v=r6kNjqo6PgQ",
       youtubeLink: "https://www.youtube.com/watch?v=r6kNjqo6PgQ",
       instagramLink: "https://www.instagram.com/reel/C5lPK9QSXHU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"C76",
-      metatittles:"Grooved Facade | Metal Facade Panels with MetaCassette & MetaFlute",
-      metadescription:"This residence features Metacassette grooved metal facade panels with vertical fluting for a modern look.",
-      images: [
+      metatittles:"C76 Residence | Metal Facade Cladding NCR India",
+      metadescription:"C76 by Metaguise is a residential metal facade project in NCR – precision aluminium cladding for a private home that prioritises clean design and enduring material quality..",
+      images: 
+      [
         "assets/Allprojects/residential/C76/metacassette-grooved/c769.webp",
         "assets/Allprojects/residential/C76/metacassette-grooved/c7612.webp",
         "assets/Allprojects/residential/C76/metacassette-grooved/c7614.webp",
@@ -573,14 +654,18 @@ const SingleprojectDetail = [
     },
     {
       name: "5107",
+                ogTitle: "5107 Residence | Metal Facade Design Gurgaon India",
+    ogDescription: "5107 by Metaguise is a private residential metal facade in Gurgaon – bespoke aluminium cladding for a home where architectural detail and material quality take centre stage.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/5107/cover/51071.webp",
+    metaKeywords: ["5107 residential facade Gurgaon, private home metal cladding NCR, bespoke aluminium facade India, residential exterior Haryana, Metaguise Gurgaon private home, home facade design India, luxury residence cladding NCR"],
       url:"5107",
         alt:"An elegant facade featuring perforated MetaCassette panels in Mica White with a luminous backlit glow, paired with a fluted MetaGate in MetaGrey for a bold, refined finish.",
       videoLink: "https://www.youtube.com/shorts/oOiyN07PwQE?feature=share",
       youtubeLink: "https://www.youtube.com/shorts/oOiyN07PwQE?feature=share",
       instagramLink: "https://www.instagram.com/p/C0d5yYYS90q/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"5107",
-      metatittles:"Modern Residential Design | Perforated Facade Panels ",
-      metadescription:"Perforated facade panels in MetaCassette allow light, shadow, and texture to define this modern home.",
+      metatittles:"5107 Residence | Metal Facade Design Gurgaon India ",
+      metadescription:"5107 by Metaguise is a private residential metal facade in Gurgaon – bespoke aluminium cladding for a home where architectural detail and material quality take centre stage.",
       images: [
         "assets/Allprojects/residential/5107/metacassette-perforated/51072.webp",
         "assets/Allprojects/residential/5107/metacassette-perforated/51073.webp",
@@ -599,14 +684,18 @@ const SingleprojectDetail = [
     },
     {
       name: "A297",
+                ogTitle: "A297 Residence | Bespoke Metal Facade Gurgaon India",
+    ogDescription: "A297 by Metaguise is a bespoke residential metal facade in Gurgaon – custom-engineered aluminium cladding that reflects the architectural vision and lifestyle of the homeowner.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/A297/cover/a2971.webp",
+    metaKeywords: ["A297 residential facade Gurgaon, bespoke home exterior India, custom metal cladding NCR, residential facade Haryana, Metaguise A297 Gurgaon, aluminium facade home India, architectural private home NCR"],
       url:"a297",
         alt:"A graceful residential facade featuring monochrome MetaShingles, MetaWood-finished MetaFlutes on the under-ceiling and balcony, and MetaGrey MetaFlutes on the gate and railing.",
       videoLink: "https://www.youtube.com/watch?v=_ei1jkRmp_Q",
       youtubeLink: "https://www.youtube.com/watch?v=_ei1jkRmp_Q",
       instagramLink: "https://www.instagram.com/p/C3KeYlvyFdK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A297",
-      metatittles:"Modern Facade | MetaFlutes, MetaShingles and Metal Louver Facade",
-      metadescription:"A layered metal facade design combining MetaShingle, MetaFlute, and functional MetaLouver panels.",
+      metatittles:"A297 Residence | Bespoke Metal Facade Gurgaon India",
+      metadescription:"A297 by Metaguise is a bespoke residential metal facade in Gurgaon – custom-engineered aluminium cladding that reflects the architectural vision and lifestyle of the homeowner.",
       images: [
         "assets/Allprojects/residential/A297/metaflute/a2973.webp",
         "assets/Allprojects/residential/A297/metaflute/a2975.webp",
@@ -641,14 +730,18 @@ const SingleprojectDetail = [
     // },
     {
       name: "C34-573",
+                ogTitle: "C3/4-S73 Residence | Custom Metal Facade Gurgaon",
+    ogDescription: "C3/4-S73 by Metaguise is a custom residential metal facade in Gurgaon – precision aluminium cladding crafted for a private home in one of NCR's most valued localities.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/C34-573/cover/kapil1.webp",
+    metaKeywords: ["C3/4-S73 facade Gurgaon, C3/4-S73 residential cladding, metal facade C3/4-S73 India, Metaguise C3/4-S73 project, aluminium cladding C3/4-S73 Gurgaon, premium home exterior C3/4-S73, residential facade C3/4-S73 NCR"],
       url:"c34-573",
         alt:"Striking residential facade featuring diamond MetaShingles at the entry, Solid Panels with MetaCoin on the boundary and door, cherry red MetaFlutes, MetaLouvers for airflow, and a bold grey fluted gate.",
       videoLink: "https://www.youtube.com/watch?v=O99SARUeRa0",
       youtubeLink: "https://www.youtube.com/watch?v=O99SARUeRa0",
       instagramLink: "https://www.instagram.com/p/C8wEVfgSrCF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"C3/4-S73",
-      metatittles:"Residential Elevation | Parametric Facade with MetaCoin & MetaShingle",
-      metadescription:"A dynamic parametric facade combining MetaCoin with overlapping MetaShingles.",
+      metatittles:"C3/4-S73 Residence | Custom Metal Facade Gurgaon",
+      metadescription:"C3/4-S73 by Metaguise is a custom residential metal facade in Gurgaon – precision aluminium cladding crafted for a private home in one of NCR's most valued localities.",
       images: [
         "assets/Allprojects/residential/C34-573/metacoin/kapil2.webp",
         "assets/Allprojects/residential/C34-573/metacoin/kapil3.webp",
@@ -665,14 +758,18 @@ const SingleprojectDetail = [
     },
     {
       name: "DLF4",
+                ogTitle: "DLF4 Residence | Metal Facade DLF Phase 4 Gurgaon",
+    ogDescription: "DLF4 by Metaguise is a residential metal facade in DLF Phase 4, Gurgaon – bespoke aluminium cladding for a premium private home in Haryana's most prestigious address.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/DLF4/cover/dlf44.webp",
+    metaKeywords: ["DLF4 facade Gurgaon, DLF Phase 4 residential cladding, metal facade DLF Phase 4 India, Metaguise DLF4 project, aluminium cladding DLF Gurgaon, premium home exterior DLF Phase 4, residential facade DLF Haryana"],
       url:"dlf4",
         alt:"Architectural facade featuring MetaCassette solid panels with a snake-leather finish, complemented by sleek MetaFlutes and accent lighting.",
       videoLink: "https://www.youtube.com/watch?v=gi0qDnaOmfI",
       youtubeLink: "https://www.youtube.com/watch?v=gi0qDnaOmfI",
       instagramLink: "https://www.instagram.com/p/C2uQpm1y7JB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"DLF4",
-      metatittles:"Modern Home | Metal Facade with Flutes & Solid Panels",
-      metadescription:"A sleek metal facade elevation using MetaFlute and solid panels for linear definition and form.",
+      metatittles:"DLF4 Residence | Metal Facade DLF Phase 4 Gurgaon",
+      metadescription:"DLF4 by Metaguise is a residential metal facade in DLF Phase 4, Gurgaon – bespoke aluminium cladding for a premium private home in Haryana's most prestigious address.",
       images: [
         "assets/Allprojects/residential/DLF4/metaflute/dlf15.webp",
         "assets/Allprojects/residential/DLF4/metaflute/dlf16.webp",
@@ -693,14 +790,18 @@ const SingleprojectDetail = [
     },
     {
       name: "CS5-MA",
+                ogTitle: "CS5-MA Residence | Metal Facade Project NCR India",
+    ogDescription: "CS5-MA by Metaguise is a private residential metal facade in the NCR – precision aluminium cladding panels delivering a confident, architecturally deliberate home exterior.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/CS5-MA/cover/vishal1.webp",
+    metaKeywords: ["CS5-MA residential facade NCR, private home metal cladding India, residential aluminium facade Delhi NCR, Metaguise residential project NCR, home exterior cladding India, architectural facade NCR, custom home facade India"],
       url:"cs5-ma",
         alt:"A refined facade combining MetaLouver elements, MetaCassette perforated panels, and wood-grain MetaFlutes to create depth, shade, privacy, and sculptural warmth in perfect harmony with the natural surroundings.",
       videoLink: "https://www.youtube.com/watch?v=6RoELQ5I-1g",
       youtubeLink: "https://www.youtube.com/watch?v=6RoELQ5I-1g",
       instagramLink: "https://www.instagram.com/p/CyDrwYkSG7e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"CS5-MA",
-      metatittles:"A sleek metal facade elevation using MetaFlute and solid panels for linear definition and form.",
-      metadescription:"This facade blends perforated MetaCassette facade panels and metal flutes and louvers for elevation.",
+      metatittles:"CS5-MA Residence | Metal Facade Project NCR India",
+      metadescription:"CS5-MA by Metaguise is a private residential metal facade in the NCR – precision aluminium cladding panels delivering a confident, architecturally deliberate home exterior.",
       images: [
         "assets/Allprojects/residential/CS5-MA/metacassette-perforated/vishal2.webp",
         "assets/Allprojects/residential/CS5-MA/metacassette-perforated/vishal9.webp",
@@ -724,14 +825,18 @@ const SingleprojectDetail = [
     },
     {
       name: "espace",
+                ogTitle: "Espace Nirvana Facade | Residential Metal Cladding Gurgaon",
+    ogDescription: "Espace Nirvana by Metaguise is a serene residential facade in Gurgaon – custom metal cladding that layers calm architectural beauty with premium material precision.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/Espace/cover/espace1.webp",
+    metaKeywords: ["Espace Nirvana facade Gurgaon, residential metal cladding Gurgaon Haryana, calm home exterior India, luxury residential facade NCR, Metaguise Gurgaon home project, nirvana residence cladding, aluminium facade home Haryana"],
       url:"espace-nirvana",
         alt:"Modern residential facade featuring MetaLouver, MetaPlank, MetaCassette, and perforated panels in MetaWood and MetaGrey.",
       videoLink: "https://www.youtube.com/watch?v=0Or6FQP59x4",
       youtubeLink: "https://www.youtube.com/watch?v=0Or6FQP59x4",
       instagramLink: "https://www.instagram.com/p/C4NN0B3yv82/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Espace Nirvana",
-      metatittles:"Residential Facade | MetaCassette, Plank & Metal Louver Facade",
-      metadescription:"A refined facade cladding approach with MetaCassette, MetaPlank and MetaLouvers. ",
+      metatittles:"Espace Nirvana Facade | Residential Metal Cladding Gurgaon",
+      metadescription:"Espace Nirvana by Metaguise is a serene residential facade in Gurgaon – custom metal cladding that layers calm architectural beauty with premium material precision. ",
       images: [
         "assets/Allprojects/residential/Espace/metacassette-perforated/espace2.webp",
         "assets/Allprojects/residential/Espace/metacassette-perforated/espace5.webp",
@@ -753,14 +858,18 @@ const SingleprojectDetail = [
     },
     {
       name: "MA-543",
+                ogTitle: "MA-543 Residence | Metal Facade Cladding NCR India",
+    ogDescription: "MA-543 by Metaguise is a residential metal facade in the NCR – clean, precision-engineered aluminium cladding panels that bring architectural discipline to a private home exterior.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/MA-543/cover/manoj1.webp",
+    metaKeywords: ["MA-543 residential facade NCR, private home metal cladding India, aluminium facade Delhi NCR, Metaguise residential project NCR, home exterior design India, architectural cladding NCR, residential facade India"],
       url:"ma-543",
           alt:"Modern residence featuring Patina-finish MetaCoin with a tiger-stripe effect, MetaWood MetaPlanks on ceilings and walls, vertical MetaLouvers, and a MetaGrey C Channel.",
       videoLink: "https://www.youtube.com/watch?v=Urze-UjHcLU",
       youtubeLink: "https://www.youtube.com/watch?v=Urze-UjHcLU",
       instagramLink: "https://www.instagram.com/p/C_CsfuZy_UM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"MA-543",
-      metatittles:"Residential Design | Parametric Coin & Metal Louver Facade",
-      metadescription:"A soft parametric coin matrix facade balanced with MetaLouvers and structured MetaPlank panels.",
+      metatittles:"MA-543 Residence | Metal Facade Cladding NCR India",
+      metadescription:"MA-543 by Metaguise is a residential metal facade in the NCR – clean, precision-engineered aluminium cladding panels that bring architectural discipline to a private home exterior.",
       images: [
         "assets/Allprojects/residential/MA-543/metacoin/manoj8.webp",
         "assets/Allprojects/residential/MA-543/metacoin/manoj10.webp",
@@ -778,6 +887,10 @@ const SingleprojectDetail = [
     },
     {
       name: "Q62-RA",
+                ogTitle: "",
+    ogDescription: "",
+    ogImage: "",
+    metaKeywords: [""],
       url:"Q62-RA",
         alt:"Striking residential facade with trapezoidal geometry featuring grey curved Solid Panels, grey MetaLouvers, wood-finish and grey MetaFlutes, and a signature MetaGate.",
       videoLink: "https://www.youtube.com/watch?v=oEKOjT0tAWk",
@@ -804,14 +917,18 @@ const SingleprojectDetail = [
     },
     {
       name: "z1012",
+                ogTitle: "Z1012 Residence | Metal Facade Design Gurgaon India",
+    ogDescription: "Z1012 by Metaguise is a private residential metal facade in Gurgaon – precision aluminium cladding for a home that commands architectural attention in the NCR luxury corridor.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/z1012/cover/z10121.webp",
+    metaKeywords: ["Z1012 residential facade Gurgaon, private home metal facade India, aluminium cladding NCR, residential exterior Haryana, Metaguise Gurgaon residential project, luxury home facade NCR, bespoke home exterior India"],
       url:"z1012",
            alt:"Residential facade featuring dual-tone black and grey MetaShingles with fluid geometry, paired with MetaWood and MetaGrey MetaFlutes across balconies and under-ceilings.",
       videoLink: "https://www.youtube.com/watch?v=AwvlRroIAKA",
       youtubeLink: "https://www.youtube.com/watch?v=AwvlRroIAKA",
       instagramLink: "https://www.instagram.com/p/DA3Pqdey03I/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Z1012",
-      metatittles:"Contemporary Metal Facade | Sleek MetaFlute & Overlapping MetaShingles",
-      metadescription:"This elevation features a metal facade combining sleek MetaFlutes and layered MetaShingles",
+      metatittles:"Z1012 Residence | Metal Facade Design Gurgaon India",
+      metadescription:"Z1012 by Metaguise is a private residential metal facade in Gurgaon – precision aluminium cladding for a home that commands architectural attention in the NCR luxury corridor.",
       images: [
         "assets/Allprojects/residential/z1012/metaflute/z10122.webp",
         "assets/Allprojects/residential/z1012/metaflute/z10123.webp",
@@ -828,14 +945,18 @@ const SingleprojectDetail = [
 
     {
       name: "painflame",
+                ogTitle: "Pain Flame Facade | Commercial Metal Cladding NCR India",
+    ogDescription: "Metaguise completed the Pain Flame commercial facade with custom aluminium cladding – a modern and impactful building exterior designed for high-visibility commercial use.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Painflame/cover/15.webp",
+    metaKeywords: ["Pain Flame facade NCR, commercial building facade India, aluminium cladding commercial, metal exterior design Delhi NCR, Metaguise commercial project, building cladding NCR, facade design India"],
       url:"pain-flame",
         alt:"The PainFlame Clinic facade featuring a sculptural MetaCoin emblem in gold above rhythmic monochromatic MetaShingles.",
       videoLink: "",
       youtubeLink: "https://www.youtube.com/watch?v=s6evsnaSFms",
       instagramLink: "https://www.instagram.com/p/DF68iI7Sslb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Pain Flame",
-      metatittles:"Parametric & Layered Facade for Healthcare Clinic ",
-      metadescription:"Metaguise crafted a precision-engineered elevation for a Gurugram clinic, featuring the Parametric MetaCoin and Monochromatic MetaShingles for a dynamic, layered look.",
+      metatittles:"Pain Flame Facade | Commercial Metal Cladding NCR India ",
+      metadescription:"Metaguise completed the Pain Flame commercial facade with custom aluminium cladding – a modern and impactful building exterior designed for high-visibility commercial use.",
       images: [
         "assets/Allprojects/commercial/Painflame/metacoin/6.webp",
         "assets/Allprojects/commercial/Painflame/metacoin/8.webp",
@@ -856,14 +977,18 @@ const SingleprojectDetail = [
 
     {
       name: "premhospital",
+                ogTitle: "Prem Hospital Facade | Healthcare Cladding Design India",
+    ogDescription: "Prem Hospital's facade by Metaguise uses durable aluminium cladding – a clean, hygienic architectural exterior built for healthcare environments in northern India.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/PremHospital/cover/prem1.webp",
+    metaKeywords: ["Prem Hospital facade India, hospital building cladding, healthcare exterior metal panels, aluminium facade hospital UP, Metaguise hospital project NCR, medical building facade India, hospital architecture cladding"],
       url:"prem-hospital",
         alt:"Healthcare facility in Meerut featuring MetaCassette Grooved and Perforated Panels, combining rhythm, light-play, and ventilation in a sophisticated, low-maintenance facade designed for care-focused architecture.",
       videoLink: "https://www.youtube.com/shorts/UV4ZyH_EFDc",
       youtubeLink: "https://www.youtube.com/watch?v=P4JgguI1nVg",
       instagramLink: "https://www.instagram.com/p/DDwba3FSzEo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Prem Hospital",
-      metatittles:"A Precision-Engineered Facade for a Hospital",
-      metadescription:"Metaguise elevates healthcare architecture with MetaCassette Perforated and Grooved Panels, integrating logo-based perforations, and structured textures, in Gurugram",
+      metatittles:"Prem Hospital Facade | Healthcare Cladding Design India",
+      metadescription:"Prem Hospital's facade by Metaguise uses durable aluminium cladding – a clean, hygienic architectural exterior built for healthcare environments in northern India.",
       images: [
         "assets/Allprojects/commercial/PremHospital/metacassette-grooved/prem2.webp",
         "assets/Allprojects/commercial/PremHospital/metacassette-grooved/prem6.webp",
@@ -887,14 +1012,18 @@ const SingleprojectDetail = [
 
     {
       name: "coppercanvas",
+                ogTitle: "Copper Canvas Facade | Copper Metal Cladding Home India",
+    ogDescription: "Copper Canvas by Metaguise is a residential facade clad in MetaCassette and MetaFold copper-finish panels – an artistic home exterior where architecture meets warm material poetry.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/CopperCanvas/cover/coppercanvas1.webp",
+    metaKeywords: ["Copper Canvas facade Gurgaon, copper metal facade home India, MetaCassette residential, MetaFold home exterior, copper cladding house NCR, warm metal facade India, artistic residential facade Haryana, Metaguise copper project"],
       url:"copper-canvas",
         alt:"Residential facade featuring abstract-perforated MetaCassette panels in copper-gold, MetaFold for adaptive movement, and MetaFlutes in wood and copper finishes.",
       videoLink: "https://www.youtube.com/shorts/-70rvppz8fU",
       youtubeLink: "https://www.youtube.com/watch?v=azbJqoT5Wy8",
       instagramLink: "https://www.instagram.com/p/DGSqyO1IT63/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Copper Canvas",
-      metatittles:"Copper Facade Design Project – Copper Canvas | Metaguise",
-      metadescription:"Copper Canvas by Metaguise showcases a premium architectural copper facade project highlighting innovative design, precision fabrication, and modern facade expertise.",
+      metatittles:"Copper Canvas Facade | Copper Metal Cladding Home India",
+      metadescription:" Copper Canvas by Metaguise is a residential facade clad in MetaCassette and MetaFold copper-finish panels – an artistic home exterior where architecture meets warm material poetry.",
       images: [
         {"src": "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas6.webp", "alt": "Architectural copper facade panels designed by Metaguise"},
         {"src": "assets/Allprojects/residential/CopperCanvas/metacassette/coppercanvas7.webp", "alt": "Modern copper metal facade installation by Metaguise"},
@@ -910,14 +1039,18 @@ const SingleprojectDetail = [
 
     {
       name: "peachstreet",
+                ogTitle: "Peach Street Residence | Warm Metal Facade Design India",
+    ogDescription: "Peach Street by Metaguise is a warm-toned residential facade with soft metal cladding textures – a welcoming home exterior that balances colour, warmth, and modern material craft.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/PeachStreet/cover/peachstreet1.webp",
+    metaKeywords: ["Peach Street facade NCR, warm tone home exterior India, soft metal facade residence, coloured metal cladding house India, Metaguise residential NCR, warm facade home design India, peach facade home exterior"],
       url:"peach-street",
         alt:"Residential facade featuring abstract-perforated MetaCassette panels in copper-gold, MetaFold for adaptive movement, and MetaFlutes in wood and copper finishes.",
       videoLink: "https://www.youtube.com/shorts/rfSF_661G8U",
       youtubeLink: "https://www.youtube.com/watch?v=dsuhIROYiyc",
       instagramLink: "https://www.instagram.com/reel/DC3_Qu0yfbM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Peach Street",
-      metatittles:"Peach Street Facade Project | Metaguise Architecture",
-      metadescription:"Discover the Peach Street facade project by Metaguise, showcasing innovative architectural facade design, precision metal engineering, and modern building aesthetics.",
+      metatittles:"Peach Street Residence | Warm Metal Facade Design India",
+      metadescription:"Peach Street by Metaguise is a warm-toned residential facade with soft metal cladding textures – a welcoming home exterior that balances colour, warmth, and modern material craft.",
       images: [
        {"src": "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet2.webp", "alt": "Modern building facade design at Peach Street by Metaguise"},
         {"src": "assets/Allprojects/residential/PeachStreet/metacoin/peachstreet3.webp", "alt": "Exterior facade detailing for Peach Street project by Metaguise"},
@@ -934,14 +1067,18 @@ const SingleprojectDetail = [
 
     {
       name: "linearretreat",
+                ogTitle: "Linear Retreat | Horizontal Metal Facade Design Gurgaon",
+    ogDescription: "Linear Retreat by Metaguise is a calm residential facade defined by precise horizontal metal cladding lines – a retreat-like home exterior where simplicity becomes the statement.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/LinearRetreat/cover/linearretreat1.webp",
+    metaKeywords: ["Linear Retreat facade Gurgaon, horizontal metal cladding home, linear facade design India, clean lines home exterior NCR, Metaguise residential Gurgaon, minimalist aluminium facade India, linear architecture house"],
       url:"linear-retreat",
         alt:"Contemporary residence clad in MetaWood-finish MetaLouvers, with a sleek MetaGrey MetaFlute gate and textured MetaPlank underceilings.",
       videoLink: "https://www.youtube.com/shorts/L6R_17NCRcY",
       youtubeLink: "https://www.youtube.com/watch?v=rXSQRmGuXnw",
       instagramLink: "https://www.instagram.com/p/C-nDsgvyP1z/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
       Projectname:"Linear Retreat",
-      metatittles:"Linear Retreat Facade Project | Metaguise Architecture",
-      metadescription:"Linear Retreat by Metaguise showcases modern architectural facade design, precision metal detailing, and innovative engineering by the Metaguise facade experts.",
+      metatittles:"Linear Retreat | Horizontal Metal Facade Design Gurgaon",
+      metadescription:"Linear Retreat by Metaguise is a calm residential facade defined by precise horizontal metal cladding lines – a retreat-like home exterior where simplicity becomes the statement.",
       images: [
       
         {"src": "assets/Allprojects/residential/LinearRetreat/metaflute/linearretreat2.webp", "alt": "Modern facade design at Linear Retreat by Metaguise"},
@@ -963,14 +1100,18 @@ const SingleprojectDetail = [
 
      {
       name: "anj",
+                ogTitle: "Skyport House Facade | Modern Metal Cladding Home India",
+    ogDescription: "Skyport House by Metaguise is a sky-reaching residential facade – bold metal cladding designed for homes that aim high, with precision engineering and a modern architectural language.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/anj/cover/anj1.webp",
+    metaKeywords: ["Skyport House facade NCR, modern residential metal cladding India, bold home exterior design, contemporary house facade NCR, Metaguise residential project, aluminium cladding home India, modern architecture house facade"],
       url:"skyport-house",
          alt:"Bold residential facade featuring a glowing MetaPlank under-ceiling with lighting cut-out, grooved MetaCassette and copper Solid Panels around windows, and MetaGrey MetaFlutes anchoring the balconies.",
       videoLink: "https://youtube.com/shorts/Uda7k0yxwu4?feature=share",
       youtubeLink: "https://youtube.com/shorts/Uda7k0yxwu4?feature=share",
       instagramLink: "https://www.instagram.com/reel/DK-b8QxTmsl/?utm_source=ig_web_copy_link&igsh=NWozYmNhNnk2bzJk",
       Projectname:"Skyport House",
-      metatittles:" Residential Facade | MetaPlank, MetaLouver & MetaFlute Design",
-      metadescription:"A striking modern home with MetaPlank ceilings, MetaLouvers, MetaCassette panels and copper accents—designed to glow by night and frame light by day.",
+      metatittles:"Skyport House Facade | Modern Metal Cladding Home India",
+      metadescription:"Skyport House by Metaguise is a sky-reaching residential facade – bold metal cladding designed for homes that aim high, with precision engineering and a modern architectural language.",
       images: [
       
         "assets/Allprojects/residential/anj/metacassette/anj2.webp",
@@ -989,14 +1130,18 @@ const SingleprojectDetail = [
 
       {
       name: "dev622",
+                ogTitle: "Monolith Garden Facade | Sculptural Home Cladding India",
+    ogDescription: "Monolith Garden by Metaguise is a sculptural residential facade – a bold, monolithic metal cladding design that anchors the home in quiet architectural authority in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/dev622/cover/dev1.webp",
+    metaKeywords: ["Monolith Garden facade Gurgaon, sculptural home exterior India, bold residential cladding NCR, monolithic facade design, Metaguise Gurgaon residential, strong facade home India, architectural statement house exterior"],
       url:"monolith-garden",
           alt:"Elegant residential facade featuring MetaWood aluminium profiles, MetaCassette Perforated Slidefold, Solid Panels, and MetaFlutes in MetaGrey and MetaWood.",
       videoLink: "https://www.youtube.com/watch?v=a1LPuUgutZc",
       youtubeLink: "https://www.youtube.com/watch?v=a1LPuUgutZc",
       instagramLink: "https://www.instagram.com/p/CzvmxaBtF_V/?utm_source=ig_web_copy_link&igsh=dDB5ZnFpODc2ZDhw",
       Projectname:"Monolith Garden",
-      metatittles:"Monolith Garden Facade Project | Metaguise Architecture",
-      metadescription:"Discover the Monolith Garden facade project by Metaguise, showcasing innovative architectural design, precision metal engineering, and sustainable facade expertise.",
+      metatittles:"Monolith Garden Facade | Sculptural Home Cladding India",
+      metadescription:"Monolith Garden by Metaguise is a sculptural residential facade – a bold, monolithic metal cladding design that anchors the home in quiet architectural authority in Gurgaon..",
       images: [
       
        {"src": "assets/Allprojects/residential/dev622/metaflute/dev2.webp", "alt": "Modern metal facade design at Monolith Garden by Metaguise"},
@@ -1015,14 +1160,18 @@ const SingleprojectDetail = [
 
          {
       name: "ishaan",
+                ogTitle: "Peacock Mesh Facade | Architectural Metal Mesh Home India",
+    ogDescription: "Peacock Mesh by Metaguise is a vibrant residential facade featuring an architectural metal mesh pattern inspired by the peacock feather – crafted with MetaCoin technology in NCR.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/ishaan/cover/ishaan1.webp",
+    metaKeywords: ["Peacock Mesh facade NCR, metal mesh cladding home India, decorative mesh facade, MetaCoin mesh design, Metaguise artistic residential NCR, feather pattern facade India, architectural mesh home exterior"],
       url:"peacock-mesh",
              alt:"Retrofitted residential facade featuring rose gold MetaCoin panels arranged in a peacock feather pattern, capturing light and movement to transform the elevation with parametric elegance and fluidity.",
       videoLink: "https://www.youtube.com/watch?v=SJT31qFO1x4",
       youtubeLink: "https://www.youtube.com/watch?v=SJT31qFO1x4",
       instagramLink: "https://www.instagram.com/p/DHGN0Ptyiy2/?utm_source=ig_web_copy_link&igsh=YW9rb2Ywc2RmbHV5",
       Projectname:"Peacock Mesh",
-      metatittles:" Peacock Mesh Facade Project | Architectural Metal Mesh | Metaguise",
-      metadescription:"Discover the Peacock Mesh facade project by Metaguise, showcasing innovative architectural metal mesh design, precision fabrication, and modern facade engineering expertise.",
+      metatittles:" Peacock Mesh Facade | Architectural Metal Mesh Home India",
+      metadescription:"Peacock Mesh by Metaguise is a vibrant residential facade featuring an architectural metal mesh pattern inspired by the peacock feather – crafted with MetaCoin technology in NCR.",
       images: [
       
        {"src": "assets/Allprojects/residential/ishaan/metacoin/ishaan2.webp", "alt": "Architectural metal mesh facade installation – Peacock "},
@@ -1037,14 +1186,18 @@ const SingleprojectDetail = [
 
             {
       name: "pritesh",
+                ogTitle: "Sacred Geometry Facade | Parametric Home Cladding India",
+    ogDescription: "Sacred Geometry by Metaguise translates mathematical precision into a residential facade – patterned parametric metal cladding inspired by sacred geometric principles in NCR.",
+    ogImage: "",
+    metaKeywords: ["geometric metal cladding home India,patterned facade residential NCR ,sacred geometry architecture India ,sacred geometry metal facade home NCR India ,geometric patterned aluminium cladding residential India ,parametric geometric home exterior India "],
       url:"sacred-geometry",
         alt:"Modern residential facade featuring warm MetaWood-toned MetaPlank on balconies and ceiling, paired with a sleek MetaGrey MetaLouver gate.",
       videoLink: "https://www.youtube.com/watch?v=HK6Zzr5T-6I",
       youtubeLink: "https://www.youtube.com/watch?v=HK6Zzr5T-6I",
       instagramLink: "https://www.instagram.com/p/DJ3tFbySPzx/?utm_source=ig_web_copy_link&igsh=MTc0cWNndTJqMmJ6Ng==",
       Projectname:"Sacred Geometry",
-      metatittles:"Sacred Geometry Facade Design Project | Metaguise",
-      metadescription:"Discover the Sacred Geometry facade project by Metaguise, showcasing advanced metal facade design, precision engineering, and innovative architectural solutions.",
+      metatittles:"Sacred Geometry Facade | Parametric Home Cladding India",
+      metadescription:"Sacred Geometry by Metaguise translates mathematical precision into a residential facade – patterned parametric metal cladding inspired by sacred geometric principles in NCR.",
       images: [
       
         {"src": "assets/Allprojects/residential/pritesh/metalouver/pritesh2.webp", "alt": "Sacred Geometry architectural facade project by Metaguise"},
@@ -1062,14 +1215,18 @@ const SingleprojectDetail = [
 
               {
       name: "sachi",
+                ogTitle: "Sachi Residence Facade | Clean Metal Cladding Gurgaon",
+    ogDescription: "Sachi by Metaguise is a sincere, architecturally honest residential facade – clean metal cladding that lets the quality of materials and craftsmanship speak for themselves in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/sachi/cover/sachi1.webp",
+    metaKeywords: ["Sachi facade Gurgaon, clean metal cladding home India, modern residential facade India, elegant building exterior Gurgaon, Metaguise residential project, contemporary facade design India"],
       url:"sachi",
          alt:"Elevated facade crowned with shimmering copper and gold MetaCoin panels forming dynamic striped patterns that shift with light.",
       videoLink: "https://www.youtube.com/watch?v=HnIuN8fa0u0",
       youtubeLink: "https://www.youtube.com/watch?v=HnIuN8fa0u0",
       instagramLink: "https://www.instagram.com/p/DIbY-m4yttN/?utm_source=ig_web_copy_link&igsh=dGlidzMyMGNlOWMx",
       Projectname:"Sachi",
-      metatittles:"Sachi Facade Project | Architectural Design by Metaguise",
-      metadescription:"Explore the Sachi architectural facade project by Metaguise, showcasing innovative design, precision metal fabrication, and modern facade engineering expertise.",
+      metatittles:"Sachi Residence Facade | Clean Metal Cladding Gurgaon",
+      metadescription:"Sachi by Metaguise is a sincere, architecturally honest residential facade – clean metal cladding that lets the quality of materials and craftsmanship speak for themselves in Gurgaon.",
       images: [
       
        {"src": "assets/Allprojects/residential/sachi/metacoin/sachi2.webp", "alt": "Modern facade design details from Sachi project by Metaguise"},
@@ -1085,14 +1242,18 @@ const SingleprojectDetail = [
     
               {
       name: "vivek",
+                ogTitle: "Obsidian Residence | Dark Metal Facade Design India",
+    ogDescription: "Obsidian by Metaguise is a bold, dark-toned residential facade – deep charcoal metal cladding that commands architectural presence and frames the home in dramatic elegance in NCR.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/vivek/cover/vivek1.webp",
+    metaKeywords: ["Obsidian facade NCR, dark metal cladding home India, charcoal facade residence, dramatic home exterior India, black metal facade house NCR, Metaguise dark residential project, bold house facade India"],
       url:"obsidian",
                   alt:"Modern home facade featuring sculptural oval-shaped MetaShingles in balcony niches, grooved MetaCassette panels between floors, and Solid Panels on the third level.",
       videoLink: "https://youtube.com/shorts/YIqhJ3ii33s?feature=share",
       youtubeLink: "https://youtube.com/shorts/YIqhJ3ii33s?feature=share",
       instagramLink: "https://www.instagram.com/p/DJoyqwrzrNP/?utm_source=ig_web_copy_link&igsh=ZTY0OHhlcHdzNm45",
       Projectname:"Obsidian",
-      metatittles:" Obsidian Facade Project | Architectural Design by Metaguise ",
-      metadescription:" Discover the Obsidian project by Metaguise, showcasing innovative facade design, precision engineering, and modern architectural expertise in advanced metal facade systems. ",
+      metatittles:" Obsidian Residence | Dark Metal Facade Design India ",
+      metadescription:"Obsidian by Metaguise is a bold, dark-toned residential facade – deep charcoal metal cladding that commands architectural presence and frames the home in dramatic elegance in NCR. ",
       images: [
       
         { src: "assets/Allprojects/residential/vivek/metashingles/vivek3.webp", alt: "Precision engineered facade panels for Obsidian by Metaguise" },
@@ -1108,14 +1269,18 @@ const SingleprojectDetail = [
 
               {
       name: "hlp",
+                ogTitle: "HLP Commercial Facade | Metal Cladding Project NCR India",
+    ogDescription: "Metaguise executed the HLP commercial facade with high-performance metal cladding – a clean and modern architectural elevation in the NCR real estate corridor.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/hlp/cover/hlp1.webp",
+    metaKeywords: ["HLP facade NCR, commercial metal cladding India, building exterior cladding Delhi NCR, modern facade project India, Metaguise NCR commercial, aluminium facade commercial India, architectural cladding NCR"],
       url:"hlp-facade-project",
                   alt:"Facade in Mohali featuring thousands of copper and gold-toned round MetaCoin panels, creating a bold, dynamic, and light-reactive parametric surface across a sweeping horizontal screen.",
       videoLink: "https://www.youtube.com/watch?v=XtQhLEm19OI",
       youtubeLink: "https://www.youtube.com/watch?v=XtQhLEm19OI",
       instagramLink: "https://www.instagram.com/p/DJEh3Mfy8CM/?utm_source=ig_web_copy_link&igsh=MXA2ODRiYTNpaDFhYw==",
       Projectname:"HLP",
-      metatittles:" HLP Facade Project | Metal Facade Design by Metaguise ",
-      metadescription:"Discover the HLP facade project by Metaguise showcasing innovative metal facade design, precision engineering, and modern architectural solutions.",
+      metatittles:"HLP Commercial Facade | Metal Cladding Project NCR India",
+      metadescription:"Metaguise executed the HLP commercial facade with high-performance metal cladding – a clean and modern architectural elevation in the NCR real estate corridor..",
       images: [
       
        { src: "assets/Allprojects/commercial/hlp/metacoin/hlp2.webp", alt: "Modern architectural facade design at HLP project by Metaguise" },
@@ -1130,14 +1295,18 @@ const SingleprojectDetail = [
 
                  {
       name: "sbi",
+                ogTitle: "SBI Branch Facade | Institutional Metal Cladding India",
+    ogDescription: "Metaguise completed the SBI branch facade using durable, compliant metal cladding – combining institutional identity with modern architectural finish across India.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/sbi/cover/sbi1.webp",
+    metaKeywords: ["bank building design, institutional building facade, SBI branch metal facade India, bank building aluminium cladding India,institutional exterior cladding bank branch India "],
       url:"sbi-facade-project",
              alt:"Commercial facade by Metaguise featuring a cascading waveform of MetaCoin panels, paired with MetaGrey MetaLouvers for ventilation and MetaWood-toned MetaFlutes on the ceiling - blending parametric fluidity with everyday functionality.",
       videoLink: "https://www.youtube.com/watch?v=9WmdkuNl2io",
       youtubeLink: "https://www.youtube.com/watch?v=9WmdkuNl2io",
       instagramLink: "https://www.instagram.com/reel/DJZIDW3SWtc/?utm_source=ig_web_copy_link&igsh=MXhxZThtejB3d3Ntcg==",
       Projectname:"SBI",
-      metatittles:"SBI Building Facade Project by Metaguise | Commercial Architecture",
-      metadescription:"Explore the SBI commercial facade project by Metaguise showcasing precision metal facade engineering, modern architectural design, and innovative building solutions. ",
+      metatittles:"SBI Branch Facade | Institutional Metal Cladding India",
+      metadescription:"Metaguise completed the SBI branch facade using durable, compliant metal cladding – combining institutional identity with modern architectural finish across India. ",
       images: [
       
        { src: "assets/Allprojects/commercial/sbi/metacoin/sbi2.webp", alt: "Modern SBI Bank building facade architecture by Metaguise" },
@@ -1154,14 +1323,18 @@ const SingleprojectDetail = [
 
                    {
       name: "zenith",
+                      ogTitle: "Zenith Commercial Facade | Metal Panel Cladding Gurgaon",
+    ogDescription: "The Zenith project by Metaguise features a striking commercial metal facade – precision aluminium cladding panels that define a bold corporate identity in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/zenith/cover/zen1.webp",
+    metaKeywords: ["Zenith facade Gurgaon, commercial metal panels India, corporate building cladding Haryana, architectural aluminium facade, Metaguise Gurgaon office, modern office cladding India, building facade NCR"],
       url:"zenith",
              alt:"Glass commercial facade wrapped in champagne-gold MetaCoin panels forming ripple-like patterns, framed by solid panels and exposed brick arches.",
       videoLink: "https://youtube.com/shorts/8BpsryeWzMM?feature=share",
       youtubeLink: "https://youtube.com/shorts/8BpsryeWzMM?feature=share",
       instagramLink: "https://www.instagram.com/reel/DKg9lYsyODS/?utm_source=ig_web_copy_link&igsh=Nmo5aHpxcTI0Znlz",
       Projectname:"Zenith",
-      metatittles:" Zenith Facade Project by Metaguise | Modern Architectural Design",
-      metadescription:" Explore Zenith, a modern architectural facade project by Metaguise showcasing innovative metal facade design, precision engineering, and sustainable building expertise. ",
+      metatittles:" Zenith Commercial Facade | Metal Panel Cladding Gurgaon",
+      metadescription:"The Zenith project by Metaguise features a striking commercial metal facade – precision aluminium cladding panels that define a bold corporate identity in Gurgaon.",
       images: [
       
        { src: "assets/Allprojects/commercial/zenith/metacoin/zen2.webp", alt: "Modern building facade design Zenith project by Metaguise" },
@@ -1190,14 +1363,18 @@ const SingleprojectDetail = [
 
                    {
       name: "wvcity",
+                ogTitle: "",
+    ogDescription: "Metaguise designed the Wavecity commercial facade with high-performance metal cladding – clean lines, precision detailing, and lasting durability in Ghaziabad.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/wvcity/cover/wv1.webp",
+    metaKeywords: ["commercial building elevation,building front elevation,office building design ,commercial building elevation Ghaziabad ,modern commercial facade UP ,aluminium cladding commercial Ghaziabad "],
       url:"wavecity-facade-project",
         alt:"Ceiling installation in a Ghaziabad commercial space featuring shimmering gold and bronze MetaSequin panels that ripple with light by day and transform with custom lighting by night - bringing parametric movement and texture to life.",
       videoLink: "https://youtube.com/shorts/OS9Aa7kpJic?feature=shared",
       youtubeLink: "https://youtube.com/shorts/OS9Aa7kpJic?feature=shared",
       instagramLink: "https://www.instagram.com/p/DKwr6UnyzVB/?utm_source=ig_web_copy_link&igsh=MWI2djFwcDc5Y3E1dg==",
       Projectname:"Wavecity",
-      metatittles:"Wave City Facade Project | Metal Facade Design by Metaguise",
-      metadescription:"Explore the Wave City facade project by Metaguise featuring advanced metal facade design, precision engineering, and modern architectural solutions for contemporary buildings.",
+      metatittles:"Wavecity Facade | Commercial Metal Cladding Ghaziabad",
+      metadescription:"Metaguise designed the Wavecity commercial facade with high-performance metal cladding – clean lines, precision detailing, and lasting durability in Ghaziabad.",
       images: [
       
        { src: "assets/Allprojects/commercial/wvcity/metasequin/wv3.webp", alt: "Wave City facade project by Metaguise with modern metal facade design" },
@@ -1223,14 +1400,18 @@ const SingleprojectDetail = [
 
       {
       name: "whiteland",
+                ogTitle: "Whiteland Facade Project | Parametric Cladding Gurgaon",
+    ogDescription: "Whiteland's commercial facade by Metaguise uses custom parametric aluminium panels – a modern metal cladding system for premium real estate in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/whiteland/cover/wl1.webp",
+    metaKeywords: ["commercial building elevation,building front design,office building facade,commercial building elevation design Gurgaon,modern office building exterior India,aluminium panel facade commercial India"],
       url:"whiteland",
           alt:"The facade of the Westin Residences Experience Center features a striking all-white parametric cladding system, with each panel intricately sculpted into a six-petaled floral motif. Trusted by India’s top builders for luxury projects.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DNfBdU7ySbT/?utm_source=ig_web_copy_link&igsh=MWUzcGpzemZzeG45eQ==",
       Projectname:"WhiteLand",
-      metatittles:"White Land Facade Project by Metaguise | Modern Metal Architecture",
-      metadescription:"White Land by Metaguise is a modern metal facade project showcasing precision engineering, sustainable architecture, and innovative exterior design solutions.",
+      metatittles:"Whiteland Facade Project | Parametric Cladding Gurgaon",
+      metadescription:"Whiteland's commercial facade by Metaguise uses custom parametric aluminium panels – a modern metal cladding system for premium real estate in Gurgaon.",
       images: [
       
         {"src": "assets/Allprojects/commercial/whiteland/parametric panels/wl2.webp", "alt": "Modern architectural facade design at White Land by Metaguise"},
@@ -1259,14 +1440,18 @@ const SingleprojectDetail = [
     //11 item 
     {
       name: "theresonance",
+                ogTitle: "The Resonance Residence | Rhythmic Metal Facade India",
+    ogDescription: "The Resonance by Metaguise is a residential facade where repetitive metal cladding elements create visual rhythm and depth – an exterior that resonates with architectural intention.The Resonance by Metaguise is a residential facade where repetitive metal cladding elements create visual rhythm and depth – an exterior that resonates with architectural intention.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/TheResonance/cover/karan1.webp",
+    metaKeywords: ["The Resonance residential facade NCR, rhythmic metal facade home, patterned cladding house India, repetitive facade design, Metaguise residential project NCR, architectural rhythm home exterior, aluminium cladding pattern India"],
       url:"the-resonance",
         alt:"Modern residence featuring perforated MetaCassette panels, MetaWood MetaFlutes, and MetaGrey MetaLouvers.",
       videoLink: "https://youtu.be/XAKwEOasMSE",
       youtubeLink: "https://youtu.be/XAKwEOasMSE",
       instagramLink: "https://www.instagram.com/reel/DHXobO2yz1-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Resonance",
-      metatittles:"The Resonance Facade | Elegant Facade with MetaCassette, MetaFlute & MetaLouver",
-      metadescription:"Designed by Design Symposium and crafted by Metaguise, this refined facade features MetaCassette panels, warm MetaFlutes, and MetaGrey MetaLouvers—layering light, texture, and rhythm into a composition of architectural grace and timeless cohesion.",
+      metatittles:"The Resonance Residence | Rhythmic Metal Facade India",
+      metadescription:"The Resonance by Metaguise is a residential facade where repetitive metal cladding elements create visual rhythm and depth – an exterior that resonates with architectural intention.",
       images: [
       
         "assets/Allprojects/residential/TheResonance/metaflute/karan2.webp",
@@ -1285,14 +1470,18 @@ const SingleprojectDetail = [
 
     {
       name: "theelevato",
+                ogTitle: "The Elevato Residence | Elevated Metal Facade Gurgaon",
+    ogDescription: "The Elevato by Metaguise is a residential facade that elevates the ordinary – precision metal cladding with a vertical design language that lifts the home's architectural presence.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/TheElevato/cover/neeraj1.webp",
+    metaKeywords: ["The Elevato residential facade Gurgaon, elevated home exterior India, vertical metal facade house NCR, premium residential cladding Haryana, Metaguise Gurgaon home project, luxury house exterior India, modern residential facade"],
       url:"the-elevato",
          alt:"Three-sided residential facade featuring MetaWood MetaLouvers, solid white panels, and a sculptural MetaFlute gate.",
       videoLink: "https://www.youtube.com/shorts/GMLmGxfBO1E?feature=share",
       youtubeLink: "https://www.youtube.com/shorts/GMLmGxfBO1E?feature=share",
       instagramLink: "https://www.instagram.com/reel/DIdXmNOSwvw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Elevato",
-      metatittles:"The Elevato Facade | Rhythmic Facade with MetaLouver & MetaFlute by Metaguise",
-      metadescription:"Designed by Studio Mathema, this dynamic three-sided elevation blends MetaLouvers and MetaFlutes in warm MetaWood, framed by crisp white solid panels—creating a rhythmic facade that shifts with every step, balancing motion, texture, and elegance.",
+      metatittles:"The Elevato Residence | Elevated Metal Facade Gurgaon",
+      metadescription:"The Elevato by Metaguise is a residential facade that elevates the ordinary – precision metal cladding with a vertical design language that lifts the home's architectural presence.",
       images: [
       
         "assets/Allprojects/residential/TheElevato/metaflute/neeraj3.webp",
@@ -1314,14 +1503,18 @@ const SingleprojectDetail = [
 
     {
       name: "thecurtain",
+                ogTitle: "The Curtain Facade | Veil Metal Cladding Commercial India",
+    ogDescription: "The Curtain by Metaguise is a commercial facade where a flowing metal veil creates dramatic visual depth – a curtain wall reinvented through precision cladding in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/TheCurtain/cover/vega1.webp",
+    metaKeywords: ["The Curtain commercial facade Gurgaon, curtain wall metal cladding India, veil facade commercial, dramatic building exterior NCR, Metaguise commercial facade Gurgaon, metal curtain facade India, architectural commercial exterior"],
       url:"the-curtain",
         alt:"Tall dual-elevation facade clad in MetaGrey MetaLouvers, offering rhythmic verticality, ventilation, and rain protection.",
       videoLink: "https://youtube.com/shorts/Hl_P526YgY0?feature=share",
       youtubeLink: "https://youtube.com/shorts/Hl_P526YgY0?feature=share",
       instagramLink: "https://www.instagram.com/p/DHp3v2PyXv2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Curtain",
-      metatittles:"The Curtain | MetaLouver in MetaGrey by Metaguise",
-      metadescription:"Metaguise’s first tall-format facade features MetaLouvers in MetaGrey, wrapping two elevations with rhythm and refinement. This lightweight, functional system blends lightness, airflow, and elegance—transforming the structure into a bold architectural statement.",
+      metatittles:"The Curtain Facade | Veil Metal Cladding Commercial India",
+      metadescription:"The Curtain by Metaguise is a commercial facade where a flowing metal veil creates dramatic visual depth – a curtain wall reinvented through precision cladding in Gurgaon.",
       images: [
       
         "assets/Allprojects/commercial/TheCurtain/metalouver/vega2.webp",
@@ -1345,14 +1538,18 @@ const SingleprojectDetail = [
 
       {
       name: "GLSU",
+                ogTitle: "GLS University Facade | Parametric Campus Cladding India",
+    ogDescription: "GLS University's campus facade by Metaguise uses algorithmic metal panels – creating an expressive, future-ready institutional elevation in Ahmedabad, Gujarat.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/GLSU/cover/GLS%20University%20(12).webp",
+    metaKeywords: ["university building design (8,100/mo),campus elevation design ,institutional building facade ,university campus facade design India ,institutional building elevation India ,college building exterior Gujarat "],
       url:"glsu",
         alt:"Tall dual-elevation facade clad in MetaGrey MetaLouvers, offering rhythmic verticality, ventilation, and rain protection.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"GLSU University",
-      metatittles:"GLS University Metal Facade Project | Metaguise India",
-      metadescription:"GLS University facade by Metaguise combines MetaCassette perforated cladding and MetaCoin. Modern institutional metal facade design by India's premier facade company.",
+      metatittles:"GLS University Facade | Parametric Campus Cladding India",
+      metadescription:"GLS University's campus facade by Metaguise uses algorithmic metal panels – creating an expressive, future-ready institutional elevation in Ahmedabad, Gujarat.",
       images: [
       
         { src: "assets/Allprojects/commercial/GLSU/metacassette perforated/GLS University (1).webp", alt: "Perforated MetaCassette aluminium panels on GLS University exterior elevation — Metaguise" },
@@ -1373,14 +1570,18 @@ const SingleprojectDetail = [
 
         {
       name: "Sohana",
+                ogTitle: "Sohana Hospital Facade | Healthcare Cladding India",
+    ogDescription: "Sohana Hospital's facade by Metaguise uses durable hygienic aluminium cladding – a functional and striking elevation designed for healthcare architecture in Punjab.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Sohana/cover/Sohana%20Hospital%20(9).webp",
+    metaKeywords: ["hospital building design,hospital exterior design,healthcare building facade,hospital building elevation design India,hospital facade cladding India,healthcare building exterior India"],
       url:"sohana",
         alt:"Tall dual-elevation facade clad in MetaGrey MetaLouvers, offering rhythmic verticality, ventilation, and rain protection.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Sohana Hospital",
-      metatittles:"Sohana Hospital Metal Facade | MetaCassette by Metaguise",
-      metadescription:"Sohana Hospital facade by Metaguise uses perforated MetaCassette cladding in MetaGrey finish. Premium metal facade design for healthcare buildings across India.",
+      metatittles:"Sohana Hospital Facade | Healthcare Cladding India",
+      metadescription:"Sohana Hospital's facade by Metaguise uses durable hygienic aluminium cladding – a functional and striking elevation designed for healthcare architecture in Punjab.",
       images: [
       
        { src: "assets/Allprojects/commercial/Sohana/metacassette perforated/Sohana Hospital (1).webp", alt: "Perforated MetaCassette metal panels on Sohana Hospital facade — Metaguise India" },
@@ -1397,14 +1598,18 @@ const SingleprojectDetail = [
 
     {
       name: "TheCrystal",
+                ogTitle: "The Crystal Residence | Metal Facade Design Bikaner Rajasthan",
+    ogDescription: "The Crystal by Metaguise is a sharp, faceted residential facade using precision metal cladding – a crystal-inspired home exterior that stands out in Bikaner, Rajasthan.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/TheCrystal/cover/bikaner1.webp",
+    metaKeywords: ["The Crystal residential facade Bikaner, metal cladding Rajasthan, home exterior design Bikaner, luxury house facade Rajasthan India, Metaguise Rajasthan project, crystal facade design India, aluminium cladding home Bikaner"],
       url:"the-crystal",
         alt:"Angular residential facade featuring sculptural geometry with Solid Panels in Corten and White finishes.",
       videoLink: "https://youtu.be/BQyDoZNDi90",
       youtubeLink: "https://youtu.be/BQyDoZNDi90",
       instagramLink: "https://www.instagram.com/reel/DGcn0PjyHoE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Crystal",
-      metatittles:"Crystal Facade | Futuristic Facade in Solid Panel Corten & White by Metaguise",
-      metadescription:"A bold upcoming project by Studio Ardete, featuring Metaguise’s fusion of Solid Panel Corten and White finishes—where sharp angles, raw textures, and modern minimalism collide to shape a striking, future-forward facade.",
+      metatittles:"The Crystal Residence | Metal Facade Design Bikaner Rajasthan",
+      metadescription:"The Crystal by Metaguise is a sharp, faceted residential facade using precision metal cladding – a crystal-inspired home exterior that stands out in Bikaner, Rajasthan.",
       images: [
       
         "assets/Allprojects/residential/TheCrystal/solid-panel/bikaner2.webp",
@@ -1428,14 +1633,18 @@ const SingleprojectDetail = [
 
     {
       name: "rjjewellers",
+                ogTitle: "RJ Jewellers Facade | Custom Retail Cladding Delhi NCR",
+    ogDescription: "Metaguise created a distinctive retail facade for RJ Jewellers using custom metal cladding – communicating craftsmanship and premium brand identity in Delhi NCR.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/RJJewellers/cover/rj1.webp",
+    metaKeywords: ["jewellery showroom design,shop front elevation ,retail store facade ,jewellery shop front design Jaipur ,luxury retail facade Rajasthan ,jewellery store elevation India "],
       url:"rj-jewellers",
         alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
       videoLink: "https://youtube.com/shorts/N7gs1DPJmdY?feature=share",
       youtubeLink: "https://youtube.com/shorts/N7gs1DPJmdY?feature=share",
       instagramLink: "https://www.instagram.com/reel/DITmjRfoQXy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"RJ Jewellers",
-      metatittles:"RJ Jewellers, Jaipur | Parametric METABLOX™ Facade by Metaguise",
-      metadescription:"Debuting on the RJ Jewellers flagship in Jaipur, METABLOX™ by Metaguise is a modular, shape-shifting facade system. Inspired by beehives and blooming like a lotus, this champagne gold parametric marvel redefines metal as motion, rhythm, and identity.",
+      metatittles:"RJ Jewellers Facade | Custom Retail Cladding Delhi NCR",
+      metadescription:"Metaguise created a distinctive retail facade for RJ Jewellers using custom metal cladding – communicating craftsmanship and premium brand identity in Delhi NCR.",
       images: [
       
         "assets/Allprojects/commercial/RJJewellers/metablox/rj2.webp",
@@ -1461,14 +1670,18 @@ const SingleprojectDetail = [
 
     {
       name: "farm15",
+                ogTitle: "Farm 15 Facade | Farm House Metal Cladding Delhi NCR",
+    ogDescription: "Farm 15 by Metaguise is a modern farmhouse facade clad with premium metal panels – a refined, nature-inspired exterior that blends open living with architectural precision in Delhi NCR..",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/Farm15/cover/farm15_1.webp",
+    metaKeywords: ["Farm 15 facade Delhi NCR, farm house metal cladding India, residential aluminium facade NCR, Metaguise farm house, home cladding Farm 15, architectural farmhouse exterior India, luxury farm house facade NCR"],
       url:"farm15",
         alt:"Farmhouse facade featuring MetaLouver panels in MetaWood and MetaGrey across three elevations, paired with a dual-tone MetaGate.",
       videoLink: "",
       youtubeLink: "https://youtu.be/UA4mT5K3oBA",
       instagramLink: "https://www.instagram.com/reel/DCTanxYSWkl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Farm 15",
-      metatittles:"The Farmhouse | Organic Facade with MetaLouver in MetaWood & MetaGrey",
-      metadescription:"Designed by Cityspace’82 Architects, this farmhouse features a serene blend of MetaLouver panels in MetaWood and MetaGrey—crafting a three-sided elevation that flows with nature, balancing contemporary elegance with earthy warmth in true Metaguise style.",
+      metatittles:"Farm 15 Facade | Farm House Metal Cladding Delhi NCR",
+      metadescription:"Farm 15 by Metaguise is a modern farmhouse facade clad with premium metal panels – a refined, nature-inspired exterior that blends open living with architectural precision in Delhi NCR.",
       images: [
       
         "assets/Allprojects/residential/Farm15/metagate/farm5.webp",
@@ -1499,14 +1712,18 @@ const SingleprojectDetail = [
 
     {
       name: "e81",
+                ogTitle: "E81 Residence | Metal Facade Design Gurgaon India",
+    ogDescription: "E81 by Metaguise is a refined residential metal facade project in Gurgaon – precision aluminium cladding for a private home with a sharp, architecturally deliberate exterior.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/E81/cover/e81_1.webp",
+    metaKeywords: ["E81 residence facade Gurgaon, private home metal cladding NCR, residential aluminium facade Haryana, Metaguise residential Gurgaon, home cladding E81, architectural house exterior India, luxury home facade NCR"],
       url:"e81",
         alt:"Two-sided residential facade featuring MetaCassette Perforated Panels and wood-finish MetaFlutes across walls and underceilings.",
       videoLink: "https://youtu.be/aOam-UJ-k9A",
       youtubeLink: "https://youtu.be/aOam-UJ-k9A",
       instagramLink: "https://www.instagram.com/p/DG0Vp_pyuL9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"E81",
-      metatittles:"E81 Facade | Layered Facade with MetaCassette & MetaFlute Harmony",
-      metadescription:"A dual-elevation marvel by Design India 99, featuring MetaCassette perforated panels and warm wood-finish MetaFlutes—flowing seamlessly across surfaces to create a rhythmic blend of light, depth, and contemporary luxury.",
+      metatittles:"E81 Residence | Metal Facade Design Gurgaon India",
+      metadescription:"E81 by Metaguise is a refined residential metal facade project in Gurgaon – precision aluminium cladding for a private home with a sharp, architecturally deliberate exterior.",
       images: [
       
         "assets/Allprojects/residential/E81/metaflute/e81_2.webp",
@@ -1529,14 +1746,18 @@ const SingleprojectDetail = [
 
     {
       name: "B38",
+                ogTitle: "B38 Residence | Custom Metal Facade Gurgaon Haryana",
+    ogDescription: "B38 by Metaguise is a bespoke residential facade in Gurgaon – custom metal cladding that delivers a sharp, private-home exterior with precision and architectural character.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/B38/cover/b38_1.webp",
+    metaKeywords: ["B38 residential facade Gurgaon, custom home cladding Haryana, private house facade NCR, bespoke metal facade India, Metaguise Gurgaon home, residential aluminium cladding Haryana, architectural home exterior NCR"],
       url:"b38",
         alt:"Metaguise’s first-ever facade from 2018, clad in MetaCassette perforated panels with a MetaCorten finish - aging gracefully with evolving texture, timeless color, and enduring architectural appeal.",
       videoLink: "",
       youtubeLink: "https://www.youtube.com/shorts/a_SobJmIYv4?feature=share",
       instagramLink: "https://www.instagram.com/reel/CnMURWCpO0x/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"B38",
-      metatittles:"B38 Facade | MetaCassette in MetaCorten by Metaguise",
-      metadescription:"B38 facade features MetaCassette panels in enduring MetaCorten—a rust-free, stain-proof finish that ages gracefully. A timeless elevation that reflects our philosophy: design that endures, materials that evolve, beauty that stays.",
+      metatittles:"B38 Residence | Custom Metal Facade Gurgaon Haryana",
+      metadescription:"B38 by Metaguise is a bespoke residential facade in Gurgaon – custom metal cladding that delivers a sharp, private-home exterior with precision and architectural character.",
       images: [
       
      
@@ -1564,13 +1785,17 @@ const SingleprojectDetail = [
     {
       name: "a56",
       url:"a56",
+                ogTitle: "A56 Residence | Metal Facade Cladding Gurgaon India",
+    ogDescription: "A56 by Metaguise is a private residential metal facade in Gurgaon – clean, precision-engineered aluminium cladding for a home that speaks through architectural restraint.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/A56/cover/a56_1.webp",
+    metaKeywords: ["A56 residential facade Gurgaon, home metal cladding NCR, private house exterior India, aluminium facade residential Haryana, Metaguise A56 Gurgaon, residential cladding project India, home exterior design NCR"],
         alt:"Contemporary facade featuring 3D MetaPyramid panels in MetaGrey, MetaWood MetaLouvers and MetaFlutes for warmth and function, and a MetaFlute MetaGrey gate.",
       videoLink: "",
       youtubeLink: "https://youtu.be/N5lCQ8fSvgA",
       instagramLink: "https://www.instagram.com/reel/C94KkssS9Wt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"A56",
-      metatittles:"A56 Facade | Sculptural Facade with MetaPyramid, MetaLouver & MetaFlute",
-      metadescription:"Designed by FAIR Build and elevated by Metaguise, this residence features avant-garde MetaPyramid panels in MetaGrey, harmonized with MetaWood-finished MetaLouver and MetaFlute elements—creating a facade of refined luxury, rhythm, and architectural excellence.",
+      metatittles:"A56 Residence | Metal Facade Cladding Gurgaon India",
+      metadescription:"A56 by Metaguise is a private residential metal facade in Gurgaon – clean, precision-engineered aluminium cladding for a home that speaks through architectural restraint.",
       images: [
       
      
@@ -1597,14 +1822,18 @@ const SingleprojectDetail = [
 
     {
       name: "3dlf1",
+                ogTitle: "3DLF1 Residence | Metal Facade DLF Gurgaon India",
+    ogDescription: "3DLF1 by Metaguise is a refined residential metal facade project located in DLF Gurgaon – precision aluminium cladding for a high-end home in Haryana's premium locality.",
+    ogImage: "/assets/Allprojects/residential/3DLF1/cover/3dlf1_1.webp",
+    metaKeywords: ["3DLF1 facade DLF Gurgaon, residential cladding DLF Phase Haryana, metal facade DLF Gurgaon, luxury home exterior DLF, Metaguise DLF project Gurgaon, aluminium cladding residential DLF, home facade DLF Gurgaon India"],
       url:"3dlf1-facade-design",
         alt:"Striking residential facade featuring floral-pattern MetaPerforated panels in MetaCopper, paired with warm wooden MetaFlutes and a sleek MetaGrey MetaFlute gate.",
       videoLink: "",
       youtubeLink: "https://youtu.be/-pLr2ZVXycY",
       instagramLink: "https://www.instagram.com/reel/C39pYFwyFKK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"3DLF1",
-      metatittles:"3DLF Architectural Facade Project | Metaguise",
-      metadescription:"Discover the 3DLF architectural facade project by Metaguise, showcasing innovative metal facade design, precision engineering, and modern architectural expertise.",
+      metatittles:"3DLF1 Residence | Metal Facade DLF Gurgaon India",
+      metadescription:"3DLF1 by Metaguise is a refined residential metal facade project located in DLF Gurgaon – precision aluminium cladding for a high-end home in Haryana's premium locality.",
       images: [
       
      
@@ -1629,13 +1858,17 @@ const SingleprojectDetail = [
 
     {
       name: "caskey",
+                ogTitle: "Kinetic Grid Facade | MetaCassette Residential Cladding India",
+    ogDescription: "Kinetic Grid by Metaguise uses MetaCassette panels to create a dynamic, grid-based residential facade – a precision-engineered metal skin with rhythm and movement in NCR.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/caskey/cover/caskey1.webp",
+    metaKeywords: ["grid metal cladding home India (1,600/mo)modular facade residential NCR, kinetic architecture home India, MetaCassette grid facade residential NCR India, modular grid aluminium cladding home India, kinetic metal grid home exterior NCR India "],
       url:"kinetic-grid",
         alt:"Dynamic residential facade featuring Cascading Keys, MetaSlider with MetaLouvers, and an automatic MetaGate clad in grey MetaFlutes - showcasing Metaguise’s kinetic facade expertise and engineering innovation.",
       videoLink: "https://www.youtube.com/shorts/WG15QuBFn94",
       youtubeLink: "https://www.youtube.com/shorts/WG15QuBFn94",
       instagramLink: "https://www.instagram.com/reel/DKSpNL6zgPm/?utm_source=ig_web_copy_link&igsh=MmJ4bHJkaXNndmU1",
       Projectname:"Kinetic Grid",
-      metatittles:"Kinetic Grid Facade Project by Metaguise",
+      metatittles:"Kinetic Grid Facade | MetaCassette Residential Cladding India",
       metadescription:"Kinetic Grid by Metaguise is an advanced metal facade project showcasing dynamic architectural design, precision engineering, and innovative facade solutions.",
       images: [
       
@@ -1669,14 +1902,18 @@ const SingleprojectDetail = [
 
         {
       name: "3939a",
+                ogTitle: "Scaled Symphony | Parametric Residential Facade India",
+    ogDescription: "Scaled Symphony by Metaguise is a parametric residential facade using MetaCoin panels – a rhythmic, sculptural aluminium skin that transforms the home's exterior in NCR.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/3939A/cover/3939A_7.webp",
+    metaKeywords: ["modern house elevation design India,parametric home exterior India, aluminium cladding house design NCR, parametric metal facade home Gurgaon India, MetaCoin residential facade elevation India, sculptural aluminium house exterior NCR India "],
       url:"scaled-symphony",
             alt:"Striking residential facade clad in MetaShingles, forming sculptural canopy-like arches with dynamic texture - showcasing Metaguise’s PAN India design excellence.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/reel/DLxZ-y_B2_f/?utm_source=ig_web_copy_link&igsh=MTBnMTJtaWNvNng5bQ==",
       Projectname:"Scaled Symphony",
-      metatittles:"Scaled Symphony Facade Project | Metaguise",
-      metadescription:"Scaled Symphony by Metaguise is a precision-engineered metal facade project blending parametric design, architectural innovation, and sustainable building expertise.",
+      metatittles:"Scaled Symphony | Parametric Residential Facade India",
+      metadescription:"Scaled Symphony by Metaguise is a parametric residential facade using MetaCoin panels – a rhythmic, sculptural aluminium skin that transforms the home's exterior in NCR.",
       images: [
       
      
@@ -1704,14 +1941,18 @@ const SingleprojectDetail = [
 
       {
       name: "88arjun",
+                ogTitle: "Parametric Crown | MetaCoin Residential Facade Gurgaon",
+    ogDescription: "Parametric Crown by Metaguise uses MetaCoin panels to create a regal residential facade – a precise, algorithmic metal cladding system crowning a luxury home in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/88Arjun/cover/88_5.webp",
+    metaKeywords: ["Parametric Crown facade Gurgaon", "MetaCoin residential facade India", "Luxury home exterior Gurgaon", "Modern architectural facade India", "Metaguise residential Gurgaon", "Aluminium facade home India", "Top residential cladding Gurgaon"],
       url:"parametric-crown",
           alt:"Residential facade featuring monochromatic MetaShingles paired with vertically flowing MetaFin panels, adding layered texture across the upper levels and fluidity and depth on the lower facade.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Parametric Crown",
-      metatittles:"Parametric Crown Facade Project | Metaguise",
-      metadescription:"Discover Parametric Crown, an advanced metal facade project by Metaguise showcasing parametric design innovation, precision engineering, and modern architectural excellence.",
+      metatittles:"Parametric Crown | MetaCoin Residential Facade Gurgaon",
+      metadescription:"Parametric Crown by Metaguise uses MetaCoin panels to create a regal residential facade – a precise, algorithmic metal cladding system crowning a luxury home in Gurgaon.",
       images: [
       
      
@@ -1734,14 +1975,18 @@ const SingleprojectDetail = [
 
      {
       name: "Verdigris Veil",
+                ogTitle: "Verdigris Veil | Copper-Toned Metal Facade Home India",
+    ogDescription: "Verdigris Veil by Metaguise is a distinctive residential facade with copper-toned metal cladding – a veil of aged elegance draped over the modern home exterior in NCR.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/Verdigris%20Veil/cover/K3_1.webp",
+    metaKeywords: ["copper toned home exterior India,aged metal facade residential NCR, verdigris architecture facade India,copper aged metal cladding home NCR India,verdigris toned residential facade India, oxidised copper finish home facade NCR "],
       url:"verdigris-veil",
       videoLink: "https://www.instagram.com/p/DPJVPxaAVG9/?utm_source=ig_web_copy_link",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DPJVPxaAVG9/?utm_source=ig_web_copy_link",
       Projectname:"Verdigris Veil",
-      metatittles:"Verdigris Veil Architectural Facade Project | Metaguise",
-      metadescription:"Verdigris Veil by Metaguise is a distinctive architectural facade project crafted with precision metal detailing, innovative engineering, and contemporary design expertise.",
+      metatittles:"Verdigris Veil | Copper-Toned Metal Facade Home India",
+      metadescription:"Verdigris Veil by Metaguise is a distinctive residential facade with copper-toned metal cladding – a veil of aged elegance draped over the modern home exterior in NCR.",
       images: [
 
           { src: "assets/Allprojects/residential/Verdigris Veil/metaflute/K3_5.webp", alt: " Metal facade detailing in Verdigris Veil project" },
@@ -1762,14 +2007,18 @@ const SingleprojectDetail = [
 
      {
       name: "Casa Stilgrove",
+                ogTitle: "Casa Stilgrove | Luxury Residential Facade Gurgaon India",
+    ogDescription: "Casa Stilgrove by Metaguise is a luxury residential facade that merges contemporary metal cladding with architectural character – crafted for elite homes in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/Casa%20Stilgrove/cover/casa_1.webp",
+    metaKeywords: ["luxury villa exterior design Gurgaonelite home metal cladding Haryana, contemporary villa facade India ,luxury villa metal facade Gurgaon Haryana India, contemporary aluminium cladding villa NCR ,elite bungalow exterior Gurgaon India "],
       url:"casa-stilgrove",
       videoLink: "https://www.instagram.com/p/DLHNdyWSHEK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DLHNdyWSHEK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Casa Stilgrove",
-      metatittles:"Casa Stilgrove Facade Project | Metaguise",
-      metadescription:"Discover Casa Stilgrove by Metaguise, a premium architectural facade project showcasing modern metal craftsmanship, precision engineering, and sustainable design excellence.",
+      metatittles:"Casa Stilgrove | Luxury Residential Facade Gurgaon India",
+      metadescription:"Casa Stilgrove by Metaguise is a luxury residential facade that merges contemporary metal cladding with architectural character – crafted for elite homes in Gurgaon.",
       images: [
 
           {src: "assets/Allprojects/residential/Casa Stilgrove/metacassette/casa_2.webp", alt: "Modern architectural facade at Casa Stilgrove by Metaguise"},
@@ -1792,14 +2041,18 @@ const SingleprojectDetail = [
 
      {
       name: "The Cornerstone",
+                ogTitle: "The Cornerstone | Residential Metal Facade NCR India",
+    ogDescription: "The Cornerstone by Metaguise is a foundational residential facade – anchored in strong architectural intent with precision metal cladding panels designed for lasting elegance.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Cornerstone/cover/nitiKa_1.webp",
+    metaKeywords: ["The Cornerstone residential facade NCR, metal cladding home India, architectural house exterior Delhi NCR, aluminium facade residential India, Metaguise residential project NCR, modern home exterior design, durable home cladding India"],
       url:"the-cornerstone",
       videoLink: "https://www.instagram.com/p/DJWxORdSkKR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DJWxORdSkKR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Cornerstone",
-      metatittles:"The Cornerstone Facade Project | Metaguise",
-      metadescription:"Discover The Cornerstone by Metaguise, a modern facade project crafted with precision engineering, innovative metal systems, and architectural excellence.",
+      metatittles:"The Cornerstone | Residential Metal Facade NCR India",
+      metadescription:"The Cornerstone by Metaguise is a foundational residential facade – anchored in strong architectural intent with precision metal cladding panels designed for lasting elegance.",
       images: [
 
           {src: "assets/Allprojects/residential/The Cornerstone/metacassette/nitiKa_2.webp", alt: "Modern architectural facade detailing at The Cornerstone"},
@@ -1822,14 +2075,18 @@ const SingleprojectDetail = [
 
      {
       name: "The Golden Bloom",
+                ogTitle: "The Golden Bloom | Decorative Metal Facade Gurgaon India",
+    ogDescription: "The Golden Bloom by Metaguise is a radiant residential facade using MetaCoin-inspired decorative metal cladding – warm, expressive, and architecturally alive in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Golden%20Bloom/cover/coin_1.webp",
+    metaKeywords: ["The Golden Bloom residential facade Gurgaon, metal cladding home India, architectural house exterior Gurgaon, aluminium facade residential India, Metaguise residential project Gurgaon, modern home exterior design, durable home cladding India"],
       url:"the-golden-bloom",
       videoLink: "https://www.youtube.com/shorts/hi-nBldGue0",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "https://www.youtube.com/shorts/hi-nBldGue0?feature=share",
       instagramLink: "https://www.instagram.com/p/DPnl6qagXk0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Golden Bloom",
-      metatittles:"The Golden Bloom Facade Project | Metaguise",
-      metadescription:"The Golden Bloom by Metaguise showcases an innovative metal facade project combining precision engineering, contemporary design, and architectural excellence.",
+      metatittles:"The Golden Bloom | Decorative Metal Facade Gurgaon India",
+      metadescription:"The Golden Bloom by Metaguise is a radiant residential facade using MetaCoin-inspired decorative metal cladding – warm, expressive, and architecturally alive in Gurgaon.",
       images: [
 
          { src: "assets/Allprojects/residential/The Golden Bloom/metacoin/coin_3.webp", alt: "Custom metal facade detailing in The Golden Bloom project" },
@@ -1847,14 +2104,18 @@ const SingleprojectDetail = [
 
         {
       name: "Miraj Stadium",
+                ogTitle: "Miraj Stadium Facade | MetaCoin Metal Cladding India",
+    ogDescription: "Metaguise designed the Miraj Cricket Stadium facade using MetaCoin parametric panels — a large-scale aluminium cladding built for landmark sports architecture in Rajasthan.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Miraj%20Stadium/cover/miraj%20(1).webp",
+    metaKeywords: ["cricket stadium elevation ,stadium facade design,sports building elevation,cricket stadium exterior design India,stadium metal cladding, India sports architecture facade India "],
       url:"miraj-stadium",
       videoLink: "https://www.youtube.com/watch?v=XDySYVbYrQg",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "https://www.youtube.com/watch?v=XDySYVbYrQg",
       instagramLink: "https://www.instagram.com/reels/DULhVHUDAtW/",
       Projectname:"Miraj Stadium",
-      metatittles:"Miraj Stadium Facade Project | Metaguise",
-      metadescription:"Discover the Miraj Stadium facade project by Metaguise, featuring advanced metal engineering, durable architectural systems, and precision facade execution.",
+      metatittles:"Miraj Stadium Facade | MetaCoin Metal Cladding India",
+      metadescription:"Metaguise designed the Miraj Cricket Stadium facade using MetaCoin parametric panels — a large-scale aluminium cladding built for landmark sports architecture in Rajasthan.",
       images: [
 
          {
@@ -1911,14 +2172,18 @@ const SingleprojectDetail = [
     },
      {
       name: "The Stillwave",
+                     ogTitle: "The Stillwave Residence | Fluid Metal Facade Design India",
+    ogDescription: "The Stillwave by Metaguise is a fluid residential facade – a calm, wave-inspired metal cladding design that brings movement and tranquillity to the home exterior in NCR.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Stillwave/cover/Kunal_1.webp",
+    metaKeywords: ["The Stillwave residential facade NCR, wave facade home India, fluid metal cladding house, calm home exterior design, Metaguise residential project NCR, organic facade residence India, wave-inspired building exterior"],
       url:"the-stillwave",
       videoLink: "",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DOdyKVBgZfy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Stillwave",
-      metatittles:"The Stillwave Metal Facade Project | Metaguise",
-      metadescription:"The Stillwave by Metaguise is a custom metal facade project combining sculptural design, precision engineering, and sustainable architectural innovation.",
+      metatittles:"The Stillwave Residence | Fluid Metal Facade Design India",
+      metadescription:"The Stillwave by Metaguise is a fluid residential facade – a calm, wave-inspired metal cladding design that brings movement and tranquillity to the home exterior in NCR.",
       images: [
 
           { src: "assets/Allprojects/residential/The Stillwave/metacoin/Kunal_4.webp", alt: "Custom metal facade panels in The Stillwave by Metaguise" },
@@ -1935,14 +2200,18 @@ const SingleprojectDetail = [
 
         {
       name: "Achintya",
+                     ogTitle: "Achintya Commercial Facade | Metal Cladding India",
+    ogDescription: "The Achintya project by Metaguise features a bold commercial metal facade – precision-fabricated aluminium panels engineered for strong architectural impact in NCR.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Achintya/cover/achintya_1.webp",
+    metaKeywords: ["Achintya facade NCR, commercial building cladding India, aluminium panel facade, architectural facade NCR, Metaguise commercial project, metal cladding Delhi NCR, exterior facade design India"],
       url:"achintya",
         alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DLmAChpS7oL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Achintya",
-      metatittles:"Achintya Architectural Facade Project | Metaguise",
-      metadescription:"Discover Achintya, an architectural facade project by Metaguise showcasing precision metal engineering, contemporary design innovation, and sustainable building expertise.",
+      metatittles:"Achintya Commercial Facade | Metal Cladding India",
+      metadescription:"The Achintya project by Metaguise features a bold commercial metal facade – precision-fabricated aluminium panels engineered for strong architectural impact in NCR.",
       images: [
       
        {src: "assets/Allprojects/commercial/Achintya/metacoin/achintya_2.webp", alt: "Contemporary metal facade design – Achintya by Metaguise"},
@@ -1956,14 +2225,18 @@ const SingleprojectDetail = [
 
         {
       name: "AB Jewels",
+                     ogTitle: "AB Jewels Facade | Luxury Retail Metal Cladding India",
+    ogDescription: "Metaguise designed a premium metal facade for AB Jewels blending luxury retail identity with precision-engineered aluminium cladding in Gurgaon.",
+    ogImage: "",
+    metaKeywords: ["jewellery showroom design,shop front design India,showroom exterior design,jewellery showroom exterior design India,luxury retail facade India,metal cladding jewellery shop India"],
       url:"ab-jewels",
         alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "https://www.instagram.com/p/DP8DOfnAeKW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"AB Jewels",
-      metatittles:"AB Jewels Facade Project | Metaguise",
-      metadescription:"Discover the AB Jewels facade project by Metaguise, showcasing precision metal craftsmanship, modern architectural detailing, and premium commercial design expertise.",
+      metatittles:"AB Jewels Facade | Luxury Retail Metal Cladding India",
+      metadescription:"Metaguise designed a premium metal facade for AB Jewels blending luxury retail identity with precision-engineered aluminium cladding in Gurgaon.",
       images: [
         { 
           src: "assets/Allprojects/commercial/AB Jewels/metapyramid/ab_2.webp",
@@ -2025,14 +2298,18 @@ const SingleprojectDetail = [
 
       {
       name: "w12",
+                           ogTitle: "The Undercurrent | Layered Metal Facade Residence Gurgaon",
+    ogDescription: "The Undercurrent by Metaguise features a layered residential facade with flowing metal cladding – depth, movement, and sophisticated architectural texture in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/W12/cover/w12_1.webp",
+    metaKeywords: ["The Undercurrent residential facade Gurgaon, layered metal facade home, textured house exterior India, flowing architecture facade, Metaguise residential Gurgaon project, depth facade design India, aluminium cladding layered home"],
       url:"undercurrent",
       videoLink: "",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Undercurrent",
-      metatittles:"The Undercurrent Facade Project | Metaguise",
-      metadescription:"Discover The Undercurrent by Metaguise, a precision-engineered metal facade project blending contemporary architecture, sustainable materials, and expert craftsmanship.",
+      metatittles:"The Undercurrent | Layered Metal Facade Residence Gurgaon",
+      metadescription:"The Undercurrent by Metaguise features a layered residential facade with flowing metal cladding – depth, movement, and sophisticated architectural texture in Gurgaon.",
       images: [
 
           { src: "assets/Allprojects/residential/W12/metafin/w12_2.webp", alt: "Contemporary architectural facade design – The Undercurrent" },
@@ -2054,14 +2331,18 @@ const SingleprojectDetail = [
 
     {
       name: "thewaveform",
+                           ogTitle: "The Waveform Facade | MetaFin Residential Cladding India",
+    ogDescription: "The Waveform by Metaguise uses MetaFin panels to craft a fluid residential facade – undulating aluminium curves that bring natural wave rhythm to the modern home exterior.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/TheWaveform/cover/khandelwal1.webp",
+    metaKeywords: ["The Waveform facade India, MetaFin residential cladding, modern home exterior Gurgaon, luxury facade project NCR, parametric metal facade design"],
       url:"the-waveform",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "https://youtu.be/fI3GdK5MMuA",
       instagramLink: "https://www.instagram.com/reel/DFU1kfryqz0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"The Waveform",
-      metatittles:"The Waveform | MetaCoin, MetaPyramid, MetaShingle & MetaLouver in Harmony",
-      metadescription:"A showcase of Metaguise’s finest, this residential facade blends MetaCoin’s fluid waves, MetaPyramid’s mystique, MetaShingle’s rhythm, and MetaLouver’s warmth—crafting a textured, geometric narrative that redefines contemporary architectural expression.",
+      metatittles:"The Waveform Facade | MetaFin Residential Cladding India",
+      metadescription:"The Waveform by Metaguise uses MetaFin panels to craft a fluid residential facade – undulating aluminium curves that bring natural wave rhythm to the modern home exterior.",
       images: [
       
      
@@ -2091,14 +2372,18 @@ const SingleprojectDetail = [
 
          {
       name: "the panorama",
+                           ogTitle: "The Panorama Residence | Wide-View Metal Facade Gurgaon",
+    ogDescription: "The Panorama by Metaguise creates an expansive residential facade using precision metal cladding – a wide, visually generous exterior that defines the modern luxury home in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Panorama/cover/The%20Panorama%20(1).webp",
+    metaKeywords: ["The Panorama residential facade Gurgaon, wide-view metal facade India, modern residential facade Delhi NCR, Metaguise residential project, luxury home exterior NCR, sustainable facade design"],
       url: "the-panorama",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Panorama",
-      metatittles:"The Panorama Facade Project | Metaguise",
-      metadescription:"The Panorama by Metaguise showcases a modern architectural facade project combining precision engineering, innovative metal systems, and sustainable design excellence.",
+      metatittles:"The Panorama Residence | Wide-View Metal Facade Gurgaon",
+      metadescription:"The Panorama by Metaguise creates an expansive residential facade using precision metal cladding – a wide, visually generous exterior that defines the modern luxury home in Gurgaon.",
       images: [
           { 
             src: "assets/Allprojects/residential/The Panorama/metacassette perforated/The Panorama (1).webp", 
@@ -2134,14 +2419,18 @@ const SingleprojectDetail = [
 
        {
       name: "the frame",
+                           ogTitle: "The Frame Residence | Framed Metal Facade Design India",
+    ogDescription: "The Frame by Metaguise plays with architectural framing through bold metal cladding – a residential facade where structure and design language create a picture-perfect exterior.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Frame/cover/The%20Frame%20(1).webp",
+    metaKeywords: ["The Frame residential facade NCR, framed house exterior India, architectural metal facade home, aluminium cladding residence Delhi NCR, Metaguise residential project, modern house facade India, home exterior design NCR"],
       url: "the-frame",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Frame",
-      metatittles:"The Frame Metal Facade Project | Metaguise",
-      metadescription:"Discover The Frame by Metaguise, a modern metal facade project combining precision engineering, architectural innovation, and sustainable design excellence.",
+      metatittles:"The Frame Residence | Framed Metal Facade Design India",
+      metadescription:"The Frame by Metaguise plays with architectural framing through bold metal cladding – a residential facade where structure and design language create a picture-perfect exterior.",
       images: [
       
      
@@ -2191,14 +2480,18 @@ const SingleprojectDetail = [
 
          {
       name: "the crest",
+                           ogTitle: "The Crest Residence | Premium Metal Facade Gurgaon India",
+    ogDescription: "The Crest by Metaguise is a premium residential facade featuring elevated metal cladding design – a refined exterior that sits at the top of modern home architecture in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Crest/cover/The%20Crest%20(1).webp",
+    metaKeywords: ["premium home elevation design Gurgaon,luxury residential facade Haryana India ,top metal cladding home NCR ,premium metal cladding residential Gurgaon Haryana ,luxury elevation design bungalow NCR India ,high-end home exterior metal panel India ,"],
       url: "the-crest",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Crest",
-      metatittles:"The Crest Metal Facade Project | Metaguise",
-      metadescription:"Discover The Crest by Metaguise, a premium metal facade project showcasing advanced engineering, modern architectural design, and sustainable facade expertise.",
+      metatittles:"The Crest Residence | Premium Metal Facade Gurgaon India",
+      metadescription:"The Crest by Metaguise is a premium residential facade featuring elevated metal cladding design – a refined exterior that sits at the top of modern home architecture in Gurgaon.",
       images: [
       
      
@@ -2240,14 +2533,18 @@ const SingleprojectDetail = [
 
            {
       name: "the cantilever",
+                           ogTitle: "The Cantilever Residence | Metal Facade Design Gurgaon",
+    ogDescription: "The Cantilever by Metaguise is a dramatic residential facade with cantilevered design and premium metal cladding – a bold architectural exterior for luxury homes in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Cantilever/cover/The%20Cantilever%20(1).webp",
+    metaKeywords: ["premium home elevation design Gurgaon,luxury residential facade Haryana India ,top metal cladding home NCR ,premium metal cladding residential Gurgaon Haryana, luxury elevation design bungalow NCR India, high-end home exterior metal panel India "],
       url: "the-cantilever",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Cantilever",
-      metatittles:"The Cantilever Metal Facade Project | Metaguise",
-      metadescription:"Discover The Cantilever by Metaguise, a precision-engineered metal facade project showcasing structural innovation, modern architecture, and sustainable design expertise.",
+      metatittles:"The Cantilever Residence | Metal Facade Design Gurgaon",
+      metadescription:"The Cantilever by Metaguise is a dramatic residential facade with cantilevered design and premium metal cladding – a bold architectural exterior for luxury homes in Gurgaon.",
       images: [
       
         { 
@@ -2285,14 +2582,18 @@ const SingleprojectDetail = [
 
            {
       name: "the spine",
+                           ogTitle: "The Spine Residence | Structural Metal Facade Design India",
+    ogDescription: "The Spine by Metaguise is a bold residential facade where vertical metal cladding elements create a strong structural rhythm – an architectural statement for the modern home.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Spine/cover/The%20Spine%20(1).webp",
+    metaKeywords: ["vertical metal cladding house India,linear elevation design home NCR, structural facade residential India, vertical aluminium cladding home exterior NCR India,structural rhythm facade residential India,modern vertical panel house elevation NCR"],
       url: "the-spine",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Spine",
-      metatittles:"The Spine Metal Facade Project | Metaguise",
-      metadescription:"The Spine by Metaguise is a precision-engineered metal facade project showcasing innovative design, structural expertise, and contemporary architectural excellence.",
+      metatittles:"The Spine Residence | Structural Metal Facade Design India",
+      metadescription:"The Spine by Metaguise is a bold residential facade where vertical metal cladding elements create a strong structural rhythm – an architectural statement for the modern home.",
       images: [
 
         { 
@@ -2342,14 +2643,18 @@ const SingleprojectDetail = [
 
             {
       name: "the solace",
+                           ogTitle: "The Solace Residence | Luxury Metal Facade Gurgaon India",
+    ogDescription: "The Solace by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Solace/cover/The%20Solace%20(1).webp",
+    metaKeywords: ["luxury bungalow elevation Gurgaon ,modern home exterior metal cladding India ,elegant house facade Haryana ,luxury metal facade bungalow Gurgaon India ,calm architectural home exterior NCR India ,understated luxury residential facade Haryana "],
       url: "the-solace",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Solace",
-      metatittles:"The Solace Facade Project by Metaguise",
-      metadescription:"The Solace by Metaguise is a modern architectural facade project showcasing precision metal engineering, innovative design execution, and sustainable building expertise.",
+      metatittles:"The Solace Residence | Luxury Metal Facade Gurgaon India",
+      metadescription:"The Solace by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
       images: [
       
      
@@ -2396,14 +2701,18 @@ const SingleprojectDetail = [
 
                 {
       name: "The Canopy",
+                           ogTitle: "The Overhang Facade | Residential Metal Cladding Gurgaon",
+    ogDescription: "The Overhang by Metaguise is a striking residential facade featuring bold architectural overhangs with custom metal cladding – redefining home exteriors in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Canopy/cover/canopy%20(1).webp",
+    metaKeywords: ["The Overhang residential facade Gurgaon, home metal cladding India, residential aluminium facade NCR, architectural home exterior India, Metaguise residential project Gurgaon, modern house facade India, luxury home cladding"],
       url: "the-canopy",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Overhang",
-      metatittles:"The Canopy Residential Facade Project | Metaguise",
-      metadescription:"The Canopy by Metaguise is a luxury residential facade featuring MetaCassette perforated panels and MetaLouver system. Premium home elevation design in India.",
+      metatittles:"The Overhang Facade | Residential Metal Cladding Gurgaon",
+      metadescription:"The Overhang by Metaguise is a striking residential facade featuring bold architectural overhangs with custom metal cladding – redefining home exteriors in Gurgaon.",
       images: [
       
      
@@ -2468,14 +2777,18 @@ const SingleprojectDetail = [
 
               {
       name: "the pavilion",
+                           ogTitle: "The Pavilion Residence | Metal Facade Design Gurgaon",
+    ogDescription: "The Pavilion by Metaguise features a crafted residential metal facade – a bespoke aluminium cladding solution that elevates the home's character and curb appeal in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Pavilion/cover/The%20Pavilion%20(1).webp",
+    metaKeywords: ["luxury home exterior design Gurgaon,bungalow metal facade India, premium house elevation Haryana, luxury bungalow metal cladding Gurgaon India, custom aluminium facade luxury home NCR, premium residential exterior Haryana India "],
       url: "the-pavilion",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"The Pavilion",
-      metatittles:"The Pavilion Facade Project | Metaguise",
-      metadescription:"Discover The Pavilion by Metaguise, a modern facade project showcasing innovative metal design, precision engineering, and sustainable architectural excellence.",
+      metatittles:"The Pavilion Residence | Metal Facade Design Gurgaon",
+      metadescription:"The Pavilion by Metaguise features a crafted residential metal facade – a bespoke aluminium cladding solution that elevates the home's character and curb appeal in Gurgaon. ",
      images: [
   {
     src: "assets/Allprojects/residential/The Pavilion/metacassette grooved/The Pavilion (1).webp",
@@ -2526,14 +2839,18 @@ const SingleprojectDetail = [
 
               {
       name: "rahul sweets",
+                           ogTitle: "Rahul Sweets Facade | Retail Shopfront Design India",
+    ogDescription: "Metaguise transformed the Rahul Sweets retail frontage with a vibrant custom metal facade – built for brand visibility, durability, and everyday footfall impact.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Rahul%20Sweets/cover/Rahul%20Sweets%20(1).webp",
+    metaKeywords: ["shop front design India,shop elevation design,retail store front design"],
       url: "rahul-sweets",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Rahul Sweets",
-      metatittles:"Rahul Sweets Commercial Facade Project | Metaguise",
-      metadescription:"Rahul Sweets commercial facade project by Metaguise showcases modern metal facade design, precision detailing, and innovative architectural execution.",
+      metatittles:"Rahul Sweets Facade | Retail Shopfront Design India",
+      metadescription:"Metaguise transformed the Rahul Sweets retail frontage with a vibrant custom metal facade – built for brand visibility, durability, and everyday footfall impact.",
       images: [
       
      
@@ -2552,14 +2869,18 @@ const SingleprojectDetail = [
 
                   {
       name: "ahir",
+                           ogTitle: "Ahir Commercial Facade | Metal Cladding Project NCR",
+    ogDescription: "Metaguise executed the Ahir commercial facade with precision metal cladding – delivering a clean, contemporary building elevation across the NCR region.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/ahir/cover/x%20(9).webp",
+    metaKeywords: ["commercial building elevation,building front design,office building facade,commercial building elevation design NCR,modern office building exterior India,aluminium panel facade commercial India"],
       url: "ahir",
          alt:"",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Ahir",
-      metatittles:"Ahir Commercial MetaCoin Facade Project | Metaguise",
-      metadescription:"Ahir commercial facade by Metaguise features MetaCoin parametric cladding. India's top metal facade company. 1800+ projects. Explore design, day & night views.",
+      metatittles:"Ahir Commercial Facade | Metal Cladding Project NCR",
+      metadescription:"Metaguise executed the Ahir commercial facade with precision metal cladding – delivering a clean, contemporary building elevation across the NCR region.",
       images: [
       
      
@@ -2581,14 +2902,18 @@ const SingleprojectDetail = [
 
               {
       name: "fortis",
+                           ogTitle: "Fortis Hospital Facade | Architectural Metal Cladding India",
+    ogDescription: "The Fortis healthcare facade by Metaguise combines precision aluminium cladding with a strong institutional design language – durable, compliant, and built to last.",
+    ogImage: "https://metaguise.com/assets/Allprojects/commercial/Fortis/cover/Fortis%20(1).webp",
+    metaKeywords: ["Fortis hospital,hospital building design ,hospital facade ,hospital building elevation design India ,healthcare building cladding India ,aluminium facade hospital India "],
       url: "fortis",
          alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
       videoLink: "",
       youtubeLink: "",
       instagramLink: "",
       Projectname:"Fortis",
-      metatittles:"Fortis Facade Project by Metaguise | Modern Metal Design",
-      metadescription:"Fortis facade project by Metaguise showcases modern metal design, precision engineering, and sustainable architectural expertise for contemporary buildings.",
+      metatittles:"Fortis Hospital Facade | Architectural Metal Cladding India",
+      metadescription:"The Fortis healthcare facade by Metaguise combines precision aluminium cladding with a strong institutional design language – durable, compliant, and built to last.",
       images: [
 
           {
