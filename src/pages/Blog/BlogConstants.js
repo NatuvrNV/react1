@@ -12424,7 +12424,7 @@ Metaguise's design consultation process helps every homeowner and architect make
     template: 'B',
     category: "Industry Trends",
 
-    url: "noida-luxury-home-facade-ideas",
+    url: "noida-luxury-home-facade-ideas-2026",
 
     metaDescription:
       "Metal facade ideas for Noida's top society homes — Sector 44, 94 & 150. PVDF aluminium, Corten steel & parametric systems that last 40+ years. Free site visit by Metaguise.",
@@ -12591,7 +12591,7 @@ Metaguise's design consultation process helps every homeowner and architect make
     template: 'B',
     category: "Industry Trends",
 
-    url: "farmhouse-exterior-design-india-metal-facade-ideas",
+    url: "farmhouse-exterior-design-india-metal-facade-ideas-2026",
 
     metaDescription:
       "Corten steel, MetaWood & biophilic metal facades for Indian farmhouses — Alibaug, Goa, NCR & Rajasthan. Geography-wise material guide + real pricing by Metaguise.",
