@@ -6,12 +6,35 @@ import "swiper/css";
 import "./ClientSlider.css";
 
 const logos = [
-  "assets/Client/ODC.png",
-  "assets/Client/ardete.png",
-  "assets/Client/asroarcade.png",
-  "assets/Client/cityspace.png",
-  "assets/Client/epsilon.png",
-  "assets/Client/mathema.png",
+  "assets/Client/AB-Jewellers.png",
+  "assets/Client/Apollo.png",
+  "assets/Client/ASRO Arcade.png",
+  "assets/Client/BDR.png",
+  "assets/Client/Billionaire Homes.png",
+  "assets/Client/BMW.png",
+  "assets/Client/CitySpace82.png",
+  "assets/Client/DSR-Builders.png",
+  "assets/Client/Environ-Homes.png",
+  "assets/Client/Fortis.png",
+  "assets/Client/GLS-University.png",
+  "assets/Client/Golf-Island.png",
+  "assets/Client/GRT.png",
+  "assets/Client/Hafeez-Contractor.png",
+  "assets/Client/Indian-Railways.png",
+  "assets/Client/M3M.png",
+  "assets/Client/Miraj-Group.png",
+  "assets/Client/MorphGenesis.png",
+  "assets/Client/Odisha-Cricket-Association.png",
+  "assets/Client/Radisson.png",
+  "assets/Client/Reliance.png",
+  "assets/Client/Sachin-Tendulkar.png",
+  "assets/Client/Studio-Ardete.png",
+  "assets/Client/Studio-Lotus.png",
+  "assets/Client/Studio-Mathema.png",
+  "assets/Client/Tanishq_.png",
+  "assets/Client/Vensa-Group.png",
+  "assets/Client/Westin-Residences.png",
+  
 ];
 
 const ClientLogoSlider = () => {
