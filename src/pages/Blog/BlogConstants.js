@@ -6752,12 +6752,12 @@ Delivered through a structured, end-to-end process for precision and ease .
 
     images: [
 
-        {
-       
-        path: "assets/Blogs/Best-Exterior/The-Design-Journey.jpg",
+         {
+        path: "assets/Blogs/Best-Exterior/Why-Timing-the-Unveiling-Matters.jpg",
         alt: ""
       },
-     
+  
+
        {
         
         path: "assets/Blogs/Best-Exterior/banner.jpg",
@@ -6765,14 +6765,10 @@ Delivered through a structured, end-to-end process for precision and ease .
       },
       
         {
-        path: "assets/Blogs/Best-Exterior/In-House-Fabrication.jpg",
+        path: "assets/Blogs/Best-Exterior/What-Happens-After-the-Handover.jpg",
         alt: ""
       },
-        {
-        path: "assets/Blogs/Best-Exterior/The-Design-Journey.jpg",
-        alt: ""
-      },
-  
+     
   
 
 

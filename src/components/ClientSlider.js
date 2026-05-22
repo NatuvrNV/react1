@@ -8,9 +8,9 @@ import "./ClientSlider.css";
 const logos = [
   "assets/Client/AB-Jewellers.png",
   "assets/Client/Apollo.png",
-  "assets/Client/ASRO Arcade.png",
+  "assets/Client/ASRO-Arcade.png",
   "assets/Client/BDR.png",
-  "assets/Client/Billionaire Homes.png",
+  "assets/Client/Billionaire-Homes.png",
   "assets/Client/BMW.png",
   "assets/Client/CitySpace82.png",
   "assets/Client/DSR-Builders.png",
