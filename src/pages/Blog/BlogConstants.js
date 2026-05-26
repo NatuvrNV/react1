@@ -13615,7 +13615,7 @@ For architects specifying MetaCoin on behalf of a client, <a href="https://metag
     title: "MetaPyramid 3D Panel: Create Dramatic Texture on Any Facade  ",
     metaTitle:
       "MetaPyramid 3D Metal Wall Panel | Dramatic Facade Texture India",
-    date: "20-05-26",
+    date: "21-05-26",
 
     template: 'B',
     category: "Industry Trends",
