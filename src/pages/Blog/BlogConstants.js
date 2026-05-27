@@ -10618,19 +10618,19 @@ design.
            {
         
         path: "assets/Blogs/Residential-Facade-Delhi/banner.jpg",
-        alt: " "
+        alt: "Luxury bungalow residential facade design in Delhi 2026 with parametric metal cladding by Metaguise "
       },
 
         {
         path: "assets/Blogs/Residential-Facade-Delhi/Metaguise-Projects-in-Delhi.jpg",
-        alt: ""
+        alt: "Modern aluminium facade panel system on Delhi bungalow exterior – heat resistant luxury home design"
       },
      
   
         {
        
         path: "assets/Blogs/Residential-Facade-Delhi/How-to-Choose-Facade-Materials-for-Delhi-Climates.jpg",
-        alt: ""
+        alt: "Corten steel facade on high-end residential bungalow in Delhi NCR – 2026 elevation design idea"
       },
       
   
@@ -10973,12 +10973,12 @@ design.
            {
         
         path: "assets/Blogs/Best-Metal-Facade-for-climate/banner.jpg",
-        alt: " "
+        alt: "Best metal facade system for climate resilient luxury home in India – MetaSequin aluminium panel by Metaguise "
       },
 
         {
         path: "assets/Blogs/Best-Metal-Facade-for-climate/Specifying-for-India-Climate-Zones.jpg",
-        alt: ""
+        alt: "Climate adaptive metal facade on luxury villa India – monsoon and heat proof exterior cladding 2026"
       },
      
   
@@ -11102,17 +11102,17 @@ design.
            {
         
         path: "assets/Blogs/Modern-Home-Elevation/banner.jpg",
-        alt: " "
+        alt: "Modern home elevation design India 2026 – trending parametric metal facade on luxury residence"
       },
 
         {
         path: "assets/Blogs/Modern-Home-Elevation/15-Trending-Home-Elevation-Designs.jpg",
-        alt: ""
+        alt: "Contemporary home exterior elevation with 3D metal wall panels – premium Indian residential facade idea"
       },
 
         {
         path: "assets/Blogs/Modern-Home-Elevation/How-Metaguise-Executes-Custom-Elevations-Across-India.jpg",
-        alt: ""
+        alt: "Luxury villa elevation design India 2026 – aluminium cladding with geometric pattern on modern home"
       },
      
   
@@ -11267,17 +11267,17 @@ The most sophisticated modern bungalow elevation designs of 2026 are not single-
            {
         
         path: "assets/Blogs/Best-Metal-Cladding-for-High-End-Residential-Projects/banner.jpg",
-        alt: " "
+        alt: "Best metal cladding panels for high-end residential project in India – Metaguise aluminium facade system"
       },
 
         {
         path: "assets/Blogs/Best-Metal-Cladding-for-High-End-Residential-Projects/The-Full-Cycle-Advantage-From-Concept.jpg",
-        alt: ""
+        alt: "Premium zinc and aluminium metal cladding on luxury home exterior – high-end residential facade India"
       },
 
         {
         path: "assets/Blogs/Best-Metal-Cladding-for-High-End-Residential-Projects/Why-Architects-and-Homeowners-Choose-Metaguise.jpg",
-        alt: ""
+        alt: "Architectural metal cladding installation on luxury Indian residence – durable exterior wall panel system"
       },
      
   
@@ -11407,17 +11407,17 @@ Used selectively, it transforms facades into sensory experiences, adding a layer
            {
         
         path: "assets/Blogs/Exterior-Cladding/banner.jpg",
-        alt: " "
+        alt: "Best exterior cladding for Delhi NCR home 2026 – heat resistant metal facade panel by Metaguise"
       },
 
         {
         path: "assets/Blogs/Exterior-Cladding/Aluminium-Panel-Price-India.jpg",
-        alt: ""
+        alt: "Luxury home exterior cladding in Gurgaon Delhi NCR – aluminium composite panel modern elevation design"
       },
 
         {
         path: "assets/Blogs/Exterior-Cladding/Climate-Performance-How-Cladding.jpg",
-        alt: ""
+        alt: "Weather resistant exterior wall cladding on Delhi NCR residence – premium facade material for hot climate"
       },
      
   
@@ -11568,17 +11568,17 @@ Full glass facades - curtain walls and glazed cladding systems - perform magnifi
            {
         
         path: "assets/Blogs/Villa-Facade-Design/banner.jpg",
-        alt: " "
+        alt: "Luxury villa facade design India 2026 – trending parametric metal elevation on high-end residential home"
       },
 
         {
         path: "assets/Blogs/Villa-Facade-Design/Trending-Villa-Facade-Styles-India.jpg",
-        alt: ""
+        alt: "Modern villa exterior facade with 3D aluminium panels – luxury home design trend India 2026 Metaguise"
       },
 
         {
         path: "assets/Blogs/Villa-Facade-Design/Villa-Facade-Cost-Guide-for-India.jpg",
-        alt: ""
+        alt: "Contemporary villa facade in India with Corten steel and metal cladding – premium elevation style 2026"
       },
      
   
@@ -11742,12 +11742,12 @@ Full glass facades - curtain walls and glazed cladding systems - perform magnifi
 
         {
         path: "assets/Blogs/Residential-Facade-Design-in-Gurgaon/Book-Your-Free-Consultation-at-Metaland.jpg",
-        alt: ""
+        alt: "Residential facade design Gurgaon 2026 – luxury estate metal cladding by Metaguise parametric system"
       },
 
         {
         path: "assets/Blogs/Residential-Facade-Design-in-Gurgaon/Facade-Trends-Across-Gurgaon.jpg",
-        alt: ""
+        alt: "Premium home facade elevation in Gurgaon with aluminium metal panels – luxury real estate design 2026"
       },
      
   
@@ -11917,17 +11917,17 @@ Full glass facades - curtain walls and glazed cladding systems - perform magnifi
            {
         
         path: "assets/Blogs/House-Exterior-Design-India-10/banner.jpg",
-        alt: " "
+        alt: "Top 10 premium house exterior design materials India – metal cladding aluminium and Corten steel facade"
       },
 
         {
         path: "assets/Blogs/House-Exterior-Design-India-10/How-to-Mix-Materials-for-Maximum.jpg",
-        alt: ""
+        alt: "Luxury house exterior with premium metal facade material – architect-approved cladding India 2026"
       },
 
         {
         path: "assets/Blogs/House-Exterior-Design-India-10/Metal-Cladding-The-Top-Choice.jpg",
-        alt: ""
+        alt: "Premium exterior wall material on Indian home – stone aluminium Corten steel cladding design options"
       },
      
   
@@ -12095,17 +12095,17 @@ Full glass facades - curtain walls and glazed cladding systems - perform magnifi
            {
         
         path: "assets/Blogs/Duplex-House-Facade/banner.jpg",
-        alt: " "
+        alt: "Duplex house facade design India G+1 with metal cladding – modern two-storey home elevation 2026"
       },
 
         {
         path: "assets/Blogs/Duplex-House-Facade/Style-Guide-Modern-Contemporary-Tropical.jpg",
-        alt: ""
+        alt: "G plus one duplex home exterior design India – premium aluminium metal panel facade on double storey house"
       },
 
         {
         path: "assets/Blogs/Duplex-House-Facade/Real-Projects-Duplex-and-G-Facades-by-Metaguise-Across-India.jpg",
-        alt: ""
+        alt: "Modern duplex house metal facade India – parametric panel elevation design for G+1 residential building"
       },
      
   
@@ -12270,17 +12270,17 @@ Full glass facades - curtain walls and glazed cladding systems - perform magnifi
            {
         
         path: "assets/Blogs/What-Is-Parametric-Facade-Design/banner.jpg",
-        alt: " "
+        alt: "Parametric facade design guide India 2026 – algorithmic metal panel system on luxury building by Metaguise"
       },
 
         {
         path: "assets/Blogs/What-Is-Parametric-Facade-Design/Cost-of-Parametric-Facade-Design-in-India-What-to-Expect.jpg",
-        alt: ""
+        alt: "Computational parametric metal facade on Indian residence – custom 3D panel geometry exterior design"
       },
 
         {
         path: "assets/Blogs/What-Is-Parametric-Facade-Design/Why-Indian-Architects-Are-Adopting-Computational-Facade-Design.jpg",
-        alt: ""
+        alt: "Parametric architecture facade India – generative design metal cladding on high-end luxury home 2026"
       },
      
   
@@ -12639,17 +12639,17 @@ Metaguise's design consultation process helps every homeowner and architect make
            {
         
         path: "assets/Blogs/Noida-Luxury-Home-Facade/banner.jpg",
-        alt: " "
+        alt: "Luxury home facade ideas Noida 2026 – premium metal cladding on high-end residential elevation Metaguise"
       },
 
         {
         path: "assets/Blogs/Noida-Luxury-Home-Facade/Best-Facade-Materials-for-Noida.jpg",
-        alt: ""
+        alt: "Modern exterior facade design for luxury home in Noida – aluminium panel and Corten steel cladding 2026"
       },
 
         {
         path: "assets/Blogs/Noida-Luxury-Home-Facade/Pricing-Timeline-and-How-to-Book-Your-Free-Noida-Site-Visit.jpg",
-        alt: ""
+        alt: "High-end residential facade in Noida Sector – 3D metal wall panel system on luxury villa elevation 2026"
       },
      
   
@@ -12897,17 +12897,17 @@ Metaguise's design consultation process helps every homeowner and architect make
            {
         
         path: "assets/Blogs/Farmhouse-Exterior-Design/banner.jpg",
-        alt: " "
+        alt: "Farmhouse exterior design India 2026 with metal facade – premium aluminium cladding on luxury farmhouse"
       },
 
         {
         path: "assets/Blogs/Farmhouse-Exterior-Design/Metaguise-Farmhouse-Projects-Across.jpg",
-        alt: ""
+        alt: "Modern farmhouse metal facade ideas India – rustic Corten steel and parametric panel exterior design 2026"
       },
 
         {
         path: "assets/Blogs/Farmhouse-Exterior-Design/Weathering-Steel-Corten-for-Farmhouses.jpg",
-        alt: ""
+        alt: "Luxury farmhouse elevation design India – weather resistant metal cladding on countryside home 2026"
       },
      
   
@@ -13143,17 +13143,17 @@ Metaguise's design consultation process helps every homeowner and architect make
            {
         
         path: "assets/Blogs/MetaSequin-Metal-Panel-Complete/banner.jpg",
-        alt: " "
+        alt: "MetaSequin metal facade panel by Metaguise – complete guide for architects and homeowners India 2026"
       },
 
         {
         path: "assets/Blogs/MetaSequin-Metal-Panel-Complete/Best-Applications-for-MetaSequin.jpg",
-        alt: ""
+        alt: "MetaSequin 3D aluminium sequin panel installed on luxury home exterior – parametric facade detail view"
       },
 
         {
         path: "assets/Blogs/MetaSequin-Metal-Panel-Complete/How-to-Specify-Order-MetaSequin.jpg",
-        alt: ""
+        alt: "Metaguise MetaSequin panel close-up on building facade – shimmering metal cladding for premium homes India"
       },
      
   
@@ -13434,17 +13434,17 @@ A bespoke MetaSequin installation on the entrance tower and primary facade bay o
            {
         
         path: "assets/Blogs/MetaCoin-Facade-Panels/banner.jpg",
-        alt: " "
+        alt: "MetaCoin circular facade panel by Metaguise – why architects love this modular metal cladding system 2026"
       },
 
         {
         path: "assets/Blogs/MetaCoin-Facade-Panels/MetaCoin-in-Projects.jpg",
-        alt: ""
+        alt: "MetaCoin round aluminium facade module installed on luxury building exterior – India parametric design 2026"
       },
 
         {
         path: "assets/Blogs/MetaCoin-Facade-Panels/MetaCoin-Finish-Options.jpg",
-        alt: ""
+        alt: "Metaguise MetaCoin panel pattern on home facade – circular modular metal cladding for high-end projects"
       },
      
   
@@ -13638,17 +13638,17 @@ For architects specifying MetaCoin on behalf of a client, <a href="https://metag
            {
         
         path: "assets/Blogs/MetaPyramid-3D-Panel/banner.jpg",
-        alt: " "
+        alt: "MetaPyramid 3D metal wall panel by Metaguise – dramatic pyramid texture on luxury building facade India"
       },
 
         {
         path: "assets/Blogs/MetaPyramid-3D-Panel/Light-and-Shadow-Effects.jpg",
-        alt: ""
+        alt: "MetaPyramid aluminium panel creating geometric shadow texture on exterior facade – premium home cladding"
       },
 
         {
         path: "assets/Blogs/MetaPyramid-3D-Panel/MetaPyramid-Project-Showcase.jpg",
-        alt: ""
+        alt: "Metaguise MetaPyramid 3D panel installation on residential facade – bold architectural texture wall design"
       },
      
   
@@ -13822,17 +13822,17 @@ MetaPyramid panels fix to Metaguise's standard aluminium sub-frame system — th
            {
         
         path: "assets/Blogs/MetaShingles/banner.jpg",
-        alt: " "
+        alt: "MetaShingles metal facade panel – modern alternative to traditional roof and wall tiles in India 2026"
       },
 
         {
         path: "assets/Blogs/MetaShingles/MetaShingles-Performance-in-Indian-Weather.jpg",
-        alt: ""
+        alt: "Metaguise MetaShingles aluminium shingle cladding on luxury home exterior – tile replacement facade system"
       },
 
         {
         path: "assets/Blogs/MetaShingles/MetaShingles-Project-Gallery-Applications.jpg",
-        alt: ""
+        alt: "MetaShingles 3D metal wall panel installed on Indian home elevation – premium shingle-style facade design"
       },
      
   
