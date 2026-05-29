@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import './Features.css';
-import Featured1 from '../assets/Featured/f1.png';
-import Featured2 from '../assets/Featured/f2.png';
-import Featured3 from '../assets/Featured/f3.png';
-import Featured4 from '../assets/Featured/f4.png';
-import Featured5 from '../assets/Featured/f5.png';
-import Featured6 from '../assets/Featured/f6.png';
-import Featured7 from '../assets/Featured/f7.png';
-import Featured8 from '../assets/Featured/f8.png';
+import Miraj from "../assets/featured/miraj.webp";
+import ScaledSymphony from "../assets/featured/scaled.webp";
+import Whiteland from "../assets/featured/whiteland.webp";
+import RJ from "../assets/featured/RJ.webp";
+import ABJewels from "../assets/featured/AB.webp";
+import Obsidian from "../assets/featured/obsidian.webp";
+import Fortis from "../assets/featured/Fortis.webp";
+import KineticGrid from "../assets/featured/Kinetic Grid.webp";
 
 const Features = () => {
   const [scrollX, setScrollX] = useState(0);
@@ -17,8 +17,8 @@ const Features = () => {
   const wrapperRef = useRef(null);
   const nextSectionRef = useRef(null); // Ref for the next section
   const featuredImages = [
-    Featured1, Featured2, Featured3, Featured4, 
-    Featured5, Featured6, Featured7, Featured8
+    Miraj, ScaledSymphony, Whiteland, RJ,
+    ABJewels, Obsidian, Fortis, KineticGrid
   ];
   const clonedImages = [...featuredImages, ...featuredImages];
   const imageWidth = 420; // Adjust based on actual image width

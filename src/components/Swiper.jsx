@@ -6,26 +6,33 @@ import "swiper/css/navigation";
 import "./Swipper.css";
 import { useEffect, useState } from "react";
 
+// ✅ Import local banner images (adjust paths based on your folder structure)
+import banner1 from "../assets/banner/1.webp";
+import banner2 from "../assets/banner/2.webp";
+import banner3 from "../assets/banner/3.webp";
 
-
-// ✅ Lazy load images & preload for better LCP
-
-const banners = [
-  "https://ik.imagekit.io/ylx9qggcp/1.webp",
-  "https://ik.imagekit.io/ylx9qggcp/2.webp",
-  "https://ik.imagekit.io/ylx9qggcp/3.webp",
-];
-
+const banners = [banner1, banner2, banner3];
 
 export const Swipper = () => {
-  const [loadedImages, setLoadedImages] = useState([banners[0]]); // Preload first image
+  const [loadedImages, setLoadedImages] = useState([banners[0]]);
+  const [imageErrors, setImageErrors] = useState({});
 
   useEffect(() => {
-    banners.forEach((src) => {
+    // Preload all banner images
+    banners.forEach((src, index) => {
       const img = new Image();
       img.src = src;
       img.onload = () => {
-        setLoadedImages((prev) => [...prev, src]);
+        setLoadedImages((prev) => {
+          if (!prev.includes(src)) {
+            return [...prev, src];
+          }
+          return prev;
+        });
+      };
+      img.onerror = () => {
+        console.error(`Failed to load banner ${index + 1}:`, src);
+        setImageErrors(prev => ({ ...prev, [src]: true }));
       };
     });
 
@@ -42,6 +49,13 @@ export const Swipper = () => {
       document.removeEventListener("mousedown", preventSelection);
     };
   }, []);
+
+  const getImageUrl = (src) => {
+    if (imageErrors[src]) {
+      return loadedImages[0] || banners[0];
+    }
+    return loadedImages.includes(src) ? src : banners[0];
+  };
 
   return (
     <div className="banner-slide">
@@ -64,13 +78,13 @@ export const Swipper = () => {
         <div className="swiper-navigation">
           <div
             className="swiper-button-prev"
-            onMouseDown={(e) => e.preventDefault()} // ✅ Prevent selection inline
+            onMouseDown={(e) => e.preventDefault()}
           >
             <MdArrowBack size={30} />
           </div>
           <div
             className="swiper-button-next"
-            onMouseDown={(e) => e.preventDefault()} // ✅ Prevent selection inline
+            onMouseDown={(e) => e.preventDefault()}
           >
             <MdArrowForward size={30} />
           </div>
@@ -81,17 +95,17 @@ export const Swipper = () => {
             <div
               className="slide banner-slide"
               style={{
-                backgroundImage: `url(${loadedImages.includes(src) ? src : banners[0]})`,
+                backgroundImage: `url(${getImageUrl(src)})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                backgroundColor: "#f5f5f5", // ✅ Placeholder color while loading
+                backgroundColor: "#f5f5f5",
               }}
             >
-              {<div className="slide-content">
+              <div className="slide-content">
                 {index === 0 && <h2>India’s Leading Facade & Wall Cladding Experts</h2>}
                 {index === 1 && <h2>Masters in Parametric Design & Execution</h2>}
                 {index === 2 && <h2>Metal is Metaguise: The Future of Facades</h2>}
-              </div> }
+              </div>
             </div>
           </SwiperSlide>
         ))}

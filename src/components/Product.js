@@ -5,6 +5,10 @@ import "./Product.css";
 import Arrow from "../assets/arrow.png";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
+import MetaHydra from "../assets/products/hydra.webp";
+import MetaFin from "../assets/products/fin.webp";
+import MetaCorten from "../assets/products/corten.webp";
+import MetaBloxs from "../assets/products/blox.webp";
 
 
 
@@ -19,28 +23,28 @@ const Product = () => {
       {
         id: 1,
         name: "MetaHydra",
-        image: "https://ik.imagekit.io/ylx9qggcp/hydra.webp",
+        image: MetaHydra,
         slug: "metahydra",
         alt: "MetaCoin panels with round golden discs forming a coin matrix creating a rippling surface illusion.",
       },
       {
         id: 2,
         name: "MetaFin",
-        image: "https://ik.imagekit.io/ylx9qggcp/fin.webp",
+        image: MetaFin,
         slug: "metafin",
         alt: "Custom-shaped golden MetaFins forming a shimmering parametric facade.",
       },
       {
         id: 3,
         name: "MetaCorten",
-        image: "https://ik.imagekit.io/ylx9qggcp/corten.webp",
+        image: MetaCorten,
         slug: "metacorten",
         alt: "Reflective metacorten arranged vertically creating a kinetic facade system.",
       },
       {
         id: 4,
         name: "MetaBloxs",
-        image: "https://ik.imagekit.io/ylx9qggcp/blox.webp",
+        image: MetaBloxs,
         slug: "metablox",
         alt: "Curved facade clad in monochromatic MetaBloxs with fish scale-like texture.",
       },

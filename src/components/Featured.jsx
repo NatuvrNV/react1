@@ -8,6 +8,15 @@ import "swiper/css/pagination";
 import "./Features.css";
 import { useEffect, useState } from "react";
 
+import Miraj from "../assets/Featured/miraj.webp";
+import ScaledSymphony from "../assets/Featured/scaled.webp";
+import Whiteland from "../assets/Featured/whiteland.webp";
+import RJ from "../assets/Featured/RJ.webp";
+import ABJewels from "../assets/Featured/AB.webp";
+import Obsidian from "../assets/Featured/obsidian.webp";
+import Fortis from "../assets/Featured/Fortis.webp";
+import KineticGrid from "../assets/Featured/Kinetic Grid.webp";
+
 
 const Features = () => {
   const navigate = useNavigate();
@@ -15,49 +24,49 @@ const Features = () => {
 
 const featuredImages = [
     {
-      image: "https://ik.imagekit.io/ylx9qggcp/miraj.webp",
+      image: Miraj,
       displayName: "Miraj Stadium",
       urlSlug: "miraj-stadium",
       alt: "Modern commercial facade design by Metaguise featuring perforated metal cladding elevation with contemporary architectural branding concept",
     },
     {
-      image: "https://ik.imagekit.io/ylx9qggcp/f6.webp",
+      image: ScaledSymphony,
       displayName: "Scaled Symphony",
       urlSlug: "3939a",
       alt: "Luxury residential elevation design with modern geometric facade, premium exterior architecture and custom metal facade detailing by Metaguise",
     },
     {
-      image: "https://ik.imagekit.io/ylx9qggcp/f8.webp",
+      image: Whiteland,
       displayName: "Whiteland",
       urlSlug: "whiteland",
       alt: "Corporate building elevation with glass facade and metal cladding system showcasing modern commercial architecture by Metaguise",
     },
     {
-      image: "https://ik.imagekit.io/ylx9qggcp/Sculpted%20Silence.webp",
-      displayName: "Sculpted Silence",
-      urlSlug: "sculpted-silence",
+      image: RJ,
+      displayName: "RJ Jewelers",
+      urlSlug: "rj-jewellers",
       alt: "Minimalist luxury residence elevation with sculptural facade elements, modern exterior design and architectural facade detailing by Metaguise",
     },
     {
-      image: "https://ik.imagekit.io/ylx9qggcp/AB.webp",
+      image: ABJewels,
       displayName: "AB Jewels",
       urlSlug: "ab-jewels",
       alt: "AB Jewels commercial showroom facade featuring gold textured metal cladding elevation and iconic retail building exterior design by Metaguise",
     },
     {
-      image: "https://ik.imagekit.io/ylx9qggcp/f3.webp",
+      image: Obsidian,
       displayName: "Obsidian",
       urlSlug: "vivek",
       alt: "Contemporary black facade residential architecture with modern elevation design, layered exterior volumes and premium facade materials by Metaguise",
     },
     {
-      image: "https://ik.imagekit.io/ylx9qggcp/Fortis.webp",
+      image: Fortis,
       displayName: "Fortis",
       urlSlug: "fortis",
       alt: "Large institutional building elevation with artistic facade mural and modern architectural cladding design developed by Metaguise",
     },
     {
-      image: "https://ik.imagekit.io/ylx9qggcp/f2.webp",
+      image: KineticGrid,
       displayName: "Kinetic Grid",
       urlSlug: "caskey",
       alt: "Parametric metal facade system with kinetic grid pattern showcasing innovative commercial elevation design by Metaguise",

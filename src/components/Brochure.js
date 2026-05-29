@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
 import "./Brochure.css";
 import { MdArrowOutward } from "react-icons/md";
+import Brochure1 from "../assets/Brochures/formopen.jpg";
+import Brochure2 from "../assets/Brochures/functionopen.jpg";
+import Brochure3 from "../assets/Brochures/parametricopen.jpg";
+import Brochure4 from "../assets/Brochures/patinaopen.jpg";
 
 const Brochure = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -12,25 +16,25 @@ const Brochure = () => {
   // Cloudinary URLs with ImageKit optimization
   const gallery = [
     {
-      src: "https://ik.imagekit.io/ylx9qggcp/formopen.jpg",
+      src: Brochure1,
       name: "MetaForm",
       path: "/metaform",
       alt: "MetaForm architectural facade system brochure cover"
     },
     {
-      src: "https://ik.imagekit.io/ylx9qggcp/functionopen.jpg",
+      src: Brochure2,
       name: "MetaFunction",
       path: "/metafunction",
       alt: "MetaFunction facade system brochure cover"
     },
     {
-      src: "https://ik.imagekit.io/ylx9qggcp/parametricopen.jpg",
+      src: Brochure3,
       name: "MetaParametric",
       path: "/metaparametric",
       alt: "MetaParametric facade system brochure cover"
     },
     {
-      src: "https://ik.imagekit.io/ylx9qggcp/patinaopen.jpg",
+      src: Brochure4,
       name: "MetaSurface",
       path: "/metasurface",
       alt: "MetaSurface brochure showing patina metal textures"

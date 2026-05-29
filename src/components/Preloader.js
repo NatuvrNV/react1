@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import './Preloader.css';
+import localLogo from '../assets/Preloader.png';
 
 /**
  * Preloader — Black screen → Reveal → Zoom-out → Page in
@@ -22,7 +23,7 @@ import './Preloader.css';
  *   onComplete    {function} called when exit finishes
  */
 const Preloader = ({
-  imageUrl      = 'https://ik.imagekit.io/ylx9qggcp/metaguise%20logo%20old%20(2).png',
+  imageUrl      = localLogo,
   blackDuration = 1.2,
   duration      = 2.6,
   onComplete,
