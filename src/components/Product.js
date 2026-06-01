@@ -43,7 +43,7 @@ const Product = () => {
       },
       {
         id: 4,
-        name: "MetaBloxs",
+        name: "MetaBlox",
         image: MetaBloxs,
         slug: "metablox",
         alt: "Curved facade clad in monochromatic MetaBloxs with fish scale-like texture.",

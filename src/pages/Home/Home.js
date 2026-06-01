@@ -11,7 +11,7 @@ const Product = lazy(() => import('../../components/Product'));
 const Metaland = lazy(() => import('../../components/Metaland'));
 const Brochure = lazy(() => import('../../components/Brochure'));
 const Cofee = lazy(() => import('../../components/Cofee'));
-const ClientSlider = lazy(() => import('../../components/ClientSlider'));
+
 const Footer = lazy(() => import('../../components/Footer'));
 
 const organizationSchema = JSON.stringify({
@@ -195,7 +195,7 @@ function Home() {
         <Metaland />
         <Brochure />
         <Cofee />
-        <ClientSlider/>
+        
         <Footer />
       </Suspense>
     </div>
