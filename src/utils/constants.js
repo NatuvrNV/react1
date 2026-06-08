@@ -2327,7 +2327,96 @@ const SingleprojectDetail = [
       ],
     },
 
-    
+       {
+      name: "the block",
+                           ogTitle: "The Block | Layered Metal Facade Residence Gurgaon",
+    ogDescription: "The Block by Metaguise features a layered residential facade with flowing metal cladding – depth, movement, and sophisticated architectural texture in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The Block/cover/The Block (8).webp",
+    metaKeywords: ["The Block residential facade Gurgaon, layered metal facade home, textured house exterior India, flowing architecture facade, Metaguise residential Gurgaon project, depth facade design India, aluminium cladding layered home"],
+      url:"block",
+      videoLink: "",
+           alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Block",
+      metatittles:"The Block | Layered Metal Facade Residence Gurgaon",
+      metadescription:"The Block by Metaguise features a layered residential facade with flowing metal cladding – depth, movement, and sophisticated architectural texture in Gurgaon.",
+      images: [
+
+          { src: "assets/Allprojects/residential/The Block/metacassette-perforated/The Block (5).webp", alt: "Contemporary architectural facade design – The Block" },
+          { src: "assets/Allprojects/residential/The Block/metacassette-perforated/The Block (6).webp", alt: "Custom metal facade panels engineered by Metaguise" },
+          { src: "assets/Allprojects/residential/The Block/metacassette-perforated/The Block (7).webp", alt: "Precision metal facade detailing in The Block project" },
+          { src: "assets/Allprojects/residential/The Block/metacassette-perforated/The Block (12).webp", alt: "Exterior metal facade installation by Metaguise" },
+          { src: "assets/Allprojects/residential/The Block/metaflute/The Block (1).webp", alt: "Modern commercial facade system – The Block " },
+          { src: "assets/Allprojects/residential/The Block/metaflute/The Block (2).webp", alt: "Sustainable metal facade architecture by Metaguise" },
+          { src: "assets/Allprojects/residential/The Block/metaflute/The Block (3).webp", alt: "Advanced facade engineering in The Block" },
+          { src: "assets/Allprojects/residential/The Block/metaflute/The Block (4).webp", alt: "Parametric-inspired metal facade structure by Metaguise" },
+          { src: "assets/Allprojects/residential/The Block/metaflute/The Block (9).webp", alt: "Architectural metal cladding project by Metaguise" },
+          { src: "assets/Allprojects/residential/The Block/metaflute/The Block (10).webp", alt: "High-performance metal facade design – The Block" },
+          { src: "assets/Allprojects/residential/The Block/metaflute/The Block (11).webp", alt: "Custom fabricated facade panels by Metaguise" },
+          { src: "assets/Allprojects/residential/The Block/metaflute/The Block (13).webp", alt: "Contemporary building exterior by Metaguise – The Block" },
+      ],
+    },
+
+       {
+      name: "hadapsar",
+                           ogTitle: "Hadapsar | Layered Metal Facade Residence Gurgaon",
+    ogDescription: "Hadapsar by Metaguise features a layered residential facade with flowing metal cladding – depth, movement, and sophisticated architectural texture in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/W12/cover/w12_1.webp",
+    metaKeywords: ["Hadapsar residential facade Gurgaon, layered metal facade home, textured house exterior India, flowing architecture facade, Metaguise residential Gurgaon project, depth facade design India, aluminium cladding layered home"],
+      url:"hadapsar",
+      videoLink: "",
+           alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"Hadapsar",
+      metatittles:"Hadapsar | Layered Metal Facade Residence Gurgaon",
+      metadescription:"Hadapsar by Metaguise features a layered residential facade with flowing metal cladding – depth, movement, and sophisticated architectural texture in Gurgaon.",
+      images: [
+
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (1).webp", alt: "Contemporary architectural facade design – Hadapsar" },
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (2).webp", alt: "Custom metal facade panels engineered by Metaguise" },
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (3).webp", alt: "Precision metal facade detailing in Hadapsar project" },
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (4).webp", alt: "Exterior metal facade installation by Metaguise" },
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (6).webp", alt: "Sustainable metal facade architecture by Metaguise" },
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (7).webp", alt: "Advanced facade engineering in Hadapsar" },
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (8).webp", alt: "Parametric-inspired metal facade structure by Metaguise" },
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (9).webp", alt: "Architectural metal cladding project by Metaguise" },
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (10).webp", alt: "High-performance metal facade design – Hadapsar" },
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (11).webp", alt: "Custom fabricated facade panels by Metaguise" },
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (12).webp", alt: "Contemporary building exterior by Metaguise – Hadapsar" },
+          { src: "assets/Allprojects/residential/Hadapsar/metacassette-perforated/Hadapsar (13).webp", alt: "Modern commercial facade system – Hadapsar" },
+      ],
+    },
+
+       {
+      name: "rhythm goel",
+                           ogTitle: "Rhythm Goel | Layered Metal Facade Residence Gurgaon",
+    ogDescription: "Rhythm Goel by Metaguise features a layered residential facade with flowing metal cladding – depth, movement, and sophisticated architectural texture in Gurgaon.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/W12/cover/w12_1.webp",
+    metaKeywords: ["Rhythm Goel residential facade Gurgaon, layered metal facade home, textured house exterior India, flowing architecture facade, Metaguise residential Gurgaon project, depth facade design India, aluminium cladding layered home"],
+      url:"undercurrent",
+      videoLink: "",
+           alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"Rhythm Goel",
+      metatittles:"Rhythm Goel | Layered Metal Facade Residence Gurgaon",
+      metadescription:"Rhythm Goel by Metaguise features a layered residential facade with flowing metal cladding – depth, movement, and sophisticated architectural texture in Gurgaon.",
+      images: [
+
+          { src: "assets/Allprojects/residential/Rhythm Goel/metaflute/The Overhang (2).webp", alt: "Contemporary architectural facade design – Rhythm Goel" },
+          { src: "assets/Allprojects/residential/Rhythm Goel/metaflute/The Overhang (3).webp", alt: "Custom metal facade panels engineered by Metaguise" },
+          { src: "assets/Allprojects/residential/Rhythm Goel/metaflute/The Overhang (6).webp", alt: "Precision metal facade detailing in Rhythm Goel project" },
+          { src: "assets/Allprojects/residential/Rhythm Goel/metaflute/The Overhang (9).webp", alt: "Exterior metal facade installation by Metaguise" },
+          { src: "assets/Allprojects/residential/Rhythm Goel/metaflute/The Overhang (10).webp", alt: "Modern commercial facade system – Rhythm Goel" },
+          { src: "assets/Allprojects/residential/Rhythm Goel/metaflute/The Overhang (11).webp", alt: "Sustainable metal facade architecture by Metaguise" },
+          { src: "assets/Allprojects/residential/Rhythm Goel/metacassette-solid-panels/The Overhang (4).webp", alt: "Advanced facade engineering in Rhythm Goel" },
+          { src: "assets/Allprojects/residential/Rhythm Goel/metacassette-solid-panels/The Overhang (5).webp", alt: "Parametric-inspired metal facade structure by Metaguise" },
+          { src: "assets/Allprojects/residential/Rhythm Goel/metacassette-solid-panels/The Overhang (7).webp", alt: "Architectural metal cladding project by Metaguise" },
+          { src: "assets/Allprojects/residential/Rhythm Goel/metacassette-solid-panels/The Overhang (8).webp", alt: "High-performance metal facade design – Rhythm Goel" },
+      ],
+    },
 
     {
       name: "thewaveform",
@@ -3928,6 +4017,24 @@ export const ProjectImages = [
         alt: "White Land metal facade project by Metaguise"
     },
 
+         { 
+        imgPath: "assets/Allprojects/residential/The Block/cover/The Block (8).webp",
+        order: 1,
+        alt: "The Block luxury residential facade with MetaCassette and MetaLouver cladding by Metaguise"
+    },
+
+        { 
+        imgPath: "assets/Allprojects/residential/Hadapsar/cover/Hadapsar (5).webp",
+        order: 1,
+        alt: "The Block luxury residential facade with MetaCassette and MetaLouver cladding by Metaguise"
+    },
+
+        { 
+        imgPath: "assets/Allprojects/residential/Rhythm Goel/cover/The Overhang (1).webp",
+        order: 1,
+        alt: "The Block luxury residential facade with MetaCassette and MetaLouver cladding by Metaguise"
+    },
+
        { 
         imgPath: "assets/Allprojects/commercial/ahir/cover/x (9).webp",
         order: 1,
@@ -3951,6 +4058,8 @@ export const ProjectImages = [
         order: 1,
         alt: "The Canopy luxury residential facade with MetaCassette and MetaLouver cladding by Metaguise"
     },
+
+   
 
       { 
         imgPath: "assets/Allprojects/commercial/wvcity/cover/wv1.webp",
