@@ -25,6 +25,7 @@ import Partner from './pages/Partner/Partner';
 import CTB from './pages/Contact/coffeform';
 import PrivacyPolicy from './pages/Policy&Conditions/PrivacyPolicy';
 import Terms from './pages/Policy&Conditions/TermsConditions';
+import FloatingButton from './components/Floatingbutton.js';
 
 import Preloader from './components/Preloader';
 import Login from "./pages/BackendAdmin/Login";
@@ -42,6 +43,8 @@ function App() {
     <HelmetProvider>
           <Preloader >
   </Preloader>
+
+<FloatingButton />
     <Router>
       <Layout>
         <Routes>
