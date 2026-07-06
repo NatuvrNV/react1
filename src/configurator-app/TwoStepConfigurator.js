@@ -740,7 +740,7 @@ const handleAddProduct = () => {
     
     const newProduct = {
         id: Date.now(),
-        name: `Product ${products.length + 1}`,
+        name: `Product ${products.length + 1}`, // This will be renumbered anyway
         category: '',
         subcategory: '',
         color: '',
@@ -749,30 +749,51 @@ const handleAddProduct = () => {
         isActive: false,
         previewImage: null
     };
-    setProducts([...products, newProduct]);
+    
+
+    
+    // Add new product then renumber all products
+    const updatedProducts = [...products, newProduct];
+    const renumbered = renumberProducts(updatedProducts);
+    setProducts(renumbered);
     setActiveProductTab(newProduct.id);
 };
 
-    const handleRemoveProduct = (productId, e) => {
-        e.stopPropagation();
-        if (products.length === 1) {
-            alert('You must have at least one product configuration.');
-            return;
-        }
-        const updated = products.filter(p => p.id !== productId);
-        setProducts(updated);
-        if (activeProductTab === productId) setActiveProductTab(updated[0].id);
-        setSelectedOptions(prev => {
-            const copy = { ...prev };
-            delete copy[productId];
-            return copy;
-        });
-    };
+   const handleRemoveProduct = (productId, e) => {
+    e.stopPropagation();
+    if (products.length === 1) {
+        alert('You must have at least one product configuration.');
+        return;
+    }
+    
+    // Remove product then renumber remaining
+    const updated = products.filter(p => p.id !== productId);
+    const renumbered = renumberProducts(updated);
+    setProducts(renumbered);
+    
+    // Update active tab to first product if needed
+    if (activeProductTab === productId) {
+        setActiveProductTab(renumbered[0].id);
+    }
+    
+    // Clean up selected options
+    setSelectedOptions(prev => {
+        const copy = { ...prev };
+        delete copy[productId];
+        return copy;
+    });
+};
 
     const handleCategoryToggle = (categoryId) => {
         setActiveCategory(activeCategory === categoryId ? null : categoryId);
     };
 
+    const renumberProducts = (productsList) => {
+    return productsList.map((product, index) => ({
+        ...product,
+        name: `Product ${index + 1}`
+    }));
+};
 
 
     // Option selection for each product
@@ -825,16 +846,27 @@ const handleAddProduct = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Validate required personal details
-        if (
-            !personalDetails.fullName.trim() ||
-            !personalDetails.phoneNumber.trim() ||
-            !personalDetails.email.trim()
-        ) {
-            alert("Please fill in all required personal details (Name, Phone, Email).");
-            setIsSubmitting(false);
-            return;
-        }
+          // Validate personal details
+    const phoneRegex = /^[0-9]{10}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if (!personalDetails.fullName.trim()) {
+        alert("Please enter your full name.");
+        setIsSubmitting(false);
+        return;
+    }
+    
+    if (!phoneRegex.test(personalDetails.phoneNumber)) {
+        alert("Please enter a valid 10-digit phone number.");
+        setIsSubmitting(false);
+        return;
+    }
+    
+    if (!emailRegex.test(personalDetails.email)) {
+        alert("Please enter a valid email address.");
+        setIsSubmitting(false);
+        return;
+    }
 
         // Validate all product fields
         for (const p of products) {
@@ -981,15 +1013,27 @@ const handleAddProduct = () => {
 
     const handleNext = (e) => {
         e.preventDefault();
-        if (
-            !personalDetails.fullName.trim() ||
-            !personalDetails.phoneNumber.trim() ||
-            !personalDetails.email.trim()
-        ) {
-            alert("Please fill in all fields before continuing.");
-            return;
-        }
-        setStep(2);
+        // Validate name
+    if (!personalDetails.fullName.trim()) {
+        alert("Please enter your full name.");
+        return;
+    }
+    
+    // Validate phone - must be exactly 10 digits
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(personalDetails.phoneNumber)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return;
+    }
+    
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(personalDetails.email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+    
+    setStep(2);
     };
 
     const handleBack = () => setStep(1);
@@ -1047,7 +1091,7 @@ const handleAddProduct = () => {
                             >
                                 {/* Header and title OUTSIDE the bordered box */}
                                 <header className="mb-3">
-                                    <h1 className="display-4 fw-bold">Welcome to Metaguise Product Configurator</h1>
+                                    <h1 className="display-4 ">Welcome to Metaguise Product Configurator</h1>
                                 </header>
 
 
@@ -1064,7 +1108,7 @@ const handleAddProduct = () => {
                                         justifyContent: "space-between",
                                     }}
                                 >
-                                    <h2 className="mb-4 fw-bold">Step 1: Your Details</h2>
+                                    <h2 className="mb-4 fw-medium ">Step 1: Your Details</h2>
                                     <form id="step1-form">
                                         <div className="row g-3 align-items-center text-center">
                                             {/* Full Name */}
@@ -1088,39 +1132,41 @@ const handleAddProduct = () => {
                                             {/* Phone */}
                                             <div className="col-md-4">
                                                 <label className="form-label">Phone Number</label>
-                                                <input
-                                                    type="tel"
-                                                    className="form-control bg-dark text-white border-light text-center"
-                                                    pattern="[0-9]{10}"
-                                                    maxLength="10"
-                                                    value={personalDetails.phoneNumber}
-                                                    onChange={(e) =>
-                                                        setPersonalDetails({
-                                                            ...personalDetails,
-                                                            phoneNumber: e.target.value.replace(/\D/g, "").slice(0, 10),
-                                                        })
-                                                    }
-                                                    placeholder="10-digit number"
-                                                    required
-                                                />
+                                              <input
+    type="tel"
+    className="form-control bg-dark text-white border-light text-center"
+    pattern="[0-9]{10}"
+    maxLength="10"
+    value={personalDetails.phoneNumber}
+    onChange={(e) => {
+        const value = e.target.value.replace(/\D/g, '').slice(0, 10);
+        setPersonalDetails({
+            ...personalDetails,
+            phoneNumber: value
+        });
+    }}
+    placeholder="10-digit number"
+    required
+/>
                                             </div>
 
                                             {/* Email */}
                                             <div className="col-md-4">
                                                 <label className="form-label">Email Address</label>
-                                                <input
-                                                    type="email"
-                                                    className="form-control bg-dark text-white border-light text-center"
-                                                    value={personalDetails.email}
-                                                    onChange={(e) =>
-                                                        setPersonalDetails({
-                                                            ...personalDetails,
-                                                            email: e.target.value,
-                                                        })
-                                                    }
-                                                    placeholder="Enter email"
-                                                    required
-                                                />
+                                               
+<input
+    type="email"
+    className="form-control bg-dark text-white border-light text-center"
+    value={personalDetails.email}
+    onChange={(e) => {
+        setPersonalDetails({
+            ...personalDetails,
+            email: e.target.value.trim()
+        });
+    }}
+    placeholder="Enter email"
+    required
+/>
                                             </div>
                                         </div>
 
@@ -1130,7 +1176,7 @@ const handleAddProduct = () => {
                                         <button
                                             type="button"
                                             onClick={handleNext}
-                                            className="btn btn-light btn-lg fw-bold px-4"
+                                            className="btn btn-light btn-lg  px-4"
                                             style={{
                                                 borderRadius: "30px",
                                                 transition: "all 0.2s",
@@ -1158,14 +1204,14 @@ const handleAddProduct = () => {
                                     <div className="product-configurator-page py-4">
                                         <div className="container">
                                             <header className="text-center mb-4">
-                                                <h1 className="display-4 fw-bold">Welcome to Metaguise Product Configurator</h1>
+                                                <h1 className="display-4 ">Welcome to Metaguise Product Configurator</h1>
                                             </header>
 
                                             <div className="d-flex justify-content-between align-items-center mb-4">
                                                 <button className="btn btn-outline-light" onClick={handleBack}>
                                                     ← Back
                                                 </button>
-                                                <h2 className="text-white mb-0">Step 2: Configure Your Products</h2>
+                                                <h2 className="text-white mb-0 fw-medium">Step 2: Configure Your Products</h2>
                                                 <div style={{ width: "90px" }}></div>
                                             </div>
 
