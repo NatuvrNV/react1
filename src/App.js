@@ -27,8 +27,6 @@ import PrivacyPolicy from './pages/Policy&Conditions/PrivacyPolicy';
 import Terms from './pages/Policy&Conditions/TermsConditions';
 import FloatingButton from './components/Floatingbutton.js';
 
-import Questionnaire from './questionaire/MetaguiseQuestionnaire.js';
-
 import Preloader from './components/Preloader';
 import Login from "./pages/BackendAdmin/Login";
 import Admin from "./pages/BackendAdmin/Admin";
@@ -73,7 +71,6 @@ function App() {
           <Route path="/metaexperience" element={<MetaExperience />} />
           <Route path="/blog/:title" element={<SingleBlogPage />} />
      <Route path="/app2" element={<ProductApp />} />
-     <Route path="/questionnaire" element={<Questionnaire />} />
           <Route path="/twostep" element={<TWoApp />} />
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
