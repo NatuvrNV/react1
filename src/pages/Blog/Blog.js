@@ -85,12 +85,16 @@ const Blog = () => {
     <div className="singleblog-container">
       {/* Add Meta Tags */}
       <Helmet>
-        <title>Metaguise Blog | Architectural Insights & Facade Innovations</title>
+        <title>Metaguise Blog | Facade Design, Kinetic Facades & Parametric Architecture</title>
         <meta 
           name="description" 
-          content="Explore our latest articles on facade innovations, architectural trends, and project highlights. Discover expert insights, material spotlights, and behind-the-scenes design stories in our comprehensive blog collection." 
+          content="Explore Metaguise's articles on metal facade design, kinetic facades, parametric architecture and material innovation for architects and homeowners across India." 
         />
+                <meta property="og:title" content="Metaguise Blog | Facade Design, Kinetic Facades & Parametric Architecture" />
+        <meta property="og:description" content="Explore Metaguise's articles on metal facade design, kinetic facades, parametric architecture and material innovation for architects and homeowners across India." />
+
         <link rel="canonical" href="https://metaguise.com/blogs" />
+                <meta name="keywords" content="facade design blog, kinetic facade, parametric architecture" />
       </Helmet>
 
       <Container fluid>

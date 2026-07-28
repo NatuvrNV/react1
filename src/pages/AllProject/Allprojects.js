@@ -85,12 +85,12 @@ const Allprojects = () => {
   return (
     <div className="gallery-container">
       <Helmet>
-        <title>Our Projects | Metal Facade Portfolio | Metaguise India</title>
-        <meta name="description" content="Browse 1800+ completed metal facade and parametric architecture projects by Metaguise across India – commercial, residential and institutional." />
-        <meta name="keywords" content="building elevation design, metal facade, parametric architecture, residential projects, commercial projects, institutional projects" />
+        <title>Metal Facade Projects Portfolio India | 1800+ Projects | Metaguise</title>
+        <meta name="description" content="Browse 1800+ completed metal facade and parametric architecture projects by Metaguise. Residential, commercial and institutional buildings across India." />
+        <meta name="keywords" content="metal facade projects, facade portfolio india, kinetic facade project" />
         <meta name="author" content="Your Name" />
-        <meta property="og:title" content="Our Projects | Metal Facade Portfolio | Metaguise India" />
-        <meta property="og:description" content="Browse 1800+ completed metal facade and parametric architecture projects by Metaguise across India – commercial, residential and institutional." />
+        <meta property="og:title" content="Metal Facade Projects Portfolio India | 1800+ Projects | Metaguise" />
+        <meta property="og:description" content="Browse 1800+ completed metal facade and parametric architecture projects by Metaguise. Residential, commercial and institutional buildings across India." />
         <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
         <meta property="og:url" content="https://metaguise.com/all-projects" />
         <meta name="robots" content="index, follow" />

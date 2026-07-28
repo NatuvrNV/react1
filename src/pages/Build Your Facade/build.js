@@ -321,7 +321,15 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact | Metaguise</title>
+        <title>Build Your Custom Facade | Free Design Consultation | Metaguise</title>
+                <meta 
+          name="description" 
+          content="Start your custom metal facade project with Metaguise. Share your building details and get a free design consultation from India's leading facade specialists." 
+        />
+                <meta property="og:title" content="Build Your Custom Facade | Free Design Consultation | Metaguise" />
+        <meta property="og:description" content="Start your custom metal facade project with Metaguise. Share your building details and get a free design consultation from India's leading facade specialists." />
+<link rel="canonical" href="https://metaguise.com/build" />
+        <meta name="keywords" content="build facade, custom facade design, facade consultation india" />
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">

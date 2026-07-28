@@ -2,18 +2,18 @@ export
 const SingleprojectDetail = [
     {
       name: "ardete",
-          ogTitle: "Studio Ardete HQ Facade | Architect Studio Cladding India",
-    ogDescription: "Metaguise designed Studio Ardete HQ's facade with signature metal cladding – a creative architectural statement for one of India's leading design studios in Chandigarh.",
+          ogTitle: "Studio Ardete HQ Facade Project | Commercial Metal Cladding by Metaguise",
+    ogDescription: "Studio Ardete HQ by Metaguise: a commercial office facade combining precision engineering with a bold architectural identity. See the full project story and photos.",
     ogImage: "https://metaguise.com/assets/Allprojects/commercial/Ardete/cover/ardete5.webp",
-    metaKeywords: ["Studio Ardete HQ facade, architect studio exterior India, Chandigarh building cladding, Metaguise Chandigarh project, creative office facade India, architectural design firm exterior, metal cladding Chandigarh"],
+    metaKeywords: ["studio ardete facade, commercial facade design"],
       url:"studio-ardete-hq",
         alt: "Studio Ardete HQ facade in Mohali featuring rose gold MetaSequin panels, curvilinear MetaFin forms, and resilient MetaCassette backing - trusted by leading architects for merging parametric artistry with enduring design.",
       youtubeLink: "https://www.youtube.com/shorts/Z_o_1Y3Cnpc?feature=share",
       videoLink: "https://www.youtube.com/shorts/IQTRbf0rZCk",
       instagramLink: "https://www.instagram.com/reel/C6x6Q5lSON8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"Studio Ardete HQ",
-      metatittles:"Studio Ardete HQ Facade | Architect Studio Cladding India",
-      metadescription:"Metaguise designed Studio Ardete HQ's facade with signature metal cladding – a creative architectural statement for one of India's leading design studios in Chandigarh.",
+      metatittles:"Studio Ardete HQ Facade Project | Commercial Metal Cladding by Metaguise",
+      metadescription:"Studio Ardete HQ by Metaguise: a commercial office facade combining precision engineering with a bold architectural identity. See the full project story and photos.",
       
       images: [
   
@@ -1323,18 +1323,18 @@ const SingleprojectDetail = [
 
                    {
       name: "zenith",
-                      ogTitle: "Zenith Commercial Facade | Metal Panel Cladding Gurgaon",
-    ogDescription: "The Zenith project by Metaguise features a striking commercial metal facade – precision aluminium cladding panels that define a bold corporate identity in Gurgaon.",
+                      ogTitle: "Zenith Facade Project | Commercial Metal Cladding by Metaguise",
+    ogDescription: "Zenith by Metaguise: a commercial metal facade project showing precision engineered cladding and modern elevation design. See the full project story and photos.",
     ogImage: "https://metaguise.com/assets/Allprojects/commercial/zenith/cover/zen1.webp",
-    metaKeywords: ["Zenith facade Gurgaon, commercial metal panels India, corporate building cladding Haryana, architectural aluminium facade, Metaguise Gurgaon office, modern office cladding India, building facade NCR"],
+    metaKeywords: ["zenith facade works, zenith metaguise"],
       url:"zenith",
              alt:"Glass commercial facade wrapped in champagne-gold MetaCoin panels forming ripple-like patterns, framed by solid panels and exposed brick arches.",
       videoLink: "https://youtube.com/shorts/8BpsryeWzMM?feature=share",
       youtubeLink: "https://youtube.com/shorts/8BpsryeWzMM?feature=share",
       instagramLink: "https://www.instagram.com/reel/DKg9lYsyODS/?utm_source=ig_web_copy_link&igsh=Nmo5aHpxcTI0Znlz",
       Projectname:"Zenith",
-      metatittles:" Zenith Commercial Facade | Metal Panel Cladding Gurgaon",
-      metadescription:"The Zenith project by Metaguise features a striking commercial metal facade – precision aluminium cladding panels that define a bold corporate identity in Gurgaon.",
+      metatittles:" Zenith Facade Project | Commercial Metal Cladding by Metaguise",
+      metadescription:"Zenith by Metaguise: a commercial metal facade project showing precision engineered cladding and modern elevation design. See the full project story and photos.",
       images: [
       
        { src: "assets/Allprojects/commercial/zenith/metacoin/zen2.webp", alt: "Modern building facade design Zenith project by Metaguise" },
@@ -1633,18 +1633,18 @@ const SingleprojectDetail = [
 
     {
       name: "rjjewellers",
-                ogTitle: "RJ Jewellers Facade | Custom Retail Cladding Delhi NCR",
-    ogDescription: "Metaguise created a distinctive retail facade for RJ Jewellers using custom metal cladding – communicating craftsmanship and premium brand identity in Delhi NCR.",
+                ogTitle: "RJ Jewellers Facade Project, Jaipur | MetaBlox by Metaguise",
+    ogDescription: "RJ Jewellers by Metaguise: a luxury retail facade in Jaipur using MetaBlox, our fish scale textured parametric panel. See the full project story and photos.",
     ogImage: "https://metaguise.com/assets/Allprojects/commercial/RJJewellers/cover/rj1.webp",
-    metaKeywords: ["jewellery showroom design,shop front elevation ,retail store facade ,jewellery shop front design Jaipur ,luxury retail facade Rajasthan ,jewellery store elevation India "],
+    metaKeywords: ["rj jewellers jaipur, rj jewellers facade"],
       url:"rj-jewellers",
         alt:"RJ Jewellers flagship facade featuring METABLOX™ - a modular system of interlocking 3D blocks in champagne gold, forming a dynamic, shape-shifting lotus silhouette inspired by beehive geometry.",
       videoLink: "https://youtube.com/shorts/N7gs1DPJmdY?feature=share",
       youtubeLink: "https://youtube.com/shorts/N7gs1DPJmdY?feature=share",
       instagramLink: "https://www.instagram.com/reel/DITmjRfoQXy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Projectname:"RJ Jewellers",
-      metatittles:"RJ Jewellers Facade | Custom Retail Cladding Delhi NCR",
-      metadescription:"Metaguise created a distinctive retail facade for RJ Jewellers using custom metal cladding – communicating craftsmanship and premium brand identity in Delhi NCR.",
+      metatittles:"RJ Jewellers Facade Project, Jaipur | MetaBlox by Metaguise",
+      metadescription:"RJ Jewellers by Metaguise: a luxury retail facade in Jaipur using MetaBlox, our fish scale textured parametric panel. See the full project story and photos.",
       images: [
       
         "assets/Allprojects/commercial/RJJewellers/metablox/rj2.webp",
@@ -1858,8 +1858,8 @@ const SingleprojectDetail = [
 
     {
       name: "caskey",
-                ogTitle: "Kinetic Grid Facade | MetaCassette Residential Cladding India",
-    ogDescription: "Kinetic Grid by Metaguise uses MetaCassette panels to create a dynamic, grid-based residential facade – a precision-engineered metal skin with rhythm and movement in NCR.",
+                ogTitle: "Kinetic Grid Facade Project | Cascading Keys by Metaguise",
+    ogDescription: "Kinetic Grid by Metaguise: a commercial project using the Cascading Keys parametric facade system, keys that flow with light, depth and movement. See the full project story and photos.",
     ogImage: "https://metaguise.com/assets/Allprojects/residential/caskey/cover/caskey1.webp",
     metaKeywords: ["grid metal cladding home India (1,600/mo)modular facade residential NCR, kinetic architecture home India, MetaCassette grid facade residential NCR India, modular grid aluminium cladding home India, kinetic metal grid home exterior NCR India "],
       url:"kinetic-grid",
@@ -1868,8 +1868,8 @@ const SingleprojectDetail = [
       youtubeLink: "https://www.youtube.com/shorts/WG15QuBFn94",
       instagramLink: "https://www.instagram.com/reel/DKSpNL6zgPm/?utm_source=ig_web_copy_link&igsh=MmJ4bHJkaXNndmU1",
       Projectname:"Kinetic Grid",
-      metatittles:"Kinetic Grid Facade | MetaCassette Residential Cladding India",
-      metadescription:"Kinetic Grid by Metaguise is an advanced metal facade project showcasing dynamic architectural design, precision engineering, and innovative facade solutions.",
+      metatittles:"Kinetic Grid Facade Project | Cascading Keys by Metaguise",
+      metadescription:"Kinetic Grid by Metaguise: a commercial project using the Cascading Keys parametric facade system, keys that flow with light, depth and movement. See the full project story and photos.",
       images: [
       
      
@@ -2104,18 +2104,18 @@ const SingleprojectDetail = [
 
         {
       name: "Miraj Stadium",
-                ogTitle: "Miraj Stadium Facade | MetaCoin Metal Cladding India",
-    ogDescription: "Metaguise designed the Miraj Cricket Stadium facade using MetaCoin parametric panels — a large-scale aluminium cladding built for landmark sports architecture in Rajasthan.",
+                ogTitle: "Miraj Stadium Facade Project | Perforated Metal Cladding by Metaguise",
+    ogDescription: "Miraj Stadium by Metaguise: a large scale institutional facade using perforated metal cladding for a striking stadium elevation. See the full project story and photos.",
     ogImage: "https://metaguise.com/assets/Allprojects/commercial/Miraj%20Stadium/cover/miraj%20(1).webp",
-    metaKeywords: ["cricket stadium elevation ,stadium facade design,sports building elevation,cricket stadium exterior design India,stadium metal cladding, India sports architecture facade India "],
+    metaKeywords: ["miraj stadium facade, perforated facade stadium"],
       url:"miraj-stadium",
       videoLink: "https://www.youtube.com/watch?v=XDySYVbYrQg",
            alt:"A minimalist residential facade enhanced with MetaFin panels, creating vertical fluidity and visual rhythm.",
       youtubeLink: "https://www.youtube.com/watch?v=XDySYVbYrQg",
       instagramLink: "https://www.instagram.com/reels/DULhVHUDAtW/",
       Projectname:"Miraj Stadium",
-      metatittles:"Miraj Stadium Facade | MetaCoin Metal Cladding India",
-      metadescription:"Metaguise designed the Miraj Cricket Stadium facade using MetaCoin parametric panels — a large-scale aluminium cladding built for landmark sports architecture in Rajasthan.",
+      metatittles:"Miraj Stadium Facade Project | Perforated Metal Cladding by Metaguise",
+      metadescription:"Miraj Stadium by Metaguise: a large scale institutional facade using perforated metal cladding for a striking stadium elevation. See the full project story and photos.",
       images: [
 
          {
@@ -2731,6 +2731,62 @@ const SingleprojectDetail = [
     },
 
             {
+      name: "the strata",
+                           ogTitle: "The Strata Residence | Luxury Metal Facade Gurgaon India",
+    ogDescription: "The Strata by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Solace/cover/The%20Strata%20(1).webp",
+    metaKeywords: ["luxury bungalow elevation Gurgaon ,modern home exterior metal cladding India ,elegant house facade Haryana ,luxury metal facade bungalow Gurgaon India ,calm architectural home exterior NCR India ,understated luxury residential facade Haryana "],
+      url: "the-strata",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Strata",
+      metatittles:"The Strata Residence | Luxury Metal Facade Gurgaon India",
+      metadescription:"The Strata by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
+      images: [
+      
+     
+        { 
+          src: "assets/Allprojects/residential/The Strata/metacassette-perforated/The Strata (2).webp", 
+          alt: "Modern architectural facade design – The Strata by Metaguise"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Strata/metacassette-perforated/The Strata (4).webp", 
+          alt: "Custom metal facade detailing at The Strata project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Strata/metacassette-perforated/The Strata (6).webp", 
+          alt: " Precision metal facade installation by Metaguise – The Strata"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Strata/metaflute/The Strata (5).webp", 
+          alt: "Contemporary exterior facade system – The Strata"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Strata/metaflute/The Strata (7).webp", 
+          alt: "Engineered metal panels used in The Strata project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Strata/metaflute/The Strata (8).webp", 
+          alt: "Sustainable facade design by Metaguise – The Strata"
+         },
+
+          { 
+          src: "assets/Allprojects/residential/The Strata/metapyramid/The Strata (3).webp", 
+          alt: "Sustainable facade design by Metaguise – The Strata"
+         },
+         
+           { 
+          src: "assets/Allprojects/residential/The Strata/metapyramid/The Strata (9).webp", 
+          alt: "Sustainable facade design by Metaguise – The Strata"
+         },
+          
+        
+      ],
+    },
+
+               {
       name: "the solace",
                            ogTitle: "The Solace Residence | Luxury Metal Facade Gurgaon India",
     ogDescription: "The Solace by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
@@ -2782,6 +2838,244 @@ const SingleprojectDetail = [
           { 
           src: "assets/Allprojects/residential/The Solace/metaflute/The Solace (6).webp", 
           alt: "Innovative building facade project – The Solace by Metaguise"
+         },
+          
+        
+      ],
+    },
+
+            {
+      name: "The Podium",
+                           ogTitle: "The Podium Residence | Metaguise",
+    ogDescription: "The Podium by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Solace/cover/The%20Podium%20(1).webp",
+    metaKeywords: ["luxury bungalow elevation Gurgaon ,modern home exterior metal cladding India ,elegant house facade Haryana ,luxury metal facade bungalow Gurgaon India ,calm architectural home exterior NCR India ,understated luxury residential facade Haryana "],
+      url: "the-podium",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Podium",
+      metatittles:"The Podium Residence | Metaguise",
+      metadescription:"The Podium by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
+      images: [
+      
+     
+        { 
+          src: "assets/Allprojects/residential/The Podium/metalouver/The Podium (2).webp", 
+          alt: "Modern architectural facade design – The Podium by Metaguise"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Podium/metalouver/The Podium (3).webp", 
+          alt: "Custom metal facade detailing at The Podium project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Podium/metalouver/The Podium (4).webp", 
+          alt: " Precision metal facade installation by Metaguise – The Podium"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Podium/metalouver/The Podium (5).webp", 
+          alt: "Contemporary exterior facade system – The Podium"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Podium/metalouver/The Podium (6).webp", 
+          alt: "Engineered metal panels used in The Podium project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Podium/metalouver/The Podium (7).webp", 
+          alt: "Sustainable facade design by Metaguise – The Podium"
+         },
+
+          { 
+          src: "assets/Allprojects/residential/The Podium/metalouver/The Podium (8).webp", 
+          alt: "Sustainable facade design by Metaguise – The Podium"
+         },
+         
+           { 
+          src: "assets/Allprojects/residential/The Podium/metalouver/The Podium (9).webp", 
+          alt: "Sustainable facade design by Metaguise – The Strata"
+         },
+
+           { 
+          src: "assets/Allprojects/residential/The Podium/metalouver/The Podium (10).webp", 
+          alt: "Sustainable facade design by Metaguise – The Strata"
+         },
+          
+        
+      ],
+    },
+
+             {
+      name: "The Nest",
+                           ogTitle: "The Nest Residence | Metaguise",
+    ogDescription: "The Nest by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Solace/cover/The%20Podium%20(1).webp",
+    metaKeywords: ["luxury bungalow elevation Gurgaon ,modern home exterior metal cladding India ,elegant house facade Haryana ,luxury metal facade bungalow Gurgaon India ,calm architectural home exterior NCR India ,understated luxury residential facade Haryana "],
+      url: "the-nest",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Nest",
+      metatittles:"The Nest Residence | Metaguise",
+      metadescription:"The Nest by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
+      images: [
+      
+     
+        { 
+          src: "assets/Allprojects/residential/The Nest/metaflute/The Nest (2).webp", 
+          alt: "Modern architectural facade design – The Nest by Metaguise"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Nest/metaflute/The Nest (3).webp", 
+          alt: "Custom metal facade detailing at The Nest project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Nest/metaflute/The Nest (4).webp", 
+          alt: " Precision metal facade installation by Metaguise – The Nest"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Nest/metaflute/The Nest (5).webp", 
+          alt: "Contemporary exterior facade system – The Nest"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Nest/metaflute/The Nest (6).webp", 
+          alt: "Engineered metal panels used in The Nest project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Nest/metaflute/The Nest (7).webp", 
+          alt: "Sustainable facade design by Metaguise – The Nest"
+         },
+
+          { 
+          src: "assets/Allprojects/residential/The Nest/metaflute/The Nest (8).webp", 
+          alt: "Sustainable facade design by Metaguise – The Nest"
+         },
+         
+           { 
+          src: "assets/Allprojects/residential/The Nest/metaflute/The Nest (9).webp", 
+          alt: "Sustainable facade design by Metaguise – The Strata"
+         },
+
+         
+          
+        
+      ],
+    },
+
+             {
+      name: "The Scale",
+                           ogTitle: "The Scale Residence | Metaguise",
+    ogDescription: "The Scale by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Solace/cover/The%20Podium%20(1).webp",
+    metaKeywords: ["luxury bungalow elevation Gurgaon ,modern home exterior metal cladding India ,elegant house facade Haryana ,luxury metal facade bungalow Gurgaon India ,calm architectural home exterior NCR India ,understated luxury residential facade Haryana "],
+      url: "the-scale",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Scale",
+      metatittles:"The Scale Residence | Metaguise",
+      metadescription:"The Scale by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
+      images: [
+      
+     
+        { 
+          src: "assets/Allprojects/residential/The Scale/metablox/The Scale (2).webp", 
+          alt: "Modern architectural facade design – The Scale by Metaguise"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Scale/metablox/The Scale (3).webp", 
+          alt: "Custom metal facade detailing at The Scale project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Scale/metablox/The Scale (4).webp", 
+          alt: " Precision metal facade installation by Metaguise – The Scale"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Scale/metablox/The Scale (5).webp", 
+          alt: "Contemporary exterior facade system – The Scale"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Scale/metablox/The Scale (6).webp", 
+          alt: "Engineered metal panels used in The Scale project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Scale/metablox/The Scale (7).webp", 
+          alt: "Sustainable facade design by Metaguise – The Scale"
+         },
+
+          { 
+          src: "assets/Allprojects/residential/The Scale/metablox/The Scale (8).webp", 
+          alt: "Sustainable facade design by Metaguise – The Scale"
+         },
+         
+           { 
+          src: "assets/Allprojects/residential/The Scale/metablox/The Scale (9).webp", 
+          alt: "Sustainable facade design by Metaguise – The Strata"
+         },
+
+        
+          
+        
+      ],
+    },
+
+             {
+      name: "The Ripple",
+                           ogTitle: "The Ripple Residence | Metaguise",
+    ogDescription: "The Ripple by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
+    ogImage: "https://metaguise.com/assets/Allprojects/residential/The%20Solace/cover/The%20Podium%20(1).webp",
+    metaKeywords: ["luxury bungalow elevation Gurgaon ,modern home exterior metal cladding India ,elegant house facade Haryana ,luxury metal facade bungalow Gurgaon India ,calm architectural home exterior NCR India ,understated luxury residential facade Haryana "],
+      url: "the-ripple",
+         alt:"Striking residential facade featuring golden MetaCoin waves, dramatic MetaPyramids, diamond MetaShingles, and warm MetaLouvers.",
+      videoLink: "",
+      youtubeLink: "",
+      instagramLink: "",
+      Projectname:"The Ripple",
+      metatittles:"The Ripple Residence | Metaguise",
+      metadescription:"The Ripple by Metaguise brings calm architectural luxury to a residential facade – refined metal cladding that blends understated elegance with lasting material quality.",
+      images: [
+      
+     
+        { 
+          src: "assets/Allprojects/residential/The Ripple/metaflute/The Ripple (3).webp", 
+          alt: "Modern architectural facade design – The Ripple by Metaguise"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Ripple/metaflute/The Ripple (6).webp", 
+          alt: "Custom metal facade detailing at The Ripple project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Ripple/metaflute/The Ripple (10).webp", 
+          alt: " Precision metal facade installation by Metaguise – The Ripple"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Ripple/metashingles/The Ripple (2).webp", 
+          alt: "Contemporary exterior facade system – The Ripple"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Ripple/metashingles/The Ripple (4).webp", 
+          alt: "Engineered metal panels used in The Ripple project"
+         },
+          { 
+          src: "assets/Allprojects/residential/The Ripple/metashingles/The Ripple (5).webp", 
+          alt: "Sustainable facade design by Metaguise – The Ripple"
+         },
+
+          { 
+          src: "assets/Allprojects/residential/The Ripple/metashingles/The Ripple (7).webp", 
+          alt: "Sustainable facade design by Metaguise – The Ripple"
+         },
+         
+           { 
+          src: "assets/Allprojects/residential/The Ripple/metashingles/The Ripple (8).webp", 
+          alt: "Sustainable facade design by Metaguise – The Strata"
+         },
+
+           { 
+          src: "assets/Allprojects/residential/The Ripple/metashingles/The Ripple (9).webp", 
+          alt: "Sustainable facade design by Metaguise – The Strata"
          },
           
         
@@ -3040,9 +3334,9 @@ export const SingleProductDetail = [
       name: "MetaCoin",
       videoLink: "https://www.youtube.com/watch?v=7tqxeMlIMPI",
       youtubeLink: "https://www.youtube.com/watch?v=d_0Ie4xGsKQ",
-    metaKeywords: ["MetaCoin facade, parametric coin facade India, metal coin cladding, aluminium facade panels, Metaguise MetaCoin"],
-    ogTitle: "MetaCoin | Parametric Coin Facade System by Metaguise",
-    ogDescription: "Custom coin-shaped aluminium panels that create dynamic, light-reactive facades. Seen at Tanishq South Ex, Miraj Stadium, and 1800+ Metaguise projects.",
+    metaKeywords: ["metacoin, meta coin, metacoin facade, coin facade"],
+    ogTitle: "MetaCoin | Circular Coin Facade Panels | Metaguise",
+    ogDescription: "MetaCoin by Metaguise is a circular coin facade system, metal discs arranged in parametric patterns for a rich textured surface with privacy and light control. Seen on RJ Jewellers, The Golden Bloom and more.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaParametric/metacoin/cover/metacoin.webp",
               // 👇 Add alt text for all images here
     alt: "A revolutionary parametric facade system used PAN India for iconic large-scale projects. Fully customizable and trusted by leading architects.",
@@ -3131,9 +3425,9 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaSequin",
-          metaKeywords: ["MetaSequin facade, kinetic metal facade India, parametric screening system, algorithmic facade design, aluminium sequin cladding"],
-    ogTitle: "MetaSequin | Kinetic Parametric Facade Cladding",
-    ogDescription: "An algorithm-based facade system that creates motion and depth with every viewing angle. Metaguise's most visually immersive product.",
+          metaKeywords: ["metasequin facade, sequin metal panel, dynamic metal facade"],
+    ogTitle: "MetaSequin | Dynamic Light Reflecting Metal Panel | Metaguise",
+    ogDescription: "MetaSequin is Metaguise's signature dynamic metal panel, angled sequin shaped modules that reflect and shift light through the day. Seen on the Metaland experience center facade.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaParametric/metasequin/cover/metasequin1.webp",
       videoLink: "https://www.youtube.com/shorts/pOor40hc4Zg",
       youtubeLink: "https://www.youtube.com/shorts/Z_o_1Y3Cnpc",
@@ -3176,9 +3470,9 @@ export const SingleProductDetail = [
     {
       name: "MetaPyramid",
         alt:"3D geometric panels inspired by ancient forms - plays with shadow and light to deliver drama and timelessness in modern architecture.",
-                 metaKeywords: ["MetaPyramid facade, pyramid metal cladding India, 3D texture aluminium panels, geometric facade design, Metaguise MetaPyramid"],
-    ogTitle: "MetaPyramid | 3D Geometric Metal Facade Panels",
-    ogDescription: "Pyramid-shaped aluminium panels that add depth, shadow, and visual texture to any elevation. Custom sizes and finishes available.",
+                 metaKeywords: ["3d metal wall panel, pyramid facade texture, metapyramid"],
+    ogTitle: "MetaPyramid | 3D Pyramid Texture Metal Wall Panel | Metaguise",
+    ogDescription: "MetaPyramid by Metaguise, square modules pressed into pyramid relief for dramatic shadow play and deep texture on any facade.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaForm/metapyramid/cover/metapyramid.webp",
       videoLink: "https://www.youtube.com/watch?v=bsZgLDDyA3A",
       youtubeLink: "https://www.youtube.com/shorts/nkCT_bRGOdQ",
@@ -3209,9 +3503,9 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaShingle",
-               metaKeywords: ["MetaShingles aluminium, shingle facade cladding India, overlapping metal panels, premium building cladding, Metaguise shingles"],
-    ogTitle: "MetaShingles | Layered Aluminium Facade Cladding",
-    ogDescription: "Overlapping shingle panels that bring texture, depth, and a premium finish to building exteriors. Weatherproof and built for Indian climates.",
+               metaKeywords: ["metal shingles facade, metashingles, modern roof tiles metal"],
+    ogTitle: "MetaShingles | Modern Metal Roof & Wall Tile System | Metaguise",
+    ogDescription: "MetaShingles by Metaguise are overlapping aluminium shingle modules, a modern, low maintenance alternative to traditional clay and slate roof and wall tiles.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaForm/metashingle/cover/metashingle.webp",
         alt:"Overlapping scale-inspired monochromatic metal panels preferred by architects for residential and commercial facades alike",
       videoLink: "https://www.youtube.com/shorts/QqrYA55JYHE",
@@ -3277,9 +3571,9 @@ export const SingleProductDetail = [
     },
     {
       name: "CascadingKeys",
-               metaKeywords: ["Cascading Keys facade, kinetic metal facade India, wind responsive cladding, dynamic building exterior, Metaguise cascading keys"],
-    ogTitle: "Cascading Keys | Wind-Responsive Kinetic Facade",
-    ogDescription: "Inspired by the sound of chimes. Cascading Keys panels move with the wind — creating a dynamic, ever-changing facade that's impossible to ignore.",
+               metaKeywords: ["cascading keys, cascading keys facade"],
+    ogTitle: "Cascading Keys | Parametric Facade With Flowing Key Pattern | Metaguise",
+    ogDescription: "Cascading Keys by Metaguise is a parametric facade product inspired by chimes, keys that flow with light, depth and movement. Used on the Kinetic Grid project.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaForm/CascadingKeys/cover/caskey1.webp",
         alt: " Nature-inspired parametric system with flowing aluminum forms. Adds poetic rhythm and softness to tranquil, design-forward facades.",
       videoLink: "https://www.youtube.com/shorts/JF9Y-sPUlEM",
@@ -3318,17 +3612,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaCassette",
-               metaKeywords: ["MetaCassette panels, aluminium cassette cladding India, modular facade panels, metal cladding system, perforated aluminium facade"],
-    ogTitle: "MetaCassette | Modular Aluminium Facade Cladding",
-    ogDescription: "India's most widely used facade panel system. Solid or perforated, always precise. MetaCassette by Metaguise — trusted by architects across 1800+ projects.",
+               metaKeywords: ["perforated metal facade, perforated facade panels, perforated cladding panels"],
+    ogTitle: "MetaCassette | Perforated Metal Facade Panels | Metaguise",
+    ogDescription: "MetaCassette by Metaguise, precision cut perforated aluminium facade panels for shading, ventilation and a fine, detailed pattern on the building skin.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaForm/metacassette/cover/metacassette.webp",
         alt: " Versatile cladding system with grooved, perforated, and solid modules. Offers functional design control for bold, scalable facades. ",
       videoLink: "https://www.youtube.com/shorts/oOiyN07PwQE",
       youtubeLink: "https://www.youtube.com/watch?v=AtzVGYkpOxs",
       instagramLink: "https://www.instagram.com/p/C6svvLSSWU2/?img_index=1",
       Productname:"MetaCassette",
-      metatittles:"MetaCassette Metal Cladding Panels | Metaguise",
-      metadescription:"MetaCassette aluminium panels offer a clean, modular finish in solid or perforated options. Weather-resistant, low-maintenance, and used across 1800+ Indian projects.",
+      metatittles:"MetaCassette | Perforated Metal Facade Panels | Metaguise",
+      metadescription:"MetaCassette by Metaguise, precision cut perforated aluminium facade panels for shading, ventilation and a fine, detailed pattern on the building skin.",
       description:"As a versatile choice for <a href='https://metaguise.com/all-products'>architectural facade panels</a>, MetaCassette provides comprehensive metal facade solutions through three distinct styles: perforated, solid and grooved metal panels. These durable exterior panels are engineered to serve as high-performance building exterior solutions, empowering architects to achieve a customizable facade design that is both visually captivating and perfectly tailored to the unique functional requirements of every project.",
       images: [
            "assets/Allprojects/residential/Apex Residence/metacassette/manish_8.webp",
@@ -3374,17 +3668,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaFlute",
-               metaKeywords: ["MetaFlute facade, ribbed aluminium cladding India, fluted metal panels, vertical facade texture, Metaguise MetaFlute"],
-    ogTitle: "MetaFlute | Ribbed Aluminium Facade Cladding System",
-    ogDescription: "18mm ribbed profiles that add structure, rhythm, and character to any elevation. MetaFlute — Metaguise's most popular linear facade product.",
+               metaKeywords: ["metaflute facade, vertical fluted metal panels, fluted aluminium facade"],
+    ogTitle: "MetaFlute | Vertical Fluted Metal Facade Panels | Metaguise",
+    ogDescription: "MetaFlute by Metaguise is a vertical fluted aluminium panel system, delivering tactile depth and strong shadow rhythm for any building facade.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaForm/metaflute/cover/metaflute.webp",
         alt: " Lightweight vertical panels creating rhythmic shadow lines - ideal for sleek contemporary facades needing both style and performance. ",
       videoLink: "https://www.youtube.com/shorts/xQ9DUg325RM",
       youtubeLink: "https://www.youtube.com/shorts/L6R_17NCRcY",
       instagramLink: "https://www.instagram.com/p/C52rD3KyYBU/?img_index=4",
       Productname:"MetaFlute",
-      metatittles:"MetaFlute | Ribbed Aluminium Facade Cladding India",
-      metadescription:"MetaFlute uses 18mm ribbed aluminium profiles to bring vertical rhythm and texture to building facades. Perfect for retail, residences, and institutional elevations.",
+      metatittles:"MetaFlute | Vertical Fluted Metal Facade Panels | Metaguise",
+      metadescription:"MetaFlute by Metaguise is a vertical fluted aluminium panel system, delivering tactile depth and strong shadow rhythm for any building facade.",
       description:"MetaFlute architectural fluted metal facade systems deliver precision-engineered aluminium profiles that elevate modern building exteriors with striking vertical rhythm and enhanced sun-shade performance. Lightweight yet highly durable, these fluted metal panels resist corrosion, improve airflow and reduce maintenance costs while adding premium textured elegance to commercial and residential facades. Ideal for architects seeking value driven <a href='https://metaguise.com/all-products'>aluminium facade cladding</a> solutions with sustainable long-lasting finish.",
       images: [
         "assets/Allproducts/MetaForm/metaflute/metaflute1.webp",
@@ -3447,17 +3741,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaFold",
-               metaKeywords: ["MetaFold facade, folded aluminium panels India, origami metal cladding, sculptural facade design, Metaguise MetaFold"],
-    ogTitle: "MetaFold | Origami-Inspired Metal Facade System",
-    ogDescription: "Angular folded panels that create dramatic shadow play and architectural depth. MetaFold brings sculptural energy to any building elevation.",
+               metaKeywords: ["metafold facade, folded metal panel, geometric facade panel"],
+    ogTitle: "MetaFold | Folded Geometric Metal Facade Panels | Metaguise",
+    ogDescription: "MetaFold by Metaguise, folded aluminium panels in sharp geometric shapes for a bold, sculptural facade.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaFunction/metafold/cover/metafold1.webp",
         alt: "Foldable pane system bridging interiors and exteriors with airflow, light, and elegant motion - modern architecture meets flexibility.",
       videoLink: "https://www.youtube.com/shorts/bztzIQXiq30",
       youtubeLink: "https://www.youtube.com/watch?v=Zyfa8ufnC0s",
       instagramLink: "https://www.instagram.com/p/DGSqyO1IT63/?img_index=1",
       Productname:"MetaFold",
-      metatittles:"MetaFold | Folded Metal Facade Cladding | Metaguise ",
-      metadescription:"MetaFold creates angular, origami-inspired aluminium facade panels with sculptural depth. Available in swing, sliding, and bifold configurations for modern buildings.",
+      metatittles:"MetaFold | Folded Geometric Metal Facade Panels | Metaguise",
+      metadescription:"MetaFold by Metaguise, folded aluminium panels in sharp geometric shapes for a bold, sculptural facade.",
       description:"MetaFold folding metal panels are designed for modern homes and premium commercial spaces that demand flexibility and style. Crafted from high-grade metal, these folding panels create wide openings for better ventilation, natural light, and seamless indoor-outdoor flow. Ideal for villas, showrooms, and luxury projects, MetaFold offers smooth operation, durability, and contemporary <a href='https://metaguise.com/all-products'>architectural facade</a> appeal trusted by designers and builders.",
       images: [
         "assets/Allprojects/residential/Apex Residence/metafold/manish_2.webp",
@@ -3487,16 +3781,16 @@ export const SingleProductDetail = [
     {
       name: "MetaFin",
                metaKeywords: ["MetaFin facade, aluminium fin cladding, curved metal facade India, parametric fin system, organic facade design"],
-    ogTitle: "MetaFin | Parametric Aluminium Fin Facade System",
-    ogDescription: "Flowing curved fins create organic, light-sensitive surfaces. MetaFin by Metaguise is built for architects who want structure to move.",
+    ogTitle: "MetaFin | Architectural Sun Shading Metal Fins | Metaguise",
+    ogDescription: "MetaFin by Metaguise, aluminium fin systems that reduce solar heat gain by 40 to 60 percent while giving the facade a strong vertical rhythm and identity.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaParametric/metafin/cover/metafin.webp",
         alt: "Parametric fins with sculpted curves that reflect light. Combines fluidity with structure, perfect for artistic and sustainable facades. ",
       videoLink: "https://www.youtube.com/watch?v=HVRcBLgKIeA",
       youtubeLink: "https://www.youtube.com/watch?v=HVRcBLgKIeA",
       instagramLink: "https://www.instagram.com/p/C0ok5qASjfQ/?img_index=3",
       Productname:"MetaFin",
-      metatittles:"MetaFin | Curved Parametric Fin Facade | Metaguise",
-      metadescription:"MetaFin uses fluid aluminium fins arranged parametrically to create organic, wave-like facades. Built for bold commercial elevations across India.",
+      metatittles:"MetaFin | Architectural Sun Shading Metal Fins | Metaguise",
+      metadescription:"MetaFin by Metaguise, aluminium fin systems that reduce solar heat gain by 40 to 60 percent while giving the facade a strong vertical rhythm and identity.",
       description:"MetaFin is an advanced parametric metal facade panel system designed for modern architecture and commercial building exteriors. Crafted for custom architectural facades, its lightweight aluminium composition enhances daylight reflection and weather performance while delivering dynamic, sustainable <a href='https://metaguise.com/all-products'>building envelope solutions</a>. Ideal for architects and designers seeking <a href='https://metaguise.com/all-projects'>custom facade cladding</a>, MetaFin seamlessly blends aesthetic curves with high-performance durability to elevate urban design and functional exterior finishes.",
       images: [
         "assets/Allproducts/MetaParametric/metafin/metafin2.webp",
@@ -3525,17 +3819,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaHydra",
-               metaKeywords: ["MetaHydra facade, angular parametric panels India, 3D metal facade, aluminium cladding system, Metaguise MetaHydra"],
-    ogTitle: "MetaHydra | Bold Angular Parametric Facade System",
-    ogDescription: "Multi-directional angular panels that create high-impact 3D surfaces. MetaHydra is Metaguise's most geometry-driven facade product.",
+               metaKeywords: ["metahydra facade, angular parametric panels"],
+    ogTitle: "MetaHydra | Bold Angular Parametric Facade System | Metaguise",
+    ogDescription: "MetaHydra is a multi directional parametric facade with sharp angular geometry, built for architects who want bold, precision engineered building exteriors.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaParametric/metahydra/cover/metahydra.webp",
         alt: "Parametric copper cladding with fluid geometry. Ages gracefully with a rich patina - iconic and expressive.",
       videoLink: "https://www.youtube.com/watch?v=WZQaImzTZiE",
       youtubeLink: "https://www.youtube.com/watch?v=WZQaImzTZiE",
       instagramLink: "https://www.instagram.com/p/Cxp-xPFv7RR/?img_index=1",
       Productname:"MetaHydra",
-      metatittles:"MetaHydra | Angular Parametric Facade | Metaguise",
-      metadescription:"MetaHydra is a multi-directional parametric facade with sharp angular geometry. Designed for architects who need bold, precision-engineered building exteriors.",
+      metatittles:"MetaHydra | Bold Angular Parametric Facade System | Metaguise",
+      metadescription:"MetaHydra is a multi directional parametric facade with sharp angular geometry, built for architects who want bold, precision engineered building exteriors.",
       description:"MetaHydra copper facade panels blend luxury copper cladding design with durable parametric architecture that elevates building exteriors for modern commercial, hospitality, and sustainable projects. Perfect for architects seeking <a href='https://metaguise.com/all-products'>custom facade solutions</a> and <a href='https://metaguise.com/all-projects'>architectural metal panels</a> that age elegantly while resisting weathering and maintenance costs. With a fluid water-inspired pattern, MetaHydra adds rich texture, character, and timeless appeal to exterior walls, façades, and design installations.",
       images: [
         "assets/Allproducts/MetaParametric/metahydra/metahydra1.webp",
@@ -3547,16 +3841,16 @@ export const SingleProductDetail = [
     {
       name: "MetaLouver",
                metaKeywords: ["MetaLouver facade, aluminium louver cladding India, ventilated facade panels, light control building exterior, Metaguise louver"],
-    ogTitle: "MetaLouver | Ventilated Aluminium Louver Facade",
-    ogDescription: "Angled louver panels that manage light, heat, and airflow while giving your building a sleek, modern exterior. Form and function, perfectly balanced.",
+    ogTitle: "MetaLouver | Custom Metal Louvers For Facades & Gates | Metaguise",
+    ogDescription: "MetaLouver by Metaguise, custom aluminium louver systems that control light and airflow while adding a clean architectural look to facades and gates.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaForm/metalouver/cover/metalouver.webp",
         alt: "Adjustable angular louvers for light, airflow, and privacy control - ideal for facades and shading systems across contemporary architecture PAN India.",
       videoLink: "https://www.youtube.com/shorts/HVUP7YV59PM",
       youtubeLink: "https://www.youtube.com/shorts/EerdVK4Ax9M",
       instagramLink: "https://www.instagram.com/p/C_m5fBNhNuX/?img_index=1",
       Productname:"MetaLouver",
-      metatittles:"MetaLouver | Aluminium Louver Facade Cladding India",
-      metadescription:"MetaLouver combines ventilation and design in one system. Angled aluminium louvers control natural light, improve airflow, and enhance any modern building facade.",
+      metatittles:"MetaLouver | Custom Metal Louvers For Facades & Gates | Metaguise",
+      metadescription:"MetaLouver by Metaguise, custom aluminium louver systems that control light and airflow while adding a clean architectural look to facades and gates.",
       description:"MetaLouver is a smart architectural metal louver system designed for modern facades and climate control. Its precision-angled metal fins regulate airflow, reduce heat gain, and enhance exterior aesthetics. Ideal for commercial and residential buildings, MetaLouver improves energy efficiency while protecting interiors from glare and heavy rain, making it a practical and visually striking <a href='https://metaguise.com/all-products'>facade solution</a>.",
       images: [
         "assets/Allprojects/commercial/Cityspace82/metalouver/cityspace82_2.webp",
@@ -3614,17 +3908,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaPlank",
-               metaKeywords: ["MetaPlank facade, horizontal aluminium cladding, plank metal panels India, modern building exterior, Metaguise MetaPlank"],
-    ogTitle: "MetaPlank | Horizontal Aluminium Facade System",
-    ogDescription: "Sleek horizontal aluminium planks that bring a contemporary, linear finish to any elevation. Lightweight, weatherproof, and low maintenance.",
+               metaKeywords: ["metaplank facade, plank metal cladding, linear metal panel"],
+    ogTitle: "MetaPlank | Linear Metal Plank Facade Panels | Metaguise",
+    ogDescription: "MetaPlank by Metaguise, linear aluminium plank panels for a clean, striped facade look on residential and commercial buildings.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaForm/metaplank/cover/metaplank.webp",
         alt: "Natural wood aesthetics with metal strength. Weather-resistant and sustainable - trusted alternative to traditional cladding wood.",
       videoLink: "https://www.youtube.com/shorts/gSDtx-QkGhw",
       youtubeLink: "https://www.youtube.com/shorts/gSDtx-QkGhw",
       instagramLink: "https://www.instagram.com/p/C-nDsgvyP1z/?img_index=1",
       Productname:"MetaPlank",
-      metatittles:"MetaPlank | Aluminium Plank Facade Cladding India",
-      metadescription:"MetaPlank delivers clean horizontal lines and a sleek linear finish for modern facades. Lightweight, corrosion-resistant, and suited to homes and commercial buildings.",
+      metatittles:"MetaPlank | Linear Metal Plank Facade Panels | Metaguise",
+      metadescription:"MetaPlank by Metaguise, linear aluminium plank panels for a clean, striped facade look on residential and commercial buildings.",
       description:"MetaPlank premium wood-look <a href='https://metaguise.com/all-products'>metal cladding panels</a> deliver a stunning architectural finish with realistic wood grain and long-lasting durability. Designed for modern exteriors, facade upgrades, and weather-resistant wall solutions, this sustainable aluminium plank resists rot, pests, and UV fading while requiring minimal upkeep. Perfect for contemporary homes, commercial structures, and designer facades, MetaPlank offers aesthetic warmth with engineered strength and low-maintenance performance.",
       images: [
         "assets/Allproducts/MetaForm/metaplank/metaplank1.webp",
@@ -3643,17 +3937,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaGate",
-               metaKeywords: ["MetaGate aluminium gate India, designer metal gates, fluted gate cladding, automated aluminium gate, Metaguise MetaGate"],
-    ogTitle: "MetaGate | Premium Aluminium Gate & Boundary Cladding",
-    ogDescription: "Fluted, louvered, and perforated aluminium gate designs with manual or automated options. MetaGate — because your entrance deserves the same detail as your facade.",
+               metaKeywords: ["metal gate design, louvers gate design, custom metal gate"],
+    ogTitle: "MetaGate | Custom Metal Gates With Louver Design | Metaguise",
+    ogDescription: "MetaGate by Metaguise, custom metal entrance and boundary gates, often built with louver blades for privacy and airflow.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaFunction/metagate/cover/metagate4.webp",
         alt: "Customizable entry systems in sleek aluminum - automated or manual, perfect for modern architectural thresholds.",
       videoLink: "https://www.youtube.com/shorts/2hPBUOLftgA",
       youtubeLink: "https://www.youtube.com/watch?v=3Fm3gxL0lPg",
       instagramLink: "https://www.instagram.com/p/C55XSGxSSsh/?img_index=3",
       Productname:"MetaGate",
-      metatittles:"MetaGate | Designer Aluminium Gates India | Metaguise",
-      metadescription:"MetaGate offers premium aluminium gate cladding in fluted, louvered, and perforated designs. Manual and automated options for residential and commercial entrances.",
+      metatittles:"MetaGate | Custom Metal Gates With Louver Design | Metaguise",
+      metadescription:"MetaGate by Metaguise, custom metal entrance and boundary gates, often built with louver blades for privacy and airflow.",
       description:"MetaGate premium aluminum entry gate system delivers sleek, custom automated sliding gate solutions for homes with optional manual or motorized operation. Designed for corrosion-resistant outdoor access control, this lightweight yet robust gate enhances security and modern aesthetics. Ideal for residential driveways, commercial entrances, and smart properties seeking smooth automation and low maintenance performance. Tailored sizes and finishes blend style with reliable garage access <a href='https://metaguise.com/all-products'>architectural access solutions</a> and modern <a href='https://metaguise.com/all-projects'>architectural projects</a> convenience.",
       images: [
         "assets/Allproducts/MetaFunction/metagate/metagate1.webp",
@@ -3666,17 +3960,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaSlider",
-               metaKeywords: ["MetaSlider facade, sliding aluminium panels India, movable facade cladding, privacy screen metal, Metaguise MetaSlider"],
-    ogTitle: "MetaSlider | Functional Sliding Aluminium Facade",
-    ogDescription: "Smooth-sliding aluminium panels for facades that need to move. MetaSlider gives architects control over light, privacy, and visual openness.",
+               metaKeywords: ["metaslider facade, sliding metal panel gate"],
+    ogTitle: "MetaSlider | Sliding Metal Panel Gate System | Metaguise",
+    ogDescription: "MetaSlider by Metaguise, sliding metal panel gates that bring facade grade design to functional, moving entrances.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaFunction/metaslider/cover/metaslider.webp",
         alt: "Dynamic sliding facade system balancing privacy and openness. Adaptable to climate and design needs in modern architecture. ",
       videoLink: "https://www.youtube.com/watch?v=bFMkX9cXhPM",
       youtubeLink: "https://www.youtube.com/watch?v=bFMkX9cXhPM",
       instagramLink: "https://www.instagram.com/reel/DAFyTxQSMWu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       Productname:"MetaSlider",
-      metatittles:"MetaSlider | Sliding Aluminium Facade | Metaguise",
-      metadescription:"MetaSlider is a functional sliding aluminium facade system for privacy and light control. Lightweight, smooth-running, and engineered for long-term outdoor performance.",
+      metatittles:"MetaSlider | Sliding Metal Panel Gate System | Metaguise",
+      metadescription:"MetaSlider by Metaguise, sliding metal panel gates that bring facade grade design to functional, moving entrances.",
       description:"MetaSlider is a smart sliding facade system designed for buildings, both commercial and residential. It allows flexible control over sunlight, ventilation, and privacy while enhancing exterior aesthetics. Ideal for architects seeking <a href='https://metaguise.com/all-products'>functional facade solutions</a>, MetaSlider improves energy efficiency, adapts to weather conditions, and adds a premium architectural identity to <a href='https://metaguise.com/all-projects'>contemporary architectural structures</a> with smooth operation and durable performance.",
       images: [
         "assets/Allproducts/MetaFunction/metaslider/metaslider1.webp",
@@ -3686,17 +3980,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaBlox",
-               metaKeywords: ["MetaBlox facade, 3D modular metal cladding, parametric block facade India, METABLOX Metaguise, aluminium block panels"],
-    ogTitle: "MetaBlox | 3D Parametric Block Facade by Metaguise",
-    ogDescription: "India's first 3D modular parametric facade system. MetaBlox made its landmark debut at RJ Jewellers, Jaipur — now available PAN India.",
+               metaKeywords: ["metablox facade, parametric block panel"],
+    ogTitle: "MetaBlox | Parametric Block Facade With Fish Scale Texture | Metaguise",
+    ogDescription: "MetaBlox by Metaguise, a breakthrough parametric facade technology with a fish scale like block texture, first seen on the RJ Jewellers flagship store.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaParametric/metablox/cover/metablox.webp",
         alt: "India’s first shape-shifting facade system - pure aluminum, parametrically driven, and customizable for dramatic architectural impact.",
       videoLink: "https://www.youtube.com/watch?v=YzKljcP5S4s",
       youtubeLink: "https://www.youtube.com/watch?v=YzKljcP5S4s",
       instagramLink: "https://www.instagram.com/p/Cr5Xh-INnvp/",
       Productname:"MetaBlox",
-      metatittles:"MetaBlox | 3D Modular Metal Facade | Metaguise India",
-      metadescription:"MetaBlox is a first-of-its-kind 3D block facade system inspired by geometric patterns. Debuted at RJ Jewellers Jaipur. Available for commercial projects PAN India.",
+      metatittles:"MetaBlox | Parametric Block Facade With Fish Scale Texture | Metaguise",
+      metadescription:"MetaBlox by Metaguise, a breakthrough parametric facade technology with a fish scale like block texture, first seen on the RJ Jewellers flagship store.",
       description:"MetaBlox is an advanced kinetic facade system designed for modern commercial and luxury architecture. Built with high-grade aluminum, it creates a dynamic exterior that visually transforms with sunlight, angles, and movement. Ideal for architects seeking innovative building facades in India, MetaBlox enhances elevation design, improves brand identity, and delivers a futuristic, performance-driven <a href='https://metaguise.com/all-projects'>architectural solution</a>.",
       images: [
         "assets/Allproducts/MetaParametric/metablox/metablox1.webp",
@@ -3713,17 +4007,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaCopper",
-               metaKeywords: ["MetaCopper facade, copper finish aluminium cladding India, copper tone metal panels, warm facade finish, Metaguise MetaCopper"],
-    ogTitle: "MetaCopper | Warm Copper-Tone Aluminium Facade",
-    ogDescription: "All the warmth of copper, none of the weight. MetaCopper by Metaguise — processed at MetaLab for colour accuracy and all-weather durability.",
+               metaKeywords: ["copper facade cladding, copper metal panel, metacopper"],
+    ogTitle: "MetaCopper | Copper Finish Metal Facade Panels | Metaguise",
+    ogDescription: "MetaCopper by Metaguise, copper finished facade panels with a rich, warm tone that develops character as it weathers.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaSurface/metacopper/cover/metacopper1.webp",
         alt: "Classic copper with enduring strength. Brings rustic elegance and anti-corrosion beauty to traditional and modern designs.",
       videoLink: "https://www.youtube.com/watch?v=-pLr2ZVXycY",
       youtubeLink: "https://www.youtube.com/watch?v=-pLr2ZVXycY",
       instagramLink: "https://www.instagram.com/p/C39pYFwyFKK/",
       Productname:"MetaCopper",
-      metatittles:"MetaCopper | Copper-Finish Aluminium Facade India",
-      metadescription:"MetaCopper brings warm ochre-red copper tones to aluminium panels without the weight or cost of real copper. Processed at MetaLab for lasting colour and durability.",
+      metatittles:"MetaCopper | Copper Finish Metal Facade Panels | Metaguise",
+      metadescription:"MetaCopper by Metaguise, copper finished facade panels with a rich, warm tone that develops character as it weathers.",
       description:"MetaCopper is a premium architectural copper finish panels designed for modern facades, elevations, and interior accents. Inspired by natural aged copper tones, it delivers a warm, luxurious appearance with long-lasting durability and corrosion resistance. Ideal for commercial buildings, villas, and designer projects, MetaCopper offers a low-maintenance <a href='https://metaguise.com/all-products'>copper cladding solution</a> that blends contemporary design with timeless material elegance for <a href='https://metaguise.com/all-projects'>modern architectural projects</a>",
       images: [
         "assets/Allproducts/MetaSurface/metacopper/metacopper2.webp",
@@ -3741,17 +4035,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaCorten",
-               metaKeywords: ["MetaCorten facade, corten steel finish aluminium India, weathering steel look cladding, rust finish metal panels, Metaguise MetaCorten"],
-    ogTitle: "MetaCorten | Weathering Steel Look Facade Panels",
-    ogDescription: "The industrial drama of corten steel — without the rust risk. MetaCorten brings weathered character to any facade, built on weatherproof aluminium.",
+               metaKeywords: ["corten steel facade, weathering steel cladding, metacorten"],
+    ogTitle: "MetaCorten | Corten Weathering Steel Facade Panels | Metaguise",
+    ogDescription: "MetaCorten by Metaguise, corten weathering steel facade panels with a reflective, rust toned finish, used in kinetic and vertical facade systems.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaSurface/metacorten/cover/metacorten3.webp",
         alt: "Weathered steel facade system with evolving color tones. Maintenance-free and favored for contemporary architectural character.",
       videoLink: "https://www.youtube.com/watch?v=MG0e8RfM-6s",
       youtubeLink: "https://www.youtube.com/watch?v=MG0e8RfM-6s",
       instagramLink: "https://www.instagram.com/p/CgXMjRilJco/",
       Productname:"MetaCorten",
-      metatittles:"MetaCorten | Corten Steel Finish Facade | Metaguise",
-      metadescription:"MetaCorten delivers the rugged rust-toned look of weathering steel on lightweight aluminium. Full aesthetic drama, zero actual corrosion, complete weather resistance.",
+      metatittles:"MetaCorten | Corten Weathering Steel Facade Panels | Metaguise",
+      metadescription:"MetaCorten by Metaguise, corten weathering steel facade panels with a reflective, rust toned finish, used in kinetic and vertical facade systems.",
       description:"MetaCorten offers high-performance weathered steel facade panels and corten steel finish panels in India. Achieve a modern, sustainable look with our maintenance-free exterior cladding solutions.",
       images: [
         "assets/Allproducts/MetaSurface/metacorten/metacorten1.webp",
@@ -3764,17 +4058,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaGrey",
-               metaKeywords: ["MetaGrey facade, grey stone finish aluminium India, stone texture metal cladding, grey building exterior, Metaguise MetaGrey"],
-    ogTitle: "MetaGrey | Stone-Textured Grey Aluminium Facade",
-    ogDescription: "A clean, contemporary grey with stone-like texture. MetaGrey by Metaguise works across residential, retail, and commercial facades without ever going out of style.",
+               metaKeywords: ["metagrey facade, grey metal cladding, minimal metal facade"],
+    ogTitle: "MetaGrey | Grey Tone Metal Facade Panels | Metaguise",
+    ogDescription: "MetaGrey by Metaguise, grey finished metal facade panels for a minimal, contemporary building exterior.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaSurface/metagrey/cover/metagrey.webp",
         alt: "Sophisticated grayscale metal cladding for modern facades seeking understated elegance and high versatility.",
       videoLink: "https://www.youtube.com/watch?v=AtzVGYkpOxs",
       youtubeLink: "https://www.youtube.com/watch?v=AtzVGYkpOxs",
       instagramLink: "https://www.instagram.com/p/DCrHdiwyBBL/?img_index=1",
       Productname:"MetaGrey",
-      metatittles:"MetaGrey | Grey Stone Finish Aluminium Facade India",
-      metadescription:"MetaGrey is a stone-textured grey surface finish on aluminium facade panels. Clean, versatile, and contemporary — works across residential, retail, and commercial projects.",
+      metatittles:"MetaGrey | Grey Tone Metal Facade Panels | Metaguise",
+      metadescription:"MetaGrey by Metaguise, grey finished metal facade panels for a minimal, contemporary building exterior.",
       description:"MetaGrey is a premium grayscale architectural facade panel designed for elegant commercial and residential exteriors. This custom aluminium facade cladding blends seamlessly with modern building design while adding visual balance and understated sophistication. Ideal for architects and builders seeking <a href='https://metaguise.com/all-products'>contemporary exterior wall solutions</a>, MetaGrey delivers durable performance, low-maintenance finishes, and clean aesthetic appeal that complements sustainable <a href='https://metaguise.com/all-projects'>metal facade systems</a>.",
       images: [
         "assets/Allproducts/MetaSurface/metagrey/metagrey1.webp",
@@ -3791,17 +4085,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaPatina",
-               metaKeywords: ["MetaPatina facade, patina finish aluminium India, aged metal cladding, earthy facade finish, Metaguise MetaPatina"],
-    ogTitle: "MetaPatina | Organic Aged Patina Facade Finish",
-    ogDescription: "The aged beauty of natural patina — engineered into aluminium. MetaPatina by Metaguise delivers an earthy, time-worn aesthetic that actually lasts.",
+               metaKeywords: ["metapatina facade, patina metal cladding, weathering metal panel"],
+    ogTitle: "MetaPatina | Weathering Metal Facade That Ages With Character | Metaguise",
+    ogDescription: "MetaPatina by Metaguise is a living facade surface, metal that deepens in colour and character as it weathers naturally over the years.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaSurface/metapatina/cover/metapatina.webp",
         alt: "Oxidized copper and brass finishes with verdigris tones - luxurious, antimicrobial, and ideal for statement interiors or exteriors.",
       videoLink: "https://www.youtube.com/shorts/VP3dKv1dUAw",
       youtubeLink: "https://www.youtube.com/watch?v=zk2w03avHp4",
       instagramLink: "https://www.instagram.com/p/C_FQoMaSB8-/?img_index=1",
       Productname:"MetaPatina",
-      metatittles:"MetaPatina | Aged Patina Finish Metal Facade India",
-      metadescription:"MetaPatina replicates the organic aged look of natural patina on aluminium panels. For architects seeking an earthy, time-worn aesthetic with modern material performance.",
+      metatittles:"MetaPatina | Weathering Metal Facade That Ages With Character | Metaguise",
+      metadescription:"MetaPatina by Metaguise is a living facade surface, metal that deepens in colour and character as it weathers naturally over the years.",
       description:"Discover MetaPatina’s hand-crafted oxidized metal finish with rich verdigris hues on copper, brass, and alloys, perfect for premium <a href='https://metaguise.com/all-products'>architectural metal panels</a> and decorative metal cladding. This rustic patina finish creates timeless elegance with enhanced durability and weather-resistance for interior and exterior design projects. MetaPatina brings artistic depth and contemporary style to facades, feature walls, and bespoke metal installations with luxurious aged character across <a href='https://metaguise.com/all-projects'>modern architectural projects</a>",
       images: [
         "assets/Allproducts/MetaSurface/metapatina/metapatina1.webp",
@@ -3816,17 +4110,17 @@ export const SingleProductDetail = [
     },
     {
       name: "MetaWood",
-               metaKeywords: ["MetaWood facade, wood finish aluminium cladding India, wood grain metal panels, termite free facade, Metaguise MetaWood"],
-    ogTitle: "MetaWood | Realistic Wood-Grain Aluminium Facade",
-    ogDescription: "Looks like wood. Built like metal. MetaWood aluminium panels bring natural warmth to facades — termite-free, weatherproof, and zero maintenance.",
+               metaKeywords: ["metawood facade, wood look metal cladding, wood finish aluminium panel"],
+    ogTitle: "MetaWood | Wood Look Metal Facade Panels | Metaguise",
+    ogDescription: "MetaWood by Metaguise brings the warm look of natural timber to a durable, low maintenance metal facade panel, built for Indian weather.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaSurface/metawood/cover/metawood.webp",
         alt: "Sustainable metal cladding mimicking natural wood - termite-proof, fire-resistant, and built for longevity across all climates.",
       videoLink: "https://www.youtube.com/shorts/f-mC4kTXhCg",
       youtubeLink: "https://www.youtube.com/shorts/sRjbbaa9cbw",
       instagramLink: "https://www.instagram.com/p/C8_hZvXS2OA/?img_index=1",
       Productname:"MetaWood",
-      metatittles:"MetaWood | Wood-Finish Metal Facade Cladding India ",
-      metadescription:"MetaWood gives aluminium panels a realistic natural wood grain finish. Termite-free, zero maintenance, and weatherproof — perfect for soffit, elevation, and boundary cladding.",
+      metatittles:"MetaWood | Wood Look Metal Facade Panels | Metaguise",
+      metadescription:"MetaWood by Metaguise brings the warm look of natural timber to a durable, low maintenance metal facade panel, built for Indian weather.",
       description:"MetaWood is a premium metal-based wood finish designed for modern architectural exteriors and interiors. It delivers the natural warmth of wood with the durability of metal, making it ideal for facades, cladding, louvers, and feature walls. Weatherproof, fire-resistant, and termite-free, MetaWood is a sustainable choice for architects seeking long-lasting, low-maintenance <a href='https://metaguise.com/all-products'>wood-look solutions</a>.",
       images: [
         "assets/Allproducts/MetaSurface/metawood/metawood1.webp",
@@ -3844,17 +4138,17 @@ export const SingleProductDetail = [
     },
     {
       name: "SolidPanel",
-               metaKeywords: ["solid panel cladding India, aluminium solid panels, metal facade panels, building cladding system, Metaguise solid panel"],
-    ogTitle: "Solid Panel | Precision Aluminium Facade Cladding",
-    ogDescription: "Clean, flat-profile aluminium cladding built for lasting performance. Metaguise Solid Panels work on commercial towers, residences, and industrial exteriors alike.",
+               metaKeywords: ["solid panel facade, flush metal cladding, minimalist facade"],
+    ogTitle: "Solid Panel | Flush Seamless Aluminium Cladding | Metaguise",
+    ogDescription: "Solid Panel by Metaguise, flush seamless aluminium cladding for clean, minimalist facades on residential and commercial projects.",
     ogImage: "https://metaguise.com/assets/Allproducts/MetaForm/SolidPanel/cover/solidpanel.webp",
         alt: "Clean, flat metal surfaces offering monolithic elegance - trusted by architects across India for minimal, uninterrupted facades.",
       videoLink: "https://www.youtube.com/shorts/VTGrtakTJgM",
       youtubeLink: "https://www.youtube.com/watch?v=oEKOjT0tAWk",
       instagramLink: "https://www.instagram.com/p/C_kTfLGSf3W/",
       Productname:"Solid Panels",
-      metatittles:"Solid Panel Metal Cladding | Metaguise Facades",
-      metadescription:"Solid Panels by Metaguise are precision-cut aluminium cladding panels for long-term performance. Ideal for commercial buildings, modern homes, and industrial facades.",
+      metatittles:"Solid Panel | Flush Seamless Aluminium Cladding | Metaguise",
+      metadescription:"Solid Panel by Metaguise, flush seamless aluminium cladding for clean, minimalist facades on residential and commercial projects.",
       description:"Solid Panels by Metaguise are precision-engineered metal facade solutions designed for long-lasting performance and clean architectural appeal. Ideal for commercial buildings, industrial projects, and modern elevations, these panels offer high weather resistance, corrosion protection, and minimal maintenance. Available in custom sizes, finishes, and colors, Solid Panels provide architects and builders with a reliable, sleek, and cost-effective <a href='https://metaguise.com/all-products'>facade cladding option</a>.",
       images: [
         "assets/Allproducts/MetaForm/SolidPanel/solidpanel1.webp",
@@ -4099,6 +4393,36 @@ export const ProjectImages = [
         imgPath: "assets/Allprojects/residential/The Solace/cover/The Solace (1).webp",  
         order: 1,
         alt: "The Solace facade project by Metaguise"
+    },
+
+     { 
+        imgPath: "assets/Allprojects/residential/The Strata/cover/The Strata (1).webp",  
+        order: 1,
+        alt: "The Strata facade project by Metaguise"
+    },
+
+      { 
+        imgPath: "assets/Allprojects/residential/The Podium/cover/The Podium (1).webp",  
+        order: 1,
+        alt: "The Podium facade project by Metaguise"
+    },
+
+        { 
+        imgPath: "assets/Allprojects/residential/The Scale/cover/The Scale (1).webp",  
+        order: 1,
+        alt: "The Scale facade project by Metaguise"
+    },
+
+         { 
+        imgPath: "assets/Allprojects/residential/The Ripple/cover/The Ripple (1).webp",  
+        order: 1,
+        alt: "The Ripple facade project by Metaguise"
+    },
+
+         { 
+        imgPath: "assets/Allprojects/residential/The Nest/cover/The Nest (1).webp",  
+        order: 1,
+        alt: "The Nest facade project by Metaguise"
     },
     { 
         imgPath: "assets/Allprojects/residential/The Spine/cover/The Spine (1).webp",  

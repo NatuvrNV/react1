@@ -18,12 +18,12 @@ export const About = () => {
   return (
     <>
          <Helmet>
-              <title>About Metaguise | India's Metal Facade Pioneers </title>
-              <meta name="description" content="Metaguise is India's premier parametric metal facade company with 1800+ completed projects. Trusted by architects nationwide for innovative, durable cladding." />
-              <meta name="keywords" content="home, react, SEO, web development" />
-              <meta name="author" content="Your Name" />
-              <meta property="og:title" content="About Metaguise | Pioneers in Metal Facade Design " />
-              <meta property="og:description" content="India's first parametric facade company. 1800+ projects, PAN India presence, and a growing global footprint. Know the team behind the facades." />
+              <title>About Metaguise | India's First Parametric Metal Facade Company</title>
+              <meta name="description" content="Meet Metaguise, India's pioneer in parametric metal facades. 1800+ projects, 70+ specialists, in-house design to installation. Read our story, vision and mission." />
+              <meta name="keywords" content="parametric facade company india, metal facade company, about metaguise" />
+              
+              <meta property="og:title" content="About Metaguise | India's First Parametric Metal Facade Company" />
+              <meta property="og:description" content="Meet Metaguise, India's pioneer in parametric metal facades. 1800+ projects, 70+ specialists, in-house design to installation. Read our story, vision and mission." />
               <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
               <meta property="og:url" content="https://metaguise.com/about" />
               <meta name="robots" content="index, follow" />

@@ -225,18 +225,19 @@ const Partner = () => {
   return (
     <>
       <Helmet>
-        <title>Partner with Metaguise | Innovative Facade Cladding Experts</title>
+        <title>Partner With Metaguise | Architect & Builder Facade Partnerships</title>
         <meta
           name="description"
-          content="Collaborate with Metaguise on custom facade cladding and metal facade solutions designed for standout architectural impact."
+          content="Partner with Metaguise for metal facade and cladding projects. Trade pricing, technical support and priority delivery for architects, builders and developers."
         />
-        <meta property="og:title" content="Partner with Metaguise | Innovative Facade Cladding Experts" />
+        <meta property="og:title" content="Partner With Metaguise | Architect & Builder Facade Partnerships" />
         <meta
           property="og:description"
-          content="Collaborate with Metaguise on custom facade cladding and metal facade solutions designed for standout architectural impact."
+          content="Partner with Metaguise for metal facade and cladding projects. Trade pricing, technical support and priority delivery for architects, builders and developers."
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://metaguise.com/partner" />
+        <meta name="keywords" content="facade partner program, architect facade partnership india" />
 
         {/* ✅ Google Ads Conversion Tracking Script */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>

@@ -255,6 +255,8 @@ const Contact = () => {
           name="description"
           content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project."
         />
+                <meta name="keywords" content="contact metaguise, metal facade consultation" />
+
         <meta
           property="og:title"
           content="Contact Metaguise | Metal Facade Cladding Experts"

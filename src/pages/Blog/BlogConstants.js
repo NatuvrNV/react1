@@ -571,12 +571,12 @@ As buildings evolve into intelligent entities, facades will play an increasingly
     title: "How Kinetic Facades Improve Building Performance and User Experience",
     url:"how-kinetic-facades-improve-building-performance-and-user-experience",
     metaTitle:
-      "Kinetic Facades: Boost Building Performance & User Experience ",
+      "Kinetic Facades Explained: How They Work and Why They Improve Buildings ",
     date: "25-05-25",
     template: 'B',
     category: "Project Highlights",
 
-    metaDescription:"Explore how kinetic facades enhance building performance, energy efficiency, and user experience using smart aluminium facade systems",
+    metaDescription:"Discover how kinetic facades respond to sunlight, wind and use, and why they make buildings more comfortable, energy efficient and visually striking. A complete guide by Metaguise.",
 
     description:"Kinetic facades are changing the way buildings behave. Instead of being fixed and static, these facades respond. To sunlight. To wind. Even to how people use the space. They’re not just eye-catching, they’re smart. And when done right, they make buildings more comfortable, more energy-efficient, and honestly, a lot more interesting to be around.",
 
@@ -3332,7 +3332,7 @@ If you’re looking to design a building that doesn’t just stand - but speaks 
     title: "Perforated Metal Facade panels in 2026: Benefits, Design uses & Architectural Guide ",
     url: "why-perforated-metal-panels-are-the-smartest-architectural-investment",
     metaTitle:
-      "Perforated Metal Facade Panels: Benefits, Design Ideas & Architect Guide 2026 ",
+      "Perforated Metal Facade Panels: Benefits, Uses and Design Guide",
     date: "09-12-25",
     template: 'B',
     category: "Material Spotlight",
@@ -3398,7 +3398,7 @@ If you’re looking to design a building that doesn’t just stand - but speaks 
 }`,
 
     metaDescription:
-      "Discover the benefits of perforated metal facade panels in modern architecture. Learn how they improve ventilation, shading, and building design flexibility.",
+      "Perforated metal facade panels explained, the benefits, common design uses and how architects are using them across India. By Metaguise.",
 
     description:
       "Perforated metal facade panels are architectural cladding systems made from aluminium or steel sheets with precision-cut patterns.",
@@ -3491,13 +3491,13 @@ Explore our MetaCassette Perforated to see how Metaguise can transform your elev
     title: "Why Architects Love MetaCoin: Parametric Texture Meets Durability",
     url:"why-architects-love-metacoin-parametric-texture-meets-durability",
     metaTitle:
-      "Parametric Architectural Materials | MetaCoin Durability & Design",
+      "Why Architects Love MetaCoin: Parametric Texture Meets Durability",
     date: "12-12-25",
     template: 'B',
     category: "Material Spotlight",
 
     metaDescription:
-      "Discover why architects choose MetaCoin materials for parametric texture, strength, sustainability & long-lasting performance in modern architectural design.",
+      "Why MetaCoin is one of Metaguise's most requested facade products, the design story, the texture and the durability architects care about.",
 
     description:
       "When it comes to facade design, every detail matters. A building’s surface isn't just about looks - it speaks of its performance, longevity, and intent. ",
@@ -3584,13 +3584,13 @@ From concept to installation, we offer full-stack support: design consulting, pr
     title: "Are Metal Louvers Worth It Pros Designs and Use Cases in Indian Homes",
     url:"are-metal-louvers-worth-it-pros-designs-and-use-cases-in-indian-homes",
     metaTitle:
-      "Metal Louvers for Indian Homes: Benefits, Designs & Cost",
+      "Are Metal Louvers Worth It? Pros, Designs and Uses in India",
     date: "15-12-25",
     template: 'B',
     category: "Project Highlights",
 
     metaDescription:
-      "Are metal louvers worth it in India? Explore benefits, modern designs, ventilation, sun control & real use cases for Indian homes by Metaguise.",
+      "A honest look at metal louvers for Indian homes, the pros, the design options and where they work best. By Metaguise.",
 
     description:
       "When you're designing a home that needs to breathe, adapt, and still look effortlessly elegant, metal louvers are a serious contender",
@@ -11893,7 +11893,7 @@ Full glass facades - curtain walls and glazed cladding systems - perform magnifi
                              {
     title: "House Exterior Design India: 10 Materials That Look Premium and Last 30+ Years",
     metaTitle:
-      "House Exterior Design India: 10 Premium Materials | Metaguise ",
+      "House Exterior Design India: 10 Facade Materials That Last 30+ Years ",
     date: "11-05-26",
 
     template: 'B',
@@ -11902,7 +11902,7 @@ Full glass facades - curtain walls and glazed cladding systems - perform magnifi
     url: "house-exterior-design-india-10-premium-materials",
 
     metaDescription:
-      " 10 exterior materials for Indian homes that look premium & last 30+ years. Metal, stone, HPL, glass compared for India's climate zones — by Metaguise.",
+      " 10 exterior cladding and facade materials that look premium and survive Indian heat, monsoon and pollution for 30 plus years. By Metaguise.",
 
     description:
       "House exterior design in India demands materials that survive decades of extreme heat, monsoon moisture, UV radiation, and coastal or industrial air",
@@ -12246,7 +12246,7 @@ Full glass facades - curtain walls and glazed cladding systems - perform magnifi
                                  {
     title: "What Is Parametric Facade Design? A Simple Guide for Indian Homeowners and Architects (2026)",
     metaTitle:
-      "What Is Parametric Facade Design? Guide for India 2026 | Metaguise ",
+      "What Is Parametric Facade Design? A Simple Guide for India ",
     date: "13-05-26",
 
     template: 'B',
@@ -12255,7 +12255,7 @@ Full glass facades - curtain walls and glazed cladding systems - perform magnifi
     url: "parametric-facade-design-guide-india-2026",
 
     metaDescription:
-      "Parametric facade design explained for Indian homeowners & architects. How algorithms become metal panels — cost, process & real projects by Metaguise, India's pioneer.",
+      "Parametric facade design uses algorithms instead of manual drawing to create precise, unique building exteriors. A simple guide for Indian homeowners and architects by Metaguise.",
 
     description:
       "Parametric facade design uses mathematical algorithms — not manual drawing — to generate building exteriors that are precise, unique, and structurally coherent",
