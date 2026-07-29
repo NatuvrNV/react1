@@ -93,7 +93,7 @@ const Blog = () => {
                 <meta property="og:title" content="Metaguise Blog | Facade Design, Kinetic Facades & Parametric Architecture" />
         <meta property="og:description" content="Explore Metaguise's articles on metal facade design, kinetic facades, parametric architecture and material innovation for architects and homeowners across India." />
 
-        <link rel="canonical" href="https://metaguise.com/blogs" />
+        <link rel="canonical" href="https://metaguise.com/blogs/" />
                 <meta name="keywords" content="facade design blog, kinetic facade, parametric architecture" />
       </Helmet>
 

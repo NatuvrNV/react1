@@ -236,7 +236,7 @@ const Partner = () => {
           content="Partner with Metaguise for metal facade and cladding projects. Trade pricing, technical support and priority delivery for architects, builders and developers."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://metaguise.com/partner" />
+        <link rel="canonical" href="https://metaguise.com/partner/" />
         <meta name="keywords" content="facade partner program, architect facade partnership india" />
 
         {/* ✅ Google Ads Conversion Tracking Script */}

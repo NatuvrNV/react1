@@ -94,7 +94,7 @@ const Allprojects = () => {
         <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
         <meta property="og:url" content="https://metaguise.com/all-projects" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://metaguise.com/all-projects" />
+        <link rel="canonical" href="https://metaguise.com/all-projects/" />
       </Helmet>
       <div className="gallery-content">
         <Container fluid>

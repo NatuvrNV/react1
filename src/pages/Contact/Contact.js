@@ -265,7 +265,7 @@ const Contact = () => {
           property="og:description"
           content="Get in touch with Metaguise for expert guidance on metal facade systems and custom facade cladding for your project."
         />
-        <link rel="canonical" href="https://metaguise.com/contact" />
+        <link rel="canonical" href="https://metaguise.com/contact/" />
         <meta name="robots" content="index, follow" />
 
         {/* ✅ Google Ads Conversion Tracking Script */}

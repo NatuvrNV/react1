@@ -90,7 +90,7 @@ const Allproducts = () => {
                     <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
                     <meta property="og:url" content="https://metaguise.com/" />
                     <meta name="robots" content="index, follow" />
-                    <link rel="canonical" href="https://metaguise.com/all-products" />
+                    <link rel="canonical" href="https://metaguise.com/all-products/" />
                   </Helmet>
       <div className="gallery-content">
         <Container fluid>
