@@ -41,8 +41,7 @@ function App() {
   return (
 
     <HelmetProvider>
-          <Preloader >
-  </Preloader>
+
 
 <FloatingButton />
     <Router>

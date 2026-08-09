@@ -216,7 +216,7 @@ const SingleProduct = () => {
         <meta name="description" content={selectedProduct.metadescription || selectedProduct.description} />
         <meta name="keywords" content={generateMetaKeywords()} />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`https://metaguise.com/all-products/${productName}`} />
+        <link rel="canonical" href={`https://metaguise.com/all-products/${productName}/`} />
 
         {/* Open Graph / Facebook Meta Tags */}
         <meta property="og:type" content="product" />
@@ -226,7 +226,7 @@ const SingleProduct = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={`${selectedProduct.Productname} metal facade design by Metaguise`} />
-        <meta property="og:url" content={`https://metaguise.com/all-products/${productName}`} />
+        <meta property="og:url" content={`https://metaguise.com/all-products/${productName}/`} />
         <meta property="og:site_name" content="Metaguise" />
         <meta property="og:locale" content="en_IN" />
         <meta property="product:brand" content="Metaguise" />

@@ -84,7 +84,7 @@ const SingleBlogPage = () => {
   
   // Use custom URL if available, otherwise use title for canonical URL
   const urlFriendlyTitle = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
-  const canonicalUrl = `https://metaguise.com/blog/${urlFriendlyTitle}`;
+  const canonicalUrl = `https://metaguise.com/blog/${urlFriendlyTitle}/`;
   
   // Function to get alt text for an image
   const getImageAltText = (blog, imageIndex = 0) => {
@@ -133,7 +133,7 @@ const SingleBlogPage = () => {
         {/* Mobile Layout */}
         <div className="d-block d-xl-none">
           <BlogButton navigate={navigate} />
-          <h1 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h1>
+          <h2 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h2>
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>
@@ -188,7 +188,7 @@ const SingleBlogPage = () => {
         
         {/* Mobile Layout for Template B */}
         <div className="d-block d-xl-none">
-          <h1 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h1>
+          <h2 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h2>
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>

@@ -192,6 +192,7 @@ const SingleProject = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
+    
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -260,7 +261,7 @@ const SingleProject = () => {
         <meta name="robots" content="index, follow" />
         
         {/* Canonical URL using the url field */}
-        <link rel="canonical" href={`https://metaguise.com/all-projects/${project.url}`} />
+        <link rel="canonical" href={`https://metaguise.com/all-projects/${project.url}/`} />
 
         {/* Open Graph / Facebook Meta Tags */}
         <meta property="og:type" content="article" />
@@ -270,7 +271,7 @@ const SingleProject = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={`${project.Projectname} - Metal facade architectural project by Metaguise`} />
-        <meta property="og:url" content={`https://metaguise.com/all-projects/${project.url}`} />
+        <meta property="og:url" content={`https://metaguise.com/all-projects/${project.url}/`} />
         <meta property="og:site_name" content="Metaguise" />
         <meta property="og:locale" content="en_IN" />
         <meta property="article:published_time" content={project.date || "2024"} />

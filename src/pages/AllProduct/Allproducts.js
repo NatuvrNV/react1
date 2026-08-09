@@ -88,7 +88,7 @@ const Allproducts = () => {
                     <meta property="og:title" content="21+ Metal Facade Products | MetaCoin, MetaFin, MetaLouver & More | Metaguise" />
                     <meta property="og:description" content="Browse all 21 Metaguise facade products, MetaCoin, MetaFin, MetaLouver, Cascading Keys and more. Compare designs and find the right system for your building." />
                     <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
-                    <meta property="og:url" content="https://metaguise.com/" />
+                    <meta property="og:url" content="https://metaguise.com/all-products/" />
                     <meta name="robots" content="index, follow" />
                     <link rel="canonical" href="https://metaguise.com/all-products/" />
                   </Helmet>

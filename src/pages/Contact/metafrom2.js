@@ -286,10 +286,11 @@ const Contact = ({ brochureName }) => {
         <title>
           Download {detectedBrochure} Brochure | Luxury Metal Facades & Cladding
         </title>
-        <link
+       <link
           rel="canonical"
-          href={`https://metaguise.com/${detectedBrochure}`}
+          href={`https://metaguise.com/metafunction/`}
         />
+        <meta property="og:url" content="https://metaguise.com/metafunction/" />
         <meta
           name="description"
           content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}

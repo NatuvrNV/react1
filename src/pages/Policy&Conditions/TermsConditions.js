@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-
+import { Helmet } from "react-helmet-async";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Footer from "../../components/Footer";
@@ -18,7 +18,37 @@ function Terms() {
   // }, []);
 
   return (
-    
+    <>
+      <Helmet>
+        <title>Terms and Conditions | Metaguise</title>
+        <meta
+          name="description"
+          content="Read Metaguise's Terms and Conditions covering website use, intellectual property rights, and liability for www.metaguise.com."
+        />
+        <link rel="canonical" href="https://metaguise.com/terms-and-conditions/" />
+
+        {/* Robots */}
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Terms and Conditions | Metaguise" />
+        <meta
+          property="og:description"
+          content="Read Metaguise's Terms and Conditions covering website use, intellectual property rights, and liability for www.metaguise.com."
+        />
+        <meta property="og:url" content="https://metaguise.com/terms-and-conditions/" />
+        <meta property="og:site_name" content="Metaguise" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Terms and Conditions | Metaguise" />
+        <meta
+          name="twitter:description"
+          content="Read Metaguise's Terms and Conditions covering website use, intellectual property rights, and liability for www.metaguise.com."
+        />
+      </Helmet>
+
     <div className="container-fluid ">
 
       <div className="content-desk">
@@ -80,6 +110,7 @@ function Terms() {
       </div>
       <Footer />
     </div>
+    </>
   );
 }
 

@@ -279,8 +279,10 @@ const Contact = ({ brochureName }) => {
         </title>
         <link
           rel="canonical"
-          href={`https://metaguise.com/${detectedBrochure}`}
+          href={`https://metaguise.com/ctb/`}
         />
+
+        <meta property="og:url" content="https://metaguise.com/ctb/" />
         <meta
           name="description"
           content={`Explore our premium ${detectedBrochure} designs. Download the brochure for innovative architectural surfaces.`}

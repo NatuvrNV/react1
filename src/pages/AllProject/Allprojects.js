@@ -92,7 +92,7 @@ const Allprojects = () => {
         <meta property="og:title" content="Metal Facade Projects Portfolio India | 1800+ Projects | Metaguise" />
         <meta property="og:description" content="Browse 1800+ completed metal facade and parametric architecture projects by Metaguise. Residential, commercial and institutional buildings across India." />
         <meta property="og:image" content="https://metaguise.com/home-image.jpg" />
-        <meta property="og:url" content="https://metaguise.com/all-projects" />
+        <meta property="og:url" content="https://metaguise.com/all-projects/" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://metaguise.com/all-projects/" />
       </Helmet>

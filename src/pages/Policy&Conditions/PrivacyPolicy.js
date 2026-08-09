@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Footer from "../../components/Footer";
@@ -17,7 +18,37 @@ function PrivacyPolicy() {
   // }, []);
 
   return (
-    
+    <>
+      <Helmet>
+        <title>Privacy Policy | Metaguise</title>
+        <meta
+          name="description"
+          content="Read Metaguise's Privacy Policy to understand how we collect, use, and protect your personal data across our website and services."
+        />
+        <link rel="canonical" href="https://metaguise.com/privacy-policy/" />
+
+        {/* Robots */}
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Privacy Policy | Metaguise" />
+        <meta
+          property="og:description"
+          content="Read Metaguise's Privacy Policy to understand how we collect, use, and protect your personal data across our website and services."
+        />
+        <meta property="og:url" content="https://metaguise.com/privacy-policy/" />
+        <meta property="og:site_name" content="Metaguise" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Privacy Policy | Metaguise" />
+        <meta
+          name="twitter:description"
+          content="Read Metaguise's Privacy Policy to understand how we collect, use, and protect your personal data across our website and services."
+        />
+      </Helmet>
+
     <div className="container-fluid ">
 
       <div className="content-desk">
@@ -109,6 +140,7 @@ function PrivacyPolicy() {
       </div>
       <Footer />
     </div>
+    </>
   );
 }
 
