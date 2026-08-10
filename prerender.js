@@ -11,21 +11,28 @@ const http = require('http');
 
 const { SingleBlogDetail } = require('./src/pages/Blog/BlogConstants');
 
-// SingleprojectDetail / SingleProductDetail no longer live in constants.js —
-// that data was split out into public/data/{projects,products}-index.json
-// (and per-item files) to shrink the client bundle. Prerender only needs
-// the slug/url list, so read the lightweight index files straight off disk.
 const projectsIndex = JSON.parse(
-  fs.readFileSync(path.join(__dirname, 'public/data/projects-index.json'), 'utf8')
-);
-const productsIndex = JSON.parse(
-  fs.readFileSync(path.join(__dirname, 'public/data/products-index.json'), 'utf8')
+  fs.readFileSync(
+    path.join(__dirname, 'public/data/projects-index.json'),
+    'utf8'
+  )
 );
 
-const getUrlFriendlyString = (str) =>
-  str
+const productsIndex = JSON.parse(
+  fs.readFileSync(
+    path.join(__dirname, 'public/data/products-index.json'),
+    'utf8'
+  )
+);
+
+// --------------------------------------------------
+// Helpers
+// --------------------------------------------------
+
+const getUrlFriendlyString = (str = '') =>
+  String(str)
     .toLowerCase()
-    .replace(/[:'&,?''\u2018\u2019]/g, '')
+    .replace(/[:'&,?‘’]/g, '')
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-')
     .trim();
@@ -46,163 +53,472 @@ const blogPages = SingleBlogDetail.map((blog) => {
   const slug = blog.url
     ? getUrlFriendlyString(blog.url)
     : getUrlFriendlyString(blog.title);
+
   return `/blog/${slug}`;
 });
 
-// ✅ Projects — item.url directly use karo
 const projectPages = projectsIndex.map((project) => {
   const slug = project.url
     ? getUrlFriendlyString(project.url)
     : getUrlFriendlyString(project.name);
+
   return `/all-projects/${slug}`;
 });
 
-// ✅ Products — item.name.toLowerCase() use karo (SingleProduct.js: item.name.toLowerCase() === productName)
 const productPages = productsIndex.map((product) => {
-  const slug = product.name.toLowerCase();
-  return `/all-products/${slug}`;
+  return `/all-products/${String(product.name).toLowerCase()}`;
 });
 
-const allPages = [...staticPages, ...blogPages, ...projectPages, ...productPages];
+const allPages = [
+  ...staticPages,
+  ...blogPages,
+  ...projectPages,
+  ...productPages,
+];
+
+// --------------------------------------------------
+// Local static server
+// --------------------------------------------------
 
 function startServer() {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     const buildDir = path.join(__dirname, 'build');
 
+    const mimeTypes = {
+      '.html': 'text/html; charset=utf-8',
+      '.js': 'application/javascript; charset=utf-8',
+      '.css': 'text/css; charset=utf-8',
+      '.json': 'application/json; charset=utf-8',
+      '.png': 'image/png',
+      '.jpg': 'image/jpeg',
+      '.jpeg': 'image/jpeg',
+      '.webp': 'image/webp',
+      '.avif': 'image/avif',
+      '.svg': 'image/svg+xml',
+      '.ico': 'image/x-icon',
+      '.woff2': 'font/woff2',
+      '.woff': 'font/woff',
+      '.ttf': 'font/ttf',
+      '.map': 'application/json',
+    };
+
     const server = http.createServer((req, res) => {
-      let urlPath = decodeURIComponent(req.url.split('?')[0]);
+      try {
+        let urlPath = decodeURIComponent(
+          (req.url || '/').split('?')[0]
+        );
 
-      if (urlPath !== '/' && urlPath.endsWith('/')) {
-        urlPath = urlPath.slice(0, -1);
-      }
+        if (urlPath !== '/' && urlPath.endsWith('/')) {
+          urlPath = urlPath.slice(0, -1);
+        }
 
-      const candidates = [
-        path.join(buildDir, urlPath),
-        path.join(buildDir, urlPath, 'index.html'),
-        path.join(buildDir, urlPath + '.html'),
-        path.join(buildDir, 'index.html'),
-      ];
+        // Prevent path traversal
+        urlPath = path.normalize(urlPath);
 
-      const mimeTypes = {
-        '.html': 'text/html',
-        '.js':   'application/javascript',
-        '.css':  'text/css',
-        '.json': 'application/json',
-        '.png':  'image/png',
-        '.jpg':  'image/jpeg',
-        '.webp': 'image/webp',
-        '.svg':  'image/svg+xml',
-        '.ico':  'image/x-icon',
-        '.woff2':'font/woff2',
-        '.woff': 'font/woff',
-        '.ttf':  'font/ttf',
-      };
+        if (urlPath.includes('..')) {
+          res.writeHead(403);
+          res.end('Forbidden');
+          return;
+        }
 
-      for (const filePath of candidates) {
-        try {
-          const stat = fs.statSync(filePath);
-          if (stat.isFile()) {
-            const ext = path.extname(filePath);
-            const mime = mimeTypes[ext] || 'application/octet-stream';
-            res.writeHead(200, { 'Content-Type': mime });
-            fs.createReadStream(filePath).pipe(res);
-            return;
+        const candidates = [
+          path.join(buildDir, urlPath),
+          path.join(buildDir, urlPath, 'index.html'),
+          path.join(buildDir, `${urlPath}.html`),
+          path.join(buildDir, 'index.html'),
+        ];
+
+        for (const filePath of candidates) {
+          try {
+            const stat = fs.statSync(filePath);
+
+            if (stat.isFile()) {
+              const ext = path.extname(filePath).toLowerCase();
+              const mime =
+                mimeTypes[ext] || 'application/octet-stream';
+
+              res.writeHead(200, {
+                'Content-Type': mime,
+                'Cache-Control': 'no-cache',
+              });
+
+              fs.createReadStream(filePath).pipe(res);
+              return;
+            }
+          } catch (error) {
+            // File doesn't exist - try next candidate
           }
-        } catch (e) {}
-      }
+        }
 
-      res.writeHead(404);
-      res.end('Not found');
+        res.writeHead(404, {
+          'Content-Type': 'text/plain; charset=utf-8',
+        });
+
+        res.end('Not found');
+      } catch (error) {
+        console.error('Server request error:', error.message);
+
+        if (!res.headersSent) {
+          res.writeHead(500);
+        }
+
+        res.end('Internal server error');
+      }
+    });
+
+    server.on('error', (error) => {
+      console.error('❌ Server error:', error.message);
+      reject(error);
     });
 
     server.listen(45678, '127.0.0.1', () => {
       console.log('✅ Server ready on port 45678');
       resolve(server);
     });
-
-    server.on('error', (err) => {
-      console.error('❌ Server error:', err.message);
-      process.exit(1);
-    });
   });
 }
 
-async function prerender() {
-  console.log(`\n📋 Pages breakdown:`);
-  console.log(`   Static  : ${staticPages.length}`);
-  console.log(`   Blogs   : ${blogPages.length}`);
-  console.log(`   Projects: ${projectPages.length}`);
-  console.log(`   Products: ${productPages.length}`);
-  console.log(`   Total   : ${allPages.length}\n`);
-  console.log(`🚀 Pre-rendering ${allPages.length} pages...\n`);
+// --------------------------------------------------
+// Start Chromium
+// --------------------------------------------------
 
-  const server = await startServer();
+async function launchBrowser() {
+  console.log('🚀 Starting Chromium...');
 
-  const browser = await puppeteer.launch({
-    headless: 'new',
-    executablePath: '/usr/bin/chromium-browser',
+  const launchOptions = {
+    headless: true,
+
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
       '--disable-dev-shm-usage',
       '--disable-gpu',
+      '--disable-software-rasterizer',
+      '--disable-extensions',
+      '--disable-background-networking',
+      '--disable-background-timer-throttling',
+      '--disable-renderer-backgrounding',
+      '--disable-features=Translate,BackForwardCache',
+      '--no-first-run',
+      '--no-default-browser-check',
     ],
+
+    timeout: 120000,
+  };
+
+  // Use Puppeteer's own Chromium when available.
+  // This avoids compatibility problems with a system Chromium.
+  try {
+    const bundledPath = puppeteer.executablePath();
+
+    if (bundledPath && fs.existsSync(bundledPath)) {
+      console.log(`🌐 Chromium: ${bundledPath}`);
+      launchOptions.executablePath = bundledPath;
+    } else {
+      console.log('🌐 Puppeteer Chromium path not found.');
+      console.log('🌐 Trying system Chromium...');
+    }
+  } catch (error) {
+    console.log(
+      '⚠️ Could not determine Puppeteer Chromium path:',
+      error.message
+    );
+  }
+
+  const browser = await puppeteer.launch(launchOptions);
+
+  browser.on('disconnected', () => {
+    console.error('⚠️ Chromium disconnected.');
   });
+
+  console.log('✅ Chromium started');
+
+  return browser;
+}
+
+// --------------------------------------------------
+// Save prerendered HTML
+// --------------------------------------------------
+
+function getOutputPath(page) {
+  const safePage = page
+    .replace(/[:'&,?‘’]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+
+  if (safePage === '/') {
+    return path.join(__dirname, 'build', 'index.html');
+  }
+
+  return path.join(
+    __dirname,
+    'build',
+    ...safePage.split('/').filter(Boolean),
+    'index.html'
+  );
+}
+
+// --------------------------------------------------
+// Render one page
+// --------------------------------------------------
+
+async function renderPage(browser, page) {
+  let tab = null;
+
+  try {
+    tab = await browser.newPage();
+
+    await tab.setViewport({
+      width: 1366,
+      height: 768,
+      deviceScaleFactor: 1,
+    });
+
+    tab.setDefaultNavigationTimeout(120000);
+    tab.setDefaultTimeout(30000);
+
+    // Ignore noisy browser console messages
+    tab.on('console', () => {});
+
+    tab.on('pageerror', (error) => {
+      console.log(
+        `⚠️ Page JS error on ${page}: ${error.message}`
+      );
+    });
+
+    tab.on('error', (error) => {
+      console.log(
+        `⚠️ Page error on ${page}: ${error.message}`
+      );
+    });
+
+    const url = `http://127.0.0.1:45678${page}`;
+
+    console.log(`🌐 Rendering: ${page}`);
+
+    /*
+     * IMPORTANT:
+     *
+     * Do NOT use networkidle0.
+     *
+     * Your website contains third-party resources such as
+     * analytics, YouTube, Maps, Cloudinary, etc.
+     *
+     * These can keep network connections alive indefinitely.
+     */
+    await tab.goto(url, {
+      waitUntil: 'domcontentloaded',
+      timeout: 120000,
+    });
+
+    // Wait until React mounts
+    await tab.waitForFunction(
+      () => {
+        const root = document.getElementById('root');
+
+        return (
+          root &&
+          root.children &&
+          root.children.length > 0
+        );
+      },
+      {
+        timeout: 30000,
+      }
+    );
+
+    // Give React a short amount of time to finish rendering
+    await new Promise((resolve) => setTimeout(resolve, 500));
+
+    const html = await tab.content();
+
+    if (!html || html.length < 500) {
+      throw new Error('Generated HTML is unexpectedly small');
+    }
+
+    const filePath = getOutputPath(page);
+
+    fs.mkdirSync(path.dirname(filePath), {
+      recursive: true,
+    });
+
+    fs.writeFileSync(filePath, html, 'utf8');
+
+    return true;
+  } finally {
+    if (tab) {
+      try {
+        await tab.close();
+      } catch (error) {
+        // Browser may already be disconnected
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Main prerender process
+// --------------------------------------------------
+
+async function prerender() {
+  console.log('\n📋 Pages breakdown:');
+  console.log(`   Static  : ${staticPages.length}`);
+  console.log(`   Blogs   : ${blogPages.length}`);
+  console.log(`   Projects: ${projectPages.length}`);
+  console.log(`   Products: ${productPages.length}`);
+  console.log(`   Total   : ${allPages.length}\n`);
+
+  console.log(
+    `🚀 Pre-rendering ${allPages.length} pages...\n`
+  );
+
+  let server = null;
+  let browser = null;
 
   let success = 0;
   let failed = 0;
 
-  for (const page of allPages) {
-    try {
-      const tab = await browser.newPage();
+  const failedPages = [];
 
-      tab.on('console', () => {});
-      tab.on('pageerror', () => {});
+  try {
+    // Start local build server
+    server = await startServer();
 
-      await tab.goto(`http://127.0.0.1:45678${page}`, {
-        waitUntil: 'networkidle0',
-        timeout: 30000,
-      });
+    // Start Chromium
+    browser = await launchBrowser();
 
-      await tab.waitForFunction(
-        () => document.getElementById('root') &&
-              document.getElementById('root').children.length > 0,
-        { timeout: 10000 }
+    // ----------------------------------------------
+    // Render pages ONE BY ONE
+    // ----------------------------------------------
+
+    for (let i = 0; i < allPages.length; i++) {
+      const page = allPages[i];
+
+      console.log(
+        `\n[${i + 1}/${allPages.length}] ${page}`
       );
 
-      const html = await tab.content();
+      let rendered = false;
 
-      const safePage = page
-        .replace(/[:'&,?''\u2018\u2019]/g, '')
-        .replace(/\s+/g, '-')
-        .replace(/-+/g, '-');
+      // Retry each page up to 2 times
+      for (let attempt = 1; attempt <= 2; attempt++) {
+        try {
+          // If Chromium disconnected, start a new browser
+          if (!browser || !browser.isConnected()) {
+            console.log(
+              '⚠️ Browser disconnected. Restarting Chromium...'
+            );
 
-      const filePath =
-        safePage === '/'
-          ? path.join('build', 'index.html')
-          : path.join('build', ...safePage.split('/').filter(Boolean), 'index.html');
+            try {
+              if (browser) {
+                await browser.close();
+              }
+            } catch (error) {}
 
-      fs.mkdirSync(path.dirname(filePath), { recursive: true });
-      fs.writeFileSync(filePath, html, 'utf8');
+            browser = await launchBrowser();
+          }
 
-      console.log(`✅ ${page}`);
-      success++;
+          await renderPage(browser, page);
 
-      await tab.close();
-    } catch (err) {
-      console.error(`❌ ${page} — ${err.message}`);
-      failed++;
+          console.log(`✅ ${page}`);
+
+          success++;
+          rendered = true;
+
+          break;
+        } catch (error) {
+          console.error(
+            `❌ Attempt ${attempt}/2 failed: ${page}`
+          );
+
+          console.error(`   ${error.message}`);
+
+          // Give Chromium a moment before retry
+          await new Promise((resolve) =>
+            setTimeout(resolve, 1000)
+          );
+
+          // Restart browser before retry
+          if (browser && !browser.isConnected()) {
+            try {
+              await browser.close();
+            } catch (e) {}
+
+            try {
+              browser = await launchBrowser();
+            } catch (e) {
+              console.error(
+                '❌ Could not restart Chromium:',
+                e.message
+              );
+            }
+          }
+        }
+      }
+
+      if (!rendered) {
+        failed++;
+
+        failedPages.push(page);
+
+        console.error(
+          `❌ FINAL FAILURE: ${page}`
+        );
+      }
+    }
+  } catch (error) {
+    console.error('\n❌ Fatal prerender error:');
+    console.error(error);
+  } finally {
+    // Close browser
+    if (browser) {
+      try {
+        await browser.close();
+      } catch (error) {}
+    }
+
+    // Close local server
+    if (server) {
+      try {
+        await new Promise((resolve) => {
+          server.close(() => resolve());
+        });
+      } catch (error) {}
     }
   }
 
-  await browser.close();
-  server.close();
+  // ----------------------------------------------
+  // Final report
+  // ----------------------------------------------
 
-  console.log(`\n🎉 Done!  ✅ ${success} success   ❌ ${failed} failed`);
-  process.exit(0);
+  console.log('\n========================================');
+  console.log('🎉 PRERENDER COMPLETE');
+  console.log('========================================');
+
+  console.log(`✅ Success : ${success}`);
+  console.log(`❌ Failed  : ${failed}`);
+  console.log(`📄 Total   : ${allPages.length}`);
+
+  if (failedPages.length > 0) {
+    console.log('\n❌ Failed pages:');
+
+    failedPages.forEach((page) => {
+      console.log(`   - ${page}`);
+    });
+  }
+
+  console.log('========================================\n');
+
+  // Don't fail the npm build just because one page failed
+  process.exitCode = 0;
 }
 
-prerender().catch((err) => {
-  console.error('Fatal error:', err);
+// --------------------------------------------------
+// Run
+// --------------------------------------------------
+
+prerender().catch((error) => {
+  console.error('\n❌ Fatal error:');
+  console.error(error);
   process.exit(1);
 });
