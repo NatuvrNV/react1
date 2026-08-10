@@ -55,6 +55,12 @@ const staticPages = [
   '/partner',
   '/privacy-policy',
   '/terms-conditions',
+  '/metaform',
+  '/metafunction',
+  '/metaparametric',
+  '/metasurface',
+  '/ctb',
+  '/build',
 ];
 
 // --------------------------------------------------
