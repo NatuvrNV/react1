@@ -1,19 +1,17 @@
-# Enable Rewrite Engine
 RewriteEngine On
 
-# Force HTTPS before non-www redirection to minimize redirects
+# Force HTTPS
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
 # Redirect www to non-www
-RewriteCond %{HTTP_HOST} ^www\.metaguise\.com [NC]
-RewriteRule ^(.*)$ https://metaguise.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.metaguise\.com$ [NC]
+RewriteRule ^(.*)$ https://metaguise.com/$1 [R=301,L]
 
-# Redirect all requests to index.html for React (SPA handling)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.html [QSA,L]
+# Serve existing files/directories normally
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
-</IfModule>
+# REAL server-side 404
+ErrorDocument 404 /404.html
