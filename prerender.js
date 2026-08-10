@@ -104,10 +104,6 @@ const allPages = [
 
 // ============================================================
 // START LOCAL SERVER
-//
-// IMPORTANT:
-// port = 0 means Node automatically chooses a free port.
-// This eliminates EADDRINUSE on port 45678.
 // ============================================================
 
 function startServer() {
@@ -145,14 +141,24 @@ function startServer() {
           urlPath = urlPath.slice(0, -1);
         }
 
+        // ----------------------------------------------------
         // Prevent path traversal
+        // ----------------------------------------------------
+
         const normalizedPath = path.normalize(urlPath);
 
-        if (normalizedPath.includes("..")) {
+        if (
+          normalizedPath.includes("..") ||
+          normalizedPath.includes("\\")
+        ) {
           res.writeHead(400);
           res.end("Bad Request");
           return;
         }
+
+        // ----------------------------------------------------
+        // Try actual files first
+        // ----------------------------------------------------
 
         const candidates = [
           path.join(buildDir, urlPath),
@@ -165,9 +171,13 @@ function startServer() {
             const stat = fs.statSync(filePath);
 
             if (stat.isFile()) {
-              const ext = path.extname(filePath).toLowerCase();
+              const ext = path
+                .extname(filePath)
+                .toLowerCase();
+
               const mime =
-                mimeTypes[ext] || "application/octet-stream";
+                mimeTypes[ext] ||
+                "application/octet-stream";
 
               res.writeHead(200, {
                 "Content-Type": mime,
@@ -175,6 +185,7 @@ function startServer() {
               });
 
               fs.createReadStream(filePath).pipe(res);
+
               return;
             }
           } catch {
@@ -182,22 +193,32 @@ function startServer() {
           }
         }
 
-        // IMPORTANT:
-        // Only fallback to index.html for React routes.
+        // ----------------------------------------------------
+        // React SPA fallback
         //
-        // Since prerender only requests valid routes from allPages,
-        // this fallback allows React Router to render them.
-        const indexPath = path.join(buildDir, "index.html");
+        // Prerender only requests valid routes from allPages.
+        // ----------------------------------------------------
+
+        const indexPath = path.join(
+          buildDir,
+          "index.html"
+        );
 
         if (fs.existsSync(indexPath)) {
           res.writeHead(200, {
-            "Content-Type": "text/html; charset=utf-8",
+            "Content-Type":
+              "text/html; charset=utf-8",
             "Cache-Control": "no-cache",
           });
 
           fs.createReadStream(indexPath).pipe(res);
+
           return;
         }
+
+        // ----------------------------------------------------
+        // 404
+        // ----------------------------------------------------
 
         res.writeHead(404, {
           "Content-Type": "text/plain",
@@ -205,7 +226,10 @@ function startServer() {
 
         res.end("Not found");
       } catch (error) {
-        console.error("Local server request error:", error);
+        console.error(
+          "Local server request error:",
+          error
+        );
 
         if (!res.headersSent) {
           res.writeHead(500);
@@ -216,26 +240,43 @@ function startServer() {
     });
 
     // ========================================================
-    // PORT 0 = AUTOMATIC FREE PORT
+    // PORT 0
+    //
+    // Node automatically selects a free port.
+    // Prevents EADDRINUSE.
     // ========================================================
 
-    server.listen(0, "127.0.0.1", () => {
-      const address = server.address();
+    server.listen(
+      0,
+      "127.0.0.1",
+      () => {
+        const address = server.address();
 
-      if (!address || typeof address === "string") {
-        reject(new Error("Could not determine local server port"));
-        return;
+        if (
+          !address ||
+          typeof address === "string"
+        ) {
+          reject(
+            new Error(
+              "Could not determine local server port"
+            )
+          );
+
+          return;
+        }
+
+        const port = address.port;
+
+        console.log(
+          `✅ Local prerender server started on port ${port}`
+        );
+
+        resolve({
+          server,
+          port,
+        });
       }
-
-      const port = address.port;
-
-      console.log(`✅ Local prerender server started on port ${port}`);
-
-      resolve({
-        server,
-        port,
-      });
-    });
+    );
 
     server.on("error", (error) => {
       reject(error);
@@ -248,16 +289,16 @@ function startServer() {
 // ============================================================
 
 async function prerender() {
-  console.log("\n📋 Pages breakdown:");
+  console.log("\n======================================");
+  console.log("🚀 METAGUISE PRERENDER");
+  console.log("======================================\n");
+
+  console.log("📋 Pages breakdown:");
   console.log(`   Static  : ${staticPages.length}`);
   console.log(`   Blogs   : ${blogPages.length}`);
   console.log(`   Projects: ${projectPages.length}`);
   console.log(`   Products: ${productPages.length}`);
   console.log(`   Total   : ${allPages.length}\n`);
-
-  console.log(
-    `🚀 Pre-rendering ${allPages.length} pages...\n`
-  );
 
   let localServer = null;
   let browser = null;
@@ -265,9 +306,11 @@ async function prerender() {
   let success = 0;
   let failed = 0;
 
+  const failedPages = [];
+
   try {
     // ========================================================
-    // START SERVER
+    // START LOCAL SERVER
     // ========================================================
 
     const serverInfo = await startServer();
@@ -279,21 +322,41 @@ async function prerender() {
     // LAUNCH CHROMIUM
     // ========================================================
 
-    browser = await puppeteer.launch({
-      headless: "new",
+    console.log("🌐 Starting Chromium...\n");
 
-      executablePath: "/usr/bin/chromium-browser",
+    browser = await puppeteer.launch({
+      headless: true,
+
+      executablePath:
+        "/usr/bin/chromium-browser",
+
+      timeout: 60000,
 
       args: [
         "--no-sandbox",
         "--disable-setuid-sandbox",
+
+        // Important on low-memory Ubuntu servers
         "--disable-dev-shm-usage",
+
+        // Disable GPU
         "--disable-gpu",
+        "--disable-software-rasterizer",
+
+        // Reduce background processing
         "--disable-background-networking",
         "--disable-background-timer-throttling",
+        "--disable-backgrounding-occluded-windows",
         "--disable-renderer-backgrounding",
+
+        // Reduce unnecessary Chromium services
+        "--disable-extensions",
+        "--disable-sync",
+        "--disable-translate",
       ],
     });
+
+    console.log("✅ Chromium started\n");
 
     // ========================================================
     // PROCESS EACH PAGE
@@ -303,11 +366,19 @@ async function prerender() {
       let tab = null;
 
       try {
+        console.log(
+          `\n🔄 Rendering: ${pagePath}`
+        );
+
+        // ----------------------------------------------------
+        // NEW TAB
+        // ----------------------------------------------------
+
         tab = await browser.newPage();
 
-        // ====================================================
-        // BROWSER SETTINGS
-        // ====================================================
+        // ----------------------------------------------------
+        // VIEWPORT
+        // ----------------------------------------------------
 
         await tab.setViewport({
           width: 1440,
@@ -315,46 +386,124 @@ async function prerender() {
           deviceScaleFactor: 1,
         });
 
-        // 60 second navigation timeout
+        // ----------------------------------------------------
+        // TIMEOUTS
+        // ----------------------------------------------------
+
         tab.setDefaultNavigationTimeout(60000);
 
-        // Console/page errors are intentionally ignored
-        // because they should not stop the entire prerender.
-        tab.on("console", () => {});
-        tab.on("pageerror", () => {});
+        tab.setDefaultTimeout(30000);
+
+        // ----------------------------------------------------
+        // ERROR LOGGING
+        // ----------------------------------------------------
+
+        tab.on("console", (message) => {
+          if (message.type() === "error") {
+            console.log(
+              `⚠️ Console error [${pagePath}]:`,
+              message.text()
+            );
+          }
+        });
+
+        tab.on("pageerror", (error) => {
+          console.error(
+            `⚠️ Page JS error [${pagePath}]:`,
+            error.message
+          );
+        });
+
+        tab.on("error", (error) => {
+          console.error(
+            `⚠️ Browser error [${pagePath}]:`,
+            error.message
+          );
+        });
+
+        tab.on("close", () => {
+          console.log(
+            `⚠️ Page closed [${pagePath}]`
+          );
+        });
+
+        // ====================================================
+        // BLOCK UNNECESSARY THIRD-PARTY RESOURCES
+        //
+        // These can keep network connections open or consume
+        // large amounts of memory during prerendering.
+        //
+        // They are NOT blocked on your actual website.
+        // ====================================================
+
+        await tab.setRequestInterception(true);
+
+        tab.on("request", (request) => {
+          try {
+            const url = request.url();
+
+            const blockedDomains = [
+              "youtube.com",
+              "youtube-nocookie.com",
+              "google-analytics.com",
+              "googletagmanager.com",
+              "clarity.ms",
+              "doubleclick.net",
+              "facebook.net",
+              "connect.facebook.net",
+              "hotjar.com",
+            ];
+
+            const shouldBlock =
+              blockedDomains.some((domain) =>
+                url.includes(domain)
+              );
+
+            if (shouldBlock) {
+              request.abort().catch(() => {});
+              return;
+            }
+
+            request.continue().catch(() => {});
+          } catch {
+            // Ignore interception errors
+          }
+        });
 
         // ====================================================
         // NAVIGATION
-        //
-        // IMPORTANT:
-        // DO NOT use networkidle0.
-        //
-        // External resources such as:
-        // - ImageKit
-        // - YouTube
-        // - Google Maps
-        // - GTM
-        // - Clarity
-        // - Analytics
-        //
-        // can keep network connections open.
         // ====================================================
 
-        await tab.goto(
-          `http://127.0.0.1:${port}${pagePath}`,
-          {
-            waitUntil: "domcontentloaded",
-            timeout: 60000,
-          }
+        const targetUrl =
+          `http://127.0.0.1:${port}${pagePath}`;
+
+        console.log(
+          `🌐 ${targetUrl}`
         );
 
+        await tab.goto(targetUrl, {
+          waitUntil: "domcontentloaded",
+          timeout: 60000,
+        });
+
         // ====================================================
-        // WAIT FOR REACT ROOT
+        // CHECK PAGE
+        // ====================================================
+
+        if (tab.isClosed()) {
+          throw new Error(
+            "Puppeteer page closed after navigation"
+          );
+        }
+
+        // ====================================================
+        // WAIT FOR REACT
         // ====================================================
 
         await tab.waitForFunction(
           () => {
-            const root = document.getElementById("root");
+            const root =
+              document.getElementById("root");
 
             return (
               root &&
@@ -363,24 +512,37 @@ async function prerender() {
             );
           },
           {
-            timeout: 20000,
+            timeout: 30000,
           }
         );
 
         // ====================================================
-        // SMALL WAIT FOR REACT / HELMET
-        //
-        // Gives React time to update:
-        // - title
-        // - meta description
-        // - canonical
-        // - OG tags
-        // - page content
+        // CHECK AGAIN
+        // ====================================================
+
+        if (tab.isClosed()) {
+          throw new Error(
+            "Puppeteer page closed while waiting for React"
+          );
+        }
+
+        // ====================================================
+        // WAIT FOR REACT-HELMET / DOM
         // ====================================================
 
         await new Promise((resolve) =>
-          setTimeout(resolve, 500)
+          setTimeout(resolve, 700)
         );
+
+        // ====================================================
+        // FINAL CHECK
+        // ====================================================
+
+        if (tab.isClosed()) {
+          throw new Error(
+            "Puppeteer page closed before HTML extraction"
+          );
+        }
 
         // ====================================================
         // GET FINAL HTML
@@ -388,8 +550,14 @@ async function prerender() {
 
         const html = await tab.content();
 
+        if (!html || html.length < 1000) {
+          throw new Error(
+            `Generated HTML is too small: ${html.length} bytes`
+          );
+        }
+
         // ====================================================
-        // CREATE OUTPUT PATH
+        // OUTPUT PATH
         // ====================================================
 
         const safePage = pagePath
@@ -399,7 +567,11 @@ async function prerender() {
 
         const filePath =
           safePage === "/"
-            ? path.join(__dirname, "build", "index.html")
+            ? path.join(
+                __dirname,
+                "build",
+                "index.html"
+              )
             : path.join(
                 __dirname,
                 "build",
@@ -413,12 +585,15 @@ async function prerender() {
         // CREATE DIRECTORY
         // ====================================================
 
-        fs.mkdirSync(path.dirname(filePath), {
-          recursive: true,
-        });
+        fs.mkdirSync(
+          path.dirname(filePath),
+          {
+            recursive: true,
+          }
+        );
 
         // ====================================================
-        // WRITE PRERENDERED HTML
+        // WRITE HTML
         // ====================================================
 
         fs.writeFileSync(
@@ -427,18 +602,32 @@ async function prerender() {
           "utf8"
         );
 
-        console.log(`✅ ${pagePath}`);
+        console.log(
+          `✅ SUCCESS: ${pagePath} (${html.length} bytes)`
+        );
 
         success++;
       } catch (error) {
         failed++;
 
+        failedPages.push({
+          page: pagePath,
+          error: error.message,
+        });
+
         console.error(
-          `❌ ${pagePath} — ${error.message}`
+          `❌ FAILED: ${pagePath}`
+        );
+
+        console.error(
+          `   ${error.message}`
         );
       } finally {
+        // ====================================================
         // ALWAYS CLOSE TAB
-        if (tab) {
+        // ====================================================
+
+        if (tab && !tab.isClosed()) {
           try {
             await tab.close();
           } catch {
@@ -448,35 +637,78 @@ async function prerender() {
       }
     }
 
+    // ========================================================
+    // FINAL REPORT
+    // ========================================================
+
     console.log("\n======================================");
     console.log("🎉 PRERENDER COMPLETE");
     console.log("======================================");
-    console.log(`✅ Success : ${success}`);
-    console.log(`❌ Failed  : ${failed}`);
-    console.log(`📄 Total   : ${allPages.length}`);
-    console.log("======================================\n");
+
+    console.log(
+      `✅ Success : ${success}`
+    );
+
+    console.log(
+      `❌ Failed  : ${failed}`
+    );
+
+    console.log(
+      `📄 Total   : ${allPages.length}`
+    );
+
+    // ========================================================
+    // FAILED PAGES
+    // ========================================================
+
+    if (failedPages.length > 0) {
+      console.log(
+        "\n❌ FAILED PAGES:"
+      );
+
+      failedPages.forEach(
+        ({ page, error }) => {
+          console.log(
+            `   ${page} → ${error}`
+          );
+        }
+      );
+    } else {
+      console.log(
+        "\n🎯 All pages prerendered successfully!"
+      );
+    }
+
+    console.log(
+      "\n======================================\n"
+    );
   } catch (error) {
-    console.error("\n❌ Fatal prerender error:");
+    console.error(
+      "\n❌ FATAL PRERENDER ERROR:"
+    );
+
     console.error(error);
 
     throw error;
   } finally {
     // ========================================================
-    // ALWAYS CLOSE BROWSER
+    // CLOSE BROWSER
     // ========================================================
 
     if (browser) {
       try {
         await browser.close();
+
+        console.log(
+          "🛑 Chromium closed."
+        );
       } catch {
         // Ignore
       }
     }
 
     // ========================================================
-    // ALWAYS CLOSE LOCAL SERVER
-    //
-    // This prevents EADDRINUSE on the next build.
+    // CLOSE LOCAL SERVER
     // ========================================================
 
     if (localServer) {
@@ -502,6 +734,11 @@ prerender()
     process.exit(0);
   })
   .catch((error) => {
+    console.error(
+      "\n❌ Prerender failed:"
+    );
+
     console.error(error);
+
     process.exit(1);
   });
