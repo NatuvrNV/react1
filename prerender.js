@@ -9,73 +9,18 @@ const fs = require('fs');
 const path = require('path');
 const http = require('http');
 
-// ─────────────────────────────────────────────────────────────
-// Load source modules defensively so a bad export name fails
-// with a clear message instead of "Cannot read properties of undefined"
-// ─────────────────────────────────────────────────────────────
-const blogConstants = require('./src/pages/Blog/BlogConstants');
-const mainConstants = require('./src/utils/constants');
+const { SingleBlogDetail } = require('./src/pages/Blog/BlogConstants');
 
-console.log('\n🔍 Debug — keys found in ./src/pages/Blog/BlogConstants:');
-console.log('  ', Object.keys(blogConstants));
-console.log('🔍 Debug — keys found in ./src/utils/constants:');
-console.log('  ', Object.keys(mainConstants));
-console.log('');
-
-// Try the expected export name first, then common alternate casings,
-// then fall back to the default export if the file uses `export default`.
-function resolveExport(moduleObj, moduleLabel, ...possibleNames) {
-  for (const name of possibleNames) {
-    if (Array.isArray(moduleObj[name])) {
-      console.log(`✅ ${moduleLabel}: using export "${name}" (${moduleObj[name].length} items)`);
-      return moduleObj[name];
-    }
-  }
-  if (Array.isArray(moduleObj.default)) {
-    console.log(`✅ ${moduleLabel}: using "default" export (${moduleObj.default.length} items)`);
-    return moduleObj.default;
-  }
-  console.error(
-    `❌ ${moduleLabel}: none of these exports were found as arrays: [${possibleNames.join(', ')}, default]`
-  );
-  console.error(`   Available keys were: [${Object.keys(moduleObj).join(', ')}]`);
-  console.error(`   Fix: open the source file and confirm the exact export name, then update this script.`);
-  return [];
-}
-
-const SingleBlogDetail = resolveExport(
-  blogConstants,
-  'BlogConstants.js',
-  'SingleBlogDetail',
-  'SingleBlogDetails',
-  'BlogDetail'
+// SingleprojectDetail / SingleProductDetail no longer live in constants.js —
+// that data was split out into public/data/{projects,products}-index.json
+// (and per-item files) to shrink the client bundle. Prerender only needs
+// the slug/url list, so read the lightweight index files straight off disk.
+const projectsIndex = JSON.parse(
+  fs.readFileSync(path.join(__dirname, 'public/data/projects-index.json'), 'utf8')
 );
-
-const SingleprojectDetail = resolveExport(
-  mainConstants,
-  'constants.js (projects)',
-  'SingleprojectDetail',
-  'SingleProjectDetail',
-  'SingleProjectDetails'
+const productsIndex = JSON.parse(
+  fs.readFileSync(path.join(__dirname, 'public/data/products-index.json'), 'utf8')
 );
-
-const SingleProductDetail = resolveExport(
-  mainConstants,
-  'constants.js (products)',
-  'SingleProductDetail',
-  'SingleProductDetails',
-  'SingleproductDetail'
-);
-
-// Hard stop if everything is empty — no point launching Puppeteer
-if (
-  SingleBlogDetail.length === 0 &&
-  SingleprojectDetail.length === 0 &&
-  SingleProductDetail.length === 0
-) {
-  console.error('\n🛑 All three data sources resolved empty. Fix the export names above before continuing.\n');
-  process.exit(1);
-}
 
 const getUrlFriendlyString = (str) =>
   str
@@ -105,7 +50,7 @@ const blogPages = SingleBlogDetail.map((blog) => {
 });
 
 // ✅ Projects — item.url directly use karo
-const projectPages = SingleprojectDetail.map((project) => {
+const projectPages = projectsIndex.map((project) => {
   const slug = project.url
     ? getUrlFriendlyString(project.url)
     : getUrlFriendlyString(project.name);
@@ -113,7 +58,7 @@ const projectPages = SingleprojectDetail.map((project) => {
 });
 
 // ✅ Products — item.name.toLowerCase() use karo (SingleProduct.js: item.name.toLowerCase() === productName)
-const productPages = SingleProductDetail.map((product) => {
+const productPages = productsIndex.map((product) => {
   const slug = product.name.toLowerCase();
   return `/all-products/${slug}`;
 });
