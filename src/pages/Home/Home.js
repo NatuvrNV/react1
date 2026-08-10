@@ -162,6 +162,14 @@ function Home() {
         <meta property="og:image:alt" content="Luxury Parametric Metal Facade Design by Metaguise" />
         <meta property="og:locale" content="en_IN" />
 
+         {/* Preload the hero/first slide image — replace with the actual first-slide URL from Swipper */}
+  <link
+    rel="preload"
+    as="image"
+    href="https://ik.imagekit.io/ylx9qggcp/1.webp?tr=w-1920,q-80"
+    fetchpriority="high"
+  />
+
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Metaguise | India's Leading Experts in Luxury Metal Facades" />

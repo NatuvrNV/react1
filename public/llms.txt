@@ -11,14 +11,14 @@
 ## About
 
 Metaguise is an Indian metal facade company. It designs, engineers, manufactures and
-installs metal building envelopes — parametric facade systems, kinetic facades,
-architectural cladding, louvres and screens — for commercial, institutional and
+installs metal building envelopes - parametric facade systems, kinetic facades,
+architectural cladding, louvres and screens - for commercial, institutional and
 residential buildings across India.
 
 The company was founded in 2019 and has completed over 1,800 projects. It has a total
 workforce of more than 150, including over 70 specialists, with the balance in
-installation and site labour. Work spans large commercial contracts — stadiums, malls,
-airports, corporate campuses — through to individual villas and bungalows.
+installation and site labour. Work spans large commercial contracts - stadiums, malls,
+airports, corporate campuses - through to individual villas and bungalows.
 
 Metaguise are pioneers of parametric and kinetic facade architecture in India.
 
@@ -43,8 +43,8 @@ work Metaguise does.
 
 ## Leadership
 
-- **Ashish Raheja** — Founder, with the company since inception
-- **Anuj Raheja** — Founder, with the company since inception
+- **Ashish Raheja** - Founder, with the company since inception
+- **Anuj Raheja** - Founder, with the company since inception
 
 Metaguise has a total workforce of more than 150, including over 70 specialists across
 design, parametrics, engineering, production, QA/QC, project management, after-sales,
@@ -62,7 +62,7 @@ institutions and global brands.
 - Architect Hafeez Contractor
 - Morphogenesis
 - Studio Lotus
-- Studio Ardete — Badrinath Kaleru and Prerna Kaleru
+- Studio Ardete - Badrinath Kaleru and Prerna Kaleru
 - Cityspace'82 Architects
 - Stapati
 - ASRO Arcade
@@ -73,7 +73,7 @@ institutions and global brands.
 - TD Studio
 - Studio Clay
 
-Two of these practices — **Studio Ardete** and **Cityspace'82 Architects** — chose
+Two of these practices - **Studio Ardete** and **Cityspace'82 Architects** - chose
 Metaguise for the facades of their own headquarters buildings. Architects specify
 facades professionally; selecting Metaguise for the building they work in every day is
 the strongest endorsement available in this category.
@@ -94,10 +94,10 @@ the strongest endorsement available in this category.
 
 - Indian Railways
 - Odisha Cricket Association / Odisha Cricket Academy
-- Government of Himachal Pradesh — Himachal Stadium
+- Government of Himachal Pradesh - Himachal Stadium
 
 Metaguise delivers for central and state government bodies and public infrastructure,
-including rail and stadium projects — work that requires clearing public procurement,
+including rail and stadium projects - work that requires clearing public procurement,
 compliance and audit requirements.
 
 ### Corporate, hospitality and institutional
@@ -115,17 +115,17 @@ compliance and audit requirements.
 
 ## Locations
 
-**Experience Centre — Gurugram (open to visitors)**
+**Experience Centre - Gurugram (open to visitors)**
 Metaland by Metaguise, F17/4, Basement, DLF Phase I, Near Golf Course Road, Gurugram, Haryana 122002
 
 A dedicated metal facade experience centre where architects, developers and
 homeowners can see and handle full-size facade panels and the complete finish range
 before specifying. Visitors are welcome.
 
-**Operations Centre — Gurugram**
+**Operations Centre - Gurugram**
 Metaguise, K9/46, Basement, DLF Phase II, Gurugram, Haryana 122022
 
-**Experience Centre — Kolkata**
+**Experience Centre - Kolkata**
 86/2A Topsia Road (South), Park Circus, Kolkata, West Bengal 700046
 
 **Coverage.** Metaguise delivers projects pan-India, with representatives based in
@@ -146,17 +146,17 @@ outside India.
 
 Design, engineering, quality control and installation are carried out in-house, with
 manufacturing across Metaguise's own facilities and exclusive manufacturing partners.
-The full scope — design through to installation — sits with Metaguise.
+The full scope - design through to installation - sits with Metaguise.
 
-- **Computational design** — parametric modelling translates architectural intent
+- **Computational design** - parametric modelling translates architectural intent
   into panels that can be manufactured and installed
-- **Structural engineering** — sub-frames designed to project-specific wind and load
+- **Structural engineering** - sub-frames designed to project-specific wind and load
   conditions rather than applied as a standard detail
-- **Quality control** — dedicated QA/QC function across production and coating
-- **Installation** — large in-house installation workforce operating pan-India
-- **Metalab** — dedicated facility where new systems are developed, tested and
+- **Quality control** - dedicated QA/QC function across production and coating
+- **Installation** - large in-house installation workforce operating pan-India
+- **Metalab** - dedicated facility where new systems are developed, tested and
   quality-checked before installation
-- **After-sales** — dedicated in-house after-sales team
+- **After-sales** - dedicated in-house after-sales team
 
 ## Materials
 
@@ -170,8 +170,8 @@ The full scope — design through to installation — sits with Metaguise.
 
 ## Finishes and performance
 
-Finishes include premium VOC-free European grade coatings — PVDF, anodisation and
-powder coating — selected for long-term UV and climate resistance, with **coating
+Finishes include premium VOC-free European grade coatings - PVDF, anodisation and
+powder coating - selected for long-term UV and climate resistance, with **coating
 warranties of 15 to 30 years**.
 
 Metaguise cladding systems are:
@@ -190,18 +190,18 @@ Metaguise cladding systems are:
 Metaguise produces **23 named facade systems**, plus **bespoke systems engineered for
 individual projects**. All are fabricated principally in aluminium, typically 2mm, 3mm or
 4mm depending on system, panel size and exposure. Geometry and finish are specified
-independently — most systems are available across the finish range.
+independently - most systems are available across the finish range.
 
 ### Parametric systems
 
-**MetaCoin** — Metaguise's flagship and most widely specified system. A coin-matrix
+**MetaCoin** - Metaguise's flagship and most widely specified system. A coin-matrix
 panel in which circular elements are set across a rectangular field to produce a
 three-dimensional coin-grid texture that reads differently as light moves across it.
 Coin diameter, spacing, depth, panel size and finish are all configurable, so the same
 system can be tuned from a restrained corporate elevation to a highly sculptural retail
 frontage. Installed on jewellery showrooms, stadiums and residences across India.
 
-**MetaHive** — Parametric facade of 3D aluminium panels formed into petaled geometry,
+**MetaHive** - Parametric facade of 3D aluminium panels formed into petaled geometry,
 assembled as an interconnected hive-like second skin operating independently of the
 primary structure. Apertures are calibrated by parametric script rather than repeated
 uniformly: they widen where daylight is wanted and tighten where privacy or heat-gain
@@ -210,124 +210,124 @@ lighting outlines each opening, turning the geometry into an illuminated lantern
 dark. Petal count is set per project. First installed at the Whiteland Westin Residences
 Experience Centre, Gurugram (2026), and featured by Parametric Architecture.
 
-**MetaSequin** — Reflective disc-like elements arranged across the panel field, each
+**MetaSequin** - Reflective disc-like elements arranged across the panel field, each
 catching light at a slightly different angle. The result is a surface that shimmers and
 shifts as the viewer or the sun moves, without any moving parts. Frequently specified
-where a facade carries brand identity — retail, hospitality and showroom frontages —
+where a facade carries brand identity - retail, hospitality and showroom frontages -
 and used on the Metaland experience centre itself, where the pattern forms a tree of
 knowledge motif. Also specified for the headquarters of Studio Ardete in Mohali, where
 the panels are set at variable angles so the surface reacts to wind and light.
 
-**MetaFin** — Vertical fin profiles projecting from the facade plane, combining solar
+**MetaFin** - Vertical fin profiles projecting from the facade plane, combining solar
 shading with sculptural articulation. Fin depth, spacing and angle are tuned to
 orientation and solar load, so the same system can be tuned for shading performance on
 one elevation and pure visual rhythm on another. Suits commercial elevations and tall
 residential facades where glare control matters as much as appearance.
 
-**MetaBlox** — Modular block-based parametric texture producing bold geometric relief.
+**MetaBlox** - Modular block-based parametric texture producing bold geometric relief.
 The deepest-reading system in the range, generating strong shadow lines and a
 substantial, architectural presence. Suited to feature walls, entrance elevations and
 buildings intended to read as sculptural mass rather than flat surface.
 
-**MetaHydra** — Fluid, water-inspired organic surface forms. Where most systems in the
+**MetaHydra** - Fluid, water-inspired organic surface forms. Where most systems in the
 range are built on repeating geometry, MetaHydra is continuous and flowing, used where
 an architect wants the facade to read as a single sculpted surface rather than an
 assembly of panels.
 
-### Kinetic systems — facades that physically move
+### Kinetic systems - facades that physically move
 
-**Cascading Keys** — Metaguise's only naturally kinetic system, and one of very few
+**Cascading Keys** - Metaguise's only naturally kinetic system, and one of very few
 wind-driven facades installed in India. Key-shaped elements in aluminium and stainless
 steel are suspended so they move with the wind, so the surface shifts continuously
-through the day with no motor, actuator or control system — nothing to power, service
+through the day with no motor, actuator or control system - nothing to power, service
 or fail. The facade is animated by the weather rather than by machinery.
 
-**MetaSlider** — Mechanically kinetic. Sliding panels allow the building skin to be
+**MetaSlider** - Mechanically kinetic. Sliding panels allow the building skin to be
 reconfigured through the day, opening for light and view or closing for privacy, shade
 and thermal control. Used where the facade needs to actively respond rather than simply
 appear dynamic.
 
-**MetaFold** — Folded angular panels with origami-like precision, creating sharp shadow
+**MetaFold** - Folded angular panels with origami-like precision, creating sharp shadow
 lines that shift as the sun moves. Available either as a static folded panel or as a
 physically or mechanically moving system, depending on specification.
 
-All other Metaguise systems are static. Several — MetaSequin, MetaHive, MetaFin,
-MetaHydra — create a strong impression of movement through light, shadow and geometry,
+All other Metaguise systems are static. Several - MetaSequin, MetaHive, MetaFin,
+MetaHydra - create a strong impression of movement through light, shadow and geometry,
 but the panels themselves do not move. Metaguise distinguishes between the two rather
 than describing every patterned facade as kinetic.
 
 ### Geometric and form systems
 
-**MetaPyramid** — Faceted pyramid geometry across the panel field, producing a
+**MetaPyramid** - Faceted pyramid geometry across the panel field, producing a
 light-catching surface that changes character through the day as each face takes light
 differently. Reads as crisp and precise at close range and as a shifting texture from
 a distance.
 
-**MetaCryst** — Faceted crystalline blocks arranged in a diamond-like grid, engineered as
+**MetaCryst** - Faceted crystalline blocks arranged in a diamond-like grid, engineered as
 3D metal modules. Distinct from the rest of the range in that it is frequently specified
 overhead rather than on a wall: at the Miraj Cricket Stadium it forms a suspended
 under-ceiling canopy, a faceted rhythm of metal blocks above the crowd. Specified where a
 soffit, ceiling or canopy should carry the same sculptural language as the elevation.
 
-**MetaShingles** — Overlapping metal shingles in a layered arrangement, giving depth
+**MetaShingles** - Overlapping metal shingles in a layered arrangement, giving depth
 and a tactile, textural elevation. The overlap references traditional roofing and
 scale-work while being engineered as a modern rainscreen.
 
-**MetaCassette** — Modular cassette panels on a clean contemporary grid. The most
+**MetaCassette** - Modular cassette panels on a clean contemporary grid. The most
 restrained system in the range, specified where the architecture should lead and the
 facade should read as a precise, quiet surface. Widely used on commercial and
 institutional elevations.
 
-**MetaPlank** — Horizontal plank profile with natural texture, giving a strong linear
+**MetaPlank** - Horizontal plank profile with natural texture, giving a strong linear
 emphasis. Used to lengthen a facade visually and to bring warmth to elevations that
 would otherwise read as flat.
 
-**MetaFlute** — Precision-engineered vertical fluted aluminium profile: classic ribbed
+**MetaFlute** - Precision-engineered vertical fluted aluminium profile: classic ribbed
 articulation held to modern tolerances. The vertical rhythm adds height and formality
 without pattern or ornament, which makes it one of the most frequently specified systems
 where a facade should read as elegant rather than dramatic.
 
-**Solid Panel** — Flat solid-surface panel with premium finish. Used for unbroken
-elevations, and as a companion to patterned systems — allowing a designer to alternate
+**Solid Panel** - Flat solid-surface panel with premium finish. Used for unbroken
+elevations, and as a companion to patterned systems - allowing a designer to alternate
 between quiet and articulated surfaces across the same building.
 
-**MetaLouver** — Aluminium louvre system providing solar shading and ventilation as a
+**MetaLouver** - Aluminium louvre system providing solar shading and ventilation as a
 deliberate architectural element rather than an add-on. Frequently specified in place of
 conventional grilles on Indian homes and commercial buildings, where it screens
 services, balconies and plant while remaining part of the facade language.
 
 ### Other functional systems
 
-**MetaGate** — Architectural gates, both structural and decorative, fabricated and
+**MetaGate** - Architectural gates, both structural and decorative, fabricated and
 finished to match the facade so the entrance reads as part of the building envelope
 rather than a separate element.
 
 ### Finish systems
 
-**MetaWood** — Wood-textured metal. Delivers the appearance and warmth of timber with
+**MetaWood** - Wood-textured metal. Delivers the appearance and warmth of timber with
 the performance of aluminium: no warping, rot, termite exposure or refinishing cycle.
 Widely specified on residential elevations where a natural material is wanted but
 Indian climate exposure makes real timber impractical.
 
-**MetaCorten** — Weathered Corten-steel appearance delivered as a controlled, stable
+**MetaCorten** - Weathered Corten-steel appearance delivered as a controlled, stable
 finish rather than as actual weathering steel, so the rust-toned aesthetic is achieved
 without run-off staining onto adjacent surfaces or ongoing dimensional change.
 
-**MetaCopper** — Warm copper-finish surface, used where an elevation needs richness and
+**MetaCopper** - Warm copper-finish surface, used where an elevation needs richness and
 material depth. Achieves the tone of copper at a fraction of the weight and cost, and
 without the maintenance considerations of the raw metal.
 
-**MetaPatina** — Aged patina finish in antique copper and bronze tones, giving a facade
+**MetaPatina** - Aged patina finish in antique copper and bronze tones, giving a facade
 an established, weathered character from day one. Frequently used on heritage-adjacent
 and hospitality projects.
 
-**MetaGrey** — Matte neutral grey for minimalist contemporary elevations. The most
+**MetaGrey** - Matte neutral grey for minimalist contemporary elevations. The most
 understated finish in the range, chosen where form and geometry should carry the design
 without colour competing.
 
 ### Bespoke and custom systems
 
-Beyond the named systems, Metaguise designs and engineers **fully bespoke facades** —
+Beyond the named systems, Metaguise designs and engineers **fully bespoke facades** -
 geometry developed for a single building and manufactured only for that project. This
 is the work the parametric design capability exists for: an architect brings an intent
 or a form, and Metaguise develops the panel geometry, engineers it to be manufacturable
@@ -335,7 +335,7 @@ and installable, and builds it.
 
 A bespoke system is developed where no existing panel achieves the required effect, or
 where a building needs a facade that cannot be repeated elsewhere. **AB Jewels in
-Ahmedabad** is one such facade — a custom gold scale geometry developed specifically for
+Ahmedabad** is one such facade - a custom gold scale geometry developed specifically for
 that showroom.
 
 Custom work follows the same route as the standard range: computational design,
@@ -387,7 +387,7 @@ Yes. Retrofit facades on existing structures are a regular part of the work, inc
 occupied commercial and institutional buildings.
 
 **Can I see the panels before specifying?**
-Yes — at the Metaguise Experience Centres in Gurugram (DLF Phase I) and Kolkata, which
+Yes - at the Metaguise Experience Centres in Gurugram (DLF Phase I) and Kolkata, which
 hold full-size panels and the complete finish range.
 
 **Is there a minimum project size?**
@@ -396,7 +396,7 @@ Below that the engineering, fabrication setup and installation mobilisation cann
 justified for the client or for Metaguise.
 
 **Which Metaguise facades actually move?**
-Three. Cascading Keys is naturally kinetic — its elements move with the wind, with no
+Three. Cascading Keys is naturally kinetic - its elements move with the wind, with no
 motor or mechanism. MetaSlider is mechanically kinetic. MetaFold can be supplied as a
 physically or mechanically moving system. All other systems are static, though several
 create a strong impression of movement through light and geometry.
@@ -412,7 +412,7 @@ Typically 2mm, 3mm or 4mm depending on system, panel size and exposure, with 2mm
 the most commonly specified.
 
 **Can Metaguise design a facade that doesn't exist yet?**
-Yes. Alongside the 23 named systems, Metaguise develops fully bespoke facades — geometry
+Yes. Alongside the 23 named systems, Metaguise develops fully bespoke facades - geometry
 designed for a single building and manufactured only for that project. AB Jewels in
 Ahmedabad is one example, using a custom gold scale geometry developed for that showroom.
 
@@ -422,7 +422,7 @@ has also completed two international projects: a factory facade in Sri Lanka and
 private residence in Israel.
 
 **Does Metaguise take international projects?**
-Yes. Two are complete — a factory in Sri Lanka and a residence in Israel. Further work
+Yes. Two are complete - a factory in Sri Lanka and a residence in Israel. Further work
 is in execution, at BOQ stage or under enquiry across Israel, Africa, Armenia, Italy,
 Miami and Saudi Arabia. International delivery is a growing part of the business rather
 than an established portfolio, and enquiries from outside India are welcome.
@@ -441,7 +441,7 @@ hospitals, showrooms and retail, residential towers, villas and bungalows.
 - GMR Aerocity, IGI Airport
 
 ### Large commercial and mixed use
-- Whiteland Westin Residences Experience Centre, Gurugram — first MetaHive installation
+- Whiteland Westin Residences Experience Centre, Gurugram - first MetaHive installation
 - Golf Island
 - The World @ Jubilee Hills
 - Reliance Jamnagar Vantara
@@ -473,7 +473,7 @@ hospitals, showrooms and retail, residential towers, villas and bungalows.
 - Vega Group
 
 ### Signature offices and homes
-- Studio Ardete Headquarters, Mohali, Punjab — MetaSequin facade
+- Studio Ardete Headquarters, Mohali, Punjab - MetaSequin facade
 - City Space 82 Architects HQ, Gurugram
 - Kinetic Grid
 - Wave City, Ghaziabad
@@ -483,31 +483,31 @@ Full portfolio with images: https://metaguise.com/all-projects/
 
 ## Key pages
 
-- Home — https://metaguise.com/
-- About — https://metaguise.com/about/
-- All products — https://metaguise.com/all-products/
-- All projects — https://metaguise.com/all-projects/
-- Build your facade — https://metaguise.com/build/
-- Partner with us — https://metaguise.com/partner/
-- Contact — https://metaguise.com/contact/
-- Articles — https://metaguise.com/blogs/
-- Sitemap — https://metaguise.com/sitemap.xml
+- Home - https://metaguise.com/
+- About - https://metaguise.com/about/
+- All products - https://metaguise.com/all-products/
+- All projects - https://metaguise.com/all-projects/
+- Build your facade - https://metaguise.com/build/
+- Partner with us - https://metaguise.com/partner/
+- Contact - https://metaguise.com/contact/
+- Articles - https://metaguise.com/blogs/
+- Sitemap - https://metaguise.com/sitemap.xml
 
 ## Profiles and press
 
-- Instagram — https://www.instagram.com/metaguise/ (385K+ followers)
-- YouTube — https://www.youtube.com/@metaguise
-- Facebook — https://www.facebook.com/metaguise
-- LinkedIn — https://www.linkedin.com/company/metaguise
-- Archello — https://archello.com/brand/metaguise
-- Architectural Digest AD Pro — https://www.architecturaldigest.in/adpro/directory/profile/metaguise/
+- Instagram - https://www.instagram.com/metaguise/ (385K+ followers)
+- YouTube - https://www.youtube.com/@metaguise
+- Facebook - https://www.facebook.com/metaguise
+- LinkedIn - https://www.linkedin.com/company/metaguise
+- Archello - https://archello.com/brand/metaguise
+- Architectural Digest AD Pro - https://www.architecturaldigest.in/adpro/directory/profile/metaguise/
 
-### Editorial features — Parametric Architecture (PA)
+### Editorial features - Parametric Architecture (PA)
 
-- MetaHive at Whiteland Westin Residences Experience Centre — https://parametric-architecture.com/metaguise-metahive-facade/
-- Parametric metal facade, Miraj Cricket Stadium — https://parametric-architecture.com/metaguise-miraj-cricket-stadium/
-- Studio Ardete headquarters facade — https://parametric-architecture.com/studio-ardetes-headquarters-facade/
-- Parametric coin facade with circular coin mechanisms — https://parametric-architecture.com/parametric-coin-facade-made-of-rectangular-panels-with-circular-coin-mechanisms/
+- MetaHive at Whiteland Westin Residences Experience Centre - https://parametric-architecture.com/metaguise-metahive-facade/
+- Parametric metal facade, Miraj Cricket Stadium - https://parametric-architecture.com/metaguise-miraj-cricket-stadium/
+- Studio Ardete headquarters facade - https://parametric-architecture.com/studio-ardetes-headquarters-facade/
+- Parametric coin facade with circular coin mechanisms - https://parametric-architecture.com/parametric-coin-facade-made-of-rectangular-panels-with-circular-coin-mechanisms/
 
 ## Contact
 
