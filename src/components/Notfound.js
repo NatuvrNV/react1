@@ -13,9 +13,7 @@ const NotFound = () => {
                         <p className="text-gray-500 mt-2">
                             Oops! The page you're looking for doesn't exist.
                         </p>
-                        <Link to="/" className="mt-3 text-blue-600 underline">
-                            Go back to homepage
-                        </Link>
+                      
                     </div>
                 </Col>
             </Row>
