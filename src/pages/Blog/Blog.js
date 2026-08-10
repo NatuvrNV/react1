@@ -1,100 +1,95 @@
-import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async'; // Import Helmet
+import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import "./Blog.css";
 import { useNavigate } from 'react-router-dom';
 import { Container, Row } from "react-bootstrap";
-import { SingleBlogDetail } from './BlogConstants';
 import { MdArrowOutward } from "react-icons/md";
 import Footer from "../../components/Footer";
 
 const Blog = () => {
   const navigate = useNavigate();
-  
-  // State to track selected category, dropdown state, and search input
+
+  // Blog list now comes from a fetch, not a static import
+  const [blogs, setBlogs] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [searchInput, setSearchInput] = useState("");
 
-  // Helper function to get URL-friendly string
+  useEffect(() => {
+    fetch('/data/blogs-index.json')
+      .then((res) => res.json())
+      .then((data) => {
+        setBlogs(data);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.error('Failed to load blog index:', err);
+        setIsLoading(false);
+      });
+  }, []);
+
   const getUrlFriendlyString = (str) => {
     return str.toLowerCase().replace(/\s+/g, '-');
   };
 
-  // Function to handle blog click navigation with custom URL or title-based URL
-const handleBlogClick = (blog) => {
-  // Use custom URL if available, otherwise use title
-  const urlFriendlyPath = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
-  navigate(`/blog/${urlFriendlyPath}/`);
-};
+  const handleBlogClick = (blog) => {
+    const urlFriendlyPath = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
+    navigate(`/blog/${urlFriendlyPath}/`);
+  };
 
-  // Function to handle category selection
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
     setIsDropdownOpen(false);
   };
 
-  // Function to handle search input
   const handleSearchChange = (e) => {
     setSearchInput(e.target.value.toLowerCase());
   };
 
-  // Helper function to get image path (handles both old and new formats)
   const getImagePath = (blog) => {
     if (!blog.images || blog.images.length === 0) {
       return '';
     }
-    
     const firstImage = blog.images[0];
-    
-    // Check if it's the new format (object with path property)
     if (typeof firstImage === 'object' && firstImage !== null) {
       return firstImage.path;
     }
-    
-    // Old format (string)
     return firstImage;
   };
 
-  // Helper function to get image alt text for blog card
   const getImageAlt = (blog) => {
     if (!blog.images || blog.images.length === 0) {
       return blog.title;
     }
-    
     const firstImage = blog.images[0];
-    
-    // Check if it's the new format (object with alt property)
     if (typeof firstImage === 'object' && firstImage !== null && firstImage.alt) {
       return firstImage.alt;
     }
-    
-    // Fallback to blog.imageAltText or blog.title
     return blog.imageAltText || blog.title;
   };
 
-  // Filter blogs based on selected category and search query
-  const filteredBlogs = SingleBlogDetail.filter(blog => {
+  const filteredBlogs = blogs.filter(blog => {
     const matchesCategory = selectedCategory === "All" || blog.category === selectedCategory;
-    const matchesSearch = blog.title.toLowerCase().includes(searchInput) || 
-                          blog.description.toLowerCase().includes(searchInput) || 
+    const matchesSearch = blog.title.toLowerCase().includes(searchInput) ||
+                          (blog.description || '').toLowerCase().includes(searchInput) ||
                           blog.category.toLowerCase().includes(searchInput);
     return matchesCategory && matchesSearch;
   });
 
   return (
     <div className="singleblog-container">
-      {/* Add Meta Tags */}
       <Helmet>
         <title>Metaguise Blog | Facade Design, Kinetic Facades & Parametric Architecture</title>
-        <meta 
-          name="description" 
-          content="Explore Metaguise's articles on metal facade design, kinetic facades, parametric architecture and material innovation for architects and homeowners across India." 
+        <meta
+          name="description"
+          content="Explore Metaguise's articles on metal facade design, kinetic facades, parametric architecture and material innovation for architects and homeowners across India."
         />
-                <meta property="og:title" content="Metaguise Blog | Facade Design, Kinetic Facades & Parametric Architecture" />
+        <meta property="og:title" content="Metaguise Blog | Facade Design, Kinetic Facades & Parametric Architecture" />
         <meta property="og:description" content="Explore Metaguise's articles on metal facade design, kinetic facades, parametric architecture and material innovation for architects and homeowners across India." />
-
         <link rel="canonical" href="https://metaguise.com/blogs/" />
-                <meta name="keywords" content="facade design blog, kinetic facade, parametric architecture" />
+        <meta name="keywords" content="facade design blog, kinetic facade, parametric architecture" />
       </Helmet>
 
       <Container fluid>
@@ -102,7 +97,6 @@ const handleBlogClick = (blog) => {
           <div className="desktop-title mb-3 blog-title">
             <h1 className="text-5xl text-center mb-10">Blog</h1>
           </div>
-
           <div className="mobile-title mb-3 blog-title">
             <h1 className="text-5xl text-center mb-10">Blog</h1>
           </div>
@@ -118,7 +112,6 @@ const handleBlogClick = (blog) => {
               onChange={handleSearchChange}
             />
 
-            {/* Category Dropdown */}
             <div
               className="category-container"
               onMouseEnter={() => setIsDropdownOpen(true)}
@@ -150,7 +143,11 @@ const handleBlogClick = (blog) => {
         </Row>
 
         <Row className='Blog-row'>
-          {filteredBlogs.length === 0 ? (
+          {isLoading ? (
+            <div className="text-center py-5">
+              <p>Loading blogs...</p>
+            </div>
+          ) : filteredBlogs.length === 0 ? (
             <div className="no-blogs-message text-center">
               <p>No Blogs Found</p>
             </div>
@@ -159,17 +156,17 @@ const handleBlogClick = (blog) => {
               {filteredBlogs.slice().reverse().map((blog) => {
                 const imagePath = getImagePath(blog);
                 const imageAlt = getImageAlt(blog);
-                
+
                 return (
                   <div
                     key={blog.title}
                     className="flex cursor-pointer blog-card"
                     onClick={() => handleBlogClick(blog)}
                   >
-                    <img 
+                    <img
                       src={`/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`}
                       alt={imageAlt}
-                      className="object-cover rounded-lg" 
+                      className="object-cover rounded-lg"
                     />
                     <div className="mx-xl-4 blog-text">
                       <h2 className="text-xl blog-title-head">{blog.title}</h2>
