@@ -10,7 +10,17 @@ const path = require('path');
 const http = require('http');
 
 const { SingleBlogDetail } = require('./src/pages/Blog/BlogConstants');
-const { SingleprojectDetail, SingleProductDetail } = require('./src/utils/constants');
+
+// SingleprojectDetail / SingleProductDetail no longer live in constants.js —
+// that data was split out into public/data/{projects,products}-index.json
+// (and per-item files) to shrink the client bundle. Prerender only needs
+// the slug/url list, so read the lightweight index files straight off disk.
+const projectsIndex = JSON.parse(
+  fs.readFileSync(path.join(__dirname, 'public/data/projects-index.json'), 'utf8')
+);
+const productsIndex = JSON.parse(
+  fs.readFileSync(path.join(__dirname, 'public/data/products-index.json'), 'utf8')
+);
 
 const getUrlFriendlyString = (str) =>
   str
@@ -40,7 +50,7 @@ const blogPages = SingleBlogDetail.map((blog) => {
 });
 
 // ✅ Projects — item.url directly use karo
-const projectPages = SingleprojectDetail.map((project) => {
+const projectPages = projectsIndex.map((project) => {
   const slug = project.url
     ? getUrlFriendlyString(project.url)
     : getUrlFriendlyString(project.name);
@@ -48,7 +58,7 @@ const projectPages = SingleprojectDetail.map((project) => {
 });
 
 // ✅ Products — item.name.toLowerCase() use karo (SingleProduct.js: item.name.toLowerCase() === productName)
-const productPages = SingleProductDetail.map((product) => {
+const productPages = productsIndex.map((product) => {
   const slug = product.name.toLowerCase();
   return `/all-products/${slug}`;
 });
