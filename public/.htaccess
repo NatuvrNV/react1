@@ -1,19 +1,94 @@
-# Enable Rewrite Engine
+```apache
+# ============================================
+# METAGUISE .HTACCESS
+# ============================================
+
 RewriteEngine On
 
-# Force HTTPS before non-www redirection to minimize redirects
+
+# ============================================
+# 1. FORCE HTTPS
+# ============================================
+
 RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^ https://metaguise.com%{REQUEST_URI} [R=301,L]
 
-# Redirect www to non-www
-RewriteCond %{HTTP_HOST} ^www\.metaguise\.com [NC]
-RewriteRule ^(.*)$ https://metaguise.com/$1 [L,R=301]
 
-# Redirect all requests to index.html for React (SPA handling)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.html [QSA,L]
+# ============================================
+# 2. REDIRECT WWW TO NON-WWW
+# ============================================
 
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
-</IfModule>
+RewriteCond %{HTTP_HOST} ^www\.metaguise\.com$ [NC]
+RewriteRule ^ https://metaguise.com%{REQUEST_URI} [R=301,L]
+
+
+# ============================================
+# 3. ALLOW REAL FILES
+# ============================================
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+
+# ============================================
+# 4. VALID STATIC REACT ROUTES
+# ============================================
+
+RewriteRule ^$ index.html [L]
+
+RewriteRule ^about/?$ index.html [L]
+RewriteRule ^all-products/?$ index.html [L]
+RewriteRule ^all-projects/?$ index.html [L]
+RewriteRule ^blogs/?$ index.html [L]
+RewriteRule ^contact/?$ index.html [L]
+RewriteRule ^metaform/?$ index.html [L]
+RewriteRule ^ctb/?$ index.html [L]
+RewriteRule ^metafunction/?$ index.html [L]
+RewriteRule ^build/?$ index.html [L]
+RewriteRule ^metaparametric/?$ index.html [L]
+RewriteRule ^metasurface/?$ index.html [L]
+RewriteRule ^partner/?$ index.html [L]
+RewriteRule ^privacy-policy/?$ index.html [L]
+RewriteRule ^terms-conditions/?$ index.html [L]
+RewriteRule ^login/?$ index.html [L]
+RewriteRule ^admin/?$ index.html [L]
+RewriteRule ^metavision/?$ index.html [L]
+RewriteRule ^metaexperience/?$ index.html [L]
+RewriteRule ^app2/?$ index.html [L]
+RewriteRule ^twostep/?$ index.html [L]
+
+
+# ============================================
+# 5. DYNAMIC PRODUCT ROUTES
+# ============================================
+
+RewriteRule ^all-products/[^/]+/?$ index.html [L]
+
+
+# ============================================
+# 6. DYNAMIC PROJECT ROUTES
+# ============================================
+
+RewriteRule ^all-projects/[^/]+/?$ index.html [L]
+
+
+# ============================================
+# 7. DYNAMIC BLOG ROUTES
+# ============================================
+
+RewriteRule ^blog/[^/]+/?$ index.html [L]
+
+
+# ============================================
+# 8. EVERYTHING ELSE = REAL HTTP 404
+# ============================================
+
+RewriteRule ^ - [R=404,L]
+```
+
+# ============================================
+# 10. 404 PAGE
+# ============================================
+
+ErrorDocument 404 /404.html
