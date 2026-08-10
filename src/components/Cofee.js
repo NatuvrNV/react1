@@ -17,7 +17,7 @@ const Cofee = () => {
             className="hover-button"
             onClick={() => {
               window.scrollTo(0, 0); // Scroll to top
-              navigate("/ctb");
+              navigate("/ctb/");
             }}
           >
             <span>Download</span>

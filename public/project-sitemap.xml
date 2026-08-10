@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://metaguise.com/all-projects/3dlf1/</loc>
-    <lastmod>2026-08-09</lastmod>
-    <priority>0.7</priority>
-  </url>
+
   <url>
     <loc>https://metaguise.com/all-projects/3dlf1-facade-design/</loc>
     <lastmod>2026-08-09</lastmod>
@@ -201,7 +197,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://metaguise.com/all-projects/painflame/</loc>
+    <loc>https://metaguise.com/all-projects/pain-flame/</loc>
     <lastmod>2026-08-09</lastmod>
     <priority>0.7</priority>
   </url>
@@ -396,7 +392,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://metaguise.com/all-projects/the-undercurrent/</loc>
+    <loc>https://metaguise.com/all-projects/undercurrent/</loc>
     <lastmod>2026-08-09</lastmod>
     <priority>0.7</priority>
   </url>
@@ -406,7 +402,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://metaguise.com/all-projects/verdigrisveil/</loc>
+    <loc>https://metaguise.com/all-projects/verdigris-veil/</loc>
     <lastmod>2026-08-09</lastmod>
     <priority>0.7</priority>
   </url>
@@ -415,11 +411,7 @@
     <lastmod>2026-08-09</lastmod>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://metaguise.com/all-projects/white-land/</loc>
-    <lastmod>2026-08-09</lastmod>
-    <priority>0.7</priority>
-  </url>
+
   <url>
     <loc>https://metaguise.com/all-projects/whiteland/</loc>
     <lastmod>2026-08-09</lastmod>

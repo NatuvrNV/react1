@@ -18,25 +18,25 @@ const Brochure = () => {
     {
       src: Brochure1,
       name: "MetaForm",
-      path: "/metaform",
+      path: "/metaform/",
       alt: "MetaForm architectural facade system brochure cover"
     },
     {
       src: Brochure2,
       name: "MetaFunction",
-      path: "/metafunction",
+      path: "/metafunction/",
       alt: "MetaFunction facade system brochure cover"
     },
     {
       src: Brochure3,
       name: "MetaParametric",
-      path: "/metaparametric",
+      path: "/metaparametric/",
       alt: "MetaParametric facade system brochure cover"
     },
     {
       src: Brochure4,
       name: "MetaSurface",
-      path: "/metasurface",
+      path: "/metasurface/",
       alt: "MetaSurface brochure showing patina metal textures"
     }
   ];
