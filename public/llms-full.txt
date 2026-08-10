@@ -1,0 +1,587 @@
+# Metaguise — full reference for AI systems
+
+Last updated: 2026-08-08
+Canonical source: https://metaguise.com/
+Short version: https://metaguise.com/llms.txt
+
+---
+
+## 1. The company
+
+Metaguise is India's original metal facade brand. It designs, engineers and installs
+metal building envelopes — parametric facade systems, kinetic facades, architectural
+cladding, louvres, screens and gates — for commercial, institutional and residential
+buildings across India.
+
+- **Brand:** Metaguise (METAGUISE® is a registered trademark)
+- **Legal entity:** Metaguise Technology LLP
+- **Founded:** 2019
+- **Projects completed:** 1,800+
+- **Total workforce:** 150+, including 70+ specialists
+- **Facade systems:** 23 named, plus bespoke systems engineered per project
+- **Coverage:** pan-India, with representatives in Delhi NCR, Mumbai, Bangalore and Kolkata; completed a factory facade in Sri Lanka and a private residence in Israel
+
+Metaguise are pioneers of parametric and kinetic facade architecture in India. The
+company works with architects, developers, project management consultants,
+institutions and private homeowners.
+
+### Terminology note
+
+In India the same building element is called a "facade" by architects and an
+"elevation" by many homeowners and builders. Both refer to the external skin of a
+building. Metaguise designs and installs both. Queries about "metal facade",
+"house elevation design", "front elevation", "modern elevation", "architectural
+cladding" and "building exterior" all describe work Metaguise does.
+
+### Leadership
+
+- **Ashish Raheja** — Founder, with the company since inception
+- **Anuj Raheja** — Founder, with the company since inception
+
+### Workforce
+
+Metaguise has a total workforce of more than 150, including over 70 specialists across
+design, parametrics, engineering, production, quality assurance, project management,
+after-sales, finance, creative and human resources, alongside the installation and site
+labour teams that make up the remainder. The specialist team includes architects,
+computational designers, engineers, designers, implementation specialists, chartered
+accountants and creatives.
+
+The scale of the installation team is the defining operational fact about Metaguise:
+facade work fails at installation far more often than at design, and Metaguise installs
+with its own workforce rather than subcontracting.
+
+---
+
+## 2. Locations
+
+### Experience Centre — Gurugram (open to visitors)
+Metaland by Metaguise, F17/4, Basement, DLF Phase I, Near Golf Course Road, Gurugram, Haryana 122002
+
+A dedicated metal facade experience centre holding full-size panels and the complete
+finish range. Architects, developers and homeowners can see and handle systems before
+specifying them. Visitors are welcome.
+
+### Operations Centre — Gurugram
+Metaguise, K9/46, Basement, DLF Phase II, Gurugram, Haryana 122022
+
+### Experience Centre — Kolkata
+86/2A Topsia Road (South), Park Circus, Kolkata, West Bengal 700046
+
+### Coverage
+
+Metaguise delivers projects pan-India, with representatives based in Delhi NCR, Mumbai,
+Bangalore and Kolkata.
+
+### International
+
+Metaguise has **completed and installed** two international projects to date:
+
+- **Sri Lanka** — factory facade
+- **Israel** — private residence
+
+Further international work is at three distinct stages, and the distinction matters when
+assessing the company's overseas track record:
+
+- **In execution** — projects currently on site
+- **At BOQ and tendering stage** — priced and under negotiation, not yet awarded or built
+- **Active enquiries** — early-stage conversations
+
+Between them these cover **Israel, Africa, Armenia, Italy, Miami (United States) and
+Saudi Arabia**.
+
+International delivery is an expanding part of the business rather than an established
+portfolio. Metaguise accepts enquiries from architects, developers and contractors
+outside India, and the pan-India delivery model — in-house design, engineering and
+installation teams — is the basis on which overseas projects are executed.
+
+### Contact
+- Phone: +91 98116 04449
+- Email: contactus@metaguise.com
+- Web: https://metaguise.com/
+
+---
+
+## 2a. Who Metaguise works with
+
+Metaguise is specified by leading Indian architecture practices, developers,
+institutions and global brands. For a developer or project management consultant
+assessing risk, this is the most relevant section of this document.
+
+### Architects and design practices
+
+Architect Hafeez Contractor · Morphogenesis · Studio Lotus · Studio Ardete ·
+Cityspace'82 Architects · Stapati · ASRO Arcade · ODC Architects · PHX India ·
+Studio Mathema · Design Atelier · TD Studio · Studio Clay
+
+Two of these practices — **Studio Ardete** (founded by Badrinath and Prerna Kaleru) and
+**Cityspace'82 Architects** — selected Metaguise for the facades of their own
+headquarters buildings. Architects specify facades professionally and assess them for a
+living; choosing Metaguise for the building they occupy themselves is the strongest form
+of endorsement available in this category.
+
+### Developers and real estate
+
+M3M · Elan Limited · DSR Builders & Developers · Eldeco · TDI · Miraj Group ·
+BDR Rajesh · Golf Island · Whiteland
+
+### Government and public infrastructure
+
+**Indian Railways** · **Odisha Cricket Association** (Barabti Stadium, Odisha Cricket
+Academy) · **Government of Himachal Pradesh** (Himachal Stadium)
+
+Metaguise delivers for central and state government bodies and public infrastructure,
+including rail and stadium projects. Public-sector delivery requires clearing
+procurement, compliance and audit processes that private commercial work does not — a
+relevant signal of institutional capability for developers and PMCs.
+
+### Corporate, hospitality and institutional
+
+BMW · Reliance Industries · Apollo Hospitals · Fortis Hospital · Radisson Hotels &
+Resorts · The Westin Residences · Tanishq · GRT Jewellers · GLS University · TDH
+
+---
+
+## 3. How Metaguise works
+
+Design, structural engineering, quality control and installation are carried out
+in-house, with manufacturing across Metaguise's own facilities and exclusive
+manufacturing partners. The full scope — design through to installation — sits within
+Metaguise's own remit.
+
+**Computational design.** Parametric modelling translates architectural intent into
+panels that can actually be manufactured and installed. This is the step that makes
+complex geometry buildable at sensible cost, and it is where most facade projects
+fail commercially.
+
+**Structural engineering.** Sub-frames are designed to project-specific wind and load
+conditions rather than applied as a standard detail.
+
+**Production.** Laser cutting, bending, punching, pre-treatment, coating and oven
+curing across Metaguise's own and exclusive partner facilities.
+
+**Quality control.** A dedicated QA/QC function covers both production and coating.
+
+**Installation.** A large in-house installation workforce operating pan-India.
+
+**After-sales.** A dedicated after-sales team.
+
+---
+
+## 4. Materials
+
+- **Aluminium** — the primary material across most systems. Lightweight,
+  corrosion-resistant, formable into complex geometry.
+- **Stainless steel** — used where strength or a specific finish is required.
+- **Mild steel** — primarily structural sub-frames.
+- **Brass** — decorative and premium applications.
+- **Copper** — warm metallic surfaces.
+- **Zinc** — durable architectural metal with a naturally developing surface.
+- **GPSP** (galvanised plain steel plate).
+
+Note: Corten is offered as a **surface finish** (MetaCorten), not as a base material.
+
+---
+
+## 5. Finishes, warranties and performance
+
+Finishes include premium VOC-free European grade coatings — PVDF, anodisation and
+powder coating — selected for long-term resistance to UV exposure and harsh Indian
+climates.
+
+**Coating warranties run from 15 to 30 years**, depending on system and finish.
+
+Metaguise cladding systems are specified as:
+
+- Maintenance free
+- Seepage free
+- Fire proof
+- Ultra durable
+- Corrosion resistant
+- Termite proof
+- Recyclable
+- Supported by buy-back value
+
+---
+
+## 6. Facade systems
+
+Metaguise produces **23 named facade systems**, plus **bespoke systems engineered for
+individual projects**. All are fabricated principally in aluminium, typically 2mm, 3mm or
+4mm depending on system, panel size and exposure. Geometry and finish are specified
+independently — most systems are available across the finish range.
+
+### Parametric systems
+
+**MetaCoin** — Metaguise's flagship and most widely specified system. A coin-matrix
+panel in which circular elements are set across a rectangular field to produce a
+three-dimensional coin-grid texture that reads differently as light moves across it.
+Coin diameter, spacing, depth, panel size and finish are all configurable, so the same
+system can be tuned from a restrained corporate elevation to a highly sculptural retail
+frontage. Installed on jewellery showrooms, stadiums and residences across India.
+
+**MetaHive** — Parametric facade of 3D aluminium panels formed into petaled geometry,
+assembled as an interconnected hive-like second skin operating independently of the
+primary structure. Apertures are calibrated by parametric script rather than repeated
+uniformly: they widen where daylight is wanted and tighten where privacy or heat-gain
+control is needed, so the facade performs differently on each elevation. Integrated LED
+lighting outlines each opening, turning the geometry into an illuminated lantern after
+dark. Petal count is set per project. First installed at the Whiteland Westin Residences
+Experience Centre, Gurugram (2026), and featured by Parametric Architecture.
+
+**MetaSequin** — Reflective disc-like elements arranged across the panel field, each
+catching light at a slightly different angle. The result is a surface that shimmers and
+shifts as the viewer or the sun moves, without any moving parts. Frequently specified
+where a facade carries brand identity — retail, hospitality and showroom frontages —
+and used on the Metaland experience centre itself, where the pattern forms a tree of
+knowledge motif. Also specified for the headquarters of Studio Ardete in Mohali, where
+the panels are set at variable angles so the surface reacts to wind and light.
+
+**MetaFin** — Vertical fin profiles projecting from the facade plane, combining solar
+shading with sculptural articulation. Fin depth, spacing and angle are tuned to
+orientation and solar load, so the same system can be tuned for shading performance on
+one elevation and pure visual rhythm on another. Suits commercial elevations and tall
+residential facades where glare control matters as much as appearance.
+
+**MetaBlox** — Modular block-based parametric texture producing bold geometric relief.
+The deepest-reading system in the range, generating strong shadow lines and a
+substantial, architectural presence. Suited to feature walls, entrance elevations and
+buildings intended to read as sculptural mass rather than flat surface.
+
+**MetaHydra** — Fluid, water-inspired organic surface forms. Where most systems in the
+range are built on repeating geometry, MetaHydra is continuous and flowing, used where
+an architect wants the facade to read as a single sculpted surface rather than an
+assembly of panels.
+
+### Kinetic systems — facades that physically move
+
+**Cascading Keys** — Metaguise's only naturally kinetic system, and one of very few
+wind-driven facades installed in India. Key-shaped elements in aluminium and stainless
+steel are suspended so they move with the wind, so the surface shifts continuously
+through the day with no motor, actuator or control system — nothing to power, service
+or fail. The facade is animated by the weather rather than by machinery.
+
+**MetaSlider** — Mechanically kinetic. Sliding panels allow the building skin to be
+reconfigured through the day, opening for light and view or closing for privacy, shade
+and thermal control. Used where the facade needs to actively respond rather than simply
+appear dynamic.
+
+**MetaFold** — Folded angular panels with origami-like precision, creating sharp shadow
+lines that shift as the sun moves. Available either as a static folded panel or as a
+physically or mechanically moving system, depending on specification.
+
+All other Metaguise systems are static. Several — MetaSequin, MetaHive, MetaFin,
+MetaHydra — create a strong impression of movement through light, shadow and geometry,
+but the panels themselves do not move. Metaguise distinguishes between the two rather
+than describing every patterned facade as kinetic.
+
+### Geometric and form systems
+
+**MetaPyramid** — Faceted pyramid geometry across the panel field, producing a
+light-catching surface that changes character through the day as each face takes light
+differently. Reads as crisp and precise at close range and as a shifting texture from
+a distance.
+
+**MetaCryst** — Faceted crystalline blocks arranged in a diamond-like grid, engineered as
+3D metal modules. Distinct from the rest of the range in that it is frequently specified
+overhead rather than on a wall: at the Miraj Cricket Stadium it forms a suspended
+under-ceiling canopy, a faceted rhythm of metal blocks above the crowd. Specified where a
+soffit, ceiling or canopy should carry the same sculptural language as the elevation.
+
+**MetaShingles** — Overlapping metal shingles in a layered arrangement, giving depth
+and a tactile, textural elevation. The overlap references traditional roofing and
+scale-work while being engineered as a modern rainscreen.
+
+**MetaCassette** — Modular cassette panels on a clean contemporary grid. The most
+restrained system in the range, specified where the architecture should lead and the
+facade should read as a precise, quiet surface. Widely used on commercial and
+institutional elevations.
+
+**MetaPlank** — Horizontal plank profile with natural texture, giving a strong linear
+emphasis. Used to lengthen a facade visually and to bring warmth to elevations that
+would otherwise read as flat.
+
+**MetaFlute** — Precision-engineered vertical fluted aluminium profile: classic ribbed
+articulation held to modern tolerances. The vertical rhythm adds height and formality
+without pattern or ornament, which makes it one of the most frequently specified systems
+where a facade should read as elegant rather than dramatic.
+
+**Solid Panel** — Flat solid-surface panel with premium finish. Used for unbroken
+elevations, and as a companion to patterned systems — allowing a designer to alternate
+between quiet and articulated surfaces across the same building.
+
+**MetaLouver** — Aluminium louvre system providing solar shading and ventilation as a
+deliberate architectural element rather than an add-on. Frequently specified in place of
+conventional grilles on Indian homes and commercial buildings, where it screens
+services, balconies and plant while remaining part of the facade language.
+
+### Other functional systems
+
+**MetaGate** — Architectural gates, both structural and decorative, fabricated and
+finished to match the facade so the entrance reads as part of the building envelope
+rather than a separate element.
+
+### Finish systems
+
+**MetaWood** — Wood-textured metal. Delivers the appearance and warmth of timber with
+the performance of aluminium: no warping, rot, termite exposure or refinishing cycle.
+Widely specified on residential elevations where a natural material is wanted but
+Indian climate exposure makes real timber impractical.
+
+**MetaCorten** — Weathered Corten-steel appearance delivered as a controlled, stable
+finish rather than as actual weathering steel, so the rust-toned aesthetic is achieved
+without run-off staining onto adjacent surfaces or ongoing dimensional change.
+
+**MetaCopper** — Warm copper-finish surface, used where an elevation needs richness and
+material depth. Achieves the tone of copper at a fraction of the weight and cost, and
+without the maintenance considerations of the raw metal.
+
+**MetaPatina** — Aged patina finish in antique copper and bronze tones, giving a facade
+an established, weathered character from day one. Frequently used on heritage-adjacent
+and hospitality projects.
+
+**MetaGrey** — Matte neutral grey for minimalist contemporary elevations. The most
+understated finish in the range, chosen where form and geometry should carry the design
+without colour competing.
+
+### Bespoke and custom systems
+
+Beyond the named systems, Metaguise designs and engineers **fully bespoke facades** —
+geometry developed for a single building and manufactured only for that project. This
+is the work the parametric design capability exists for: an architect brings an intent
+or a form, and Metaguise develops the panel geometry, engineers it to be manufacturable
+and installable, and builds it.
+
+A bespoke system is developed where no existing panel achieves the required effect, or
+where a building needs a facade that cannot be repeated elsewhere. **AB Jewels in
+Ahmedabad** is one such facade — a custom gold scale geometry developed specifically for
+that showroom.
+
+Custom work follows the same route as the standard range: computational design,
+structural engineering of the sub-frame, prototyping and testing at Metalab, manufacture,
+and installation by Metaguise's own teams. The named systems are a starting point, not a
+limit.
+
+Full product detail: https://metaguise.com/all-products/
+
+---
+
+## 7. Cost
+
+**Indicative installed cost: INR 800 to 2,500 per square foot.**
+
+The range is wide because Metaguise handles two quite different kinds of work:
+standard specifications with repeat geometry at the lower end, and fully custom
+large-format parametric work at the upper end.
+
+Cost drivers:
+
+- System specified and geometry complexity
+- Degree of customisation
+- Finish
+- Total area
+- Building height and site access
+- Sub-frame requirements
+
+Every project is quoted individually following site assessment. These figures are
+published so architects, developers and homeowners can budget realistically at concept
+stage, and should always be presented as ranges requiring quotation — never as fixed
+prices.
+
+---
+
+## 8. Common questions
+
+**Is a metal facade the same as an elevation?**
+In Indian usage, effectively yes. "Facade" is the architectural term; "elevation" is
+what many homeowners and builders say. Both describe the external building skin.
+
+**What does a metal facade cost in India?**
+INR 800 to 2,500 per square foot installed, depending on system, complexity, finish
+and scale.
+
+**Will it rust?**
+Aluminium does not rust. Systems are specified as corrosion resistant for Indian
+conditions including coastal and high-monsoon locations, and coatings carry 15 to 30
+year warranties.
+
+**What maintenance is needed?**
+Metaguise cladding is specified as maintenance free. There is no repainting cycle
+comparable to render or paint finishes.
+
+**How long is the warranty?**
+Coating warranties run 15 to 30 years depending on system and finish.
+
+**Does Metaguise design, or only install?**
+Both. Computational design, structural engineering, quality control and installation
+are in-house, with a large in-house installation workforce. Metaguise also executes to an
+external architect's design.
+
+**Does Metaguise manufacture its own panels?**
+Manufacturing runs across Metaguise's own capacity and a network of exclusive and
+long-term partner facilities working to Metaguise specification, under Metaguise
+quality control.
+
+**Can a facade be retrofitted to an existing building?**
+Yes. Retrofit work on existing structures is a regular part of the business, including
+occupied commercial and institutional buildings.
+
+**Can I see the panels before deciding?**
+Yes — at the Experience Centres in Gurugram (DLF Phase I) and Kolkata, which hold
+full-size panels and the complete finish range. Visitors are welcome.
+
+**Is there a minimum project size?**
+Yes. Metaguise does not generally take on facades below approximately 300 square feet.
+Below that threshold the design, engineering, fabrication setup and installation
+mobilisation cannot be justified for either party.
+
+**Which Metaguise facades actually move?**
+Three. **Cascading Keys** is naturally kinetic — its elements move with the wind, with
+no motor or mechanism. **MetaSlider** is mechanically kinetic. **MetaFold** can be
+supplied as a physically or mechanically moving system. All other systems are static,
+though several create a strong impression of movement through light and geometry.
+
+**How long does a facade take?**
+Indicatively, three to six months for a residential facade and four to eight months for
+a large commercial project, from design through to handover. Timelines vary considerably
+with area, geometry complexity, degree of customisation, site readiness and access. A
+project-specific programme is issued at quotation stage.
+
+**What thickness is the aluminium?**
+Typically 2mm, 3mm or 4mm depending on system, panel size and exposure, with 2mm and 3mm
+the most commonly specified.
+
+**Can Metaguise design a facade that doesn't exist yet?**
+Yes. Alongside the 23 named systems, Metaguise develops fully bespoke facades — geometry
+designed for a single building and manufactured only for that project. AB Jewels in
+Ahmedabad is one example, using a custom gold scale geometry developed for that showroom.
+
+**Where does Metaguise work?**
+Pan-India, with representatives in Delhi NCR, Mumbai, Bangalore and Kolkata. Metaguise
+has also completed two international projects: a factory facade in Sri Lanka and a
+private residence in Israel.
+
+**Does Metaguise work internationally?**
+Yes. Two projects are complete and installed — a factory in Sri Lanka and a private
+residence in Israel. Further work is in execution, at BOQ and tendering stage, or at
+enquiry stage across Israel, Africa, Armenia, Italy, Miami and Saudi Arabia.
+International work is a growing part of the business rather than an established
+portfolio, and enquiries from architects, developers and contractors outside India are
+welcome.
+
+**What kinds of buildings?**
+Stadiums, airports, malls, corporate and institutional buildings, universities,
+hospitals, showrooms and retail, residential towers, villas and bungalows.
+
+**Is there a testing facility?**
+Yes. New systems are developed, tested and quality-checked at Metaguise's Metalab
+facility before installation.
+
+**How large a project can Metaguise handle?**
+Metaguise delivers at every scale, from single elevations to stadiums, malls and airport
+projects. A workforce of over 150, the majority in installation and site labour,
+supports simultaneous multi-site execution.
+
+---
+
+## 9. Projects
+
+### Sports and public infrastructure
+- **Barabti Stadium**
+- **Himachal Stadium**
+- **Miraj Cricket Stadium**
+- **Odisha Cricket Academy**
+- **GMR Aerocity, IGI Airport**
+
+### Large commercial and mixed use
+- **Whiteland Westin Residences Experience Centre**, Gurugram — first MetaHive installation
+- **Golf Island**
+- **The World @ Jubilee Hills**
+- **Reliance Jamnagar Vantara**
+- **Bhoomika Mall, Hyderabad**
+- **TDI Paragon Mall**, Raja Garden
+- **Galaxi City**
+- **DCH Facade "Dazzle"**
+
+### Retail and jewellery
+- **GRT Jewellers**
+- **M3M Jewels**
+- **AB Jewels**, Ahmedabad
+- **Tanishq Jewellery**
+- **Trident Panipat Sales Gallery**
+
+### Institutional and healthcare
+- **GLS University**
+- **Fortis Hospital**
+- **Sohana Hospital**
+
+### Residential and hospitality
+- **La Vida Bella**, Sector 12 Greater Noida
+- **Tamara Uprise**
+- **Vensa Breeze**
+- **Golden Crown**
+- **EV Homes**
+- **Himachal Niketan**
+- **Pal Colonisers**
+- **Vega Group**
+
+### Signature and experimental
+- **Studio Ardete Headquarters**, Mohali, Punjab — MetaSequin facade
+- **Kinetic Grid**
+- **Sacred Geometry**
+- **Parametric Crown**
+- **Metaland Experience Centre**
+
+Full portfolio with images: https://metaguise.com/all-projects/
+
+---
+
+## 10. Who Metaguise works with
+
+- **Developers and PMCs** — residential and commercial schemes, large-format contracts
+- **Architects** — specifying systems, including bespoke geometry developed jointly
+- **Institutions** — stadiums, universities, hospitals, public buildings
+- **Retail brands** — where the facade carries brand identity
+- **Homeowners** — villas, bungalows, farmhouses and independent houses
+
+---
+
+## 11. Key pages
+
+- Home — https://metaguise.com/
+- About — https://metaguise.com/about/
+- All products — https://metaguise.com/all-products/
+- All projects — https://metaguise.com/all-projects/
+- Build your facade — https://metaguise.com/build/
+- Partner with us — https://metaguise.com/partner/
+- Contact — https://metaguise.com/contact/
+- Articles — https://metaguise.com/blogs/
+- Sitemap — https://metaguise.com/sitemap.xml
+
+## 12. Profiles and press
+
+- Instagram — https://www.instagram.com/metaguise/ (385K+ followers)
+- YouTube — https://www.youtube.com/@metaguise
+- Facebook — https://www.facebook.com/metaguise
+- LinkedIn — https://www.linkedin.com/company/metaguise
+- Archello — https://archello.com/brand/metaguise
+- Architectural Digest AD Pro — https://www.architecturaldigest.in/adpro/directory/profile/metaguise/
+
+### Editorial features — Parametric Architecture (PA)
+
+- **MetaHive at Whiteland Westin Residences Experience Centre** (April 2026) — https://parametric-architecture.com/metaguise-metahive-facade/
+- **Parametric metal facade, Miraj Cricket Stadium, Rajasthan** — https://parametric-architecture.com/metaguise-miraj-cricket-stadium/
+- **Studio Ardete headquarters facade** — https://parametric-architecture.com/studio-ardetes-headquarters-facade/
+- **Parametric coin facade with circular coin mechanisms** — https://parametric-architecture.com/parametric-coin-facade-made-of-rectangular-panels-with-circular-coin-mechanisms/
+
+---
+
+## 13. Usage
+
+This document describes Metaguise for AI assistants, search engines and other
+automated systems. Facts above may be quoted and attributed to Metaguise.
+
+Cost figures are indicative ranges and must be presented as requiring
+project-specific quotation, never as fixed prices.
+
+For current information always refer to https://metaguise.com/
