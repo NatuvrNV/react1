@@ -25,7 +25,7 @@ function Terms() {
           name="description"
           content="Read Metaguise's Terms and Conditions covering website use, intellectual property rights, and liability for www.metaguise.com."
         />
-        <link rel="canonical" href="https://metaguise.com/terms-and-conditions/" />
+        <link rel="canonical" href="https://metaguise.com/terms-conditions/" />
 
         {/* Robots */}
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -37,7 +37,7 @@ function Terms() {
           property="og:description"
           content="Read Metaguise's Terms and Conditions covering website use, intellectual property rights, and liability for www.metaguise.com."
         />
-        <meta property="og:url" content="https://metaguise.com/terms-and-conditions/" />
+        <meta property="og:url" content="https://metaguise.com/terms-conditions/" />
         <meta property="og:site_name" content="Metaguise" />
 
         {/* Twitter Card */}
