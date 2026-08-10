@@ -21,11 +21,11 @@ const Blog = () => {
   };
 
   // Function to handle blog click navigation with custom URL or title-based URL
-  const handleBlogClick = (blog) => {
-    // Use custom URL if available, otherwise use title
-    const urlFriendlyPath = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
-    navigate(`/blog/${urlFriendlyPath}`);
-  };
+const handleBlogClick = (blog) => {
+  // Use custom URL if available, otherwise use title
+  const urlFriendlyPath = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
+  navigate(`/blog/${urlFriendlyPath}/`);
+};
 
   // Function to handle category selection
   const handleCategorySelect = (category) => {

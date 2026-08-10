@@ -15,20 +15,20 @@ const Allprojects = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("");
 
-  const projectClickHandler = (img) => {
-    const selectedSubProjectCat = img.imgPath.split("/")[3].toLowerCase();
-    const selectedProject = SingleprojectDetail.find(
-      (item) => item.name.toLowerCase() === selectedSubProjectCat
-    );
-    
-    // Use the url field from the project for navigation
-    if (selectedProject && selectedProject.url) {
-      navigate(`/all-projects/${selectedProject.url}`, { state: { selectedProject } });
-    } else {
-      // Fallback to the old method if url doesn't exist
-      navigate(`/all-projects/${selectedSubProjectCat}`, { state: { selectedProject } });
-    }
-  };
+const projectClickHandler = (img) => {
+  const selectedSubProjectCat = img.imgPath.split("/")[3].toLowerCase();
+  const selectedProject = SingleprojectDetail.find(
+    (item) => item.name.toLowerCase() === selectedSubProjectCat
+  );
+
+  // Use the url field from the project for navigation
+  if (selectedProject && selectedProject.url) {
+    navigate(`/all-projects/${selectedProject.url}/`, { state: { selectedProject } });
+  } else {
+    // Fallback to the old method if url doesn't exist
+    navigate(`/all-projects/${selectedSubProjectCat}/`, { state: { selectedProject } });
+  }
+};
 
   const filterImagesByCategory = (category) => {
     setSelectedCategory(category);

@@ -27,12 +27,11 @@ const Allproducts = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [showDropdown, setShowDropdown] = useState(false);
 
-  function productClickHandler(img) {
-    const selectedSubProductcat = img.imgPath.split("/")[3].toLowerCase();
-    const selectedProduct = SingleProductDetail.find((item) => item.name.toLowerCase() === selectedSubProductcat);
-    navigate(`/all-products/${selectedSubProductcat}`, { state: { selectedProduct } }); // Redirect to SingleProduct page with dynamic URL
-    // navigate(`/single-product/${selectedSubProductcat}`, { state: { selectedProduct } }); // Redirect to SingleProduct page with dynamic URL
-  }
+function productClickHandler(img) {
+  const selectedSubProductcat = img.imgPath.split("/")[3].toLowerCase();
+  const selectedProduct = SingleProductDetail.find((item) => item.name.toLowerCase() === selectedSubProductcat);
+  navigate(`/all-products/${selectedSubProductcat}/`, { state: { selectedProduct } });
+}
 
   function filterImagesByCategory(category) {
     setSelectedCategory(category);
