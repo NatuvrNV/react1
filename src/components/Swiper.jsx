@@ -4,7 +4,6 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./Swipper.css";
-import { useEffect, useState } from "react";
 
 // ✅ Import local banner images (adjust paths based on your folder structure)
 import banner1 from "../assets/banner/1.webp";
@@ -13,50 +12,13 @@ import banner3 from "../assets/banner/3.webp";
 
 const banners = [banner1, banner2, banner3];
 
+const bannerTitles = [
+  "India\u2019s Leading Facade & Wall Cladding Experts",
+  "Masters in Parametric Design & Execution",
+  "Metal is Metaguise: The Future of Facades",
+];
+
 export const Swipper = () => {
-  const [loadedImages, setLoadedImages] = useState([banners[0]]);
-  const [imageErrors, setImageErrors] = useState({});
-
-  useEffect(() => {
-    // Preload all banner images
-    banners.forEach((src, index) => {
-      const img = new Image();
-      img.src = src;
-      img.onload = () => {
-        setLoadedImages((prev) => {
-          if (!prev.includes(src)) {
-            return [...prev, src];
-          }
-          return prev;
-        });
-      };
-      img.onerror = () => {
-        console.error(`Failed to load banner ${index + 1}:`, src);
-        setImageErrors(prev => ({ ...prev, [src]: true }));
-      };
-    });
-
-    // ✅ Prevent text selection when clicking swiper buttons
-    const preventSelection = (event) => {
-      if (event.target.closest(".swiper-button-next, .swiper-button-prev")) {
-        event.preventDefault();
-      }
-    };
-
-    document.addEventListener("mousedown", preventSelection);
-
-    return () => {
-      document.removeEventListener("mousedown", preventSelection);
-    };
-  }, []);
-
-  const getImageUrl = (src) => {
-    if (imageErrors[src]) {
-      return loadedImages[0] || banners[0];
-    }
-    return loadedImages.includes(src) ? src : banners[0];
-  };
-
   return (
     <div className="banner-slide">
       <Swiper
@@ -92,19 +54,25 @@ export const Swipper = () => {
 
         {banners.map((src, index) => (
           <SwiperSlide key={index}>
-            <div
-              className="slide banner-slide"
-              style={{
-                backgroundImage: `url(${getImageUrl(src)})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundColor: "#f5f5f5",
-              }}
-            >
+            <div className="slide banner-slide">
+              {/*
+                Real <img> instead of a CSS background-image:
+                - lets the browser's preload scanner discover it directly
+                  in the (prerendered) HTML, before any JS runs
+                - lets us hint fetchpriority="high" on the first slide,
+                  which isn't possible with a background-image
+                - is detected far more reliably as the LCP element
+              */}
+              <img
+                src={src}
+                alt={bannerTitles[index]}
+                className="banner-slide-img"
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchpriority={index === 0 ? "high" : "auto"}
+                decoding={index === 0 ? "sync" : "async"}
+              />
               <div className="slide-content">
-                {index === 0 && <h2>India’s Leading Facade & Wall Cladding Experts</h2>}
-                {index === 1 && <h2>Masters in Parametric Design & Execution</h2>}
-                {index === 2 && <h2>Metal is Metaguise: The Future of Facades</h2>}
+                <h2>{bannerTitles[index]}</h2>
               </div>
             </div>
           </SwiperSlide>

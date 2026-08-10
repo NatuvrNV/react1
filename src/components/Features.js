@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react';
 import { Container } from 'react-bootstrap';
 import './Features.css';
 import Miraj from "../assets/featured/miraj.webp";
@@ -10,25 +10,47 @@ import Obsidian from "../assets/featured/obsidian.webp";
 import Fortis from "../assets/featured/Fortis.webp";
 import KineticGrid from "../assets/featured/Kinetic Grid.webp";
 
+const IMAGE_WIDTH = 420; // Adjust based on actual image width
+const IMAGE_GAP = 2; // Gap between images as set in CSS
+
 const Features = () => {
-  const [scrollX, setScrollX] = useState(0);
+  // isSliderActive still triggers a (rare) re-render when the section
+  // enters/leaves view — that's fine, it only fires a couple of times.
   const [isSliderActive, setIsSliderActive] = useState(false);
+
   const sectionRef = useRef(null);
   const wrapperRef = useRef(null);
-  const nextSectionRef = useRef(null); // Ref for the next section
-  const featuredImages = [
-    Miraj, ScaledSymphony, Whiteland, RJ,
-    ABJewels, Obsidian, Fortis, KineticGrid
-  ];
-  const clonedImages = [...featuredImages, ...featuredImages];
-  const imageWidth = 420; // Adjust based on actual image width
-  const imageGap = 2; // This is the gap between images as set in CSS
-  const totalImages = clonedImages.length / 2; // Only count the unique set of images
+  const rowRef = useRef(null); // NEW — direct DOM handle for the transform
+  const nextSectionRef = useRef(null);
 
-  const maxScrollX = (totalImages * imageWidth) + ((totalImages - 1) * imageGap);
+  // scrollX now lives in a ref, not state — updating it on every wheel
+  // tick no longer re-renders the component or remaps the image list.
+  const scrollXRef = useRef(0);
+  const rafRef = useRef(null);
+
+  const featuredImages = useMemo(
+    () => [Miraj, ScaledSymphony, Whiteland, RJ, ABJewels, Obsidian, Fortis, KineticGrid],
+    []
+  );
+  const clonedImages = useMemo(
+    () => [...featuredImages, ...featuredImages],
+    [featuredImages]
+  );
+  const totalImages = featuredImages.length;
+  const maxScrollX = useMemo(
+    () => totalImages * IMAGE_WIDTH + (totalImages - 1) * IMAGE_GAP,
+    [totalImages]
+  );
 
   const lockScroll = () => (document.body.style.overflow = 'hidden');
   const unlockScroll = () => (document.body.style.overflow = '');
+
+  // Applies the current ref value to the DOM directly — no React render.
+  const applyTransform = useCallback(() => {
+    if (rowRef.current) {
+      rowRef.current.style.transform = `translateX(-${scrollXRef.current}px)`;
+    }
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -43,7 +65,7 @@ const Features = () => {
           }
         });
       },
-      { threshold: 1.0 } // Trigger when 100% of the element is visible
+      { threshold: 1.0 }
     );
 
     const currentRef = wrapperRef.current;
@@ -64,43 +86,50 @@ const Features = () => {
       if (!isSliderActive) return;
       event.preventDefault();
 
-      const scrollAmount = event.deltaY * 0.3; // Smooth scroll
-      setScrollX((prevScrollX) => {
-        let newScrollX = prevScrollX + scrollAmount;
+      const scrollAmount = event.deltaY * 0.3;
+      let newScrollX = scrollXRef.current + scrollAmount;
 
-        if (newScrollX <= 0 && event.deltaY < 0) {
-          unlockScroll();
-          window.scrollBy({
-            top: -window.innerHeight,
-            behavior: 'smooth',
-          });
-          return 0;
-        }
+      if (newScrollX <= 0 && event.deltaY < 0) {
+        scrollXRef.current = 0;
+        applyTransform();
+        unlockScroll();
+        window.scrollBy({ top: -window.innerHeight, behavior: 'smooth' });
+        return;
+      }
 
-        if (newScrollX >= maxScrollX) {
-          nextSectionRef.current?.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-          });
-          unlockScroll();
-          return maxScrollX;
-        }
+      if (newScrollX >= maxScrollX) {
+        scrollXRef.current = maxScrollX;
+        applyTransform();
+        nextSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        unlockScroll();
+        return;
+      }
 
-        return Math.max(0, Math.min(newScrollX, maxScrollX));
-      });
+      scrollXRef.current = Math.max(0, Math.min(newScrollX, maxScrollX));
+
+      // Batch the DOM write into the next animation frame instead of
+      // writing on every single wheel event (avoids layout thrashing).
+      if (rafRef.current == null) {
+        rafRef.current = requestAnimationFrame(() => {
+          applyTransform();
+          rafRef.current = null;
+        });
+      }
     };
 
     const section = sectionRef.current;
-    if (isSliderActive) {
+    if (isSliderActive && section) {
       section.addEventListener('wheel', handleScroll, { passive: false });
-    } else {
-      section.removeEventListener('wheel', handleScroll);
     }
 
     return () => {
-      section.removeEventListener('wheel', handleScroll);
+      if (section) section.removeEventListener('wheel', handleScroll);
+      if (rafRef.current != null) {
+        cancelAnimationFrame(rafRef.current);
+        rafRef.current = null;
+      }
     };
-  }, [isSliderActive, maxScrollX]);
+  }, [isSliderActive, maxScrollX, applyTransform]);
 
   return (
     <>
@@ -110,14 +139,24 @@ const Features = () => {
           <div className="featured-row-wrapper" ref={wrapperRef}>
             <div
               className="featured-row"
+              ref={rowRef}
               style={{
-                transform: `translateX(-${scrollX }px)`,
-                transition: 'transform 0.5s ease',
+                transform: 'translateX(0px)',
+                willChange: 'transform',
               }}
             >
               {clonedImages.map((image, index) => (
                 <div className="featured-image" key={index}>
-                  <img src={image} alt={`Project ${index + 1}`} />
+                  <img
+                    src={image}
+                    alt={`Project ${index + 1}`}
+                    width={IMAGE_WIDTH}
+                    // First couple of images are visible immediately —
+                    // load those eagerly, lazy-load the rest so the
+                    // browser isn't fetching all 16 at once on mount.
+                    loading={index < 2 ? 'eager' : 'lazy'}
+                    decoding="async"
+                  />
                 </div>
               ))}
             </div>

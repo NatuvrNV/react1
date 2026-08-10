@@ -77,17 +77,35 @@
 }
 
 .slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* No longer holds the background-image — that's now a real <img>
+     (.banner-slide-img) absolutely positioned inside this element.
+     position: relative anchors that img; overflow: hidden clips it the
+     same way background-size: cover used to. */
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 100%; /* Ensure full height */
   display: flex; /* Center content */
   align-items: flex-end;
   justify-content: flex-start;
+  background-color: #f5f5f5; /* shows briefly before the image paints */
+}
+
+.banner-slide-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1; /* sits behind .slide-content */
+  display: block;
 }
 
 .slide-content {
+  position: relative; /* lifts it into the same stacking context as the
+                          absolutely-positioned img, above it */
+  z-index: 2;
   padding: 80px;
   padding-bottom: 100px;
   color: white;
