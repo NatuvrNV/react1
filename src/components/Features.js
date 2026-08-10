@@ -1,115 +1,206 @@
-import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react';
-import { Container } from 'react-bootstrap';
-import './Features.css';
-import Miraj from "../assets/featured/miraj.webp";
-import ScaledSymphony from "../assets/featured/scaled.webp";
-import Whiteland from "../assets/featured/whiteland.webp";
-import RJ from "../assets/featured/RJ.webp";
-import ABJewels from "../assets/featured/AB.webp";
-import Obsidian from "../assets/featured/obsidian.webp";
-import Fortis from "../assets/featured/Fortis.webp";
-import KineticGrid from "../assets/featured/Kinetic Grid.webp";
 
-const IMAGE_WIDTH = 420; // Adjust based on actual image width
-const IMAGE_GAP = 2; // Gap between images as set in CSS
+import React, {
+  useEffect,
+  useRef,
+  useState,
+  useMemo,
+  useCallback,
+} from "react";
+
+import "./Features.css";
+
+// ImageKit image URLs
+const Miraj =
+  "https://ik.imagekit.io/ylx9qggcp/miraj.webp?updatedAt=1776152244497";
+
+const ScaledSymphony =
+  "https://ik.imagekit.io/ylx9qggcp/Sculpted%20Silence.webp?updatedAt=1776152389797";
+
+const Whiteland =
+  "https://ik.imagekit.io/ylx9qggcp/whiteland.webp?updatedAt=1776152244798";
+
+const RJ =
+  "https://ik.imagekit.io/ylx9qggcp/RJ.webp?updatedAt=1776152244291";
+
+const ABJewels =
+  "https://ik.imagekit.io/ylx9qggcp/AB.webp?updatedAt=1776152244136";
+
+const Obsidian =
+  "https://ik.imagekit.io/ylx9qggcp/obsidian.webp?updatedAt=1776152244469";
+
+const Fortis =
+  "https://ik.imagekit.io/ylx9qggcp/Fortis.webp?updatedAt=1776152244197";
+
+const KineticGrid =
+  "https://ik.imagekit.io/ylx9qggcp/Kinetic%20Grid.webp?updatedAt=1776152244481";
+
+const IMAGE_WIDTH = 420;
+const IMAGE_GAP = 2;
 
 const Features = () => {
-  // isSliderActive still triggers a (rare) re-render when the section
-  // enters/leaves view — that's fine, it only fires a couple of times.
   const [isSliderActive, setIsSliderActive] = useState(false);
 
   const sectionRef = useRef(null);
   const wrapperRef = useRef(null);
-  const rowRef = useRef(null); // NEW — direct DOM handle for the transform
+  const rowRef = useRef(null);
   const nextSectionRef = useRef(null);
 
-  // scrollX now lives in a ref, not state — updating it on every wheel
-  // tick no longer re-renders the component or remaps the image list.
   const scrollXRef = useRef(0);
   const rafRef = useRef(null);
 
+  /*
+   * Featured project images.
+   */
   const featuredImages = useMemo(
-    () => [Miraj, ScaledSymphony, Whiteland, RJ, ABJewels, Obsidian, Fortis, KineticGrid],
+    () => [
+      Miraj,
+      ScaledSymphony,
+      Whiteland,
+      RJ,
+      ABJewels,
+      Obsidian,
+      Fortis,
+      KineticGrid,
+    ],
     []
   );
+
+  /*
+   * Duplicate images to create
+   * the horizontal scrolling experience.
+   */
   const clonedImages = useMemo(
     () => [...featuredImages, ...featuredImages],
     [featuredImages]
   );
+
   const totalImages = featuredImages.length;
+
+  /*
+   * Maximum horizontal scroll distance.
+   */
   const maxScrollX = useMemo(
-    () => totalImages * IMAGE_WIDTH + (totalImages - 1) * IMAGE_GAP,
+    () =>
+      totalImages * IMAGE_WIDTH +
+      (totalImages - 1) * IMAGE_GAP,
     [totalImages]
   );
 
-  const lockScroll = () => (document.body.style.overflow = 'hidden');
-  const unlockScroll = () => (document.body.style.overflow = '');
-
-  // Applies the current ref value to the DOM directly — no React render.
+  /*
+   * Apply transform directly to the DOM.
+   *
+   * This prevents React re-rendering
+   * during every wheel event.
+   */
   const applyTransform = useCallback(() => {
-    if (rowRef.current) {
-      rowRef.current.style.transform = `translateX(-${scrollXRef.current}px)`;
-    }
+    if (!rowRef.current) return;
+
+    rowRef.current.style.transform = `translate3d(-${scrollXRef.current}px, 0, 0)`;
   }, []);
 
+  /*
+   * Detect when Featured section
+   * enters the viewport.
+   */
   useEffect(() => {
+    const wrapper = wrapperRef.current;
+
+    if (!wrapper) return;
+
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsSliderActive(true);
-            lockScroll();
-          } else {
-            setIsSliderActive(false);
-            unlockScroll();
-          }
-        });
+      ([entry]) => {
+        setIsSliderActive(entry.isIntersecting);
       },
-      { threshold: 1.0 }
+      {
+        threshold: 0.5,
+      }
     );
 
-    const currentRef = wrapperRef.current;
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
+    observer.observe(wrapper);
 
     return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
-      unlockScroll();
+      observer.disconnect();
     };
   }, []);
 
+  /*
+   * Handle horizontal wheel interaction.
+   */
   useEffect(() => {
+    const section = sectionRef.current;
+
+    if (!section || !isSliderActive) return;
+
     const handleScroll = (event) => {
-      if (!isSliderActive) return;
+      /*
+       * Prevent normal page scrolling
+       * while Featured slider is active.
+       */
       event.preventDefault();
 
+      /*
+       * Convert vertical mouse wheel
+       * movement into horizontal movement.
+       */
       const scrollAmount = event.deltaY * 0.3;
-      let newScrollX = scrollXRef.current + scrollAmount;
 
-      if (newScrollX <= 0 && event.deltaY < 0) {
+      let newScrollX =
+        scrollXRef.current + scrollAmount;
+
+      /*
+       * Reached the beginning.
+       *
+       * Allow the user to return to
+       * the previous section.
+       */
+      if (
+        newScrollX <= 0 &&
+        event.deltaY < 0
+      ) {
         scrollXRef.current = 0;
+
         applyTransform();
-        unlockScroll();
-        window.scrollBy({ top: -window.innerHeight, behavior: 'smooth' });
+
+        window.scrollBy({
+          top: -window.innerHeight,
+          behavior: "smooth",
+        });
+
         return;
       }
 
+      /*
+       * Reached the end.
+       *
+       * Move to the next section.
+       */
       if (newScrollX >= maxScrollX) {
         scrollXRef.current = maxScrollX;
+
         applyTransform();
-        nextSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        unlockScroll();
+
+        nextSectionRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+
         return;
       }
 
-      scrollXRef.current = Math.max(0, Math.min(newScrollX, maxScrollX));
+      /*
+       * Keep scroll position inside
+       * allowed boundaries.
+       */
+      scrollXRef.current = Math.max(
+        0,
+        Math.min(newScrollX, maxScrollX)
+      );
 
-      // Batch the DOM write into the next animation frame instead of
-      // writing on every single wheel event (avoids layout thrashing).
-      if (rafRef.current == null) {
+      /*
+       * Update DOM only once per
+       * animation frame.
+       */
+      if (rafRef.current === null) {
         rafRef.current = requestAnimationFrame(() => {
           applyTransform();
           rafRef.current = null;
@@ -117,61 +208,90 @@ const Features = () => {
       }
     };
 
-    const section = sectionRef.current;
-    if (isSliderActive && section) {
-      section.addEventListener('wheel', handleScroll, { passive: false });
-    }
+    section.addEventListener("wheel", handleScroll, {
+      passive: false,
+    });
 
     return () => {
-      if (section) section.removeEventListener('wheel', handleScroll);
-      if (rafRef.current != null) {
+      section.removeEventListener(
+        "wheel",
+        handleScroll
+      );
+
+      if (rafRef.current !== null) {
         cancelAnimationFrame(rafRef.current);
         rafRef.current = null;
       }
     };
-  }, [isSliderActive, maxScrollX, applyTransform]);
+  }, [
+    isSliderActive,
+    maxScrollX,
+    applyTransform,
+  ]);
 
   return (
     <>
-      <div className="featured-section" ref={sectionRef}>
-        <Container className="featured-projects-section text-center">
-          <div className="featured-text">Featured </div>
-          <div className="featured-row-wrapper" ref={wrapperRef}>
-            <div
-              className="featured-row"
-              ref={rowRef}
-              style={{
-                transform: 'translateX(0px)',
-                willChange: 'transform',
-              }}
-            >
-              {clonedImages.map((image, index) => (
-                <div className="featured-image" key={index}>
-                  <img
-                    src={image}
-                    alt={`Project ${index + 1}`}
-                    width={IMAGE_WIDTH}
-                    // First couple of images are visible immediately —
-                    // load those eagerly, lazy-load the rest so the
-                    // browser isn't fetching all 16 at once on mount.
-                    loading={index < 2 ? 'eager' : 'lazy'}
-                    decoding="async"
-                  />
-                </div>
-              ))}
-            </div>
+      <section
+        ref={sectionRef}
+        className="featured-section"
+      >
+        <div
+          ref={wrapperRef}
+          className="featured-wrapper"
+        >
+          <div className="featured-heading">
+            <h2>Featured</h2>
           </div>
-          <button className="hover-button" aria-label="See all projects">
-            <span>See All Projects</span>
-          </button>
-        </Container>
-      </div>
 
-      {/* Next Section */}
-      <div ref={nextSectionRef} style={{ height: '0vh', background: '#f8f9fa' }}>
-      </div>
+          <div
+            className="featured-row"
+            ref={rowRef}
+            style={{
+              transform: "translate3d(0, 0, 0)",
+              willChange: isSliderActive
+                ? "transform"
+                : "auto",
+            }}
+          >
+            {clonedImages.map(
+              (image, index) => (
+                <img
+                  key={`${image}-${index}`}
+                  src={image}
+                  alt={`Featured Metaguise project ${
+                    (index % totalImages) + 1
+                  }`}
+                  width={IMAGE_WIDTH}
+                  height={Math.round(
+                    IMAGE_WIDTH * 0.75
+                  )}
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
+                  draggable="false"
+                />
+              )
+            )}
+          </div>
+
+          <div className="featured-project-link">
+            <a href="/projects">
+              See All Projects
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div
+        ref={nextSectionRef}
+        style={{
+          height: "0",
+          background: "#f8f9fa",
+        }}
+      />
     </>
   );
 };
 
 export default Features;
+
