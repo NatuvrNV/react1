@@ -34,49 +34,84 @@ import Build from './pages/Build Your Facade/build.js';
 import TWoApp from './configurator-app/TwoStepConfigurator.js';
 import ProductApp from './configurator-app/ProductConfigurator.js';
 
+// Static routes (no params) — used to detect a real 404 before Router even mounts
+const KNOWN_STATIC_PATHS = [
+  "/",
+  "/all-products",
+  "/blogs",
+  "/all-projects",
+  "/contact",
+  "/metaform",
+  "/ctb",
+  "/metafunction",
+  "/build",
+  "/metaparametric",
+  "/metasurface",
+  "/partner",
+  "/privacy-policy",
+  "/terms-conditions",
+  "/about",
+  "/login",
+  "/admin",
+  "/metavision",
+  "/metaexperience",
+  "/app2",
+  "/twostep",
+];
 
+// Dynamic route prefixes — anything starting with these is treated as a valid (non-404) route
+const KNOWN_DYNAMIC_PREFIXES = [
+  "/all-products/",
+  "/all-projects/",
+  "/blog/",
+];
+
+function isKnownRoute(pathname) {
+  if (KNOWN_STATIC_PATHS.includes(pathname)) return true;
+  return KNOWN_DYNAMIC_PREFIXES.some((prefix) => pathname.startsWith(prefix));
+}
 
 function App() {
+  const currentPath = window.location.pathname;
+  const showPreloader = isKnownRoute(currentPath);
 
   return (
-
     <HelmetProvider>
-          <Preloader >
-  </Preloader>
+      {showPreloader && <Preloader />}
 
-<FloatingButton />
-    <Router>
-      <Layout>
-        <Routes>
-          <Route index element={<Home/>} />
-          <Route path="/all-products" element={<Allproducts />} />
-          <Route path="/blogs" element={<Blogs/>} />
-          <Route path="/all-projects" element={<Allprojects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/metaform" element={<MetaForm />} />
-          <Route path="/ctb" element={<CTB />} />
-          <Route path="/metafunction" element={<MetaFunction />} />
-  <Route path="/build" element={<Build />} />
-          <Route path="/metaparametric" element={<MetaParametric />} />
-          <Route path="/metasurface" element={<MetaSurface />} />
-          <Route path="/partner" element={<Partner />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-conditions" element={<Terms />} />
-          <Route path="/all-products/:productName" element={<SingleProduct />} />
-          <Route path="/all-projects/:projectName" element={<SingleProject />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/metavision" element={<Metavision />} />
-          <Route path="/metaexperience" element={<MetaExperience />} />
-          <Route path="/blog/:title" element={<SingleBlogPage />} />
-     <Route path="/app2" element={<ProductApp />} />
-          <Route path="/twostep" element={<TWoApp />} />
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
-    </Router>
+      <FloatingButton />
+      <Router>
+        <Layout>
+          <Routes>
+            <Route index element={<Home/>} />
+            <Route path="/all-products" element={<Allproducts />} />
+            <Route path="/blogs" element={<Blogs/>} />
+            <Route path="/all-projects" element={<Allprojects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/metaform" element={<MetaForm />} />
+            <Route path="/ctb" element={<CTB />} />
+            <Route path="/metafunction" element={<MetaFunction />} />
+            <Route path="/build" element={<Build />} />
+            <Route path="/metaparametric" element={<MetaParametric />} />
+            <Route path="/metasurface" element={<MetaSurface />} />
+            <Route path="/partner" element={<Partner />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-conditions" element={<Terms />} />
+            <Route path="/all-products/:productName" element={<SingleProduct />} />
+            <Route path="/all-projects/:projectName" element={<SingleProject />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/metavision" element={<Metavision />} />
+            <Route path="/metaexperience" element={<MetaExperience />} />
+            <Route path="/blog/:title" element={<SingleBlogPage />} />
+            <Route path="/app2" element={<ProductApp />} />
+            <Route path="/twostep" element={<TWoApp />} />
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
+      </Router>
     </HelmetProvider>
   );
 }
