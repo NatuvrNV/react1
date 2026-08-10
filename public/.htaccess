@@ -23,7 +23,7 @@ RewriteRule ^ https://metaguise.com%{REQUEST_URI} [R=301,L]
 
 
 # ============================================
-# 3. ALLOW REAL FILES
+# 3. ALLOW REAL FILES AND DIRECTORIES
 # ============================================
 
 RewriteCond %{REQUEST_FILENAME} -f [OR]
@@ -32,63 +32,75 @@ RewriteRule ^ - [L]
 
 
 # ============================================
-# 4. VALID STATIC REACT ROUTES
+# 4. HOME
 # ============================================
 
 RewriteRule ^$ index.html [L]
+
+
+# ============================================
+# 5. STATIC REACT ROUTES
+# ============================================
 
 RewriteRule ^about/?$ index.html [L]
 RewriteRule ^all-products/?$ index.html [L]
 RewriteRule ^all-projects/?$ index.html [L]
 RewriteRule ^blogs/?$ index.html [L]
 RewriteRule ^contact/?$ index.html [L]
+
 RewriteRule ^metaform/?$ index.html [L]
 RewriteRule ^ctb/?$ index.html [L]
 RewriteRule ^metafunction/?$ index.html [L]
 RewriteRule ^build/?$ index.html [L]
 RewriteRule ^metaparametric/?$ index.html [L]
 RewriteRule ^metasurface/?$ index.html [L]
+
 RewriteRule ^partner/?$ index.html [L]
+
 RewriteRule ^privacy-policy/?$ index.html [L]
 RewriteRule ^terms-conditions/?$ index.html [L]
+
 RewriteRule ^login/?$ index.html [L]
 RewriteRule ^admin/?$ index.html [L]
+
 RewriteRule ^metavision/?$ index.html [L]
 RewriteRule ^metaexperience/?$ index.html [L]
+
 RewriteRule ^app2/?$ index.html [L]
 RewriteRule ^twostep/?$ index.html [L]
 
 
 # ============================================
-# 5. DYNAMIC PRODUCT ROUTES
+# 6. DYNAMIC PRODUCT ROUTES
 # ============================================
 
 RewriteRule ^all-products/[^/]+/?$ index.html [L]
 
 
 # ============================================
-# 6. DYNAMIC PROJECT ROUTES
+# 7. DYNAMIC PROJECT ROUTES
 # ============================================
 
 RewriteRule ^all-projects/[^/]+/?$ index.html [L]
 
 
 # ============================================
-# 7. DYNAMIC BLOG ROUTES
+# 8. DYNAMIC BLOG ROUTES
 # ============================================
 
 RewriteRule ^blog/[^/]+/?$ index.html [L]
 
 
 # ============================================
-# 8. EVERYTHING ELSE = REAL HTTP 404
+# 9. EVERYTHING ELSE = HTTP 404
 # ============================================
 
 RewriteRule ^ - [R=404,L]
-```
+
 
 # ============================================
-# 10. 404 PAGE
+# 10. CUSTOM 404 PAGE
 # ============================================
 
 ErrorDocument 404 /404.html
+```
