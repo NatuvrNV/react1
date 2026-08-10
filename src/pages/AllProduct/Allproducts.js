@@ -6,7 +6,10 @@ import { useLocation } from "react-router-dom";
 import Footer from "../../components/Footer";
 import { MdArrowOutward } from "react-icons/md";
 import "./Allproducts.css";
-import { SingleProductDetail } from "../../utils/constants";
+// SingleProductDetail used to be a static import (~62 KB in every bundle).
+// The listing page only ever needed name/thumbnail/meta, so it now fetches
+// the lightweight products index instead.
+import { fetchProductsIndex } from "../../utils/fetchProductData";
 import { ProductImages as images } from "../../utils/constants";
 import { Helmet } from "react-helmet-async";
 
@@ -27,9 +30,27 @@ const Allproducts = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [showDropdown, setShowDropdown] = useState(false);
 
+  // Lightweight index (name, thumbnail, meta only) — replaces the old
+  // full-detail SingleProductDetail static import.
+  const [productsIndex, setProductsIndex] = useState([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetchProductsIndex()
+      .then((data) => {
+        if (!cancelled) setProductsIndex(data);
+      })
+      .catch(() => {
+        if (!cancelled) setProductsIndex([]);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
 function productClickHandler(img) {
   const selectedSubProductcat = img.imgPath.split("/")[3].toLowerCase();
-  const selectedProduct = SingleProductDetail.find((item) => item.name.toLowerCase() === selectedSubProductcat);
+  const selectedProduct = productsIndex.find((item) => item.name.toLowerCase() === selectedSubProductcat);
   navigate(`/all-products/${selectedSubProductcat}/`, { state: { selectedProduct } });
 }
 

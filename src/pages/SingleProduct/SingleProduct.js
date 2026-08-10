@@ -5,14 +5,16 @@ import { FaYoutube, FaInstagram } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import Footer from "../../components/Footer";
 import "./SingleProduct.css";
-import { SingleProductDetail } from "../../utils/constants";
+// SingleProductDetail used to be a static import (~62 KB in every bundle).
+// It's now fetched on demand from /data/products/<slug>.json.
+import { fetchProductBySlug } from "../../utils/fetchProductData";
 import { Helmet } from "react-helmet-async";
 import { FaPlay } from "react-icons/fa";
 
 const SingleProduct = () => {
   const navigate = useNavigate();
   const { productName } = useParams();
-  
+
   // ✅ ALL HOOKS MUST BE CALLED BEFORE ANY CONDITIONAL RETURN
   const [clickedIndex, setClickedIndex] = useState(null);
   const [contentToRender, setContentToRender] = useState([]);
@@ -24,12 +26,38 @@ const SingleProduct = () => {
   const [activeButton, setActiveButton] = useState(null);
   const imageGridRef = useRef(null);
 
-  // Find selected product
-  const selectedProduct = SingleProductDetail.find(
-    (item) => item.name.toLowerCase() === productName
-  );
+  // Product data now comes from a fetch, not a static import
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
 
-  // Generate product-specific meta keywords
+  useEffect(() => {
+    let cancelled = false;
+    setIsLoading(true);
+    setNotFound(false);
+    setSelectedProduct(null);
+
+    const slug = productName?.toLowerCase();
+
+    fetchProductBySlug(slug)
+      .then((data) => {
+        if (!cancelled) {
+          setSelectedProduct(data);
+          setIsLoading(false);
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setNotFound(true);
+          setIsLoading(false);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [productName]);
+
   const generateMetaKeywords = () => {
     const baseKeywords = [
       "metal facade",
@@ -38,7 +66,7 @@ const SingleProduct = () => {
       "parametric facade",
       "Metaguise",
     ];
-    
+
     const productSpecificKeywords = selectedProduct?.metaKeywords || [
       selectedProduct?.Productname,
       `${selectedProduct?.Productname} metal facade`,
@@ -51,11 +79,10 @@ const SingleProduct = () => {
       "facade design India",
       "metal facade manufacturer",
     ];
-    
+
     return [...baseKeywords, ...productSpecificKeywords].join(", ");
   };
 
-  // Get product image for OG tag (first image from product images)
   const getProductOgImage = () => {
     if (selectedProduct?.images && selectedProduct.images.length > 0) {
       return `https://metaguise.com/${selectedProduct.images[0]}`;
@@ -83,7 +110,6 @@ const SingleProduct = () => {
     setActiveButton(activeButton === index ? null : index);
   };
 
-  // ✅ Move ALL useEffect hooks before conditional return
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (gridRef.current && !gridRef.current.contains(event.target)) {
@@ -119,15 +145,28 @@ const SingleProduct = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // ✅ Now the conditional return (after all hooks)
-  if (!selectedProduct) {
+  // ✅ Now the conditional returns (after all hooks)
+  if (isLoading) {
+    return (
+      <div className="container main-container">
+        <div className="row">
+          <div className="col-12 text-center py-5">
+            <p>Loading product...</p>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (notFound || !selectedProduct) {
     return (
       <div className="container main-container">
         <div className="row">
           <div className="col-12 text-center py-5">
             <h2>Product not found</h2>
-            <button 
-              onClick={() => navigate("/all-products")} 
+            <button
+              onClick={() => navigate("/all-products")}
               className="back-button mt-3"
             >
               <span className="arrow">&larr; Back to Products</span>
@@ -173,7 +212,6 @@ const SingleProduct = () => {
     ? contentToRender.filter((img) => img.includes(selectedCategory))
     : contentToRender;
 
-  // Product-specific Schema
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -211,14 +249,12 @@ const SingleProduct = () => {
   return (
     <div className="container main-container">
       <Helmet>
-        {/* Basic Meta Tags */}
         <title>{selectedProduct.metatittles || `${selectedProduct.Productname} | Metaguise`}</title>
         <meta name="description" content={selectedProduct.metadescription || selectedProduct.description} />
         <meta name="keywords" content={generateMetaKeywords()} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`https://metaguise.com/all-products/${productName}/`} />
 
-        {/* Open Graph / Facebook Meta Tags */}
         <meta property="og:type" content="product" />
         <meta property="og:title" content={selectedProduct.ogTitle || selectedProduct.metatittles || `${selectedProduct.Productname} | Premium Metal Facade Solution`} />
         <meta property="og:description" content={selectedProduct.ogDescription || selectedProduct.metadescription || selectedProduct.description} />
@@ -233,19 +269,17 @@ const SingleProduct = () => {
         <meta property="product:category" content="Architectural Metal Facade" />
         <meta property="product:availability" content="in stock" />
 
-        {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={selectedProduct.twitterTitle || selectedProduct.metatittles || `${selectedProduct.Productname} | Metaguise`} />
         <meta name="twitter:description" content={selectedProduct.twitterDescription || selectedProduct.metadescription || selectedProduct.description} />
         <meta name="twitter:image" content={selectedProduct.twitterImage || selectedProduct.ogImage || getProductOgImage()} />
         <meta name="twitter:url" content={`https://metaguise.com/all-products/${productName}`} />
 
-        {/* Product Schema */}
         <script type="application/ld+json">
           {JSON.stringify(productSchema)}
         </script>
       </Helmet>
-      
+
       <div className="row">
         <div className="col-12">
           <BackButton navigate={navigate} />
@@ -290,7 +324,6 @@ const SingleProduct = () => {
   );
 };
 
-// Rest of your components remain exactly the same...
 const BackButton = ({ navigate }) => {
   return (
     <button onClick={() => navigate("/all-products")} className="back-button">

@@ -6,15 +6,17 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import Footer from "../../components/Footer";
 import "./SingleProject.css";
-import { SingleprojectDetail } from "../../utils/constants";
-import { Helmet } from "react-helmet-async"; 
-import { FaPlay } from "react-icons/fa";
+// SingleprojectDetail used to be a static import (~213 KB in every bundle).
+// It's now fetched on demand from /data/projects/<slug>.json.
 import { ProjectImages } from "../../utils/constants";
+import { fetchProjectBySlug, fetchProjectsIndex } from "../../utils/fetchProjectData";
+import { Helmet } from "react-helmet-async";
+import { FaPlay } from "react-icons/fa";
 
 const SingleProject = () => {
   const navigate = useNavigate();
   const { projectName } = useParams();
-  
+
   // ✅ ALL HOOKS MUST BE CALLED BEFORE ANY CONDITIONAL RETURN
   const [clickedIndex, setClickedIndex] = useState(null);
   const [contentToRender, setContentToRender] = useState([]);
@@ -27,20 +29,58 @@ const SingleProject = () => {
   const [showTimeDropdown, setShowTimeDropdown] = useState(false);
   const [activeButton, setActiveButton] = useState(null);
 
-  // Find project by URL slug
-  const selectedProject = SingleprojectDetail.find(
-    (item) => item.url?.toLowerCase() === projectName?.toLowerCase()
-  );
+  // Project data now comes from a fetch, not a static import
+  const [project, setProject] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
 
-  // If project not found by URL, try to find by name (for backward compatibility)
-  const fallbackProject = !selectedProject && SingleprojectDetail.find(
-    (item) => item.name?.toLowerCase().replace(/\s+/g, '-') === projectName?.toLowerCase()
-  );
+  // Fetch the project by URL slug. Falls back to searching by name (for old-format
+  // links) using the lightweight index, then redirects to the canonical URL.
+  useEffect(() => {
+    let cancelled = false;
+    setIsLoading(true);
+    setNotFound(false);
+    setProject(null);
 
-  // Use the found project (either by URL or fallback)
-  const project = selectedProject || fallbackProject;
+    const slug = projectName?.toLowerCase();
 
-  // Generate project-specific meta keywords
+    fetchProjectBySlug(slug)
+      .then((data) => {
+        if (!cancelled) {
+          setProject(data);
+          setIsLoading(false);
+        }
+      })
+      .catch(() => {
+        fetchProjectsIndex()
+          .then((index) => {
+            const match = index.find(
+              (item) => item.name?.toLowerCase().replace(/\s+/g, "-") === slug
+            );
+            if (!match) {
+              if (!cancelled) {
+                setNotFound(true);
+                setIsLoading(false);
+              }
+              return;
+            }
+            if (!cancelled) {
+              navigate(`/all-projects/${match.url}`, { replace: true });
+            }
+          })
+          .catch(() => {
+            if (!cancelled) {
+              setNotFound(true);
+              setIsLoading(false);
+            }
+          });
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [projectName, navigate]);
+
   const generateMetaKeywords = () => {
     const baseKeywords = [
       "metal facade",
@@ -51,7 +91,7 @@ const SingleProject = () => {
       "facade project",
       "architectural project"
     ];
-    
+
     const projectSpecificKeywords = project?.metaKeywords || [
       project?.Projectname,
       `${project?.Projectname} metal facade`,
@@ -64,66 +104,52 @@ const SingleProject = () => {
       "custom metal facade project",
       "parametric architecture project"
     ];
-    
+
     return [...baseKeywords, ...projectSpecificKeywords].join(", ");
   };
 
-  // Get project image for OG tag (first image from project images or cover image)
   const getProjectOgImage = () => {
     if (project?.images && project.images.length > 0) {
       const firstImage = typeof project.images[0] === 'string' ? project.images[0] : project.images[0].src;
       return `https://metaguise.com/${firstImage}`;
     }
-    
-    // Try to find cover image
+
     const normalizeName = (name) => name?.toLowerCase().replace(/[^a-z0-9]/gi, '') || '';
     const coverImage = ProjectImages?.find(
       (img) => normalizeName(img.imgPath).includes(normalizeName(project?.name))
     );
-    
+
     if (coverImage) {
       return `https://metaguise.com/${coverImage.imgPath}`;
     }
-    
+
     return "https://metaguise.com/default-project-image.jpg";
   };
 
-  // Redirect to correct URL if using old format
-  useEffect(() => {
-    if (project && !selectedProject && fallbackProject) {
-      // Redirect to the correct URL format using the url field
-      navigate(`/all-projects/${project.url}`, { replace: true });
-    }
-  }, [project, selectedProject, fallbackProject, navigate]);
-
   const handleImageClick = (index) => {
     setClickedIndex(clickedIndex === index ? null : index);
-  
-    // Scroll entire page to top
+
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: "smooth",
     });
-  
-    // Optional: Also prevent #products-grid from overriding the scroll
+
     document.getElementById("product-grid")?.scrollTo({
       top: 0,
       left: 0,
       behavior: "smooth",
     });
   };
-  
+
   const handleButtonClick = (index) => {
     setActiveButton(activeButton === index ? null : index);
   };
 
-  // Extract categories from image paths
   const categories = Array.from(
     new Set(
       project?.images
         ?.map((item) => {
-          // Check if item is an object or string
           const path = typeof item === 'string' ? item : item.src;
           return path.split("/")[4] !== "night"
             ? path.split("/")[4]?.toLowerCase()
@@ -159,17 +185,17 @@ const SingleProject = () => {
 
   const toggleTheme = () => {
     setDarkMode(!darkMode);
-    setSelectedCategory(""); // Reset category filter when switching modes
+    setSelectedCategory("");
   };
 
   useEffect(() => {
     if (!project) return;
-    
+
     const nightImages = project.images?.filter((item) => {
       const path = typeof item === 'string' ? item : item.src;
       return path.split("/")[4] === "night";
     }) || [];
-  
+
     if (darkMode && nightImages.length === 0) {
       setContentToRender([]);
     } else {
@@ -192,21 +218,33 @@ const SingleProject = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // ✅ Now the conditional return (after all hooks)
-  if (!project) {
+  // ✅ Now the conditional returns (after all hooks)
+  if (isLoading) {
+    return (
+      <div className="container main-container">
+        <div className="row">
+          <div className="col-12 text-center py-5">
+            <p>Loading project...</p>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (notFound || !project) {
     return (
       <div className="container main-container">
         <div className="row">
           <div className="col-12 text-center py-5">
             <h2>Project not found</h2>
-            <button 
-              onClick={() => navigate("/all-projects")} 
+            <button
+              onClick={() => navigate("/all-projects")}
               className="back-button mt-3"
             >
               <span className="arrow">&larr; Back to Projects</span>
@@ -218,7 +256,6 @@ const SingleProject = () => {
     );
   }
 
-  // Project-specific Schema
   const projectSchema = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
@@ -254,16 +291,13 @@ const SingleProject = () => {
   return (
     <div className="container main-container">
       <Helmet>
-        {/* Basic Meta Tags */}
         <title>{project.metatittles || `${project.Projectname} | Premium Metal Facade Project | Metaguise`}</title>
         <meta name="description" content={project.metadescription || project.description || `Explore ${project.Projectname} - a stunning architectural metal facade project by Metaguise, India's leading facade specialist.`} />
         <meta name="keywords" content={generateMetaKeywords()} />
         <meta name="robots" content="index, follow" />
-        
-        {/* Canonical URL using the url field */}
+
         <link rel="canonical" href={`https://metaguise.com/all-projects/${project.url}/`} />
 
-        {/* Open Graph / Facebook Meta Tags */}
         <meta property="og:type" content="article" />
         <meta property="og:title" content={project.ogTitle || project.metatittles || `${project.Projectname} | Architectural Metal Facade Project | Metaguise`} />
         <meta property="og:description" content={project.ogDescription || project.metadescription || project.description || `Discover ${project.Projectname} - a masterpiece of parametric metal facade design by Metaguise.`} />
@@ -278,7 +312,6 @@ const SingleProject = () => {
         <meta property="article:author" content="Metaguise" />
         <meta property="article:section" content="Architectural Projects" />
 
-        {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={project.twitterTitle || project.metatittles || `${project.Projectname} | Metaguise Metal Facade Project`} />
         <meta name="twitter:description" content={project.twitterDescription || project.metadescription || project.description || `Explore ${project.Projectname} - an exceptional metal facade project by Metaguise.`} />
@@ -287,12 +320,11 @@ const SingleProject = () => {
         <meta name="twitter:site" content="@metaguise" />
         <meta name="twitter:creator" content="@metaguise" />
 
-        {/* PROJECT SCHEMA FOR AI & SEARCH */}
         <script type="application/ld+json">
           {JSON.stringify(projectSchema)}
         </script>
       </Helmet>
-      
+
       <div className="row">
         <div className="col-12">
           <BackButton navigate={navigate} />
@@ -311,7 +343,7 @@ const SingleProject = () => {
             />
           )}
         </div>
-        
+
         <div className="col-9 xs-12">
           <ImageGrid
             filteredImages={filteredImages}
@@ -325,7 +357,7 @@ const SingleProject = () => {
             setDarkMode={setDarkMode}
           />
         </div>
-        
+
         <Sidebar
           selectedProject={project}
           categories={categories}
@@ -338,7 +370,7 @@ const SingleProject = () => {
           youtubeLink={project.youtubeLink}
           instagramLink={project.instagramLink}
         />
-        
+
         {isMobile && <BuildButton />}
       </div>
       <Footer />
@@ -527,7 +559,7 @@ const Sidebar = ({
         style={{ marginBottom: "10px" }}
       >
         <h4 className="mb-3">Filter by Products</h4>
-        
+
         <ListGroup variant="flush">
           <ListGroup.Item
             action
@@ -555,7 +587,7 @@ const Sidebar = ({
           ))}
         </ListGroup>
       </div>
-      
+
       <div className={darkMode ? "dark-mode" : "light-mode"}>
         <div className="header-container">
           <p className="time-text">Time</p>
@@ -575,7 +607,7 @@ const Sidebar = ({
           </div>
         </div>
       </div>
-      
+
       <div className="button-row" style={{ padding: "5px" }}>
         <Button
           icon={<FaYoutube />}
@@ -590,7 +622,7 @@ const Sidebar = ({
           active={activeButton === 1}
         />
       </div>
-      
+
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
         <button id="build-button" className="hover-button">
           <span>Build Your Dream</span>
@@ -621,7 +653,6 @@ const ImageGrid = ({
     setDarkMode(false);
   };
 
-  // Calculate the starting index for filtered images
   const getStartingIndex = () => {
     let index = 0;
     if (!darkMode && videoLink) index += 1;
@@ -663,13 +694,11 @@ const ImageGrid = ({
           )}
 
           {filteredImages.map((imageObj, index) => {
-            // Calculate the actual index in the grid
             const gridIndex = getStartingIndex() + index;
-            
-            // Handle both string and object image types
+
             const imageSrc = typeof imageObj === 'string' ? imageObj : imageObj.src;
-            const imageAlt = typeof imageObj === 'object' && imageObj.alt 
-              ? imageObj.alt 
+            const imageAlt = typeof imageObj === 'object' && imageObj.alt
+              ? imageObj.alt
               : `${selectedProject?.Projectname} - Architectural view ${index + 1}`;
 
             return (
@@ -725,7 +754,7 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
             alt="YouTube Video Thumbnail"
             className="grid-image"
-            loading="lazy" 
+            loading="lazy"
           />
           <div className="play-icon">
             <FaPlay size={40} color="white" />
@@ -737,9 +766,8 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
 };
 
 const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, altText, projectName }) => {
-  // Ensure the image path is correct
   const imagePath = image?.startsWith('/') ? image : `/${image}`;
-  
+
   return (
     <div
       className={`grid-item ${isLastRow(index) ? "last-row" : ""} ${
@@ -751,7 +779,7 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, altTex
         src={`${process.env.PUBLIC_URL}${imagePath}`}
         className="grid-image"
         alt={altText || `${projectName} - Architectural detail view`}
-        loading="lazy" 
+        loading="lazy"
       />
     </div>
   );

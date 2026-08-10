@@ -5,7 +5,10 @@ import { useLocation } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 import Footer from "../../components/Footer";
 import "./Allprojects.css";
-import { SingleprojectDetail } from "../../utils/constants";
+// SingleprojectDetail used to be a static import (~213 KB in every bundle).
+// The listing page only ever needed name/url/Projectname, so it now fetches
+// the lightweight projects index instead.
+import { fetchProjectsIndex } from "../../utils/fetchProjectData";
 import { ProjectImages as images } from "../../utils/constants";
 import { Helmet } from "react-helmet-async";
 
@@ -15,9 +18,27 @@ const Allprojects = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("");
 
+  // Lightweight index (name, url, Projectname, meta only) — replaces the
+  // old full-detail SingleprojectDetail static import.
+  const [projectsIndex, setProjectsIndex] = useState([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetchProjectsIndex()
+      .then((data) => {
+        if (!cancelled) setProjectsIndex(data);
+      })
+      .catch(() => {
+        if (!cancelled) setProjectsIndex([]);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
 const projectClickHandler = (img) => {
   const selectedSubProjectCat = img.imgPath.split("/")[3].toLowerCase();
-  const selectedProject = SingleprojectDetail.find(
+  const selectedProject = projectsIndex.find(
     (item) => item.name.toLowerCase() === selectedSubProjectCat
   );
 
@@ -40,10 +61,10 @@ const projectClickHandler = (img) => {
       )
     : images;
 
-  // Function to get project name and url from SingleprojectDetail
+  // Function to get project name and url from the projects index
   const getProjectInfo = (imgPath) => {
     const imgName = imgPath.split("/")[3].toLowerCase();
-    const project = SingleprojectDetail.find(
+    const project = projectsIndex.find(
       (item) => item.name.toLowerCase() === imgName
     );
     return {
