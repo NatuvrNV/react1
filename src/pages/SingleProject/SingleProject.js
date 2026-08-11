@@ -424,6 +424,8 @@ const MobileControls = ({
   );
 };
 
+// Mobile-only top label — kept as h3, since the true page H1 lives in the
+// Sidebar below (that one's always in the DOM regardless of viewport).
 const ProjectHeader = ({ selectedProject }) => {
   return (
     <div className="col-12 single-head mb-3 px-3">
@@ -549,10 +551,14 @@ const Sidebar = ({
 }) => {
   return (
     <div className="col-md-3 col-sm-12 sidebar-section pe-md-4 ">
-      <h3 style={{ fontWeight: "bold" }}>
+      {/* ✅ Task 3 — real H1. This wrapper is always in the DOM (mobile CSS
+          only resizes it, never hides it), so it's safe to be the page's
+          single H1 regardless of viewport. Style unchanged — still inline
+          fontWeight: "bold", just a different tag. */}
+      <h1 style={{ fontWeight: "bold" }}>
         {selectedProject.Projectname.charAt(0).toUpperCase() +
           selectedProject.Projectname.slice(1)}
-      </h3>
+      </h1>
       <div
         id="single-sidebar"
         className="sidebar p-4 bg-darkrounded "

@@ -61,14 +61,21 @@ const projectClickHandler = (img) => {
       )
     : images;
 
-  // Function to get project name and url from the projects index
+  // ✅ Task 2 fix — get project name and url from the projects index, but
+  // fall back to the real folder name from imgPath (e.g. "Miraj Stadium")
+  // instead of the literal string "Project". The folder name is already
+  // baked into constants.js and available synchronously on first render,
+  // so cards show real names immediately even before projectsIndex loads
+  // (or if that fetch is slow/fails) — this is what was causing names to
+  // disappear from the rendered DOM.
   const getProjectInfo = (imgPath) => {
     const imgName = imgPath.split("/")[3].toLowerCase();
+    const folderName = imgPath.split("/")[3]; // e.g. "Miraj Stadium" — already readable
     const project = projectsIndex.find(
       (item) => item.name.toLowerCase() === imgName
     );
     return {
-      name: project ? project.Projectname : "Project",
+      name: project ? project.Projectname : folderName,
       url: project?.url || imgName // Use url if available, fallback to imgName
     };
   };
@@ -178,14 +185,20 @@ const projectClickHandler = (img) => {
                       onClick={() => projectClickHandler(img)}
                     >
                       <div className="hover-effect">
+                        {/* ✅ Task 2 — real name-based alt text (falls back to
+                            constants.js per-image alt if present), and
+                            width/height to prevent layout shift (Task 10) */}
                         <img
                           src={`${process.env.PUBLIC_URL}/${img.imgPath}`}
-                          alt={`${projectInfo.name} - Project thumbnail`}
+                          alt={img.alt || `${projectInfo.name} facade by Metaguise`}
+                          width={640}
+                          height={480}
                           loading="lazy"
                         />
                       </div>
-                      {/* Add the image text that shows on hover */}
-                      <div className="image-text">{projectInfo.name}</div>
+                      {/* ✅ Task 2 — real heading instead of a bare div, so the
+                          project name is real, semantic text in the DOM */}
+                      <h3 className="image-text">{projectInfo.name}</h3>
                     </div>
                   );
                 })}

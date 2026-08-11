@@ -138,6 +138,24 @@ const noscriptContent = `
 </div>
 `;
 
+// ✅ Task 1 fix — real H1, rendered in the actual DOM (not noscript-only)
+// Visually hidden via .sr-only so it doesn't fight the hero slider's own
+// marketing copy, but it's real text in the rendered HTML that Googlebot
+// (and every other crawler) sees after JS runs.
+function HomeIntro() {
+  return (
+    <section className="home-intro sr-only">
+      <h1>Metaguise — India's Leading Metal Facade Company</h1>
+      <p>
+        Metaguise is India's premier metal facade specialist based in Gurugram, Haryana.
+        We design and install luxury parametric metal facades, architectural cladding,
+        and custom metal elevations for residential and commercial buildings across India.
+        1800+ projects delivered pan-India since 2019.
+      </p>
+    </section>
+  );
+}
+
 function Home() {
   return (
     <div className='Home'>
@@ -181,6 +199,9 @@ function Home() {
 
       {/* ✅ Fixed noscript */}
       <noscript dangerouslySetInnerHTML={{ __html: noscriptContent }} />
+
+      {/* ✅ Task 1 — real H1, rendered in the DOM */}
+      <HomeIntro />
 
       <Swipper />
      

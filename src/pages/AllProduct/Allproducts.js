@@ -163,13 +163,17 @@ function productClickHandler(img) {
                     onClick={() => productClickHandler(img)}
                   >
                     <div className="hover-effect">
+                      {/* ✅ Task 2 — width/height added to prevent layout shift (Task 10) */}
                       <img
                         src={`${process.env.PUBLIC_URL}/${img.imgPath}`}
                         alt={img.imgText}
+                        width={640}
+                        height={480}
                         loading="lazy"
                       />
                     </div>
-                    <div className="image-text">{img.imgText}</div>
+                    {/* ✅ Task 2 — real heading instead of a bare div */}
+                    <h3 className="image-text">{img.imgText}</h3>
                   </div>
                 ))}
               </div>

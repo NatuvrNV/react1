@@ -20,17 +20,19 @@
   left: 10px;
   color: white;
   padding: 5px 10px;
-  font-size: 1em;
+  font-size: 21px;
   border-radius: 4px;
-  display: none;
   width: 90%;
   text-align: left;
   text-transform: capitalize;
+  opacity: 0;
   
+  transition: opacity 0.3s ease;
 }
 
 .gallery-item:hover .image-text {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (min-width: 1920px){
@@ -177,15 +179,17 @@
   padding: 5px 10px;
   font-size: 21px;
   border-radius: 4px;
-  display: none;
   width: 90%;
   text-align: left;
   text-transform: capitalize;
- 
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
 }
 
 .gallery-item:hover .image-text {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* For Webkit Browsers (Chrome, Safari, Edge) */
