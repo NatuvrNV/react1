@@ -275,7 +275,7 @@ const Features = () => {
           </div>
 
           <div className="featured-project-link">
-            <a href="/projects">
+            <a href="/projects/">
               See All Projects
             </a>
           </div>

@@ -21,27 +21,27 @@ function Drawer({ isOpen, toggleDrawer }) {
               <Nav.Link className="text-white" href="/">
                 Home
               </Nav.Link>
-              <Nav.Link className="text-white" href="/about">
+              <Nav.Link className="text-white" href="/about/">
                 About Us
               </Nav.Link>
               <Nav.Link className="text-white" href="/all-products">
                 Our Products
               </Nav.Link>
-              <Nav.Link className="text-white" href="/all-projects">
+              <Nav.Link className="text-white" href="/all-projects/">
                 Our Projects
               </Nav.Link>
-              <Nav.Link className="text-white" href="/partner">
+              <Nav.Link className="text-white" href="/partner/">
                 Partner With Us
               </Nav.Link>
-              <Nav.Link className="text-white" href="/contact">
+              <Nav.Link className="text-white" href="/contact/">
                 Get In Touch
               </Nav.Link>
        
-            <Nav.Link className="text-white" href="/build">
+            <Nav.Link className="text-white" href="/build/">
                 Build Your Facade
               </Nav.Link>
             
-               <Nav.Link className="text-white" href="/blogs">
+               <Nav.Link className="text-white" href="/blogs/">
                 Blogs
               </Nav.Link>
             </Nav>
@@ -209,11 +209,11 @@ function Drawer({ isOpen, toggleDrawer }) {
                 <div>
                   <h5 className="nav-haeding">Legal</h5>
                   <p id="Privacy" className="nav-text">
-                    <Nav.Link className="text-black" href="/privacy-policy">
+                    <Nav.Link className="text-black" href="/privacy-policy/">
                       Privacy Policy
                     </Nav.Link>
                     | 
-                    <Nav.Link className="text-black" href="/terms-conditions">
+                    <Nav.Link className="text-black" href="/terms-conditions/">
                       Terms & Conditions
                     </Nav.Link>
                   </p>

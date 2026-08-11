@@ -115,8 +115,14 @@ function productClickHandler(img) {
       <div className="gallery-content">
         <Container fluid>
           <Row>
+            {/* FIX (Yash task 3): this used to be a second <h1>, duplicating
+                the one in the desktop sidebar below. Both exist in the DOM
+                at once — CSS only ever hides one visually, so Google still
+                counted two H1s on this page. Downgraded to <h2>; the
+                desktop-title one remains the page's single real <h1>. The
+                CSS class is unchanged so it still looks identical on mobile. */}
             <div className="mobile-title">
-              <h1>Our Products</h1>
+              <h2>Our Products</h2>
             </div>
             <Col md={9}>
               {isMobile && (
@@ -179,6 +185,7 @@ function productClickHandler(img) {
               </div>
             </Col>
             <Col md={2} className="mb-3">
+              {/* This is now the page's single H1. Unchanged. */}
               <h1 className="desktop-title mb-3">Our Products</h1>
 
               <div className="sidebar">
@@ -202,7 +209,7 @@ function productClickHandler(img) {
                   ))}
                 </ListGroup>
               </div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
+              <a href="/build/">
                 <button id="build-button" className="hover-button">
                   <span>Build Your Dream</span>
                 </button>

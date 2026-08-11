@@ -97,10 +97,10 @@ const Product = () => {
                     onMouseLeave={handleMouseLeave}
                     className="product-card tw-cursor-pointer"
                   >
-                    <img src={product.image} alt={product.alt} className="product-image" loading="lazy" />
+                    <img src={product.image} alt={product.alt} className="product-image" loading="lazy" width={400} height={400} />
                     <p className="font tw-flex tw-justify-center tw-items-center">
                       <span className="font-span">{product.name}</span>
-                      <img src={Arrow} alt="arrow" className="arrow-icon" />
+                      <img src={Arrow} alt="arrow" className="arrow-icon" width={24} height={24} />
                     </p>
                   </div>
                 </Link>
@@ -115,10 +115,10 @@ const Product = () => {
             {products.map((product) => (
               <Link key={product.id} to={`/all-products/${product.slug}`} className="slider-item">
                 <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="product-card tw-cursor-pointer">
-                 <img src={product.image} alt={product.alt} className="product-image" loading="lazy" />
+                 <img src={product.image} alt={product.alt} className="product-image" loading="lazy" width={400} height={400} />
                   <p className="font tw-flex tw-justify-center tw-items-center">
                     <span className="font-span">{product.name}</span>
-                    <img src={Arrow} alt="arrow" className="arrow-icon" />
+                    <img src={Arrow} alt="arrow" className="arrow-icon" width={24} height={24} />
                   </p>
                 </div>
               </Link>

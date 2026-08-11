@@ -29,6 +29,8 @@ const Cofee = () => {
             src={CoffeeImage}
             alt="Cover of Metaguise Odyssey book featuring a sculpted metallic wing motif in bronze tones."
             loading="lazy"
+            width={500}
+            height={650}
           />
         </div>
       </main>

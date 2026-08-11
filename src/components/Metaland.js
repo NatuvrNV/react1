@@ -79,7 +79,7 @@ const Metaland = () => {
                 }
               ].map(({ img, text, alt }, index) => (
                 <div key={index} className="col-4 d-flex align-items-center meta-box">
-                  <img src={img} alt={alt} className="w-full meta-icon" loading="lazy" />
+                  <img src={img} alt={alt} className="w-full meta-icon" loading="lazy" width={64} height={64} />
                   <p className="text-sm mt-2 img-text">{text}</p>
                 </div>
               ))}

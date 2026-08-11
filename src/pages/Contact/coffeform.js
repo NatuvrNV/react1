@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Form, Alert } from "react-bootstrap";
 import Footer from "../../components/Footer";
@@ -80,6 +79,52 @@ const Contact = ({ brochureName }) => {
       url: "https://metaguise.com/ctb/",
     },
   };
+
+  /*
+   * ============================================================
+   * H1 / H2 CONFIGURATION (Yash task 5)
+   * ============================================================
+   *
+   * These pages shipped with 0 H1 and 0 H2. This also fixes the
+   * duplicate-content pattern: the four brochure pages share one
+   * template, so a real H1 (product name) plus an H2 that says
+   * what's distinct about that product is what makes each page's
+   * content genuinely different, not just the brand name swapped
+   * into the same paragraph.
+   */
+
+  const headingConfig = {
+    "/metasurface": {
+      h1: "MetaSurface",
+      h2: "Premium Finishes & Coating Systems by Metaguise",
+    },
+
+    "/metaparametric": {
+      h1: "MetaParametric",
+      h2: "Algorithmic Facade Design by Metaguise",
+    },
+
+    "/metaform": {
+      h1: "MetaForm",
+      h2: "Sculptural Metal Facade Collection by Metaguise",
+    },
+
+    "/metafunction": {
+      h1: "MetaFunction",
+      h2: "Performance-Driven Metal Facade Systems by Metaguise",
+    },
+
+    "/ctb": {
+      h1: "The Metaguise Coffee Table Book",
+      h2: "Odyssey",
+    },
+  };
+
+  const currentHeadings =
+    headingConfig[normalizedPath] || {
+      h1: detectedBrochure,
+      h2: "",
+    };
 
   /*
    * ============================================================
@@ -720,6 +765,40 @@ const Contact = ({ brochureName }) => {
             className="contact-left d-flex flex-column justify-content-center gap-4"
           >
 
+            <h1
+              style={{
+                position: "absolute",
+                width: "1px",
+                height: "1px",
+                padding: 0,
+                margin: "-1px",
+                overflow: "hidden",
+                clip: "rect(0,0,0,0)",
+                whiteSpace: "nowrap",
+                border: 0,
+              }}
+            >
+              {currentHeadings.h1}
+            </h1>
+
+            {currentHeadings.h2 && (
+              <h2
+                style={{
+                  position: "absolute",
+                  width: "1px",
+                  height: "1px",
+                  padding: 0,
+                  margin: "-1px",
+                  overflow: "hidden",
+                  clip: "rect(0,0,0,0)",
+                  whiteSpace: "nowrap",
+                  border: 0,
+                }}
+              >
+                {currentHeadings.h2}
+              </h2>
+            )}
+
             <div className="contactus1-text">
 
               <p>
@@ -985,4 +1064,3 @@ const Contact = ({ brochureName }) => {
 };
 
 export default Contact;
-

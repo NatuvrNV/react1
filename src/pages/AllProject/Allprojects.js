@@ -127,8 +127,14 @@ const projectClickHandler = (img) => {
       <div className="gallery-content">
         <Container fluid>
           <Row>
+            {/* FIX (Yash task 3): this used to be a second <h1>, duplicating
+                the one in the desktop sidebar below. Both exist in the DOM
+                at once — CSS only ever hides one visually, so Google still
+                counted two H1s on this page. Downgraded to <h2>; the
+                desktop-title one remains the page's single real <h1>. The
+                CSS class is unchanged so it still looks identical on mobile. */}
             <div className="mobile-title">
-              <h1>Our Projects</h1>
+              <h2>Our Projects</h2>
             </div>
             <Col lg={9} md={8}>
               {isMobile && (
@@ -205,6 +211,7 @@ const projectClickHandler = (img) => {
               </div>
             </Col>
             <Col lg={2} md={4} className="mb-4">
+              {/* This is now the page's single H1. Unchanged. */}
               <h1 className="desktop-title mb-3">Our Projects</h1>
               <div className="sidebar">
                 <h4 className="mb-3">Filter by Type</h4>
@@ -248,11 +255,7 @@ const projectClickHandler = (img) => {
                   </ListGroup.Item>
                 </ListGroup>
               </div>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/build/">
                 <button id="build-button" className="hover-button">
                   <span>Build Your Dream</span>
                 </button>

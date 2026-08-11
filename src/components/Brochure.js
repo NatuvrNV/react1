@@ -73,6 +73,8 @@ const Brochure = () => {
                     alt={item.alt}
                     className="img-fluid"
                     loading="lazy"
+                    width={600}
+                    height={800}
                   />
                 </LazyLoad>
                 <div className="brochure-overlay">

@@ -10,6 +10,23 @@ import emailjs from '@emailjs/browser';
 // Initialize EmailJS with your public key
 emailjs.init("aEASMHR8n6Vmgtj3l"); // Using your actual public key
 
+// FIX (Yash task 3): no H1 existed on this page — the headline is stacked
+// decorative <p> tags. Rather than retype those as <h1> and risk breaking
+// the layout (as happened on the product pages), this adds a real but
+// visually hidden <h1> using the sr-only pattern the plan itself specifies
+// for the homepage fix. NOT display:none, which Google discounts.
+const srOnlyStyle = {
+  position: "absolute",
+  width: "1px",
+  height: "1px",
+  padding: 0,
+  margin: "-1px",
+  overflow: "hidden",
+  clip: "rect(0,0,0,0)",
+  whiteSpace: "nowrap",
+  border: 0,
+};
+
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -286,6 +303,11 @@ const Contact = () => {
             md={6}
             className="d-flex flex-column justify-content-center"
           >
+            {/* FIX (Yash task 3): the page's single H1. Rendered once here,
+                outside the desktop/mobile split below, so it's never
+                duplicated regardless of viewport. Visually hidden — the
+                decorative headline underneath is unchanged. */}
+            <h1 style={srOnlyStyle}>Contact Metaguise</h1>
             <div className="contact-left d-flex align-items-center justify-content-center gap-4">
               <div id="contact-desktop" className="contactus-text">
                 <p>We'd Love</p>

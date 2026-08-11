@@ -5,6 +5,24 @@ import "./build.css";
 import PhoneInput from "react-phone-input-2";
 import { Helmet } from "react-helmet-async";
 
+// FIX (Yash task 3 / task 5): no H1 existed on this page — the headline is
+// stacked decorative <p> tags. Rather than retype those as <h1> and risk
+// breaking the layout (as happened on the product pages), this adds a real
+// but visually hidden <h1> using the sr-only pattern the plan specifies for
+// the homepage fix. NOT display:none, which Google discounts. Text is
+// Rishi's H1 copy for /build/ from the how-to sheet ("Build Your Facade").
+const srOnlyStyle = {
+  position: "absolute",
+  width: "1px",
+  height: "1px",
+  padding: 0,
+  margin: "-1px",
+  overflow: "hidden",
+  clip: "rect(0,0,0,0)",
+  whiteSpace: "nowrap",
+  border: 0,
+};
+
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -336,6 +354,10 @@ const Contact = () => {
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">
           <Col md={6} className="contact-left d-flex flex-column justify-content-center gap-4">
+            {/* FIX (Yash task 3 / task 5): the page's single H1 + H2. Visually
+                hidden so the decorative headline below is unchanged. */}
+            <h1 style={srOnlyStyle}>Build Your Facade</h1>
+            <h2 style={srOnlyStyle}>Get a Free Metaguise Consultation</h2>
             <div className="contactus1-text">
               <p>Thank you for</p>
               <p>showing interest</p>

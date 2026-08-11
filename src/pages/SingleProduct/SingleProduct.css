@@ -25,10 +25,11 @@
   
 }
 
-#single-text h1 {
+#single-text p {
   line-height: 23px;
   padding: 6px 15px;
   letter-spacing: 0.03em;
+  text-align: left;
 }
 
 .single-product-footer {

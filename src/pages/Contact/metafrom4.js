@@ -52,6 +52,38 @@ const Contact = ({ brochureName }) => {
     pageBrochureMap[normalizedPath] || brochureName || "Unknown";
 
   /*
+   * H1 / H2 copy (Yash task 5). Product name as H1, differentiator
+   * as H2 — this is what makes each of the four brochure pages
+   * genuinely different content instead of the same template with
+   * the brand name swapped in.
+   */
+  const headingMap = {
+    "/metasurface": {
+      h1: "MetaSurface",
+      h2: "Premium Finishes & Coating Systems by Metaguise",
+    },
+    "/metaparametric": {
+      h1: "MetaParametric",
+      h2: "Algorithmic Facade Design by Metaguise",
+    },
+    "/metaform": {
+      h1: "MetaForm",
+      h2: "Sculptural Metal Facade Collection by Metaguise",
+    },
+    "/metafunction": {
+      h1: "MetaFunction",
+      h2: "Performance-Driven Metal Facade Systems by Metaguise",
+    },
+    "/ctb": {
+      h1: "The Metaguise Coffee Table Book",
+      h2: "Odyssey",
+    },
+  };
+
+  const currentHeadings =
+    headingMap[normalizedPath] || { h1: detectedBrochure, h2: "" };
+
+  /*
    * Debugging
    */
   console.log("Original pathname:", location.pathname);
@@ -605,6 +637,40 @@ const Contact = ({ brochureName }) => {
             md={6}
             className="contact-left d-flex flex-column justify-content-center gap-4"
           >
+            <h1
+              style={{
+                position: "absolute",
+                width: "1px",
+                height: "1px",
+                padding: 0,
+                margin: "-1px",
+                overflow: "hidden",
+                clip: "rect(0,0,0,0)",
+                whiteSpace: "nowrap",
+                border: 0,
+              }}
+            >
+              {currentHeadings.h1}
+            </h1>
+
+            {currentHeadings.h2 && (
+              <h2
+                style={{
+                  position: "absolute",
+                  width: "1px",
+                  height: "1px",
+                  padding: 0,
+                  margin: "-1px",
+                  overflow: "hidden",
+                  clip: "rect(0,0,0,0)",
+                  whiteSpace: "nowrap",
+                  border: 0,
+                }}
+              >
+                {currentHeadings.h2}
+              </h2>
+            )}
+
             <div className="contactus1-text">
               <p>Thank you for</p>
 

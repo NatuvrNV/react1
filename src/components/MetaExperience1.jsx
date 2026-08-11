@@ -95,7 +95,7 @@ const MetaExperience1 = () => {
      
       <button id="about-button" className="hover-button" aria-label="See all projects" onClick={() => {
     window.scrollTo(0, 0); // Scroll to top
-    navigate("/contact"); }}>
+    navigate("/contact/"); }}>
         <span>Get In Touch</span>
       </button>
      

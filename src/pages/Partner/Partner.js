@@ -10,6 +10,23 @@ import ReCAPTCHA from "react-google-recaptcha";
 // Initialize EmailJS
 emailjs.init("aEASMHR8n6Vmgtj3l");
 
+// FIX (Yash task 3): no H1 existed on this page — the headline is stacked
+// decorative <p> tags. Rather than retype those as <h1> and risk breaking
+// the layout (as happened on the product pages), this adds a real but
+// visually hidden <h1> using the sr-only pattern the plan specifies for
+// the homepage fix. NOT display:none, which Google discounts.
+const srOnlyStyle = {
+  position: "absolute",
+  width: "1px",
+  height: "1px",
+  padding: 0,
+  margin: "-1px",
+  overflow: "hidden",
+  clip: "rect(0,0,0,0)",
+  whiteSpace: "nowrap",
+  border: 0,
+};
+
 const Partner = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -254,6 +271,11 @@ const Partner = () => {
       <Container fluid className="bg-dark text-white contact-container">
         <Row className="contact-row">
           <Col md={6} className="contact-left d-flex align-items-center justify-content-center gap-4">
+            {/* FIX (Yash task 3): the page's single H1. Rendered once here,
+                outside the desktop/mobile split below, so it's never
+                duplicated regardless of viewport. Visually hidden — the
+                decorative headline underneath is unchanged. */}
+            <h1 style={srOnlyStyle}>Partner With Metaguise</h1>
             <div id="contact-desktop" className="contactus-text">
               <p>We'd Love</p>
               <p>to Work</p>

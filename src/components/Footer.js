@@ -31,14 +31,14 @@ const Footer = () => {
           {/* Home Links */}
           <div className="tw-text-base tw-flex tw-flex-col tw-items-center md:tw-items-start tw-text-center md:tw-text-right footer-links ">
             <a href="/">Home</a>
-            <a href="/all-projects">Projects</a>
-            <a href="/all-products">Products</a>
+            <a href="/all-projects/">Projects</a>
+            <a href="/all-products/">Products</a>
           </div>
           {/* About Links */}
           <div className="tw-text-base tw-flex tw-flex-col tw-items-center md:tw-items-start footer-links col-xl-3">
-            <a href="/about">About Us</a>
-            <a href="/contact">Talk to Us</a>
-            <a href="/partner">Partner With Us</a>
+            <a href="/about/ ">About Us</a>
+            <a href="/contact/">Talk to Us</a>
+            <a href="/partner/">Partner With Us</a>
           </div>
           {/* Contact Links */}
           <div className="tw-flex tw-text-base tw-flex-col tw-items-center md:tw-items-start tw-gap-4 footer-links col-lg-10 col-xl-6">
@@ -106,21 +106,21 @@ const Footer = () => {
           {/* Home Links */}
           <div className="tw-text-base tw-flex tw-flex-col tw-items-center md:tw-items-start tw-text-center md:tw-text-right footer-links ">
             <a href="/">Home</a>
-            <a href="/all-projects">Projects</a>
+            <a href="/all-projects/">Projects</a>
             
           </div>
           {/* About Links */}
           <div className="tw-text-base tw-flex tw-flex-col tw-items-center md:tw-items-start footer-links col-xl-3">
-          <a href="/all-products">Products</a>
-            <a href="/about">About Us</a>
+          <a href="/all-products/">Products</a>
+            <a href="/about/">About Us</a>
             
           </div>
 
             {/* About Links */}
             <div className="tw-text-base tw-flex tw-flex-col tw-items-center md:tw-items-start footer-links col-xl-3">
             
-            <a href="/contact">Talk to Us</a>
-            <a href="/partner">Partner With Us</a>
+            <a href="/contact/">Talk to Us</a>
+            <a href="/partner/">Partner With Us</a>
           </div>
        
         </div>

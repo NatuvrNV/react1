@@ -125,7 +125,7 @@ function Header() {
         <div className="header-left-mob">
           <div className="social-icons">
             <a
-              href="https://metaguise.com/contact"
+              href="https://metaguise.com/contact/"
               className="flex items-center text-white-600"
             >
               <FaPhone size={20} className="mr-2 phone-icon" />
@@ -136,7 +136,7 @@ function Header() {
 
         <div className="header-center">
           <a href="/">
-            <img src={Logo} alt="Stylized Metaguise logo featuring interlocking geometric blocks in grayscale. Symbol of India’s premier metal façade design house with 1800+ projects, PAN India presence, and global reach; trusted by architects nationwide." className="logo" />
+            <img src={Logo} alt="Metaguise logo" className="logo" />
           </a>
         </div>
 

@@ -167,6 +167,9 @@ const Blog = () => {
                       src={`/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`}
                       alt={imageAlt}
                       className="object-cover rounded-lg"
+                      width={640}
+                      height={480}
+                      loading="lazy"
                     />
                     <div className="mx-xl-4 blog-text">
                       <h2 className="text-xl blog-title-head">{blog.title}</h2>

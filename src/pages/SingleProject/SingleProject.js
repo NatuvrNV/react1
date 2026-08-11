@@ -369,9 +369,10 @@ const SingleProject = () => {
           handleButtonClick={handleButtonClick}
           youtubeLink={project.youtubeLink}
           instagramLink={project.instagramLink}
+          projectSlug={project.url}
         />
 
-        {isMobile && <BuildButton />}
+        {isMobile && <BuildButton projectSlug={project.url} />}
       </div>
       <Footer />
     </div>
@@ -548,6 +549,7 @@ const Sidebar = ({
   handleButtonClick,
   youtubeLink,
   instagramLink,
+  projectSlug,
 }) => {
   return (
     <div className="col-md-3 col-sm-12 sidebar-section pe-md-4 ">
@@ -629,7 +631,7 @@ const Sidebar = ({
         />
       </div>
 
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
+      <a href={`/build/?project=${projectSlug}`}>
         <button id="build-button" className="hover-button">
           <span>Build Your Dream</span>
         </button>
@@ -760,6 +762,8 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
             alt="YouTube Video Thumbnail"
             className="grid-image"
+            width={480}
+            height={360}
             loading="lazy"
           />
           <div className="play-icon">
@@ -785,6 +789,8 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, altTex
         src={`${process.env.PUBLIC_URL}${imagePath}`}
         className="grid-image"
         alt={altText || `${projectName} - Architectural detail view`}
+        width={640}
+        height={480}
         loading="lazy"
       />
     </div>
@@ -803,9 +809,9 @@ const Button = ({ icon, text, onClick, active }) => {
   );
 };
 
-const BuildButton = () => {
+const BuildButton = ({ projectSlug }) => {
   return (
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
+    <a href={`/build/?project=${projectSlug}`}>
       <button id="build-button" className="mobile-controls hover-button">
         <span>Build Your Dream</span>
       </button>

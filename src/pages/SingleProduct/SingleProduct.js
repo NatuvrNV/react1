@@ -316,8 +316,9 @@ const SingleProduct = () => {
           handleButtonClick={handleButtonClick}
           youtubeLink={selectedProduct.youtubeLink}
           instagramLink={selectedProduct.instagramLink}
+          productSlug={productName}
         />
-        {isMobile && <BuildButton />}
+        {isMobile && <BuildButton productSlug={productName} />}
       </div>
       <Footer />
     </div>
@@ -365,12 +366,12 @@ const MobileControls = ({
 const ProjectHeader = ({ selectedProduct }) => {
   return (
     <div className="col-12 single-head mb-3 px-3">
-      <h3>
+      <h1>
         {selectedProduct?.Productname
           ? selectedProduct.Productname.charAt(0).toUpperCase() +
             selectedProduct.Productname.slice(1)
           : "Product"}
-      </h3>
+      </h1>
     </div>
   );
 };
@@ -441,19 +442,20 @@ const Sidebar = ({
   handleButtonClick,
   youtubeLink,
   instagramLink,
+  productSlug,
 }) => {
   return (
     <div className="col-md-3 col-sm-12 sidebar-section pe-lg-4">
-      <h3 style={{ fontWeight: "bold" }}>
+      <h1 style={{ fontWeight: "bold" }}>
         {selectedProduct.Productname.charAt(0).toUpperCase() +
           selectedProduct.Productname.slice(1)}
-      </h3>
+      </h1>
       <div
         id="single-text"
         className="sidebar p-4 bg-darkrounded tw-text-white"
       >
         <ListGroup variant="flush">
-          <h1
+          <p
             action
             variant="dark"
             style={{ fontSize: "15px" }}
@@ -480,7 +482,7 @@ const Sidebar = ({
           active={activeButton === 1}
         />
       </div>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
+      <a href={`/build/?product=${productSlug}`}>
         <button id="build-button" className="hover-button">
           <span>Build Your Dream</span>
         </button>
@@ -566,6 +568,8 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
             alt="YouTube Video Thumbnail"
             className="grid-image"
+            width={480}
+            height={360}
             loading="lazy"
           />
           <div className="play-icon">
@@ -589,6 +593,8 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
         src={`${process.env.PUBLIC_URL}/${image}`}
         className="grid-image"
         alt={`Project item ${index + 1}`}
+        width={640}
+        height={480}
         loading="lazy"
       />
     </div>
@@ -607,9 +613,9 @@ const Button = ({ icon, text, onClick, active }) => {
   );
 };
 
-const BuildButton = () => {
+const BuildButton = ({ productSlug }) => {
   return (
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1nJBRFNLm2hYrS95oZvnK-FgSOeNEUIDcbLvAl7G_7p87Sg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaY_AV6AaLgq4i2maOVBHN06Ou6PMrqaw9GdissjRbQa57VtkuRdhb2B47c_aem_5oXOIfcz7M1mEeOrTpC1bw">
+    <a href={`/build/?product=${productSlug}`}>
       <button id="build-button" className="mobile-controls hover-button">
         <span>Build Your Dream</span>
       </button>
