@@ -30,8 +30,7 @@ import FloatingButton from './components/Floatingbutton.js';
 import Login from "./pages/BackendAdmin/Login";
 import Admin from "./pages/BackendAdmin/Admin";
 import Build from './pages/Build Your Facade/build.js';
-import TWoApp from './configurator-app/TwoStepConfigurator.js';
-import ProductApp from './configurator-app/ProductConfigurator.js';
+
 
 function App() {
   return (
@@ -62,8 +61,7 @@ function App() {
             <Route path="/metavision" element={<Metavision />} />
             <Route path="/metaexperience" element={<MetaExperience />} />
             <Route path="/blog/:title" element={<SingleBlogPage />} />
-            <Route path="/app2" element={<ProductApp />} />
-            <Route path="/twostep" element={<TWoApp />} />
+          
             <Route path="/" element={<Home />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
