@@ -138,7 +138,7 @@ const Product = () => {
         className="hover-button"
         onClick={() => {
           window.scrollTo(0, 0);
-          navigate("/all-products");
+          navigate("/all-products/");
         }}
       >
         <span>See All Products</span>

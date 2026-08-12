@@ -166,7 +166,7 @@ const SingleProduct = () => {
           <div className="col-12 text-center py-5">
             <h2>Product not found</h2>
             <button
-              onClick={() => navigate("/all-products")}
+              onClick={() => navigate("/all-products/")}
               className="back-button mt-3"
             >
               <span className="arrow">&larr; Back to Products</span>
@@ -217,7 +217,7 @@ const SingleProduct = () => {
     "@type": "Product",
     name: selectedProduct.Productname,
     description: selectedProduct.metadescription || selectedProduct.description,
-    url: `https://metaguise.com/all-products/${productName}`,
+    url: `https://metaguise.com/all-products/${productName}/`,
     image: selectedProduct.images?.map(
       (img) => `https://metaguise.com/${img}`
     ),
@@ -232,7 +232,7 @@ const SingleProduct = () => {
     },
     offers: {
       "@type": "Offer",
-      url: `https://metaguise.com/all-products/${productName}`,
+      url: `https://metaguise.com/all-products/${productName}/`,
       priceCurrency: "INR",
       price: "0",
       availability: "https://schema.org/InStock",
@@ -273,7 +273,7 @@ const SingleProduct = () => {
         <meta name="twitter:title" content={selectedProduct.twitterTitle || selectedProduct.metatittles || `${selectedProduct.Productname} | Metaguise`} />
         <meta name="twitter:description" content={selectedProduct.twitterDescription || selectedProduct.metadescription || selectedProduct.description} />
         <meta name="twitter:image" content={selectedProduct.twitterImage || selectedProduct.ogImage || getProductOgImage()} />
-        <meta name="twitter:url" content={`https://metaguise.com/all-products/${productName}`} />
+        <meta name="twitter:url" content={`https://metaguise.com/all-products/${productName}/`} />
 
         <script type="application/ld+json">
           {JSON.stringify(productSchema)}
@@ -327,7 +327,7 @@ const SingleProduct = () => {
 
 const BackButton = ({ navigate }) => {
   return (
-    <button onClick={() => navigate("/all-products")} className="back-button">
+    <button onClick={() => navigate("/all-products/")} className="back-button">
       <span className="arrow">&larr; Back</span>
     </button>
   );

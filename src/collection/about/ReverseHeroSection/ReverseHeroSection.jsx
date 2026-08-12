@@ -56,7 +56,7 @@ export const ReverseHeroSection = () => {
                 aria-label="See all projects"
                 onClick={() => {
                   window.scrollTo(0, 0); // Scroll to top
-                  navigate("/all-projects"); }}
+                  navigate("/all-projects/"); }}
               >
                 <span>See Our Projects</span>
               </button>

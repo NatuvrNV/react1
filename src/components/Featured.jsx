@@ -149,7 +149,7 @@ const featuredImages = [
           className="hover-button"
           onClick={() => {
             window.scrollTo(0, 0);
-            navigate("/all-projects");
+            navigate("/all-projects/");
           }}
         >
           <span>See All Projects</span>

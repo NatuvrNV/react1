@@ -65,7 +65,7 @@ const SingleProject = () => {
               return;
             }
             if (!cancelled) {
-              navigate(`/all-projects/${match.url}`, { replace: true });
+              navigate(`/all-projects/${match.url}/`, { replace: true });
             }
           })
           .catch(() => {
@@ -244,7 +244,7 @@ const SingleProject = () => {
           <div className="col-12 text-center py-5">
             <h2>Project not found</h2>
             <button
-              onClick={() => navigate("/all-projects")}
+              onClick={() => navigate("/all-projects/")}
               className="back-button mt-3"
             >
               <span className="arrow">&larr; Back to Projects</span>
@@ -260,7 +260,7 @@ const SingleProject = () => {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
     "name": project.Projectname,
-    "url": `https://metaguise.com/all-projects/${project.url}`,
+    "url": `https://metaguise.com/all-projects/${project.url}/`,
     "description": project.metadescription || project.description || `Explore ${project.Projectname} - a stunning metal facade project by Metaguise`,
     "image": project.images?.map(img => {
       const src = typeof img === 'string' ? img : img.src;
@@ -316,7 +316,7 @@ const SingleProject = () => {
         <meta name="twitter:title" content={project.twitterTitle || project.metatittles || `${project.Projectname} | Metaguise Metal Facade Project`} />
         <meta name="twitter:description" content={project.twitterDescription || project.metadescription || project.description || `Explore ${project.Projectname} - an exceptional metal facade project by Metaguise.`} />
         <meta name="twitter:image" content={project.twitterImage || project.ogImage || getProjectOgImage()} />
-        <meta name="twitter:url" content={`https://metaguise.com/all-projects/${project.url}`} />
+        <meta name="twitter:url" content={`https://metaguise.com/all-projects/${project.url}/`} />
         <meta name="twitter:site" content="@metaguise" />
         <meta name="twitter:creator" content="@metaguise" />
 
@@ -381,7 +381,7 @@ const SingleProject = () => {
 
 const BackButton = ({ navigate }) => {
   return (
-    <button onClick={() => navigate('/all-projects')} className="back-button">
+    <button onClick={() => navigate('/all-projects/')} className="back-button">
       <span className="arrow">&larr; Back</span>
     </button>
   );
