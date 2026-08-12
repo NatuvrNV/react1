@@ -1,4 +1,3 @@
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
@@ -8,10 +7,13 @@ import "swiper/css/navigation";
 import "./Swipper.css";
 
 // ImageKit banner images
+// NOTE: base URLs kept as-is; ?tr=... transform params are appended per
+// size in the srcSet below so we're never shipping a raw, untransformed
+// 1920x1080 file to every viewport.
 const banners = [
-  "https://ik.imagekit.io/ylx9qggcp/1.webp?updatedAt=1771309963215",
-  "https://ik.imagekit.io/ylx9qggcp/2.webp?updatedAt=1771309963055",
-  "https://ik.imagekit.io/ylx9qggcp/3.webp?updatedAt=1771309963077",
+  "https://ik.imagekit.io/ylx9qggcp/1.webp",
+  "https://ik.imagekit.io/ylx9qggcp/2.webp",
+  "https://ik.imagekit.io/ylx9qggcp/3.webp",
 ];
 
 // Banner titles
@@ -20,6 +22,10 @@ const bannerTitles = [
   "Masters in Parametric Design & Execution",
   "Metal is Metaguise: The Future of Facades",
 ];
+
+// Build an ImageKit transform URL for a given width.
+// f-webp forces webp output, q-80 keeps quality high while cutting payload.
+const buildSrc = (base, width) => `${base}?tr=w-${width},q-80,f-webp`;
 
 export const Swipper = () => {
   return (
@@ -69,7 +75,13 @@ export const Swipper = () => {
           <SwiperSlide key={src}>
             <div className="slide banner-slide">
               <img
-                src={src}
+                src={buildSrc(src, 1920)}
+                srcSet={`
+                  ${buildSrc(src, 640)} 640w,
+                  ${buildSrc(src, 1024)} 1024w,
+                  ${buildSrc(src, 1920)} 1920w
+                `}
+                sizes="100vw"
                 alt={bannerTitles[index]}
                 className="banner-slide-img"
                 width="1920"
