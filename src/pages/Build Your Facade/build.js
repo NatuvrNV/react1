@@ -356,7 +356,7 @@ const Contact = () => {
           <Col md={6} className="contact-left d-flex flex-column justify-content-center gap-4">
             {/* FIX (Yash task 3 / task 5): the page's single H1 + H2. Visually
                 hidden so the decorative headline below is unchanged. */}
-            <h1 style={srOnlyStyle}>Build Your Facade</h1>
+            <h1 style={srOnlyStyle}>Start your facade project with Metaguise</h1>
             <h2 style={srOnlyStyle}>Get a Free Metaguise Consultation</h2>
             <div className="contactus1-text">
               <p>Thank you for</p>

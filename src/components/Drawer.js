@@ -68,14 +68,14 @@ function Drawer({ isOpen, toggleDrawer }) {
           <div className="text-justify px-2 d-flex ">
             <img
               src={logo1}
-              alt="Metaguise Logo"
+              alt="Metaguise - India's Most Trusted Metal Facade Brand"
               style={{ maxWidth: "200px", paddingLeft: "5x" }}
             />
 
  <a href="https://www.architecturaldigest.in/adpro/directory/profile/metaguise/" style={{ display: "inline-block" }}>
   <img
     src={adProLogo}
-    alt="Metaguise Logo"
+    alt="ADPro Logo"
     style={{
       width: "150px",
       paddingLeft: "5px",

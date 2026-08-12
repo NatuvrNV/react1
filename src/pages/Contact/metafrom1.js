@@ -52,23 +52,23 @@ const Contact = ({ brochureName }) => {
    */
   const headingMap = {
     "/metasurface": {
-      h1: "MetaSurface",
+      h1: "Browse Metaguise's facade finishes and coatings",
       h2: "Premium Finishes & Coating Systems by Metaguise",
     },
     "/metaparametric": {
-      h1: "MetaParametric",
+      h1: "See how Metaguise turns algorithmic design into buildable metal facades",
       h2: "Algorithmic Facade Design by Metaguise",
     },
     "/metaform": {
-      h1: "MetaForm",
+      h1: "Discover Metaguise's sculptural metal facade systems",
       h2: "Sculptural Metal Facade Collection by Metaguise",
     },
     "/metafunction": {
-      h1: "MetaFunction",
+      h1: "Explore Metaguise's performance-driven facade systems",
       h2: "Performance-Driven Metal Facade Systems by Metaguise",
     },
     "/ctb": {
-      h1: "The Metaguise Coffee Table Book",
+      h1: "Explore Metaguise's metal facade products and projects ",
       h2: "Odyssey",
     },
   };

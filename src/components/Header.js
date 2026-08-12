@@ -136,7 +136,7 @@ function Header() {
 
         <div className="header-center">
           <a href="/">
-            <img src={Logo} alt="Metaguise logo" className="logo" />
+            <img src={Logo} alt="Metaguise - India's Most Trusted Metal Facade Brand" className="logo" />
           </a>
         </div>
 
