@@ -38,7 +38,19 @@ const Allproducts = () => {
     let cancelled = false;
     fetchProductsIndex()
       .then((data) => {
-        if (!cancelled) setProductsIndex(data);
+        if (cancelled) return;
+        // Guard against a non-array response (e.g. the wrong JSON file
+        // ending up at /data/products-index.json) so a bad deploy shows
+        // an empty product grid instead of crashing the whole page.
+        if (Array.isArray(data)) {
+          setProductsIndex(data);
+        } else {
+          console.error(
+            "products-index.json did not return an array — got:",
+            data
+          );
+          setProductsIndex([]);
+        }
       })
       .catch(() => {
         if (!cancelled) setProductsIndex([]);
@@ -50,6 +62,10 @@ const Allproducts = () => {
 
 function productClickHandler(img) {
   const selectedSubProductcat = img.imgPath.split("/")[3].toLowerCase();
+  if (!Array.isArray(productsIndex)) {
+    console.error("productsIndex is not an array, cannot navigate:", productsIndex);
+    return;
+  }
   const selectedProduct = productsIndex.find((item) => item.name.toLowerCase() === selectedSubProductcat);
   navigate(`/all-products/${selectedSubProductcat}/`, { state: { selectedProduct } });
 }

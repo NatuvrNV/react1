@@ -31,6 +31,56 @@ const SingleProduct = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
 
+  // ✅ Task 4/9 fix — SEO copy (real H1 text, definition paragraph, H2
+  // sections) for the 21 product pages. This is a SEPARATE fetch from
+  // fetchProductBySlug on purpose: it doesn't touch images/video/social
+  // data at all, so if this copy fetch fails or a slug has no entry yet,
+  // the rest of the page renders exactly as it did before. Now covers
+  // all 21 slugs, including MetaLouver and SolidPanel. Never invent
+  // copy here.
+  const [productCopyData, setProductCopyData] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch(`${process.env.PUBLIC_URL}/data/product-copy.json`)
+      .then((res) => (res.ok ? res.json() : {}))
+      .then((data) => {
+        if (!cancelled) setProductCopyData(data);
+      })
+      .catch(() => {
+        if (!cancelled) setProductCopyData({});
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const productCopy = productCopyData?.[productName?.toLowerCase()] || null;
+
+  // ✅ Task 8 fix — real alt text for the product galleries, replacing
+  // the generic "Project item N" placeholder. Same separate-fetch
+  // pattern as productCopy above: doesn't touch images/video/social
+  // data, so if this fetch fails or a slug has no entry, images just
+  // fall back to the old generic alt text — nothing breaks.
+  const [altTextData, setAltTextData] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch(`${process.env.PUBLIC_URL}/data/alt-text.json`)
+      .then((res) => (res.ok ? res.json() : {}))
+      .then((data) => {
+        if (!cancelled) setAltTextData(data);
+      })
+      .catch(() => {
+        if (!cancelled) setAltTextData({});
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const altText = altTextData?.[productName?.toLowerCase()] || null;
+
   useEffect(() => {
     let cancelled = false;
     setIsLoading(true);
@@ -303,10 +353,12 @@ const SingleProduct = () => {
             clickedIndex={clickedIndex}
             ref={imageGridRef}
             videoLink={selectedProduct.videoLink}
+            altText={altText}
           />
         </div>
         <Sidebar
           selectedProduct={selectedProduct}
+          productCopy={productCopy}
           categories={categories}
           selectedCategory={selectedCategory}
           filterImagesByCategory={filterImagesByCategory}
@@ -320,6 +372,25 @@ const SingleProduct = () => {
         />
         {isMobile && <BuildButton productSlug={productName} />}
       </div>
+
+      {/* ✅ Task 4/9 — real definition paragraph + H2 sections below
+          the image grid/sidebar, for all 21 products. Still guarded
+          on productCopy so a future slug with no entry yet renders
+          the page exactly as before — no placeholder text ships. */}
+      {productCopy && (
+        <div className="row">
+          <div className="col-12 product-copy-section px-3 py-4">
+            <p>{productCopy.definitionParagraph}</p>
+            {productCopy.h2Sections?.map((section, i) => (
+              <React.Fragment key={i}>
+                <h2>{section.heading}</h2>
+                <p>{section.copy}</p>
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+      )}
+
       <Footer />
     </div>
   );
@@ -363,15 +434,21 @@ const MobileControls = ({
   );
 };
 
+// FIX — this used to be a second <h1>, duplicating Sidebar's <h1> below.
+// Sidebar renders unconditionally (not gated on isMobile), so on mobile
+// both were live in the DOM at once with nothing hiding either one —
+// same two-H1 bug already fixed on the homepage and the projects/
+// products hub pages. Downgraded to <h2>; Sidebar's is now the page's
+// single real H1. CSS class unchanged, so it's visually identical.
 const ProjectHeader = ({ selectedProduct }) => {
   return (
     <div className="col-12 single-head mb-3 px-3">
-      <h1>
+      <h2>
         {selectedProduct?.Productname
           ? selectedProduct.Productname.charAt(0).toUpperCase() +
             selectedProduct.Productname.slice(1)
           : "Product"}
-      </h1>
+      </h2>
     </div>
   );
 };
@@ -433,6 +510,7 @@ const SocialIcons = ({ youtubeLink, instagramLink }) => {
 
 const Sidebar = ({
   selectedProduct,
+  productCopy,
   categories,
   selectedCategory,
   filterImagesByCategory,
@@ -444,12 +522,18 @@ const Sidebar = ({
   instagramLink,
   productSlug,
 }) => {
+  // ✅ This is now the page's single real H1 (see ProjectHeader fix
+  // above). Uses the new SEO title from product-copy.json — all 21
+  // products now have an entry, so the plain-product-name fallback
+  // below is effectively dead code unless a future slug is missing.
+  const h1Text =
+    productCopy?.h1 ||
+    (selectedProduct.Productname.charAt(0).toUpperCase() +
+      selectedProduct.Productname.slice(1));
+
   return (
     <div className="col-md-3 col-sm-12 sidebar-section pe-lg-4">
-      <h1 style={{ fontWeight: "bold" }}>
-        {selectedProduct.Productname.charAt(0).toUpperCase() +
-          selectedProduct.Productname.slice(1)}
-      </h1>
+      <h1 style={{ fontWeight: "bold" }}>{h1Text}</h1>
       <div
         id="single-text"
         className="sidebar p-4 bg-darkrounded tw-text-white"
@@ -498,6 +582,7 @@ const ImageGrid = ({
   clickedIndex,
   ref,
   videoLink,
+  altText,
 }) => {
   return (
     <div id="product-grid" className="image-grid" ref={ref}>
@@ -514,6 +599,7 @@ const ImageGrid = ({
               index={0}
               handleImageClick={handleImageClick}
               clickedIndex={clickedIndex}
+              videoAlt={altText?.videoAlt}
             />
           )}
 
@@ -525,6 +611,11 @@ const ImageGrid = ({
               handleImageClick={handleImageClick}
               isLastRow={isLastRow}
               clickedIndex={clickedIndex}
+              // ✅ Task 8 — real alt text looked up by the image's own
+              // path, not by grid position. Filtering by category or
+              // night-mode reorders/subsets filteredImages, so index
+              // alone would point at the wrong alt — path is stable.
+              altText={altText?.images?.[image]}
             />
           ))}
         </>
@@ -533,7 +624,7 @@ const ImageGrid = ({
   );
 };
 
-const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
+const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex, videoAlt }) => {
   const getVideoId = (url) => {
     if (url.includes("shorts/")) {
       return url.split("/shorts/")[1]?.split("?")[0];
@@ -566,7 +657,7 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
         <>
           <img
             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-            alt="YouTube Video Thumbnail"
+            alt={videoAlt || "YouTube Video Thumbnail"}
             className="grid-image"
             width={480}
             height={360}
@@ -581,7 +672,7 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
   );
 };
 
-const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
+const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, altText }) => {
   return (
     <div
       className={`grid-item ${isLastRow(index) ? "last-row" : ""} ${
@@ -592,7 +683,10 @@ const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex }) => {
       <img
         src={`${process.env.PUBLIC_URL}/${image}`}
         className="grid-image"
-        alt={`Project item ${index + 1}`}
+        // ✅ Task 8 — falls back to the old generic placeholder only if
+        // this image has no real alt text yet (e.g. the 6 uncovered
+        // images each on MetaCoin and MetaSequin — see alt-text.json).
+        alt={altText || `Project item ${index + 1}`}
         width={640}
         height={480}
         loading="lazy"

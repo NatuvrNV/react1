@@ -2,8 +2,38 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Container, Row, Col } from "react-bootstrap";
+import { blogSchemas } from './blogSchemas';
 import "./Blog.css";
 import Footer from "../../components/Footer";
+
+// Injects/removes the Article + WebPage JSON-LD <script> tags for the
+// current blog, keyed by blog.url, from the static blogSchemas map.
+const useBlogSchema = (blog) => {
+  useEffect(() => {
+    if (!blog || !blog.url) return undefined;
+
+    const schemaEntry = blogSchemas[blog.url];
+    if (!schemaEntry) return undefined;
+
+    const articleScript = document.createElement('script');
+    articleScript.type = 'application/ld+json';
+    articleScript.id = 'schema-article';
+    articleScript.text = JSON.stringify(schemaEntry.articleSchema);
+
+    const webPageScript = document.createElement('script');
+    webPageScript.type = 'application/ld+json';
+    webPageScript.id = 'schema-webpage';
+    webPageScript.text = JSON.stringify(schemaEntry.webPageSchema);
+
+    document.head.appendChild(articleScript);
+    document.head.appendChild(webPageScript);
+
+    return () => {
+      articleScript.remove();
+      webPageScript.remove();
+    };
+  }, [blog]);
+};
 
 const SingleBlogPage = () => {
   const { title } = useParams();
@@ -14,11 +44,9 @@ const SingleBlogPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
 
-  const getUrlFriendlyString = (str) => {
-    return str.toLowerCase().replace(/\s+/g, '-');
-  };
+  const getUrlFriendlyString = (str) => str.toLowerCase().replace(/\s+/g, '-');
 
-  // Fetch the single post's full content by slug (only this post's JSON downloads)
+  // Fetch the single post's full content by slug
   useEffect(() => {
     setIsLoading(true);
     setNotFound(false);
@@ -31,16 +59,12 @@ const SingleBlogPage = () => {
         if (!res.ok) throw new Error('not found');
         return res.json();
       })
-      .then((data) => {
-        setBlog(data);
-      })
-      .catch(() => {
-        setNotFound(true);
-      })
+      .then((data) => setBlog(data))
+      .catch(() => setNotFound(true))
       .finally(() => setIsLoading(false));
   }, [title]);
 
-  // Build related blogs once both blog + index are available
+  // Related blogs, once blog + index are available
   useEffect(() => {
     if (!blog) return;
     fetch('/data/blogs-index.json')
@@ -58,24 +82,23 @@ const SingleBlogPage = () => {
   }, [blog]);
 
   useEffect(() => {
-    if (notFound) {
-      navigate('/404');
-    }
+    if (notFound) navigate('/404');
   }, [notFound, navigate]);
+
+  // Old article/webpage schema injection (from blogSchemas.js, keyed by blog.url)
+  useBlogSchema(blog);
 
   const handleBlogClick = (b) => {
     const urlFriendlyPath = b.url ? getUrlFriendlyString(b.url) : getUrlFriendlyString(b.title);
     navigate(`/blog/${urlFriendlyPath}`);
   };
 
-  const BlogButton = ({ navigate }) => {
-    return (
-      <button onClick={() => navigate('/blogs')} className="blog-button">
-        <span className="arrow"> &larr;</span>
-        Back
-      </button>
-    );
-  };
+  const BlogButton = ({ navigate }) => (
+    <button onClick={() => navigate('/blogs')} className="blog-button">
+      <span className="arrow"> &larr;</span>
+      Back
+    </button>
+  );
 
   if (isLoading) {
     return (
@@ -88,9 +111,27 @@ const SingleBlogPage = () => {
     );
   }
 
-  if (!blog) {
-    return null;
-  }
+  if (!blog) return null;
+
+  // ---- image helpers (support both plain-string and {path, alt} images) ----
+  const getRawImage = (images, index) => {
+    if (!images || images.length === 0) return null;
+    return images[index] || images[0] || null;
+  };
+
+  const getImageSrc = (b, index) => {
+    const raw = getRawImage(b.images, index);
+    if (!raw) return '';
+    const path = typeof raw === 'object' ? raw.path : raw;
+    if (!path) return '';
+    return `/assets/Blogs/${b.folderName}/${path.split('/').pop()}`;
+  };
+
+  const getImageAlt = (b, index) => {
+    const raw = getRawImage(b.images, index);
+    if (raw && typeof raw === 'object' && raw.alt) return raw.alt;
+    return b.imageAltText || b.title;
+  };
 
   const getFirstImageUrl = () => {
     if (blog.images && blog.images.length > 0) {
@@ -104,9 +145,7 @@ const SingleBlogPage = () => {
   const getFirstImageAlt = () => {
     if (blog.images && blog.images.length > 0) {
       const firstImage = blog.images[0];
-      if (typeof firstImage === 'object' && firstImage.alt) {
-        return firstImage.alt;
-      }
+      if (typeof firstImage === 'object' && firstImage.alt) return firstImage.alt;
     }
     return blog.imageAltText || blog.title;
   };
@@ -119,13 +158,32 @@ const SingleBlogPage = () => {
   const urlFriendlyTitle = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
   const canonicalUrl = `https://metaguise.com/blog/${urlFriendlyTitle}/`;
 
-  const getImageAltText = (blog, imageIndex = 0) => {
-    if (blog.images && blog.images.length > 0 && typeof blog.images[0] === 'object' && blog.images[0].alt) {
-      return blog.images[imageIndex]?.alt || blog.imageAltText || blog.title;
+  // Body renderer: supports both flat Fulldescription (HTML string) and
+  // contentSections (array of HTML strings)
+  const renderBody = (b, className) => {
+    if (b.Fulldescription) {
+      return <div className={className} dangerouslySetInnerHTML={{ __html: b.Fulldescription }} />;
     }
-    return blog.imageAltText || blog.title;
+    if (Array.isArray(b.contentSections) && b.contentSections.length > 0) {
+      return (
+        <div className={className}>
+          {b.contentSections.map((section, i) => (
+            <div key={i} dangerouslySetInnerHTML={{ __html: section }} />
+          ))}
+        </div>
+      );
+    }
+    return null;
   };
 
+  const getImageAltText = (b, imageIndex = 0) => {
+    if (b.images && b.images.length > 0 && typeof b.images[0] === 'object' && b.images[0].alt) {
+      return b.images[imageIndex]?.alt || b.imageAltText || b.title;
+    }
+    return b.imageAltText || b.title;
+  };
+
+  // Template B image rows (all images, paired)
   const renderImageRows = () => {
     const rows = [];
     for (let i = 0; i < blog.images.length; i += 2) {
@@ -135,7 +193,6 @@ const SingleBlogPage = () => {
           {imagePair.map((image, index) => {
             const imagePath = typeof image === 'object' ? image.path : image;
             const imageAlt = typeof image === 'object' ? image.alt : getImageAltText(blog, i + index);
-
             return (
               <Col key={i + index} xs={6}>
                 <img
@@ -143,6 +200,8 @@ const SingleBlogPage = () => {
                   alt={imageAlt}
                   className="object-cover rounded-lg w-100"
                   loading="lazy"
+                  width="640"
+                  height="480"
                   style={{ objectFit: 'cover', height: '300px' }}
                 />
               </Col>
@@ -154,38 +213,95 @@ const SingleBlogPage = () => {
     return rows;
   };
 
+  // ---- Template A: old UI (hero + grid, first 3 images) ----
   const renderTemplateA = () => {
     return (
       <>
         <div className="d-block d-xl-none">
           <BlogButton navigate={navigate} />
+          <div className="mobile-image-gallery mt-4">
+            <div className="d-flex">
+              <img
+                src={getImageSrc(blog, 0)}
+                alt={getImageAlt(blog, 0)}
+                className="object-cover rounded-lg w-50"
+                loading="lazy"
+                width="640"
+                height="480"
+              />
+              <div className="d-flex flex-column w-50 ms-2">
+                <img
+                  src={getImageSrc(blog, 1)}
+                  alt={getImageAlt(blog, 1)}
+                  className="object-cover rounded-lg mb-2"
+                  loading="lazy"
+                  width="640"
+                  height="480"
+                />
+                <img
+                  src={getImageSrc(blog, 2)}
+                  alt={getImageAlt(blog, 2)}
+                  className="object-cover rounded-lg"
+                  loading="lazy"
+                  width="640"
+                  height="480"
+                />
+              </div>
+            </div>
+          </div>
           <h2 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h2>
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>
-          <div className="mobile-image-gallery mt-3">
-            {renderImageRows()}
-          </div>
-          <p className="text-sm blog-fulldescription mt-4" dangerouslySetInnerHTML={{ __html: blog.Fulldescription }}></p>
+          {renderBody(blog, "text-sm blog-fulldescription mt-4")}
         </div>
 
         <div className="d-none d-xl-block">
           <Row>
-            <Col xl={12}>
+            <Col xl={3} className="order-1">
               <BlogButton navigate={navigate} />
+            </Col>
+            <Col xl={6}>
+              <h1 id="head-text" className="text-4xl blog-title">{blog.title}</h1>
+            </Col>
+            <Col xl={3}>
+              <p className="text-xs text-gray-400 date-text">{blog.date} | {blog.category}</p>
             </Col>
           </Row>
 
-          <Row className='py-xl-3'>
-            <Col xl={7}>
-              <h1 id='head-text' className="text-4xl mt-xl-4 blog-title text-start">{blog.title}</h1>
-              <p className="text-xs text-gray-400 date-text text-start">{blog.date} | {blog.category}</p>
-              <p className="text-sm blog-fulldescription" dangerouslySetInnerHTML={{ __html: blog.Fulldescription }}></p>
+          <Row>
+            <Col xl={6}>
+              {renderBody(blog, "text-sm mt-xl-2 blog-fulldescription mt-xl-5")}
             </Col>
 
-            <Col xl={5}>
-              <div className="image-gallery mt-xl-4">
-                {renderImageRows()}
+            <Col xl={6} className="order-xl-1">
+              <div className="image-gallery">
+                <img
+                  src={getImageSrc(blog, 0)}
+                  alt={getImageAlt(blog, 0)}
+                  className="object-cover rounded-lg w-100 mb-4"
+                  loading="lazy"
+                  width="640"
+                  height="480"
+                />
+                <div className="grid grid-cols-2 gap-4 single-grid">
+                  <img
+                    src={getImageSrc(blog, 1)}
+                    alt={getImageAlt(blog, 1)}
+                    className="object-cover rounded-lg w-100"
+                    loading="lazy"
+                    width="640"
+                    height="480"
+                  />
+                  <img
+                    src={getImageSrc(blog, 2)}
+                    alt={getImageAlt(blog, 2)}
+                    className="object-cover rounded-lg w-100"
+                    loading="lazy"
+                    width="640"
+                    height="480"
+                  />
+                </div>
               </div>
             </Col>
           </Row>
@@ -194,6 +310,7 @@ const SingleBlogPage = () => {
     );
   };
 
+  // ---- Template B: alternating image + text, all images ----
   const renderTemplateB = () => {
     const descriptionSections = blog.contentSections ||
       blog.Fulldescription.split('</p>').filter(section => section.trim()).map(section => section + '</p>');
@@ -221,6 +338,8 @@ const SingleBlogPage = () => {
                   alt={imageAlt}
                   className="object-cover rounded-lg w-100 mb-4"
                   loading="lazy"
+                  width="640"
+                  height="480"
                   style={{ objectFit: 'cover', height: '200px', borderRadius: '20px' }}
                 />
 
@@ -230,12 +349,8 @@ const SingleBlogPage = () => {
                       const startIndex = index * sectionsPerImage;
                       const endIndex = startIndex + sectionsPerImage;
                       const sectionsForThisImage = descriptionSections.slice(startIndex, endIndex);
-
                       return sectionsForThisImage.map((section, sectionIndex) => (
-                        <div
-                          key={`${index}-${sectionIndex}`}
-                          dangerouslySetInnerHTML={{ __html: section }}
-                        />
+                        <div key={`${index}-${sectionIndex}`} dangerouslySetInnerHTML={{ __html: section }} />
                       ));
                     })()}
                   </div>
@@ -248,7 +363,7 @@ const SingleBlogPage = () => {
         <div className="d-none d-xl-block">
           <Row className="my-4">
             <Col xl={12}>
-              <h1 id='head-text2' className="text-4xl blog-title text-start">{blog.title}</h1>
+              <h1 id="head-text2" className="text-4xl blog-title text-start">{blog.title}</h1>
               <p className="text-xs text-gray-400 date-text2 text-start mt-2">
                 {blog.date} | {blog.category}
               </p>
@@ -269,6 +384,8 @@ const SingleBlogPage = () => {
                         alt={imageAlt}
                         className="object-cover rounded-lg w-100"
                         loading="lazy"
+                        width="640"
+                        height="480"
                         style={{ objectFit: 'cover', height: '400px', borderRadius: '20px' }}
                       />
                     </Col>
@@ -282,7 +399,6 @@ const SingleBlogPage = () => {
                             const startIndex = index * sectionsPerImage;
                             const endIndex = startIndex + sectionsPerImage;
                             const sectionsForThisImage = descriptionSections.slice(startIndex, endIndex);
-
                             return sectionsForThisImage.map((section, sectionIndex) => (
                               <div
                                 key={`${index}-${sectionIndex}`}
@@ -307,9 +423,7 @@ const SingleBlogPage = () => {
   const getRelatedBlogImageAlt = (relatedBlog) => {
     if (relatedBlog.images && relatedBlog.images.length > 0) {
       const firstImage = relatedBlog.images[0];
-      if (typeof firstImage === 'object' && firstImage.alt) {
-        return firstImage.alt;
-      }
+      if (typeof firstImage === 'object' && firstImage.alt) return firstImage.alt;
     }
     return relatedBlog.imageAltText || relatedBlog.title;
   };
@@ -353,6 +467,8 @@ const SingleBlogPage = () => {
         <meta property="article:section" content={blog.category} />
         <meta property="article:author" content="MetaGuise" />
 
+        {/* Per-blog JSON schema, if present (separate from the article/webpage
+            schema injected by useBlogSchema above, which comes from blogSchemas.js) */}
         {blog.schema && (
           <script type="application/ld+json">
             {JSON.stringify(blog.schema)}
@@ -368,9 +484,7 @@ const SingleBlogPage = () => {
 
           {blog.contentSections ? (
             blog.contentSections.map((section, i) => (
-              <p key={i}>
-                {section.replace(/<[^>]+>/g, '')}
-              </p>
+              <p key={i}>{section.replace(/<[^>]+>/g, '')}</p>
             ))
           ) : (
             <p>{blog.Fulldescription?.replace(/<[^>]+>/g, '')}</p>
@@ -405,11 +519,8 @@ const SingleBlogPage = () => {
             <div className="grid grid-cols-2 gap-8 blog-grid mt-xl-5 px-xl-5 mt-4">
               {relatedBlogs.slice(0, 4).map((relatedBlog) => {
                 const firstImage = relatedBlog.images && relatedBlog.images.length > 0
-                  ? (typeof relatedBlog.images[0] === 'object'
-                      ? relatedBlog.images[0].path
-                      : relatedBlog.images[0])
+                  ? (typeof relatedBlog.images[0] === 'object' ? relatedBlog.images[0].path : relatedBlog.images[0])
                   : '';
-
                 const imageAlt = getRelatedBlogImageAlt(relatedBlog);
 
                 return (
@@ -422,6 +533,9 @@ const SingleBlogPage = () => {
                       src={`/assets/Blogs/${relatedBlog.folderName}/${firstImage.split('/').pop()}`}
                       alt={imageAlt}
                       className="object-cover rounded-lg"
+                      loading="lazy"
+                      width="640"
+                      height="480"
                     />
                     <div className="mx-xl-4 blog-text">
                       <h2 className="text-xl blog-title-head">{relatedBlog.title}</h2>

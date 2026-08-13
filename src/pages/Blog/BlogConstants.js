@@ -12453,7 +12453,7 @@ Metaguise's design consultation process helps every homeowner and architect make
         "email": "contactus@metaguise.com",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Basement Floor, K9/46, DLF Phase 2",
+          "streetAddress": "Basement F17/4, near Golf Course Road, DLF Phase 1, Sector 42, Gurugram, Haryana 122009",
           "addressLocality": "Gurugram",
           "addressRegion": "Haryana",
           "postalCode": "122002"

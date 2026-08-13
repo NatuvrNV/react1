@@ -101,10 +101,10 @@ const Contact = () => {
   const createLead = async () => {
     // Get the message from textarea
     const userMessage = formData.message || "No message provided";
-    
+
     // Create current date/time in ISO format
     const currentDateTime = new Date().toISOString();
-    
+
     // Prepare lead assignments with static data
     const leadAssignments = [
       {
@@ -114,7 +114,7 @@ const Contact = () => {
         assignAt: currentDateTime // Using current date and time
       }
     ];
-    
+
     // Prepare final payload
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
@@ -214,14 +214,14 @@ const Contact = () => {
       // Step 1: Create lead in backend
       console.log("Creating lead via backend API...");
       const leadCreated = await createLead();
-      
+
       // Step 2: Send email via EmailJS
       console.log("Sending email via EmailJS...");
       const emailSent = await sendEmail();
-      
+
       if (leadCreated && emailSent) {
         setFeedbackMessage("✅ Thank you for your inquiry! Our team will connect with you shortly.");
-        
+
         // ✅ Google Ads Conversion Tracking Trigger
         if (typeof window !== "undefined" && window.gtag) {
           console.log("Triggering Google Ads conversion tracking");
@@ -243,7 +243,7 @@ const Contact = () => {
 
       } else if (leadCreated && !emailSent) {
         setFeedbackMessage("✅ Thank you for your inquiry! Our team will still connect with you.");
-        
+
         // Reset form
         setFormData({
           name: "",
@@ -411,14 +411,14 @@ const Contact = () => {
                       disabled={isSending}
                     />
                   </div>
-                  
+
                 </Col>
               </Row>
 
               <div className="button-wrapper">
-                <button 
-                  type="submit" 
-                  className="send-button" 
+                <button
+                  type="submit"
+                  className="send-button"
                   disabled={isSending}
                 >
                   <span>{isSending ? "Submitting..." : "Submit"}</span>
@@ -426,18 +426,73 @@ const Contact = () => {
               </div>
 
               {feedbackMessage && (
-                <Alert 
+                <Alert
                   variant={
-                    feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") 
-                      ? "danger" 
+                    feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️")
+                      ? "danger"
                       : "success"
-                  } 
+                  }
                   className="mt-3 text-center"
                 >
                   {feedbackMessage}
                 </Alert>
               )}
             </Form>
+          </Col>
+        </Row>
+      </Container>
+
+      {/* ============================================================
+          Hub/content copy for the contact page (Rishi task 9).
+          /contact/ was 117 words, 0 H2 — this section is the fix.
+          Copy below is Rishi's, delivered 13 Aug. Sits below the
+          form/Container on a light background, same reasoning as
+          before: the form section above is bg-dark, and this much
+          body copy in white-on-dark is a readability problem.
+         ============================================================ */}
+      <Container as="section" className="contact-copy py-5">
+        <Row>
+          <Col lg={8} className="mx-auto">
+            <p>
+              We'd love to connect with you. Share your vision, and let's
+              create something amazing together.
+            </p>
+
+            <h2>Get Expert Guidance on Your Facade Project</h2>
+            <p>
+              Whether you're an architect finalising a design, a developer
+              scoping a new build, or a homeowner exploring options, our
+              team gives you a straight answer on what's possible — system
+              choice, material, finish, and a realistic budget range before
+              you commit to anything.
+            </p>
+
+            <h2>What Happens After You Reach Out</h2>
+            <p>
+              We reply within 24 hours. From there it's a short call to
+              understand your project, followed by a tailored recommendation
+              with visuals and indicative pricing. If it's a good fit, we
+              move to site measurements and a formal quote — no pressure,
+              no obligation.
+            </p>
+
+            <h2>Visit MetaLand by Metaguise, Our Experience Centre</h2>
+            <p>
+              Prefer to see the material before you decide? Walk through our
+              flagship experience centre in Gurugram — VR walkthroughs, live
+              finish samples, and real installed panels — or our Kolkata
+              centre. Both are open by appointment.
+            </p>
+
+            <h2>Talk to Us Directly</h2>
+            <p>
+              Prefer a call over a form? Reach us at{" "}
+              <a href="tel:+919811604449">+91 98116 04449</a> or{" "}
+              <a href="mailto:contactus@metaguise.com">
+                contactus@metaguise.com
+              </a>{" "}
+              — same team, faster response.
+            </p>
           </Col>
         </Row>
       </Container>

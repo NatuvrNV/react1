@@ -82,7 +82,7 @@ const Partner = () => {
         "template_sp4d06m",
         templateParams
       );
-      
+
       console.log("EmailJS response success:", response);
       return { success: true, message: "Email sent successfully" };
     } catch (error) {
@@ -94,7 +94,7 @@ const Partner = () => {
   const createLead = async () => {
     // Create current date/time in ISO format for lead assignment
     const currentDateTime = new Date().toISOString();
-    
+
     // Prepare lead assignments with Kajal Arya's static data
     const leadAssignments = [
       {
@@ -104,7 +104,7 @@ const Partner = () => {
         assignAt: currentDateTime // Using current date and time
       }
     ];
-    
+
     // Prepare final payload for Partner with callSource: "PARTNER"
     const payload = {
       firstName: formData.name.split(' ')[0] || formData.name,
@@ -199,10 +199,10 @@ const Partner = () => {
     try {
       // Step 1: Send email via EmailJS
       const emailResult = await sendEmail();
-      
+
       // Step 2: Create lead in backend with Kajal Arya assignment
       const leadResult = await createLead();
-      
+
       // Step 3: Show success message based on results
       if (leadResult.success && emailResult.success) {
         setFeedbackMessage("✅ Thank you for your partner inquiry! We'll connect with you shortly.");
@@ -223,11 +223,11 @@ const Partner = () => {
       }
 
       // Reset form
-      setFormData({ 
-        name: "", 
-        email: "", 
-        phone: "", 
-        message: "" 
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
       });
       setCaptchaToken(null);
 
@@ -376,7 +376,7 @@ const Partner = () => {
                       disabled={isSending}
                     />
                   </div>
-                  
+
                 </Col>
               </Row>
 
@@ -387,18 +387,59 @@ const Partner = () => {
               </div>
 
               {feedbackMessage && (
-                <Alert 
+                <Alert
                   variant={
-                    feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") || feedbackMessage.includes("Failed") 
-                      ? "danger" 
+                    feedbackMessage.includes("❌") || feedbackMessage.includes("⚠️") || feedbackMessage.includes("Failed")
+                      ? "danger"
                       : "success"
-                  } 
+                  }
                   className="mt-3 text-center"
                 >
                   {feedbackMessage}
                 </Alert>
               )}
             </Form>
+          </Col>
+        </Row>
+      </Container>
+
+      {/* ============================================================
+          Hub/content copy for the partner page (Rishi task 9).
+          /partner/ was 127 words, 0 H2 — this section is the fix.
+          Copy below is Rishi's, delivered 13 Aug. Only 3 H2s vs the
+          4-6 his own sheet calls for — worth flagging back to him,
+          not something to pad out on your own.
+         ============================================================ */}
+      <Container as="section" className="partner-copy py-5">
+        <Row>
+          <Col lg={8} className="mx-auto">
+            <p>
+              We'd love to work with you. Interested in collaborating with
+              us? Let's discuss how we can help support your creative needs.
+            </p>
+
+            <h2>Who We Partner With</h2>
+            <p>
+              We work alongside architects, builders, developers, and facade
+              contractors on projects of every scale — from single
+              residences to landmark commercial builds. Firms like
+              Morphogenesis, Studio Lotus, Studio Ardete, and Architect
+              Hafeez Contractor already specify our systems.
+            </p>
+
+            <h2>What Partners Get</h2>
+            <p>
+              Trade pricing, direct access to our technical team for design
+              support, priority production slots, and a dedicated point of
+              contact — so you're not chasing updates on a live project.
+            </p>
+
+            <h2>How It Works</h2>
+            <p>
+              Tell us about your practice and typical project type. We'll
+              set you up with partner pricing and technical documentation,
+              then support you project-by-project — from spec to site.
+            </p>
           </Col>
         </Row>
       </Container>
