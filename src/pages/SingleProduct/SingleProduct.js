@@ -5,6 +5,7 @@ import { FaYoutube, FaInstagram } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import Footer from "../../components/Footer";
 import "./SingleProduct.css";
+
 // SingleProductDetail used to be a static import (~62 KB in every bundle).
 // It's now fetched on demand from /data/products/<slug>.json.
 import { fetchProductBySlug } from "../../utils/fetchProductData";
@@ -15,7 +16,7 @@ const SingleProduct = () => {
   const navigate = useNavigate();
   const { productName } = useParams();
 
-  // ✅ ALL HOOKS MUST BE CALLED BEFORE ANY CONDITIONAL RETURN
+  // ALL HOOKS MUST BE CALLED BEFORE ANY CONDITIONAL RETURN
   const [clickedIndex, setClickedIndex] = useState(null);
   const [contentToRender, setContentToRender] = useState([]);
   const gridRef = useRef(null);
@@ -31,58 +32,65 @@ const SingleProduct = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
 
-  // ✅ Task 4/9 fix — SEO copy (real H1 text, definition paragraph, H2
-  // sections) for the 21 product pages. This is a SEPARATE fetch from
-  // fetchProductBySlug on purpose: it doesn't touch images/video/social
-  // data at all, so if this copy fetch fails or a slug has no entry yet,
-  // the rest of the page renders exactly as it did before. Now covers
-  // all 21 slugs, including MetaLouver and SolidPanel. Never invent
-  // copy here.
+  // Product copy data is still loaded for compatibility.
+  // It is NOT rendered visibly on the frontend.
   const [productCopyData, setProductCopyData] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
+
     fetch(`${process.env.PUBLIC_URL}/data/products-index.json`)
       .then((res) => (res.ok ? res.json() : {}))
       .then((data) => {
-        if (!cancelled) setProductCopyData(data);
+        if (!cancelled) {
+          setProductCopyData(data);
+        }
       })
       .catch(() => {
-        if (!cancelled) setProductCopyData({});
+        if (!cancelled) {
+          setProductCopyData({});
+        }
       });
+
     return () => {
       cancelled = true;
     };
   }, []);
 
-  const productCopy = productCopyData?.[productName?.toLowerCase()] || null;
+  const productCopy =
+    productCopyData?.[productName?.toLowerCase()] || null;
 
-  // ✅ Task 8 fix — real alt text for the product galleries, replacing
-  // the generic "Project item N" placeholder. Same separate-fetch
-  // pattern as productCopy above: doesn't touch images/video/social
-  // data, so if this fetch fails or a slug has no entry, images just
-  // fall back to the old generic alt text — nothing breaks.
+  // Real alt text for the product galleries
   const [altTextData, setAltTextData] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
+
     fetch(`${process.env.PUBLIC_URL}/data/alt-text.json`)
       .then((res) => (res.ok ? res.json() : {}))
       .then((data) => {
-        if (!cancelled) setAltTextData(data);
+        if (!cancelled) {
+          setAltTextData(data);
+        }
       })
       .catch(() => {
-        if (!cancelled) setAltTextData({});
+        if (!cancelled) {
+          setAltTextData({});
+        }
       });
+
     return () => {
       cancelled = true;
     };
   }, []);
 
-  const altText = altTextData?.[productName?.toLowerCase()] || null;
+  const altText =
+    altTextData?.[productName?.toLowerCase()] || null;
 
+  // Fetch selected product
   useEffect(() => {
     let cancelled = false;
+
     setIsLoading(true);
     setNotFound(false);
     setSelectedProduct(null);
@@ -117,26 +125,31 @@ const SingleProduct = () => {
       "Metaguise",
     ];
 
-    const productSpecificKeywords = selectedProduct?.metaKeywords || [
-      selectedProduct?.Productname,
-      `${selectedProduct?.Productname} metal facade`,
-      `${selectedProduct?.Productname} cladding`,
-      `${selectedProduct?.Productname} design`,
-      "custom metal facade",
-      "premium metal facade",
-      "modern building facade",
-      "architectural metal products",
-      "facade design India",
-      "metal facade manufacturer",
-    ];
+    const productSpecificKeywords =
+      selectedProduct?.metaKeywords || [
+        selectedProduct?.Productname,
+        `${selectedProduct?.Productname} metal facade`,
+        `${selectedProduct?.Productname} cladding`,
+        `${selectedProduct?.Productname} design`,
+        "custom metal facade",
+        "premium metal facade",
+        "modern building facade",
+        "architectural metal products",
+        "facade design India",
+        "metal facade manufacturer",
+      ];
 
     return [...baseKeywords, ...productSpecificKeywords].join(", ");
   };
 
   const getProductOgImage = () => {
-    if (selectedProduct?.images && selectedProduct.images.length > 0) {
+    if (
+      selectedProduct?.images &&
+      selectedProduct.images.length > 0
+    ) {
       return `https://metaguise.com/${selectedProduct.images[0]}`;
     }
+
     return "https://metaguise.com/default-product-image.jpg";
   };
 
@@ -162,27 +175,40 @@ const SingleProduct = () => {
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
-      if (gridRef.current && !gridRef.current.contains(event.target)) {
+      if (
+        gridRef.current &&
+        !gridRef.current.contains(event.target)
+      ) {
         setClickedIndex(null);
       }
+
       window.scrollTo(0, 0);
     };
 
     document.addEventListener("click", handleOutsideClick);
+
     return () => {
-      document.removeEventListener("click", handleOutsideClick);
+      document.removeEventListener(
+        "click",
+        handleOutsideClick
+      );
     };
   }, [gridRef]);
 
   useEffect(() => {
-    const nightImages = selectedProduct?.images?.filter(
-      (item) => item.split("/")[4] === "night"
-    ) || [];
+    const nightImages =
+      selectedProduct?.images?.filter(
+        (item) => item.split("/")[4] === "night"
+      ) || [];
 
     if (darkMode && nightImages.length === 0) {
       setContentToRender([]);
     } else {
-      setContentToRender(darkMode ? nightImages : selectedProduct?.images || []);
+      setContentToRender(
+        darkMode
+          ? nightImages
+          : selectedProduct?.images || []
+      );
     }
   }, [darkMode, selectedProduct]);
 
@@ -192,10 +218,12 @@ const SingleProduct = () => {
     };
 
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+
+    return () =>
+      window.removeEventListener("resize", handleResize);
   }, []);
 
-  // ✅ Now the conditional returns (after all hooks)
+  // Loading state
   if (isLoading) {
     return (
       <div className="container main-container">
@@ -204,25 +232,31 @@ const SingleProduct = () => {
             <p>Loading product...</p>
           </div>
         </div>
+
         <Footer />
       </div>
     );
   }
 
+  // Product not found
   if (notFound || !selectedProduct) {
     return (
       <div className="container main-container">
         <div className="row">
           <div className="col-12 text-center py-5">
             <h2>Product not found</h2>
+
             <button
               onClick={() => navigate("/all-products/")}
               className="back-button mt-3"
             >
-              <span className="arrow">&larr; Back to Products</span>
+              <span className="arrow">
+                &larr; Back to Products
+              </span>
             </button>
           </div>
         </div>
+
         <Footer />
       </div>
     );
@@ -259,71 +293,204 @@ const SingleProduct = () => {
   };
 
   const filteredImages = selectedCategory
-    ? contentToRender.filter((img) => img.includes(selectedCategory))
+    ? contentToRender.filter((img) =>
+        img.includes(selectedCategory)
+      )
     : contentToRender;
 
+  // Product Schema
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
+
     name: selectedProduct.Productname,
-    description: selectedProduct.metadescription || selectedProduct.description,
+
+    description:
+      selectedProduct.metadescription ||
+      selectedProduct.description,
+
     url: `https://metaguise.com/all-products/${productName}/`,
+
     image: selectedProduct.images?.map(
       (img) => `https://metaguise.com/${img}`
     ),
+
     brand: {
       "@type": "Brand",
       name: "Metaguise",
     },
+
     manufacturer: {
       "@type": "Organization",
       name: "Metaguise",
       url: "https://metaguise.com",
     },
+
     offers: {
       "@type": "Offer",
       url: `https://metaguise.com/all-products/${productName}/`,
       priceCurrency: "INR",
       price: "0",
       availability: "https://schema.org/InStock",
+
       seller: {
         "@type": "Organization",
         name: "Metaguise",
       },
     },
+
     category: "Architectural Metal Products",
-    material: selectedProduct.materials || "Metal",
+
+    material:
+      selectedProduct.materials || "Metal",
+
     inLanguage: "en-IN",
   };
 
   return (
     <div className="container main-container">
+
       <Helmet>
-        <title>{selectedProduct.metatittles || `${selectedProduct.Productname} | Metaguise`}</title>
-        <meta name="description" content={selectedProduct.metadescription || selectedProduct.description} />
-        <meta name="keywords" content={generateMetaKeywords()} />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`https://metaguise.com/all-products/${productName}/`} />
+        <title>
+          {selectedProduct.metatittles ||
+            `${selectedProduct.Productname} | Metaguise`}
+        </title>
 
-        <meta property="og:type" content="product" />
-        <meta property="og:title" content={selectedProduct.ogTitle || selectedProduct.metatittles || `${selectedProduct.Productname} | Premium Metal Facade Solution`} />
-        <meta property="og:description" content={selectedProduct.ogDescription || selectedProduct.metadescription || selectedProduct.description} />
-        <meta property="og:image" content={selectedProduct.ogImage || getProductOgImage()} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content={`${selectedProduct.Productname} metal facade design by Metaguise`} />
-        <meta property="og:url" content={`https://metaguise.com/all-products/${productName}/`} />
-        <meta property="og:site_name" content="Metaguise" />
-        <meta property="og:locale" content="en_IN" />
-        <meta property="product:brand" content="Metaguise" />
-        <meta property="product:category" content="Architectural Metal Facade" />
-        <meta property="product:availability" content="in stock" />
+        <meta
+          name="description"
+          content={
+            selectedProduct.metadescription ||
+            selectedProduct.description
+          }
+        />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={selectedProduct.twitterTitle || selectedProduct.metatittles || `${selectedProduct.Productname} | Metaguise`} />
-        <meta name="twitter:description" content={selectedProduct.twitterDescription || selectedProduct.metadescription || selectedProduct.description} />
-        <meta name="twitter:image" content={selectedProduct.twitterImage || selectedProduct.ogImage || getProductOgImage()} />
-        <meta name="twitter:url" content={`https://metaguise.com/all-products/${productName}/`} />
+        <meta
+          name="keywords"
+          content={generateMetaKeywords()}
+        />
+
+        <meta
+          name="robots"
+          content="index, follow"
+        />
+
+        <link
+          rel="canonical"
+          href={`https://metaguise.com/all-products/${productName}/`}
+        />
+
+        <meta
+          property="og:type"
+          content="product"
+        />
+
+        <meta
+          property="og:title"
+          content={
+            selectedProduct.ogTitle ||
+            selectedProduct.metatittles ||
+            `${selectedProduct.Productname} | Premium Metal Facade Solution`
+          }
+        />
+
+        <meta
+          property="og:description"
+          content={
+            selectedProduct.ogDescription ||
+            selectedProduct.metadescription ||
+            selectedProduct.description
+          }
+        />
+
+        <meta
+          property="og:image"
+          content={
+            selectedProduct.ogImage ||
+            getProductOgImage()
+          }
+        />
+
+        <meta
+          property="og:image:width"
+          content="1200"
+        />
+
+        <meta
+          property="og:image:height"
+          content="630"
+        />
+
+        <meta
+          property="og:image:alt"
+          content={`${selectedProduct.Productname} metal facade design by Metaguise`}
+        />
+
+        <meta
+          property="og:url"
+          content={`https://metaguise.com/all-products/${productName}/`}
+        />
+
+        <meta
+          property="og:site_name"
+          content="Metaguise"
+        />
+
+        <meta
+          property="og:locale"
+          content="en_IN"
+        />
+
+        <meta
+          property="product:brand"
+          content="Metaguise"
+        />
+
+        <meta
+          property="product:category"
+          content="Architectural Metal Facade"
+        />
+
+        <meta
+          property="product:availability"
+          content="in stock"
+        />
+
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+        />
+
+        <meta
+          name="twitter:title"
+          content={
+            selectedProduct.twitterTitle ||
+            selectedProduct.metatittles ||
+            `${selectedProduct.Productname} | Metaguise`
+          }
+        />
+
+        <meta
+          name="twitter:description"
+          content={
+            selectedProduct.twitterDescription ||
+            selectedProduct.metadescription ||
+            selectedProduct.description
+          }
+        />
+
+        <meta
+          name="twitter:image"
+          content={
+            selectedProduct.twitterImage ||
+            selectedProduct.ogImage ||
+            getProductOgImage()
+          }
+        />
+
+        <meta
+          name="twitter:url"
+          content={`https://metaguise.com/all-products/${productName}/`}
+        />
 
         <script type="application/ld+json">
           {JSON.stringify(productSchema)}
@@ -331,21 +498,35 @@ const SingleProduct = () => {
       </Helmet>
 
       <div className="row">
+
         <div className="col-12">
+
           <BackButton navigate={navigate} />
+
           {isMobile && (
             <MobileControls
               selectedProduct={selectedProduct}
-              showElementsDropdown={showElementsDropdown}
-              setShowElementsDropdown={setShowElementsDropdown}
-              filterImagesByCategory={filterImagesByCategory}
+              showElementsDropdown={
+                showElementsDropdown
+              }
+              setShowElementsDropdown={
+                setShowElementsDropdown
+              }
+              filterImagesByCategory={
+                filterImagesByCategory
+              }
               categories={categories}
               setDarkMode={setDarkMode}
-              selectedCategory={selectedCategory}
+              selectedCategory={
+                selectedCategory
+              }
             />
           )}
+
         </div>
+
         <div className="col-9 xs-12">
+
           <ImageGrid
             filteredImages={filteredImages}
             handleImageClick={handleImageClick}
@@ -355,51 +536,65 @@ const SingleProduct = () => {
             videoLink={selectedProduct.videoLink}
             altText={altText}
           />
+
         </div>
+
         <Sidebar
           selectedProduct={selectedProduct}
           productCopy={productCopy}
           categories={categories}
           selectedCategory={selectedCategory}
-          filterImagesByCategory={filterImagesByCategory}
+          filterImagesByCategory={
+            filterImagesByCategory
+          }
           darkMode={darkMode}
           toggleTheme={toggleTheme}
           activeButton={activeButton}
           handleButtonClick={handleButtonClick}
-          youtubeLink={selectedProduct.youtubeLink}
-          instagramLink={selectedProduct.instagramLink}
+          youtubeLink={
+            selectedProduct.youtubeLink
+          }
+          instagramLink={
+            selectedProduct.instagramLink
+          }
           productSlug={productName}
         />
-        {isMobile && <BuildButton productSlug={productName} />}
+
+        {isMobile && (
+          <BuildButton
+            productSlug={productName}
+          />
+        )}
+
       </div>
 
-      {/* ✅ Task 4/9 — real definition paragraph + H2 sections below
-          the image grid/sidebar, for all 21 products. Still guarded
-          on productCopy so a future slug with no entry yet renders
-          the page exactly as before — no placeholder text ships. */}
-      {productCopy && (
-        <div className="row">
-          <div className="col-12 product-copy-section px-3 py-4">
-            <p>{productCopy.definitionParagraph}</p>
-            {productCopy.h2Sections?.map((section, i) => (
-              <React.Fragment key={i}>
-                <h2>{section.heading}</h2>
-                <p>{section.copy}</p>
-              </React.Fragment>
-            ))}
-          </div>
-        </div>
-      )}
+      {/* 
+        IMPORTANT:
+        The previous visible SEO content section has been removed.
+
+        Previously this rendered:
+        - definitionParagraph
+        - H2 sections
+        - paragraphs
+
+        The main product UI remains unchanged.
+      */}
 
       <Footer />
+
     </div>
   );
 };
 
 const BackButton = ({ navigate }) => {
   return (
-    <button onClick={() => navigate("/all-products/")} className="back-button">
-      <span className="arrow">&larr; Back</span>
+    <button
+      onClick={() => navigate("/all-products/")}
+      className="back-button"
+    >
+      <span className="arrow">
+        &larr; Back
+      </span>
     </button>
   );
 };
@@ -414,41 +609,58 @@ const MobileControls = ({
 }) => {
   return (
     <div className="mobile-controls">
-      <ProjectHeader selectedProduct={selectedProduct} />
+
+      <ProjectHeader
+        selectedProduct={selectedProduct}
+      />
+
       <div className="Elements">
+
         <ElementsDropdown
-          showElementsDropdown={showElementsDropdown}
-          setShowElementsDropdown={setShowElementsDropdown}
-          filterImagesByCategory={filterImagesByCategory}
+          showElementsDropdown={
+            showElementsDropdown
+          }
+          setShowElementsDropdown={
+            setShowElementsDropdown
+          }
+          filterImagesByCategory={
+            filterImagesByCategory
+          }
           categories={categories}
           selectedCategory={selectedCategory}
           selectedProduct={selectedProduct}
         />
 
         <SocialIcons
-          youtubeLink={selectedProduct?.youtubeLink}
-          instagramLink={selectedProduct?.instagramLink}
+          youtubeLink={
+            selectedProduct?.youtubeLink
+          }
+          instagramLink={
+            selectedProduct?.instagramLink
+          }
         />
+
       </div>
     </div>
   );
 };
 
-// FIX — this used to be a second <h1>, duplicating Sidebar's <h1> below.
-// Sidebar renders unconditionally (not gated on isMobile), so on mobile
-// both were live in the DOM at once with nothing hiding either one —
-// same two-H1 bug already fixed on the homepage and the projects/
-// products hub pages. Downgraded to <h2>; Sidebar's is now the page's
-// single real H1. CSS class unchanged, so it's visually identical.
+// Mobile product heading
+// UI remains exactly the same.
+// Only the product name is displayed.
 const ProjectHeader = ({ selectedProduct }) => {
   return (
     <div className="col-12 single-head mb-3 px-3">
+
       <h2>
         {selectedProduct?.Productname
-          ? selectedProduct.Productname.charAt(0).toUpperCase() +
+          ? selectedProduct.Productname
+              .charAt(0)
+              .toUpperCase() +
             selectedProduct.Productname.slice(1)
           : "Product"}
       </h2>
+
     </div>
   );
 };
@@ -461,37 +673,65 @@ const ElementsDropdown = ({
   return (
     <Dropdown
       show={showElementsDropdown}
-      onToggle={(isOpen) => setShowElementsDropdown(isOpen)}
+      onToggle={(isOpen) =>
+        setShowElementsDropdown(isOpen)
+      }
       className="description-dropdown"
     >
-      <Dropdown.Toggle variant="dark" id="description-dropdown">
+
+      <Dropdown.Toggle
+        variant="dark"
+        id="description-dropdown"
+      >
         Description
-        <div id="arrow-icon" className="icon-overlay">
+
+        <div
+          id="arrow-icon"
+          className="icon-overlay"
+        >
           <MdArrowOutward size={20} />
         </div>
       </Dropdown.Toggle>
+
       <Dropdown.Menu>
+
         <Dropdown.Item>
+
           <div
             dangerouslySetInnerHTML={{
               __html: selectedProduct?.description
-                ? selectedProduct.description.charAt(0).toUpperCase() +
+                ? selectedProduct.description
+                    .charAt(0)
+                    .toUpperCase() +
                   selectedProduct.description.slice(1)
                 : "No description available",
             }}
           />
+
         </Dropdown.Item>
+
       </Dropdown.Menu>
+
     </Dropdown>
   );
 };
 
-const SocialIcons = ({ youtubeLink, instagramLink }) => {
+const SocialIcons = ({
+  youtubeLink,
+  instagramLink,
+}) => {
   return (
     <div className="social-icons">
+
       <button
         className="icon-button"
-        onClick={() => instagramLink && window.open(instagramLink, "_blank")}
+        onClick={() =>
+          instagramLink &&
+          window.open(
+            instagramLink,
+            "_blank"
+          )
+        }
         disabled={!instagramLink}
       >
         <FaInstagram />
@@ -499,11 +739,18 @@ const SocialIcons = ({ youtubeLink, instagramLink }) => {
 
       <button
         className="icon-button"
-        onClick={() => youtubeLink && window.open(youtubeLink, "_blank")}
+        onClick={() =>
+          youtubeLink &&
+          window.open(
+            youtubeLink,
+            "_blank"
+          )
+        }
         disabled={!youtubeLink}
       >
         <FaYoutube />
       </button>
+
     </div>
   );
 };
@@ -522,55 +769,101 @@ const Sidebar = ({
   instagramLink,
   productSlug,
 }) => {
-  // ✅ This is now the page's single real H1 (see ProjectHeader fix
-  // above). Uses the new SEO title from product-copy.json — all 21
-  // products now have an entry, so the plain-product-name fallback
-  // below is effectively dead code unless a future slug is missing.
-  const h1Text =
-    productCopy?.h1 ||
-    (selectedProduct.Productname.charAt(0).toUpperCase() +
-      selectedProduct.Productname.slice(1));
+
+  /*
+    IMPORTANT:
+    The H1 now uses ONLY Productname.
+
+    Example:
+    MetaCoin
+    MetaSequin
+    MetaLouver
+
+    It no longer uses productCopy.h1.
+  */
+
+  const h1Text = selectedProduct?.Productname
+    ? selectedProduct.Productname
+        .charAt(0)
+        .toUpperCase() +
+      selectedProduct.Productname.slice(1)
+    : "Product";
 
   return (
     <div className="col-md-3 col-sm-12 sidebar-section pe-lg-4">
-      <h1 style={{ fontWeight: "bold" }}>{h1Text}</h1>
+
+      <h1 style={{ fontWeight: "bold" }}>
+        {h1Text}
+      </h1>
+
       <div
         id="single-text"
         className="sidebar p-4 bg-darkrounded tw-text-white"
       >
+
         <ListGroup variant="flush">
+
           <p
             action
             variant="dark"
             style={{ fontSize: "15px" }}
             dangerouslySetInnerHTML={{
               __html:
-                selectedProduct.description.charAt(0).toUpperCase() +
+                selectedProduct.description
+                  .charAt(0)
+                  .toUpperCase() +
                 selectedProduct.description.slice(1),
             }}
           />
+
         </ListGroup>
+
       </div>
 
-      <div className="button-row" style={{ padding: "5px" }}>
+      <div
+        className="button-row"
+        style={{ padding: "5px" }}
+      >
+
         <Button
           icon={<FaYoutube />}
           text="See on YouTube"
-          onClick={() => window.open(youtubeLink, "_blank")}
+          onClick={() =>
+            window.open(
+              youtubeLink,
+              "_blank"
+            )
+          }
           active={activeButton === 0}
         />
+
         <Button
           icon={<FaInstagram />}
           text="See on Instagram"
-          onClick={() => window.open(instagramLink, "_blank")}
+          onClick={() =>
+            window.open(
+              instagramLink,
+              "_blank"
+            )
+          }
           active={activeButton === 1}
         />
+
       </div>
-      <a href={`/build/?product=${productSlug}/`}>
-        <button id="build-button" className="hover-button">
-          <span>Build Your Dream</span>
+
+      <a
+        href={`/build/?product=${productSlug}/`}
+      >
+        <button
+          id="build-button"
+          className="hover-button"
+        >
+          <span>
+            Build Your Dream
+          </span>
         </button>
       </a>
+
     </div>
   );
 };
@@ -585,11 +878,19 @@ const ImageGrid = ({
   altText,
 }) => {
   return (
-    <div id="product-grid" className="image-grid" ref={ref}>
-      {filteredImages.length === 0 && !videoLink ? (
+    <div
+      id="product-grid"
+      className="image-grid"
+      ref={ref}
+    >
+
+      {filteredImages.length === 0 &&
+      !videoLink ? (
         <div className="no-images-found">
           No images found.
-          <span>Go Back to Day</span>
+          <span>
+            Go Back to Day
+          </span>
         </div>
       ) : (
         <>
@@ -597,53 +898,87 @@ const ImageGrid = ({
             <VideoItem
               videoUrl={videoLink}
               index={0}
-              handleImageClick={handleImageClick}
-              clickedIndex={clickedIndex}
-              videoAlt={altText?.videoAlt}
+              handleImageClick={
+                handleImageClick
+              }
+              clickedIndex={
+                clickedIndex
+              }
+              videoAlt={
+                altText?.videoAlt
+              }
             />
           )}
 
-          {filteredImages.map((image, index) => (
-            <Image
-              key={index + 1}
-              image={image}
-              index={index + 1}
-              handleImageClick={handleImageClick}
-              isLastRow={isLastRow}
-              clickedIndex={clickedIndex}
-              // ✅ Task 8 — real alt text looked up by the image's own
-              // path, not by grid position. Filtering by category or
-              // night-mode reorders/subsets filteredImages, so index
-              // alone would point at the wrong alt — path is stable.
-              altText={altText?.images?.[image]}
-            />
-          ))}
+          {filteredImages.map(
+            (image, index) => (
+              <Image
+                key={index + 1}
+                image={image}
+                index={index + 1}
+                handleImageClick={
+                  handleImageClick
+                }
+                isLastRow={isLastRow}
+                clickedIndex={
+                  clickedIndex
+                }
+                altText={
+                  altText?.images?.[
+                    image
+                  ]
+                }
+              />
+            )
+          )}
         </>
       )}
+
     </div>
   );
 };
 
-const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex, videoAlt }) => {
+const VideoItem = ({
+  videoUrl,
+  index,
+  handleImageClick,
+  clickedIndex,
+  videoAlt,
+}) => {
+
   const getVideoId = (url) => {
+
     if (url.includes("shorts/")) {
-      return url.split("/shorts/")[1]?.split("?")[0];
-    } else if (url.includes("v=")) {
-      return url.split("v=")[1]?.split("&")[0];
+      return url
+        .split("/shorts/")[1]
+        ?.split("?")[0];
     }
+
+    if (url.includes("v=")) {
+      return url
+        .split("v=")[1]
+        ?.split("&")[0];
+    }
+
     return null;
   };
 
   const videoId = getVideoId(videoUrl);
+
   if (!videoId) return null;
 
   return (
     <div
       className={`grid-item video-thumbnail ${
-        clickedIndex === index ? "active" : ""
+        clickedIndex === index
+          ? "active"
+          : ""
       }`}
-      onClick={() => handleImageClick(index)}
+      onClick={() =>
+        handleImageClick(index)
+      }
     >
+
       {clickedIndex === index ? (
         <iframe
           width="100%"
@@ -657,61 +992,109 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex, videoAlt }
         <>
           <img
             src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-            alt={videoAlt || "YouTube Video Thumbnail"}
+            alt={
+              videoAlt ||
+              "YouTube Video Thumbnail"
+            }
             className="grid-image"
             width={480}
             height={360}
             loading="lazy"
           />
+
           <div className="play-icon">
-            <FaPlay size={40} color="white" />
+            <FaPlay
+              size={40}
+              color="white"
+            />
           </div>
         </>
       )}
+
     </div>
   );
 };
 
-const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, altText }) => {
+const Image = ({
+  image,
+  index,
+  handleImageClick,
+  isLastRow,
+  clickedIndex,
+  altText,
+}) => {
   return (
     <div
-      className={`grid-item ${isLastRow(index) ? "last-row" : ""} ${
-        clickedIndex === index ? "active" : ""
+      className={`grid-item ${
+        isLastRow(index)
+          ? "last-row"
+          : ""
+      } ${
+        clickedIndex === index
+          ? "active"
+          : ""
       }`}
-      onClick={() => handleImageClick(index)}
+      onClick={() =>
+        handleImageClick(index)
+      }
     >
+
       <img
         src={`${process.env.PUBLIC_URL}/${image}`}
         className="grid-image"
-        // ✅ Task 8 — falls back to the old generic placeholder only if
-        // this image has no real alt text yet (e.g. the 6 uncovered
-        // images each on MetaCoin and MetaSequin — see alt-text.json).
-        alt={altText || `Project item ${index + 1}`}
+        alt={
+          altText ||
+          `Project item ${index + 1}`
+        }
         width={640}
         height={480}
         loading="lazy"
       />
+
     </div>
   );
 };
 
-const Button = ({ icon, text, onClick, active }) => {
+const Button = ({
+  icon,
+  text,
+  onClick,
+  active,
+}) => {
   return (
     <button
-      className={`transition-button ${active ? "active" : ""}`}
+      className={`transition-button ${
+        active ? "active" : ""
+      }`}
       onClick={onClick}
     >
-      <span className="icon">{icon}</span>
-      <span className="text">{text}</span>
+
+      <span className="icon">
+        {icon}
+      </span>
+
+      <span className="text">
+        {text}
+      </span>
+
     </button>
   );
 };
 
-const BuildButton = ({ productSlug }) => {
+const BuildButton = ({
+  productSlug,
+}) => {
   return (
-    <a href={`/build/?product=${productSlug}/`}>
-      <button id="build-button" className="mobile-controls hover-button">
-        <span>Build Your Dream</span>
+    <a
+      href={`/build/?product=${productSlug}/`}
+    >
+      <button
+        id="build-button"
+        className="mobile-controls hover-button"
+      >
+        <span>
+          Build Your Dream
+        </span>
       </button>
     </a>
   );
