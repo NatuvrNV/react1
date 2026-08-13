@@ -88,7 +88,7 @@ const Product = () => {
             {products.map((product) => (
               <Col key={product.id} xs={6} md={6} lg={3} className="product-col mb-4">
                 <Link
-                  to={`/all-products/${product.slug}`}
+                  to={`/all-products/${product.slug}/`}
                   className="product-card tw-cursor-pointer"
                   onClick={() => console.log("Navigating to:", product.slug)}
                 >
@@ -113,7 +113,7 @@ const Product = () => {
         <div className="mobile-view">
           <div id="top-container" className="slider-container" ref={sliderRef} onScroll={handleScroll}>
             {products.map((product) => (
-              <Link key={product.id} to={`/all-products/${product.slug}`} className="slider-item">
+              <Link key={product.id} to={`/all-products/${product.slug}/`} className="slider-item">
                 <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="product-card tw-cursor-pointer">
                  <img src={product.image} alt={product.alt} className="product-image" loading="lazy" width={400} height={400} />
                   <p className="font tw-flex tw-justify-center tw-items-center">

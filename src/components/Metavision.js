@@ -64,7 +64,7 @@ const Metavision = () => {
    
       <button className="hover-button" aria-label="See all projects" onClick={() => {
     window.scrollTo(0, 0); // Scroll to top
-    navigate("/about"); }}>
+    navigate("/about/"); }}>
         <span>About Us</span>
       </button> 
       

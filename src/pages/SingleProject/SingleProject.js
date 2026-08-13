@@ -631,7 +631,7 @@ const Sidebar = ({
         />
       </div>
 
-      <a href={`/build/?project=${projectSlug}`}>
+      <a href={`/build/?project=${projectSlug}/`}>
         <button id="build-button" className="hover-button">
           <span>Build Your Dream</span>
         </button>
@@ -811,7 +811,7 @@ const Button = ({ icon, text, onClick, active }) => {
 
 const BuildButton = ({ projectSlug }) => {
   return (
-    <a href={`/build/?project=${projectSlug}`}>
+    <a href={`/build/?project=${projectSlug}/`}>
       <button id="build-button" className="mobile-controls hover-button">
         <span>Build Your Dream</span>
       </button>
