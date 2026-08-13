@@ -42,7 +42,7 @@ const SingleProduct = () => {
 
   useEffect(() => {
     let cancelled = false;
-    fetch(`${process.env.PUBLIC_URL}/data/product-copy.json`)
+    fetch(`${process.env.PUBLIC_URL}/data/product-index.json`)
       .then((res) => (res.ok ? res.json() : {}))
       .then((data) => {
         if (!cancelled) setProductCopyData(data);
