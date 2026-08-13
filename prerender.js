@@ -15,6 +15,7 @@ const http = require('http');
 
 const { SingleBlogDetail } = require('./src/pages/Blog/BlogConstants');
 
+// Projects index
 const projectsIndex = JSON.parse(
   fs.readFileSync(
     path.join(__dirname, 'public/data/projects-index.json'),
@@ -22,12 +23,47 @@ const projectsIndex = JSON.parse(
   )
 );
 
+// Products index
+// NOTE:
+// products-index.json is an OBJECT, not an ARRAY.
+// Example:
+// {
+//   "metacoin": {...},
+//   "metasequin": {...},
+//   "metapyramid": {...}
+// }
 const productsIndex = JSON.parse(
   fs.readFileSync(
     path.join(__dirname, 'public/data/products-index.json'),
     'utf8'
   )
 );
+
+// --------------------------------------------------
+// Validate data
+// --------------------------------------------------
+
+if (!Array.isArray(SingleBlogDetail)) {
+  throw new Error(
+    'SingleBlogDetail is not an array. Check BlogConstants.js'
+  );
+}
+
+if (!Array.isArray(projectsIndex)) {
+  throw new Error(
+    'projects-index.json must contain an array at the root.'
+  );
+}
+
+if (
+  !productsIndex ||
+  typeof productsIndex !== 'object' ||
+  Array.isArray(productsIndex)
+) {
+  throw new Error(
+    'products-index.json must contain an object with product slugs as keys.'
+  );
+}
 
 // --------------------------------------------------
 // Helpers
@@ -91,8 +127,18 @@ const projectPages = projectsIndex.map((project) => {
 // Product pages
 // --------------------------------------------------
 
-const productPages = productsIndex.map((product) => {
-  return `/all-products/${String(product.name).toLowerCase()}`;
+// products-index.json is an OBJECT:
+//
+// {
+//   "metacoin": {...},
+//   "metasequin": {...},
+//   "metapyramid": {...}
+// }
+//
+// Therefore Object.keys() is used instead of .map().
+
+const productPages = Object.keys(productsIndex).map((slug) => {
+  return `/all-products/${getUrlFriendlyString(slug)}`;
 });
 
 // --------------------------------------------------
@@ -105,6 +151,9 @@ const allPages = [
   ...projectPages,
   ...productPages,
 ];
+
+// Remove duplicate URLs
+const uniquePages = [...new Set(allPages)];
 
 // --------------------------------------------------
 // Local static server
@@ -138,6 +187,7 @@ function startServer() {
           (req.url || '/').split('?')[0]
         );
 
+        // Remove trailing slash except homepage
         if (urlPath !== '/' && urlPath.endsWith('/')) {
           urlPath = urlPath.slice(0, -1);
         }
@@ -243,14 +293,19 @@ function startServer() {
 async function launchBrowser() {
   console.log('\n🚀 Starting System Chromium...');
 
-  // Your Ubuntu server's Chromium
-  const chromiumPath =
-    '/usr/bin/chromium-browser';
+  const chromiumPaths = [
+    '/usr/bin/chromium-browser',
+    '/usr/bin/chromium',
+  ];
 
-  // Check Chromium exists
-  if (!fs.existsSync(chromiumPath)) {
+  const chromiumPath = chromiumPaths.find((browserPath) =>
+    fs.existsSync(browserPath)
+  );
+
+  if (!chromiumPath) {
     throw new Error(
-      `System Chromium not found at: ${chromiumPath}`
+      'System Chromium not found. Checked:\n' +
+        chromiumPaths.join('\n')
     );
   }
 
@@ -341,10 +396,7 @@ function getOutputPath(page) {
 // Render one page
 // --------------------------------------------------
 
-async function renderPage(
-  browser,
-  page
-) {
+async function renderPage(browser, page) {
   let tab = null;
 
   try {
@@ -410,9 +462,7 @@ async function renderPage(
     await tab.waitForFunction(
       () => {
         const root =
-          document.getElementById(
-            'root'
-          );
+          document.getElementById('root');
 
         return (
           root &&
@@ -509,11 +559,11 @@ async function prerender() {
   );
 
   console.log(
-    `   Total   : ${allPages.length}\n`
+    `   Total   : ${uniquePages.length}\n`
   );
 
   console.log(
-    `🚀 Pre-rendering ${allPages.length} pages...\n`
+    `🚀 Pre-rendering ${uniquePages.length} pages...\n`
   );
 
   let server = null;
@@ -545,14 +595,14 @@ async function prerender() {
 
     for (
       let i = 0;
-      i < allPages.length;
+      i < uniquePages.length;
       i++
     ) {
       const page =
-        allPages[i];
+        uniquePages[i];
 
       console.log(
-        `\n[${i + 1}/${allPages.length}] ${page}`
+        `\n[${i + 1}/${uniquePages.length}] ${page}`
       );
 
       let rendered = false;
@@ -742,7 +792,7 @@ async function prerender() {
   );
 
   console.log(
-    `📄 Total   : ${allPages.length}`
+    `📄 Total   : ${uniquePages.length}`
   );
 
   if (
