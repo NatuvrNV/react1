@@ -93,7 +93,7 @@ export const AtAGlanceSection = () => {
 
   return (
     <div id="glance-cont" className="tw-container tw-mx-auto tw-px-4 tw-py-4">
-    <h1 id="glance-title" className="products-title">Metaguise At A Glance</h1>
+    <h2 id="glance-title" className="products-title">Metaguise At A Glance</h2>
     <div
       className={`${
         isMobile

@@ -18,9 +18,9 @@ export const ReverseHeroSection = () => {
 
         <div className="tw-w-full md:tw-w-[60%] tw-px-4 md:tw-px-40 tw-flex tw-flex-col tw-justify-start tw-text-left">
           <div className="tw-max-w-[600px] tw-space-y-6">
-            <h1 className="tw-text-4xl Design-tittle tw-mt-4 md:tw-text-5xl lg:tw-text-[64px]  md:tw-leading-[60px] tw-font-bold tw-text-left">
+            <h2 className="tw-text-4xl Design-tittle tw-mt-4 md:tw-text-5xl lg:tw-text-[64px]  md:tw-leading-[60px] tw-font-bold tw-text-left">
               Design and Engineering Prowess
-            </h1>
+            </h2>
 
             <div id="Design" className="tw-space-y-6">
               <p className="tw-text-base tw-leading-relaxed tw-text-left">

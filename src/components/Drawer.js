@@ -101,7 +101,7 @@ function Drawer({ isOpen, toggleDrawer }) {
               </h5>
                     <p className="nav-text" style={{ lineHeight: "30px" }}>
                       Visit our Flagship experience Center at <br />
-                      Basement Floor, K9/46, DLF PH 2, Gurgaon, Haryana
+                      Basement F17/4,DLF Phase 1, Sector 42, Gurugram, Haryana
                       <br />
                       <a
                         id="visit"

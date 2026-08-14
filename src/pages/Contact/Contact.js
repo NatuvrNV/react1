@@ -450,7 +450,18 @@ const Contact = () => {
           before: the form section above is bg-dark, and this much
           body copy in white-on-dark is a readability problem.
          ============================================================ */}
-      <Container as="section" className="contact-copy py-5">
+      {/*
+        ⚠️ NOTE: this section is now visually hidden via srOnlyStyle at the
+        user's explicit request, after being warned this is different from
+        the sr-only H1 above (which duplicates already-visible copy) — this
+        hides genuinely new content that no visitor ever sees, which
+        Google's Spam Policies classify as "hidden text" and can penalize.
+        This content was originally added (Rishi, task 9) specifically to
+        raise the page's VISIBLE word count for the Content/On-page score
+        pillars; hiding it undoes that intent. Revert by removing
+        `style={srOnlyStyle}` below if this causes ranking issues.
+      */}
+      <Container as="section" className="contact-copy py-5" style={srOnlyStyle}>
         <Row>
           <Col lg={8} className="mx-auto">
             <p>
