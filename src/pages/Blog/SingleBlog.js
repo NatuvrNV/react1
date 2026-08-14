@@ -113,26 +113,7 @@ const SingleBlogPage = () => {
 
   if (!blog) return null;
 
-  // ---- image helpers (support both plain-string and {path, alt} images) ----
-  const getRawImage = (images, index) => {
-    if (!images || images.length === 0) return null;
-    return images[index] || images[0] || null;
-  };
-
-  const getImageSrc = (b, index) => {
-    const raw = getRawImage(b.images, index);
-    if (!raw) return '';
-    const path = typeof raw === 'object' ? raw.path : raw;
-    if (!path) return '';
-    return `/assets/Blogs/${b.folderName}/${path.split('/').pop()}`;
-  };
-
-  const getImageAlt = (b, index) => {
-    const raw = getRawImage(b.images, index);
-    if (raw && typeof raw === 'object' && raw.alt) return raw.alt;
-    return b.imageAltText || b.title;
-  };
-
+  // Helper function to get the first image URL (for OG/Twitter meta)
   const getFirstImageUrl = () => {
     if (blog.images && blog.images.length > 0) {
       const firstImage = blog.images[0];
@@ -142,6 +123,7 @@ const SingleBlogPage = () => {
     return '';
   };
 
+  // Helper function to get alt text for the first image
   const getFirstImageAlt = () => {
     if (blog.images && blog.images.length > 0) {
       const firstImage = blog.images[0];
@@ -176,14 +158,17 @@ const SingleBlogPage = () => {
     return null;
   };
 
+  // Function to get alt text for an image
   const getImageAltText = (b, imageIndex = 0) => {
+    // Check if the blog has the new images array format with alt tags
     if (b.images && b.images.length > 0 && typeof b.images[0] === 'object' && b.images[0].alt) {
       return b.images[imageIndex]?.alt || b.imageAltText || b.title;
     }
+    // Fallback to old format
     return b.imageAltText || b.title;
   };
 
-  // Template B image rows (all images, paired)
+  // Function to render images in rows of 2 (Template A gallery)
   const renderImageRows = () => {
     const rows = [];
     for (let i = 0; i < blog.images.length; i += 2) {
@@ -193,6 +178,7 @@ const SingleBlogPage = () => {
           {imagePair.map((image, index) => {
             const imagePath = typeof image === 'object' ? image.path : image;
             const imageAlt = typeof image === 'object' ? image.alt : getImageAltText(blog, i + index);
+
             return (
               <Col key={i + index} xs={6}>
                 <img
@@ -213,95 +199,44 @@ const SingleBlogPage = () => {
     return rows;
   };
 
-  // ---- Template A: old UI (hero + grid, first 3 images) ----
+  // ---- Template A: title/date/description in one column, image grid in the other ----
   const renderTemplateA = () => {
     return (
       <>
+        {/* Mobile Layout */}
         <div className="d-block d-xl-none">
           <BlogButton navigate={navigate} />
-          <div className="mobile-image-gallery mt-4">
-            <div className="d-flex">
-              <img
-                src={getImageSrc(blog, 0)}
-                alt={getImageAlt(blog, 0)}
-                className="object-cover rounded-lg w-50"
-                loading="lazy"
-                width="640"
-                height="480"
-              />
-              <div className="d-flex flex-column w-50 ms-2">
-                <img
-                  src={getImageSrc(blog, 1)}
-                  alt={getImageAlt(blog, 1)}
-                  className="object-cover rounded-lg mb-2"
-                  loading="lazy"
-                  width="640"
-                  height="480"
-                />
-                <img
-                  src={getImageSrc(blog, 2)}
-                  alt={getImageAlt(blog, 2)}
-                  className="object-cover rounded-lg"
-                  loading="lazy"
-                  width="640"
-                  height="480"
-                />
-              </div>
-            </div>
-          </div>
-          <h2 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h2>
+          <h1 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h1>
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>
+
+          {/* Mobile image gallery - show all images in rows of 2 */}
+          <div className="mobile-image-gallery mt-3">
+            {renderImageRows()}
+          </div>
+
           {renderBody(blog, "text-sm blog-fulldescription mt-4")}
         </div>
 
+        {/* Desktop Layout */}
         <div className="d-none d-xl-block">
           <Row>
-            <Col xl={3} className="order-1">
+            <Col xl={12}>
               <BlogButton navigate={navigate} />
-            </Col>
-            <Col xl={6}>
-              <h1 id="head-text" className="text-4xl blog-title">{blog.title}</h1>
-            </Col>
-            <Col xl={3}>
-              <p className="text-xs text-gray-400 date-text">{blog.date} | {blog.category}</p>
             </Col>
           </Row>
 
-          <Row>
-            <Col xl={6}>
-              {renderBody(blog, "text-sm mt-xl-2 blog-fulldescription mt-xl-5")}
+          <Row className='py-xl-3'>
+            <Col xl={7}>
+              <h1 id='head-text' className="text-4xl mt-xl-4 blog-title text-start">{blog.title}</h1>
+              <p className="text-xs text-gray-400 date-text text-start">{blog.date} | {blog.category}</p>
+              {renderBody(blog, "text-sm blog-fulldescription")}
             </Col>
 
-            <Col xl={6} className="order-xl-1">
-              <div className="image-gallery">
-                <img
-                  src={getImageSrc(blog, 0)}
-                  alt={getImageAlt(blog, 0)}
-                  className="object-cover rounded-lg w-100 mb-4"
-                  loading="lazy"
-                  width="640"
-                  height="480"
-                />
-                <div className="grid grid-cols-2 gap-4 single-grid">
-                  <img
-                    src={getImageSrc(blog, 1)}
-                    alt={getImageAlt(blog, 1)}
-                    className="object-cover rounded-lg w-100"
-                    loading="lazy"
-                    width="640"
-                    height="480"
-                  />
-                  <img
-                    src={getImageSrc(blog, 2)}
-                    alt={getImageAlt(blog, 2)}
-                    className="object-cover rounded-lg w-100"
-                    loading="lazy"
-                    width="640"
-                    height="480"
-                  />
-                </div>
+            <Col xl={5}>
+              <div className="image-gallery mt-xl-4">
+                {renderImageRows()}
               </div>
             </Col>
           </Row>
@@ -310,7 +245,7 @@ const SingleBlogPage = () => {
     );
   };
 
-  // ---- Template B: alternating image + text, all images ----
+  // ---- Template B: vertical stacked layout, alternating image + text ----
   const renderTemplateB = () => {
     const descriptionSections = blog.contentSections ||
       blog.Fulldescription.split('</p>').filter(section => section.trim()).map(section => section + '</p>');
@@ -321,8 +256,9 @@ const SingleBlogPage = () => {
       <>
         <BlogButton navigate={navigate} />
 
+        {/* Mobile Layout for Template B */}
         <div className="d-block d-xl-none">
-          <h2 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h2>
+          <h1 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h1>
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>
@@ -360,10 +296,11 @@ const SingleBlogPage = () => {
           })}
         </div>
 
+        {/* Desktop Layout for Template B */}
         <div className="d-none d-xl-block">
           <Row className="my-4">
             <Col xl={12}>
-              <h1 id="head-text2" className="text-4xl blog-title text-start">{blog.title}</h1>
+              <h1 id='head-text2' className="text-4xl blog-title text-start">{blog.title}</h1>
               <p className="text-xs text-gray-400 date-text2 text-start mt-2">
                 {blog.date} | {blog.category}
               </p>
@@ -428,6 +365,7 @@ const SingleBlogPage = () => {
     return relatedBlog.imageAltText || relatedBlog.title;
   };
 
+  // Select template based on blog.template property
   const renderTemplate = () => {
     switch (blog.template) {
       case 'B':

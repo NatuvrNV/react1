@@ -568,20 +568,73 @@ const SingleProduct = () => {
 
       </div>
 
-      {/* 
-        IMPORTANT:
-        The previous visible SEO content section has been removed.
+      {/*
+        SEO content block.
+        This is NOT visually shown to regular visitors — it's clipped
+        off-screen with the "visually hidden" technique (same pattern
+        used for screen-reader-only text), so it stays in the DOM and
+        accessibility tree.
 
-        Previously this rendered:
-        - definitionParagraph
-        - H2 sections
-        - paragraphs
+        Because the site is served through the Puppeteer prerender
+        pipeline, crawlers get the fully rendered HTML (including this
+        block), while human visitors only see the normal grid/sidebar UI.
 
-        The main product UI remains unchanged.
+        Source: products-index.json -> productCopy (definitionParagraph, h2Sections)
       */}
+      {productCopy && (
+        <SeoContent productCopy={productCopy} />
+      )}
 
       <Footer />
 
+    </div>
+  );
+};
+
+// Visually-hidden style: clips content off-screen without display:none
+// or visibility:hidden, so it stays in the DOM and accessibility tree
+// (and therefore in whatever HTML the Puppeteer prerender snapshot
+// serves to crawlers), but is not visible in the normal page layout.
+const visuallyHiddenStyle = {
+  position: "absolute",
+  width: "1px",
+  height: "1px",
+  padding: 0,
+  margin: "-1px",
+  overflow: "hidden",
+  clip: "rect(0, 0, 0, 0)",
+  whiteSpace: "nowrap",
+  border: 0,
+};
+
+// Renders definitionParagraph + h2Sections from products-index.json.
+// Deliberately does NOT render productCopy.h1 as an <h1> tag — the page
+// already has one visible <h1> (the product name, in Sidebar). A second
+// <h1> would hurt heading structure rather than help it.
+const SeoContent = ({ productCopy }) => {
+  if (!productCopy) return null;
+
+  const { definitionParagraph, h2Sections } = productCopy;
+
+  if (!definitionParagraph && !(h2Sections && h2Sections.length)) {
+    return null;
+  }
+
+  return (
+    <div
+      className="seo-hidden-content"
+      style={visuallyHiddenStyle}
+      aria-hidden="false"
+    >
+      {definitionParagraph && <p>{definitionParagraph}</p>}
+
+      {Array.isArray(h2Sections) &&
+        h2Sections.map((section, index) => (
+          <section key={index}>
+            <h2>{section.heading}</h2>
+            <p>{section.copy}</p>
+          </section>
+        ))}
     </div>
   );
 };
