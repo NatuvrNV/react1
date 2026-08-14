@@ -12,6 +12,22 @@ import { fetchProjectsIndex } from "../../utils/fetchProjectData";
 import { ProjectImages as images } from "../../utils/constants";
 import { Helmet } from "react-helmet-async";
 
+// Same visually-hidden-but-crawlable pattern used on Contact.js/Partner.js.
+// NOT display:none, which Google discounts — this keeps the content in the
+// accessibility tree and readable by crawlers while invisible to sighted
+// visitors, per explicit request.
+const srOnlyStyle = {
+  position: "absolute",
+  width: "1px",
+  height: "1px",
+  padding: 0,
+  margin: "-1px",
+  overflow: "hidden",
+  clip: "rect(0,0,0,0)",
+  whiteSpace: "nowrap",
+  border: 0,
+};
+
 const Allprojects = () => {
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -264,6 +280,53 @@ const projectClickHandler = (img) => {
           </Row>
         </Container>
       </div>
+
+      {/*
+        ⚠️ NOTE: same technique as Contact.js/Partner.js — this section is
+        visually hidden via srOnlyStyle so crawlers read it but visitors
+        never see it. Heading downgraded to H2, not H1, to stay consistent
+        with the task 3 fix on this exact page (a second H1 was already
+        removed here once — a hidden H1 would reopen that same issue since
+        Google counts H1 tags regardless of CSS visibility).
+      */}
+      <Container as="section" className="projects-copy py-5" style={srOnlyStyle}>
+        <Row>
+          <Col lg={8} className="mx-auto">
+            <h2>1,800+ Metal Facade Projects Across India</h2>
+            <p>
+              Explore Metaguise's portfolio of metal facade and elevation
+              projects across India - from luxury residences to commercial
+              towers, hospitals, jewellery showrooms, and public and
+              institutional landmarks. Every project features a custom
+              facade system engineered for the client's climate, budget, and
+              architectural vision.
+            </p>
+
+            <h2>Residential Facade Projects</h2>
+            <p>
+              Luxury villas, bungalows, builder floors, and duplexes
+              featuring parametric, perforated, kinetic, and solid panel
+              metal facades designed for privacy, light control, and street
+              presence.
+            </p>
+
+            <h2>Commercial &amp; Retail Facade Projects</h2>
+            <p>
+              Office buildings, showrooms, and retail storefronts using
+              metal cladding to create brand-forward, high-visibility
+              elevations.
+            </p>
+
+            <h2>Institutional Facade Projects</h2>
+            <p>
+              Hospitals, universities, stadiums, banks, and public buildings
+              where facade design balances safety, durability, and
+              architectural identity at scale.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+
       <Footer />
     </div>
   );

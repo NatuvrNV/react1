@@ -13,6 +13,22 @@ import { fetchProductsIndex } from "../../utils/fetchProductData";
 import { ProductImages as images } from "../../utils/constants";
 import { Helmet } from "react-helmet-async";
 
+// Same visually-hidden-but-crawlable pattern used on Contact.js/Partner.js.
+// NOT display:none, which Google discounts — this keeps the content in the
+// accessibility tree and readable by crawlers while invisible to sighted
+// visitors, per explicit request.
+const srOnlyStyle = {
+  position: "absolute",
+  width: "1px",
+  height: "1px",
+  padding: 0,
+  margin: "-1px",
+  overflow: "hidden",
+  clip: "rect(0,0,0,0)",
+  whiteSpace: "nowrap",
+  border: 0,
+};
+
 const categories = [
   { name: "All", value: "" },
   { name: "MetaParametric", value: "MetaParametric" },
@@ -234,6 +250,54 @@ function productClickHandler(img) {
           </Row>
         </Container>
       </div>
+
+      {/*
+        ⚠️ NOTE: same technique as Contact.js/Partner.js — this section is
+        visually hidden via srOnlyStyle so crawlers read it but visitors
+        never see it. Heading downgraded to H2, not H1, to stay consistent
+        with the task 3 fix on this exact page (a second H1 was already
+        removed here once — a hidden H1 would reopen that same issue since
+        Google counts H1 tags regardless of CSS visibility).
+      */}
+      <Container as="section" className="products-copy py-5" style={srOnlyStyle}>
+        <Row>
+          <Col lg={8} className="mx-auto">
+            <h2>Explore Metaguise's Parametric, Kinetic, and Value-Driven Facade Technologies</h2>
+            <p>
+              Metaguise designs, manufactures and installs metal facade
+              systems for residential, commercial, and institutional
+              buildings across India. Our parametric, kinetic, and
+              value-driven systems are engineered in aluminium, stainless
+              steel, brass, copper, or zinc - with VOC-free PVDF and
+              powder-coat finishes carrying 15 to 30-year warranties. Browse
+              our facade products below to find the right system for your
+              project.
+            </p>
+
+            <h2>Explore Metal Facade Products by Style</h2>
+            <p>
+              Choose from perforated screens, solid panels, 3D-textured
+              systems, and kinetic facades - depending on the visual
+              character you want for your building's elevation.
+            </p>
+
+            <h2>Explore Metal Facade Products by Material</h2>
+            <p>
+              Every Metaguise system is available in aluminium, stainless
+              steel, copper, brass, or zinc - so you can match the facade to
+              your budget, maintenance preference, and climate.
+            </p>
+
+            <h2>Why Architects Choose Metaguise Facade Systems</h2>
+            <p>
+              Metaguise has completed 1,800+ projects pan-India, with
+              in-house parametric design, precision fabrication, and
+              coatings tested for India's climate extremes.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+
       <Footer />
     </div>
   );
