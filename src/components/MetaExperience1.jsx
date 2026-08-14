@@ -7,21 +7,37 @@ import { useNavigate } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+// ✅ Register GSAP plugins once, at module scope, guarded for SSR.
+// Doing this inside the component body meant it ran on every render
+// (and on the server, where `window`/`document` don't exist).
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(useGSAP);
+}
+
 const MetaExperience1 = () => {
   const navigate = useNavigate();
   const containerRef = useRef();
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.registerPlugin(useGSAP);
+  // ✅ Hydration fix: never read `window` during render.
+  // The old code did `useState(window.innerWidth >= 768)`, which runs
+  // on the server too (where `window` is undefined) — that either
+  // throws during SSR/prerendering, or resolves to a value that
+  // doesn't match the real browser viewport on first client render,
+  // which is what causes a hydration mismatch.
+  //
+  // We now start with a fixed, server-safe default and only read the
+  // real width inside useEffect, which React guarantees never runs
+  // during server rendering — so server and client agree on the very
+  // first paint, and the real value is applied right after mount.
+  const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
-    };
+    const updateIsDesktop = () => setIsDesktop(window.innerWidth >= 768);
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    updateIsDesktop(); // set the real value once mounted on the client
+    window.addEventListener("resize", updateIsDesktop);
+    return () => window.removeEventListener("resize", updateIsDesktop);
   }, []);
 
   useGSAP(() => {
@@ -35,11 +51,8 @@ const MetaExperience1 = () => {
         end: "center center",
         scrub: true,
         toggleActions: "play reverse",
-        
       },
     });
-
-
   }, [isDesktop]);
 
   return (

@@ -47,19 +47,38 @@
   <meta name="theme-color" content="#000000" />
   <!-- <meta name="description" content="Metaguise specializes in bespoke luxury metal facades, parametric designs, and architectural cladding, redefining modern elevations in India." /> -->
 
- 
+  <!--
+    ✅ FIX — favicon and manifest changed from absolute
+    (https://metaguise.com/...) to relative (/...) paths.
+    Absolute URLs meant that when this page runs on any origin other
+    than metaguise.com (e.g. localhost:7401, a staging domain, a
+    preview deploy), the browser fetches these as CROSS-ORIGIN
+    requests. metaguise.com doesn't send back Access-Control-Allow-*
+    headers for them, so the fetch gets blocked — that's the
+    "Ensure CORS response header values are valid" issue you saw in
+    the DevTools Issues tab. Relative paths always resolve to
+    whatever origin the page is actually served from, so this can
+    never be cross-origin again, on localhost or in production.
+  -->
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://metaguise.com/favicon.ico" />
+  <link rel="icon" type="image/png" href="/favicon.ico" />
 
   <meta name="p:domain_verify" content="f3176ca2d1793f6481f27a2f5fd7ddb1"/>
 
-  <!-- Preload React -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js" as="script">
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js" as="script">
+  <!--
+    ✅ FIX — removed. These preloaded React 17 from a CDN as UMD
+    scripts, but the app actually ships a bundled React build (via
+    webpack/CRA), so nothing on the page ever consumed these files.
+    That's exactly what the "was preloaded using link preload but
+    not used within a few seconds" warnings were about — the browser
+    downloaded them and then never touched them. Deleting them
+    removes the warning and the wasted download entirely; it has no
+    effect on the app, since the app was never using them.
+  -->
 
   <!-- Manifest -->
-  <link rel="manifest" href="https://metaguise.com/manifest.json" />
+  <link rel="manifest" href="/manifest.json" />
 
   <meta name="facebook-domain-verification" content="ak53ynw95bpmxcttrs96wll4l4remd" />
 
