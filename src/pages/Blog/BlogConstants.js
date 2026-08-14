@@ -2858,7 +2858,7 @@ Whether you’re crafting a facade for a retail brand or designing one for a hig
 
   {
     title: "The MetaEffect: How Our Façades Transform Not Just Buildings, But Brands ",
-    url:"the-metaeffect-how-our-façades-transform-not-just-buildings-but-brands",
+    url:"the-metaeffect-how-our-facades-transform-not-just-buildings-but-brands",
     metaTitle: "Architectural Metal Facade Cladding Guide 2026",
     date: "21-11-25",
     category: "Facade Innovations",
