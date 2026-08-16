@@ -200,13 +200,19 @@ const SingleBlogPage = () => {
   };
 
   // ---- Template A: title/date/description in one column, image grid in the other ----
+  // NOTE: the post title <h1> and BlogButton are now rendered ONCE, above the
+  // mobile/desktop split. Previously each breakpoint block rendered its own
+  // <h1>{blog.title}</h1>, toggled with Bootstrap's d-block/d-none classes.
+  // Those are display:none, not conditional rendering, so both H1s stayed in
+  // the DOM at once — duplicate H1 on every blog post.
   const renderTemplateA = () => {
     return (
       <>
+        <BlogButton navigate={navigate} />
+        <h1 id="head-text" className="text-4xl mb-4 mt-4 mt-xl-4 blog-title text-start">{blog.title}</h1>
+
         {/* Mobile Layout */}
         <div className="d-block d-xl-none">
-          <BlogButton navigate={navigate} />
-          <h1 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h1>
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>
@@ -221,15 +227,8 @@ const SingleBlogPage = () => {
 
         {/* Desktop Layout */}
         <div className="d-none d-xl-block">
-          <Row>
-            <Col xl={12}>
-              <BlogButton navigate={navigate} />
-            </Col>
-          </Row>
-
           <Row className='py-xl-3'>
             <Col xl={7}>
-              <h1 id='head-text' className="text-4xl mt-xl-4 blog-title text-start">{blog.title}</h1>
               <p className="text-xs text-gray-400 date-text text-start">{blog.date} | {blog.category}</p>
               {renderBody(blog, "text-sm blog-fulldescription")}
             </Col>
@@ -246,6 +245,7 @@ const SingleBlogPage = () => {
   };
 
   // ---- Template B: vertical stacked layout, alternating image + text ----
+  // Same fix: single <h1> hoisted above the mobile/desktop split.
   const renderTemplateB = () => {
     const descriptionSections = blog.contentSections ||
       blog.Fulldescription.split('</p>').filter(section => section.trim()).map(section => section + '</p>');
@@ -255,10 +255,10 @@ const SingleBlogPage = () => {
     return (
       <>
         <BlogButton navigate={navigate} />
+        <h1 id="head-text2" className="text-4xl mb-4 mt-4 blog-title text-start">{blog.title}</h1>
 
         {/* Mobile Layout for Template B */}
         <div className="d-block d-xl-none">
-          <h1 className="text-4xl mb-4 blog-title mt-4">{blog.title}</h1>
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>
@@ -300,7 +300,6 @@ const SingleBlogPage = () => {
         <div className="d-none d-xl-block">
           <Row className="my-4">
             <Col xl={12}>
-              <h1 id='head-text2' className="text-4xl blog-title text-start">{blog.title}</h1>
               <p className="text-xs text-gray-400 date-text2 text-start mt-2">
                 {blog.date} | {blog.category}
               </p>
@@ -444,10 +443,10 @@ const SingleBlogPage = () => {
         <Container fluid>
           <Row>
             <Col xl={12}>
-              <div className="desktop-title mb-3 single-title">
-                <h2 className="text-5xl text-center mb-10">Related Articles</h2>
-              </div>
-              <div className="mobile-title mb-3 single-title">
+              {/* Single H2 for both breakpoints — was previously duplicated via
+                  .desktop-title / .mobile-title CSS-toggle wrappers, same
+                  display:none pattern that caused the duplicate H1 above. */}
+              <div className="single-title mb-3">
                 <h2 className="text-5xl text-center mb-10">Related Articles</h2>
               </div>
             </Col>

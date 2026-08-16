@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
           {/* About Links */}
           <div className="tw-text-base tw-flex tw-flex-col tw-items-center md:tw-items-start footer-links col-xl-3">
-            <a href="/about/ ">About Us</a>
+            <a href="/about/">About Us</a>
             <a href="/contact/">Talk to Us</a>
             <a href="/partner/">Partner With Us</a>
           </div>

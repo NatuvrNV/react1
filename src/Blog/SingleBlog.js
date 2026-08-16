@@ -84,10 +84,10 @@ const SingleBlogPage = () => {
       <Container fluid>
         <Row>
           <Col xl={12}>
-            <div className="desktop-title mb-3 single-title">
-              <h1 className="text-5xl text-center mb-10">Related Articles</h1>
-            </div>
-            <div className="mobile-title mb-3 single-title">
+            {/* Single H1 for both breakpoints — was previously duplicated via
+                .desktop-title / .mobile-title CSS-toggle wrappers, which left
+                two identical H1s in the DOM (only one hidden visually). */}
+            <div className="single-title mb-3">
               <h1 className="text-5xl text-center mb-10">Related Articles</h1>
             </div>
           </Col>

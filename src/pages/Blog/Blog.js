@@ -94,10 +94,10 @@ const Blog = () => {
 
       <Container fluid>
         <Row>
-          <div className="desktop-title mb-3 blog-title">
-            <h1 className="text-5xl text-center mb-10">Blog</h1>
-          </div>
-          <div className="mobile-title mb-3 blog-title">
+          {/* Single H1 for both breakpoints — was previously duplicated via
+              .desktop-title / .mobile-title CSS-toggle wrappers, which left
+              two identical H1s in the DOM (only one hidden visually). */}
+          <div className="blog-title mb-3">
             <h1 className="text-5xl text-center mb-10">Blog</h1>
           </div>
         </Row>

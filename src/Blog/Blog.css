@@ -1,6 +1,4 @@
-
-
-  .blog-title h1{
+.blog-title h1{
 font-size: 6rem;
   }
   
@@ -8,17 +6,42 @@ font-size: 6rem;
     font-size: 6rem;
     font-weight: 500;
       }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
+
+      .material-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #444; /* Outer border */
+
+}
+
+.material-table th,
+.material-table td {
+  border: 1px solid #444; /* Inner borders (rows + columns) */
+  padding: 12px 14px;
+  text-align: left;
+  color: #fff;
+
+}
+
+.material-table th {
+  font-weight: 600;
+}
   
   /* Header */
   .blog-header {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 40px;
+  }
+
+  #head-text{
+    font-size: 2rem !important;
+
+  }
+
+    #head-text2{
+    font-size: 3.5rem !important;
+    line-height: 50px !important;
   }
   
   /* Search and Categories */
@@ -41,10 +64,26 @@ font-size: 6rem;
     /* Sibgle Grid */
     .single-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 30px;
       }
 
+      .no-blogs-message {
+        padding: 20px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+      }
+
+
+      .date-text{
+        font-size: 18px;
+    }
+
+       .date-text2{
+        font-size: 25px;
+    }
 
   
   /* Blog Card */
@@ -55,8 +94,8 @@ font-size: 6rem;
   }
 
   .blog-card img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     
   }
@@ -140,8 +179,15 @@ font-size: 6rem;
     font-weight: 400;
   }
 
+    .blog-title-head {
+    font-size: 1.5rem;
+    /* margin-bottom: 10px; */
+    line-height: 28px;
+    text-align: left;
+    font-weight: 400;
+  }
+
   .blog-text{
-    justify-content: space-between;
     display: flex
 ;
     flex-direction: column;
@@ -149,11 +195,13 @@ font-size: 6rem;
   }
   
   .blog-description {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #bbb;
     margin-bottom: 10px;
-    line-height: 20px;
+    line-height: 30px;
     text-align: left;
+    height: 80px;
+    overflow: hidden;
   }
 
   .single-text {
@@ -167,7 +215,30 @@ font-size: 6rem;
     margin-bottom: 10px;
     line-height: 25px;
     text-align: left;
+    white-space: pre-line;
   }
+
+    .template2 p {
+    font-size: 1.2rem !important ;
+    color: #bbb;
+    margin-bottom: 10px;
+    line-height: 35px;
+    text-align: left !important;
+    white-space: pre-line;
+  }
+
+  .blog-fulldescription b {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+    .blog-fulldescription strong {
+   
+    font-weight: 500;
+    color: #fff;
+  }
+
   
   .blog-meta {
     font-size: 0.8rem;
@@ -214,10 +285,10 @@ font-size: 6rem;
     margin-top: 0rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 10;
-    width: auto;
+    width: 100%;
     min-width: 145px;
     margin-top: 0.02rem;
-    white-space: nowrap;
+    white-space: pre-line;
   }
   
   .category-dropdown ul {
@@ -256,6 +327,45 @@ font-size: 6rem;
    
   }
 
+      .template2 p {
+    font-size: 1.2rem !important ;
+    color: #bbb;
+    margin-bottom: 10px;
+    line-height: 25px;
+    text-align: left !important;
+    white-space: pre-line;
+  }
+
+  .category-dropdown li {
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .category-dropdown {
+    z-index: 10;
+    width: 100%;
+
+  }
+
+  .blog-fulldescription b {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .first-image{
+    height: 210px;
+            object-fit: cover;
+        object-position: center;
+  }
+
+  .second-image{
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+  }
+
   .search-bar{
     width: 50%;
     padding: 7px;
@@ -285,18 +395,26 @@ font-size: 6rem;
 }
 
 .blog-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 8px; 
-    line-height: 15px;
+    line-height: 30px !important;
+    text-align: left;
+    font-weight: 400;
+}
+
+.blog-title-head {
+    font-size: 1.2rem;
+    margin-bottom: 8px; 
+    line-height: 20px !important;
     text-align: left;
     font-weight: 400;
 }
 
 .blog-description {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #bbb;
     margin-bottom: 0px;
-    line-height: 15px;
+    line-height: 30px;
     text-align: left;
     height: 45px;
     overflow: hidden;
@@ -305,6 +423,10 @@ font-size: 6rem;
 .single-title h1{
     font-size: 3rem;
     font-weight: 500;
+      }
+
+.blog-title h1{
+    font-size: 3rem;
       }
 
       #category-button {
@@ -324,4 +446,8 @@ font-size: 6rem;
     font-size: 0.8rem;
 }
   }
-  
+
+    .Blog-row{
+      min-height: 50vh;
+      align-items: center;
+    }
