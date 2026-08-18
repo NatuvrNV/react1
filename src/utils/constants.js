@@ -106,6 +106,16 @@ export const ProductImages = [
     "imgPath": "assets/Allproducts/MetaForm/metalouver/cover/metalouver.webp",
     "imgText": "MetaLouver",
     "order": 21
+  },
+  {
+    "imgPath": "assets/Allproducts/MetaParametric/metaHive/metahive1.png",
+    "imgText": "MetaHive",
+    "order": 22
+  },
+  {
+    "imgPath": "assets/Allproducts/MetaForm/Metacryst/metacryst1.png",
+    "imgText": "MetaCryst",
+    "order": 23
   }
 ];
 
@@ -575,6 +585,16 @@ export const products = [
     "id": 4,
     "name": "Metashingles",
     "slug": "metashingles"
+  },
+  {
+    "id": 5,
+    "name": "MetaHive",
+    "slug": "metahive"
+  },
+  {
+    "id": 6,
+    "name": "MetaCryst",
+    "slug": "metacryst"
   }
 ];
 
@@ -683,6 +703,16 @@ export const sortedProductImages = [
     "imgPath": "assets/Allproducts/MetaForm/metalouver/cover/metalouver.webp",
     "imgText": "MetaLouver",
     "order": 21
+  },
+  {
+    "imgPath": "assets/Allproducts/MetaParametric/metaHive/metahive1.png",
+    "imgText": "MetaHive",
+    "order": 22
+  },
+  {
+    "imgPath": "assets/Allproducts/MetaForm/Metacryst/metacryst1.png",
+    "imgText": "MetaCryst",
+    "order": 23
   }
 ];
 

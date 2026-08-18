@@ -13,7 +13,13 @@ const http = require('http');
 // Data
 // --------------------------------------------------
 
-const { SingleBlogDetail } = require('./src/pages/Blog/BlogConstants');
+// Blogs index
+const blogsIndex = JSON.parse(
+  fs.readFileSync(
+    path.join(__dirname, 'public/data/blogs-index.json'),
+    'utf8'
+  )
+);
 
 // Projects index
 const projectsIndex = JSON.parse(
@@ -43,9 +49,9 @@ const productsIndex = JSON.parse(
 // Validate data
 // --------------------------------------------------
 
-if (!Array.isArray(SingleBlogDetail)) {
+if (!Array.isArray(blogsIndex)) {
   throw new Error(
-    'SingleBlogDetail is not an array. Check BlogConstants.js'
+    'blogs-index.json must contain an array at the root.'
   );
 }
 
@@ -103,7 +109,7 @@ const staticPages = [
 // Blog pages
 // --------------------------------------------------
 
-const blogPages = SingleBlogDetail.map((blog) => {
+const blogPages = blogsIndex.map((blog) => {
   const slug = blog.url
     ? getUrlFriendlyString(blog.url)
     : getUrlFriendlyString(blog.title);

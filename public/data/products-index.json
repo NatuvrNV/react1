@@ -376,5 +376,41 @@
         "copy": "Residential and commercial facades of any scale that need a quiet, high-performance base layer, often combined with a bolder accent system."
       }
     ]
+  },
+  "metahive": {
+    "h1": "MetaHive: Custom Parametric Facade in Solid 3D Aluminium",
+    "definitionParagraph": "MetaHive is Metaguise's custom parametric facade system, built from solid 3D aluminium panels engineered and fabricated in-house from technical drawing through to installation, giving buildings a distinct, geometry-driven architectural identity.",
+    "h2Sections": [
+      {
+        "heading": "What makes MetaHive different from off-the-shelf parametric systems?",
+        "copy": "Every panel is custom-engineered for the specific project rather than pulled from a standard catalogue, so the geometry, scale, and finish can all be tailored to the building."
+      },
+      {
+        "heading": "Where has MetaHive been used?",
+        "copy": "It's featured at the Whiteland Westin Residences experience centre in Gurugram, with architecture by Hafeez Contractor, where the faceted panels wrap the entire entrance facade."
+      },
+      {
+        "heading": "Is MetaHive fabrication handled in-house?",
+        "copy": "Yes, Metaguise manages the full process from technical drawing to installation, which keeps the geometry precise and the finish consistent across every panel."
+      }
+    ]
+  },
+  "metacryst": {
+    "h1": "MetaCryst: Modular 3D Faceted Metal Panel System",
+    "definitionParagraph": "MetaCryst is Metaguise's newest facade innovation, a modular, custom-engineered 3D faceted metal panel system. Each panel's faceted geometry catches light and shifts with perspective, turning flat surfaces and under-ceilings into sculpted, dimensional compositions.",
+    "h2Sections": [
+      {
+        "heading": "What effect does MetaCryst's faceted geometry create?",
+        "copy": "The angled facets catch and reflect light differently depending on where you're standing, so flat walls and ceilings read as sculpted, dimensional surfaces instead of static cladding."
+      },
+      {
+        "heading": "Can MetaCryst be used on ceilings, not just walls?",
+        "copy": "Yes, it's designed to work on under-ceilings as much as facades, turning soffits and covered walkways into a textured, light-responsive feature."
+      },
+      {
+        "heading": "What kind of projects suit MetaCryst?",
+        "copy": "Projects that call for depth, reflection, and a strong architectural identity, especially feature ceilings, lobbies, and entrance zones where the panel's dimensional texture can be appreciated up close."
+      }
+    ]
   }
 }
