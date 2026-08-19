@@ -108,7 +108,7 @@ export const ProductImages = [
     "order": 21
   },
   {
-    "imgPath": "assets/Allproducts/MetaParametric/metaHive/metahive1.png",
+    "imgPath": "assets/Allproducts/MetaParametric/metahive/metahive1.png",
     "imgText": "MetaHive",
     "order": 22
   },
@@ -705,7 +705,7 @@ export const sortedProductImages = [
     "order": 21
   },
   {
-    "imgPath": "assets/Allproducts/MetaParametric/metaHive/metahive1.png",
+    "imgPath": "assets/Allproducts/MetaParametric/metahive/metahive1.png",
     "imgText": "MetaHive",
     "order": 22
   },
