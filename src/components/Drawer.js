@@ -131,7 +131,19 @@ function Drawer({ isOpen, toggleDrawer }) {
                 <Col md={6}>
                   <div>
                     <h5 className="nav-haeding">Get in Touch</h5>
-                    <a className="nav-text" href="mailto:contactus@metaguise.com">
+                    <a
+                      className="nav-text"
+                      href="mailto:contactus@metaguise.com"
+                      onClick={() => {
+                        if (typeof window !== "undefined") {
+                          window.dataLayer = window.dataLayer || [];
+                          window.dataLayer.push({
+                            event: "email_click",
+                            link_url: "mailto:contactus@metaguise.com",
+                          });
+                        }
+                      }}
+                    >
                       contactus@metaguise.com
                     </a>
                   </div>
@@ -141,7 +153,19 @@ function Drawer({ isOpen, toggleDrawer }) {
                 <Col md={6}>
                   <div>
                     <h5 className="nav-haeding">Phone</h5>
-                    <a className="nav-text" href="tel:9811604449">
+                    <a
+                      className="nav-text"
+                      href="tel:9811604449"
+                      onClick={() => {
+                        if (typeof window !== "undefined") {
+                          window.dataLayer = window.dataLayer || [];
+                          window.dataLayer.push({
+                            event: "phone_click",
+                            link_url: "tel:9811604449",
+                          });
+                        }
+                      }}
+                    >
                       9811604449 
                     </a>
                   </div>

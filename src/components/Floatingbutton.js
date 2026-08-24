@@ -3,6 +3,10 @@ import WhatsAppIcon from "../assets/footer/Whatsapp.svg"; // ✅ Make sure this 
 
 const FloatingButton = () => {
   const handleClick = () => {
+    if (typeof window !== "undefined") {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "whatsapp_click", link_url: "https://wa.me/9811604449" });
+    }
     window.open("https://wa.me/9811604449", "_blank");
   };
 

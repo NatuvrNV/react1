@@ -4,15 +4,22 @@ import { Helmet } from "react-helmet-async";
 
 import { Swipper } from '../../components/Swiper';
 import Featured from '../../components/Featured';
+import MetaExperience1 from '../../components/MetaExperience1';
+import Product from '../../components/Product';
+import Metaland from '../../components/Metaland';
+import Brochure from '../../components/Brochure';
+import Cofee from '../../components/Cofee';
+import Footer from '../../components/Footer';
 
+// Only FloatingButton stays lazy — it's an icon-only widget with no
+// text content, so it can't contribute to the raw-vs-rendered word
+// count gap. Everything else below was lazy-loaded before, which
+// meant it rendered as nothing (fallback={null}) until its chunk
+// finished downloading — that's the source of the 401 vs 321 gap.
+// Moving MetaExperience1, Product, Metaland, Brochure, Cofee and
+// Footer to normal imports means their text is in the DOM on first
+// render, matching the prerendered/raw HTML.
 const FloatingButton = lazy(() => import("../../components/Floatingbutton"));
-const MetaExperience1 = lazy(() => import('../../components/MetaExperience1'));
-const Product = lazy(() => import('../../components/Product'));
-const Metaland = lazy(() => import('../../components/Metaland'));
-const Brochure = lazy(() => import('../../components/Brochure'));
-const Cofee = lazy(() => import('../../components/Cofee'));
-
-const Footer = lazy(() => import('../../components/Footer'));
 
 const organizationSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -186,17 +193,20 @@ function Home() {
 
       <Featured />
 
+      <MetaExperience1 />
+      <Product />
+
+      <Metaland />
+      <Brochure />
+      <Cofee />
+
+      <Footer />
+
+      {/* FloatingButton is icon-only (no text), so it's the only
+          piece still safe to lazy-load without affecting the
+          rendered word count. */}
       <Suspense fallback={null}>
-
         <FloatingButton />
-        <MetaExperience1 />
-        <Product />
-
-        <Metaland />
-        <Brochure />
-        <Cofee />
-
-        <Footer />
       </Suspense>
     </div>
   );

@@ -306,6 +306,12 @@ const Contact = () => {
       if (webhookResponse.ok && backendResponse) {
         setMessage("✅ Thank you! Our team is reviewing your details and will reach out shortly to discuss your project.");
 
+        // GA4 key event: form_submit on /build/
+        if (typeof window !== "undefined") {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: "form_submit", form_name: "build_facade" });
+        }
+
         // Reset form fields
         setFormData({
           name: "",

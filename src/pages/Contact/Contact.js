@@ -498,8 +498,27 @@ const Contact = () => {
             <h2>Talk to Us Directly</h2>
             <p>
               Prefer a call over a form? Reach us at{" "}
-              <a href="tel:+919811604449">+91 98116 04449</a> or{" "}
-              <a href="mailto:contactus@metaguise.com">
+              <a
+                href="tel:+919811604449"
+                onClick={() => {
+                  if (typeof window !== "undefined") {
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({ event: "phone_click", link_url: "tel:+919811604449" });
+                  }
+                }}
+              >
+                +91 98116 04449
+              </a>{" "}
+              or{" "}
+              <a
+                href="mailto:contactus@metaguise.com"
+                onClick={() => {
+                  if (typeof window !== "undefined") {
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({ event: "email_click", link_url: "mailto:contactus@metaguise.com" });
+                  }
+                }}
+              >
                 contactus@metaguise.com
               </a>{" "}
               — same team, faster response.

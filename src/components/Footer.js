@@ -6,6 +6,25 @@ import PhoneIcon from "../assets/footer/phone.svg";
 import Logo from "../assets/logo.png";
 import ADproIcon from "../assets/ADprocolor.png";
 
+const handleEmailClick = () => {
+  if (typeof window !== "undefined") {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "email_click",
+      link_url: "mailto:contactus@metaguise.com",
+    });
+  }
+};
+
+const handlePhoneClick = () => {
+  if (typeof window !== "undefined") {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "phone_click",
+      link_url: "tel:981-160-4449",
+    });
+  }
+};
 
 const Footer = () => {
   return (
@@ -47,6 +66,7 @@ const Footer = () => {
               <a
                 href="mailto:contactus@metaguise.com"
                 className="tw-text-sm md:tw-text-base"
+                onClick={handleEmailClick}
               >
                 contactus@metaguise.com
               </a>
@@ -57,6 +77,7 @@ const Footer = () => {
               <a
                 href="tel:981-160-4449"
                 className="tw-text-sm md:tw-text-base"
+                onClick={handlePhoneClick}
               >
                 981-160-4449 
               </a>
@@ -83,6 +104,7 @@ const Footer = () => {
               <a
                 href="mailto:contactus@metaguise.com"
                 className="tw-text-sm md:tw-text-base"
+                onClick={handleEmailClick}
               >
                 contactus@metaguise.com
               </a>
@@ -93,6 +115,7 @@ const Footer = () => {
               <a
                 href="tel:981-160-4449"
                 className="tw-text-sm md:tw-text-base"
+                onClick={handlePhoneClick}
               >
                 981-160-4449 
               </a>

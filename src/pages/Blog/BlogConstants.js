@@ -4835,86 +4835,86 @@ If you're looking for an architectural exterior design firm in India that delive
       "Villa Exterior Design Services in India | Luxury Elevation Ideas 2026 ",
     date: "24-03-26",
           schema: `
-      {
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://metaguise.com/blog/villa-exterior-design-services-india-luxury-elevation-ideas-that-define-premium-living"
-  },
-  "headline": "Villa Exterior Design Services in India | Luxury Elevation Ideas 2026",
-  "description": "Discover luxury villa exterior design services in India — modern elevation ideas, metal facades & copper cladding by Metaguise. 1,800+ projects delivered PAN India.",
-  "image": "https://metaguise.com/assets/Blogs/the-villa/best-materials-luxury-villa-exterior-design-india.jpg",
-  "author": {
-    "@type": "Organization",
-    "name": "Metaguise"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Metaguise",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
-    }
-  },
-  "datePublished": "2026-03-25",
-  "dateModified": "2026-03-25",
-  "keywords": [
-    "villa exterior design India",
-    "luxury villa elevation ideas",
-    "modern villa facade design",
-    "metal facade villa India",
-    "copper cladding villa",
-    "parametric facade India",
-    "villa architecture India",
-    "exterior design services India"
-  ],
-  "articleSection": "Architecture & Exterior Design",
-  "inLanguage": "en",
-  "isAccessibleForFree": true
-}
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What is the best exterior design style for luxury villas?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It depends heavily on where the villa is, what the owner responds to, and how it sits in its surroundings. In 2026, the strongest villa elevations in India tend to combine contemporary forms with natural materials, clean geometry in aluminium or corten steel, copper or brass accents, and integrated greenery. Parametric facade design is gaining real traction for homeowners who want something genuinely one-of-a-kind. The key is working with professional villa exterior design services that can translate a personal vision into something technically executable and built to last."
-      }
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/villa-exterior-design-services-india-luxury-elevation-ideas-that-define-premium-living"
+      },
+      "headline": "Villa Exterior Design Services in India | Luxury Elevation Ideas 2026",
+      "description": "Discover luxury villa exterior design services in India — modern elevation ideas, metal facades & copper cladding by Metaguise. 1,800+ projects delivered PAN India.",
+      "image": "https://metaguise.com/assets/Blogs/the-villa/best-materials-luxury-villa-exterior-design-india.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "Metaguise"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+        }
+      },
+      "datePublished": "2026-03-25",
+      "dateModified": "2026-03-25",
+      "keywords": [
+        "villa exterior design India",
+        "luxury villa elevation ideas",
+        "modern villa facade design",
+        "metal facade villa India",
+        "copper cladding villa",
+        "parametric facade India",
+        "villa architecture India",
+        "exterior design services India"
+      ],
+      "articleSection": "Architecture & Exterior Design",
+      "inLanguage": "en",
+      "isAccessibleForFree": true
     },
     {
-      "@type": "Question",
-      "name": "How much does villa exterior design cost in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Costs vary based on the villa's size, material choices, and the complexity of the design. Premium metal facade systems, the standard for serious luxury villa elevation design, are priced according to the engineering and material quality involved. All Metaguise products come with surface coating warranties of 15 to 35 years, and the durability of premium metals means long-term maintenance costs are significantly lower than with conventional materials. Speak to Metaguise directly for a project-specific quote."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which materials are used in luxury villa elevations?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The most used premium materials in luxury villa elevations in India are aluminium for versatility and low maintenance, copper for its evolving patina and prestige, brass for warm golden accents, corten steel for a distinctive architecturally rich weathered look, and stainless steel for maximum durability in coastal or demanding climates. These are typically combined with natural stone, large-format glazing, and integrated lighting to create facades with real depth. Metaguise offers all of these across an extensive product range, each engineered to 3mm precision and backed by surface coating warranties of 15 to 35 years."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who provides villa exterior design consultancy in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Metaguise is one of India's leading providers of luxury villa exterior design services. With a full product portfolio including MetaCoin, MetaFlutes, MetaCassette, MetaCopper, MetaBlox, MetaSequin, and MetaWood, Metaguise works with India's top architects and homeowners who want villa elevations that are as technically precise as they are visually striking. Over 1,800 projects delivered, PAN India presence, and a process built around getting the details right."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best exterior design style for luxury villas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends heavily on where the villa is, what the owner responds to, and how it sits in its surroundings. In 2026, the strongest villa elevations in India tend to combine contemporary forms with natural materials, clean geometry in aluminium or corten steel, copper or brass accents, and integrated greenery. Parametric facade design is gaining real traction for homeowners who want something genuinely one-of-a-kind. The key is working with professional villa exterior design services that can translate a personal vision into something technically executable and built to last."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does villa exterior design cost in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Costs vary based on the villa's size, material choices, and the complexity of the design. Premium metal facade systems, the standard for serious luxury villa elevation design, are priced according to the engineering and material quality involved. All Metaguise products come with surface coating warranties of 15 to 35 years, and the durability of premium metals means long-term maintenance costs are significantly lower than with conventional materials. Speak to Metaguise directly for a project-specific quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which materials are used in luxury villa elevations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The most used premium materials in luxury villa elevations in India are aluminium for versatility and low maintenance, copper for its evolving patina and prestige, brass for warm golden accents, corten steel for a distinctive architecturally rich weathered look, and stainless steel for maximum durability in coastal or demanding climates. These are typically combined with natural stone, large-format glazing, and integrated lighting to create facades with real depth. Metaguise offers all of these across an extensive product range, each engineered to 3mm precision and backed by surface coating warranties of 15 to 35 years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who provides villa exterior design consultancy in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise is one of India's leading providers of luxury villa exterior design services. With a full product portfolio including MetaCoin, MetaFlutes, MetaCassette, MetaCopper, MetaBlox, MetaSequin, and MetaWood, Metaguise works with India's top architects and homeowners who want villa elevations that are as technically precise as they are visually striking. Over 1,800 projects delivered, PAN India presence, and a process built around getting the details right."
+          }
+        }
+      ]
     }
   ]
 }
-</script>
-}`,
+`,
     template: 'B',
     category: "Architectural Insights",
 
@@ -5325,78 +5325,73 @@ Ready to transform how your home looks and feels? Contact Metaguise today and ex
       "There's a moment every architect working in India remembers vividly: the moment they realised the building",
 
                 schema: `
-      {
+{
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "India’s Parametric Metal Facade Revolution: From European Imports to Indigenous Innovation (2026)",
-  "description": "India's parametric metal facade industry has evolved from costly European imports to indigenous innovation with end-to-end design, fabrication and installation.",
-  "image": "https://metaguise.com/assets/Blogs/The-Indian-Parametric/parametric-metal-facade-design-pattern.jpg",
-  "author": {
-    "@type": "Organization",
-    "name": "Metaguise"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Metaguise",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
-    }
-  },
-  "datePublished": "2026-04-08",
-  "dateModified": "2026-04-08",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://metaguise.com/blog/india-parametric-metal-facade-revolution-from-european-imports-to-indigenous-innovation-2026"
-  }
-
-  {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "What is the difference between parametric metal facade design and conventional cladding in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Parametric metal facade design uses algorithmic logic to create unique, non-repetitive 3D surfaces, while conventional cladding relies on flat, repetitive panels like ACP or stone."
+      "@type": "Organization",
+      "name": "Metaguise"
+    },
+    {
+      "@type": "Organization",
+      "name": "Metaguise",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
       }
     },
     {
-      "@type": "Question",
-      "name": "Why were Indian architects dependent on European facade systems?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Indian architects relied on European systems due to lack of local fabrication technology for complex designs, but this has changed with indigenous parametric design and manufacturing capabilities."
-      }
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/india-parametric-metal-facade-revolution-from-european-imports-to-indigenous-innovation-2026"
     },
     {
-      "@type": "Question",
-      "name": "What does end-to-end integration mean in parametric facade design?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "End-to-end integration means a single team handles design, engineering, fabrication, and installation, ensuring consistency and precision from concept to completion."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can parametric metal facades perform in India’s climate?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, parametric metal facades are highly suitable for India’s climate as they provide sun shading, ventilation, and better handling of thermal expansion compared to traditional materials."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are parametric facades only for commercial buildings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No, parametric facades are widely used in residential and retail projects, offering unique design identity and performance benefits."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between parametric metal facade design and conventional cladding in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parametric metal facade design uses algorithmic logic to create unique, non-repetitive 3D surfaces, while conventional cladding relies on flat, repetitive panels like ACP or stone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why were Indian architects dependent on European facade systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indian architects relied on European systems due to lack of local fabrication technology for complex designs, but this has changed with indigenous parametric design and manufacturing capabilities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does end-to-end integration mean in parametric facade design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "End-to-end integration means a single team handles design, engineering, fabrication, and installation, ensuring consistency and precision from concept to completion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can parametric metal facades perform in India’s climate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, parametric metal facades are highly suitable for India’s climate as they provide sun shading, ventilation, and better handling of thermal expansion compared to traditional materials."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are parametric facades only for commercial buildings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, parametric facades are widely used in residential and retail projects, offering unique design identity and performance benefits."
+          }
+        }
+      ]
     }
   ]
 }
-}`,
+`,
 
     folderName: "The-Indian-Parametric",
     
@@ -5733,86 +5728,76 @@ When architects bring us in at the concept stage, we can use parametric logic to
 
     url: "beyond-the-brochure-how-to-evaluate-facade-partners-for-10crore-residential-projects",
 
-          schema: `{
+          schema: `
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Facade Partner Guide for ₹10-Crore+ Homes | Metaguise",
-  "description": "Evaluating facade partners for ₹10-Crore+ Homes? Discover what truly matters — parametric design, climate engineering & delivery. Metaguise",
-  "image": "https://metaguise.com/assets/Blogs/Beyond-the-Brochure/parametric-metal-facade-luxury-home-india-metaguise.jpg",
-  "author": {
-    "@type": "Organization",
-    "name": "Metaguise",
-    "url": "https://metaguise.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Metaguise",
-    "url": "https://metaguise.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
-    }
-  },
-  "datePublished": "2026-04-13",
-  "dateModified": "2026-04-13",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://metaguise.com/blog/beyond-the-brochure-how-to-evaluate-facade-partners-for-10crore-residential-projects"
-  },
-  "keywords": "parametric facade, luxury residential facade India, facade partner evaluation, metal cladding India, Metaguise, high-end home facade",
-  "articleSection": "Industry Trends",
-  "inLanguage": "en-IN"
-
-  {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "How do I evaluate whether a facade partner can actually execute my architect's parametric design, or are they just promising it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The easiest way to spot a promise-only vendor is to look for a gap between their 3D models and their factory floor. Ask to see the script to fabrication workflow — how their Rhino or Grasshopper files talk directly to their CNC machines. If they can't show this, they are likely a traditional fabricator trying to figure it out on your project. Another red flag is a lack of mockups. A true parametric partner will insist on building a 1:1 prototype of a complex junction or panel before mass production. If they hesitate to prove the geometry physically, they probably don't have the technical control required."
+      "@type": "Organization",
+      "name": "Metaguise",
+      "url": "https://metaguise.com"
+    },
+    {
+      "@type": "Organization",
+      "name": "Metaguise",
+      "url": "https://metaguise.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
       }
     },
     {
-      "@type": "Question",
-      "name": "Why do imported European facade systems often fail on Indian luxury residential projects despite their reputation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Reputation doesn't always translate to climate compatibility. Many European systems are designed for steady, moderate temperatures and low UV exposure. In India, a luxury residence in Mumbai or Delhi faces thermal shock — extreme midday heat followed by sudden monsoon downpours. Imported gaskets and sealants that thrive in Berlin often dry out, crack, or lose their elasticity within three seasons in India. There is also the serviceability trap — a unique European panel can take three months to replace, and by the time it arrives, the finish batch might not even match. Local parametric systems are engineered with the same logic but built to be serviced and replaced in days, not months."
-      }
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/beyond-the-brochure-how-to-evaluate-facade-partners-for-10crore-residential-projects"
     },
     {
-      "@type": "Question",
-      "name": "What is the real cost difference between a premium parametric facade partner and a local fabricator for a high-value residence?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A local fabricator will almost always be cheaper on day one, using off-the-shelf sections and manual labor to force materials into place. However, the hidden costs on a high-value residence are massive — visible joints, misaligned patterns, and water leakage issues that can cost 20% of the total facade budget just to patch up later. A premium partner like Metaguise has a higher upfront cost due to integrated engineering and high-grade finishes, but because the system is precision-engineered, installation is faster and maintenance is negligible. You are not just paying for metal; you are paying for the insurance that your home won't look dated or broken in five years."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "At what stage of a residential project should I engage a parametric facade partner?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You should engage them during the Schematic Design phase. If the civil structure is already cast, your options for a truly transformative facade are limited — you end up just sticking things on a wall, which is expensive and often looks like an afterthought. By bringing in a partner while the architect is still sketching, the facade can influence the building's thermal performance — adjusting the orientation of fins or the depth of a louver system to shade key areas. This ensures the facade is a functional part of the home's organism rather than just an expensive cosmetic layer."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I ensure the facade of my luxury residence ages well and doesn't become a maintenance liability?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Longevity starts with material intelligence. For the Indian climate, move away from high-maintenance materials like natural wood or porous stone in hard-to-reach areas. Instead, look at living finishes like MetaCorten or MetaPatina, which develop a protective layer over time — they look better as they age and never need repainting. Secondly, insist on a Rear-Ventilated system. Most maintenance issues in India come from moisture trapped between the cladding and the wall, leading to mold and dampness. A ventilated system allows the building to breathe, naturally whisking away moisture and heat."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I evaluate whether a facade partner can actually execute my architect's parametric design, or are they just promising it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The easiest way to spot a promise-only vendor is to look for a gap between their 3D models and their factory floor. Ask to see the script to fabrication workflow — how their Rhino or Grasshopper files talk directly to their CNC machines. If they can't show this, they are likely a traditional fabricator trying to figure it out on your project. Another red flag is a lack of mockups. A true parametric partner will insist on building a 1:1 prototype of a complex junction or panel before mass production. If they hesitate to prove the geometry physically, they probably don't have the technical control required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do imported European facade systems often fail on Indian luxury residential projects despite their reputation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reputation doesn't always translate to climate compatibility. Many European systems are designed for steady, moderate temperatures and low UV exposure. In India, a luxury residence in Mumbai or Delhi faces thermal shock — extreme midday heat followed by sudden monsoon downpours. Imported gaskets and sealants that thrive in Berlin often dry out, crack, or lose their elasticity within three seasons in India. There is also the serviceability trap — a unique European panel can take three months to replace, and by the time it arrives, the finish batch might not even match. Local parametric systems are engineered with the same logic but built to be serviced and replaced in days, not months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the real cost difference between a premium parametric facade partner and a local fabricator for a high-value residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A local fabricator will almost always be cheaper on day one, using off-the-shelf sections and manual labor to force materials into place. However, the hidden costs on a high-value residence are massive — visible joints, misaligned patterns, and water leakage issues that can cost 20% of the total facade budget just to patch up later. A premium partner like Metaguise has a higher upfront cost due to integrated engineering and high-grade finishes, but because the system is precision-engineered, installation is faster and maintenance is negligible. You are not just paying for metal; you are paying for the insurance that your home won't look dated or broken in five years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "At what stage of a residential project should I engage a parametric facade partner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You should engage them during the Schematic Design phase. If the civil structure is already cast, your options for a truly transformative facade are limited — you end up just sticking things on a wall, which is expensive and often looks like an afterthought. By bringing in a partner while the architect is still sketching, the facade can influence the building's thermal performance — adjusting the orientation of fins or the depth of a louver system to shade key areas. This ensures the facade is a functional part of the home's organism rather than just an expensive cosmetic layer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I ensure the facade of my luxury residence ages well and doesn't become a maintenance liability?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Longevity starts with material intelligence. For the Indian climate, move away from high-maintenance materials like natural wood or porous stone in hard-to-reach areas. Instead, look at living finishes like MetaCorten or MetaPatina, which develop a protective layer over time — they look better as they age and never need repainting. Secondly, insist on a Rear-Ventilated system. Most maintenance issues in India come from moisture trapped between the cladding and the wall, leading to mold and dampness. A ventilated system allows the building to breathe, naturally whisking away moisture and heat."
+          }
+        }
+      ]
     }
   ]
 }
-}
-
-          }`,
+`,
 
     metaDescription:
       "Evaluating facade partners for ₹10-Crore+ Homes? Discover what truly matter parametric design, climate engineering & delivery. Metaguise ",
@@ -7269,61 +7254,62 @@ With 15–35 year coating warranties, they offer long-term durability with minim
     folderName: "From-Sketch-to-Shimmer",
 
           schema: `
-      {
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "From Sketch to Shimmer: How We Build 4,000 Unique Metal Panels | Metaguise",
-  "description": "An architect's impossible curve became 4,247 unique metal panels in 18 months. See how Metaguise turns parametric sketches into installed facades across India.",
-  "image": "https://metaguise.com/assets/Blogs/Best-Exterior/banner.jpg",
-  "author": {
-    "@type": "Organization",
-    "name": "Metaguise",
-    "url": "https://metaguise.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Metaguise",
-    "url": "https://metaguise.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "From Sketch to Shimmer: How We Build 4,000 Unique Metal Panels | Metaguise",
+      "description": "An architect's impossible curve became 4,247 unique metal panels in 18 months. See how Metaguise turns parametric sketches into installed facades across India.",
+      "image": "https://metaguise.com/assets/Blogs/Best-Exterior/banner.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "url": "https://metaguise.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "url": "https://metaguise.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+        }
+      },
+      "datePublished": "2026-04-18",
+      "dateModified": "2026-04-18",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/from-sketch-to-shimmer-the-18-month-journey-of-turning-an-architects-impossible-curve-into-4000-unique-metal-panels"
+      },
+      "keywords": [
+        "parametric facade design India",
+        "unique metal panels facade",
+        "custom metal cladding India",
+        "luxury residential facade India",
+        "luxury bungalow facade design",
+        "residential facade design Delhi",
+        "residential facade design Mumbai",
+        "residential facade design Pune",
+        "residential facade design Bangalore",
+        "residential facade design Gurgaon",
+        "residential facade design Ahmedabad",
+        "residential facade design Ludhiana",
+        "parametric metal facade residential",
+        "facade design for luxury homes India",
+        "Metaguise residential facade",
+        "custom facade fabrication India",
+        "high-end home exterior design India",
+        "metal cladding residential bungalow",
+        "facade company India",
+        "parametric architecture India"
+      ],
+      "articleSection": "Industry Trends",
+      "inLanguage": "en-IN"
     }
-  },
-  "datePublished": "2026-04-18",
-  "dateModified": "2026-04-18",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://metaguise.com/blog/from-sketch-to-shimmer-the-18-month-journey-of-turning-an-architects-impossible-curve-into-4000-unique-metal-panels"
-  },
-  "keywords": [
-    "parametric facade design India",
-    "unique metal panels facade",
-    "custom metal cladding India",
-    "luxury residential facade India",
-    "luxury bungalow facade design",
-    "residential facade design Delhi",
-    "residential facade design Mumbai",
-    "residential facade design Pune",
-    "residential facade design Bangalore",
-    "residential facade design Gurgaon",
-    "residential facade design Ahmedabad",
-    "residential facade design Ludhiana",
-    "parametric metal facade residential",
-    "facade design for luxury homes India",
-    "Metaguise residential facade",
-    "custom facade fabrication India",
-    "high-end home exterior design India",
-    "metal cladding residential bungalow",
-    "facade company India",
-    "parametric architecture India"
-  ],
-  "articleSection": "Industry Trends",
-  "inLanguage": "en-IN"
+  ]
 }
-</script>
-}`,
+`,
     
 
     images: [
@@ -7485,61 +7471,62 @@ With 15–35 year coating warranties, they offer long-term durability with minim
 folderName: "The-Hidden-Cost",
 
       schema: `
-      {
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Why Iconic Facades Don't Cost What You Think | Metaguise",
-  "description": "A ₹2 crore parametric facade sold a Delhi bungalow for ₹31 crore more in 42 days. See how Metaguise turns facade costs into measurable returns across India.",
-  "image": "https://metaguise.com/assets/Blogs/Custom-Facade/What-Premium-Pricing.jpg",
-  "author": {
-    "@type": "Organization",
-    "name": "Metaguise",
-    "url": "https://metaguise.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Metaguise",
-    "url": "https://metaguise.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Why Iconic Facades Don't Cost What You Think | Metaguise",
+      "description": "A ₹2 crore parametric facade sold a Delhi bungalow for ₹31 crore more in 42 days. See how Metaguise turns facade costs into measurable returns across India.",
+      "image": "https://metaguise.com/assets/Blogs/Custom-Facade/What-Premium-Pricing.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "url": "https://metaguise.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "url": "https://metaguise.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ik.imagekit.io/ylx9qggcp/download%20(1).png"
+        }
+      },
+      "datePublished": "2026-04-19",
+      "dateModified": "2026-04-19",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/the-hidden-cost-of-that-wow-factor-why-iconic-facades-dont-actually-cost-what-you-think"
+      },
+      "keywords": [
+        "iconic facade cost India",
+        "parametric facade ROI",
+        "facade investment return India",
+        "luxury facade design cost India",
+        "premium facade vs cheap cladding India",
+        "facade property value India",
+        "luxury residential facade Delhi",
+        "luxury bungalow facade Mumbai",
+        "luxury home facade Bangalore",
+        "luxury facade Gurgaon",
+        "luxury facade Ahmedabad",
+        "luxury facade Pune",
+        "luxury facade Jaipur",
+        "residential facade design India",
+        "metal facade cost per sq ft India",
+        "parametric metal facade India",
+        "facade design for luxury homes India",
+        "Metaguise facade cost",
+        "facade company India",
+        "iconic building facade India"
+      ],
+      "articleSection": "Industry Trends",
+      "inLanguage": "en-IN"
     }
-  },
-  "datePublished": "2026-04-19",
-  "dateModified": "2026-04-19",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://metaguise.com/blog/the-hidden-cost-of-that-wow-factor-why-iconic-facades-dont-actually-cost-what-you-think"
-  },
-  "keywords": [
-    "iconic facade cost India",
-    "parametric facade ROI",
-    "facade investment return India",
-    "luxury facade design cost India",
-    "premium facade vs cheap cladding India",
-    "facade property value India",
-    "luxury residential facade Delhi",
-    "luxury bungalow facade Mumbai",
-    "luxury home facade Bangalore",
-    "luxury facade Gurgaon",
-    "luxury facade Ahmedabad",
-    "luxury facade Pune",
-    "luxury facade Jaipur",
-    "residential facade design India",
-    "metal facade cost per sq ft India",
-    "parametric metal facade India",
-    "facade design for luxury homes India",
-    "Metaguise facade cost",
-    "facade company India",
-    "iconic building facade India"
-  ],
-  "articleSection": "Industry Trends",
-  "inLanguage": "en-IN"
+  ]
 }
-</script>
-}`,
+`,
 
     
 
@@ -12421,7 +12408,7 @@ Metaguise's design consultation process helps every homeowner and architect make
     metaTitle:
       "Noida Luxury Home Facade Ideas: Sector 44, 94 & 150 | Metaguise",
     date: "14-05-26",
-     schema: `{
+     schema: `
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -12525,18 +12512,54 @@ Metaguise's design consultation process helps every homeowner and architect make
         }
       ],
       "mentions": [
-        { "@type": "Place", "name": "Noida Sector 44", "addressRegion": "Uttar Pradesh" },
-        { "@type": "Place", "name": "Noida Sector 50", "addressRegion": "Uttar Pradesh" },
-        { "@type": "Place", "name": "Noida Sector 94", "addressRegion": "Uttar Pradesh" },
-        { "@type": "Place", "name": "Noida Sector 150", "addressRegion": "Uttar Pradesh" },
-        { "@type": "Place", "name": "Noida Sector 128", "addressRegion": "Uttar Pradesh" },
-        { "@type": "Place", "name": "Noida Sector 37D", "addressRegion": "Uttar Pradesh" },
-        { "@type": "Place", "name": "Greater Noida West", "addressRegion": "Uttar Pradesh" },
-        { "@type": "Place", "name": "Yamuna Expressway", "addressRegion": "Uttar Pradesh" }
+        {
+          "@type": "Place",
+          "name": "Noida Sector 44",
+          "addressRegion": "Uttar Pradesh"
+        },
+        {
+          "@type": "Place",
+          "name": "Noida Sector 50",
+          "addressRegion": "Uttar Pradesh"
+        },
+        {
+          "@type": "Place",
+          "name": "Noida Sector 94",
+          "addressRegion": "Uttar Pradesh"
+        },
+        {
+          "@type": "Place",
+          "name": "Noida Sector 150",
+          "addressRegion": "Uttar Pradesh"
+        },
+        {
+          "@type": "Place",
+          "name": "Noida Sector 128",
+          "addressRegion": "Uttar Pradesh"
+        },
+        {
+          "@type": "Place",
+          "name": "Noida Sector 37D",
+          "addressRegion": "Uttar Pradesh"
+        },
+        {
+          "@type": "Place",
+          "name": "Greater Noida West",
+          "addressRegion": "Uttar Pradesh"
+        },
+        {
+          "@type": "Place",
+          "name": "Yamuna Expressway",
+          "addressRegion": "Uttar Pradesh"
+        }
       ],
       "speakable": {
         "@type": "SpeakableSpecification",
-        "cssSelector": ["h1", "h2", ".key-takeaways"]
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".key-takeaways"
+        ]
       },
       "isAccessibleForFree": true,
       "isFamilyFriendly": true,
@@ -12545,7 +12568,6 @@ Metaguise's design consultation process helps every homeowner and architect make
         "target": "https://metaguise.com/blog/noida-luxury-home-facade-ideas-2026"
       }
     },
-
     {
       "@type": "FAQPage",
       "@id": "https://metaguise.com/blog/noida-luxury-home-facade-ideas-2026#faqpage",
@@ -12587,7 +12609,6 @@ Metaguise's design consultation process helps every homeowner and architect make
         }
       ]
     },
-
     {
       "@type": "BreadcrumbList",
       "@id": "https://metaguise.com/blog/noida-luxury-home-facade-ideas-2026#breadcrumb",
@@ -12614,9 +12635,7 @@ Metaguise's design consultation process helps every homeowner and architect make
     }
   ]
 }
-
-
-          }`,
+`,
 
     template: 'B',
     category: "Architectural Insights",
@@ -12785,9 +12804,7 @@ Metaguise's design consultation process helps every homeowner and architect make
       "Farmhouse Exterior Design India: Metal Facade Ideas | Metaguise",
     date: "15-05-26",
 
-         schema: `{
-
-
+         schema: `
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -12873,8 +12890,7 @@ Metaguise's design consultation process helps every homeowner and architect make
     }
   ]
 }
-
-          }`,
+`,
 
     template: 'B',
     category: "Architectural Insights",
@@ -13030,9 +13046,8 @@ Metaguise's design consultation process helps every homeowner and architect make
     metaTitle:
       "MetaSequin Metal Panel System: Complete Guide for Architects & Homeowners (2026) | Metaguise",
     date: "19-05-26",
-          schema: `{
-
-          {
+          schema: `
+{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -13117,10 +13132,7 @@ Metaguise's design consultation process helps every homeowner and architect make
     }
   ]
 }
-
-
-
-          }`,
+`,
 
     template: 'B',
     category: "Material Spotlight",
@@ -13322,8 +13334,7 @@ A bespoke MetaSequin installation on the entrance tower and primary facade bay o
     metaTitle:
       "MetaCoin Facade Panels: Why Architects Choose Circular Modules",
     date: "20-05-26",
-          schema: `{
-
+          schema: `
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -13409,9 +13420,7 @@ A bespoke MetaSequin installation on the entrance tower and primary facade bay o
     }
   ]
 }
-
-
-          }`,
+`,
 
     template: 'B',
     category: "Facade Innovations",
@@ -13935,7 +13944,7 @@ MetaPyramid panels fix to Metaguise's standard aluminium sub-frame system — th
     }
   ]
 }
-}`,
+`,
 
     template: 'B',
     category: "Material Spotlight",
@@ -14123,7 +14132,6 @@ MetaShingles is <a href="https://metaguise.com/">Metaguise's metal shingle syste
 
               schema: `
 {
-              {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -14256,7 +14264,7 @@ MetaShingles is <a href="https://metaguise.com/">Metaguise's metal shingle syste
     }
   ]
 }
-}`,
+`,
 
     template: 'B',
     category: "Architectural Insights",
@@ -14473,7 +14481,6 @@ MetaFlute panels weigh between 4 and 7 kg per sq ft depending on channel depth a
 
                   schema: `
 {
-                  {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -14606,7 +14613,7 @@ MetaFlute panels weigh between 4 and 7 kg per sq ft depending on channel depth a
     }
   ]
 }
-}`,
+`,
 
     template: 'B',
     category: "Material Spotlight",
@@ -14867,7 +14874,6 @@ What the 2026 minimalism wave demands is not simplicity of effort but mastery of
 
                   schema: `
 {
-                  {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -15000,7 +15006,7 @@ What the 2026 minimalism wave demands is not simplicity of effort but mastery of
     }
   ]
 }
-}`,
+`,
 
     template: 'B',
     category: "Material Spotlight",
@@ -15187,7 +15193,6 @@ For premium residential projects in Bangalore's Sarjapur Road, Pune's Koregaon P
 
                   schema: `
 {
-                  {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -15320,7 +15325,7 @@ For premium residential projects in Bangalore's Sarjapur Road, Pune's Koregaon P
     }
   ]
 }
-}`,
+`,
 
     template: 'B',
     category: "Material Spotlight",
@@ -15524,7 +15529,6 @@ The fold is also an engineering tool. A flat sheet of 2mm aluminium deflects sig
 
                   schema: `
 {
-                  {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -15657,7 +15661,7 @@ The fold is also an engineering tool. A flat sheet of 2mm aluminium deflects sig
     }
   ]
 }
-}`,
+`,
 
     template: 'B',
     category: "Material Spotlight",
@@ -15940,7 +15944,6 @@ For architects and clients who require a specific project colour - a brand colou
 
                   schema: `
 {
-                  {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -16073,7 +16076,7 @@ For architects and clients who require a specific project colour - a brand colou
     }
   ]
 }
-}`,
+`,
 
     template: 'B',
     category: "Industry Trends",
@@ -16262,7 +16265,6 @@ For architects and clients who require a specific project colour - a brand colou
 
                   schema: `
 {
-                  {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -16395,7 +16397,7 @@ For architects and clients who require a specific project colour - a brand colou
     }
   ]
 }
-}`,
+`,
 
     template: 'B',
     category: "Industry Trends",
@@ -17935,8 +17937,6 @@ Maintenance requirements differ significantly between the three metals — both 
     date: "22-06-26",
 
           schema: `
-      {
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -18012,8 +18012,7 @@ Maintenance requirements differ significantly between the three metals — both 
     }
   ]
 }
-</script>
-}`,
+`,
 
     template: 'B',
     category: "Material Spotlight",
@@ -18277,8 +18276,6 @@ Maintenance requirements differ significantly between the three metals — both 
     date: "24-06-26",
 
    schema: `
-      {
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -18354,8 +18351,7 @@ Maintenance requirements differ significantly between the three metals — both 
     }
   ]
 }
-</script>
-}`,
+`,
 
 
     template: 'B',
@@ -18602,8 +18598,6 @@ The practical implication of this cost factor framework is that the most impactf
     folderName: "Facade-Contractor-vs-Facade-Designer",
 
        schema: `
-      {
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -18679,8 +18673,7 @@ The practical implication of this cost factor framework is that the most impactf
     }
   ]
 }
-</script>
-}`,
+`,
 
     
 
@@ -18946,8 +18939,6 @@ The practical implication of this cost factor framework is that the most impactf
 
 
            schema: `
-      {
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -19033,8 +19024,7 @@ The practical implication of this cost factor framework is that the most impactf
     }
   ]
 }
-</script>
-}`,
+`,
     
 
     images: [
@@ -19300,8 +19290,6 @@ The practical implication of this cost factor framework is that the most impactf
     folderName: "How-to-Brief-an-Architect",
 
               schema: `
-      {
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -19387,8 +19375,7 @@ The practical implication of this cost factor framework is that the most impactf
     }
   ]
 }
-</script>
-}`,
+`,
 
     
 
@@ -19522,8 +19509,6 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
     folderName: "The-Metaguise-Map-10-Iconic-Facade",
 
               schema: `
-      {
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -19609,8 +19594,7 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
     }
   ]
 }
-</script>
-}`,
+`,
 
     
 
@@ -19785,8 +19769,6 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
 
 
                 schema: `
-      {
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -19872,8 +19854,7 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
     }
   ]
 }
-</script>
-}`,
+`,
     
 
     images: [
@@ -20015,7 +19996,6 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
       folderName: "Vastu-Compliant-Facade-Design",
 
                 schema: `
-      {
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -20068,9 +20048,18 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
         "url": "https://metaguise.com/blogs"
       },
       "about": [
-        { "@type": "Thing", "name": "Vastu Shastra" },
-        { "@type": "Thing", "name": "Facade Design" },
-        { "@type": "Thing", "name": "Residential Architecture India" }
+        {
+          "@type": "Thing",
+          "name": "Vastu Shastra"
+        },
+        {
+          "@type": "Thing",
+          "name": "Facade Design"
+        },
+        {
+          "@type": "Thing",
+          "name": "Residential Architecture India"
+        }
       ],
       "keywords": [
         "vastu compliant facade design for indian homes",
@@ -20148,7 +20137,7 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
     }
   ]
 }
-}`,
+`,
 
     
 
@@ -20298,7 +20287,6 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
 
 
                 schema: `
-      {
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -20351,9 +20339,18 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
         "url": "https://metaguise.com/blogs"
       },
       "about": [
-        { "@type": "Thing", "name": "Corten Steel" },
-        { "@type": "Thing", "name": "Weathering Steel Facade" },
-        { "@type": "Thing", "name": "Residential and Commercial Architecture India" }
+        {
+          "@type": "Thing",
+          "name": "Corten Steel"
+        },
+        {
+          "@type": "Thing",
+          "name": "Weathering Steel Facade"
+        },
+        {
+          "@type": "Thing",
+          "name": "Residential and Commercial Architecture India"
+        }
       ],
       "keywords": [
         "corten steel facade india",
@@ -20431,7 +20428,7 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
     }
   ]
 }
-}`,
+`,
     
 
     images: [
@@ -20599,7 +20596,6 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
 
 
                 schema: `
-      {
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -20652,9 +20648,18 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
         "url": "https://metaguise.com/blogs"
       },
       "about": [
-        { "@type": "Thing", "name": "Facade Design" },
-        { "@type": "Thing", "name": "Parametric Facade Systems" },
-        { "@type": "Thing", "name": "Residential Architecture India" }
+        {
+          "@type": "Thing",
+          "name": "Facade Design"
+        },
+        {
+          "@type": "Thing",
+          "name": "Parametric Facade Systems"
+        },
+        {
+          "@type": "Thing",
+          "name": "Residential Architecture India"
+        }
       ],
       "keywords": [
         "instagram worthy facade ideas for indian homes 2026",
@@ -20736,7 +20741,7 @@ If you are unsure of your specific climate zone classification, Metaguise's desi
     }
   ]
 }
-}`,
+`,
     
 
     images: [
@@ -20895,7 +20900,6 @@ A MetaSequin facade photographed at dusk,  when low-angle warm light catches the
       folderName: "Hospital-Facade",
 
                 schema: `
-      {
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -20948,9 +20952,18 @@ A MetaSequin facade photographed at dusk,  when low-angle warm light catches the
         "url": "https://metaguise.com/blogs"
       },
       "about": [
-        { "@type": "Thing", "name": "Hospital Facade Design" },
-        { "@type": "Thing", "name": "Healthcare Building Cladding" },
-        { "@type": "Thing", "name": "Fire Safety Compliance India" }
+        {
+          "@type": "Thing",
+          "name": "Hospital Facade Design"
+        },
+        {
+          "@type": "Thing",
+          "name": "Healthcare Building Cladding"
+        },
+        {
+          "@type": "Thing",
+          "name": "Fire Safety Compliance India"
+        }
       ],
       "keywords": [
         "hospital facade design india",
@@ -21026,7 +21039,7 @@ A MetaSequin facade photographed at dusk,  when low-angle warm light catches the
     }
   ]
 }
-}`,
+`,
 
     
 
@@ -21181,7 +21194,6 @@ Metaguise's MetaSurface PVDF range available in any RAL or NCS colour at consist
       folderName: "Commercial-Facade",
 
                 schema: `
-      {
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -21234,9 +21246,18 @@ Metaguise's MetaSurface PVDF range available in any RAL or NCS colour at consist
         "url": "https://metaguise.com/blogs"
       },
       "about": [
-        { "@type": "Thing", "name": "Commercial Facade Design" },
-        { "@type": "Thing", "name": "Office Building Cladding" },
-        { "@type": "Thing", "name": "Green Building Certification India" }
+        {
+          "@type": "Thing",
+          "name": "Commercial Facade Design"
+        },
+        {
+          "@type": "Thing",
+          "name": "Office Building Cladding"
+        },
+        {
+          "@type": "Thing",
+          "name": "Green Building Certification India"
+        }
       ],
       "keywords": [
         "commercial building facade design india",
@@ -21313,7 +21334,7 @@ Metaguise's MetaSurface PVDF range available in any RAL or NCS colour at consist
     }
   ]
 }
-}`,
+`,
 
     
 
@@ -21480,7 +21501,6 @@ Natural anodised MetaFlute on the retail podium elevation coastal specification 
 
 
                 schema: `
-      {
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -21533,9 +21553,18 @@ Natural anodised MetaFlute on the retail podium elevation coastal specification 
         "url": "https://metaguise.com/blogs"
       },
       "about": [
-        { "@type": "Thing", "name": "Sustainable Facade Design" },
-        { "@type": "Thing", "name": "Green Building Materials India" },
-        { "@type": "Thing", "name": "Embodied Carbon and ESG Reporting" }
+        {
+          "@type": "Thing",
+          "name": "Sustainable Facade Design"
+        },
+        {
+          "@type": "Thing",
+          "name": "Green Building Materials India"
+        },
+        {
+          "@type": "Thing",
+          "name": "Embodied Carbon and ESG Reporting"
+        }
       ],
       "keywords": [
         "sustainable metal facades india",
@@ -21612,7 +21641,7 @@ Natural anodised MetaFlute on the retail podium elevation coastal specification 
     }
   ]
 }
-}`,
+`,
     
 
     images: [
@@ -21765,9 +21794,7 @@ All Metaguise MetaForm systems (MetaFlute, MetaCassette, SolidPanel, MetaShingle
       folderName: "Retail-Facade",
 
                 schema: `
-      {
-
-      {
+{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -21819,9 +21846,18 @@ All Metaguise MetaForm systems (MetaFlute, MetaCassette, SolidPanel, MetaShingle
         "url": "https://metaguise.com/blogs"
       },
       "about": [
-        { "@type": "Thing", "name": "Retail Store Facade Design" },
-        { "@type": "Thing", "name": "Shopfront and Mall Exterior Design" },
-        { "@type": "Thing", "name": "Brand Identity Through Architecture" }
+        {
+          "@type": "Thing",
+          "name": "Retail Store Facade Design"
+        },
+        {
+          "@type": "Thing",
+          "name": "Shopfront and Mall Exterior Design"
+        },
+        {
+          "@type": "Thing",
+          "name": "Brand Identity Through Architecture"
+        }
       ],
       "keywords": [
         "retail facade design india",
@@ -21897,7 +21933,7 @@ All Metaguise MetaForm systems (MetaFlute, MetaCassette, SolidPanel, MetaShingle
     }
   ]
 }
-}`,
+`,
 
     
 
@@ -22051,7 +22087,6 @@ For retail programmes with hard opening dates, <a href="https://metaguise.com/co
 
 
                 schema: `
-      {
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -22104,9 +22139,18 @@ For retail programmes with hard opening dates, <a href="https://metaguise.com/co
         "url": "https://metaguise.com/blogs"
       },
       "about": [
-        { "@type": "Thing", "name": "School Facade Design" },
-        { "@type": "Thing", "name": "Educational Campus Architecture" },
-        { "@type": "Thing", "name": "Fire Safety Compliance India" }
+        {
+          "@type": "Thing",
+          "name": "School Facade Design"
+        },
+        {
+          "@type": "Thing",
+          "name": "Educational Campus Architecture"
+        },
+        {
+          "@type": "Thing",
+          "name": "Fire Safety Compliance India"
+        }
       ],
       "keywords": [
         "school facade design india",
@@ -22182,7 +22226,7 @@ For retail programmes with hard opening dates, <a href="https://metaguise.com/co
     }
   ]
 }
-}`,
+`,
     
 
     images: [
@@ -23507,60 +23551,3 @@ url: "india-building-facade-market-2026-size-growth-demand",
 
   },
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
