@@ -84,6 +84,31 @@ const Contact = ({ brochureName }) => {
     headingMap[normalizedPath] || { h1: detectedBrochure, h2: "" };
 
   /*
+   * Breadcrumb schema (JSON-LD) — only emitted when the current path
+   * is one of the known brochure routes.
+   */
+  const breadcrumbSchema = pageBrochureMap[normalizedPath]
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://metaguise.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": pageBrochureMap[normalizedPath],
+            "item": `https://metaguise.com${normalizedPath}/`
+          }
+        ]
+      }
+    : null;
+
+  /*
    * Debugging
    */
   console.log("Original pathname:", location.pathname);
@@ -604,6 +629,12 @@ const Contact = ({ brochureName }) => {
           rel="canonical"
           href={canonicalUrl}
         />
+
+        {breadcrumbSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(breadcrumbSchema)}
+          </script>
+        )}
 
         <meta
           property="og:url"

@@ -34,6 +34,41 @@ const SingleProject = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
 
+  // Project copy data (h1 / definitionParagraph / h2Sections) is loaded
+  // from projects-index.json, same pattern as SingleProduct.js. It is NOT
+  // rendered visibly on the frontend.
+  const [projectCopyData, setProjectCopyData] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    fetch(`${process.env.PUBLIC_URL}/data/projects-index.json`)
+      .then((res) => (res.ok ? res.json() : []))
+      .then((data) => {
+        if (!cancelled) {
+          setProjectCopyData(data);
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setProjectCopyData([]);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  // projects-index.json is a list (not a slug-keyed object like
+  // products-index.json), so match the current project by its url slug.
+  const projectCopy =
+    (Array.isArray(projectCopyData) &&
+      projectCopyData.find(
+        (item) => item.url?.toLowerCase() === project?.url?.toLowerCase()
+      )) ||
+    null;
+
   // Fetch the project by URL slug. Falls back to searching by name (for old-format
   // links) using the lightweight index, then redirects to the canonical URL.
   useEffect(() => {
@@ -403,7 +438,73 @@ const SingleProject = () => {
 
         {isMobile && <BuildButton projectSlug={project.url} />}
       </div>
+
+      {/*
+        SEO content block.
+        This is NOT visually shown to regular visitors — it's clipped
+        off-screen with the "visually hidden" technique (same pattern
+        used for screen-reader-only text), so it stays in the DOM and
+        accessibility tree.
+
+        Because the site is served through the Puppeteer prerender
+        pipeline, crawlers get the fully rendered HTML (including this
+        block), while human visitors only see the normal grid/sidebar UI.
+
+        Source: projects-index.json -> projectCopy (definitionParagraph, h2Sections)
+      */}
+      {projectCopy && (
+        <SeoContent projectCopy={projectCopy} />
+      )}
+
       <Footer />
+    </div>
+  );
+};
+
+// Visually-hidden style: clips content off-screen without display:none
+// or visibility:hidden, so it stays in the DOM and accessibility tree
+// (and therefore in whatever HTML the Puppeteer prerender snapshot
+// serves to crawlers), but is not visible in the normal page layout.
+const visuallyHiddenStyle = {
+  position: "absolute",
+  width: "1px",
+  height: "1px",
+  padding: 0,
+  margin: "-1px",
+  overflow: "hidden",
+  clip: "rect(0, 0, 0, 0)",
+  whiteSpace: "nowrap",
+  border: 0,
+};
+
+// Renders definitionParagraph + h2Sections from projects-index.json.
+// Deliberately does NOT render projectCopy.h1 as an <h1> tag — the page
+// already has one visible <h1> (the project name, in Sidebar). A second
+// <h1> would hurt heading structure rather than help it.
+const SeoContent = ({ projectCopy }) => {
+  if (!projectCopy) return null;
+
+  const { definitionParagraph, h2Sections } = projectCopy;
+
+  if (!definitionParagraph && !(h2Sections && h2Sections.length)) {
+    return null;
+  }
+
+  return (
+    <div
+      className="seo-hidden-content"
+      style={visuallyHiddenStyle}
+      aria-hidden="false"
+    >
+      {definitionParagraph && <p>{definitionParagraph}</p>}
+
+      {Array.isArray(h2Sections) &&
+        h2Sections.map((section, index) => (
+          <section key={index}>
+            <h2>{section.heading}</h2>
+            <p>{section.copy}</p>
+          </section>
+        ))}
     </div>
   );
 };

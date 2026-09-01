@@ -144,7 +144,7 @@ const projectClickHandler = (img) => {
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Projects"
+        "name": "Our Projects"
       }
     ]
   };

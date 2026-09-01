@@ -23,6 +23,25 @@ const srOnlyStyle = {
   border: 0,
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://metaguise.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Build Your Dream",
+      "item": "https://metaguise.com/build/"
+    }
+  ]
+};
+
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -355,6 +374,9 @@ const Contact = () => {
 <link rel="canonical" href="https://metaguise.com/build/" />
 <meta property="og:url" content="https://metaguise.com/build/" />
         <meta name="keywords" content="build facade, custom facade design, facade consultation india" />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <Container fluid className="bg-dark text-white contact-container">

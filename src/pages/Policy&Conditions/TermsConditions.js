@@ -7,6 +7,25 @@ import Footer from "../../components/Footer";
 
 
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://metaguise.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Terms & Conditions",
+      "item": "https://metaguise.com/terms-conditions/"
+    }
+  ]
+};
+
 function Terms() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,6 +66,10 @@ function Terms() {
           name="twitter:description"
           content="Read Metaguise's Terms and Conditions covering website use, intellectual property rights, and liability for www.metaguise.com."
         />
+
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
     <div className="container-fluid ">

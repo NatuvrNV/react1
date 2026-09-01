@@ -96,7 +96,7 @@ const Blog = () => {
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Blog"
+        "name": "Blogs"
       }
     ]
   };

@@ -27,6 +27,25 @@ const srOnlyStyle = {
   border: 0,
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://metaguise.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Partner With Us",
+      "item": "https://metaguise.com/partner/"
+    }
+  ]
+};
+
 const Partner = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -255,6 +274,10 @@ const Partner = () => {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://metaguise.com/partner/" />
         <meta name="keywords" content="facade partner program, architect facade partnership india" />
+
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
 
         {/* ✅ Google Ads Conversion Tracking Script */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16992180594"></script>

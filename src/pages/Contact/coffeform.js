@@ -148,6 +148,33 @@ const Contact = ({ brochureName }) => {
 
   /*
    * ============================================================
+   * BREADCRUMB SCHEMA (JSON-LD)
+   * ============================================================
+   */
+
+  const breadcrumbSchema = currentConfig
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://metaguise.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": currentConfig.name,
+            "item": canonicalURL
+          }
+        ]
+      }
+    : null;
+
+  /*
+   * ============================================================
    * FORM STATE
    * ============================================================
    */
@@ -719,6 +746,12 @@ const Contact = ({ brochureName }) => {
           rel="canonical"
           href={canonicalURL}
         />
+
+        {breadcrumbSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(breadcrumbSchema)}
+          </script>
+        )}
 
         <meta
           name="description"

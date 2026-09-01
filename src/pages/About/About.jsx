@@ -11,6 +11,25 @@ import { ReverseHeroSection } from "../../collection/about/ReverseHeroSection/Re
 
 gsap.registerPlugin(ScrollTrigger);
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://metaguise.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About Us",
+      "item": "https://metaguise.com/about/"
+    }
+  ]
+};
+
 export const About = () => {
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -18,6 +37,9 @@ export const About = () => {
   return (
     <>
          <Helmet>
+              <script type="application/ld+json">
+                {JSON.stringify(breadcrumbSchema)}
+              </script>
               <title>About Metaguise | India's First Parametric Metal Facade Company</title>
               <meta name="description" content="Meet Metaguise, India's pioneer in parametric metal facades. 1800+ projects, 70+ specialists, in-house design to installation. Read our story, vision and mission." />
               <meta name="keywords" content="parametric facade company india, metal facade company, about metaguise" />
