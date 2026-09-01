@@ -140,6 +140,9 @@ const SingleBlogPage = () => {
   const urlFriendlyTitle = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
   const canonicalUrl = `https://metaguise.com/blog/${urlFriendlyTitle}/`;
 
+  // Author name — falls back to Pariniti Chawla when a post doesn't specify one
+  const authorName = blog.author || "Pariniti Chawla";
+
   // Body renderer: supports both flat Fulldescription (HTML string) and
   // contentSections (array of HTML strings)
   const renderBody = (b, className) => {
@@ -216,6 +219,9 @@ const SingleBlogPage = () => {
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
           </p>
+          <p className="text-xs text-gray-400 text-start author-text">
+            By {authorName}
+          </p>
 
           {/* Mobile image gallery - show all images in rows of 2 */}
           <div className="mobile-image-gallery mt-3">
@@ -230,6 +236,7 @@ const SingleBlogPage = () => {
           <Row className='py-xl-3'>
             <Col xl={7}>
               <p className="text-xs text-gray-400 date-text text-start">{blog.date} | {blog.category}</p>
+              <p className="text-xs text-gray-400 author-text text-start">By {authorName}</p>
               {renderBody(blog, "text-sm blog-fulldescription")}
             </Col>
 
@@ -261,6 +268,9 @@ const SingleBlogPage = () => {
         <div className="d-block d-xl-none">
           <p className="text-xs text-gray-400 text-start single-text">
             {blog.date} | {blog.category}
+          </p>
+          <p className="text-xs text-gray-400 text-start author-text">
+            By {authorName}
           </p>
 
           {blog.images.map((image, index) => {
@@ -302,6 +312,9 @@ const SingleBlogPage = () => {
             <Col xl={12}>
               <p className="text-xs text-gray-400 date-text2 text-start mt-2">
                 {blog.date} | {blog.category}
+              </p>
+              <p className="text-xs text-gray-400 author-text2 text-start">
+                By {authorName}
               </p>
             </Col>
           </Row>
@@ -402,7 +415,7 @@ const SingleBlogPage = () => {
 
         <meta property="article:published_time" content={blog.date} />
         <meta property="article:section" content={blog.category} />
-        <meta property="article:author" content="MetaGuise" />
+        <meta property="article:author" content={authorName} />
 
         {/* Per-blog JSON schema, if present (separate from the article/webpage
             schema injected by useBlogSchema above, which comes from blogSchemas.js) */}
@@ -417,6 +430,7 @@ const SingleBlogPage = () => {
         <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
           <h1>{blog.title}</h1>
           <p>{blog.date} | {blog.category}</p>
+          <p>By {authorName}</p>
           <p>{blog.description}</p>
 
           {blog.contentSections ? (
