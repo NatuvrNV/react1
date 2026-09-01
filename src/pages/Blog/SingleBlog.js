@@ -141,7 +141,7 @@ const SingleBlogPage = () => {
   const canonicalUrl = `https://metaguise.com/blog/${urlFriendlyTitle}/`;
 
   // Author name — falls back to Pariniti Chawla when a post doesn't specify one
-  const authorName = blog.author || "Pariniti Chawla";
+  const authorName = blog.author || "Pariniti";
 
   // Body renderer: supports both flat Fulldescription (HTML string) and
   // contentSections (array of HTML strings)
