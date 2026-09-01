@@ -78,6 +78,29 @@ const Blog = () => {
     return matchesCategory && matchesSearch;
   });
 
+  // BreadcrumbList schema — task #2. This is the blog INDEX page, so it's
+  // only two levels deep (Home > Blog). The three-level version
+  // (Home > Blog > <article title>) belongs on the individual post page,
+  // not here. Last item omits "item" (no URL), per Google's guidance for
+  // the current page in a breadcrumb trail.
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://metaguise.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog"
+      }
+    ]
+  };
+
   return (
     <div className="singleblog-container">
       <Helmet>
@@ -90,6 +113,10 @@ const Blog = () => {
         <meta property="og:description" content="Explore Metaguise's articles on metal facade design, kinetic facades, parametric architecture and material innovation for architects and homeowners across India." />
         <link rel="canonical" href="https://metaguise.com/blogs/" />
         <meta name="keywords" content="facade design blog, kinetic facade, parametric architecture" />
+
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <Container fluid>

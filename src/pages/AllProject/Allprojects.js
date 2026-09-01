@@ -126,6 +126,29 @@ const projectClickHandler = (img) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // BreadcrumbList schema — task #2. This is the projects INDEX page, so
+  // it's only two levels deep (Home > Projects). The three-level version
+  // (Home > Projects > Miraj Stadium) belongs on the individual project
+  // page (SingleProject.js), which already has it. Last item omits "item"
+  // (no URL), per Google's guidance for the current page in a breadcrumb trail.
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://metaguise.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Projects"
+      }
+    ]
+  };
+
   return (
     <div className="gallery-container">
       <Helmet>
@@ -139,6 +162,10 @@ const projectClickHandler = (img) => {
         <meta property="og:url" content="https://metaguise.com/all-projects/" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://metaguise.com/all-projects/" />
+
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
       <div className="gallery-content">
         <Container fluid>

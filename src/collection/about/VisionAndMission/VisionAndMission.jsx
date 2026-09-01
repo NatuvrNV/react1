@@ -113,7 +113,7 @@ export const VisionAndMission = () => {
 const VisionAndMissionCard = ({ title, icon, description1, description2, alt }) => {
   return (
     <div className="vision-mission-card">
-      <img src={icon} alt={alt} className="card-icon" />
+      <img src={icon} alt={alt} width={80} height={80} className="card-icon" />
       <div className="card-content">
         <h3 className="title">{title}</h3>
         <div className="description">

@@ -18,6 +18,8 @@ export const GlanceBox = ({ heading, icon, isMainHeading }) => {
       {icon && (
         <img
           src={icon}
+           width={48}
+          height={48}
           alt="about-icon"
         />
       )}

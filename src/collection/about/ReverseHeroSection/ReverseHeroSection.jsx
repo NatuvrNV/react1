@@ -11,6 +11,8 @@ export const ReverseHeroSection = () => {
         <div className="tw-w-full md:tw-w-[40%] tw-pl-0">
           <img
             src={AboutReverseHero}
+             width={800}
+             height={1000}
             alt="Metaguise installation team assembling facade panel on scaffolding with safety harnesses and yellow helmets."
             className="tw-w-full tw-h-full tw-object-cover"
           />

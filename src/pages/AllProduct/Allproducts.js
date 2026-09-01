@@ -131,6 +131,29 @@ function productClickHandler(img) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // BreadcrumbList schema — task #2. This is the products INDEX page, so
+  // it's only two levels deep (Home > Products). The three-level version
+  // (Home > Products > MetaCoin) belongs on the individual product page
+  // (SingleProduct.js), which already has it. Last item omits "item"
+  // (no URL), per Google's guidance for the current page in a breadcrumb trail.
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://metaguise.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Products"
+      }
+    ]
+  };
+
   return (
     <div className="gallery-container">
            <Helmet>
@@ -143,6 +166,10 @@ function productClickHandler(img) {
                     <meta property="og:url" content="https://metaguise.com/all-products/" />
                     <meta name="robots" content="index, follow" />
                     <link rel="canonical" href="https://metaguise.com/all-products/" />
+
+                    <script type="application/ld+json">
+                      {JSON.stringify(breadcrumbSchema)}
+                    </script>
                   </Helmet>
       <div className="gallery-content">
         <Container fluid>

@@ -288,6 +288,32 @@ const SingleProject = () => {
     "inLanguage": "en-IN"
   };
 
+  // BreadcrumbList schema — task #2. Last item deliberately omits "item"
+  // (no URL), per Google's guidance for the current page in a breadcrumb trail.
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://metaguise.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Projects",
+        "item": "https://metaguise.com/all-projects/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": project.Projectname
+      }
+    ]
+  };
+
   return (
     <div className="container main-container">
       <Helmet>
@@ -322,6 +348,9 @@ const SingleProject = () => {
 
         <script type="application/ld+json">
           {JSON.stringify(projectSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
         </script>
       </Helmet>
 

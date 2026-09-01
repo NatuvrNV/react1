@@ -22,12 +22,14 @@ export const AboutHeroSection = () => {
         ))}
       </div>
       <div className={styles.imageSection}>
-        <img
-          src={AboutHero}
-          alt="An image of the facade of Metaland featuring the white MetaSequin panels forming the tree of knowledge pattern "
-          className={styles.heroImage}
-          loading="eager"
-        />
+     <img
+  src={AboutHero}
+  alt="An image of the facade of Metaland featuring the white MetaSequin panels forming the tree of knowledge pattern "
+  className={styles.heroImage}
+  loading="eager"
+  width={1200}
+  height={800}
+/>
       </div>
     </section>
   );
