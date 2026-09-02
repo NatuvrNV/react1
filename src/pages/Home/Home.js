@@ -122,6 +122,21 @@ const faqSchema = JSON.stringify({
   ]
 });
 
+// BreadcrumbList schema — homepage is the root of the trail, so it's a
+// single-item list (just "Home", no "item" URL — per Google's guidance,
+// the current/last page in a trail doesn't need its own URL).
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home"
+    }
+  ]
+});
+
 // ✅ Task 1 fix — real H1, rendered in the actual DOM (not noscript-only)
 // Visually hidden via .sr-only so it doesn't fight the hero slider's own
 // marketing copy, but it's real text in the rendered HTML that Googlebot
@@ -184,6 +199,9 @@ function Home() {
 
         {/* JSON-LD: Speakable WebPage */}
         <script type="application/ld+json">{speakableSchema}</script>
+
+        {/* JSON-LD: BreadcrumbList */}
+        <script type="application/ld+json">{breadcrumbSchema}</script>
       </Helmet>
 
       {/* ✅ Task 1 — real H1, rendered in the DOM */}

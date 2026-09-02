@@ -140,6 +140,33 @@ const SingleBlogPage = () => {
   const urlFriendlyTitle = blog.url ? getUrlFriendlyString(blog.url) : getUrlFriendlyString(blog.title);
   const canonicalUrl = `https://metaguise.com/blog/${urlFriendlyTitle}/`;
 
+  // Breadcrumb JSON-LD: Home > Blogs > [Post Title], generated per-post from
+  // the current blog's title/url — no static per-page schema file needed.
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://metaguise.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blogs",
+        "item": "https://metaguise.com/blogs/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": blog.title,
+        "item": canonicalUrl
+      }
+    ]
+  };
+
   // Author name — falls back to Pariniti Chawla when a post doesn't specify one
   const authorName = blog.author || "Pariniti";
 
@@ -424,6 +451,12 @@ const SingleBlogPage = () => {
             {JSON.stringify(blog.schema)}
           </script>
         )}
+
+        {/* BreadcrumbList schema — Home > Blogs > Post Title, built dynamically
+            above so every blog post gets one without a static per-page entry. */}
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <noscript>
