@@ -8388,7 +8388,7 @@ folderName: "The-Hidden-Cost",
     template: 'B',
     category: "Behind the Design",
 
-      url: "when-your-building-turns-one:-why-facade-ageing-is-now-a-luxury-home-anniversary-conversation",
+      url: "when-your-building-turns-one-why-facade-ageing-is-now-a-luxury-home-anniversary-conversation",
 
     metaDescription:
       " Discover how premium metal facades evolve beautifully in year one. Learn what's normal ageing vs. damage — and how Metaguise systems mature with dignity over time.",
