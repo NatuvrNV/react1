@@ -15,7 +15,53 @@
         "heading": "Is MetaCoin suited to Indian weather?",
         "copy": "Yes. It's corrosion-resistant and UV-stable, so it holds up through monsoon humidity, coastal salt air, and peak summer heat without fading or warping."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaCoin facade cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCoin is Metaguise's coin-shaped aluminium facade system. Individual circular discs are arranged in parametric compositions to create a light-reactive, textured elevation that changes appearance through the day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaCoin made of?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCoin panels are fabricated in precision aluminium, finished in PVDF, anodised, or powder-coat coatings that carry 15 to 30 year warranties. It can also be specified in stainless steel, brass, or copper for premium projects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where has MetaCoin facade been installed in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCoin has been installed across 100+ Metaguise projects in India, including retail landmarks like Tanishq South Ex and institutional projects such as Miraj Stadium."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a MetaCoin facade cost per square foot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCoin, as a parametric metal facade system, is typically priced in the range of INR 800 to 2,500 per square foot depending on panel size, finish, and project complexity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can MetaCoin be customised in size and colour?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaCoin discs can be customised in diameter, colour, spacing, and pattern to match a building's architectural language and the architect's design intent."
+          }
+        }
+      ]
+    }
   },
   "metasequin": {
     "h1": "MetaSequin: Dynamic Light-Reflecting Metal Panel System",
@@ -33,7 +79,53 @@
         "heading": "Where does MetaSequin work best?",
         "copy": "It suits villas and landmark buildings where the architect wants visual drama and movement, especially on facades that get direct daylight."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaSequin facade cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaSequin is Metaguise's signature dynamic metal panel system made of individually angled sequin-shaped modules. Each module catches, reflects, and shifts light as the viewer's position and the sun's angle change through the day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes MetaSequin different from a flat metal panel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unlike flat cladding, each MetaSequin module is angled independently, so the facade appears to shimmer and change character across the day rather than presenting a static surface."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaSequin available in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaSequin is fabricated primarily in aluminium with PVDF or anodised finishes, and is also available in stainless steel and brass for high-end architectural projects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaSequin suitable for both commercial and residential facades?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaSequin is specified on retail storefronts, hospitality facades, and luxury villa elevations, including projects like Deepak Sweets, where its light-interactive quality creates visual impact."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the typical cost of a MetaSequin parametric facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As a parametric system, MetaSequin generally falls in the higher pricing band of Metaguise's range, reflecting the custom tooling and precision fabrication each panel requires."
+          }
+        }
+      ]
+    }
   },
   "metapyramid": {
     "h1": "MetaPyramid: 3D Textured Metal Wall Panel System",
@@ -51,7 +143,45 @@
         "heading": "Where should MetaPyramid be used?",
         "copy": "It works well on feature walls and entrance facades, basically anywhere the architect wants texture instead of a flat surface."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaPyramid facade cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPyramid is Metaguise's 3D pyramid-textured metal facade panel system, engineered to create sculptural depth and dynamic shadow play across a building's elevation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is used for MetaPyramid panels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPyramid panels are fabricated in precision aluminium with PVDF or powder-coat finishes offering 15 to 30 year colour warranties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is MetaPyramid used on a building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPyramid is commonly used on feature walls, entrance facades, and accent elevations where architects want a strong 3D textured statement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does MetaPyramid perform in Indian weather conditions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPyramid panels are engineered to resist UV degradation, monsoon humidity, and pollution, backed by long-term coating warranties suited to India's climate."
+          }
+        }
+      ]
+    }
   },
   "metashingle": {
     "h1": "MetaShingle: Aluminium Shingle Cladding System",
@@ -69,7 +199,45 @@
         "heading": "What maintenance does MetaShingle need?",
         "copy": "Almost none. It's built specifically to handle India's monsoon and high UV conditions."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaShingles facade cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaShingles is Metaguise's precision-engineered metal shingle system made of overlapping aluminium modules that replicate the look of traditional clay, terracotta, and slate roof and wall tiles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose MetaShingles over traditional clay or terracotta tiles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaShingles delivers the same visual character as clay, terracotta, or slate tiles, but with radically better weather resistance, lower weight, longer lifespan, and greater design flexibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material and finishes are available for MetaShingles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaShingles is manufactured in aluminium with PVDF, anodised, or powder-coat finishes, available in a wide range of colours and can also be specified in stainless steel or copper."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaShingles suitable for roofs as well as walls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaShingles is primarily used as a wall cladding system on facades and canopies, giving a tiled aesthetic without the weight and maintenance of natural roofing materials."
+          }
+        }
+      ]
+    }
   },
   "cascadingkeys": {
     "h1": "Cascading Keys: Metaguise's Signature Facade System",
@@ -87,7 +255,45 @@
         "heading": "Who should choose Cascading Keys?",
         "copy": "Landmark and flagship buildings where having a distinctive, ownable facade identity really matters."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Cascading Keys facade cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cascading Keys is Metaguise's signature kinetic facade system, made of vertically stacked, key-shaped panels that flutter subtly with the wind to bring a building's surface to life."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What inspired the Cascading Keys design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cascading Keys is inspired by natural motion, drawing on the imagery of wind chimes and fluttering butterflies to create a gentle, ever-changing rhythm across the facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is Cascading Keys made from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cascading Keys is crafted from lightweight, durable metals like aluminium and stainless steel, engineered for smooth movement and long-term weather resistance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Cascading Keys a low-maintenance facade system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Cascading Keys is zero-maintenance, fireproof, and corrosion-resistant, making it a durable choice for kinetic facades in Indian climates."
+          }
+        }
+      ]
+    }
   },
   "metacassette": {
     "h1": "MetaCassette: Flat Cassette Panel Facade System",
@@ -105,7 +311,53 @@
         "heading": "Where is MetaCassette commonly used?",
         "copy": "Corporate offices and retrofit projects often use it, along with any building that needs a clean, modular, low-maintenance facade."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaCassette facade cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCassette is Metaguise's flat, rectilinear cassette panel system, available in solid or perforated formats for a clean, modular facade aesthetic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does perforated MetaCassette do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Perforated MetaCassette acts as a sunscreen at the elevation, enhancing airflow and dissipating heat while still providing a defined architectural pattern."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaCassette made of?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCassette is fabricated in high-grade aluminium with PVDF finish options across 50+ colours, and can also be specified in stainless steel or copper."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a MetaCassette facade cost per square foot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCassette, as a MetaForm system, typically ranges from about INR 900 to 1,500 per square foot installed for a 10,000+ sq ft residential elevation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaCassette suitable for both residential and commercial buildings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaCassette is used across residential bungalows, villas, and commercial buildings, often combined with MetaCoin or MetaFlute on the same elevation."
+          }
+        }
+      ]
+    }
   },
   "metaflute": {
     "h1": "MetaFlute: Vertical Fluted Metal Panel System",
@@ -123,7 +375,53 @@
         "heading": "What projects suit MetaFlute?",
         "copy": "Homes, commercial spaces, and public buildings that want a clean vertical look. It's also a good lightweight option for retrofit projects."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaFlute facade cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFlute is Metaguise's precision-engineered vertical fluted aluminium panel system, delivering tactile depth, a strong shadow rhythm, and a timeless architectural character to any elevation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a fluted metal facade look like?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A fluted facade like MetaFlute uses vertical ribbed panels that create repeating shadow lines, giving the building's surface visual texture and a sense of height."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaFlute made of?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFlute is manufactured in high-grade aluminium, commonly in 18 mm ribbed profiles, with PVDF or powder-coat finishes across a wide colour range."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaFlute suitable for residential bungalows and villas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaFlute is widely used on residential bungalows and villas in Delhi NCR and Gurgaon, often combined with MetaCassette or MetaLouver on secondary elevations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the approximate cost of MetaFlute facade installation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFlute typically costs between INR 850 and 1,500 per square foot installed, depending on panel profile, finish, and project scale."
+          }
+        }
+      ]
+    }
   },
   "metafin": {
     "h1": "MetaFin: Architectural Fins for Light and Heat Control",
@@ -141,7 +439,45 @@
         "heading": "Where should MetaFin be installed?",
         "copy": "West and south-facing facades in India's hottest cities, where heat gain is usually the biggest design problem."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaFin and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFin is Metaguise's precision-engineered architectural fin system, using aluminium brise-soleil fins that project from the facade to cast controlled shadow over walls and glazing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does MetaFin reduce solar heat gain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFin fins can reduce solar heat gain on west and south-facing facades by 40 to 60 percent, improving thermal comfort and lowering cooling costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where should MetaFin be installed on a building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFin is most effective on west and south-facing elevations, which receive the most intense sun exposure in Indian cities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaFin fabricated in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFin fins are fabricated in aluminium with PVDF or anodised finishes for long-term UV and corrosion resistance."
+          }
+        }
+      ]
+    }
   },
   "metafold": {
     "h1": "MetaFold: Origami-Inspired Folded Metal Panel System",
@@ -159,7 +495,45 @@
         "heading": "What buildings suit MetaFold?",
         "copy": "Iconic or landmark facades where the architect wants something sculptural and gallery-like, not conventional flat cladding."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaFold facade system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFold is Metaguise's dynamic folding panel system, designed to open and close so occupants can reveal or screen views of the surrounding landscape."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is MetaFold different from a fixed facade panel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unlike fixed cladding, MetaFold panels are operable, giving the building's occupants control over privacy, ventilation, and views through a folding mechanism."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaFold made from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFold is fabricated in lightweight aluminium for smooth folding operation, with weather-resistant PVDF or powder-coat finishes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can MetaFold be automated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFold can be specified with manual operation or an automated opening and closing mechanism as an upgrade, depending on the project's requirements."
+          }
+        }
+      ]
+    }
   },
   "metaslider": {
     "h1": "MetaSlider: Kinetic Sliding Metal Facade System",
@@ -177,7 +551,45 @@
         "heading": "Where is MetaSlider best suited?",
         "copy": "Homes and commercial buildings that want an interactive, adaptive facade rather than a fixed elevation."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaSlider facade system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaSlider is Metaguise's sliding metal facade system, using movable panels that give architects flexibility in controlling airflow, daylight, and privacy on a building's elevation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does MetaSlider help with airflow and light control?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaSlider panels can be slid open or closed, allowing occupants to adjust ventilation and the amount of natural light entering a space without changing the facade's structure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaSlider made of?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaSlider is fabricated in aluminium with PVDF or powder-coat finishes, engineered for smooth, long-term sliding performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is MetaSlider typically used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaSlider is used on balconies, verandahs, and facades where operable shading or a changeable elevation pattern is desired."
+          }
+        }
+      ]
+    }
   },
   "metaplank": {
     "h1": "MetaPlank: Linear Metal Plank Cladding System",
@@ -195,7 +607,45 @@
         "heading": "Is MetaPlank low-maintenance?",
         "copy": "Yes, you get full metal durability while it still looks like timber planking."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaPlank facade cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPlank is Metaguise's linear, plank-profile metal cladding system, using elongated panels to bring an ordered horizontal or vertical rhythm to a building's facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaPlank available in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPlank is fabricated in precision aluminium, finished in PVDF, anodised, or powder-coat coatings backed by 15 to 30 year warranties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is MetaPlank commonly used on a building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPlank is used on both residential and commercial elevations where a clean, linear plank aesthetic is preferred over a heavily textured or parametric pattern."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does MetaPlank compare in cost to other MetaForm systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPlank, like other MetaForm systems such as MetaFlute and MetaCassette, is generally priced in the INR 900 to 1,500 per square foot range installed."
+          }
+        }
+      ]
+    }
   },
   "metagate": {
     "h1": "MetaGate: Aluminium Flute Cladding for Gates and Compound Walls",
@@ -213,7 +663,45 @@
         "heading": "Can MetaGate match my main facade?",
         "copy": "Yes, it's often specified alongside MetaFlute, MetaWood, or MetaLouver on the same project for a consistent look front to back."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaGate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaGate is Metaguise's sustainable, ultra-lightweight aluminium cladding system for enhancing the aesthetics of doorways and gates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What gate configurations does MetaGate support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaGate is built with manual sliding, swing, or bi-fold functions, and offers automation as an optional upgrade for convenience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaGate made of?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaGate is fabricated in lightweight aluminium, often with fluted or louvered profiles, finished in PVDF or powder-coat for weather resistance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can MetaGate be matched to the rest of a home's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaGate is commonly specified alongside systems like MetaFlute, MetaLouver, or MetaWood so the gate design relates to the property's boundary wall and main elevation."
+          }
+        }
+      ]
+    }
   },
   "metacopper": {
     "h1": "MetaCopper: Copper-Toned Perforated Metal Cladding",
@@ -231,7 +719,45 @@
         "heading": "Where does MetaCopper work best?",
         "copy": "Villas in Goa, Kerala, and Rajasthan's heritage areas, where the warm copper tone connects well with regional craft traditions."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaCopper facade cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCopper is a copper-toned, breathable perforated matrix cassette finish processed at MetaLab, bringing warm rustic ochre-red hues to a building's facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does MetaCopper develop a natural patina over time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, copper-based facades like MetaCopper age gracefully, developing a deepening, evolving patina that gives every building a genuinely unique character over the years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What architectural styles suit MetaCopper?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCopper combines beautifully with both traditional and contemporary architectural styles, enhancing the flow of light and adding a warm, inviting tone to a building."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does MetaCopper compare in cost to aluminium facade systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As a premium copper-finish MetaSurface system, MetaCopper is generally priced higher than standard aluminium systems, reflecting the material cost and specialised MetaLab processing."
+          }
+        }
+      ]
+    }
   },
   "metapatina": {
     "h1": "MetaPatina: Verdigris Green Oxidised Copper Facade Finish",
@@ -249,7 +775,45 @@
         "heading": "Best locations for MetaPatina",
         "copy": "Villas set in lush garden landscapes, where the green-blue tone sits well against the surrounding planting."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaPatina facade finish?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPatina is Metaguise's living metal facade surface finish, designed to age with grace, shifting colour and deepening in character as it weathers over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does MetaPatina change over the years?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPatina reveals new layers of tonal depth as it's exposed to sun, rain, and time, so the facade continues to evolve rather than staying static like a painted surface."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaPatina suitable for retrofit and renovation projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaPatina is commonly specified in retrofit projects, where it gives ageing concrete buildings new warmth and character without a complete structural overhaul."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaPatina applied to?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPatina finishes are applied to precision-fabricated aluminium or copper panels, engineered for long-term weather and corrosion resistance."
+          }
+        }
+      ]
+    }
   },
   "metacorten": {
     "h1": "MetaCorten: Corten Steel-Look Rustic Metal Facade",
@@ -267,7 +831,45 @@
         "heading": "What buildings suit MetaCorten?",
         "copy": "Villas and commercial builds that want an earthy, industrial character instead of a polished metal look."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaCorten facade cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCorten is Metaguise's weathering steel finish system, delivering the controlled rust patina of oxidising iron in a structurally engineered, architect-specified cladding application."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does MetaCorten's appearance change over time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCorten's protective rust layer deepens in richness over 3 to 5 years, producing an elevation that becomes more beautiful and characterful as the building ages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaCorten suitable for coastal buildings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCorten performs best in India's inland, low-salinity climates and must be detailed carefully for coastal applications, where anodised aluminium is often a better fit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What projects is MetaCorten commonly used on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCorten is popular on villas and bungalows in inland regions such as Sohna Road, Gurgaon, and Rajasthan, where it lends a grounded, earthy architectural character."
+          }
+        }
+      ]
+    }
   },
   "metagrey": {
     "h1": "MetaGrey: Contemporary Grey-Finish Metal Facade",
@@ -285,7 +887,45 @@
         "heading": "Is MetaGrey fade-resistant?",
         "copy": "Yes, the PVDF and powder-coat finish is built to hold its tone under India's UV exposure."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaGrey facade finish?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaGrey is Metaguise's grey-toned metal facade surface finish, offering a contemporary, neutral palette that pairs well with glass, stone, and other Metaguise systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaGrey applied to?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaGrey is applied to precision aluminium panels, finished with durable PVDF or powder-coat coatings for long-term colour retention."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is MetaGrey commonly used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaGrey is used on both commercial and residential facades where architects want a minimalist, modern grey aesthetic rather than a warm or textured tone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can MetaGrey be combined with other MetaSurface finishes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaGrey is often combined with finishes like MetaCopper or MetaWood in multi-material compositions to add contrast and depth to a facade."
+          }
+        }
+      ]
+    }
   },
   "metawood": {
     "h1": "MetaWood: Wood-Finish Metal Facade Cladding",
@@ -303,7 +943,45 @@
         "heading": "Where is MetaWood commonly used?",
         "copy": "Soffits, entrance canopies, and louver systems, like the entrance detailing at Miraj Cricket Stadium."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaWood facade finish?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaWood is Metaguise's lightweight metal facade finish that replicates the warm, organic look of timber using a durable timber-look PVDF coating on aluminium panels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose MetaWood over real timber cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaWood delivers the warm aesthetic of natural wood without timber's maintenance burden, weight, or vulnerability to rot, pests, and weathering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is MetaWood commonly used on a building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaWood is often used on entrance soffits, canopies, gates, and accent walls, adding a natural, inviting tone to residential and commercial facades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaWood made from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaWood is fabricated in lightweight aluminium with a timber-look PVDF finish, engineered for long-term colour retention and weather resistance."
+          }
+        }
+      ]
+    }
   },
   "metahydra": {
     "h1": "MetaHydra: Rippling Wave-Pattern Metal Facade",
@@ -321,7 +999,45 @@
         "heading": "Best applications for MetaHydra",
         "copy": "Residential and commercial elevations where the architect wants an organic, fluid look instead of rigid geometric patterns."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaHydra facade system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaHydra is one of Metaguise's parametric metal facade systems, engineered using computational design to create geometrically complex, visually distinctive elevations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is MetaHydra designed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Like Metaguise's other parametric systems, MetaHydra is generated using Grasshopper scripting within a Rhino environment, allowing each project's pattern to be mathematically customised."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaHydra fabricated in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaHydra is fabricated in precision aluminium, with PVDF, anodised, or powder-coat finishes available depending on the project's specification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaHydra suitable for landmark or institutional buildings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, parametric systems like MetaHydra are well suited to landmark, institutional, and commercial buildings where a distinctive, computationally-designed facade is the design goal."
+          }
+        }
+      ]
+    }
   },
   "metablox": {
     "h1": "MetaBlox: 3D Modular Metal Block Facade System",
@@ -339,7 +1055,45 @@
         "heading": "What finishes are available for MetaBlox?",
         "copy": "Champagne gold and other custom metal finishes, suited to retail and landmark buildings that want a distinctive look."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaBlox facade technology?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaBlox is Metaguise's parametric block facade system, featuring a fish-scale-like block texture that was first showcased at the RJ Jewellers flagship store in Jaipur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes MetaBlox a breakthrough in facade design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaBlox merges computational geometry with craftsmanship, using a repeating block pattern that catches light and shadow differently across the elevation, setting a new benchmark in parametric design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaBlox made of?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaBlox is fabricated in precision aluminium with PVDF, anodised, or powder-coat finishes for long-term durability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaBlox suitable for retail and commercial storefronts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaBlox is particularly effective on retail and commercial storefronts, where its distinctive textured pattern helps a brand's building stand out."
+          }
+        }
+      ]
+    }
   },
   "metalouver": {
     "h1": "MetaLouver: Aluminium Louver System (Grille Replacement)",
@@ -357,7 +1111,45 @@
         "heading": "Where is MetaLouver typically used?",
         "copy": "Entrance elevations and ventilated facade zones. It's used in a MetaWood finish at the base of Miraj Cricket Stadium."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaLouver facade cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaLouver is Metaguise's louvered blade metal facade system, using angled aluminium blades to improve ventilation and control natural light and privacy across an elevation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does MetaLouver help keep interiors cooler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaLouver blades enhance airflow through the facade, keeping interiors naturally cooler while still shading the building from direct sun."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaLouver good for building retrofits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaLouver is often used in retrofit projects, where it improves ventilation and updates the visual identity of an ageing building's facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaLouver made from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaLouver is fabricated in vertical aluminium panels with PVDF or powder-coat finishes, similar in construction quality to MetaFlute."
+          }
+        }
+      ]
+    }
   },
   "solidpanel": {
     "h1": "SolidPanel: Flush Seamless Metal Cladding System",
@@ -375,7 +1167,45 @@
         "heading": "What applications suit SolidPanel best?",
         "copy": "Residential and commercial facades of any scale that need a quiet, high-performance base layer, often combined with a bolder accent system."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is SolidPanel metal cladding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SolidPanel is Metaguise's precision-engineered flush metal cladding system, using seamless aluminium panels to deliver clean lines and a minimalist facade aesthetic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is SolidPanel typically used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SolidPanel is used on both residential and commercial projects where architects want an uninterrupted, contemporary flat surface rather than a textured or perforated pattern."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material and finish options does SolidPanel offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SolidPanel is fabricated in high-grade aluminium with PVDF finish options across 50+ colours, and can also be specified in anodised or powder-coat finishes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does SolidPanel compare in cost to textured facade systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SolidPanel, as a flat MetaForm system, typically ranges from about INR 900 to 1,500 per square foot installed, generally more economical than highly customised parametric systems."
+          }
+        }
+      ]
+    }
   },
   "metahive": {
     "h1": "MetaHive: Custom Parametric Facade in Solid 3D Aluminium",
@@ -393,7 +1223,61 @@
         "heading": "Is MetaHive fabrication handled in-house?",
         "copy": "Yes, Metaguise manages the full process from technical drawing to installation, which keeps the geometry precise and the finish consistent across every panel."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What makes MetaHive different from off-the-shelf parametric systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every MetaHive panel is custom-engineered for the specific project rather than pulled from a standard catalogue, so the geometry, scale, and finish can all be tailored to the building."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where has MetaHive been used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaHive is featured at the Whiteland Westin Residences experience centre in Gurugram, with architecture by Hafeez Contractor, where the faceted panels wrap the entire entrance facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaHive fabrication handled in-house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise manages the full process from technical drawing to installation in-house, which keeps the geometry precise and the finish consistent across every panel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What material is MetaHive made from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaHive is built from solid 3D aluminium panels, giving it a sculptural, geometry-driven surface that is durable and low-maintenance for Indian climate conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can MetaHive be customised for any building type?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Because each panel is engineered individually rather than mass-produced, MetaHive can be adapted in scale, faceting, and finish for residential, commercial, and institutional facades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a quote for a MetaHive facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can request a quote through the 'Build Your Dream' option on the MetaHive page, or contact Metaguise directly to discuss your project's scale and design requirements."
+          }
+        }
+      ]
+    }
   },
   "metacryst": {
     "h1": "MetaCryst: Modular 3D Faceted Metal Panel System",
@@ -411,6 +1295,60 @@
         "heading": "What kind of projects suit MetaCryst?",
         "copy": "Projects that call for depth, reflection, and a strong architectural identity, especially feature ceilings, lobbies, and entrance zones where the panel's dimensional texture can be appreciated up close."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is MetaCryst by Metaguise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCryst is Metaguise's geometric panel facade system that manipulates light and shadow to create a crystalline surface texture, giving buildings a distinctive, faceted architectural character."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where has MetaCryst been used?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCryst has been used as an under-ceiling treatment at the five-star hotel integrated with Miraj Cricket Stadium in Rajasthan, creating a softer, atmospheric transition from the stadium's energy to the hotel interior."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaCryst suitable for interior as well as exterior use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaCryst has been applied as an interior under-ceiling treatment as well as an exterior facade element, making it a flexible system for both elevations and interior architectural features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What effect does MetaCryst create on a building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The geometric panels of MetaCryst catch and manipulate light and shadow, producing a crystalline, faceted texture that shifts appearance through the day and under artificial lighting at night."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is MetaCryst fabrication handled in-house by Metaguise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Like all Metaguise systems, MetaCryst is engineered and fabricated in-house, from technical drawing through to on-site installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a quote for a MetaCryst facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can request a quote through the 'Build Your Dream' option on the MetaCryst page, or contact Metaguise directly to discuss your project's design and material requirements."
+          }
+        }
+      ]
+    }
   }
 }

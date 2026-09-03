@@ -373,6 +373,10 @@ const SingleProduct = () => {
     ]
   };
 
+  // FAQPage schema — sourced from products-index.json -> productCopy.faqSchema.
+  // Not every product has FAQ content yet, so this is only rendered when present.
+  const faqSchema = productCopy?.faqSchema || null;
+
   return (
     <div className="container main-container">
 
@@ -524,6 +528,11 @@ const SingleProduct = () => {
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
       </Helmet>
 
       <div className="row">

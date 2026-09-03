@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Container, Row, Col, ListGroup, Dropdown } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import Footer from "../../components/Footer";
+import OptimizedImage from "../../components/OptimizedImage";
 import { MdArrowOutward } from "react-icons/md";
 import "./Allproducts.css";
 // SingleProductDetail used to be a static import (~62 KB in every bundle).
@@ -229,12 +230,15 @@ function productClickHandler(img) {
                   >
                     <div className="hover-effect">
                       {/* ✅ Task 2 — width/height added to prevent layout shift (Task 10) */}
-                      <img
+                      <OptimizedImage
                         src={`${process.env.PUBLIC_URL}/${img.imgPath}`}
                         alt={img.imgText}
                         width={640}
                         height={480}
-                        loading="lazy"
+                        // First 4-6 visible thumbnails load eagerly (LCP),
+                        // the rest lazy — per the CWV fix kit guidance for
+                        // this exact page.
+                        priority={index < 5}
                       />
                     </div>
                     {/* ✅ Task 2 — real heading instead of a bare div */}

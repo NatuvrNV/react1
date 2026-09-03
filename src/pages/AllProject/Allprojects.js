@@ -4,6 +4,7 @@ import { Container, Row, Col, ListGroup, Dropdown } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 import Footer from "../../components/Footer";
+import OptimizedImage from "../../components/OptimizedImage";
 import "./Allprojects.css";
 // SingleprojectDetail used to be a static import (~213 KB in every bundle).
 // The listing page only ever needed name/url/Projectname, so it now fetches
@@ -237,12 +238,14 @@ const projectClickHandler = (img) => {
                         {/* ✅ Task 2 — real name-based alt text (falls back to
                             constants.js per-image alt if present), and
                             width/height to prevent layout shift (Task 10) */}
-                        <img
+                        <OptimizedImage
                           src={`${process.env.PUBLIC_URL}/${img.imgPath}`}
                           alt={img.alt || `${projectInfo.name} facade by Metaguise`}
                           width={640}
                           height={480}
-                          loading="lazy"
+                          // First 4-6 visible thumbnails eager, rest lazy —
+                          // same pattern as /all-products/.
+                          priority={index < 5}
                         />
                       </div>
                       {/* ✅ Task 2 — real heading instead of a bare div, so the

@@ -22,7 +22,45 @@
         "heading": "Project Details",
         "copy": "Studio Ardete HQ is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system was used at Studio Ardete's headquarters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Studio Ardete's office in Mohali uses MetaSequin, a modular, reflective parametric facade element arranged in an undulating pattern inspired by the movement of tree leaves."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What was the design inspiration behind the Studio Ardete facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade design was inspired by a tree preserved in front of the building during construction, translating the essence of dynamically moving leaves into the perforated MetaSequin screen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What functional benefits does the MetaSequin facade offer at Studio Ardete?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Beyond its visual movement, the MetaSequin screen filters sunlight, diffuses glare, and adds a layer of thermal insulation to keep indoor temperatures comfortable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Studio Ardete headquarters facade project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This parametric MetaSequin facade project is located at Studio Ardete's headquarters office in Mohali, Punjab."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "sculpted silence",
@@ -47,7 +85,45 @@
         "heading": "Project Details",
         "copy": "Sculpted Silence is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Sculpted Silence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sculpted Silence is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Sculpted Silence facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Sculpted Silence facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Sculpted Silence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaPlank and MetaFlute are commonly specified on residential projects like Sculpted Silence, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Sculpted Silence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Sculpted Silence typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the haven",
@@ -72,7 +148,45 @@
         "heading": "Project Details",
         "copy": "The Haven is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Haven?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Haven is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Haven facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Haven facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Haven?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaWood and MetaCoin are commonly specified on residential projects like The Haven, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Haven?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Haven typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "apex residence",
@@ -97,7 +211,45 @@
         "heading": "Project Details",
         "copy": "Apex Residence is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Apex Residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apex Residence is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Apex Residence facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Apex Residence facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Apex Residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as SolidPanel and MetaPlank are commonly specified on residential projects like Apex Residence, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Apex Residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Apex Residence typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "blossoms",
@@ -122,7 +274,45 @@
         "heading": "Project Details",
         "copy": "Blossoms is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Blossoms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Blossoms is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Blossoms facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Blossoms facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Blossoms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFin and MetaSequin are commonly specified on residential projects like Blossoms, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Blossoms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Blossoms typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "cityspace82",
@@ -147,7 +337,45 @@
         "heading": "Project Details",
         "copy": "Cityspace82 is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Cityspace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cityspace is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Cityspace facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Cityspace facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Cityspace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as Cascading Keys and MetaWood are commonly specified on residential projects like Cityspace, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Cityspace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Cityspace typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "tanishq",
@@ -172,7 +400,45 @@
         "heading": "Project Details",
         "copy": "Installed at Tanishq's flagship store in South Extension, Delhi."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system was used at the Tanishq South Ex store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Tanishq flagship store in South Extension, Delhi, uses Metaguise's MetaCoin system in a warm gold finish, with each coin featuring a 'T' at its centre to echo the Tanishq brand identity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What other facade products were used alongside MetaCoin at Tanishq?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alongside MetaCoin, the elevation uses MetaFlute panels finished in MetaCopper for added rhythm and depth, anchored by MetaCassette solid panels that hold the composition together."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why was a coin-shaped facade chosen for a jewellery store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The individually crafted coins reflect Tanishq's philosophy that every piece of jewellery is unique, turning the coin-shaped MetaCoin facade into a piece of brand identity in architectural form."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Tanishq Metaguise facade project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This MetaCoin facade project is located at the Tanishq flagship store in South Extension, New Delhi."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Luxe",
@@ -197,7 +463,45 @@
         "heading": "Project Details",
         "copy": "Luxe Manor is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Luxe Manor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Luxe Manor is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Luxe Manor facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Luxe Manor facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Luxe Manor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaWood and MetaCoin are commonly specified on residential projects like Luxe Manor, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Luxe Manor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Luxe Manor typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "A13-43",
@@ -222,7 +526,45 @@
         "heading": "Project Details",
         "copy": "The Stillwood Residence is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is A13 43?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A13 43 is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the A13 43 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The A13 43 facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like A13 43?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFlute and MetaLouver are commonly specified on residential projects like A13 43, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at A13 43?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like A13 43 typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "D5-3",
@@ -247,7 +589,45 @@
         "heading": "Project Details",
         "copy": "The Vanguard is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is D5 3?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "D5 3 is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the D5 3 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The D5 3 facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like D5 3?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCassette and SolidPanel are commonly specified on residential projects like D5 3, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at D5 3?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like D5 3 typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "gowri",
@@ -272,7 +652,45 @@
         "heading": "Project Details",
         "copy": "Gowri's Jewellery is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system was used at Gowri's Jewellery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gowri's Jewellery features a metal sequin facade crafted by Metaguise, using the MetaSequin system to bring a light-reactive, jewel-like quality to the storefront."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is MetaSequin a good fit for jewellery store facades?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaSequin's individually angled modules catch and reflect light much like jewellery itself, making it a natural fit for retail brands built around sparkle and craftsmanship."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the design intent behind the Gowri's Jewellery facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade was designed to extend the jeweller's identity onto the building's exterior, turning the storefront itself into a piece of dynamic, light-catching design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Gowri's Jewellery Metaguise project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This MetaSequin facade project was executed for the Gowri's Jewellery storefront by Metaguise."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "E10",
@@ -297,7 +715,45 @@
         "heading": "Project Details",
         "copy": "The Ripple Effect is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Ripple Effect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ripple Effect is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Ripple Effect facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Ripple Effect facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Ripple Effect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaSequin and MetaCassette are commonly specified on residential projects like The Ripple Effect, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Ripple Effect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Ripple Effect typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "deepak",
@@ -322,7 +778,45 @@
         "heading": "Project Details",
         "copy": "Deepak Sweets is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system was used at Deepak Sweets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Deepak Sweets storefront uses Metaguise's MetaSequin system, with individually angled modules that catch and reflect light to give the facade a lively, eye-catching presence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does MetaSequin suit a retail F&B storefront like Deepak Sweets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaSequin's light-reactive quality helps a storefront stand out on a busy street, drawing attention through movement and shimmer rather than a static signboard alone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What visual effect does the Deepak Sweets facade create?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As viewing angle and daylight change, the Deepak Sweets facade appears to shift and shimmer, giving the storefront a distinctive, dynamic character."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Deepak Sweets Metaguise facade project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This MetaSequin storefront facade project is located at Deepak Sweets."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "A19",
@@ -347,7 +841,45 @@
         "heading": "Project Details",
         "copy": "Aurelia Residence is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is A19?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A19 is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the A19 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The A19 facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like A19?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCoin and MetaFin are commonly specified on residential projects like A19, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at A19?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like A19 typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "A18",
@@ -372,7 +904,45 @@
         "heading": "Project Details",
         "copy": "Vista Residence is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is A18?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A18 is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the A18 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The A18 facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like A18?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaLouver and Cascading Keys are commonly specified on residential projects like A18, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at A18?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like A18 typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "MVA-DL1",
@@ -397,7 +967,45 @@
         "heading": "Project Details",
         "copy": "The Threshold is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is MVA DL1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MVA DL1 is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the MVA DL1 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The MVA DL1 facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like MVA DL1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as SolidPanel and MetaPlank are commonly specified on residential projects like MVA DL1, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at MVA DL1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like MVA DL1 typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "metaland",
@@ -422,7 +1030,45 @@
         "heading": "Project Details",
         "copy": "This is Metaguise's own experience center, not a client project."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Metaland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaland is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Metaland facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Metaland facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Metaland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFin and MetaSequin are commonly specified on residential projects like Metaland, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Metaland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Metaland typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "micasa",
@@ -447,7 +1093,45 @@
         "heading": "Project Details",
         "copy": "Micasa is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Micasa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Micasa is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Micasa facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Micasa facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Micasa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as Cascading Keys and MetaWood are commonly specified on residential projects like Micasa, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Micasa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Micasa typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Yashika",
@@ -472,7 +1156,45 @@
         "heading": "Project Details",
         "copy": "An Experience Center project located in Gurugram."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Yashika?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yashika is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Yashika facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Yashika facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Yashika?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaPlank and MetaFlute are commonly specified on residential projects like Yashika, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Yashika?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Yashika typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "C76",
@@ -497,7 +1219,45 @@
         "heading": "Project Details",
         "copy": "The Paramount is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is C76?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C76 is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the C76 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The C76 facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like C76?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFin and MetaSequin are commonly specified on residential projects like C76, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at C76?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like C76 typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "5107",
@@ -522,7 +1282,45 @@
         "heading": "Project Details",
         "copy": "The Luminous Veil is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is 5107?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "5107 is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the 5107 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 5107 facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like 5107?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as Cascading Keys and MetaWood are commonly specified on residential projects like 5107, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at 5107?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like 5107 typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "A297",
@@ -547,7 +1345,45 @@
         "heading": "Project Details",
         "copy": "The Confluence is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is A297?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A297 is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the A297 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The A297 facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like A297?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaPlank and MetaFlute are commonly specified on residential projects like A297, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at A297?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like A297 typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "C34-573",
@@ -572,7 +1408,45 @@
         "heading": "Project Details",
         "copy": "The Nexus is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is C34 573?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C34 573 is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the C34 573 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The C34 573 facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like C34 573?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaSequin and MetaCassette are commonly specified on residential projects like C34 573, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at C34 573?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like C34 573 typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "DLF4",
@@ -597,7 +1471,45 @@
         "heading": "Project Details",
         "copy": "The Frame House is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is DLF4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DLF4 is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the DLF4 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The DLF4 facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like DLF4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaWood and MetaCoin are commonly specified on residential projects like DLF4, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at DLF4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like DLF4 typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "CS5-MA",
@@ -622,7 +1534,45 @@
         "heading": "Project Details",
         "copy": "The Ember House is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is CS5 MA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CS5 MA is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the CS5 MA facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The CS5 MA facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like CS5 MA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFlute and MetaLouver are commonly specified on residential projects like CS5 MA, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at CS5 MA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like CS5 MA typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "espace",
@@ -647,7 +1597,45 @@
         "heading": "Project Details",
         "copy": "Espace Nirvana is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Espace Nirvana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Espace Nirvana is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Espace Nirvana facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Espace Nirvana facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Espace Nirvana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCassette and SolidPanel are commonly specified on residential projects like Espace Nirvana, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Espace Nirvana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Espace Nirvana typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "MA-543",
@@ -672,7 +1660,45 @@
         "heading": "Project Details",
         "copy": "Metal Mosaic is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is MA 543?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MA 543 is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the MA 543 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The MA 543 facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like MA 543?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCoin and MetaFin are commonly specified on residential projects like MA 543, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at MA 543?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like MA 543 typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Q62-RA",
@@ -697,7 +1723,45 @@
         "heading": "Project Details",
         "copy": "The Arc is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Q62 Ra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Q62 Ra is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Q62 Ra facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Q62 Ra facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Q62 Ra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaLouver and Cascading Keys are commonly specified on residential projects like Q62 Ra, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Q62 Ra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Q62 Ra typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "z1012",
@@ -722,7 +1786,45 @@
         "heading": "Project Details",
         "copy": "The Scallop Residence is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Z1012?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Z1012 is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Z1012 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Z1012 facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Z1012?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as SolidPanel and MetaPlank are commonly specified on residential projects like Z1012, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Z1012?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Z1012 typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "painflame",
@@ -747,7 +1849,45 @@
         "heading": "Project Details",
         "copy": "Pain Flame is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Painflame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Painflame is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Painflame facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Painflame facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Painflame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as Cascading Keys and MetaWood are commonly specified on residential projects like Painflame, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Painflame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Painflame typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "premhospital",
@@ -772,7 +1912,45 @@
         "heading": "Project Details",
         "copy": "Prem Hospital is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system was used at Prem Hospital?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prem Hospital's facade is crafted using MetaCassette, with a custom perforation pattern designed specifically for a healthcare setting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Prem Hospital facade design depict?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The MetaCassette facade features a custom perforated image of a baby's hand held inside an adult palm, set within a cross, expressing protection, healing, and hope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is a symbolic facade meaningful for a hospital?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A facade like Prem Hospital's turns the building's exterior into a soft yet striking symbol of the hospital's mission to nurture life, connecting architecture directly to the institution's purpose."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Prem Hospital Metaguise facade project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This MetaCassette healthcare facade project is located at Prem Hospital."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "coppercanvas",
@@ -797,7 +1975,45 @@
         "heading": "Project Details",
         "copy": "Copper Canvas is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Copper Canvas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Copper Canvas is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Copper Canvas facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Copper Canvas facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Copper Canvas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCassette and SolidPanel are commonly specified on residential projects like Copper Canvas, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Copper Canvas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Copper Canvas typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "peachstreet",
@@ -822,7 +2038,45 @@
         "heading": "Project Details",
         "copy": "Peach Street is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Peach Street?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Peach Street is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Peach Street facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Peach Street facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Peach Street?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFlute and MetaLouver are commonly specified on residential projects like Peach Street, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Peach Street?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Peach Street typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "linearretreat",
@@ -847,7 +2101,45 @@
         "heading": "Project Details",
         "copy": "Linear Retreat is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Linear Retreat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Linear Retreat is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Linear Retreat facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Linear Retreat facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Linear Retreat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCoin and MetaFin are commonly specified on residential projects like Linear Retreat, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Linear Retreat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Linear Retreat typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "anj",
@@ -872,7 +2164,45 @@
         "heading": "Project Details",
         "copy": "Skyport House is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Skyport House?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Skyport House is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Skyport House facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Skyport House facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Skyport House?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaSequin and MetaCassette are commonly specified on residential projects like Skyport House, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Skyport House?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Skyport House typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "dev622",
@@ -897,7 +2227,45 @@
         "heading": "Project Details",
         "copy": "Monolith Garden is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Monolith Garden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monolith Garden is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Monolith Garden facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Monolith Garden facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Monolith Garden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaLouver and Cascading Keys are commonly specified on residential projects like Monolith Garden, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Monolith Garden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Monolith Garden typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "ishaan",
@@ -922,7 +2290,45 @@
         "heading": "Project Details",
         "copy": "Peacock Mesh is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Peacock Mesh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Peacock Mesh is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Peacock Mesh facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Peacock Mesh facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Peacock Mesh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFlute and MetaLouver are commonly specified on residential projects like Peacock Mesh, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Peacock Mesh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Peacock Mesh typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "pritesh",
@@ -947,7 +2353,45 @@
         "heading": "Project Details",
         "copy": "Sacred Geometry is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Sacred Geometry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sacred Geometry is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Sacred Geometry facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Sacred Geometry facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Sacred Geometry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaWood and MetaCoin are commonly specified on residential projects like Sacred Geometry, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Sacred Geometry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Sacred Geometry typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "sachi",
@@ -972,7 +2416,45 @@
         "heading": "Project Details",
         "copy": "Sachi is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Sachi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sachi is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Sachi facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Sachi facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Sachi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCassette and SolidPanel are commonly specified on residential projects like Sachi, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Sachi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Sachi typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "vivek",
@@ -997,7 +2479,45 @@
         "heading": "Project Details",
         "copy": "Obsidian is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Obsidian?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Obsidian is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Obsidian facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Obsidian facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Obsidian?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCoin and MetaFin are commonly specified on residential projects like Obsidian, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Obsidian?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Obsidian typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "hlp",
@@ -1022,7 +2542,45 @@
         "heading": "Project Details",
         "copy": "HLP is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is HLP Facade Project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HLP Facade Project is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the HLP Facade Project facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The HLP Facade Project facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like HLP Facade Project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as SolidPanel and MetaPlank are commonly specified on residential projects like HLP Facade Project, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at HLP Facade Project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like HLP Facade Project typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "sbi",
@@ -1047,7 +2605,45 @@
         "heading": "Project Details",
         "copy": "SBI is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is SBI Facade Project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SBI Facade Project is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the SBI Facade Project facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The SBI Facade Project facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like SBI Facade Project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFin and MetaSequin are commonly specified on residential projects like SBI Facade Project, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at SBI Facade Project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like SBI Facade Project typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "zenith",
@@ -1072,7 +2668,45 @@
         "heading": "Project Details",
         "copy": "Zenith is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system was used at the Zenith building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Zenith commercial building's facade is composed entirely of MetaCoin discs, arranged so both sides of the building mirror each other in perfect symmetry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What pattern does the Zenith facade create?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cascading arrangement of MetaCoin discs at Zenith mimics natural patterns like flowing grass or hair, capturing wind, light, and rhythm in a continuous kinetic loop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Zenith facade design represent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The mirrored, kinetic MetaCoin texture at Zenith reflects the brand's duality — a facade that feels rooted yet dynamic at the same time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Zenith Metaguise facade project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This symmetrical MetaCoin facade project is showcased at the Zenith commercial building."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "wvcity",
@@ -1097,7 +2731,45 @@
         "heading": "Project Details",
         "copy": "Wavecity is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system was used at the Wave City pavilion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Wave City pavilion's overhead canopy is built from shimmering MetaSequin panels, choreographed into a swirling pattern that shifts with sunlight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes the Wave City project different from a typical facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unlike a vertical wall cladding application, Wave City uses MetaSequin as a suspended overhead canopy, floating like a halo above the pavilion space."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the Wave City MetaSequin canopy perform visually?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The swirling MetaSequin arrangement at Wave City turns the everyday act of walking beneath the canopy into a sculptural, iconic, and futuristic experience as light shifts across the panels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Wave City Metaguise facade project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This MetaSequin canopy project is located at the Wave City pavilion."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "whiteland",
@@ -1122,7 +2794,45 @@
         "heading": "Project Details",
         "copy": "WhiteLand is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system was used at the Whiteland Westin Experience Centre?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Whiteland Westin Residences Experience Centre in Gurugram features MetaHive, a custom parametric facade system built from triangular planes set at varying angles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What effect does the MetaHive facade create at Whiteland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaHive transforms the exterior into a sculpted, three-dimensional surface that operates as a high-performance second skin over the building's clean glass volume, adding depth and character."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How was the MetaHive facade at Whiteland engineered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every MetaHive panel at Whiteland was digitally scripted, fabricated, and installed with millimetre-level precision by Metaguise, making it a landmark in parametric design in India."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Whiteland Metaguise facade project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This MetaHive parametric facade project is located at the Whiteland Westin Residences Experience Centre in Gurugram, Haryana."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "theresonance",
@@ -1147,7 +2857,45 @@
         "heading": "Project Details",
         "copy": "The Resonance is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Resonance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Resonance is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Resonance facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Resonance facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Resonance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaPlank and MetaFlute are commonly specified on residential projects like The Resonance, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Resonance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Resonance typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "theelevato",
@@ -1172,7 +2920,45 @@
         "heading": "Project Details",
         "copy": "The Elevato is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Elevato?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Elevato is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Elevato facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Elevato facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Elevato?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaSequin and MetaCassette are commonly specified on residential projects like The Elevato, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Elevato?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Elevato typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "thecurtain",
@@ -1197,7 +2983,45 @@
         "heading": "Project Details",
         "copy": "The Curtain is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Curtain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Curtain is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Curtain facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Curtain facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Curtain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaWood and MetaCoin are commonly specified on residential projects like The Curtain, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Curtain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Curtain typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "GLSU",
@@ -1222,7 +3046,45 @@
         "heading": "Project Details",
         "copy": "GLSU University is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Glsu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Glsu is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Glsu facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Glsu facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Glsu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as SolidPanel and MetaPlank are commonly specified on residential projects like Glsu, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Glsu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Glsu typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Sohana",
@@ -1247,7 +3109,45 @@
         "heading": "Project Details",
         "copy": "Sohana Hospital is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Sohana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sohana is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Sohana facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Sohana facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Sohana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFin and MetaSequin are commonly specified on residential projects like Sohana, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Sohana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Sohana typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "TheCrystal",
@@ -1272,7 +3172,45 @@
         "heading": "Project Details",
         "copy": "The Crystal is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Crystal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Crystal is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Crystal facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Crystal facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Crystal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFlute and MetaLouver are commonly specified on residential projects like The Crystal, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Crystal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Crystal typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "rjjewellers",
@@ -1297,7 +3235,45 @@
         "heading": "Project Details",
         "copy": "This is Metaguise's first MetaBlox installation, at RJ Jewellers' flagship store in Jaipur."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system debuted at RJ Jewellers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The RJ Jewellers flagship store in Jaipur marked the debut of MetaBlox, Metaguise's parametric block facade system with a fish-scale-like block texture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the RJ Jewellers facade pattern represent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Using MetaBlox, the facade blooms into a lotus pattern as you move across it, an homage to purity and renewal in Indian culture that reflects light differently from every block."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What other Metaguise products complement the RJ Jewellers facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The parametric MetaBlox structure is complemented by MetaCassette and MetaFlute panels, transforming the store into a jewel-like architectural statement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the RJ Jewellers Metaguise project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This MetaBlox facade project is located at the RJ Jewellers flagship store in Jaipur, Rajasthan."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "farm15",
@@ -1322,7 +3298,45 @@
         "heading": "Project Details",
         "copy": "The Sanctuary is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is FARM15?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FARM15 is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the FARM15 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The FARM15 facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like FARM15?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCassette and SolidPanel are commonly specified on residential projects like FARM15, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at FARM15?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like FARM15 typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "e81",
@@ -1347,7 +3361,45 @@
         "heading": "Project Details",
         "copy": "The Elysian is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is E81?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "E81 is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the E81 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The E81 facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like E81?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaLouver and Cascading Keys are commonly specified on residential projects like E81, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at E81?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like E81 typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "B38",
@@ -1372,7 +3424,45 @@
         "heading": "Project Details",
         "copy": "Corten Canvas is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is B38?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "B38 is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the B38 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The B38 facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like B38?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as SolidPanel and MetaPlank are commonly specified on residential projects like B38, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at B38?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like B38 typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "a56",
@@ -1397,7 +3487,45 @@
         "heading": "Project Details",
         "copy": "Facet Residence is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is A56?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A56 is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the A56 facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The A56 facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like A56?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFin and MetaSequin are commonly specified on residential projects like A56, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at A56?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like A56 typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "3dlf1",
@@ -1422,7 +3550,45 @@
         "heading": "Project Details",
         "copy": "The Prism is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is 3DLF1 Facade Design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3DLF1 Facade Design is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the 3DLF1 Facade Design facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 3DLF1 Facade Design facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like 3DLF1 Facade Design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaLouver and Cascading Keys are commonly specified on residential projects like 3DLF1 Facade Design, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at 3DLF1 Facade Design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like 3DLF1 Facade Design typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "caskey",
@@ -1447,7 +3613,45 @@
         "heading": "Project Details",
         "copy": "Kinetic Grid is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Kinetic Grid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kinetic Grid is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Kinetic Grid facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Kinetic Grid facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Kinetic Grid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaSequin and MetaCassette are commonly specified on residential projects like Kinetic Grid, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Kinetic Grid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Kinetic Grid typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "3939a",
@@ -1472,7 +3676,45 @@
         "heading": "Project Details",
         "copy": "Scaled Symphony is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Scaled Symphony?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scaled Symphony is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Scaled Symphony facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Scaled Symphony facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Scaled Symphony?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaPlank and MetaFlute are commonly specified on residential projects like Scaled Symphony, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Scaled Symphony?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Scaled Symphony typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "88arjun",
@@ -1497,7 +3739,45 @@
         "heading": "Project Details",
         "copy": "Parametric Crown is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Parametric Crown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parametric Crown is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Parametric Crown facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Parametric Crown facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Parametric Crown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaLouver and Cascading Keys are commonly specified on residential projects like Parametric Crown, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Parametric Crown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Parametric Crown typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Verdigris Veil",
@@ -1522,7 +3802,45 @@
         "heading": "Project Details",
         "copy": "Verdigris Veil is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Verdigrisveil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verdigrisveil is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Verdigrisveil facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Verdigrisveil facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Verdigrisveil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as SolidPanel and MetaPlank are commonly specified on residential projects like Verdigrisveil, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Verdigrisveil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Verdigrisveil typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Casa Stilgrove",
@@ -1547,7 +3865,45 @@
         "heading": "Project Details",
         "copy": "Casa Stilgrove is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Casa Stilgrove?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Casa Stilgrove is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Casa Stilgrove facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Casa Stilgrove facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Casa Stilgrove?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCassette and SolidPanel are commonly specified on residential projects like Casa Stilgrove, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Casa Stilgrove?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Casa Stilgrove typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Cornerstone",
@@ -1572,7 +3928,45 @@
         "heading": "Project Details",
         "copy": "The Cornerstone is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Cornerstone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Cornerstone is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Cornerstone facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Cornerstone facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Cornerstone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFlute and MetaLouver are commonly specified on residential projects like The Cornerstone, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Cornerstone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Cornerstone typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Golden Bloom",
@@ -1597,7 +3991,45 @@
         "heading": "Project Details",
         "copy": "The Golden Bloom is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Golden Bloom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Golden Bloom is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Golden Bloom facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Golden Bloom facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Golden Bloom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaWood and MetaCoin are commonly specified on residential projects like The Golden Bloom, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Golden Bloom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Golden Bloom typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Miraj Stadium",
@@ -1622,7 +4054,45 @@
         "heading": "Project Details",
         "copy": "Located in Rajasthan, the facade uses gold-toned coin motifs referencing cricketing moments."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system is used at Miraj Stadium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Miraj Stadium in Rajasthan showcases Metaguise's MetaCoin system at large scale, using thousands of gold-toned metal coins across the stadium elevation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Miraj Stadium facade depict?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The thousands of MetaCoin discs are choreographed to depict iconic sporting moments, turning the stadium's skin into a luminous tribute to India's cricketing spirit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the Miraj Stadium project demonstrate MetaCoin at scale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unlike smaller retail applications, Miraj Stadium focuses on the collective choreography of thousands of individual coins rather than any single disc, showing how MetaCoin performs on landmark, large-format buildings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Miraj Stadium Metaguise facade project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This large-scale MetaCoin facade project is located at Miraj Stadium in Rajasthan."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Stillwave",
@@ -1647,7 +4117,45 @@
         "heading": "Project Details",
         "copy": "The Stillwave is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Stillwave?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Stillwave is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Stillwave facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Stillwave facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Stillwave?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaSequin and MetaCassette are commonly specified on residential projects like The Stillwave, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Stillwave?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Stillwave typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Achintya",
@@ -1672,7 +4180,45 @@
         "heading": "Project Details",
         "copy": "Achintya is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Achintya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Achintya is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Achintya facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Achintya facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Achintya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCoin and MetaFin are commonly specified on residential projects like Achintya, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Achintya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Achintya typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "AB Jewels",
@@ -1697,7 +4243,45 @@
         "heading": "Project Details",
         "copy": "Located in Ahmedabad."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Ab Jewels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ab Jewels is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Ab Jewels facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ab Jewels facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Ab Jewels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaLouver and Cascading Keys are commonly specified on residential projects like Ab Jewels, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Ab Jewels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Ab Jewels typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "w12",
@@ -1722,7 +4306,45 @@
         "heading": "Project Details",
         "copy": "The Undercurrent is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Undercurrent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Undercurrent is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Undercurrent facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Undercurrent facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Undercurrent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFin and MetaSequin are commonly specified on residential projects like The Undercurrent, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Undercurrent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Undercurrent typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the block",
@@ -1747,7 +4369,38 @@
         "heading": "Project Details",
         "copy": "The Block is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system was used at The Block?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Block uses Metaguise's MetaCassette + MetaLouver system, based on the project's internal records."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What type of project is The Block?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Block is a residential facade project by Metaguise, using layered metal cladding for added depth and texture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the The Block facade project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This MetaCassette facade project is located in Gurgaon."
+          }
+        }
+      ]
+    },
+    "faqSchemaVerified": false
   },
   {
     "name": "hadapsar",
@@ -1772,7 +4425,38 @@
         "heading": "Project Details",
         "copy": "Hadapsar is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system was used at Hadapsar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hadapsar uses Metaguise's MetaCassette + MetaLouver system, based on the project's internal records."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What type of project is Hadapsar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hadapsar is a residential facade project by Metaguise, using layered metal cladding for added depth and texture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Hadapsar facade project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This MetaCassette facade project is located in Gurgaon."
+          }
+        }
+      ]
+    },
+    "faqSchemaVerified": false
   },
   {
     "name": "rhythm goel",
@@ -1797,7 +4481,38 @@
         "heading": "Project Details",
         "copy": "Rhythm Goel is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade system was used at Rhythm Goel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rhythm Goel uses Metaguise's MetaCassette + MetaLouver system, based on the project's internal records."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What type of project is Rhythm Goel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rhythm Goel is a residential facade project by Metaguise, using layered metal cladding for added depth and texture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Rhythm Goel facade project located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This MetaCassette facade project is located in Gurgaon."
+          }
+        }
+      ]
+    },
+    "faqSchemaVerified": false
   },
   {
     "name": "thewaveform",
@@ -1822,7 +4537,45 @@
         "heading": "Project Details",
         "copy": "The Waveform is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Waveform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Waveform is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Waveform facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Waveform facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Waveform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaPlank and MetaFlute are commonly specified on residential projects like The Waveform, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Waveform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Waveform typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the panorama",
@@ -1847,7 +4600,45 @@
         "heading": "Project Details",
         "copy": "The Panorama is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Panorama?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Panorama is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Panorama facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Panorama facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Panorama?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as SolidPanel and MetaPlank are commonly specified on residential projects like The Panorama, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Panorama?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Panorama typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the frame",
@@ -1872,7 +4663,45 @@
         "heading": "Project Details",
         "copy": "The Frame is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Frame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Frame is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Frame facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Frame facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Frame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaLouver and Cascading Keys are commonly specified on residential projects like The Frame, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Frame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Frame typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the crest",
@@ -1897,7 +4726,45 @@
         "heading": "Project Details",
         "copy": "The Crest is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Crest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Crest is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Crest facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Crest facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Crest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCoin and MetaFin are commonly specified on residential projects like The Crest, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Crest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Crest typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the cantilever",
@@ -1922,7 +4789,45 @@
         "heading": "Project Details",
         "copy": "The Cantilever is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Cantilever?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Cantilever is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Cantilever facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Cantilever facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Cantilever?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCassette and SolidPanel are commonly specified on residential projects like The Cantilever, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Cantilever?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Cantilever typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the spine",
@@ -1947,7 +4852,45 @@
         "heading": "Project Details",
         "copy": "The Spine is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Spine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Spine is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Spine facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Spine facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Spine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFlute and MetaLouver are commonly specified on residential projects like The Spine, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Spine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Spine typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the strata",
@@ -1972,7 +4915,45 @@
         "heading": "Project Details",
         "copy": "The Strata is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Strata?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Strata is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Strata facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Strata facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Strata?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as Cascading Keys and MetaWood are commonly specified on residential projects like The Strata, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Strata?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Strata typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the solace",
@@ -1997,7 +4978,45 @@
         "heading": "Project Details",
         "copy": "The Solace is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Solace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Solace is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Solace facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Solace facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Solace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaWood and MetaCoin are commonly specified on residential projects like The Solace, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Solace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Solace typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Podium",
@@ -2022,7 +5041,45 @@
         "heading": "Project Details",
         "copy": "The Podium is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Podium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Podium is a boundary wall and gate facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Podium facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Podium facade is designed to bring a clean, contemporary, low-maintenance elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Podium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaPlank and MetaFlute are commonly specified on residential projects like The Podium, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Podium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Podium typically offers a distinctive textured identity compared to a plain plastered facade, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Nest",
@@ -2047,7 +5104,45 @@
         "heading": "Project Details",
         "copy": "The Nest is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Nest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Nest is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Nest facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Nest facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Nest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaFlute and MetaLouver are commonly specified on residential projects like The Nest, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Nest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Nest typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Scale",
@@ -2072,7 +5167,45 @@
         "heading": "Project Details",
         "copy": "The Scale is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Scale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Scale is a residential facade facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Scale facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Scale facade is designed to bring a distinctive textured identity compared to a plain plastered facade to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Scale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaWood and MetaCoin are commonly specified on residential projects like The Scale, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Scale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Scale typically offers improved airflow and natural ventilation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Ripple",
@@ -2097,7 +5230,45 @@
         "heading": "Project Details",
         "copy": "The Ripple is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Ripple?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ripple is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Ripple facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Ripple facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Ripple?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaSequin and MetaCassette are commonly specified on residential projects like The Ripple, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Ripple?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Ripple typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Canopy",
@@ -2122,7 +5293,45 @@
         "heading": "Project Details",
         "copy": "The Overhang is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Canopy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Canopy is a private residence facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Canopy facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Canopy facade is designed to bring reduced solar heat gain on exposed walls to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Canopy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaSequin and MetaCassette are commonly specified on residential projects like The Canopy, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Canopy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Canopy typically offers a strong shadow rhythm across the elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the pavilion",
@@ -2147,7 +5356,45 @@
         "heading": "Project Details",
         "copy": "The Pavilion is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is The Pavilion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Pavilion is a private residential bungalow facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the The Pavilion facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The The Pavilion facade is designed to bring a strong shadow rhythm across the elevation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like The Pavilion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaSequin and MetaCassette are commonly specified on residential projects like The Pavilion, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at The Pavilion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like The Pavilion typically offers long-term resistance to Indian weather, UV, and pollution, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "rahul sweets",
@@ -2172,7 +5419,45 @@
         "heading": "Project Details",
         "copy": "Rahul Sweets is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Rahul Sweets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rahul Sweets is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Rahul Sweets facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Rahul Sweets facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Rahul Sweets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCoin and MetaFin are commonly specified on residential projects like Rahul Sweets, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Rahul Sweets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Rahul Sweets typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "ahir",
@@ -2197,7 +5482,45 @@
         "heading": "Project Details",
         "copy": "Ahir is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Ahir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ahir is a residential elevation facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Ahir facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ahir facade is designed to bring long-term resistance to Indian weather, UV, and pollution to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Ahir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as Cascading Keys and MetaWood are commonly specified on residential projects like Ahir, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Ahir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Ahir typically offers reduced solar heat gain on exposed walls, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "fortis",
@@ -2222,6 +5545,44 @@
         "heading": "Project Details",
         "copy": "Fortis is a commercial facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of Metaguise project is Fortis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fortis is a residential villa facade project executed by Metaguise, India's metal facade and cladding specialist based in Gurugram, Haryana."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Fortis facade design focus on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Fortis facade is designed to bring improved airflow and natural ventilation to the building, using precision-fabricated metal panels rather than conventional plastered walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise facade systems suit projects like Fortis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facade systems such as MetaCassette and SolidPanel are commonly specified on residential projects like Fortis, depending on the desired texture, ventilation, and shading needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the benefits of a metal facade like the one at Fortis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Metaguise metal facade at a project like Fortis typically offers a clean, contemporary, low-maintenance elevation, along with 15 to 30 year coating warranties depending on the finish selected."
+          }
+        }
+      ]
+    }
   }
 ]

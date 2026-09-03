@@ -1,0 +1,77 @@
+/**
+ * cwv-fixes.css
+ * -------------
+ * Import this once in your root (e.g. in App.jsx: `import "./styles/cwv-fixes.css"`)
+ * Fixes CLS issues that aren't about images (fonts, filter bars, dynamic content).
+ */
+
+/* ---------------------------------------------------------------------
+   FIX 1: /all-products/ category filter bar (All / MetaParametric /
+   MetaForm / MetaFunction / MetaSurface). This is the single biggest
+   contributor to the 0.42 CLS score on that page. Add this class to the
+   filter bar's wrapper element so its height is reserved BEFORE the
+   buttons render, instead of the page jumping once they appear.
+   --------------------------------------------------------------------- */
+.filter-bar,
+.category-filter-bar {
+  min-height: 52px; /* adjust to your actual button row height */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ---------------------------------------------------------------------
+   FIX 2: Web fonts causing text reflow (FOIT/FOUT) when they swap in.
+   font-display: swap shows fallback text immediately (no invisible text),
+   which avoids the layout jump that "optional" or default font loading
+   causes. Apply this to every @font-face rule in your CSS/font imports.
+   --------------------------------------------------------------------- */
+@font-face {
+  font-family: "Degular Display";
+   src: url("./assets/fonts/DegularDisplay-Medium.otf") format("truetype");
+  font-display: swap;
+  font-weight: 400 700; /* if using variable font */
+}
+
+/* ---------------------------------------------------------------------
+   FIX 3: Project gallery / carousel (used on all 88 /all-projects/[slug]
+   pages). Give the gallery a fixed aspect-ratio wrapper so the slider
+   library doesn't cause a layout jump when it initializes on top of it.
+   Wrap your existing gallery/carousel component's outer div with this
+   class - do NOT let the slider library set the height via JS.
+   --------------------------------------------------------------------- */
+.project-gallery-wrap,
+.project-carousel-wrap {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.project-gallery-wrap img,
+.project-carousel-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------------------------------------------------------
+   FIX 4: General rule - reserve space for ANY element that loads content
+   dynamically after initial render (badges, "Product used" tags, ratings,
+   cookie banners) so it doesn't push content below it when it appears.
+   Add this class to that wrapper and set a sensible min-height.
+   --------------------------------------------------------------------- */
+.reserve-space {
+  min-height: 40px; /* adjust per element */
+}
+
+/* ---------------------------------------------------------------------
+   FIX 5: Animations should use transform/opacity, NOT top/left/width/
+   height/margin - those trigger layout recalculation (= CLS + slow INP).
+   Example: a hover/active state on product or project cards.
+   --------------------------------------------------------------------- */
+.card-hover-effect {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.card-hover-effect:hover {
+  transform: translateY(-4px); /* NOT: top: -4px; */
+}

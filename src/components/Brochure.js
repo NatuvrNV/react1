@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
 import "./Brochure.css";
 import { MdArrowOutward } from "react-icons/md";
+import OptimizedImage from "./OptimizedImage";
 import Brochure1 from "../assets/Brochures/formopen.jpg";
 import Brochure2 from "../assets/Brochures/functionopen.jpg";
 import Brochure3 from "../assets/Brochures/parametricopen.jpg";
@@ -68,11 +69,10 @@ const Brochure = () => {
                   debounce={500}
                   placeholder={<div className="image-placeholder"></div>}
                 >
-                  <img
+                  <OptimizedImage
                     src={item.src}
                     alt={item.alt}
                     className="img-fluid"
-                    loading="lazy"
                     width={600}
                     height={800}
                   />

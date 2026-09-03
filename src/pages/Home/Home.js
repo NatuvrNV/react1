@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../cwv-fixes.css';
 import { Helmet } from "react-helmet-async";
 
 import { Swipper } from '../../components/Swiper';

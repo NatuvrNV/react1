@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { blogSchemas } from './blogSchemas';
 import "./Blog.css";
 import Footer from "../../components/Footer";
+import OptimizedImage from "../../components/OptimizedImage";
 
 // Injects/removes the Article + WebPage JSON-LD <script> tags for the
 // current blog, keyed by blog.url, from the static blogSchemas map.
@@ -211,14 +212,16 @@ const SingleBlogPage = () => {
 
             return (
               <Col key={i + index} xs={6}>
-                <img
+                <OptimizedImage
                   src={`/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`}
                   alt={imageAlt}
                   className="object-cover rounded-lg w-100"
-                  loading="lazy"
-                  width="640"
-                  height="480"
+                  width={640}
+                  height={480}
                   style={{ objectFit: 'cover', height: '300px' }}
+                  // First image of the gallery is the LCP element on every
+                  // blog post (this template is shared by ~122 posts).
+                  priority={i === 0 && index === 0}
                 />
               </Col>
             );
@@ -306,14 +309,14 @@ const SingleBlogPage = () => {
 
             return (
               <div key={index} className="mt-2">
-                <img
+                <OptimizedImage
                   src={`/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`}
                   alt={imageAlt}
                   className="object-cover rounded-lg w-100 mb-4"
-                  loading="lazy"
-                  width="640"
-                  height="480"
+                  width={640}
+                  height={480}
                   style={{ objectFit: 'cover', height: '200px', borderRadius: '20px' }}
+                  priority={index === 0}
                 />
 
                 {descriptionSections.length > 0 && (
@@ -355,14 +358,14 @@ const SingleBlogPage = () => {
                 <div key={index} className="mb-2 pb-2">
                   <Row className="my-4">
                     <Col xl={8}>
-                      <img
+                      <OptimizedImage
                         src={`/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`}
                         alt={imageAlt}
                         className="object-cover rounded-lg w-100"
-                        loading="lazy"
-                        width="640"
-                        height="480"
+                        width={640}
+                        height={480}
                         style={{ objectFit: 'cover', height: '400px', borderRadius: '20px' }}
+                        priority={index === 0}
                       />
                     </Col>
                   </Row>
@@ -513,13 +516,12 @@ const SingleBlogPage = () => {
                     className="flex cursor-pointer blog-card"
                     onClick={() => handleBlogClick(relatedBlog)}
                   >
-                    <img
+                    <OptimizedImage
                       src={`/assets/Blogs/${relatedBlog.folderName}/${firstImage.split('/').pop()}`}
                       alt={imageAlt}
                       className="object-cover rounded-lg"
-                      loading="lazy"
-                      width="640"
-                      height="480"
+                      width={640}
+                      height={480}
                     />
                     <div className="mx-xl-4 blog-text">
                       <h2 className="text-xl blog-title-head">{relatedBlog.title}</h2>

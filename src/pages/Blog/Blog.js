@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { Container, Row } from "react-bootstrap";
 import { MdArrowOutward } from "react-icons/md";
 import Footer from "../../components/Footer";
+import OptimizedImage from "../../components/OptimizedImage";
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -190,13 +191,12 @@ const Blog = () => {
                     className="flex cursor-pointer blog-card"
                     onClick={() => handleBlogClick(blog)}
                   >
-                    <img
+                    <OptimizedImage
                       src={`/assets/Blogs/${blog.folderName}/${imagePath.split('/').pop()}`}
                       alt={imageAlt}
                       className="object-cover rounded-lg"
                       width={640}
                       height={480}
-                      loading="lazy"
                     />
                     <div className="mx-xl-4 blog-text">
                       <h2 className="text-xl blog-title-head">{blog.title}</h2>

@@ -349,6 +349,10 @@ const SingleProject = () => {
     ]
   };
 
+  // FAQPage schema — sourced from projects-index.json -> projectCopy.faqSchema.
+  // Not every project has FAQ content yet, so this is only rendered when present.
+  const faqSchema = projectCopy?.faqSchema || null;
+
   return (
     <div className="container main-container">
       <Helmet>
@@ -387,6 +391,11 @@ const SingleProject = () => {
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
       </Helmet>
 
       <div className="row">
