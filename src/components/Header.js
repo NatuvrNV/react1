@@ -101,6 +101,9 @@ function Header() {
   src={Archello_icon}
   alt="Archello icon - Visit Metaguise on Archello, the global architecture and design network."
   className="archello-icon"
+  width={24}
+  height={24}
+  loading="lazy"
 />
               </a>
 
@@ -116,6 +119,9 @@ function Header() {
   src={AdProIcon}
   alt="Archello icon - Visit Metaguise on Archello, the global architecture and design network."
   className="archello-icon"
+  width={24}
+  height={24}
+  loading="lazy"
 />
               </a>
             </div>
@@ -136,7 +142,14 @@ function Header() {
 
         <div className="header-center">
           <a href="/">
-            <img src={Logo} alt="Metaguise - India's Most Trusted Metal Facade Brand" className="logo" />
+            <img
+              src={Logo}
+              alt="Metaguise - India's Most Trusted Metal Facade Brand"
+              className="logo"
+              width={140}
+              height={45}
+              fetchpriority="high"
+            />
           </a>
         </div>
 

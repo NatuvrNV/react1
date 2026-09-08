@@ -28,7 +28,7 @@
    --------------------------------------------------------------------- */
 @font-face {
   font-family: "Degular Display";
-   src: url("./assets/fonts/DegularDisplay-Medium.otf") format("truetype");
+   src: url("./assets/fonts/DegularDisplay-Medium.woff2") format("truetype");
   font-display: swap;
   font-weight: 400 700; /* if using variable font */
 }

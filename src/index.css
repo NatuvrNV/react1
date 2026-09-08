@@ -6,7 +6,7 @@
 /* Custom Font Face */
 @font-face {
   font-family: "Degular Display";
-  src: url("./assets/fonts/DegularDisplay-Medium.otf") format("truetype");
+  src: url("./assets/fonts/DegularDisplay-Medium.woff2") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

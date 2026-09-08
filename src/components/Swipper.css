@@ -3,9 +3,41 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  aspect-ratio: 16 / 9;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: 80vh; /* Full viewport height — single source of truth,
+                   don't also set this inline via style={{ height: "80vh" }}
+                   in the component, or you'll get a height flicker */
   position: relative; /* Required for absolute positioning of arrows */
+}
+
+/* ---- Prevent flash of unstyled/duplicated slides on load ---- */
+
+/* Before Swiper JS initializes, hide everything except the first slide */
+.banner-slide .swiper:not(.swiper-initialized) {
+  overflow: hidden;
+}
+
+.banner-slide .swiper:not(.swiper-initialized) .swiper-wrapper {
+  transform: none !important;
+}
+
+.banner-slide .swiper:not(.swiper-initialized) .swiper-slide:not(:first-child) {
+  display: none !important;
+}
+
+/* Once ready, fade in instead of popping into place */
+.banner-slide .swiper.swiper-initialized {
+  animation: swiperFadeIn 0.3s ease-out;
+}
+
+@keyframes swiperFadeIn {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Navigation arrows container */
@@ -126,8 +158,6 @@
   font-weight: 500;
   font-size: 30px !important;
 }
-
-
 
 .swiper-container {
   position: relative; /* Ensure the parent is positioned */
