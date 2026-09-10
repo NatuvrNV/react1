@@ -2499,30 +2499,6 @@
     "folderName": "School-Facade"
   },
   {
-    "title": "MetaLouver Design Guide: How Aluminium Louvers Are Replacing Window Grilles in Indian Architecture",
-    "metaTitle": "MetaLouver Design Guide: Aluminium Louvers Replace Grilles | Metaguise",
-    "url": "metalouver-design-guide-aluminium-louvers-replace-grilles",
-    "date": "16-07-26",
-    "category": "Material Spotlight",
-    "metaDescription": " Why aluminium louvers are replacing window grilles in India. Fixed vs adjustable, solar shading by orientation, and MetaLouver projects in Hyderabad, Delhi and Jaipur.",
-    "description": "The iron window grille had a forty-year run in Indian residential and commercial buildings. That run is ending. In premium residential markets across Gurgaon, Banjara Hills, and Koregaon Park, grilles are the element that most dates a building, more than the paint,",
-    "images": [
-      {
-        "path": "assets/Blogs/Metalouver-guide/banner.jpg",
-        "alt": ""
-      },
-      {
-        "path": "assets/Blogs/Metalouver-guide/Solar-Shading-Performance-in-Indian-Summer-Conditions.jpg",
-        "alt": ""
-      },
-      {
-        "path": "assets/Blogs/Metalouver-guide/What-Are-Architectural-Louvers.jpg",
-        "alt": ""
-      }
-    ],
-    "folderName": "Metalouver-guide"
-  },
-  {
     "title": "Warm Minimalism Facade Design: How India's Biggest Interior Trend Has Finally Hit Building Exteriors",
     "metaTitle": "Warm Minimalism Facade Design: India's 2026 Exterior Trend",
     "url": "warm-minimalism-facade-design-india-2026-exterior-trend",
@@ -3055,16 +3031,16 @@
     "metaDescription": "Facade cladding design shapes a building's entire character. See aluminium, metal and stone cladding ideas for homes and offices in India.",
     "description": "Facade cladding design is where a building's personality actually gets decided. The structure and layout might be finished, but it's the cladding that determines whether a building reads as modern or dated, warm or corporate, distinctive or forgettable.",
     "images": [
-    {
-      "path": "assets/Blogs/Facade-Cladding-Design/banner.jpg",
-      "alt": "Facade cladding design ideas for Indian homes and commercial buildings - Metaguise"
-    },
-    {
-      "path": "assets/Blogs/Facade-Cladding-Design/Colour-and-finish-decisions.jpg",
-      "alt": "Mixed material metal and stone facade cladding on Indian building - Metaguise"
-    }
-  ],
-  "folderName": "Facade-Cladding-Design"
+      {
+        "path": "assets/Blogs/Facade-Cladding-Design/banner.jpg",
+        "alt": "Facade cladding design ideas for Indian homes and commercial buildings - Metaguise"
+      },
+      {
+        "path": "assets/Blogs/Facade-Cladding-Design/Colour-and-finish-decisions.jpg",
+        "alt": "Mixed material metal and stone facade cladding on Indian building - Metaguise"
+      }
+    ],
+    "folderName": "Facade-Cladding-Design"
   },
   {
     "title": "Bungalow and Duplex Facade Design Ideas for Indian Homes",
@@ -3135,15 +3111,141 @@
     "metaDescription": "Front elevation design is the first thing people notice about a building. See materials, layout ideas and mistakes to avoid.",
     "description": "A front elevation is the single most seen part of any building, noticed by every visitor, every passerby, and every delivery driver, long before anyone actually steps through the door.",
     "images": [
-    {
-      "path": "assets/Blogs/Front-Elevation-Design/banner.jpg",
-      "alt": "Front elevation design ideas for homes and commercial buildings - Metaguise"
-    },
-    {
-      "path": "assets/Blogs/Front-Elevation-Design/Vertical-elements-for-height-and-rhythm.jpg",
-      "alt": "Material zoning with stone base and metal cladding on front elevation - Metaguise"
-    }
-  ],
-  "folderName": "Front-Elevation-Design"
+      {
+        "path": "assets/Blogs/Front-Elevation-Design/banner.jpg",
+        "alt": "Front elevation design ideas for homes and commercial buildings - Metaguise"
+      },
+      {
+        "path": "assets/Blogs/Front-Elevation-Design/Vertical-elements-for-height-and-rhythm.jpg",
+        "alt": "Material zoning with stone base and metal cladding on front elevation - Metaguise"
+      }
+    ],
+    "folderName": "Front-Elevation-Design"
+  },
+  {
+    "title": "How Facade Panels Are Manufactured in India: The Process Nobody Shows You",
+    "metaTitle": "How Facade Panels Are Manufactured in India",
+    "url": "how-facade-panels-are-manufactured-in-india-the-process-nobody-shows-you",
+    "date": "01-09-26",
+    "category": "Behind the Design",
+    "metaDescription": "Facade manufacturers in India turn raw metal into precision panels. See how the process actually works from cutting to finishing.",
+    "description": "Facade manufacturers in India turn raw metal into precision panels. See how the process actually works from cutting to finishing.",
+    "images": [
+      "assets/Blogs/How-Facade-Panels-Manufactured/banner.jpg",
+    "assets/Blogs/How-Facade-Panels-Manufactured/The-Finishing-Stage.jpg"
+    ],
+    "folderName": "How-Facade-Panels-Manufactured"
+  },
+  {
+    "title": "Architectural Fins Design: Why This One Element Defines So Many Modern Facades",
+    "metaTitle": "Architectural Fins Design: Types, Materials & Function",
+    "url": "architectural-fins-design-why-this-one-element-defines-so-many-modern-facades",
+    "date": "02-09-26",
+    "category": "Architectural Insights",
+    "metaDescription": "Architectural fins design shapes light, shadow and airflow on a building. See the types, materials and how they're actually engineered.",
+    "description": "Architectural fins design shapes light, shadow and airflow on a building. See the types, materials and how they're actually engineered.",
+    "images": [
+       "assets/Blogs/Architectural-Fins-Design/banner.jpg",
+    "assets/Blogs/Architectural-Fins-Design/How-Fin-Depth-and-Spacing.jpg"
+    ],
+    "folderName": "Architectural-Fins-Design"
+  },
+  {
+    "title": "Corten Steel Facade: The Material That's Designed to Rust, on Purpose",
+    "metaTitle": "Corten Steel Facade: Why Architects Choose It",
+    "url": "corten-steel-facade-the-material-thats-designed-to-rust-on-purpose",
+    "date": "03-09-26",
+    "category": "Material Spotlight",
+    "metaDescription": "Corten steel facade cladding weathers into a rust toned finish that protects itself. See why architects specify it and where it works best.",
+    "description": "Corten steel facade cladding weathers into a rust toned finish that protects itself. See why architects specify it and where it works best.",
+    "images": [
+          "assets/Blogs/Corten-Steel-Facade-Purpose/banner.jpg",
+    "assets/Blogs/Corten-Steel-Facade-Purpose/Where-Corten-Actually.jpg"
+    ],
+    "folderName": "Corten-Steel-Facade-Purpose"
+  },
+  {
+    "title": "Cassette Panel Facade Systems: The Detail That Makes a Facade Look Genuinely Premium",
+    "metaTitle": "Cassette Panel Facade Systems: How They Work",
+    "url": "cassette-panel-facade-systems-the-detail-that-makes-a-facade-look-genuinely-premium",
+    "date": "04-09-26",
+    "category": "Facade Innovations",
+    "metaDescription": "Cassette panels clip cleanly onto a facade substructure for a seamless finish. See how the system works and where it performs best.",
+    "description": "Cassette panels clip cleanly onto a facade substructure for a seamless finish. See how the system works and where it performs best.",
+    "images": [
+          "assets/Blogs/Cassette-Panel-Facade-Systems/banner.jpg",
+    "assets/Blogs/Cassette-Panel-Facade-Systems/Where-Cassette-Panels.jpg"
+    ],
+    "folderName": "Cassette-Panel-Facade-Systems"
+  },
+  {
+    "title": "Cantilever Facade Design: How a Building Appears to Float",
+    "metaTitle": "Cantilever Facade Design: How It's Engineered",
+    "url": "cantilever-facade-design-how-a-building-appears-to-float",
+    "date": "05-09-26",
+    "category": "Facade Innovations",
+    "metaDescription": "Cantilever facade elements project beyond a building's structure. See how they're engineered safely and where they're used.",
+    "description": "Cantilever facade elements project beyond a building's structure. See how they're engineered safely and where they're used.",
+    "images": [
+       "assets/Blogs/Cantilever-Facade-Design/banner.jpg",
+    "assets/Blogs/Cantilever-Facade-Design/The-Materials-Cantilever.jpg"
+    ],
+    "folderName": "Cantilever-Facade-Design"
+  },
+  {
+    "title": "Facade Systems Explained: What's Actually Hiding Behind the Panel You See",
+    "metaTitle": "Facade Systems Explained: How the Layers Work",
+    "url": "facade-systems-explained-whats-actually-hiding-behind-the-panel-you-see",
+    "date": "06-09-26",
+    "category": "Behind the Design",
+    "metaDescription": "A facade system is more than the visible panel. See how substructure, waterproofing and cladding work together as one system.",
+    "description": "A facade system is more than the visible panel. See how substructure, waterproofing and cladding work together as one system.",
+    "images": [
+        "assets/Blogs/Facade-Systems-Explained/banner.jpg",
+    "assets/Blogs/Facade-Systems-Explained/The-Visible-Cladding.jpg"
+    ],
+    "folderName": "Facade-Systems-Explained"
+  },
+  {
+    "title": "Affordable Structural Panel Options for a New House Build in India",
+    "metaTitle": "Affordable Structural Panels for a New House in India",
+    "url": "affordable-structural-panel-options-for-a-new-house-build-in-india",
+    "date": "07-09-26",
+    "category": "Material Spotlight",
+    "metaDescription": "Affordable structural panel options can still deliver a strong facade. See what actually keeps a new house build cost effective in India.",
+    "description": "Affordable structural panel options can still deliver a strong facade. See what actually keeps a new house build cost effective in India.",
+    "images": [
+      "assets/Blogs/Affordable-Structural-Panel-Options/banner.jpg",
+      "assets/Blogs/Affordable-Structural-Panel-Options/Combining-Materials-Strategically-Instead.jpg"
+    ],
+    "folderName": "Affordable-Structural-Panel-Options"
+  },
+  {
+    "title": "Metal Facade and Elevation Work in India's Growing Tier 2 Cities",
+    "metaTitle": "Metal Facade Work in India's Growing Tier 2 Cities",
+    "url": "metal-facade-and-elevation-work-in-indias-growing-tier-2-cities",
+    "date": "08-09-26",
+    "category": "Industry Trends",
+    "metaDescription": "Metal facade demand is rising fast in India's tier 2 cities. See what's driving it in places like Tirunelveli and beyond.",
+    "description": "Metal facade demand is rising fast in India's tier 2 cities. See what's driving it in places like Tirunelveli and beyond.",
+    "images": [
+      "assets/Blogs/Metal-Facade-Tier-2-Cities/banner.jpg",
+    "assets/Blogs/Metal-Facade-Tier-2-Cities/What-Facade-Costs.jpg"
+    ],
+    "folderName": "Metal-Facade-Tier-2-Cities"
+  },
+  {
+    "title": "Custom Facade Design: What Bespoke Actually Means and What to Expect",
+    "metaTitle": "Custom Facade Design: What Bespoke Actually Means",
+    "url": "custom-facade-design-what-bespoke-actually-means-and-what-to-expect",
+    "date": "09-09-26",
+    "category": "Architectural Insights",
+    "metaDescription": "Custom facade design means more than a unique pattern. See what bespoke actually involves and what it costs versus a standard system.",
+    "description": "Custom facade design means more than a unique pattern. See what bespoke actually involves and what it costs versus a standard system.",
+    "images": [
+      "assets/Blogs/Custom-Facade-Design-Bespoke/banner.jpg",
+    "assets/Blogs/Custom-Facade-Design-Bespoke/You-Need-Custom-Facade.jpg"
+    ],
+    "folderName": "Custom-Facade-Design-Bespoke"
   }
 ]

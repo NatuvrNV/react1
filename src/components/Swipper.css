@@ -11,6 +11,37 @@
   position: relative; /* Required for absolute positioning of arrows */
 }
 
+/* ---- Structural safety net ----
+   Don't rely solely on the imported "swiper/css" package for this layout.
+   If that stylesheet is delayed (async chunk, slow network, code-split
+   bundle loading after first paint), .swiper-wrapper falls back to being
+   an un-clipped flex row and every slide renders side-by-side instead of
+   stacked/hidden — which is the "two images next to each other" glitch.
+   Defining the core structural rules ourselves guarantees correct layout
+   from the very first paint, regardless of when swiper/css finishes
+   loading. */
+.banner-slide .swiper {
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-slide .swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: content-box;
+  transition-property: transform;
+}
+
+.banner-slide .swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+}
+
 /* ---- Prevent flash of unstyled/duplicated slides on load ---- */
 
 /* Before Swiper JS initializes, hide everything except the first slide */
