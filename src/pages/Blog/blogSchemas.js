@@ -3338,59 +3338,6 @@ export const blogSchemas = {
       }
     }
   },
-  "when-your-building-turns-one:-why-facade-ageing-is-now-a-luxury-home-anniversary-conversation": {
-    "articleSchema": {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://metaguise.com/blog/when-your-building-turns-one:-why-facade-ageing-is-now-a-luxury-home-anniversary-conversation/"
-      },
-      "headline": "When Your Building Turns One: Why Facade Ageing is Now a Luxury Home Anniversary Conversation",
-      "description": " Discover how premium metal facades evolve beautifully in year one. Learn what's normal ageing vs. damage — and how Metaguise systems mature with dignity over time.",
-      "image": "https://metaguise.com/assets/Blogs/When-Your-Building/banner.jpg",
-      "author": {
-        "@type": "Person",
-        "name": "Pariniti"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Metaguise",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
-        }
-      },
-      "datePublished": "2026-04-21",
-      "dateModified": "2026-04-21"
-    },
-    "webPageSchema": {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "@id": "https://metaguise.com/blog/when-your-building-turns-one:-why-facade-ageing-is-now-a-luxury-home-anniversary-conversation#webpage",
-      "url": "https://metaguise.com/blog/when-your-building-turns-one:-why-facade-ageing-is-now-a-luxury-home-anniversary-conversation/",
-      "name": "Facade Ageing & Year-One Care for Metal Homes | Metaguise",
-      "description": " Discover how premium metal facades evolve beautifully in year one. Learn what's normal ageing vs. damage — and how Metaguise systems mature with dignity over time.",
-      "inLanguage": "en-US",
-      "isPartOf": {
-        "@type": "WebSite",
-        "url": "https://metaguise.com/",
-        "name": "MetaGuise"
-      },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://metaguise.com/assets/Blogs/When-Your-Building/banner.jpg"
-      },
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": [
-          "h1",
-          "h2",
-          ".slide-content"
-        ]
-      }
-    }
-  },
   "why-top-developers-are-rethinking-metal-facades-and-you-should-too": {
     "articleSchema": {
       "@context": "https://schema.org",
@@ -6666,6 +6613,1702 @@ export const blogSchemas = {
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://metaguise.com/assets/Blogs/India-Facade-Market/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "when-your-building-turns-one-why-facade-ageing-is-now-a-luxury-home-anniversary-conversation": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/when-your-building-turns-one-why-facade-ageing-is-now-a-luxury-home-anniversary-conversation/"
+      },
+      "headline": "When Your Building Turns One Why Facade Ageing is Now a Luxury Home Anniversary Conversation",
+      "description": "Discover how premium metal facades evolve beautifully in year one. Learn what's normal ageing vs. damage — and how Metaguise systems mature with dignity over time.",
+      "image": "https://metaguise.com/assets/Blogs/When-Your-Building/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-04-21",
+      "dateModified": "2026-04-21"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/when-your-building-turns-one-why-facade-ageing-is-now-a-luxury-home-anniversary-conversation#webpage",
+      "url": "https://metaguise.com/blog/when-your-building-turns-one-why-facade-ageing-is-now-a-luxury-home-anniversary-conversation/",
+      "name": "Facade Ageing & Year-One Care for Metal Homes | Metaguise",
+      "description": "Discover how premium metal facades evolve beautifully in year one. Learn what's normal ageing vs. damage — and how Metaguise systems mature with dignity over time.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/When-Your-Building/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "sustainable-aluminium-facades-how-metal-cladding-cuts-a-buildings-carbon-footprint": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/sustainable-aluminium-facades-how-metal-cladding-cuts-a-buildings-carbon-footprint/"
+      },
+      "headline": "Sustainable Aluminium Facades: How Metal Cladding Cuts a Building’s Carbon Footprint",
+      "description": "Sustainable aluminium facades cut a building’s carbon footprint through recyclability and energy performance. Here’s how and why it matters.",
+      "image": "https://metaguise.com/assets/Blogs/Sustainable-Aluminium-Facade/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-08",
+      "dateModified": "2026-08-08"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/sustainable-aluminium-facades-how-metal-cladding-cuts-a-buildings-carbon-footprint#webpage",
+      "url": "https://metaguise.com/blog/sustainable-aluminium-facades-how-metal-cladding-cuts-a-buildings-carbon-footprint/",
+      "name": "Sustainable Aluminium Facades: Carbon Footprint Guide",
+      "description": "Sustainable aluminium facades cut a building’s carbon footprint through recyclability and energy performance. Here’s how and why it matters.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Sustainable-Aluminium-Facade/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "kinetic-wall-panels-explained-how-movable-facade-technology-actually-works": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/kinetic-wall-panels-explained-how-movable-facade-technology-actually-works/"
+      },
+      "headline": "Kinetic Wall Panels Explained: How Movable Facade Technology Actually Works",
+      "description": "Kinetic wall panels move to control light and airflow across a facade. See how the panels, mechanism and controls work together.",
+      "image": "https://metaguise.com/assets/Blogs/Kinetic-Wall-Panels-Explained/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-09",
+      "dateModified": "2026-08-09"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/kinetic-wall-panels-explained-how-movable-facade-technology-actually-works#webpage",
+      "url": "https://metaguise.com/blog/kinetic-wall-panels-explained-how-movable-facade-technology-actually-works/",
+      "name": "Kinetic Wall Panels: How Movable Facades Actually Work",
+      "description": "Kinetic wall panels move to control light and airflow across a facade. See how the panels, mechanism and controls work together.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Kinetic-Wall-Panels-Explained/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "metal-facade-cladding-cost-in-india-a-2026-price-guide-by-material-and-project-type": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/metal-facade-cladding-cost-in-india-a-2026-price-guide-by-material-and-project-type/"
+      },
+      "headline": "Metal Facade Cladding Cost in India: A 2026 Price Guide by Material and Project Type",
+      "description": "Metal facade cladding cost in India varies by material and system. See what drives the price before you request a quote in 2026.",
+      "image": "https://metaguise.com/assets/Blogs/Metal-Facade-Cladding-Cost-2026/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-10",
+      "dateModified": "2026-08-10"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/metal-facade-cladding-cost-in-india-a-2026-price-guide-by-material-and-project-type#webpage",
+      "url": "https://metaguise.com/blog/metal-facade-cladding-cost-in-india-a-2026-price-guide-by-material-and-project-type/",
+      "name": "Metal Facade Cladding Cost in India: 2026 Price Guide",
+      "description": "Metal facade cladding cost in India varies by material and system. See what drives the price before you request a quote in 2026.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Metal-Facade-Cladding-Cost-2026/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "meta-coin-facade-the-complete-guide-to-metaguises-coin-cladding-system": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/meta-coin-facade-the-complete-guide-to-metaguises-coin-cladding-system/"
+      },
+      "headline": "Meta Coin Facade: The Complete Guide to Metaguise’s Coin Cladding System",
+      "description": "Meta Coin is Metaguise’s circular disc facade system. See how it’s built, where it works best, and how it compares to other textures.",
+      "image": "https://metaguise.com/assets/Blogs/Meta-Coin-Facade-Guide/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-11",
+      "dateModified": "2026-08-11"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/meta-coin-facade-the-complete-guide-to-metaguises-coin-cladding-system#webpage",
+      "url": "https://metaguise.com/blog/meta-coin-facade-the-complete-guide-to-metaguises-coin-cladding-system/",
+      "name": "Meta Coin Facade: Metaguise’s Coin Cladding Guide",
+      "description": "Meta Coin is Metaguise’s circular disc facade system. See how it’s built, where it works best, and how it compares to other textures.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Meta-Coin-Facade-Guide/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "copper-facade-cladding-why-architects-are-choosing-copper-for-2026-projects": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/copper-facade-cladding-why-architects-are-choosing-copper-for-2026-projects/"
+      },
+      "headline": "Copper Facade Cladding: Why Architects Are Choosing Copper for 2026 Projects",
+      "description": "Copper facade cladding ages into a distinctive patina over time. See why architects are specifying copper for 2026 projects.",
+      "image": "https://metaguise.com/assets/Blogs/Copper-Facade-Cladding/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-12",
+      "dateModified": "2026-08-12"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/copper-facade-cladding-why-architects-are-choosing-copper-for-2026-projects#webpage",
+      "url": "https://metaguise.com/blog/copper-facade-cladding-why-architects-are-choosing-copper-for-2026-projects/",
+      "name": "Copper Facade Cladding: Why Architects Choose It",
+      "description": "Copper facade cladding ages into a distinctive patina over time. See why architects are specifying copper for 2026 projects.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Copper-Facade-Cladding/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "laser-cut-metal-facade-panels-design-possibilities-and-real-challenges": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/laser-cut-metal-facade-panels-design-possibilities-and-real-challenges/"
+      },
+      "headline": "Laser Cut Metal Facade Panels: Design Possibilities and Real Challenges",
+      "description": "Laser cut metal facade panels create striking patterns, but come with real design challenges. Here’s what architects should know.",
+      "image": "https://metaguise.com/assets/Blogs/Laser-Cut-Facade-Panels/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-08-13"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/laser-cut-metal-facade-panels-design-possibilities-and-real-challenges#webpage",
+      "url": "https://metaguise.com/blog/laser-cut-metal-facade-panels-design-possibilities-and-real-challenges/",
+      "name": "Laser Cut Metal Facade Panels: Design & Challenges",
+      "description": "Laser cut metal facade panels create striking patterns, but come with real design challenges. Here’s what architects should know.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Laser-Cut-Facade-Panels/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "facade-materials-compared-aluminium-steel-copper-and-corten": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/facade-materials-compared-aluminium-steel-copper-and-corten/"
+      },
+      "headline": "Facade Materials Compared: Aluminium, Steel, Copper and Corten",
+      "description": "Aluminium, steel, corten and copper all perform differently on a facade. Compare materials before you finalise your building design.",
+      "image": "https://metaguise.com/assets/Blogs/Facade-Materials-Compared/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-14",
+      "dateModified": "2026-08-14"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/facade-materials-compared-aluminium-steel-copper-and-corten#webpage",
+      "url": "https://metaguise.com/blog/facade-materials-compared-aluminium-steel-copper-and-corten/",
+      "name": "Facade Materials Compared: Aluminium, Steel & Copper",
+      "description": "Aluminium, steel, corten and copper all perform differently on a facade. Compare materials before you finalise your building design.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Facade-Materials-Compared/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "hospital-and-healthcare-facade-design-what-makes-it-different": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/hospital-and-healthcare-facade-design-what-makes-it-different/"
+      },
+      "headline": "Hospital and Healthcare Facade Design: What Makes It Different",
+      "description": "Hospital and healthcare facade design has different priorities than commercial buildings. Here’s what actually changes and why.",
+      "image": "https://metaguise.com/assets/Blogs/Hospital-Healthcare-Facade-Design/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-15",
+      "dateModified": "2026-08-15"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/hospital-and-healthcare-facade-design-what-makes-it-different#webpage",
+      "url": "https://metaguise.com/blog/hospital-and-healthcare-facade-design-what-makes-it-different/",
+      "name": "Hospital Facade Design: What Makes It Different",
+      "description": "Hospital and healthcare facade design has different priorities than commercial buildings. Here’s what actually changes and why.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Hospital-Healthcare-Facade-Design/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "how-metal-facade-engineering-works-from-structural-load-to-fabrication": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/how-metal-facade-engineering-works-from-structural-load-to-fabrication/"
+      },
+      "headline": "How Metal Facade Engineering Works: From Structural Load to Fabrication",
+      "description": "Metal facade engineering covers structural load, wind analysis and fabrication. See how a facade actually gets engineered end to end.",
+      "image": "https://metaguise.com/assets/Blogs/Metal-Facade-Engineering/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-16",
+      "dateModified": "2026-08-16"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/how-metal-facade-engineering-works-from-structural-load-to-fabrication#webpage",
+      "url": "https://metaguise.com/blog/how-metal-facade-engineering-works-from-structural-load-to-fabrication/",
+      "name": "How Metal Facade Engineering Works: A Full Guide",
+      "description": "Metal facade engineering covers structural load, wind analysis and fabrication. See how a facade actually gets engineered end to end.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Metal-Facade-Engineering/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "metal-elevation-design-for-indian-homes-and-commercial-buildings": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/metal-elevation-design-for-indian-homes-and-commercial-buildings/"
+      },
+      "headline": "Metal Elevation Design for Indian Homes and Commercial Buildings",
+      "description": "Metal elevation design shapes how a building looks from the street. See materials, styles and costs for homes and commercial buildings in India.",
+      "image": "https://metaguise.com/assets/Blogs/Metal-Elevation-Design/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-17",
+      "dateModified": "2026-08-17"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/metal-elevation-design-for-indian-homes-and-commercial-buildings#webpage",
+      "url": "https://metaguise.com/blog/metal-elevation-design-for-indian-homes-and-commercial-buildings/",
+      "name": "Metal Elevation Design for Indian Buildings",
+      "description": "Metal elevation design shapes how a building looks from the street. See materials, styles and costs for homes and commercial buildings in India.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Metal-Elevation-Design/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "facade-and-elevation-design-company-in-delhi-ncr-a-complete-guide": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/facade-and-elevation-design-company-in-delhi-ncr-a-complete-guide/"
+      },
+      "headline": "Facade and Elevation Design Company in Delhi NCR: A Complete Guide",
+      "description": "Looking for a facade or elevation design company in Delhi NCR. See what to check, typical costs and how the process actually works.",
+      "image": "https://metaguise.com/assets/Blogs/Facade-Company-Delhi-NCR/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-18",
+      "dateModified": "2026-08-18"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/facade-and-elevation-design-company-in-delhi-ncr-a-complete-guide#webpage",
+      "url": "https://metaguise.com/blog/facade-and-elevation-design-company-in-delhi-ncr-a-complete-guide/",
+      "name": "Facade Company in Delhi NCR: Complete Guide 2026",
+      "description": "Looking for a facade or elevation design company in Delhi NCR. See what to check, typical costs and how the process actually works.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Facade-Company-Delhi-NCR/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "what-is-elevation-in-architecture-elevation-vs-facade-explained": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/what-is-elevation-in-architecture-elevation-vs-facade-explained/"
+      },
+      "headline": "What Is Elevation in Architecture? Elevation vs Facade Explained",
+      "description": "Elevation and facade are often used interchangeably, but they mean different things. See the real difference and why it matters for your project.",
+      "image": "https://metaguise.com/assets/Blogs/Elevation-vs-Facade/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-19",
+      "dateModified": "2026-08-19"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/what-is-elevation-in-architecture-elevation-vs-facade-explained#webpage",
+      "url": "https://metaguise.com/blog/what-is-elevation-in-architecture-elevation-vs-facade-explained/",
+      "name": "What Is Elevation in Architecture? Elevation vs Facade",
+      "description": "Elevation and facade are often used interchangeably, but they mean different things. See the real difference and why it matters for your project.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Elevation-vs-Facade/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "exterior-elevation-materials-for-indian-buildings-a-climate-specific-guide": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/exterior-elevation-materials-for-indian-buildings-a-climate-specific-guide/"
+      },
+      "headline": "Exterior Elevation Materials for Indian Buildings: A Climate Specific Guide",
+      "description": "Exterior elevation materials need to handle India's heat, dust and monsoon. See which materials actually perform, city by city.",
+      "image": "https://metaguise.com/assets/Blogs/Exterior-Elevation-Materials/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-20",
+      "dateModified": "2026-08-20"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/exterior-elevation-materials-for-indian-buildings-a-climate-specific-guide#webpage",
+      "url": "https://metaguise.com/blog/exterior-elevation-materials-for-indian-buildings-a-climate-specific-guide/",
+      "name": "Exterior Elevation Materials for Indian Buildings",
+      "description": "Exterior elevation materials need to handle India's heat, dust and monsoon. See which materials actually perform, city by city.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Exterior-Elevation-Materials/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "metal-sheet-elevation-design-a-practical-guide-for-indian-homes": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/metal-sheet-elevation-design-a-practical-guide-for-indian-homes/"
+      },
+      "headline": "Metal Sheet Elevation Design: A Practical Guide for Indian Homes",
+      "description": "Metal sheet elevation design offers a fast, affordable way to upgrade a building's front. See materials, styles and what it actually costs.",
+      "image": "https://metaguise.com/assets/Blogs/Metal-Sheet-Elevation-Design/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-21",
+      "dateModified": "2026-08-21"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/metal-sheet-elevation-design-a-practical-guide-for-indian-homes#webpage",
+      "url": "https://metaguise.com/blog/metal-sheet-elevation-design-a-practical-guide-for-indian-homes/",
+      "name": "Metal Sheet Elevation Design: A Practical Guide",
+      "description": "Metal sheet elevation design offers a fast, affordable way to upgrade a building's front. See materials, styles and what it actually costs.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Metal-Sheet-Elevation-Design/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "farmhouse-elevation-design-ideas-for-delhi-ncr": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/farmhouse-elevation-design-ideas-for-delhi-ncr/"
+      },
+      "headline": "Farmhouse Elevation Design Ideas for Delhi NCR",
+      "description": "Farmhouse elevation design in Delhi NCR blends open, natural materials with a strong street presence. See ideas that actually work.",
+      "image": "https://metaguise.com/assets/Blogs/Farmhouse-Elevation-Design/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-22",
+      "dateModified": "2026-08-22"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/farmhouse-elevation-design-ideas-for-delhi-ncr#webpage",
+      "url": "https://metaguise.com/blog/farmhouse-elevation-design-ideas-for-delhi-ncr/",
+      "name": "Farmhouse Elevation Design Ideas for Delhi NCR",
+      "description": "Farmhouse elevation design in Delhi NCR blends open, natural materials with a strong street presence. See ideas that actually work.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Farmhouse-Elevation-Design/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "facade-companies-in-indias-metro-cities-mumbai-bangalore-hyderabad-pune-and-kolkata": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/facade-companies-in-indias-metro-cities-mumbai-bangalore-hyderabad-pune-and-kolkata/"
+      },
+      "headline": "Facade Companies in India's Metro Cities: Mumbai, Bangalore, Hyderabad, Pune and Kolkata",
+      "description": "Looking for a facade company in Mumbai, Bangalore, Hyderabad, Pune or Kolkata. See what to check before hiring one for your project.",
+      "image": "https://metaguise.com/assets/Blogs/Facade-Companies-Metro-Cities/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-23",
+      "dateModified": "2026-08-23"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/facade-companies-in-indias-metro-cities-mumbai-bangalore-hyderabad-pune-and-kolkata#webpage",
+      "url": "https://metaguise.com/blog/facade-companies-in-indias-metro-cities-mumbai-bangalore-hyderabad-pune-and-kolkata/",
+      "name": "Facade Companies in India's Metro Cities: A Guide",
+      "description": "Looking for a facade company in Mumbai, Bangalore, Hyderabad, Pune or Kolkata. See what to check before hiring one for your project.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Facade-Companies-Metro-Cities/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "louvered-gate-design-ideas-for-indian-homes": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/louvered-gate-design-ideas-for-indian-homes/"
+      },
+      "headline": "Louvered Gate Design Ideas for Indian Homes",
+      "description": "Louvered gate design adds privacy and airflow to a home's entrance. See metal and steel louver gate ideas for Indian houses and villas.",
+      "image": "https://metaguise.com/assets/Blogs/Louvered-Gate-Design/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-24",
+      "dateModified": "2026-08-24"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/louvered-gate-design-ideas-for-indian-homes#webpage",
+      "url": "https://metaguise.com/blog/louvered-gate-design-ideas-for-indian-homes/",
+      "name": "Louvered Gate Design Ideas for Indian Homes",
+      "description": "Louvered gate design adds privacy and airflow to a home's entrance. See metal and steel louver gate ideas for Indian houses and villas.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Louvered-Gate-Design/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "facade-cladding-design-ideas-for-indian-homes-and-commercial-buildings": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/facade-cladding-design-ideas-for-indian-homes-and-commercial-buildings/"
+      },
+      "headline": "Facade Cladding Design Ideas for Indian Homes and Commercial Buildings",
+      "description": "Facade cladding design shapes a building's entire character. See aluminium, metal and stone cladding ideas for homes and offices in India.",
+      "image": "https://metaguise.com/assets/Blogs/Facade-Cladding-Design/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-27",
+      "dateModified": "2026-08-27"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/facade-cladding-design-ideas-for-indian-homes-and-commercial-buildings#webpage",
+      "url": "https://metaguise.com/blog/facade-cladding-design-ideas-for-indian-homes-and-commercial-buildings/",
+      "name": "Facade Cladding Design Ideas for Indian Buildings",
+      "description": "Facade cladding design shapes a building's entire character. See aluminium, metal and stone cladding ideas for homes and offices in India.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Facade-Cladding-Design/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "bungalow-and-duplex-facade-design-ideas-for-indian-homes": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/bungalow-and-duplex-facade-design-ideas-for-indian-homes/"
+      },
+      "headline": "Bungalow and Duplex Facade Design Ideas for Indian Homes",
+      "description": "Bungalow and duplex facades need a different design approach than apartments. See ideas and materials that suit these home types in India.",
+      "image": "https://metaguise.com/assets/Blogs/Bungalow-Duplex-Facade/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-28",
+      "dateModified": "2026-08-28"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/bungalow-and-duplex-facade-design-ideas-for-indian-homes#webpage",
+      "url": "https://metaguise.com/blog/bungalow-and-duplex-facade-design-ideas-for-indian-homes/",
+      "name": "Bungalow & Duplex Facade Design Ideas for India",
+      "description": "Bungalow and duplex facades need a different design approach than apartments. See ideas and materials that suit these home types in India.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Bungalow-Duplex-Facade/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "modern-house-facade-design-trends-for-2026": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/modern-house-facade-design-trends-for-2026/"
+      },
+      "headline": "Modern House Facade Design Trends for 2026",
+      "description": "Modern house facade design in 2026 is moving toward warmer materials and cleaner lines. See the trends actually shaping Indian homes.",
+      "image": "https://metaguise.com/assets/Blogs/Modern-House-Facade-Trends/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-29",
+      "dateModified": "2026-08-29"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/modern-house-facade-design-trends-for-2026#webpage",
+      "url": "https://metaguise.com/blog/modern-house-facade-design-trends-for-2026/",
+      "name": "Modern House Facade Design Trends for 2026",
+      "description": "Modern house facade design in 2026 is moving toward warmer materials and cleaner lines. See the trends actually shaping Indian homes.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Modern-House-Facade-Trends/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "how-sustainability-goals-influence-metal-panel-elevation-selection": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/how-sustainability-goals-influence-metal-panel-elevation-selection/"
+      },
+      "headline": "How Sustainability Goals Influence Metal Panel Elevation Selection",
+      "description": "Sustainability goals are changing how architects choose metal panels for elevations. See the pros, cons and what actually matters.",
+      "image": "https://metaguise.com/assets/Blogs/Sustainability-Metal-Panel/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/how-sustainability-goals-influence-metal-panel-elevation-selection#webpage",
+      "url": "https://metaguise.com/blog/how-sustainability-goals-influence-metal-panel-elevation-selection/",
+      "name": "How Sustainability Goals Shape Metal Elevation Choices",
+      "description": "Sustainability goals are changing how architects choose metal panels for elevations. See the pros, cons and what actually matters.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Sustainability-Metal-Panel/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "front-elevation-design-ideas-for-homes-and-commercial-buildings": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/front-elevation-design-ideas-for-homes-and-commercial-buildings/"
+      },
+      "headline": "Front Elevation Design Ideas for Homes and Commercial Buildings",
+      "description": "Front elevation design is the first thing people notice about a building. See materials, layout ideas and mistakes to avoid.",
+      "image": "https://metaguise.com/assets/Blogs/Front-Elevation-Design/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-08-31",
+      "dateModified": "2026-08-31"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/front-elevation-design-ideas-for-homes-and-commercial-buildings#webpage",
+      "url": "https://metaguise.com/blog/front-elevation-design-ideas-for-homes-and-commercial-buildings/",
+      "name": "Front Elevation Design Ideas for Homes & Buildings",
+      "description": "Front elevation design is the first thing people notice about a building. See materials, layout ideas and mistakes to avoid.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Front-Elevation-Design/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "how-facade-panels-are-manufactured-in-india-the-process-nobody-shows-you": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/how-facade-panels-are-manufactured-in-india-the-process-nobody-shows-you/"
+      },
+      "headline": "How Facade Panels Are Manufactured in India: The Process Nobody Shows You",
+      "description": "Facade manufacturers in India turn raw metal into precision panels. See how the process actually works from cutting to finishing.",
+      "image": "https://metaguise.com/assets/Blogs/How-Facade-Panels-Manufactured/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-09-01",
+      "dateModified": "2026-09-01"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/how-facade-panels-are-manufactured-in-india-the-process-nobody-shows-you#webpage",
+      "url": "https://metaguise.com/blog/how-facade-panels-are-manufactured-in-india-the-process-nobody-shows-you/",
+      "name": "How Facade Panels Are Manufactured in India",
+      "description": "Facade manufacturers in India turn raw metal into precision panels. See how the process actually works from cutting to finishing.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/How-Facade-Panels-Manufactured/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "architectural-fins-design-why-this-one-element-defines-so-many-modern-facades": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/architectural-fins-design-why-this-one-element-defines-so-many-modern-facades/"
+      },
+      "headline": "Architectural Fins Design: Why This One Element Defines So Many Modern Facades",
+      "description": "Architectural fins design shapes light, shadow and airflow on a building. See the types, materials and how they're actually engineered.",
+      "image": "https://metaguise.com/assets/Blogs/Architectural-Fins-Design/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-09-02",
+      "dateModified": "2026-09-02"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/architectural-fins-design-why-this-one-element-defines-so-many-modern-facades#webpage",
+      "url": "https://metaguise.com/blog/architectural-fins-design-why-this-one-element-defines-so-many-modern-facades/",
+      "name": "Architectural Fins Design: Types, Materials & Function",
+      "description": "Architectural fins design shapes light, shadow and airflow on a building. See the types, materials and how they're actually engineered.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Architectural-Fins-Design/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "corten-steel-facade-the-material-thats-designed-to-rust-on-purpose": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/corten-steel-facade-the-material-thats-designed-to-rust-on-purpose/"
+      },
+      "headline": "Corten Steel Facade: The Material That's Designed to Rust, on Purpose",
+      "description": "Corten steel facade cladding weathers into a rust toned finish that protects itself. See why architects specify it and where it works best.",
+      "image": "https://metaguise.com/assets/Blogs/Corten-Steel-Facade-Purpose/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-09-03",
+      "dateModified": "2026-09-03"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/corten-steel-facade-the-material-thats-designed-to-rust-on-purpose#webpage",
+      "url": "https://metaguise.com/blog/corten-steel-facade-the-material-thats-designed-to-rust-on-purpose/",
+      "name": "Corten Steel Facade: Why Architects Choose It",
+      "description": "Corten steel facade cladding weathers into a rust toned finish that protects itself. See why architects specify it and where it works best.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Corten-Steel-Facade-Purpose/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "cassette-panel-facade-systems-the-detail-that-makes-a-facade-look-genuinely-premium": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/cassette-panel-facade-systems-the-detail-that-makes-a-facade-look-genuinely-premium/"
+      },
+      "headline": "Cassette Panel Facade Systems: The Detail That Makes a Facade Look Genuinely Premium",
+      "description": "Cassette panels clip cleanly onto a facade substructure for a seamless finish. See how the system works and where it performs best.",
+      "image": "https://metaguise.com/assets/Blogs/Cassette-Panel-Facade-Systems/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-09-04",
+      "dateModified": "2026-09-04"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/cassette-panel-facade-systems-the-detail-that-makes-a-facade-look-genuinely-premium#webpage",
+      "url": "https://metaguise.com/blog/cassette-panel-facade-systems-the-detail-that-makes-a-facade-look-genuinely-premium/",
+      "name": "Cassette Panel Facade Systems: How They Work",
+      "description": "Cassette panels clip cleanly onto a facade substructure for a seamless finish. See how the system works and where it performs best.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Cassette-Panel-Facade-Systems/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "cantilever-facade-design-how-a-building-appears-to-float": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/cantilever-facade-design-how-a-building-appears-to-float/"
+      },
+      "headline": "Cantilever Facade Design: How a Building Appears to Float",
+      "description": "Cantilever facade elements project beyond a building's structure. See how they're engineered safely and where they're used.",
+      "image": "https://metaguise.com/assets/Blogs/Cantilever-Facade-Design/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-09-05",
+      "dateModified": "2026-09-05"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/cantilever-facade-design-how-a-building-appears-to-float#webpage",
+      "url": "https://metaguise.com/blog/cantilever-facade-design-how-a-building-appears-to-float/",
+      "name": "Cantilever Facade Design: How It's Engineered",
+      "description": "Cantilever facade elements project beyond a building's structure. See how they're engineered safely and where they're used.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Cantilever-Facade-Design/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "facade-systems-explained-whats-actually-hiding-behind-the-panel-you-see": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/facade-systems-explained-whats-actually-hiding-behind-the-panel-you-see/"
+      },
+      "headline": "Facade Systems Explained: What's Actually Hiding Behind the Panel You See",
+      "description": "A facade system is more than the visible panel. See how substructure, waterproofing and cladding work together as one system.",
+      "image": "https://metaguise.com/assets/Blogs/Facade-Systems-Explained/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-09-06",
+      "dateModified": "2026-09-06"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/facade-systems-explained-whats-actually-hiding-behind-the-panel-you-see#webpage",
+      "url": "https://metaguise.com/blog/facade-systems-explained-whats-actually-hiding-behind-the-panel-you-see/",
+      "name": "Facade Systems Explained: How the Layers Work",
+      "description": "A facade system is more than the visible panel. See how substructure, waterproofing and cladding work together as one system.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Facade-Systems-Explained/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "affordable-structural-panel-options-for-a-new-house-build-in-india": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/affordable-structural-panel-options-for-a-new-house-build-in-india/"
+      },
+      "headline": "Affordable Structural Panel Options for a New House Build in India",
+      "description": "Affordable structural panel options can still deliver a strong facade. See what actually keeps a new house build cost effective in India.",
+      "image": "https://metaguise.com/assets/Blogs/Affordable-Structural-Panel-Options/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-09-07",
+      "dateModified": "2026-09-07"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/affordable-structural-panel-options-for-a-new-house-build-in-india#webpage",
+      "url": "https://metaguise.com/blog/affordable-structural-panel-options-for-a-new-house-build-in-india/",
+      "name": "Affordable Structural Panels for a New House in India",
+      "description": "Affordable structural panel options can still deliver a strong facade. See what actually keeps a new house build cost effective in India.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Affordable-Structural-Panel-Options/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "metal-facade-and-elevation-work-in-indias-growing-tier-2-cities": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/metal-facade-and-elevation-work-in-indias-growing-tier-2-cities/"
+      },
+      "headline": "Metal Facade and Elevation Work in India's Growing Tier 2 Cities",
+      "description": "Metal facade demand is rising fast in India's tier 2 cities. See what's driving it in places like Tirunelveli and beyond.",
+      "image": "https://metaguise.com/assets/Blogs/Metal-Facade-Tier-2-Cities/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-09-08",
+      "dateModified": "2026-09-08"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/metal-facade-and-elevation-work-in-indias-growing-tier-2-cities#webpage",
+      "url": "https://metaguise.com/blog/metal-facade-and-elevation-work-in-indias-growing-tier-2-cities/",
+      "name": "Metal Facade Work in India's Growing Tier 2 Cities",
+      "description": "Metal facade demand is rising fast in India's tier 2 cities. See what's driving it in places like Tirunelveli and beyond.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Metal-Facade-Tier-2-Cities/banner.jpg"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".slide-content"
+        ]
+      }
+    }
+  },
+  "custom-facade-design-what-bespoke-actually-means-and-what-to-expect": {
+    "articleSchema": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://metaguise.com/blog/custom-facade-design-what-bespoke-actually-means-and-what-to-expect/"
+      },
+      "headline": "Custom Facade Design: What Bespoke Actually Means and What to Expect",
+      "description": "Custom facade design means more than a unique pattern. See what bespoke actually involves and what it costs versus a standard system.",
+      "image": "https://metaguise.com/assets/Blogs/Custom-Facade-Design-Bespoke/banner.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Pariniti"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Metaguise",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://metaguise.com/static/media/metaguiseblk.94b32fcaeeab938e555c.png"
+        }
+      },
+      "datePublished": "2026-09-09",
+      "dateModified": "2026-09-09"
+    },
+    "webPageSchema": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://metaguise.com/blog/custom-facade-design-what-bespoke-actually-means-and-what-to-expect#webpage",
+      "url": "https://metaguise.com/blog/custom-facade-design-what-bespoke-actually-means-and-what-to-expect/",
+      "name": "Custom Facade Design: What Bespoke Actually Means",
+      "description": "Custom facade design means more than a unique pattern. See what bespoke actually involves and what it costs versus a standard system.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://metaguise.com/",
+        "name": "MetaGuise"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://metaguise.com/assets/Blogs/Custom-Facade-Design-Bespoke/banner.jpg"
       },
       "speakable": {
         "@type": "SpeakableSpecification",

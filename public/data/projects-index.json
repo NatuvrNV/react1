@@ -1313,5 +1313,41 @@
         "heading": "More MetaCoin Facade Projects"
       }
     ]
+  },
+   {
+    "name": "radiance",
+    "url": "radiance",
+    "Projectname": "Radiance",
+    "metatittles": "Parametric MetaCoin Metal Facade | Hotel Radiance, Sirsa",
+    "metadescription": "Champagne gold Parametric MetaCoin panels form a floral pattern across Hotel Radiance, Sirsa, catching sunlight by day and glowing into a landmark after dark",
+    "h2Sections": [
+      {
+        "heading": "Parametric MetaCoin Metal Facade at Hotel Radiance, Sirsa"
+      },
+      {
+        "heading": " MetaCoin: Metaguise's Signature Parametric Facade Technology"
+      },
+      {
+        "heading": "Modern Architecture Meets Metal Exterior Design"
+      }
+    ]
+  },
+   {
+    "name": "aek",
+    "url": "aek",
+    "Projectname": "AEK",
+    "metatittles": "Parametric MetaSequin Facade at AEK, Gurugram | Metaguise",
+    "metadescription": "Hexagonal champagne gold parametric MetaSequin panels ripple across AEK Signature Spaces on Golf Course Road, Gurugram, split by a diagonal band of solid gold panels.",
+    "h2Sections": [
+      {
+        "heading": "Parametric MetaSequin Facade at AEK, Golf Course Road, Gurugram"
+      },
+      {
+        "heading": " MetaSequin: A Parametric Facade in Sequin Panels "
+      },
+      {
+        "heading": "Parametric Design Arrives at AEK Signature Spaces"
+      }
+    ]
   }
 ]

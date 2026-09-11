@@ -125,6 +125,24 @@ export const ProjectImages = [
     "order": 1,
     "alt": "Miraj Stadium exterior facade design"
   },
+
+   {
+    "imgPath": "assets/Allprojects/commercial/AEK/cover/aek1.webp",
+    "order": 1,
+    "alt": "Champagne gold sequin panel facade on AEK Signature Spaces, Golf Course Road, Gurugram"
+  },
+
+    {
+    "imgPath": "assets/Allprojects/residential/Radiance/cover/Day-1.webp",
+    "order": 1,
+    "alt": "Champagne gold metal facade on Hotel Radiance's commercial elevation in Sirsa, its MetaCoin pattern in daylight."
+  },
+
+   {
+    "imgPath": "assets/Allprojects/commercial/Miraj Stadium/cover/miraj (1).webp",
+    "order": 1,
+    "alt": "Miraj Stadium exterior facade design"
+  },
   {
     "imgPath": "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",
     "order": 1,
