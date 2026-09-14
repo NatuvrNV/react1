@@ -23,7 +23,45 @@
       {
         "heading": "More MetaSequin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "So what is Studio Ardete HQ, exactly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Mohali, Metaguise designed, fabricated and installed the metal facade for Studio Ardete HQ, an architecture studio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the facade system at Studio Ardete HQ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At Studio Ardete HQ, the facade system is MetaSequin, MetaFin, MetaCassette and Solid Panel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was behind the facade design at Studio Ardete HQ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design through installation was managed entirely in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise build a similar facade for another architecture studio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaSequin is available for other architecture studio projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "sculpted silence",
@@ -49,259 +87,1665 @@
       {
         "heading": "More Private Residence Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What exactly is Sculpted Silence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Gurugram, Sculpted Silence is a private residence where Metaguise designed, fabricated and installed the metal facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade system was used at Sculpted Silence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at Sculpted Silence was engineered and installed by Metaguise. Specific system details are available on request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was the architect for Sculpted Silence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design through installation was managed entirely in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise build a similar facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise can build a similar private residence facade elsewhere in India, handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the haven",
     "url": "the-haven",
     "Projectname": "The Haven",
     "metatittles": "The Haven Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "The Haven: private residence facade in Gurugram, clad in MetaPyramid and MetaFlute. Fabricated and installed by Metaguise."
+    "metadescription": "The Haven: private residence facade in Gurugram, clad in MetaPyramid and MetaFlute. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of building is The Haven?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Gurugram, Spaces Design Studio designed The Haven, a private residence. Metaguise created the metal facade, managing design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of facade system is on The Haven?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaPyramid, MetaFlute, MetaLouver and MetaGate were used for the facade at The Haven, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's the architect behind The Haven?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spaces Design Studio designed the building. Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a similar setup possible for another private residence project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaPyramid can be built for private residence projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "apex residence",
     "url": "apex-residence",
     "Projectname": "Apex Residence",
     "metatittles": "Apex Residence Metal Facade in Gurugram | Metaguise",
-    "metadescription": "Apex Residence is a private residence facade in Gurugram, clad in MetaFlute and MetaLouver. Designed, fabricated and installed by Metaguise with ASRO Arcade."
+    "metadescription": "Apex Residence is a private residence facade in Gurugram, clad in MetaFlute and MetaLouver. Designed, fabricated and installed by Metaguise with ASRO Arcade.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Tell me a bit about Apex Residence as a project.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apex Residence is a private residence in Gurugram. The building was designed by ASRO Arcade, and Metaguise handled the metal facade end to end, from design through fabrication to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of facade system is on Apex Residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At Apex Residence, the facade system is MetaFlute, MetaLouver, MetaCassette, MetaShingle and Solid Panel, finished in MetaWood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which architect worked on Apex Residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASRO Arcade handled the building's design. The facade itself was engineered, fabricated and installed in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise create a similar facade for another private residence project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaFlute for private residence projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "blossoms",
     "url": "blossoms",
     "Projectname": "Blossoms",
     "metatittles": "Blossoms Childcare Hospital Facade in Bareilly | Metaguise",
-    "metadescription": "Blossoms is a childcare hospital facade in Bareilly, clad in MetaCoin. Designed, fabricated and installed by Metaguise."
+    "metadescription": "Blossoms is a childcare hospital facade in Bareilly, clad in MetaCoin. Designed, fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Tell me a bit about Blossoms as a project.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Bareilly, Metaguise designed, fabricated and installed the metal facade for Blossoms, a childcare hospital."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise system was installed at Blossoms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCoin was used for the facade at Blossoms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was the architect for Blossoms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise handled the facade completely in-house, from design to engineering, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a similar setup possible for another childcare hospital project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. childcare hospital projects across India can get a similar facade using MetaCoin, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "cityspace82",
     "url": "cityspace",
     "Projectname": "Cityspace82",
     "metatittles": "Cityspace82 Architecture Studio Facade in Gurugram | Metaguise",
-    "metadescription": "Cityspace82: architecture studio facade in Gurugram, clad in MetaLouver and MetaGate. Fabricated and installed by Metaguise."
+    "metadescription": "Cityspace82: architecture studio facade in Gurugram, clad in MetaLouver and MetaGate. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What category of project does Cityspace82 fall under?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cityspace82 Architects designed Cityspace82, an architecture studio in Gurugram, and Metaguise brought the metal facade to life, from design to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What facade system does Cityspace82 use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cityspace82 features MetaLouver and MetaGate, finished in MetaWood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was Cityspace82 designed by an outside architect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cityspace82 Architects handled the building's design. The facade itself was engineered, fabricated and installed in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Could Metaguise replicate this facade for another architecture studio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaLouver for architecture studio projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "tanishq",
     "url": "tanishq-jewellery",
     "Projectname": "Tanishq Jewellery",
     "metatittles": "Tanishq Jewellery Store Facade in New Delhi | Metaguise",
-    "metadescription": "Tanishq Jewellery is a jewellery store facade in New Delhi, clad in MetaCoin and MetaFlute. Designed, fabricated and installed by Metaguise."
+    "metadescription": "Tanishq Jewellery is a jewellery store facade in New Delhi, clad in MetaCoin and MetaFlute. Designed, fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What category of project does Tanishq Jewellery fall under?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tanishq Jewellery is a jewellery store based in New Delhi. Metaguise took the facade from design through fabrication to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise system was installed at Tanishq Jewellery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Tanishq Jewellery, Metaguise used MetaCoin, MetaFlute and Solid Panel, finished in MetaWood and MetaCopper."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed the facade at Tanishq Jewellery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise designed, engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise take on other jewellery store projects like this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaCoin can be built for jewellery store projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Luxe",
     "url": "luxe-manor",
     "Projectname": "Luxe Manor",
     "metatittles": "Luxe Manor Private Residence Facade in Meerut | Metaguise",
-    "metadescription": "Luxe Manor: private residence facade in Meerut, clad in MetaSequin and MetaFin. Fabricated and installed by Metaguise."
+    "metadescription": "Luxe Manor: private residence facade in Meerut, clad in MetaSequin and MetaFin. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of project is Luxe Manor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Luxe Manor is a private residence in Meerut. Jaideep Thareja Architects designed the building, while Metaguise handled the facade, from concept to final installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What facade system does Luxe Manor use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Luxe Manor's facade system is MetaSequin, MetaFin and MetaFlute, finished in MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was the architect for Luxe Manor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The building was designed by Jaideep Thareja Architects. Metaguise handled the facade in-house, from engineering to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a similar facade be built for a different private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaSequin is available for private residence projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "A13-43",
     "url": "a13-43",
     "Projectname": "The Stillwood Residence",
     "metatittles": "The Stillwood Residence Metal Facade in Gurugram | Metaguise",
-    "metadescription": "The Stillwood Residence: private residence facade in Gurugram, clad in MetaPyramid and MetaFlute. Fabricated and installed by Metaguise."
+    "metadescription": "The Stillwood Residence: private residence facade in Gurugram, clad in MetaPyramid and MetaFlute. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Could you describe what The Stillwood Residence is?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Stillwood Residence is a private residence in Gurugram. The building was designed by Cityspace82 Architects, and Metaguise handled the metal facade end to end, from design through fabrication to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system covers the facade at The Stillwood Residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Stillwood Residence's facade system is MetaPyramid, MetaFlute, MetaLouver, MetaPlank and MetaGate, finished in MetaWood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was The Stillwood Residence designed by an outside architect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cityspace82 Architects designed the building, and Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise take on other private residence projects like this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaPyramid is available for other private residence projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "D5-3",
     "url": "d5-3",
     "Projectname": "The Vanguard",
     "metatittles": "The Vanguard Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "The Vanguard: private residence facade in Gurugram, clad in MetaFlute and MetaLouver. Fabricated and installed by Metaguise."
+    "metadescription": "The Vanguard: private residence facade in Gurugram, clad in MetaFlute and MetaLouver. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How would you describe The Vanguard as a project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Vanguard is a private residence in Gurugram. Cityspace82 Architects designed the building, while Metaguise handled the facade, from concept to final installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What facade system does The Vanguard use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFlute and MetaLouver were used for the facade at The Vanguard, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who came up with the facade design for The Vanguard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The building was designed by Cityspace82 Architects. Metaguise handled the facade in-house, from engineering to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise build a similar facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaFlute can be built for private residence projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "gowri",
     "url": "gowri-jewellery",
     "Projectname": "Gowri's Jewellery",
     "metatittles": "Gowri's Jewellery Store Facade in Hyderabad | Metaguise",
-    "metadescription": "Gowri's Jewellery is a jewellery store facade in Hyderabad, clad in MetaSequin. Designed, fabricated and installed by Metaguise with TruDesigns Architects."
+    "metadescription": "Gowri's Jewellery is a jewellery store facade in Hyderabad, clad in MetaSequin. Designed, fabricated and installed by Metaguise with TruDesigns Architects.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What exactly is Gowri's Jewellery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gowri's Jewellery is a jewellery store in Hyderabad. TruDesigns Architects designed the building, while Metaguise handled the facade, from concept to final installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What was used to build Gowri's Jewellery's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaSequin was used for the facade at Gowri's Jewellery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who came up with the facade design for Gowri's Jewellery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TruDesigns Architects designed the building, and Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Would Metaguise do this kind of facade for another jewellery store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaSequin can be used for other jewellery store projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "E10",
     "url": "the-ripple-effect",
     "Projectname": "The Ripple Effect",
     "metatittles": "The Ripple Effect Commercial Building Facade, New Delhi",
-    "metadescription": "The Ripple Effect is a commercial building facade in New Delhi, clad in MetaFin. Designed, fabricated and installed by Metaguise with ASRO Arcade."
+    "metadescription": "The Ripple Effect is a commercial building facade in New Delhi, clad in MetaFin. Designed, fabricated and installed by Metaguise with ASRO Arcade.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "So what is The Ripple Effect, exactly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ripple Effect is a commercial building located in New Delhi, designed by ASRO Arcade. Metaguise took care of the facade's design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system covers the facade at The Ripple Effect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFin was used for the facade at The Ripple Effect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's responsible for The Ripple Effect's facade design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design of the building came from ASRO Arcade, while Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a similar facade be built for a different commercial building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaFin can be used for other commercial building projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "deepak",
     "url": "deepak-sweets",
     "Projectname": "Deepak Sweets",
     "metatittles": "Deepak Sweets Shop Facade in Bareilly | Metaguise",
-    "metadescription": "Deepak Sweets is a sweet shop facade in Bareilly, clad in MetaSequin and MetaPyramid. Designed, fabricated and installed by Metaguise."
+    "metadescription": "Deepak Sweets is a sweet shop facade in Bareilly, clad in MetaSequin and MetaPyramid. Designed, fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How would you describe Deepak Sweets as a project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deepak Sweets is a sweet shop in Bareilly. Metaguise handled the project end to end, designing, fabricating and installing the metal facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which metal facade system does Deepak Sweets feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At Deepak Sweets, the facade system is MetaSequin, MetaPyramid, MetaFlute, MetaLouver, MetaCassette and Solid Panel, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed the facade at Deepak Sweets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There was no external architect. Metaguise took charge of the facade from design to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a similar facade be built for a different sweet shop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaSequin can be built for sweet shop projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "A19",
     "url": "a19",
     "Projectname": "Aurelia Residence",
     "metatittles": "Aurelia Residence Metal Facade in Gurugram | Metaguise",
-    "metadescription": "Aurelia Residence: private residence facade in Gurugram, clad in MetaFlute and MetaCassette. Fabricated and installed by Metaguise."
+    "metadescription": "Aurelia Residence: private residence facade in Gurugram, clad in MetaFlute and MetaCassette. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How would you describe Aurelia Residence as a project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aurelia Residence is a private residence in Gurugram, with the building designed by Studio Mathema and the metal facade handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which metal facade system does Aurelia Residence feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aurelia Residence features MetaFlute, MetaCassette, Solid Panel and MetaGate, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's responsible for Aurelia Residence's facade design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Studio Mathema designed the building, and Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Could Metaguise replicate this facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaFlute is available for other private residence projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "A18",
     "url": "a18",
     "Projectname": "Vista Residence",
     "metatittles": "Vista Residence Metal Facade in Gurugram | Metaguise",
-    "metadescription": "Vista Residence: private residence facade in Gurugram, clad in MetaLouver and MetaCassette. Fabricated and installed by Metaguise."
+    "metadescription": "Vista Residence: private residence facade in Gurugram, clad in MetaLouver and MetaCassette. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What sort of building is Vista Residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vista Residence, a private residence in Gurugram, was designed by ASRO Arcade. Metaguise delivered the metal facade in-house, covering design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system was used for the facade at Vista Residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaLouver and MetaCassette were used for the facade at Vista Residence, finished in MetaWood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was Vista Residence designed by an outside architect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASRO Arcade was the architect for the building. Metaguise took care of the facade in-house, engineering, fabricating and installing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise create a similar facade for another private residence project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaLouver is available for private residence projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "MVA-DL1",
     "url": "mva-dl1",
     "Projectname": "The Threshold",
     "metatittles": "The Threshold Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "The Threshold is a private residence facade in Gurugram, clad in MetaPyramid and MetaFlute. Designed, fabricated and installed by Metaguise with Fair Build."
+    "metadescription": "The Threshold is a private residence facade in Gurugram, clad in MetaPyramid and MetaFlute. Designed, fabricated and installed by Metaguise with Fair Build.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Tell me a bit about The Threshold as a project.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fair Build designed The Threshold, a private residence in Gurugram, and Metaguise brought the metal facade to life, from design to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the facade system at The Threshold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise used MetaPyramid, MetaFlute, MetaLouver and MetaGate for The Threshold's facade, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed The Threshold's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design of the building came from Fair Build, while Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a similar facade be built for a different private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaPyramid for private residence projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "metaland",
     "url": "metaland",
     "Projectname": "Metaland",
     "metatittles": "Metaland Experience Centre Facade in Gurugram | Metaguise",
-    "metadescription": "Metaland is an experience centre facade in Gurugram, clad in MetaSequin. Designed, fabricated and installed by Metaguise."
+    "metadescription": "Metaland is an experience centre facade in Gurugram, clad in MetaSequin. Designed, fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Metaland: what kind of project is this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise handled every stage of the metal facade, design, fabrication and installation, for Metaland, an experience centre in Gurugram."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade product was chosen for Metaland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaland's facade is built with MetaSequin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was behind the facade design at Metaland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise designed, engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a similar facade be built for a different experience centre?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaSequin is available for experience centre projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "micasa",
     "url": "micasa",
     "Projectname": "Micasa",
     "metatittles": "Micasa Commercial Building Facade in New Delhi | Metaguise",
-    "metadescription": "Micasa is a commercial building facade in New Delhi, clad in MetaCoin. Designed, fabricated and installed by Metaguise."
+    "metadescription": "Micasa is a commercial building facade in New Delhi, clad in MetaCoin. Designed, fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of building is Micasa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Micasa, a commercial building in New Delhi, has a metal facade that Metaguise designed, fabricated and installed in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What system was chosen for Micasa's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Micasa's facade system is MetaCoin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's the architect behind Micasa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There was no external architect. Metaguise took charge of the facade from design to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Would Metaguise do this kind of facade for another commercial building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. commercial building projects across India can get a similar facade using MetaCoin, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Yashika",
     "url": "yashika",
     "Projectname": "Yashika",
     "metatittles": "Yashika Commercial Building Facade in Gurugram | Metaguise",
-    "metadescription": "Yashika is a commercial building facade in Gurugram, clad in MetaCoin. Designed, fabricated and installed by Metaguise."
+    "metadescription": "Yashika is a commercial building facade in Gurugram, clad in MetaCoin. Designed, fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What sort of building is Yashika?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Gurugram, Metaguise designed, fabricated and installed the metal facade for Yashika, a commercial building."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise system was installed at Yashika?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at Yashika uses MetaCoin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who handled the design of Yashika's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise handled the facade completely in-house, from design to engineering, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a similar facade for my own commercial building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. commercial building projects across India can get a similar facade using MetaCoin, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "C76",
     "url": "c76",
     "Projectname": "The Paramount",
     "metatittles": "The Paramount Private Residence Facade in Faridabad | Metaguise",
-    "metadescription": "The Paramount: private residence facade in Faridabad, clad in MetaFlute and MetaLouver. Fabricated and installed by Metaguise."
+    "metadescription": "The Paramount: private residence facade in Faridabad, clad in MetaFlute and MetaLouver. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What type of project is The Paramount?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Faridabad, The Paramount is a private residence designed by ODC Architects. The metal facade was designed, fabricated and installed by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which metal facade system does The Paramount feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at The Paramount uses MetaFlute, MetaLouver and MetaCassette."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which architect worked on The Paramount?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ODC Architects was the architect for the building. Metaguise took care of the facade in-house, engineering, fabricating and installing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise build a similar facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaFlute can be built for private residence projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "5107",
     "url": "5107",
     "Projectname": "The Luminous Veil",
     "metatittles": "The Luminous Veil Private Residence Facade, Gurugram | Metaguise",
-    "metadescription": "The Luminous Veil: private residence facade in Gurugram, clad in MetaFlute and MetaCassette. Fabricated and installed by Metaguise."
+    "metadescription": "The Luminous Veil: private residence facade in Gurugram, clad in MetaFlute and MetaCassette. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "So what is The Luminous Veil, exactly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Luminous Veil is a private residence in Gurugram. ASRO Arcade designed the building, while Metaguise handled the facade, from concept to final installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What facade system does The Luminous Veil use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Luminous Veil features MetaFlute, MetaCassette and MetaGate, finished in MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was the architect for The Luminous Veil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASRO Arcade handled the building's design. The facade itself was engineered, fabricated and installed in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this kind of facade available for other private residence projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. private residence projects across India can get a similar facade using MetaFlute, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "A297",
     "url": "a297",
     "Projectname": "The Confluence",
     "metatittles": "The Confluence Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "The Confluence: private residence facade in Gurugram, clad in MetaFlute and MetaShingle. Fabricated and installed by Metaguise."
+    "metadescription": "The Confluence: private residence facade in Gurugram, clad in MetaFlute and MetaShingle. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How would you describe The Confluence as a project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Confluence is a private residence in Gurugram. Spaces Design Studio designed the building, while Metaguise handled the facade, from concept to final installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of facade system is on The Confluence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For The Confluence, Metaguise used MetaFlute and MetaShingle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's responsible for The Confluence's facade design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spaces Design Studio designed the building. Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise build similar facades for other private residence projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaFlute can be built for private residence projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "C34-573",
     "url": "c34-573",
     "Projectname": "The Nexus",
     "metatittles": "The Nexus Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "The Nexus is a private residence facade in Gurugram, clad in MetaCoin and MetaFlute. Designed, fabricated and installed by Metaguise."
+    "metadescription": "The Nexus is a private residence facade in Gurugram, clad in MetaCoin and MetaFlute. Designed, fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How would you describe The Nexus as a project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Nexus, a private residence in Gurugram, features a metal facade that Metaguise designed, fabricated and installed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade system was used at The Nexus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For The Nexus, Metaguise used MetaCoin, MetaFlute, MetaLouver, MetaShingle and Solid Panel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed The Nexus' facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The entire facade, design, engineering, fabrication and installation, was handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Could Metaguise replicate this facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaCoin is available for private residence projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "DLF4",
     "url": "dlf4",
     "Projectname": "The Frame House",
     "metatittles": "The Frame House Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "The Frame House: private residence facade in Gurugram, clad in MetaFlute and Solid Panel. Fabricated and installed by Metaguise."
+    "metadescription": "The Frame House: private residence facade in Gurugram, clad in MetaFlute and Solid Panel. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "So what is The Frame House, exactly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Frame House, a private residence in Gurugram, was designed by Spaces Design Studio. Metaguise delivered the metal facade in-house, covering design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What system was chosen for The Frame House's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At The Frame House, the facade system is MetaFlute, Solid Panel and MetaGate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed the facade at The Frame House?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design of the building came from Spaces Design Studio, while Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Would Metaguise do this kind of facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaFlute is available for private residence projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "CS5-MA",
     "url": "cs5-ma",
     "Projectname": "The Ember House",
     "metatittles": "The Ember House Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "The Ember House: private residence facade in Gurugram, clad in MetaFlute and MetaLouver. Fabricated and installed by Metaguise."
+    "metadescription": "The Ember House: private residence facade in Gurugram, clad in MetaFlute and MetaLouver. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is The Ember House a residential or commercial project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ember House is a private residence in Gurugram, with the building designed by Cityspace82 Architects and the metal facade handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise system was installed at The Ember House?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ember House's facade is built with MetaFlute and MetaLouver."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was behind the facade design at The Ember House?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The building was designed by Cityspace82 Architects. Metaguise handled the facade in-house, from engineering to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a similar facade for my own private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaFlute is available for other private residence projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "espace",
     "url": "espace-nirvana",
     "Projectname": "Espace Nirvana",
     "metatittles": "Espace Nirvana Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "Espace Nirvana: private residence facade in Gurugram, clad in MetaLouver and MetaPlank. Fabricated and installed by Metaguise."
+    "metadescription": "Espace Nirvana: private residence facade in Gurugram, clad in MetaLouver and MetaPlank. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What type of project is Espace Nirvana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Espace Nirvana, a private residence in Gurugram, was designed by Spaces Design Studio. Metaguise delivered the metal facade in-house, covering design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade product was chosen for Espace Nirvana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise used MetaLouver, MetaPlank and MetaGate for Espace Nirvana's facade, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was Espace Nirvana designed by an outside architect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The building was designed by Spaces Design Studio. Metaguise handled the facade in-house, from engineering to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise create a similar facade for another private residence project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaLouver is available for private residence projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "MA-543",
     "url": "ma-543",
     "Projectname": "Metal Mosaic",
     "metatittles": "Metal Mosaic Private Residence Facade in New Delhi | Metaguise",
-    "metadescription": "Metal Mosaic is a private residence facade in New Delhi, clad in MetaCoin and MetaLouver. Designed, fabricated and installed by Metaguise with Arcis Design."
+    "metadescription": "Metal Mosaic is a private residence facade in New Delhi, clad in MetaCoin and MetaLouver. Designed, fabricated and installed by Metaguise with Arcis Design.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Tell me a bit about Metal Mosaic as a project.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metal Mosaic is a private residence in New Delhi, with the building designed by Arcis Design and the metal facade handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the facade system at Metal Mosaic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaCoin, MetaLouver and MetaPlank were used for the facade at Metal Mosaic, finished in MetaWood, MetaPatina and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which architect worked on Metal Mosaic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Arcis Design designed the building, and Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise build similar facades for other private residence projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaCoin can be built for private residence projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Q62-RA",
     "url": "q62-ra",
     "Projectname": "The Arc",
     "metatittles": "The Arc Private Residence Facade in New Delhi | Metaguise",
-    "metadescription": "The Arc: private residence facade in New Delhi, clad in MetaFlute and MetaLouver. Fabricated and installed by Metaguise."
+    "metadescription": "The Arc: private residence facade in New Delhi, clad in MetaFlute and MetaLouver. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "The Arc: what kind of project is this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Arc is a private residence in New Delhi. The building was designed by Cityspace82 Architects, and Metaguise handled the metal facade end to end, from design through fabrication to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What system was chosen for The Arc's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Arc features MetaFlute, MetaLouver, Solid Panel and MetaGate, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who handled the design of The Arc's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cityspace82 Architects was the architect for the building. Metaguise took care of the facade in-house, engineering, fabricating and installing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise take on other private residence projects like this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaFlute can be used for other private residence projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "z1012",
     "url": "z1012",
     "Projectname": "The Scallop Residence",
     "metatittles": "The Scallop Residence Metal Facade in Gurugram | Metaguise",
-    "metadescription": "The Scallop Residence: private residence facade in Gurugram, clad in MetaFlute and MetaShingle. Fabricated and installed by Metaguise."
+    "metadescription": "The Scallop Residence: private residence facade in Gurugram, clad in MetaFlute and MetaShingle. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "So what is The Scallop Residence, exactly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Scallop Residence, a private residence in Gurugram, was designed by Spaces Design Studio. Metaguise delivered the metal facade in-house, covering design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What was used to build The Scallop Residence's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at The Scallop Residence uses MetaFlute, MetaShingle and MetaGate, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed The Scallop Residence's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spaces Design Studio designed the building, and Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a similar facade be built for a different private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaFlute is available for other private residence projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "painflame",
     "url": "pain-flame",
     "Projectname": "Pain Flame",
     "metatittles": "Pain Flame Clinic Facade in Gurugram | Metaguise",
-    "metadescription": "Pain Flame is a clinic facade in Gurugram, clad in MetaCoin and MetaShingle. Designed, fabricated and installed by Metaguise."
+    "metadescription": "Pain Flame is a clinic facade in Gurugram, clad in MetaCoin and MetaShingle. Designed, fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of project is Pain Flame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise handled every stage of the metal facade, design, fabrication and installation, for Pain Flame, a clinic in Gurugram."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system was used for the facade at Pain Flame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Pain Flame, Metaguise used MetaCoin and MetaShingle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who came up with the facade design for Pain Flame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The entire facade, design, engineering, fabrication and installation, was handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise take on other clinic projects like this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaCoin for clinic projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "premhospital",
     "url": "prem-hospital",
     "Projectname": "Prem Hospital",
     "metatittles": "Prem Hospital Metal Facade in Meerut | Metaguise",
-    "metadescription": "Prem Hospital is a hospital facade in Meerut, clad in MetaCassette. Designed, fabricated and installed by Metaguise."
+    "metadescription": "Prem Hospital is a hospital facade in Meerut, clad in MetaCassette. Designed, fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of building is Prem Hospital?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prem Hospital, a hospital in Meerut, features a metal facade that Metaguise designed, fabricated and installed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade product was chosen for Prem Hospital?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise used MetaCassette for Prem Hospital's facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which architect worked on Prem Hospital?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There was no external architect. Metaguise took charge of the facade from design to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise create a similar facade for another hospital project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. hospital projects across India can get a similar facade using MetaCassette, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "coppercanvas",
     "url": "copper-canvas",
     "Projectname": "Copper Canvas",
     "metatittles": "Copper Canvas Private Residence Facade in Jaipur | Metaguise",
-    "metadescription": "Copper Canvas: private residence facade in Jaipur, clad in MetaFlute and MetaCassette. Fabricated and installed by Metaguise."
+    "metadescription": "Copper Canvas: private residence facade in Jaipur, clad in MetaFlute and MetaCassette. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What category of project does Copper Canvas fall under?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Copper Canvas is a private residence in Jaipur. Atelier10 Design Studio designed the building, while Metaguise handled the facade, from concept to final installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade system was used at Copper Canvas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Copper Canvas features MetaFlute, MetaCassette and MetaFold."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who came up with the facade design for Copper Canvas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atelier10 Design Studio was the architect for the building. Metaguise took care of the facade in-house, engineering, fabricating and installing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this kind of facade available for other private residence projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaFlute for private residence projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "peachstreet",
     "url": "peach-street",
     "Projectname": "Peach Street",
     "metatittles": "Peach Street Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "Peach Street is a private residence facade in Gurugram, clad in MetaCoin. Designed, fabricated and installed by Metaguise."
+    "metadescription": "Peach Street is a private residence facade in Gurugram, clad in MetaCoin. Designed, fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What category of project does Peach Street fall under?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Peach Street is a private residence in Gurugram. Metaguise handled the project end to end, designing, fabricating and installing the metal facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade system was used at Peach Street?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At Peach Street, the facade system is MetaCoin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's the architect behind Peach Street?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise handled the facade completely in-house, from design to engineering, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise create a similar facade for another private residence project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. private residence projects across India can get a similar facade using MetaCoin, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "linearretreat",
     "url": "linear-retreat",
     "Projectname": "Linear Retreat",
     "metatittles": "Linear Retreat Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "Linear Retreat: private residence facade in Gurugram, clad in MetaLouver and MetaPlank. Fabricated and installed by Metaguise."
+    "metadescription": "Linear Retreat: private residence facade in Gurugram, clad in MetaLouver and MetaPlank. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Linear Retreat a residential or commercial project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Linear Retreat is a private residence located in Gurugram, designed by Cityspace82 Architects. Metaguise took care of the facade's design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What was used to build Linear Retreat's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Linear Retreat, Metaguise used MetaLouver and MetaPlank, finished in MetaWood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's the architect behind Linear Retreat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cityspace82 Architects handled the building's design. The facade itself was engineered, fabricated and installed in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Would Metaguise do this kind of facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaLouver is available for other private residence projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "anj",
     "url": "skyport-house",
     "Projectname": "Skyport House",
     "metatittles": "Skyport House Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "Skyport House is a private residence facade in Gurugram, clad in MetaFlute and MetaLouver. Designed, fabricated and installed by Metaguise with ANJ Homes."
+    "metadescription": "Skyport House is a private residence facade in Gurugram, clad in MetaFlute and MetaLouver. Designed, fabricated and installed by Metaguise with ANJ Homes.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of building is Skyport House?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Skyport House is a private residence in Gurugram, with the building designed by ANJ Homes and the metal facade handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What facade system does Skyport House use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFlute, MetaLouver, MetaPlank, MetaCassette and Solid Panel were used for the facade at Skyport House, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which architect worked on Skyport House?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ANJ Homes designed the building, and Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this kind of facade available for other private residence projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaFlute for private residence projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "dev622",
     "url": "monolith-garden",
     "Projectname": "Monolith Garden",
     "metatittles": "Monolith Garden Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "Monolith Garden is a private residence facade in Gurugram, clad in MetaSequin and MetaFlute. Designed, fabricated and installed by Metaguise with ASRO Arcade."
+    "metadescription": "Monolith Garden is a private residence facade in Gurugram, clad in MetaSequin and MetaFlute. Designed, fabricated and installed by Metaguise with ASRO Arcade.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Could you describe what Monolith Garden is?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monolith Garden, a private residence in Gurugram, was designed by ASRO Arcade. Metaguise delivered the metal facade in-house, covering design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What system was chosen for Monolith Garden's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monolith Garden's facade system is MetaSequin, MetaFlute and Solid Panel, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed the facade at Monolith Garden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASRO Arcade handled the building's design. The facade itself was engineered, fabricated and installed in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a similar facade for my own private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. private residence projects across India can get a similar facade using MetaSequin, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "ishaan",
     "url": "peacock-mesh",
     "Projectname": "Peacock Mesh",
     "metatittles": "Peacock Mesh Facade Retrofit Facade in New Delhi | Metaguise",
-    "metadescription": "Peacock Mesh is a facade retrofit facade in New Delhi, clad in MetaCoin. Designed, fabricated and installed by Metaguise."
+    "metadescription": "Peacock Mesh is a facade retrofit facade in New Delhi, clad in MetaCoin. Designed, fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How would you describe Peacock Mesh as a project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Peacock Mesh is a facade retrofit in New Delhi. Metaguise handled the project end to end, designing, fabricating and installing the metal facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What facade system does Peacock Mesh use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At Peacock Mesh, the facade system is MetaCoin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was the architect for Peacock Mesh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise handled the facade completely in-house, from design to engineering, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a similar setup possible for another facade retrofit project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaCoin is available for other facade retrofit projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "pritesh",
     "url": "sacred-geometry",
     "Projectname": "Sacred Geometry",
     "metatittles": "Sacred Geometry Private Residence Facade in Gurugram | Metaguise",
-    "metadescription": "Sacred Geometry: private residence facade in Gurugram, clad in MetaLouver and MetaPlank. Fabricated and installed by Metaguise."
+    "metadescription": "Sacred Geometry: private residence facade in Gurugram, clad in MetaLouver and MetaPlank. Fabricated and installed by Metaguise.",
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What sort of building is Sacred Geometry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Gurugram, Sacred Geometry is a private residence designed by Design Atelier. The metal facade was designed, fabricated and installed by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade product was chosen for Sacred Geometry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at Sacred Geometry uses MetaLouver and MetaPlank, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who came up with the facade design for Sacred Geometry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design Atelier designed the building. Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a similar facade be built for a different private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaLouver is available for other private residence projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "sachi",
@@ -321,7 +1765,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Sachi: what kind of project is this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sachi is a private residence in Jaipur. The building was designed by Ar. Ankit Gupta, and Metaguise handled the metal facade end to end, from design through fabrication to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which metal facade system does Sachi feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sachi's facade is built with MetaCoin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed Sachi's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ar. Ankit Gupta was the architect for the building. Metaguise took care of the facade in-house, engineering, fabricating and installing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise build similar facades for other private residence projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaCoin is available for private residence projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "vivek",
@@ -341,7 +1823,45 @@
       {
         "heading": "More MetaCassette Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How would you describe Obsidian as a project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Gurugram, Studio Mathema designed Obsidian, a private residence. Metaguise created the metal facade, managing design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system covers the facade at Obsidian?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise used MetaCassette, MetaShingle and Solid Panel for Obsidian's facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was behind the facade design at Obsidian?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design of the building came from Studio Mathema, while Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Would Metaguise do this kind of facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaCassette for private residence projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "hlp",
@@ -361,7 +1881,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of project is HLP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HLP, an office building in Mohali, has a metal facade that Metaguise designed, fabricated and installed in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of facade system is on HLP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at HLP uses MetaCoin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who handled the design of HLP's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design through installation was managed entirely in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise take on other office building projects like this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaCoin is available for other office building projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "sbi",
@@ -381,7 +1939,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Could you describe what SBI is?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SBI is a bank branch in Jaipur, with the building designed by Design Atelier and the metal facade handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system covers the facade at SBI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SBI's facade is built with MetaCoin, MetaFlute and MetaLouver, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed SBI's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design Atelier designed the building, and Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise build a similar facade for another bank branch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. bank branch projects across India can get a similar facade using MetaCoin, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "zenith",
@@ -401,7 +1997,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What exactly is Zenith?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Mohali, Zenith is an office building designed by Paragrid. The metal facade was designed, fabricated and installed by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What was used to build Zenith's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Zenith's facade is built with MetaCoin and Solid Panel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed Zenith's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paragrid designed the building. Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this kind of facade available for other office building projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaCoin is available for other office building projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "wvcity",
@@ -421,7 +2055,45 @@
       {
         "heading": "More MetaSequin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Could you describe what Wavecity is?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wavecity is a commercial building based in Ghaziabad. Metaguise took the facade from design through fabrication to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What system was chosen for Wavecity's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wavecity's facade system is MetaSequin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was Wavecity designed by an outside architect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise designed, engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Could Metaguise replicate this facade for another commercial building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaSequin is available for commercial building projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "whiteland",
@@ -441,7 +2113,45 @@
       {
         "heading": "More MetaHive Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of building is Whiteland Westin Residences?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Whiteland Westin Residences, an experience centre in Gurugram, has a metal facade that Metaguise designed, fabricated and installed in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the facade system at Whiteland Westin Residences?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Whiteland Westin Residences, Metaguise used MetaHive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's the architect behind Whiteland Westin Residences?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There was no external architect. Metaguise took charge of the facade from design to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise build similar facades for other experience centre projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaHive can be built for experience centre projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "theresonance",
@@ -461,7 +2171,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of project is The Resonance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design Symposium designed The Resonance, a private residence in Faridabad, and Metaguise brought the metal facade to life, from design to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of facade system is on The Resonance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For The Resonance, Metaguise used MetaFlute, MetaLouver and MetaCassette, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was behind the facade design at The Resonance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design Symposium designed the building. Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise build a similar facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. private residence projects across India can get a similar facade using MetaFlute, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "theelevato",
@@ -481,7 +2229,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What category of project does The Elevato fall under?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Studio Mathema designed The Elevato, a private residence in Gurugram, and Metaguise brought the metal facade to life, from design to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which metal facade system does The Elevato feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFlute, MetaLouver and Solid Panel were used for the facade at The Elevato, finished in MetaWood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which architect worked on The Elevato?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Studio Mathema designed the building, and Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise build a similar facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. private residence projects across India can get a similar facade using MetaFlute, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "thecurtain",
@@ -501,7 +2287,45 @@
       {
         "heading": "More MetaLouver Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is The Curtain a residential or commercial project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Noida, The Curtain is a commercial building where Metaguise designed, fabricated and installed the metal facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade product was chosen for The Curtain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Curtain features MetaLouver, finished in MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was the architect for The Curtain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The entire facade, design, engineering, fabrication and installation, was handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a similar setup possible for another commercial building project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaLouver can be used for other commercial building projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "GLSU",
@@ -521,7 +2345,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What sort of building is GLS University?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Ahmedabad, GLS University is an university campus where Metaguise designed, fabricated and installed the metal facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade system was used at GLS University?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise used MetaCoin and MetaCassette Perforated for GLS University's facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was behind the facade design at GLS University?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise designed, engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise create a similar facade for another university campus project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaCoin can be built for university campus projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Sohana",
@@ -541,7 +2403,45 @@
       {
         "heading": "More MetaCassette Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Sohana Hospital: what kind of project is this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Mohali, Sohana Hospital is a hospital designed by Dhruv Sarveshwar Lal & Associates. The metal facade was designed, fabricated and installed by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which metal facade system does Sohana Hospital feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at Sohana Hospital uses MetaCassette."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's responsible for Sohana Hospital's facade design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The building was designed by Dhruv Sarveshwar Lal & Associates. Metaguise handled the facade in-house, from engineering to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a similar facade for my own hospital?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaCassette for hospital projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "TheCrystal",
@@ -561,7 +2461,45 @@
       {
         "heading": "More Solid Panel Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What sort of building is The Crystal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Crystal, a private residence in Bikaner, was designed by Studio Ardete. Metaguise delivered the metal facade in-house, covering design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system was used for the facade at The Crystal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at The Crystal uses Solid Panel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was The Crystal designed by an outside architect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design of the building came from Studio Ardete, while Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a similar facade be built for a different private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Solid Panel can be used for other private residence projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "rjjewellers",
@@ -581,7 +2519,45 @@
       {
         "heading": "More MetaBlox Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Tell me a bit about RJ Jewellers as a project.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Jaipur, Design Atelier designed RJ Jewellers, a jewellery store. Metaguise created the metal facade, managing design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade system was used at RJ Jewellers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaBlox was used for the facade at RJ Jewellers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed the facade at RJ Jewellers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The building was designed by Design Atelier. Metaguise handled the facade in-house, from engineering to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise build similar facades for other jewellery store projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaBlox can be built for jewellery store projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "farm15",
@@ -601,7 +2577,45 @@
       {
         "heading": "More MetaLouver Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What category of project does The Sanctuary fall under?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Sanctuary is a farmhouse in New Delhi. The building was designed by Cityspace82 Architects, and Metaguise handled the metal facade end to end, from design through fabrication to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system was used for the facade at The Sanctuary?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise used MetaLouver, Solid Panel and MetaGate for The Sanctuary's facade, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's the architect behind The Sanctuary?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The building was designed by Cityspace82 Architects. Metaguise handled the facade in-house, from engineering to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a similar setup possible for another farmhouse project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaLouver can be built for farmhouse projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "e81",
@@ -621,7 +2635,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What type of project is The Elysian?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Gurugram, The Elysian is a private residence designed by Design India. The metal facade was designed, fabricated and installed by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What was used to build The Elysian's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Elysian's facade system is MetaFlute and MetaCassette."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's the architect behind The Elysian?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design India was the architect for the building. Metaguise took care of the facade in-house, engineering, fabricating and installing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise create a similar facade for another private residence project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaFlute for private residence projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "B38",
@@ -641,7 +2693,45 @@
       {
         "heading": "More MetaLouver Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Corten Canvas a residential or commercial project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Corten Canvas is a private residence in Gurugram. Metaguise handled the project end to end, designing, fabricating and installing the metal facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which metal facade system does Corten Canvas feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at Corten Canvas uses MetaLouver, finished in MetaWood and MetaCorten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed the facade at Corten Canvas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The entire facade, design, engineering, fabrication and installation, was handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise take on other private residence projects like this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaLouver can be built for private residence projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "a56",
@@ -661,7 +2751,45 @@
       {
         "heading": "More MetaPyramid Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Facet Residence: what kind of project is this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fair Build designed Facet Residence, a private residence in Gurugram, and Metaguise brought the metal facade to life, from design to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise system was installed at Facet Residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facet Residence's facade is built with MetaPyramid, MetaFlute, MetaLouver and MetaGate, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was behind the facade design at Facet Residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design of the building came from Fair Build, while Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a similar facade for my own private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. private residence projects across India can get a similar facade using MetaPyramid, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "3dlf1",
@@ -681,7 +2809,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is The Prism a residential or commercial project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Prism is a private residence in Gurugram, with the building designed by ASRO Arcade and the metal facade handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise system was installed at The Prism?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Prism's facade system is MetaFlute, finished in MetaWood, MetaCopper and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was The Prism designed by an outside architect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASRO Arcade handled the building's design. The facade itself was engineered, fabricated and installed in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a similar facade for my own private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaFlute for private residence projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "caskey",
@@ -701,7 +2867,45 @@
       {
         "heading": "More Cascading Keys Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What type of project is Kinetic Grid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise handled every stage of the metal facade, design, fabrication and installation, for Kinetic Grid, a private residence in Gurugram."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system was used for the facade at Kinetic Grid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At Kinetic Grid, the facade system is Cascading Keys."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed Kinetic Grid's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design through installation was managed entirely in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a similar setup possible for another private residence project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Cascading Keys can be used for other private residence projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "3939a",
@@ -721,7 +2925,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "So what is Scaled Symphony, exactly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scaled Symphony, a private residence in Gurugram, has a metal facade that Metaguise designed, fabricated and installed in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise system was installed at Scaled Symphony?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Scaled Symphony, Metaguise used MetaCoin, MetaPyramid, Cascading Keys and MetaShingle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was Scaled Symphony designed by an outside architect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There was no external architect. Metaguise took charge of the facade from design to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Could Metaguise replicate this facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaCoin can be built for private residence projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "88arjun",
@@ -741,7 +2983,45 @@
       {
         "heading": "More Private Residence Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of building is Parametric Crown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parametric Crown, a private residence in Gurugram, features a metal facade that Metaguise designed, fabricated and installed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of facade system is on Parametric Crown?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade system at Parametric Crown was engineered and installed in-house by Metaguise. Details are available on request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's responsible for Parametric Crown's facade design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The entire facade, design, engineering, fabrication and installation, was handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a similar setup possible for another private residence project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar private residence facades can be delivered across India, with Metaguise managing design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Verdigris Veil",
@@ -761,7 +3041,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What exactly is Verdigris Veil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Gurugram, Robin R. Sisodiya designed Verdigris Veil, an architect's own home. Metaguise created the metal facade, managing design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What system was chosen for Verdigris Veil's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise used MetaFlute and MetaFold for Verdigris Veil's facade, finished in MetaCopper, MetaPatina and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was the architect for Verdigris Veil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Robin R. Sisodiya handled the building's design. The facade itself was engineered, fabricated and installed in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a similar setup possible for another architect's own home project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaFlute for architect's own home projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Casa Stilgrove",
@@ -781,7 +3099,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of project is Casa Stilgrove?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Gurugram, Cityspace82 Architects designed Casa Stilgrove, a private residence. Metaguise created the metal facade, managing design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system was used for the facade at Casa Stilgrove?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise used MetaFlute, MetaLouver, MetaPlank, MetaCassette and MetaGate for Casa Stilgrove's facade, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who handled the design of Casa Stilgrove's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cityspace82 Architects designed the building. Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise build a similar facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaFlute can be used for other private residence projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Cornerstone",
@@ -801,7 +3157,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What exactly is The Cornerstone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Gurugram, Cityspace82 Architects designed The Cornerstone, a private residence. Metaguise created the metal facade, managing design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system covers the facade at The Cornerstone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Cornerstone features MetaFlute and MetaCassette, finished in MetaWood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed The Cornerstone's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The building was designed by Cityspace82 Architects. Metaguise handled the facade in-house, from engineering to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a similar setup possible for another private residence project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaFlute is available for other private residence projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Golden Bloom",
@@ -821,7 +3215,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Tell me a bit about The Golden Bloom as a project.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Golden Bloom is a private residence based in Gurugram. Metaguise took the facade from design through fabrication to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade product was chosen for The Golden Bloom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Golden Bloom's facade system is MetaCoin, MetaFlute and Solid Panel, finished in MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was the architect for The Golden Bloom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There was no external architect. Metaguise took charge of the facade from design to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Could Metaguise replicate this facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaCoin for private residence projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Miraj Stadium",
@@ -841,7 +3273,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What exactly is Miraj Cricket Stadium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Udaipur, Miraj Cricket Stadium is a cricket stadium where Metaguise designed, fabricated and installed the metal facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What was used to build Miraj Cricket Stadium's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Miraj Cricket Stadium features MetaCoin and MetaCryst."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was Miraj Cricket Stadium designed by an outside architect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise handled the facade completely in-house, from design to engineering, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Could Metaguise replicate this facade for another cricket stadium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaCoin is available for cricket stadium projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Stillwave",
@@ -861,7 +3331,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What sort of building is The Stillwave?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise handled every stage of the metal facade, design, fabrication and installation, for The Stillwave, a private residence in Gurugram."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of facade system is on The Stillwave?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at The Stillwave uses MetaCoin, MetaFlute, MetaShingle and MetaGate, finished in MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which architect worked on The Stillwave?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise handled the facade completely in-house, from design to engineering, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Would Metaguise do this kind of facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. private residence projects across India can get a similar facade using MetaCoin, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "Achintya",
@@ -881,7 +3389,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Achintya a residential or commercial project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Achintya, an office building in Kanpur, features a metal facade that Metaguise designed, fabricated and installed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the facade system at Achintya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Achintya, Metaguise used MetaCoin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which architect worked on Achintya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The entire facade, design, engineering, fabrication and installation, was handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise build a similar facade for another office building?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaCoin is available for office building projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "AB Jewels",
@@ -901,7 +3447,45 @@
       {
         "heading": "More Jewellery Store Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What type of project is AB Jewels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AB Jewels is a jewellery store located in Ahmedabad, designed by The Art Container. Metaguise took care of the facade's design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system covers the facade at AB Jewels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at AB Jewels uses Custom Bespoke Diamond Shaped 3D Panels and gold Jaali."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed AB Jewels' facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design of the building came from The Art Container, while Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this kind of facade available for other jewellery store projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Custom Bespoke Diamond Shaped 3D Panels can be used for other jewellery store projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "w12",
@@ -921,7 +3505,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Undercurrent a residential or commercial project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Undercurrent is a private residence in Gurugram, with the building designed by Studio Effcom and the metal facade handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which metal facade system does Undercurrent feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The facade at Undercurrent uses MetaFlute, MetaLouver, MetaPlank, Solid Panel and MetaGate, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was behind the facade design at Undercurrent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Studio Effcom designed the building. Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a similar facade for my own private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaFlute can be used for other private residence projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the block",
@@ -992,7 +3614,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What type of project is The Waveform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Waveform, a private residence in Jaipur, features a metal facade that Metaguise designed, fabricated and installed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Metaguise system was installed at The Waveform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For The Waveform, Metaguise used MetaCoin, MetaPyramid, MetaLouver and MetaShingle, finished in MetaWood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who handled the design of The Waveform's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There was no external architect. Metaguise took charge of the facade from design to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this kind of facade available for other private residence projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. private residence projects across India can get a similar facade using MetaCoin, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the panorama",
@@ -1012,7 +3672,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "The Panorama: what kind of project is this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Panorama is a private residence in Gurugram. The building was designed by Studio Effcom, and Metaguise handled the metal facade end to end, from design through fabrication to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system was used for the facade at The Panorama?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At The Panorama, the facade system is MetaFlute, MetaLouver, MetaPlank, Solid Panel and MetaGate, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed the facade at The Panorama?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Studio Effcom designed the building, and Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a similar facade be built for a different private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaFlute for private residence projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the frame",
@@ -1032,7 +3730,45 @@
       {
         "heading": "More MetaPyramid Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What sort of building is The Frame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fair Build designed The Frame, a facade retrofit in New Delhi, and Metaguise brought the metal facade to life, from design to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What facade system does The Frame use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise used MetaPyramid and MetaFlute for The Frame's facade, finished in MetaWood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who came up with the facade design for The Frame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fair Build was the architect for the building. Metaguise took care of the facade in-house, engineering, fabricating and installing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Would Metaguise do this kind of facade for another facade retrofit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaPyramid is available for facade retrofit projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the crest",
@@ -1052,7 +3788,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Could you describe what The Crest is?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Crest is a private residence located in Gurugram, designed by Cityspace82 Architects. Metaguise took care of the facade's design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the facade system at The Crest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise used MetaFlute, MetaLouver, MetaCassette, Solid Panel and MetaGate for The Crest's facade, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who handled the design of The Crest's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cityspace82 Architects handled the building's design. The facade itself was engineered, fabricated and installed in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise take on other private residence projects like this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaFlute is available for private residence projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the cantilever",
@@ -1072,7 +3846,45 @@
       {
         "heading": "More Private Residence Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of project is The Cantilever?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise handled every stage of the metal facade, design, fabrication and installation, for The Cantilever, a private residence in Punjab."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What was used to build The Cantilever's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise engineered and installed the facade at The Cantilever. Full system details can be shared on request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who came up with the facade design for The Cantilever?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise designed, engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this kind of facade available for other private residence projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers similar private residence facades across India, with everything, design, fabrication and installation, handled in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the spine",
@@ -1092,7 +3904,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "The Spine: what kind of project is this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Gurugram, The Spine is a private residence designed by Spaces Design Studio. The metal facade was designed, fabricated and installed by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade product was chosen for The Spine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At The Spine, the facade system is MetaFlute, MetaLouver and MetaShingle, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who designed the facade at The Spine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spaces Design Studio was the architect for the building. Metaguise took care of the facade in-house, engineering, fabricating and installing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise build similar facades for other private residence projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, similar facades using MetaFlute can be built for private residence projects across India. Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the strata",
@@ -1112,7 +3962,45 @@
       {
         "heading": "More MetaPyramid Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of project is The Strata?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Strata is a private residence in Gurugram. Metaguise handled the project end to end, designing, fabricating and installing the metal facade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade product was chosen for The Strata?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Strata features MetaPyramid, MetaFlute and MetaCassette, finished in MetaWood, MetaCorten and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who handled the design of The Strata's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The entire facade, design, engineering, fabrication and installation, was handled in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise create a similar facade for another private residence project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaPyramid is available for private residence projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the solace",
@@ -1132,7 +4020,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of building is The Solace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Solace is a private residence in New Delhi. ASRO Arcade designed the building, while Metaguise handled the facade, from concept to final installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What facade system does The Solace use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Solace's facade is built with MetaFlute, MetaLouver and MetaCassette, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was the architect for The Solace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASRO Arcade handled the building's design. The facade itself was engineered, fabricated and installed in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Could Metaguise replicate this facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaFlute can be used for other private residence projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Podium",
@@ -1152,7 +4078,45 @@
       {
         "heading": "More MetaLouver Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What exactly is The Podium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Mumbai, Mangal Buildhome designed The Podium, a residential building. Metaguise created the metal facade, managing design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which facade system was used at The Podium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At The Podium, the facade system is MetaLouver, finished in MetaWood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who was behind the facade design at The Podium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design of the building came from Mangal Buildhome, while Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise build similar facades for other residential building projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaLouver can be used for other residential building projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Nest",
@@ -1172,7 +4136,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What category of project does The Nest fall under?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Gurugram, Metaguise designed, fabricated and installed the metal facade for The Nest, a private residence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the facade system at The Nest?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Nest's facade is built with MetaFlute, MetaLouver, MetaPlank and Solid Panel, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who handled the design of The Nest's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise designed, engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise take on other private residence projects like this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaFlute can be used for other private residence projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Scale",
@@ -1192,7 +4194,45 @@
       {
         "heading": "More MetaBlox Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What exactly is The Scale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Located in Faridabad, The Scale is a private residence where Metaguise designed, fabricated and installed the metal facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the facade system at The Scale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Scale's facade is built with MetaBlox."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who came up with the facade design for The Scale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design through installation was managed entirely in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this kind of facade available for other private residence projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaBlox can be used for other private residence projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Ripple",
@@ -1212,7 +4252,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What sort of building is The Ripple?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ripple is a private residence located in New Delhi, designed by Studio Sh.a.de. Metaguise took care of the facade's design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What system was chosen for The Ripple's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ripple features MetaFlute and MetaShingle, finished in MetaWood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's responsible for The Ripple's facade design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design of the building came from Studio Sh.a.de, while Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a similar facade for my own private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaFlute is available for private residence projects across India, and Metaguise handles design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "The Canopy",
@@ -1232,7 +4310,45 @@
       {
         "heading": "More MetaLouver Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Could you describe what The Overhang is?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Overhang is a private residence located in Kolkata, designed by Epsilon Architects. Metaguise took care of the facade's design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system covers the facade at The Overhang?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Metaguise used MetaLouver, MetaPlank, MetaCassette and Solid Panel for The Overhang's facade, finished in MetaWood, MetaCorten and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's responsible for The Overhang's facade design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Epsilon Architects designed the building. Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Would Metaguise do this kind of facade for another private residence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. private residence projects across India can get a similar facade using MetaLouver, with Metaguise handling design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "the pavilion",
@@ -1252,7 +4368,45 @@
       {
         "heading": "More MetaFlute Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Tell me a bit about The Pavilion as a project.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASRO Arcade designed The Pavilion, a private residence in Gurugram, and Metaguise brought the metal facade to life, from design to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system covers the facade at The Pavilion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MetaFlute, MetaLouver and MetaCassette were used for the facade at The Pavilion, finished in MetaWood and MetaGrey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who came up with the facade design for The Pavilion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The building was designed by ASRO Arcade. Metaguise handled the facade in-house, from engineering to fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Metaguise create a similar facade for another private residence project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaFlute is available for other private residence projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "rahul sweets",
@@ -1272,7 +4426,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What type of project is Rahul Sweets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rahul Sweets is a sweet shop in Kanpur. The building was designed by Line and Space, and Metaguise handled the metal facade end to end, from design through fabrication to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of facade system is on Rahul Sweets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rahul Sweets' facade system is MetaCoin, MetaCassette and Solid Panel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who handled the design of Rahul Sweets' facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Line and Space designed the building. Metaguise engineered, fabricated and installed the facade in-house."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this kind of facade available for other sweet shop projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, MetaCoin can be used for other sweet shop projects across India. Metaguise manages design, fabrication and installation in-house."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "ahir",
@@ -1292,7 +4484,45 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Could you describe what Ahir is?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ahir is a commercial building based in Gurugram. Metaguise took the facade from design through fabrication to installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What system was chosen for Ahir's facade?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ahir's facade is built with MetaCoin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's responsible for Ahir's facade design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design through installation was managed entirely in-house by Metaguise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Metaguise build similar facades for other commercial building projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MetaCoin is available for other commercial building projects in India, and Metaguise manages the entire process in-house, from design to installation."
+          }
+        }
+      ]
+    }
   },
   {
     "name": "fortis",
@@ -1312,9 +4542,47 @@
       {
         "heading": "More MetaCoin Facade Projects"
       }
-    ]
+    ],
+    "faqSchema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "So what is Fortis, exactly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fortis, a hospital in Gurugram, was designed by StudioTech Architects. Metaguise delivered the metal facade in-house, covering design, fabrication and installation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which system was used for the facade at Fortis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fortis' facade system is MetaCoin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who's the architect behind Fortis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "StudioTech Architects was the architect for the building. Metaguise took care of the facade in-house, engineering, fabricating and installing it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a similar facade for my own hospital?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Metaguise offers MetaCoin for hospital projects across India, with design, fabrication and installation all handled in-house."
+          }
+        }
+      ]
+    }
   },
-   {
+  {
     "name": "radiance",
     "url": "radiance",
     "Projectname": "Radiance",
@@ -1332,7 +4600,7 @@
       }
     ]
   },
-   {
+  {
     "name": "aek",
     "url": "aek-flagship-golf-course-road-gurugram",
     "Projectname": "AEK",
