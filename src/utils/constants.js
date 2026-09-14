@@ -138,11 +138,7 @@ export const ProjectImages = [
     "alt": "Champagne gold metal facade on Hotel Radiance's commercial elevation in Sirsa, its MetaCoin pattern in daylight."
   },
 
-   {
-    "imgPath": "assets/Allprojects/commercial/Miraj Stadium/cover/miraj (1).webp",
-    "order": 1,
-    "alt": "Miraj Stadium exterior facade design"
-  },
+
   {
     "imgPath": "assets/Allprojects/commercial/AB Jewels/cover/ab_1.webp",
     "order": 1,
