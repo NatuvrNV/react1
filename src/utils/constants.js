@@ -126,6 +126,12 @@ export const ProjectImages = [
     "alt": "Miraj Stadium exterior facade design"
   },
 
+    {
+    "imgPath": "assets/Allprojects/commercial/Zoee Nails/cover/zoe1.webp",
+    "order": 1,
+    "alt": "Zoee Nails' illuminated retail facade glows above Rajouri Garden at dusk."
+  },
+
    {
     "imgPath": "assets/Allprojects/commercial/AEK/cover/aek1.webp",
     "order": 1,
