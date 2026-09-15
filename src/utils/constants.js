@@ -139,7 +139,7 @@ export const ProjectImages = [
   },
 
     {
-    "imgPath": "assets/Allprojects/residential/Radiance/cover/Day-1.webp",
+    "imgPath": "assets/Allprojects/commercial/Radiance/cover/Day-1.webp",
     "order": 1,
     "alt": "Champagne gold metal facade on Hotel Radiance's commercial elevation in Sirsa, its MetaCoin pattern in daylight."
   },
@@ -161,9 +161,9 @@ export const ProjectImages = [
     "alt": "The Block luxury residential facade with MetaCassette and MetaLouver cladding by Metaguise"
   },
   {
-    "imgPath": "assets/Allprojects/residential/Hadapsar/cover/Hadapsar (5).webp",
+    "imgPath": "assets/Allprojects/commercial/Hadapsar/cover/Hadapsar (5).webp",
     "order": 1,
-    "alt": "The Block luxury residential facade with MetaCassette and MetaLouver cladding by Metaguise"
+    "alt": "The Block luxury commercial facade with MetaCassette and MetaLouver cladding by Metaguise"
   },
   {
     "imgPath": "assets/Allprojects/residential/Rhythm Goel/cover/The Overhang (1).webp",
