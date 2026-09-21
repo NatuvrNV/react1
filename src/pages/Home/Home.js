@@ -150,7 +150,7 @@ const breadcrumbSchema = JSON.stringify({
 function HomeIntro() {
   return (
     <section className="home-intro sr-only">
-      <h1>Metaguise — India's Leading Metal Facade Company</h1>
+      <h1>Metaguise — India’s most trusted Facade company</h1>
       <p>
         Metaguise is India's premier metal facade specialist based in Gurugram, Haryana.
         We design and install luxury parametric metal facades, architectural cladding,
