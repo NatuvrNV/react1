@@ -46,7 +46,7 @@ export const Swipper = () => {
   }, []);
 
   return (
-    <div className="banner-slide" style={{ position: "relative", height: "80vh" }}>
+    <div className="banner-slide" style={{ position: "relative" }}>
       <Swiper
         id="banner-slide"
         className="banner-swiper"
