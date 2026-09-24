@@ -11,7 +11,7 @@ import {
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
 import Archello_icon from "../assets/Archello_icon.png";
-import AdProIcon from "../assets/ADprowhite.png";
+import AdProIcon from "../assets/ADprowhite.webp";
 
 
 import Drawer from "./Drawer";

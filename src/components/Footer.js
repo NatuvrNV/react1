@@ -4,7 +4,7 @@ import "./Footer.css";
 import MailIcon from "../assets/footer/mail.svg";
 import PhoneIcon from "../assets/footer/phone.svg";
 import Logo from "../assets/logo.png";
-import ADproIcon from "../assets/ADprocolor.png";
+import ADproIcon from "../assets/ADprocolor.webp";
 
 const handleEmailClick = () => {
   if (typeof window !== "undefined") {

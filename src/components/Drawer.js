@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Row, Col, Nav, Form, Button } from "react-bootstrap";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Drawer.css";
-import logo1 from "../assets/metaguiseblk.png";
+import logo1 from "../assets/metaguiseblk.webp";
 import MailchimpForm from "./MailchimpForm";
 import { MdArrowOutward } from "react-icons/md";
-import adProLogo from "../assets/ADproblack.png";
+import adProLogo from "../assets/ADproblack.webp";
 
 function Drawer({ isOpen, toggleDrawer }) {
   return (
