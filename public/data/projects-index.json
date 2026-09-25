@@ -3945,6 +3945,38 @@
     "name": "the block",
     "url": "the-block-luxury-residence-elevation-gurugram",
     "Projectname": "The Block",
+            "faqSchema": {
+      
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What facade systems were used for The Block, Gurugram?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Block residence uses a combination of Metaguise's MetaCassette (perforated) and MetaFlute systems, layered to create depth, movement and architectural texture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is The Block a residential or commercial project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Block is a residential facade project by Metaguise, located in Gurugram."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What visual effect does The Block facade create?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The layered, flowing metal cladding creates a sense of depth and movement, giving the facade a sophisticated architectural texture."
+      }
+    }
+  ]
+
+    },
     "metatittles": "The Block | Layered Metal Facade Residence Gurgaon",
     "metadescription": "The Block by Metaguise features a layered residential facade with flowing metal cladding – depth, movement, and sophisticated architectural texture in Gurgaon.",
     "h2Sections": [
@@ -3963,6 +3995,38 @@
     "url": "hadapsar-railway-station-pune",
     "Projectname": "Hadapsar",
     "metatittles": "Hadapsar | Layered Metal Facade Residence Gurgaon",
+            "faqSchema": {
+      
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Hadapsar project by Metaguise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Hadapsar project is a commercial metal facade installation by Metaguise at Hadapsar Railway Station in Pune, featuring flowing metal cladding designed for depth, movement, and architectural texture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is the Hadapsar facade project located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This project is located at Hadapsar Railway Station in Pune, Maharashtra."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What visual effect does the Hadapsar facade create?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The layered, flowing metal cladding creates a sense of depth and movement, giving the facade a sophisticated architectural texture."
+      }
+    }
+  ]
+
+    },
     "metadescription": "Hadapsar by Metaguise features a layered residential facade with flowing metal cladding – depth, movement, and sophisticated architectural texture in Gurgaon.",
     "h2Sections": [
       {
@@ -4984,6 +5048,38 @@
     "Projectname": "Radiance",
     "metatittles": "Parametric MetaCoin Metal Facade | Hotel Radiance, Sirsa",
     "metadescription": "Champagne gold Parametric MetaCoin panels form a floral pattern across Hotel Radiance, Sirsa, catching sunlight by day and glowing into a landmark after dark",
+            "faqSchema": {
+      
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What facade system is installed at Hotel Radiance, Sirsa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hotel Radiance in Sirsa uses Metaguise's MetaCoin — a parametric facade of champagne gold coin-shaped panels arranged in a floral pattern."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the Hotel Radiance facade change appearance at night?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The MetaCoin panels are backlit with integrated lighting, so the floral pattern glows gold after dark in addition to catching sunlight during the day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What material and color is used in the MetaCoin facade at Hotel Radiance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The facade uses champagne gold coin-shaped metal panels, with a mix of gold and silver modules that catch daylight and glow at night."
+      }
+    }
+  ]
+
+    },
     "h2Sections": [
       {
         "heading": "Parametric MetaCoin Metal Facade at Hotel Radiance, Sirsa"
@@ -5020,6 +5116,38 @@
     "Projectname": "Zoee Nails",
     "metatittles": "Cascading Keys Kinetic Facade at Zoee Nails, Rajouri Garden",
     "metadescription": "Metaguise's Cascading Keys kinetic facade technology wraps Zoee Nails in Rajouri Garden with soft gold hexagonal keys that shift and shimmer in wind and rain.",
+        "faqSchema": {
+      
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What facade system was used at Zoee Nails, Rajouri Garden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zoee Nails' facade uses Metaguise's Cascading Keys kinetic facade technology — soft gold hexagonal keys that shift and shimmer in response to wind and rain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the Zoee Nails facade a static or dynamic design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a dynamic, kinetic elevation. The hexagonal keys move and interact with wind, making it different from a static metal cladding system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What type of building is the Zoee Nails facade designed for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a retail facade design, created for a storefront setting in Rajouri Garden, Delhi."
+      }
+    }
+  ]
+
+    },
     "h2Sections": [
       {
         "heading": "Cascading Keys: Metaguise's Kinetic Facade Technology "
