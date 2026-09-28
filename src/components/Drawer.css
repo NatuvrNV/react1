@@ -1,6 +1,6 @@
 /* Ensure the entire HTML and body take full height and remove margin */
 html, body, #root {
-  height: 100%;
+  height: auto;
   margin: 0;
 }
 

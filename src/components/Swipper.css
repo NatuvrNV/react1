@@ -231,6 +231,10 @@
     text-align: left !important;
   }
 
+  .swiper{
+        margin-bottom: 20px;
+  }
+
   .banner-slide .swiper-navigation {
     display: flex;
     justify-content: center;
