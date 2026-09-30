@@ -7,39 +7,23 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Swipper.css";
 
-// ImageKit banner images
-// NOTE: base URLs kept as-is; ?tr=... transform params are appended per
-// size in the srcSet below so we're never shipping a raw, untransformed
-// 1920x1080 file to every viewport.
-const banners = [
-  "https://ik.imagekit.io/ylx9qggcp/1.webp",
-  "https://ik.imagekit.io/ylx9qggcp/2.webp",
-  "https://ik.imagekit.io/ylx9qggcp/3.webp",
-];
+// Local banner images (one file per banner)
+import banner1 from "../assets/banner/1.webp";
+import banner2 from "../assets/banner/2.webp";
+import banner3 from "../assets/banner/3.webp";
 
-// Banner titles
+const banners = [banner1, banner2, banner3];
+
 const bannerTitles = [
   "India’s Leading Facade & Wall Cladding Experts",
   "Masters in Parametric Design & Execution",
   "Metal is Metaguise: The Future of Facades",
 ];
 
-// Build an ImageKit transform URL for a given width.
-// f-webp forces webp output, q-80 keeps quality high while cutting payload.
-const buildSrc = (base, width) => `${base}?tr=w-${width},q-80,f-webp`;
-
 export const Swipper = () => {
-  // Tracks whether Swiper has actually finished mounting and measuring the
-  // DOM. The poster overlay below stays visible until this flips true, so
-  // the user only ever sees a correctly-sized static image until Swiper is
-  // provably ready — regardless of when swiper/css or Swipper.css finish
-  // loading over the network.
   const [isReady, setIsReady] = useState(false);
 
   const handleSwiperInit = useCallback(() => {
-    // Wait two animation frames: one for Swiper's own layout pass to
-    // finish, one to guarantee the browser has actually painted it before
-    // we reveal it and fade the poster out.
     requestAnimationFrame(() => {
       requestAnimationFrame(() => setIsReady(true));
     });
@@ -66,7 +50,6 @@ export const Swipper = () => {
         modules={[Navigation, Autoplay]}
         onSwiper={handleSwiperInit}
       >
-        {/* Navigation buttons */}
         <div className="swiper-navigation">
           <button
             type="button"
@@ -87,18 +70,11 @@ export const Swipper = () => {
           </button>
         </div>
 
-        {/* Banner slides */}
         {banners.map((src, index) => (
-          <SwiperSlide key={src}>
+          <SwiperSlide key={index}>
             <div className="slide banner-slide">
               <img
-                src={buildSrc(src, 1920)}
-                srcSet={`
-                  ${buildSrc(src, 640)} 640w,
-                  ${buildSrc(src, 1024)} 1024w,
-                  ${buildSrc(src, 1920)} 1920w
-                `}
-                sizes="100vw"
+                src={src}
                 alt={bannerTitles[index]}
                 className="banner-slide-img"
                 width="1920"
@@ -116,13 +92,7 @@ export const Swipper = () => {
         ))}
       </Swiper>
 
-      {/* ---- Static poster overlay ----
-          Covers the entire Swiper instance until isReady flips true. Every
-          style here is inline (not a className), so this overlay's layout
-          is guaranteed correct on the very first paint no matter what the
-          network is doing to Swipper.css or swiper/css. This is what
-          actually eliminates the flash permanently — it doesn't matter
-          what happens underneath while it's covered. */}
+      {/* Static poster overlay */}
       <div
         aria-hidden="true"
         style={{
@@ -136,13 +106,7 @@ export const Swipper = () => {
         }}
       >
         <img
-          src={buildSrc(banners[0], 1920)}
-          srcSet={`
-            ${buildSrc(banners[0], 640)} 640w,
-            ${buildSrc(banners[0], 1024)} 1024w,
-            ${buildSrc(banners[0], 1920)} 1920w
-          `}
-          sizes="100vw"
+          src={banners[0]}
           alt=""
           width="1920"
           height="1080"
