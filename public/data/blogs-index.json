@@ -3432,5 +3432,30 @@
       "assets/Blogs/Commercial-Facade-Company/Working-with-an-Occupied-Building-During-Retrofit.jpg"
     ],
     "folderName": "Commercial-Facade-Company"
-  }
+  },
+  {
+  "title": "The Ghats of Banaras, Rendered on a Hospital Elevation",
+  "metaTitle": "Banaras Ghats Facade, Apex Hospital Varanasi | Metaguise",
+  "url": "banaras-ghats-facade-apex-hospital-varanasi",
+  "date": "09-10-26",
+  "category": "Project Highlights",
+  "metaDescription": "The ghats of Banaras rendered in MetaCoin and layered perforation. A hospital elevation in champagne gold aluminium, Varanasi.",
+  "description": "The ghats of Banaras rendered in MetaCoin and layered perforation. A hospital elevation in champagne gold aluminium, Varanasi.",
+  "images": [
+    {
+      "path": "assets/Blogs/Banaras-Ghats-Facade/banner.jpg",
+      "alt": "Apex Superspeciality Hospital Varanasi facade with the ghats of Banaras rendered in champagne gold MetaCoin discs and perforated aluminium"
+    },
+    {
+      "path": "assets/Blogs/Banaras-Ghats-Facade/Apex-blog-2.jpg",
+      "alt": "Close view of champagne gold MetaCoin foreground and graded perforated aluminium layers on a hospital elevation in Varanasi"
+    },
+     {
+      "path": "assets/Blogs/Banaras-Ghats-Facade/Apex-blog-3.jpg",
+      "alt": "Close view of champagne gold MetaCoin foreground and graded perforated aluminium layers on a hospital elevation in Varanasi"
+    }
+  ],
+  "folderName": "Banaras-Ghats-Facade"
+}
+
 ]
