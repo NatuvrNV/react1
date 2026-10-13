@@ -3597,6 +3597,58 @@
     }
   ],
   "folderName": "Banaras-Ghats-Facade"
-}
+},
+
+
+  {
+    "title": "Three Bands, Three Stories: The Nadaun Indoor Stadium Elevation",
+    "metaTitle": "Himachal Indoor Stadium Facade, Nadaun | Metaguise",
+    "url": "himachal-indoor-stadium-facade-nadaun",
+    "date": "10-10-26",
+    "category": "Project Highlights",
+    "metaDescription": "Himachali topi patterns, sports figures and temple architecture across three bands of aluminium. The Nadaun indoor stadium elevation.",
+    "description": "Himachali topi patterns, sports figures and temple architecture across three bands of aluminium. The Nadaun indoor stadium elevation.",
+    "images": [
+      {
+        "path": "assets/Blogs/Himachal-Indoor-Stadium-Facade/banner.jpg",
+        "alt": "Nadaun indoor stadium in Himachal Pradesh with a three band aluminium facade of shingle pattern, coin figures and laser-cut panels"
+      },
+      {
+        "path": "assets/Blogs/Himachal-Indoor-Stadium-Facade/Himachal-blog-2.jpg",
+        "alt": "Ground level laser-cut aluminium panels depicting Himachal temples on the base band of the Nadaun stadium facade"
+      },
+      {
+        "path": "assets/Blogs/Himachal-Indoor-Stadium-Facade/Himachal-blog-3.jpg",
+        "alt": "Ground level laser-cut aluminium panels depicting Himachal temples on the base band of the Nadaun stadium facade"
+      }
+    ],
+    "folderName": "Himachal-Indoor-Stadium-Facade"
+  },
+  {
+    "title": "Breaking the Straight Line: A Staggered Louver Elevation in Dhanbad",
+    "metaTitle": "Staggered Louver Facade, R.K. Arcade Dhanbad | Metaguise",
+    "url": "staggered-louver-facade-rk-arcade-dhanbad",
+    "date": "11-10-26",
+    "category": "Project Highlights",
+    "metaDescription": "Box-section louvers rotated individually by algorithm to break the straight line. A copper-finish mall elevation in Dhanbad.",
+    "description": "Box-section louvers rotated individually by algorithm to break the straight line. A copper-finish mall elevation in Dhanbad.",
+    "images": [
+      {
+        "path": "assets/Blogs/Staggered-Louver-Facade-Dhanbad/banner.jpg",
+        "alt": "R.K. Arcade shopping mall in Dhanbad with copper finish aluminium box-section louvers rotated at varying angles across the elevation"
+      },
+      {
+        "path": "assets/Blogs/Staggered-Louver-Facade-Dhanbad/RK-blog-2.jpg",
+        "alt": "Close view of staggered copper powder coated aluminium louvers catching light on the R.K. Arcade facade"
+      },
+       {
+        "path": "assets/Blogs/Staggered-Louver-Facade-Dhanbad/RK-blog-3.jpg",
+        "alt": "Close view of staggered copper powder coated aluminium louvers catching light on the R.K. Arcade facade"
+      }
+    ],
+    "folderName": "Staggered-Louver-Facade-Dhanbad"
+  }
+
+
 
 ]
