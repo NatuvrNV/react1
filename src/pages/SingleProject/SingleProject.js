@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { Dropdown, ListGroup } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
 import { FaYoutube, FaInstagram } from "react-icons/fa";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
@@ -18,10 +18,7 @@ const SingleProject = () => {
   const { projectName } = useParams();
 
   // ✅ ALL HOOKS MUST BE CALLED BEFORE ANY CONDITIONAL RETURN
-  const [clickedIndex, setClickedIndex] = useState(null);
   const [contentToRender, setContentToRender] = useState([]);
-  const gridRef = useRef(null);
-  const imageGridRef = useRef(null);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [darkMode, setDarkMode] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -35,8 +32,7 @@ const SingleProject = () => {
   const [notFound, setNotFound] = useState(false);
 
   // Project copy data (h1 / definitionParagraph / h2Sections) is loaded
-  // from projects-index.json, same pattern as SingleProduct.js. It is NOT
-  // rendered visibly on the frontend.
+  // from projects-index.json, same pattern as SingleProduct.js.
   const [projectCopyData, setProjectCopyData] = useState(null);
 
   useEffect(() => {
@@ -68,6 +64,21 @@ const SingleProject = () => {
         (item) => item.url?.toLowerCase() === project?.url?.toLowerCase()
       )) ||
     null;
+
+  // Full definitionParagraph, shown below the carousel. h2Sections still
+  // stay hidden-for-SEO only (see SeoContent below).
+  const projectDefinition = projectCopy?.definitionParagraph || null;
+
+  // Detail rows shown in the sidebar card. All optional: a row only renders
+  // when its value exists. Read from the per-project JSON first, then
+  // projects-index.json. `products` falls back to the folder-derived
+  // categories (metacoin, metacryst, ...) when not set.
+  const projectDetails = {
+    location: project?.location || projectCopy?.location || null,
+    type: project?.projectType || projectCopy?.projectType || null,
+    products:
+      project?.products || projectCopy?.products || null,
+  };
 
   // Fetch the project by URL slug. Falls back to searching by name (for old-format
   // links) using the lightweight index, then redirects to the canonical URL.
@@ -161,22 +172,6 @@ const SingleProject = () => {
     return "https://metaguise.com/default-project-image.jpg";
   };
 
-  const handleImageClick = (index) => {
-    setClickedIndex(clickedIndex === index ? null : index);
-
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-
-    document.getElementById("product-grid")?.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
   const handleButtonClick = (index) => {
     setActiveButton(activeButton === index ? null : index);
   };
@@ -193,30 +188,6 @@ const SingleProject = () => {
         .filter((item) => item) || []
     )
   );
-
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (gridRef.current && !gridRef.current.contains(event.target)) {
-        setClickedIndex(null);
-      }
-      window.scrollTo(0, 0);
-    };
-
-    document.addEventListener("click", handleOutsideClick);
-    return () => {
-      document.removeEventListener("click", handleOutsideClick);
-    };
-  }, []);
-
-  const isLastRow = (index) => {
-    return (
-      index >=
-      contentToRender.length -
-        (contentToRender.length % 3 === 0
-          ? 3
-          : contentToRender.length % 3)
-    );
-  };
 
   const toggleTheme = () => {
     setDarkMode(!darkMode);
@@ -261,7 +232,7 @@ const SingleProject = () => {
   // ✅ Now the conditional returns (after all hooks)
   if (isLoading) {
     return (
-      <div className="container main-container">
+      <div className="container main-container single-project-page">
         <div className="row">
           <div className="col-12 text-center py-5">
             <p>Loading project...</p>
@@ -274,7 +245,7 @@ const SingleProject = () => {
 
   if (notFound || !project) {
     return (
-      <div className="container main-container">
+      <div className="container main-container single-project-page">
         <div className="row">
           <div className="col-12 text-center py-5">
             <h2>Project not found</h2>
@@ -354,7 +325,7 @@ const SingleProject = () => {
   const faqSchema = projectCopy?.faqSchema || null;
 
   return (
-    <div className="container main-container">
+    <div className="container main-container single-project-page">
       <Helmet>
         <title>{project.metatittles || `${project.Projectname} | Premium Metal Facade Project | Metaguise`}</title>
         <meta name="description" content={project.metadescription || project.description || `Explore ${project.Projectname} - a stunning architectural metal facade project by Metaguise, India's leading facade specialist.`} />
@@ -418,18 +389,22 @@ const SingleProject = () => {
         </div>
 
         <div className="col-9 xs-12">
-          <ImageGrid
+          <ProjectCarousel
             filteredImages={filteredImages}
-            handleImageClick={handleImageClick}
-            isLastRow={isLastRow}
-            clickedIndex={clickedIndex}
-            ref={imageGridRef}
             videoLink={project.videoLink}
             darkMode={darkMode}
             selectedProject={project}
             setDarkMode={setDarkMode}
           />
         </div>
+
+        {/* Mobile: show the project description right under the carousel.
+            (On desktop it stays in the Sidebar card.) */}
+        {isMobile && projectDefinition && (
+          <div className="col-12 project-definition-mobile">
+            <p className="project-definition-text">{projectDefinition}</p>
+          </div>
+        )}
 
         <Sidebar
           selectedProject={project}
@@ -443,6 +418,8 @@ const SingleProject = () => {
           youtubeLink={project.youtubeLink}
           instagramLink={project.instagramLink}
           projectSlug={project.url}
+          projectDefinition={isMobile ? null : projectDefinition}
+          projectDetails={projectDetails}
         />
 
         {isMobile && <BuildButton projectSlug={project.url} />}
@@ -457,7 +434,8 @@ const SingleProject = () => {
 
         Because the site is served through the Puppeteer prerender
         pipeline, crawlers get the fully rendered HTML (including this
-        block), while human visitors only see the normal grid/sidebar UI.
+        block), while human visitors only see the visible summary blurb
+        (in the sidebar) plus the normal carousel/sidebar UI.
 
         Source: projects-index.json -> projectCopy (definitionParagraph, h2Sections)
       */}
@@ -486,7 +464,7 @@ const visuallyHiddenStyle = {
   border: 0,
 };
 
-// Renders definitionParagraph + h2Sections from projects-index.json.
+// Renders the full definitionParagraph + h2Sections from projects-index.json.
 // Deliberately does NOT render projectCopy.h1 as an <h1> tag — the page
 // already has one visible <h1> (the project name, in Sidebar). A second
 // <h1> would hurt heading structure rather than help it.
@@ -689,7 +667,22 @@ const Sidebar = ({
   youtubeLink,
   instagramLink,
   projectSlug,
+  projectDefinition,
+  projectDetails,
 }) => {
+  const productsText = Array.isArray(projectDetails?.products)
+    ? projectDetails.products.join(", ")
+    : projectDetails?.products ||
+      categories
+        .map((c) => c.charAt(0).toUpperCase() + c.slice(1))
+        .join(", ");
+
+  const detailRows = [
+    { label: "Location", value: projectDetails?.location },
+    { label: "Products", value: productsText },
+    { label: "Type", value: projectDetails?.type },
+  ].filter((row) => row.value);
+
   return (
     <div className="col-md-3 col-sm-12 sidebar-section pe-md-4 ">
       {/* ✅ Task 3 — real H1. This wrapper is always in the DOM (mobile CSS
@@ -700,6 +693,25 @@ const Sidebar = ({
         {selectedProject.Projectname.charAt(0).toUpperCase() +
           selectedProject.Projectname.slice(1)}
       </h1>
+
+      {(projectDefinition || detailRows.length > 0) && (
+        <div className="project-details-card">
+          {projectDefinition && (
+            <p className="project-definition-text">{projectDefinition}</p>
+          )}
+          {detailRows.length > 0 && (
+            <dl className="project-detail-rows">
+              {detailRows.map((row) => (
+                <div className="project-detail-row" key={row.label}>
+                  <dt>{row.label}</dt>
+                  <dd>{row.value}</dd>
+                </div>
+              ))}
+            </dl>
+          )}
+        </div>
+      )}
+
       <div
         id="single-sidebar"
         className="sidebar p-4 bg-darkrounded "
@@ -707,32 +719,28 @@ const Sidebar = ({
       >
         <h4 className="mb-3">Filter by Products</h4>
 
-        <ListGroup variant="flush">
-          <ListGroup.Item
-            action
-            variant="dark"
-            className={selectedCategory === "" ? "highlight" : "dim"}
+        <div className="filter-pills">
+          <button
+            type="button"
+            className={`filter-pill ${selectedCategory === "" ? "active" : ""}`}
             onClick={() => filterImagesByCategory("")}
-            active={selectedCategory === ""}
-            style={{ display: "flex", justifyContent: "space-between" }}
           >
             All
-            {selectedCategory === "" && <MdArrowOutward size={20} />}
-          </ListGroup.Item>
-          {!darkMode && categories.map((category, index) => (
-            <ListGroup.Item
-              key={index}
-              action
-              variant="light"
-              className={selectedCategory === category ? "highlight" : "dim"}
-              onClick={() => filterImagesByCategory(category)}
-              style={{ display: "flex", justifyContent: "space-between" }}
-            >
-              {category.charAt(0).toUpperCase() + category.slice(1)}
-              {selectedCategory === category && <MdArrowOutward size={20} />}
-            </ListGroup.Item>
-          ))}
-        </ListGroup>
+          </button>
+          {!darkMode &&
+            categories.map((category, index) => (
+              <button
+                key={index}
+                type="button"
+                className={`filter-pill ${
+                  selectedCategory === category ? "active" : ""
+                }`}
+                onClick={() => filterImagesByCategory(category)}
+              >
+                {category.charAt(0).toUpperCase() + category.slice(1)}
+              </button>
+            ))}
+        </div>
       </div>
 
       <div className={darkMode ? "dark-mode" : "light-mode"}>
@@ -779,12 +787,12 @@ const Sidebar = ({
   );
 };
 
-const ImageGrid = ({
+// Builds the ordered slide list (video → cover image → filtered images) and
+// renders it as a single-slide carousel with arrows + dots. Category
+// filtering and day/night mode are handled upstream — filteredImages
+// already reflects both, so the carousel just re-renders when they change.
+const ProjectCarousel = ({
   filteredImages,
-  handleImageClick,
-  isLastRow,
-  clickedIndex,
-  ref,
   videoLink,
   darkMode,
   selectedProject,
@@ -796,78 +804,41 @@ const ImageGrid = ({
     (img) => normalizeName(img.imgPath).includes(normalizeName(selectedProject?.name))
   );
 
-  const handleGoBackToDay = () => {
-    setDarkMode(false);
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
-  const getStartingIndex = () => {
-    let index = 0;
-    if (!darkMode && videoLink) index += 1;
-    if (coverImage) index += 1;
-    return index;
-  };
+  const slides = [];
 
-  return (
-    <div id="product-grid" className="image-grid" ref={ref}>
-      {filteredImages.length === 0 ? (
-        <div className="no-images-found">
-          No images found.
-          <span onClick={handleGoBackToDay} style={{ cursor: 'pointer', marginLeft: '5px', color: 'blue', textDecoration: 'underline' }}>
-            Go Back to Day
-          </span>
-        </div>
-      ) : (
-        <>
-          {!darkMode && videoLink && (
-            <VideoItem
-              videoUrl={videoLink}
-              index={0}
-              handleImageClick={handleImageClick}
-              clickedIndex={clickedIndex}
-            />
-          )}
+  if (!darkMode && videoLink) {
+    slides.push({ type: "video", videoUrl: videoLink });
+  }
 
-          {coverImage && (
-            <Image
-              key={`cover-${selectedProject?.name}`}
-              image={coverImage.imgPath}
-              index={!darkMode && videoLink ? 1 : 0}
-              handleImageClick={handleImageClick}
-              isLastRow={isLastRow}
-              clickedIndex={clickedIndex}
-              altText={coverImage.alt || `${selectedProject?.Projectname} - Cover image`}
-              projectName={selectedProject?.Projectname}
-            />
-          )}
+  if (coverImage) {
+    slides.push({
+      type: "image",
+      src: coverImage.imgPath,
+      alt: coverImage.alt || `${selectedProject?.Projectname} - Cover image`,
+    });
+  }
 
-          {filteredImages.map((imageObj, index) => {
-            const gridIndex = getStartingIndex() + index;
+  filteredImages.forEach((imgObj, idx) => {
+    const src = typeof imgObj === "string" ? imgObj : imgObj.src;
+    const alt =
+      typeof imgObj === "object" && imgObj.alt
+        ? imgObj.alt
+        : `${selectedProject?.Projectname} - Architectural view ${idx + 1}`;
+    slides.push({ type: "image", src, alt });
+  });
 
-            const imageSrc = typeof imageObj === 'string' ? imageObj : imageObj.src;
-            const imageAlt = typeof imageObj === 'object' && imageObj.alt
-              ? imageObj.alt
-              : `${selectedProject?.Projectname} - Architectural view ${index + 1}`;
+  // Jump back to the first slide whenever the filter, day/night mode, or
+  // video changes the slide set — otherwise currentIndex could point past
+  // the end of a shorter filtered list.
+  useEffect(() => {
+    setCurrentIndex(0);
+    setIsVideoPlaying(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [darkMode, videoLink, filteredImages.length, filteredImages[0]]);
 
-            return (
-              <Image
-                key={`image-${index}-${gridIndex}`}
-                image={imageSrc}
-                index={gridIndex}
-                handleImageClick={handleImageClick}
-                isLastRow={isLastRow}
-                clickedIndex={clickedIndex}
-                altText={imageAlt}
-                projectName={selectedProject?.Projectname}
-              />
-            );
-          })}
-        </>
-      )}
-    </div>
-  );
-};
-
-const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
   const getVideoId = (url) => {
     if (!url) return null;
     if (url.includes("shorts/")) {
@@ -878,60 +849,181 @@ const VideoItem = ({ videoUrl, index, handleImageClick, clickedIndex }) => {
     return null;
   };
 
-  const videoId = getVideoId(videoUrl);
-  if (!videoId) return null;
+  // Keep the active thumbnail visible inside the strip. Scrolls only the
+  // strip itself (not the page) so the page doesn't jump.
+  const thumbsRef = useRef(null);
+  useEffect(() => {
+    const strip = thumbsRef.current;
+    if (!strip) return;
+    const activeThumb = strip.children[currentIndex];
+    if (!activeThumb) return;
+    const target =
+      activeThumb.offsetLeft - strip.clientWidth / 2 + activeThumb.clientWidth / 2;
+    strip.scrollTo({ left: target, behavior: "smooth" });
+  }, [currentIndex, slides.length]);
+
+  const getThumbSrc = (slide) => {
+    if (slide.type === "video") {
+      const id = getVideoId(slide.videoUrl);
+      return id ? `https://img.youtube.com/vi/${id}/default.jpg` : "";
+    }
+    const path = slide.src?.startsWith("/") ? slide.src : `/${slide.src}`;
+    return `${process.env.PUBLIC_URL}${path}`;
+  };
+
+  const handleGoBackToDay = () => setDarkMode(false);
+
+  const goPrev = () => {
+    setIsVideoPlaying(false);
+    setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
+  const goNext = () => {
+    setIsVideoPlaying(false);
+    setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
+
+  if (slides.length === 0) {
+    return (
+      <div id="product-grid" className="project-carousel">
+        <div className="no-images-found">
+          No images found.
+          <span
+            onClick={handleGoBackToDay}
+            style={{ cursor: "pointer", marginLeft: "5px", color: "blue", textDecoration: "underline" }}
+          >
+            Go Back to Day
+          </span>
+        </div>
+      </div>
+    );
+  }
+
+  const activeIndex = Math.min(currentIndex, slides.length - 1);
+  const activeSlide = slides[activeIndex];
+  const imagePath = activeSlide.type === "image"
+    ? (activeSlide.src?.startsWith("/") ? activeSlide.src : `/${activeSlide.src}`)
+    : null;
 
   return (
-    <div
-      className={`grid-item video-thumbnail ${clickedIndex === index ? "active" : ""}`}
-      onClick={() => handleImageClick(index)}
-    >
-      {clickedIndex === index ? (
-        <iframe
-          width="100%"
-          height="200"
-          src={`https://www.youtube.com/embed/${videoId}`}
-          title="YouTube Video"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      ) : (
-        <>
+    <div id="product-grid" className="project-carousel">
+      <div className="carousel-viewport">
+        {activeSlide.type === "video" ? (
+          <VideoSlide
+            videoUrl={activeSlide.videoUrl}
+            isPlaying={isVideoPlaying}
+            onPlay={() => setIsVideoPlaying(true)}
+            getVideoId={getVideoId}
+          />
+        ) : (
           <img
-            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-            alt="YouTube Video Thumbnail"
-            className="grid-image"
-            width={480}
-            height={360}
+            key={activeSlide.src}
+            src={`${process.env.PUBLIC_URL}${imagePath}`}
+            alt={activeSlide.alt}
+            className="carousel-image"
             loading="lazy"
           />
-          <div className="play-icon">
-            <FaPlay size={40} color="white" />
+        )}
+
+        {slides.length > 1 && (
+          <>
+            <button
+              className="carousel-arrow carousel-arrow-prev"
+              onClick={goPrev}
+              aria-label="Previous image"
+              type="button"
+            >
+              &#8249;
+            </button>
+            <button
+              className="carousel-arrow carousel-arrow-next"
+              onClick={goNext}
+              aria-label="Next image"
+              type="button"
+            >
+              &#8250;
+            </button>
+          </>
+        )}
+      </div>
+
+      {slides.length > 1 && (
+        <div className="carousel-thumbs-wrap">
+          <button
+            type="button"
+            className="thumbs-arrow"
+            onClick={goPrev}
+            aria-label="Previous image"
+          >
+            &#8249;
+          </button>
+
+          <div className="carousel-thumbs" ref={thumbsRef}>
+            {slides.map((slide, idx) => (
+              <button
+                key={idx}
+                type="button"
+                className={`carousel-thumb ${idx === activeIndex ? "active" : ""}`}
+                onClick={() => {
+                  setIsVideoPlaying(false);
+                  setCurrentIndex(idx);
+                }}
+                aria-label={`Show slide ${idx + 1} of ${slides.length}`}
+                aria-current={idx === activeIndex}
+              >
+                <img
+                  src={getThumbSrc(slide)}
+                  alt=""
+                  loading="lazy"
+                  width={96}
+                  height={64}
+                />
+                {slide.type === "video" && (
+                  <span className="thumb-play">
+                    <FaPlay size={12} color="white" />
+                  </span>
+                )}
+              </button>
+            ))}
           </div>
-        </>
+
+          <button
+            type="button"
+            className="thumbs-arrow"
+            onClick={goNext}
+            aria-label="Next image"
+          >
+            &#8250;
+          </button>
+        </div>
       )}
     </div>
   );
 };
 
-const Image = ({ image, index, handleImageClick, isLastRow, clickedIndex, altText, projectName }) => {
-  const imagePath = image?.startsWith('/') ? image : `/${image}`;
+const VideoSlide = ({ videoUrl, isPlaying, onPlay, getVideoId }) => {
+  const videoId = getVideoId(videoUrl);
+  if (!videoId) return null;
 
-  return (
-    <div
-      className={`grid-item ${isLastRow(index) ? "last-row" : ""} ${
-        clickedIndex === index ? "active" : ""
-      }`}
-      onClick={() => handleImageClick(index)}
-    >
+  return isPlaying ? (
+    <iframe
+      className="carousel-video"
+      src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+      title="YouTube Video"
+      frameBorder="0"
+      allowFullScreen
+    ></iframe>
+  ) : (
+    <div className="carousel-video-thumb" onClick={onPlay}>
       <img
-        src={`${process.env.PUBLIC_URL}${imagePath}`}
-        className="grid-image"
-        alt={altText || `${projectName} - Architectural detail view`}
-        width={640}
-        height={480}
+        src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+        alt="YouTube Video Thumbnail"
+        className="carousel-image"
         loading="lazy"
       />
+      <div className="play-icon">
+        <FaPlay size={40} color="white" />
+      </div>
     </div>
   );
 };

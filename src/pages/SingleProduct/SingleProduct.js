@@ -226,7 +226,7 @@ const SingleProduct = () => {
   // Loading state
   if (isLoading) {
     return (
-      <div className="container main-container">
+      <div className="container main-container single-product-page">
         <div className="row">
           <div className="col-12 text-center py-5">
             <p>Loading product...</p>
@@ -241,7 +241,7 @@ const SingleProduct = () => {
   // Product not found
   if (notFound || !selectedProduct) {
     return (
-      <div className="container main-container">
+      <div className="container main-container single-product-page">
         <div className="row">
           <div className="col-12 text-center py-5">
             <h2>Product not found</h2>
@@ -378,7 +378,7 @@ const SingleProduct = () => {
   const faqSchema = productCopy?.faqSchema || null;
 
   return (
-    <div className="container main-container">
+    <div className="container main-container single-product-page">
 
       <Helmet>
         <title>
