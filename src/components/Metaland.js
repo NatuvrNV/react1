@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.1/src/lite-yt-embed.js";
 import "./Metaland.css";
 import OptimizedImage from "./OptimizedImage";
@@ -7,7 +7,8 @@ import Maze from '../assets/maze.webp';
 import Building from '../assets/building.webp';
 
 const Metaland = () => {
-  const [scale, setScale] = useState(1);
+  const scaleRef = useRef(1);
+  const videoWrapRef = useRef(null);
   const prevScrollY = useRef(0);
   const metaSectionRef = useRef(null);
   const requestRef = useRef(null);
@@ -27,16 +28,22 @@ const Metaland = () => {
       const maxScale = 1;
       const scrollDiff = scrollY - prevScrollY.current;
 
+      cancelAnimationFrame(requestRef.current);
       requestRef.current = requestAnimationFrame(() => {
-        setScale((prevScale) =>
-          scrollDiff > 0 ? Math.min(maxScale, prevScale + scaleFactor) : Math.max(minScale, prevScale - scaleFactor)
-        );
+        scaleRef.current =
+          scrollDiff > 0
+            ? Math.min(maxScale, scaleRef.current + scaleFactor)
+            : Math.max(minScale, scaleRef.current - scaleFactor);
+        // Write straight to the DOM: no React re-render on every scroll tick.
+        if (videoWrapRef.current) {
+          videoWrapRef.current.style.transform = `scale(${scaleRef.current})`;
+        }
       });
 
       prevScrollY.current = scrollY;
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       window.removeEventListener("scroll", handleScroll);
       cancelAnimationFrame(requestRef.current);
@@ -100,8 +107,9 @@ const Metaland = () => {
         {/* Video Section */}
     {/* Video Section (Auto-load YouTube Embed) */}
       <div 
+  ref={videoWrapRef}
   className="col-12 mt-xl-5 mt-4" 
-  style={{ transform: `scale(${scale})`, transition: `transform ${transitionDuration} ease` }}
+  style={{ transition: `transform ${transitionDuration} ease`, willChange: "transform" }}
 >
   <div className="video-container">
     <lite-youtube 

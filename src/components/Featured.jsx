@@ -4,7 +4,6 @@ import { MdArrowBack, MdArrowForward, MdArrowOutward } from "react-icons/md";
 import { useNavigate, Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 import "./Features.css";
 import { useEffect, useState } from "react";
 

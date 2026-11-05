@@ -1,157 +1,70 @@
-/* Full-screen swiper styles */
-.banner-slide .swiper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  aspect-ratio: 16 / 9;
-  align-items: center;
-  height: 80vh; /* Full viewport height — single source of truth,
-                   don't also set this inline via style={{ height: "80vh" }}
-                   in the component, or you'll get a height flicker */
-  position: relative; /* Required for absolute positioning of arrows */
+/* ===== Hero carousel (react-bootstrap Carousel) ===== */
+.banner-slide {
+  position: relative;
 }
 
-/* ---- Structural safety net ----
-   Don't rely solely on the imported "swiper/css" package for this layout.
-   If that stylesheet is delayed (async chunk, slow network, code-split
-   bundle loading after first paint), .swiper-wrapper falls back to being
-   an un-clipped flex row and every slide renders side-by-side instead of
-   stacked/hidden — which is the "two images next to each other" glitch.
-   Defining the core structural rules ourselves guarantees correct layout
-   from the very first paint, regardless of when swiper/css finishes
-   loading. */
-.banner-slide .swiper {
+.banner-slide .carousel,
+.banner-slide .carousel-inner,
+.banner-slide .carousel-item {
+  height: 80vh;
+}
+
+.banner-slide .carousel {
+  width: 100%;
   overflow: hidden;
-  position: relative;
-}
-
-.banner-slide .swiper-wrapper {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  box-sizing: content-box;
-  transition-property: transform;
-}
-
-.banner-slide .swiper-slide {
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform: translate3d(0, 0, 0);
-}
-
-/* ---- Prevent flash of unstyled/duplicated slides on load ---- */
-
-/* Before Swiper JS initializes, hide everything except the first slide */
-.banner-slide .swiper:not(.swiper-initialized) {
-  overflow: hidden;
-}
-
-.banner-slide .swiper:not(.swiper-initialized) .swiper-wrapper {
-  transform: none !important;
-}
-
-.banner-slide .swiper:not(.swiper-initialized) .swiper-slide:not(:first-child) {
-  display: none !important;
-}
-
-/* Once ready, fade in instead of popping into place */
-.banner-slide .swiper.swiper-initialized {
-  animation: swiperFadeIn 0.3s ease-out;
-}
-
-@keyframes swiperFadeIn {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* Navigation arrows container */
-.swiper-navigation {
+.banner-slide .swiper-navigation {
   position: absolute;
-  bottom: 4%; /* Center vertically */
+  bottom: 4%;
   left: 0;
   right: 0;
-  transform: translateY(-50%); /* Adjust for exact center */
+  transform: translateY(-50%);
   display: flex;
-  justify-content: space-between; /* Space out the arrows */
-  align-items: center; /* Center vertically */
-
-  z-index: 10; /* Ensure arrows are above the slides */
-  pointer-events: none; /* Allow clicks to pass through to the swiper */
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  pointer-events: none; /* clicks pass through, buttons re-enable below */
 }
 
-/* Position arrows at bottom right */
 .banner-slide .swiper-button-next,
 .banner-slide .swiper-button-prev {
+  position: absolute;
   color: white;
   width: 38px;
   height: 38px;
+  border: 0;
+  padding: 0;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   transition: all 0.3s ease;
-  top: auto;
   bottom: 20px;
-  margin-top: 0;
-  pointer-events: auto; /* Enable clicks */
+  pointer-events: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
-.banner-slide .swiper-button-next {
-  right: 60px;
-}
+.banner-slide .swiper-button-next { right: 60px; }
+.banner-slide .swiper-button-prev { right: 118px; left: auto; }
 
-.banner-slide .swiper-button-prev {
-  right: 118px !important;
-  left: auto;
-}
-
-.banner-slide .swiper-button-next svg path,
-.banner-slide .swiper-button-prev svg path {
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* Remove default arrow icons */
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 0;
-}
-
-/* Hover effect for arrows */
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
+.banner-slide .swiper-button-next:hover,
+.banner-slide .swiper-button-prev:hover {
   background: rgba(0, 0, 0, 0.8);
-  transform: scale(1);
 }
 
 /* Slide styles */
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .slide {
-  /* No longer holds the background-image — that's now a real <img>
-     (.banner-slide-img) absolutely positioned inside this element.
-     position: relative anchors that img; overflow: hidden clips it the
-     same way background-size: cover used to. */
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100%; /* Ensure full height */
-  display: flex; /* Center content */
+  height: 100%;
+  display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  background-color: #f5f5f5; /* shows briefly before the image paints */
+  background-color: #f5f5f5;
 }
 
 .banner-slide-img {
@@ -161,13 +74,12 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  z-index: 1; /* sits behind .slide-content */
+  z-index: 1;
   display: block;
 }
 
 .slide-content {
-  position: relative; /* lifts it into the same stacking context as the
-                          absolutely-positioned img, above it */
+  position: relative;
   z-index: 2;
   padding: 80px;
   padding-bottom: 100px;
@@ -178,121 +90,55 @@
   font-size: 64px;
   line-height: 80px;
   margin: 0;
-  margin-bottom: 0;
   letter-spacing: 2px;
   font-weight: 500;
 }
 
-.slide-content p {
-  text-align: left !important;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 30px !important;
+/* Smooth, slightly slower slide transition */
+.banner-slide .carousel-item {
+  transition: transform 0.8s ease-in-out;
 }
 
-.swiper-container {
-  position: relative; /* Ensure the parent is positioned */
-  user-select: none; /* Prevent text selection */
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE */
+@media (prefers-reduced-motion: reduce) {
+  .banner-slide .carousel-item { transition: none; }
 }
 
-/* Responsive adjustments */
+/* ===== Shared rules other Swiper sliders (Featured / Features) relied on =====
+   These used to live in this file and applied globally; kept so those
+   components look exactly the same. */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 0;
+}
+
+/* ===== Responsive ===== */
 @media screen and (min-width: 769px) and (max-width: 991px) {
-  .slide-content {
-    padding: 30px 20px;
-    text-align: left !important;
-  }
-
-  .swiper-pagination {
-    bottom: 10px !important;
-  }
-
-  .slide-content h2 {
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 500;
-  }
-
-  #banner-slide {
-    height: 45vh !important;
-  }
-
-  .slide-content p {
-    text-align: left !important;
-    letter-spacing: 2px;
-  }
+  .slide-content { padding: 30px 20px; text-align: left; }
+  .slide-content h2 { font-size: 32px; line-height: 40px; }
+  .banner-slide .carousel,
+  .banner-slide .carousel-inner,
+  .banner-slide .carousel-item { height: 45vh; }
 }
 
 @media screen and (max-width: 768px) {
-  .slide-content {
-    padding: 40px 20px;
-    text-align: left !important;
-  }
+  .slide-content { padding: 40px 20px; text-align: left; }
+  .slide-content h2 { font-size: 24px; line-height: 30px; }
+  .slide { justify-content: flex-start; }
 
-  .swiper{
-        margin-bottom: 20px;
-  }
+  .banner-slide .carousel,
+  .banner-slide .carousel-inner,
+  .banner-slide .carousel-item { height: 40vh; }
+  .banner-slide .carousel { margin-bottom: 20px; }
 
-  .banner-slide .swiper-navigation {
-    display: flex;
-    justify-content: center;
-    bottom: 10px !important;
-  }
-
-  .banner-slide .swiper-button-next {
-    right: 30px;
-  }
-
-  .banner-slide .swiper-button-prev {
-    right: 78px !important;
-  }
-
+  .banner-slide .swiper-navigation { bottom: 10px; }
   .banner-slide .swiper-button-next,
-  .banner-slide .swiper-button-prev {
-    width: 28px;
-    height: 28px;
-  }
-
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-    font-size: 0rem;
-  }
-
-  .swiper-pagination {
-    bottom: 10px !important;
-    text-align: right;
-    left: -16px !important;
-  }
-
-  .slide-content h2 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 500;
-  }
-
-  #banner-slide {
-    height: 40vh !important;
-  }
-
-  .slide {
-    justify-content: start;
-  }
-
-  .slide-content p {
-    text-align: left !important;
-    letter-spacing: 2px;
-    font-size: 18px !important;
-    transform: translateY(-8px);
-  }
-
-  .swiper-navigation {
-    bottom: 2% !important;
-    justify-content: space-between;
-  }
-
-  .swiper-pagination-bullet {
-    width: 35px;
-  }
+  .banner-slide .swiper-button-prev { width: 28px; height: 28px; bottom: 10px; }
+  .banner-slide .swiper-button-next { right: 30px; }
+  .banner-slide .swiper-button-prev { right: 78px; }
 }

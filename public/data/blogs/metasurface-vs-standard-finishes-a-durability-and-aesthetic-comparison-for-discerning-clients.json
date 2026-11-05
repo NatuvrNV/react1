@@ -10,15 +10,15 @@
   "folderName": "MetaSurface-Standard",
   "images": [
     {
-      "path": "assets/Blogs/MetaSurface-Standard/banner.jpg",
+      "path": "assets/Blogs/MetaSurface-Standard/banner.webp",
       "alt": " "
     },
     {
-      "path": "assets/Blogs/MetaSurface-Standard/The-Metaguise-Difference-Integration-Intelligence-and-Integrity.jpg",
+      "path": "assets/Blogs/MetaSurface-Standard/The-Metaguise-Difference-Integration-Intelligence-and-Integrity.webp",
       "alt": ""
     },
     {
-      "path": "assets/Blogs/MetaSurface-Standard/MetaSurface-Technology-Engineering-Beyond-Aesthetics.jpg",
+      "path": "assets/Blogs/MetaSurface-Standard/MetaSurface-Technology-Engineering-Beyond-Aesthetics.webp",
       "alt": ""
     }
   ],

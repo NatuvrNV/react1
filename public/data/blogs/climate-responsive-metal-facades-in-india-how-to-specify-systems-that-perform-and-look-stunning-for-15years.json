@@ -8,18 +8,18 @@
   "metaDescription": "Why imported facade systems fail in India’s heat & monsoon-and how parametric metal facades by metaguise deliver stunning performance for 15+years.",
   "description": "You stand in front of a luxury residential tower in Lower Parel, two years after handover. The imported Italian stone cladding that looked flawless in the German manufacturer's",
   "folderName": "Climate-Response",
-  "schema": "\n      {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"India’s Parametric Metal Facade Revolution: From European Imports to Indigenous Innovation (2026)\",\n  \"description\": \"India's parametric metal facade industry has evolved from costly European imports to indigenous innovation with end-to-end design, fabrication and installation.\",\n  \"image\": \"https://metaguise.com/assets/Blogs/The-Indian-Parametric/parametric-metal-facade-design-pattern.jpg\",\n  \"author\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Metaguise\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Metaguise\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://ik.imagekit.io/ylx9qggcp/download%20(1).png\"\n    }\n  },\n  \"datePublished\": \"2026-04-08\",\n  \"dateModified\": \"2026-04-08\",\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://metaguise.com/blog/india-parametric-metal-facade-revolution-from-european-imports-to-indigenous-innovation-2026\"\n  }\n\n}",
+  "schema": "\n      {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"India’s Parametric Metal Facade Revolution: From European Imports to Indigenous Innovation (2026)\",\n  \"description\": \"India's parametric metal facade industry has evolved from costly European imports to indigenous innovation with end-to-end design, fabrication and installation.\",\n  \"image\": \"https://metaguise.com/assets/Blogs/The-Indian-Parametric/parametric-metal-facade-design-pattern.webp\",\n  \"author\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Metaguise\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Metaguise\",\n    \"logo\": {\n      \"@type\": \"ImageObject\",\n      \"url\": \"https://ik.imagekit.io/ylx9qggcp/download%20(1).png\"\n    }\n  },\n  \"datePublished\": \"2026-04-08\",\n  \"dateModified\": \"2026-04-08\",\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://metaguise.com/blog/india-parametric-metal-facade-revolution-from-european-imports-to-indigenous-innovation-2026\"\n  }\n\n}",
   "images": [
     {
-      "path": "assets/Blogs/Climate-Response/climate-responsive-metal-facade-india.jpg",
+      "path": "assets/Blogs/Climate-Response/climate-responsive-metal-facade-india.webp",
       "alt": "climate responsive metal facade design in India with modern architecture and thermal shading elements"
     },
     {
-      "path": "assets/Blogs/Climate-Response/parametric-metal-facade-design-india.jpg",
+      "path": "assets/Blogs/Climate-Response/parametric-metal-facade-design-india.webp",
       "alt": "parametric metal facade with perforated panels designed for heat reduction and airflow in Indian climate"
     },
     {
-      "path": "assets/Blogs/Climate-Response/luxury-house-metal-facade-india.jpg",
+      "path": "assets/Blogs/Climate-Response/luxury-house-metal-facade-india.webp",
       "alt": "luxury residential building with metal facade cladding designed for durability in Indian heat and monsoon"
     }
   ],

@@ -1,10 +1,7 @@
-import { useCallback, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { useState, useCallback } from "react";
+import Carousel from "react-bootstrap/Carousel";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
-import "swiper/css";
-import "swiper/css/navigation";
 import "./Swipper.css";
 
 // Local banner images (one file per banner)
@@ -20,131 +17,70 @@ const bannerTitles = [
   "Metal is Metaguise: The Future of Facades",
 ];
 
-export const Swipper = () => {
-  const [isReady, setIsReady] = useState(false);
+// Time each slide stays on screen (ms). Change this one value to speed up / slow down.
+const AUTOPLAY_MS = 5000;
 
-  const handleSwiperInit = useCallback(() => {
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => setIsReady(true));
-    });
-  }, []);
+// Same export names as before, so pages/Home/Home.js needs no change.
+export const Swipper = () => {
+  const [index, setIndex] = useState(0);
+  const total = banners.length;
+
+  const goPrev = useCallback(() => setIndex((i) => (i - 1 + total) % total), [total]);
+  const goNext = useCallback(() => setIndex((i) => (i + 1) % total), [total]);
 
   return (
     <div className="banner-slide" style={{ position: "relative" }}>
-      <Swiper
+      <Carousel
         id="banner-slide"
-        className="banner-swiper"
-        spaceBetween={0}
-        slidesPerView={1}
-        loop={true}
-        speed={800}
-        autoplay={{
-          delay: 8000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: false,
-        }}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }}
-        modules={[Navigation, Autoplay]}
-        onSwiper={handleSwiperInit}
+        className="banner-carousel"
+        activeIndex={index}
+        onSelect={setIndex}
+        interval={AUTOPLAY_MS}   // automatic sliding
+        ride="carousel"          // start auto-playing on load (no click needed)
+        pause={false}            // keep sliding even when the mouse is over it
+        controls={false}         // we render our own arrows below
+        indicators={false}
+        touch                    // swipe on mobile
+        keyboard
       >
-        <div className="swiper-navigation">
-          <button
-            type="button"
-            className="swiper-button-prev"
-            aria-label="Previous slide"
-            onMouseDown={(e) => e.preventDefault()}
-          >
-            <MdArrowBack size={30} aria-hidden="true" />
-          </button>
-
-          <button
-            type="button"
-            className="swiper-button-next"
-            aria-label="Next slide"
-            onMouseDown={(e) => e.preventDefault()}
-          >
-            <MdArrowForward size={30} aria-hidden="true" />
-          </button>
-        </div>
-
-        {banners.map((src, index) => (
-          <SwiperSlide key={index}>
-            <div className="slide banner-slide">
+        {banners.map((src, i) => (
+          <Carousel.Item key={i}>
+            <div className="slide">
               <img
                 src={src}
-                alt={bannerTitles[index]}
+                alt={bannerTitles[i]}
                 className="banner-slide-img"
                 width="1920"
                 height="1080"
-                loading="eager"
-                fetchPriority={index === 0 ? "high" : "auto"}
-                decoding={index === 0 ? "sync" : "async"}
+                loading={i === 0 ? "eager" : "lazy"}
+                fetchPriority={i === 0 ? "high" : "auto"}
+                decoding={i === 0 ? "sync" : "async"}
               />
-
               <div className="slide-content">
-                <h2>{bannerTitles[index]}</h2>
+                <h2>{bannerTitles[i]}</h2>
               </div>
             </div>
-          </SwiperSlide>
+          </Carousel.Item>
         ))}
-      </Swiper>
+      </Carousel>
 
-      {/* Static poster overlay */}
-      <div
-        aria-hidden="true"
-        style={{
-          position: "absolute",
-          inset: 0,
-          zIndex: 5,
-          overflow: "hidden",
-          opacity: isReady ? 0 : 1,
-          pointerEvents: isReady ? "none" : "auto",
-          transition: "opacity 0.4s ease-out",
-        }}
-      >
-        <img
-          src={banners[0]}
-          alt=""
-          width="1920"
-          height="1080"
-          fetchPriority="high"
-          decoding="sync"
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            objectPosition: "center",
-            display: "block",
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            left: 0,
-            right: 0,
-            bottom: 0,
-            padding: "clamp(20px, 6vw, 80px)",
-            paddingBottom: "clamp(30px, 8vw, 100px)",
-            color: "white",
-          }}
+      <div className="swiper-navigation">
+        <button
+          type="button"
+          className="swiper-button-prev"
+          aria-label="Previous slide"
+          onClick={goPrev}
         >
-          <h2
-            style={{
-              fontSize: "clamp(24px, 5vw, 64px)",
-              lineHeight: 1.25,
-              margin: 0,
-              letterSpacing: "2px",
-              fontWeight: 500,
-            }}
-          >
-            {bannerTitles[0]}
-          </h2>
-        </div>
+          <MdArrowBack size={30} aria-hidden="true" />
+        </button>
+        <button
+          type="button"
+          className="swiper-button-next"
+          aria-label="Next slide"
+          onClick={goNext}
+        >
+          <MdArrowForward size={30} aria-hidden="true" />
+        </button>
       </div>
     </div>
   );
