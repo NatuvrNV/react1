@@ -108,12 +108,12 @@ export const ProductImages = [
     "order": 21
   },
   {
-    "imgPath": "assets/Allproducts/MetaParametric/metahive/metahive1.png",
+    "imgPath": "assets/Allproducts/MetaParametric/metahive/metahive1.webp",
     "imgText": "MetaHive",
     "order": 22
   },
   {
-    "imgPath": "assets/Allproducts/MetaForm/Metacryst/metacryst1.png",
+    "imgPath": "assets/Allproducts/MetaForm/Metacryst/metacryst1.webp",
     "imgText": "MetaCryst",
     "order": 23
   }
@@ -725,12 +725,12 @@ export const sortedProductImages = [
     "order": 21
   },
   {
-    "imgPath": "assets/Allproducts/MetaParametric/metahive/metahive1.png",
+    "imgPath": "assets/Allproducts/MetaParametric/metahive/metahive1.webp",
     "imgText": "MetaHive",
     "order": 22
   },
   {
-    "imgPath": "assets/Allproducts/MetaForm/Metacryst/metacryst1.png",
+    "imgPath": "assets/Allproducts/MetaForm/Metacryst/metacryst1.webp",
     "imgText": "MetaCryst",
     "order": 23
   }
