@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, version as reactVersion } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 import { FaYoutube, FaInstagram } from "react-icons/fa";
@@ -12,6 +12,42 @@ import { ProjectImages } from "../../utils/constants";
 import { fetchProjectBySlug, fetchProjectsIndex } from "../../utils/fetchProjectData";
 import { Helmet } from "react-helmet-async";
 import { FaPlay } from "react-icons/fa";
+
+// ---------------------------------------------------------------------------
+// Image / video helpers
+// ---------------------------------------------------------------------------
+
+// React 19 wants `fetchPriority`, React 18 wants lowercase `fetchpriority`.
+const FETCH_PRIORITY_PROP =
+  parseInt(reactVersion, 10) >= 19 ? "fetchPriority" : "fetchpriority";
+
+// Quick test switch: set to false to see whether the blurry first slide is the
+// "cover image" taken from ProjectImages (usually a small card thumbnail).
+const SHOW_COVER_SLIDE = true;
+
+const toAbs = (p) =>
+  `${process.env.PUBLIC_URL}${p?.startsWith("/") ? p : `/${p}`}`;
+
+// photo.webp -> photo-thumb.webp (created by make-thumbs.js)
+const toThumb = (p) => p.replace(/\.(webp|jpe?g|png)$/i, "-thumb.webp");
+
+// Handles watch?v=, youtu.be/, /shorts/, /embed/, /live/
+const getVideoId = (url) => {
+  if (!url) return null;
+  try {
+    const u = new URL(url);
+    const host = u.hostname.replace(/^(www\.|m\.)/, "");
+    if (host === "youtu.be") return u.pathname.slice(1).split("/")[0] || null;
+    if (host.endsWith("youtube.com") || host.endsWith("youtube-nocookie.com")) {
+      if (u.searchParams.get("v")) return u.searchParams.get("v");
+      const m = u.pathname.match(/\/(shorts|embed|live|v)\/([^/?]+)/);
+      if (m) return m[2];
+    }
+  } catch (e) {
+    /* invalid URL */
+  }
+  return null;
+};
 
 const SingleProject = () => {
   const navigate = useNavigate();
@@ -110,6 +146,19 @@ const SingleProject = () => {
               }
               return;
             }
+
+            // FIX: if the canonical url is the SAME as the current slug, the
+            // project's own JSON failed to load (missing / wrong case / invalid
+            // JSON). Navigating to the same URL would never re-run this effect
+            // and the page would stay on "Loading project..." forever.
+            if (match.url?.toLowerCase() === slug) {
+              if (!cancelled) {
+                setNotFound(true);
+                setIsLoading(false);
+              }
+              return;
+            }
+
             if (!cancelled) {
               navigate(`/all-projects/${match.url}/`, { replace: true });
             }
@@ -788,7 +837,7 @@ const Sidebar = ({
 };
 
 // Builds the ordered slide list (video → cover image → filtered images) and
-// renders it as a single-slide carousel with arrows + dots. Category
+// renders it as a single-slide carousel with arrows + thumbnail strip. Category
 // filtering and day/night mode are handled upstream — filteredImages
 // already reflects both, so the carousel just re-renders when they change.
 const ProjectCarousel = ({
@@ -798,18 +847,20 @@ const ProjectCarousel = ({
   selectedProject,
   setDarkMode,
 }) => {
-  const normalizeName = (name) => name?.toLowerCase().replace(/[^a-z0-9]/gi, '') || '';
+  const normalizeName = (name) => name?.toLowerCase().replace(/[^a-z0-9]/gi, "") || "";
 
-  const coverImage = ProjectImages?.find(
-    (img) => normalizeName(img.imgPath).includes(normalizeName(selectedProject?.name))
-  );
+  const coverImage = SHOW_COVER_SLIDE
+    ? ProjectImages?.find((img) =>
+        normalizeName(img.imgPath).includes(normalizeName(selectedProject?.name))
+      )
+    : null;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   const slides = [];
 
-  if (!darkMode && videoLink) {
+  if (!darkMode && videoLink && getVideoId(videoLink)) {
     slides.push({ type: "video", videoUrl: videoLink });
   }
 
@@ -839,16 +890,6 @@ const ProjectCarousel = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [darkMode, videoLink, filteredImages.length, filteredImages[0]]);
 
-  const getVideoId = (url) => {
-    if (!url) return null;
-    if (url.includes("shorts/")) {
-      return url.split("/shorts/")[1]?.split("?")[0];
-    } else if (url.includes("v=")) {
-      return url.split("v=")[1]?.split("&")[0];
-    }
-    return null;
-  };
-
   // Keep the active thumbnail visible inside the strip. Scrolls only the
   // strip itself (not the page) so the page doesn't jump.
   const thumbsRef = useRef(null);
@@ -862,13 +903,31 @@ const ProjectCarousel = ({
     strip.scrollTo({ left: target, behavior: "smooth" });
   }, [currentIndex, slides.length]);
 
-  const getThumbSrc = (slide) => {
+  const activeIndex = Math.min(currentIndex, Math.max(slides.length - 1, 0));
+
+  // Preload the next and previous full-size images so the arrows feel instant.
+  useEffect(() => {
+    if (slides.length < 2) return;
+    [1, -1].forEach((d) => {
+      const s = slides[(activeIndex + d + slides.length) % slides.length];
+      if (s?.type === "image") {
+        const im = new Image();
+        im.src = toAbs(s.src);
+      }
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeIndex, slides.length]);
+
+  // Thumbnails: use the small "-thumb.webp" file (made by make-thumbs.js) and
+  // fall back to the full image if the thumb doesn't exist yet.
+  // Video: sharper 320x180 YouTube thumbnail.
+  const getThumb = (slide) => {
     if (slide.type === "video") {
       const id = getVideoId(slide.videoUrl);
-      return id ? `https://img.youtube.com/vi/${id}/default.jpg` : "";
+      const url = id ? `https://img.youtube.com/vi/${id}/mqdefault.jpg` : "";
+      return { src: url, fallback: url };
     }
-    const path = slide.src?.startsWith("/") ? slide.src : `/${slide.src}`;
-    return `${process.env.PUBLIC_URL}${path}`;
+    return { src: toAbs(toThumb(slide.src)), fallback: toAbs(slide.src) };
   };
 
   const handleGoBackToDay = () => setDarkMode(false);
@@ -899,11 +958,7 @@ const ProjectCarousel = ({
     );
   }
 
-  const activeIndex = Math.min(currentIndex, slides.length - 1);
   const activeSlide = slides[activeIndex];
-  const imagePath = activeSlide.type === "image"
-    ? (activeSlide.src?.startsWith("/") ? activeSlide.src : `/${activeSlide.src}`)
-    : null;
 
   return (
     <div id="product-grid" className="project-carousel">
@@ -918,10 +973,12 @@ const ProjectCarousel = ({
         ) : (
           <img
             key={activeSlide.src}
-            src={`${process.env.PUBLIC_URL}${imagePath}`}
+            src={toAbs(activeSlide.src)}
             alt={activeSlide.alt}
             className="carousel-image"
-            loading="lazy"
+            loading="eager"
+            decoding="async"
+            {...{ [FETCH_PRIORITY_PROP]: "high" }}
           />
         )}
 
@@ -959,32 +1016,41 @@ const ProjectCarousel = ({
           </button>
 
           <div className="carousel-thumbs" ref={thumbsRef}>
-            {slides.map((slide, idx) => (
-              <button
-                key={idx}
-                type="button"
-                className={`carousel-thumb ${idx === activeIndex ? "active" : ""}`}
-                onClick={() => {
-                  setIsVideoPlaying(false);
-                  setCurrentIndex(idx);
-                }}
-                aria-label={`Show slide ${idx + 1} of ${slides.length}`}
-                aria-current={idx === activeIndex}
-              >
-                <img
-                  src={getThumbSrc(slide)}
-                  alt=""
-                  loading="lazy"
-                  width={96}
-                  height={64}
-                />
-                {slide.type === "video" && (
-                  <span className="thumb-play">
-                    <FaPlay size={12} color="white" />
-                  </span>
-                )}
-              </button>
-            ))}
+            {slides.map((slide, idx) => {
+              const t = getThumb(slide);
+              return (
+                <button
+                  key={idx}
+                  type="button"
+                  className={`carousel-thumb ${idx === activeIndex ? "active" : ""}`}
+                  onClick={() => {
+                    setIsVideoPlaying(false);
+                    setCurrentIndex(idx);
+                  }}
+                  aria-label={`Show slide ${idx + 1} of ${slides.length}`}
+                  aria-current={idx === activeIndex}
+                >
+                  <img
+                    src={t.src}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width={96}
+                    height={64}
+                    onError={(e) => {
+                      if (t.fallback && e.currentTarget.src !== t.fallback) {
+                        e.currentTarget.src = t.fallback;
+                      }
+                    }}
+                  />
+                  {slide.type === "video" && (
+                    <span className="thumb-play">
+                      <FaPlay size={12} color="white" />
+                    </span>
+                  )}
+                </button>
+              );
+            })}
           </div>
 
           <button
@@ -1008,18 +1074,25 @@ const VideoSlide = ({ videoUrl, isPlaying, onPlay, getVideoId }) => {
   return isPlaying ? (
     <iframe
       className="carousel-video"
-      src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+      src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`}
       title="YouTube Video"
       frameBorder="0"
+      allow="autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"
+      referrerPolicy="strict-origin-when-cross-origin"
       allowFullScreen
     ></iframe>
   ) : (
     <div className="carousel-video-thumb" onClick={onPlay}>
       <img
-        src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+        src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
         alt="YouTube Video Thumbnail"
         className="carousel-image"
-        loading="lazy"
+        loading="eager"
+        decoding="async"
+        onError={(e) => {
+          const hq = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+          if (e.currentTarget.src !== hq) e.currentTarget.src = hq;
+        }}
       />
       <div className="play-icon">
         <FaPlay size={40} color="white" />

@@ -1,68 +1,23 @@
 /**
  * OptimizedImage.jsx
- * -------------------
- * Fixes 2 Core Web Vitals issues at once:
- *   1) LCP (Largest Contentful Paint) - via priority loading + fetchpriority + preload hint
- *   2) CLS (Cumulative Layout Shift)  - via required width/height so the browser reserves
- *      space before the image downloads (no more content "jumping")
+ * Drop-in <img> replacement: lazy-loads by default, `priority` for the hero/LCP image.
+ * width + height (or aspectRatio) are REQUIRED so the browser reserves space (no layout shift).
  *
- * USE THIS FOR EVERY <img> ON THE SITE. Replace plain <img> tags with <OptimizedImage />.
- *
- * --------------------------------------------------------------------------
- * HOW TO USE
- * --------------------------------------------------------------------------
- *
- * 1) Hero / banner images (the FIRST big image visible on a page - homepage
- *    hero, blog post banner, first product image) -> pass `priority`:
- *
- *      <OptimizedImage
- *        src="/assets/Blogs/Copper-Facade-Cladding/banner.jpg"
- *        alt="Copper facade cladding on a modern building"
- *        width={1600}
- *        height={900}
- *        priority
- *      />
- *
- *    `priority` does 3 things automatically:
- *      - loading="eager" (loads immediately, doesn't wait)
- *      - fetchpriority="high" (tells the browser "this is the important one")
- *      - injects a <link rel="preload"> tag in <head> so the browser starts
- *        downloading it before it even finishes parsing the HTML
- *
- * 2) Every OTHER image on the page (below the fold - product grids, project
- *    galleries, related posts, footer logos) -> do NOT pass `priority`.
- *    It will automatically lazy-load:
- *
- *      <OptimizedImage
- *        src="/assets/Products/metacoin-thumb.jpg"
- *        alt="MetaCoin facade panel"
- *        width={400}
- *        height={300}
- *      />
- *
- * 3) width & height (or aspectRatio) are REQUIRED - this is what fixes CLS.
- *    If you don't know the exact pixel size, use aspectRatio instead:
- *
- *      <OptimizedImage src="..." alt="..." aspectRatio="4/3" />
- *
- * --------------------------------------------------------------------------
- * WHERE TO APPLY THIS FIRST (highest impact, per the CWV report)
- * --------------------------------------------------------------------------
- *   - Homepage hero image/banner              -> priority
- *   - Blog post template banner image          -> priority  (fixes 72 blog URLs at once)
- *   - /all-products/ grid: first 4-6 images     -> priority, rest -> lazy (default)
- *   - /all-projects/[slug] gallery/carousel images -> default (lazy), first hero photo -> priority
- * --------------------------------------------------------------------------
+ * Usage:
+ *   <OptimizedImage src={img} alt="..." width={1920} height={1080} priority />   // hero
+ *   <OptimizedImage src={img} alt="..." width={400} height={300} />              // lazy
+ *   <OptimizedImage ... loading="eager" />                                        // override lazy
  */
 
-import { useEffect } from "react";
-// NOTE: no external dependencies needed - this component is plug-and-play.
-// (If your project already uses prop-types, feel free to add PropTypes
-// validation back in; it's intentionally left out here so this file works
-// immediately without an extra `npm install`.)
+import { useEffect, version as reactVersion } from "react";
+
+// React 19 wants `fetchPriority`, React 18 wants lowercase `fetchpriority`.
+// Picking by version avoids the "unknown prop" console warning on either.
+const FETCH_PRIORITY_PROP =
+  parseInt(reactVersion, 10) >= 19 ? "fetchPriority" : "fetchpriority";
 
 function preloadImage(src, srcSet, sizes) {
-  if (typeof document === "undefined") return;
+  if (typeof document === "undefined" || !src) return;
   const existing = document.head.querySelector(`link[data-preload-src="${src}"]`);
   if (existing) return;
   const link = document.createElement("link");
@@ -79,7 +34,7 @@ export default function OptimizedImage({
   src,
   srcSet,
   sizes,
-  alt,
+  alt = "",
   width,
   height,
   aspectRatio,
@@ -89,15 +44,14 @@ export default function OptimizedImage({
   ...rest
 }) {
   useEffect(() => {
-    if (priority) {
-      preloadImage(src, srcSet, sizes);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [src, priority]);
+    if (priority) preloadImage(src, srcSet, sizes);
+  }, [src, srcSet, sizes, priority]);
 
   const dimensionStyle = aspectRatio
     ? { aspectRatio, width: "100%", height: "auto" }
     : {};
+
+  const fetchProps = { [FETCH_PRIORITY_PROP]: priority ? "high" : "auto" };
 
   return (
     <img
@@ -108,13 +62,11 @@ export default function OptimizedImage({
       width={width}
       height={height}
       loading={priority ? "eager" : "lazy"}
-      fetchpriority={priority ? "high" : "auto"}
-      decoding={priority ? "sync" : "async"}
+      decoding="async"
+      {...fetchProps}
       className={className}
       style={{ ...dimensionStyle, ...style }}
       {...rest}
     />
   );
 }
-
-

@@ -4009,6 +4009,18 @@
     "name": "the block",
     "url": "the-block-luxury-residence-elevation-gurugram",
     "Projectname": "The Block",
+     "metatittles": "The Block | Layered Metal Facade Residence Gurgaon",
+    "metadescription": "The Block by Metaguise features a layered residential facade with flowing metal cladding \u2013 depth, movement, and sophisticated architectural texture in Gurgaon.",
+    "h2Sections": [
+      {
+        "heading": "The Facade System",
+        "copy": "The Block uses the MetaCassette + MetaLouver system, confirmed from Metaguise's own project data."
+      },
+      {
+        "heading": "Project Details",
+        "copy": "The Block is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
+      }
+    ],
     "faqSchema": {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -4039,19 +4051,8 @@
         }
       ]
     },
-    "metatittles": "The Block | Layered Metal Facade Residence Gurgaon",
-    "metadescription": "The Block by Metaguise features a layered residential facade with flowing metal cladding \u2013 depth, movement, and sophisticated architectural texture in Gurgaon.",
-    "h2Sections": [
-      {
-        "heading": "The Facade System",
-        "copy": "The Block uses the MetaCassette + MetaLouver system, confirmed from Metaguise's own project data."
-      },
-      {
-        "heading": "Project Details",
-        "copy": "The Block is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
-      }
-    ],
-    "definitionParagraph": "Designed by Cityspace82 Architects, this two-sided residential elevation reflects Metaguise\u2019s luxury value range in clean lines and earthy tones. One side pairs MetaGrey solid balcony panels with MetaWood-finish MetaLouvers, which wrap around to the second side and extend into a custom MetaCassette perforated panel with kite-shaped cutouts that let in light and air while preserving privacy. C-channels frame the composition, and a MetaWood MetaGate ties the layered, age-well-built facade together."
+       "definitionParagraph": "Designed by Cityspace82 Architects, this two-sided residential elevation reflects Metaguise\u2019s luxury value range in clean lines and earthy tones. One side pairs MetaGrey solid balcony panels with MetaWood-finish MetaLouvers, which wrap around to the second side and extend into a custom MetaCassette perforated panel with kite-shaped cutouts that let in light and air while preserving privacy. C-channels frame the composition, and a MetaWood MetaGate ties the layered, age-well-built facade together."
+
   },
   {
     "name": "hadapsar",
@@ -4100,24 +4101,6 @@
       }
     ],
     "definitionParagraph": "Hadapsar Railway Station in Pune is clad in Metaguise\u2019s Perforated MetaCassette system, transforming pristine white metal into a living tribute to the city. Thousands of precision-punched perforations reveal Pune\u2019s cultural identity, from the historic heights of Sinhagad Fort and Shaniwar Wada to the rhythm of Dhol Tasha. The facade breathes, filters light, and gives every traveller at the railway station a moment of connection with the city."
-  },
-  {
-    "name": "rhythm goel",
-    "url": "rhythm-goel",
-    "Projectname": "Rhythm Goel",
-    "metatittles": "Rhythm Goel | Layered Metal Facade Residence Gurgaon",
-    "metadescription": "Rhythm Goel by Metaguise features a layered residential facade with flowing metal cladding \u2013 depth, movement, and sophisticated architectural texture in Gurgaon.",
-    "h2Sections": [
-      {
-        "heading": "The Facade System",
-        "copy": "Rhythm Goel uses what appears to be the MetaCassette + MetaLouver system based on available project data. This should be confirmed with the project files before publishing, since it is not from a direct page fetch."
-      },
-      {
-        "heading": "Project Details",
-        "copy": "Rhythm Goel is a residential facade project by Metaguise. This page covers the design approach and the metal facade system used on the building."
-      }
-    ],
-    "definitionParagraph": "This residential facade layers contrasting textures into one architectural identity. The industrial edge of MetaGrey MetaLouvers meets the organic warmth of MetaWood MetaFlutes, while MetaPlanks line the underceiling to cast a sun-kissed glow over the upper balcony beside a clean, structural run of solid panels. Mid-level screens add rhythmic shadows, and a MetaGrey MetaGate anchors the entrance, tying the home\u2019s rhythm and warmth together."
   },
   {
     "name": "thewaveform",

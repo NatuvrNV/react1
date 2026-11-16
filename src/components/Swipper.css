@@ -15,7 +15,7 @@
 }
 
 /* Navigation arrows container */
-.banner-slide .swiper-navigation {
+.banner-slide .hero-nav {
   position: absolute;
   bottom: 4%;
   left: 0;
@@ -28,8 +28,7 @@
   pointer-events: none; /* clicks pass through, buttons re-enable below */
 }
 
-.banner-slide .swiper-button-next,
-.banner-slide .swiper-button-prev {
+.banner-slide .hero-nav-btn {
   position: absolute;
   color: white;
   width: 38px;
@@ -47,11 +46,16 @@
   cursor: pointer;
 }
 
-.banner-slide .swiper-button-next { right: 60px; }
-.banner-slide .swiper-button-prev { right: 118px; left: auto; }
+/* Safety net: never draw a library/default arrow on top of our icon */
+.banner-slide .hero-nav-btn::before,
+.banner-slide .hero-nav-btn::after {
+  content: none !important;
+}
 
-.banner-slide .swiper-button-next:hover,
-.banner-slide .swiper-button-prev:hover {
+.banner-slide .hero-nav-next { right: 60px; }
+.banner-slide .hero-nav-prev { right: 118px; left: auto; }
+
+.banner-slide .hero-nav-btn:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -104,8 +108,7 @@
 }
 
 /* ===== Shared rules other Swiper sliders (Featured / Features) relied on =====
-   These used to live in this file and applied globally; kept so those
-   components look exactly the same. */
+   KEEP these: other components depend on them. */
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -136,9 +139,8 @@
   .banner-slide .carousel-item { height: 40vh; }
   .banner-slide .carousel { margin-bottom: 20px; }
 
-  .banner-slide .swiper-navigation { bottom: 10px; }
-  .banner-slide .swiper-button-next,
-  .banner-slide .swiper-button-prev { width: 28px; height: 28px; bottom: 10px; }
-  .banner-slide .swiper-button-next { right: 30px; }
-  .banner-slide .swiper-button-prev { right: 78px; }
+  .banner-slide .hero-nav { bottom: 10px; }
+  .banner-slide .hero-nav-btn { width: 28px; height: 28px; bottom: 10px; }
+  .banner-slide .hero-nav-next { right: 30px; }
+  .banner-slide .hero-nav-prev { right: 78px; }
 }

@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 // rest of the site (resizing, format negotiation, caching) instead of
 // being bundled as static assets.
 const Miraj = "https://ik.imagekit.io/ylx9qggcp/miraj.webp?updatedAt=1776152244497";
-const ScaledSymphony = "https://ik.imagekit.io/ylx9qggcp/Sculpted%20Silence.webp?updatedAt=1776152389797";
+const ScaledSymphony = "https://ik.imagekit.io/ylx9qggcp/scaled.webp?updatedAt=1776152244955";
 const Whiteland = "https://ik.imagekit.io/ylx9qggcp/whiteland.webp?updatedAt=1776152244798";
 const RJ = "https://ik.imagekit.io/ylx9qggcp/RJ.webp?updatedAt=1776152244291";
 const ABJewels = "https://ik.imagekit.io/ylx9qggcp/AB.webp?updatedAt=1776152244136";
