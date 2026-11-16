@@ -1,0 +1,57 @@
+{
+  "title": "Facade Mock-Up and Testing in India: What to Ask For Before Production",
+  "metaTitle": "Facade Mock-Up and Testing in India: What to Ask For",
+  "date": "10-11-26",
+  "template": "B",
+  "category": "Behind the Design",
+  "url": "facade-mockup-and-testing-india",
+  "metaDescription": "Why a facade mock-up matters and what testing to ask for in India: colour, fixings, water and wind checks before production on your project.",
+  "description": "Why a facade mock-up matters and what testing to ask for in India: colour, fixings, water and wind checks before production on your project.",
+  "folderName": "Facade-Mockup-Testing-India",
+  "images": [
+    {
+      "path": "assets/Blogs/Facade-Mockup-Testing-India/banner.webp",
+      "alt": "Close view of a hand touching dark grey scale-pattern metal cladding panels"
+    },
+    {
+      "path": "assets/Blogs/Facade-Mockup-Testing-India/A-simple-mock-up-process.webp",
+      "alt": "GLS University boundary wall facade in gold metal with a laser-cut world map and lettering"
+    }
+  ],
+  "contentSections": [
+    "<p><strong><h2>Quick answer</h2></strong></p>",
+    "<p>A facade mock-up is a full-size sample of a representative part of the facade, built before mass production. It lets the architect, client and engineer check look, colour, joints and fixing details in real light, and lets the facade company check how the parts go together. Testing adds proof for performance such as water, wind and fixing strength. Ask for a mock-up on any large or custom facade, and ask what will be tested and by whom.</p>",
+    "<p><strong><h2>Key takeaways</h2></strong></p>",
+    "<p>•        A mock-up catches problems when they cost hours, not weeks.\n•        Colour and finish must be judged outdoors in real light, against a signed-off sample.\n•        Not every project needs every test. Match tests to risk: height, exposure, novelty and size.\n•        Record approvals in writing, so changes after approval are variations, not arguments.</p>",
+    "<p><strong><h2>What is a facade mock-up?</h2></strong></p>",
+    "<p>A mock-up is a built sample, normally one or two bays of the facade at full scale, using the actual panels, sub-frame, fixings, sealants and finish planned for the job. It is different from a small colour sample, which shows only the finish, and from a drawing, which shows only intent.</p>",
+    "<p><strong><h2>Why a mock-up is worth the time</h2></strong></p>",
+    "<p>1. <strong>Design.</strong> You see proportions, joint lines, shadow gaps and edge details at true size.\n2. <strong>Colour.</strong> Metal looks different at noon, dusk and under artificial light. A mock-up shows this before thousands of panels are made.\n3. <strong>Buildability.</strong> Installers find awkward fixing sequences and clashes, so drawings are corrected early.\n4. <strong>Performance.</strong> The mock-up can be used for water or fixing checks where required.\n5. <strong>Alignment.</strong> Everyone approves the same reference, which reduces disputes later.</p>",
+    "<p>Our checklist for <a href=\"https://metaguise.com/blog/how-to-choose-a-facade-company-in-india-red-flags-checklist/\">choosing a facade company</a> includes demanding a mock-up before production as one of nine checks.</p>",
+    "<p><strong><h2>What can be tested</h2></strong></p>",
+    "<table><tr><th>Check</th><th>What it shows</th><th>Typical for</th></tr><tr><td>Visual and colour approval</td><td>Look, gloss and tone in real light</td><td>Every project</td></tr><tr><td>Finish adhesion and thickness</td><td>Coating quality against the stated standard</td><td>Every project, as part of quality control</td></tr><tr><td>Dimensional check</td><td>Panel size, flatness, hole position</td><td>Every project</td></tr><tr><td>Fixing pull-out or load check</td><td>Strength of anchors and fixings in the actual wall</td><td>Critical or tall projects</td></tr><tr><td>Water penetration check</td><td>Behaviour of joints and cavity under water</td><td>Large or exposed projects</td></tr><tr><td>Wind performance check</td><td>Resistance to pressure and suction</td><td>Tall or unusual buildings</td></tr></table>",
+    "<p>Which tests apply depends on the building, the code and the consultant’s advice. Ask the engineer to list the tests and the acceptance criteria in the specification.</p>",
+    "<p><strong><h2>How Metaguise approaches testing and quality</h2></strong></p>",
+    "<p>Metaguise develops, tests and quality-checks new systems at its Metalab facility before installation. Manufacturing quality checks start earlier, with incoming material verified against mill certificates, finish adhesion and thickness tested, and a pre-dispatch inspection against the design specification. You can read the full chain in our article on <a href=\"https://metaguise.com/blog/how-facade-panels-are-manufactured-in-india-the-process-nobody-shows-you/\">how facade panels are manufactured in India</a>, and the engineering side in <a href=\"https://metaguise.com/blog/how-metal-facade-engineering-works-from-structural-load-to-fabrication/\">how metal facade engineering works</a>.</p>",
+    "<p>For tall or unusual buildings, standard code calculations may miss local pressure zones, so wind tunnel testing or computational fluid dynamics may be recommended. See the wind load guide.</p>",
+    "<p><strong><h2>A simple mock-up process</h2></strong></p>",
+    "<p>1. <strong>Agree scope.</strong> Which bay, which conditions, which tests.\n2. <strong>Build the sample</strong> with real components and the real sub-frame.\n3. <strong>Review on site or at the facility</strong>, in daylight and with the intended lighting if possible.\n4. <strong>Record comments and changes</strong> with photos.\n5. <strong>Approve in writing.</strong> The approved mock-up becomes the reference for production and handover.\n6. <strong>Keep the sample</strong> where it can be compared against delivered panels.</p>",
+    "<p><strong><h2>Who should attend the review</h2></strong></p>",
+    "<p>The architect, client representative, facade engineer, installer lead and, where relevant, the structural and fire consultants. Large facades also benefit from the site manager, who will live with the sequence.</p>",
+    "<p><strong><h2>What to do when the mock-up shows a problem</h2></strong></p>",
+    "<p>Treat it as the system working. Fix the drawing, the detail or the finish, then rebuild or re-check the affected area. A mock-up that reveals nothing is usually too small or too late.</p>",
+    "<p><strong><h2>Large and complex projects</h2></strong></p>",
+    "<p>On big venues or multi-system elevations, staged approvals reduce risk. The Nadaun indoor stadium facade combines several systems, each with different weight, fixing method and thermal movement, so transition zones between bands needed particular attention. See the <a href=\"https://metaguise.com/blog/himachal-indoor-stadium-facade-nadaun/\">Nadaun stadium facade</a>. In large repeating facades such as Miraj Stadium, colour consistency across thousands of modules is controlled by batch tracking and checked against the approved sample. See the <a href=\"https://metaguise.com/blog/miraj-stadium-rajasthan-facade-metacoin/\">Miraj Stadium facade</a>.</p>",
+    "<p><strong><h2>Questions to ask a facade company</h2></strong></p>",
+    "<p>•        Will you build a mock-up before production, and who pays for it?\n•        Which tests do you propose, and to which standard?\n•        Who witnesses them, and how are results recorded?\n•        How are approved samples kept for comparison with delivered panels?\n•        What happens if the mock-up needs changes?</p>",
+    "<p><strong><h2>Frequently asked questions</h2></strong></p>",
+    "<p><strong><h2>1. What is a facade mock-up?</h2></strong>\n It is a full-scale sample of a typical facade section, built with real components so the design team can check look, colour, joints and fixing before production.</p>",
+    "<p><strong><h2>2. Is a facade mock-up necessary?</h2></strong>\n For large, custom or high-profile facades it is strongly advised. For small standard projects, a finish sample and a detailed drawing may be enough.</p>",
+    "<p><strong><h2>3. Who pays for the mock-up?</h2></strong>\n It depends on the contract. Agree this at tender stage and state it in the specification.</p>",
+    "<p><strong><h2>4. What tests are done on a facade?</h2></strong>\n Typical checks are finish quality, dimensions, fixing strength and, for larger projects, water and wind performance. The list depends on risk and code.</p>",
+    "<p><strong><h2>5. How long does a mock-up take?</h2></strong>\n It depends on complexity. Plan time in the programme for building, review and approval before production begins.</p>",
+    "<p><strong><h2>6. Does Metaguise provide mock-ups?</h2></strong>\n Please ask the team about mock-up options for your project. Contact Metaguise.</p>",
+    "<p><strong><h2>Plan your mock-up with Metaguise</h2></strong></p>",
+    "<p>Tell us about your project and we will outline the mock-up and checks we recommend. <a href=\"https://metaguise.com/contact/\">Get in touch</a>.</p>"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Facade Specification Guide for Architects in India",
+  "metaTitle": "Facade Specification Guide for Architects in India",
+  "date": "09-11-26",
+  "template": "B",
+  "category": "Architectural Insights",
+  "url": "facade-specification-guide-for-architects-india",
+  "metaDescription": "A practical facade specification guide for architects in India: what to define, from performance, materials and finishes to testing, warranty and handover.",
+  "description": "A practical facade specification guide for architects in India: what to define, from performance, materials and finishes to testing, warranty and handover.",
+  "folderName": "Facade-Specification-Guide",
+  "images": [
+    {
+      "path": "assets/Blogs/Facade-Specification-Guide/banner.webp",
+      "alt": "Curved grey metal-clad balconies with arches and greenery on a luxury residential building"
+    },
+    {
+      "path": "assets/Blogs/Facade-Specification-Guide/Section-8-Installation-quality-control-and-handover.webp",
+      "alt": "Residential balcony with white perforated panels, a wood-finish box and a glass balustrade"
+    }
+  ],
+  "contentSections": [
+    "<p><strong><h2>Quick answer</h2></strong></p>",
+    "<p>A facade specification is the document that tells bidders exactly what to supply: the performance required, the materials, the finish, the fixing system, the testing and the warranty. A good specification lets you compare quotations fairly and protects design intent. Write performance first, product second, and name the checks you will accept as proof.</p>",
+    "<p><strong><h2>Key takeaways</h2></strong></p>",
+    "<p>•        Define performance (loads, movement, water, fire, finish life) before you name a product.\n•        State materials, thickness, finish standard and colour by sample, not by words alone.\n•        Ask for shop drawings, a mock-up and written warranties as part of the specification.\n•        Include responsibilities, so it is clear who designs, supplies, installs and signs off.</p>",
+    "<p><strong><h2>Why a specification matters</h2></strong></p>",
+    "<p>When two quotations differ by a large amount, it is usually because the specification was loose. One bidder priced thick sheet and a premium coating. The other priced thin sheet and a basic finish. Both can claim to meet the drawing. A clear specification closes this gap before the price comes in. Our guide on how to brief an architect covers the client side of the same discussion.</p>",
+    "<p><strong><h2>Section 1: Scope and design intent</h2></strong></p>",
+    "<p>State what the facade includes: panels, sub-frame, fixings, sealants, flashings, trims, access, cleaning and any lighting or signage interfaces. State the design intent with reference images and the approved pattern or module. Note what is excluded, such as glazing, waterproofing or structural alterations.</p>",
+    "<p><strong><h2>Section 2: Performance requirements</h2></strong></p>",
+    "<table><tr><th>Topic</th><th>What to specify</th></tr><tr><td>Wind load</td><td>Design wind speed and code, with edge and corner zones</td></tr><tr><td>Thermal movement</td><td>Expected temperature range and movement allowance</td></tr><tr><td>Water management</td><td>Drainage and ventilation requirements for the cavity</td></tr><tr><td>Fire</td><td>Material classification and cavity barrier requirements as per code</td></tr><tr><td>Durability</td><td>Finish life, with the test standard</td></tr><tr><td>Tolerances</td><td>Flatness and joint width limits</td></tr><tr><td>Acoustics and rattle</td><td>No noise under wind or thermal movement</td></tr></table>",
+    "<p>For the engineering behind these, see <a href=\"https://metaguise.com/blog/how-metal-facade-engineering-works-from-structural-load-to-fabrication/\">how metal facade engineering works</a> and the guide to <a href=\"https://metaguise.com/blog/wind-load-on-metal-facades-india/\">wind load on metal facades</a>.</p>",
+    "<p><strong><h2>Section 3: Materials and thickness</h2></strong></p>",
+    "<p>Name the metal and grade, the sheet thickness, and the panel format. If you are choosing between metals, compare them first in our guide to aluminium, corten and zinc. Ask bidders to confirm material origin, with mill certificates on incoming batches. Our <a href=\"https://metaguise.com/blog/aluminium-panel-thickness-for-facade-2mm-3mm-4mm/\">panel thickness guide</a> explains gauges for solid panels.</p>",
+    "<p><strong><h2>Section 4: Finish and colour</h2></strong></p>",
+    "<p>Specify the finish type (PVDF, anodised or powder coat), the standard it must meet, the colour reference (RAL, NCS or a physical sample), the gloss level and the warranty period. PVDF commonly meets AAMA 2605, and powder coat typically meets AAMA 2604. Compare options in our guide to PVDF vs powder coat. For large elevations, require batch tracking so colour stays consistent.</p>",
+    "<p><strong><h2>Section 5: Sub-frame and fixings</h2></strong></p>",
+    "<p>Specify the sub-frame material, the bracket system, the fixing type and metals, and the movement allowance. Require that fixings are concealed where the design needs it, and that dissimilar metals are isolated to prevent corrosion. Ask for calculations signed by a responsible engineer.</p>",
+    "<p><strong><h2>Section 6: Water, ventilation and fire details</h2></strong></p>",
+    "<p>State whether the system is a ventilated rainscreen, and what waterproofing sits behind it. Our guide to <a href=\"https://metaguise.com/blog/facade-systems-explained-whats-actually-hiding-behind-the-panel-you-see/\">what hides behind the panel you see</a> explains the layers and the rainscreen principle. Fire requirements depend on the building type and height, so the fire consultant must confirm the assembly.</p>",
+    "<p><strong><h2>Section 7: Submittals, mock-up and testing</h2></strong></p>",
+    "<p>Require, before production:</p>",
+    "<p>1. Shop drawings with sub-frame and fixing details\n2. Calculations and engineer sign-off\n3. Finish samples and a colour approval\n4. A mock-up of a representative bay, approved in writing\n5. Test reports where the project demands them</p>",
+    "<p>Our checklist for <a href=\"https://metaguise.com/blog/how-to-choose-a-facade-company-in-india-red-flags-checklist/\">choosing a facade company</a> recommends demanding a mock-up before production.</p>",
+    "<p><strong><h2>Section 8: Installation, quality control and handover</h2></strong></p>",
+    "<p>Specify installation tolerances, inspection hold points, who installs, site safety and access method. Require a handover pack: as-built drawings, finish records, maintenance plan and written warranties. Our maintenance guide can form the basis of the maintenance plan.</p>",
+    "<p><strong><h2>Section 9: Warranty</h2></strong></p>",
+    "<p>Ask for two documents: a finish warranty and a structural warranty on the fixing system, both in writing at handover, with conditions and exclusions stated. Metaguise provides these as standard.</p>",
+    "<p><strong><h2>Section 10: Commercial terms to define</h2></strong></p>",
+    "<p>Quotation format (line items), payment against milestones, programme, variations process and defect liability period. Treat a single lump sum as a red flag.</p>",
+    "<p><strong><h2>Specification checklist you can copy</h2></strong></p>",
+    "<p>•        Scope and exclusions defined\n•        Wind, movement, water and fire requirements stated\n•        Material, grade and thickness stated\n•        Finish type, standard, colour and warranty stated\n•        Sub-frame and fixing design responsibility named\n•        Mock-up and approvals required\n•        Installation tolerances and hold points listed\n•        Handover documents listed\n•        Warranties required in writing\n•        Quotation format and payment terms fixed</p>",
+    "<p><strong><h2>Frequently asked questions</h2></strong></p>",
+    "<p><strong><h2>1. What is a facade specification?</h2></strong>\n It is the written requirement for a facade, covering scope, performance, materials, finishes, fixings, testing, installation and warranty.</p>",
+    "<p><strong><h2>2. Who writes the facade specification?</h2></strong>\n Usually the architect, with a facade consultant or the structural engineer for performance parts. Some projects use a performance specification and let the facade company design to it.</p>",
+    "<p><strong><h2>3. Should I name a product or write performance requirements?</h2></strong>\n Write performance requirements first, and list acceptable products or equivalents. This keeps competition fair while protecting quality.</p>",
+    "<p><strong><h2>4. What documents should a facade supplier submit?</h2></strong>\n Shop drawings, calculations, finish samples, mock-up approval, test reports where needed, and warranties.</p>",
+    "<p><strong><h2>5. Does Metaguise support architects with specification?</h2></strong>\n Yes. Our team can provide system details, samples and engineering input during design. Contact us.</p>",
+    "<p><strong><h2>6. Do I need a facade consultant?</h2></strong>\n For large or complex projects, often yes. Read <a href=\"https://metaguise.com/blog/do-you-need-a-facade-consultant-india\">do you need a facade consultant in India</a>.</p>",
+    "<p><strong><h2>Request specification support</h2></strong></p>",
+    "<p>Share your project drawings and we can help you shape a clear, fair specification. <a href=\"https://metaguise.com/contact/\">Talk to Metaguise</a>.</p>"
+  ]
+}
